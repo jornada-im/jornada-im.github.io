@@ -1,10 +1,10 @@
-Welcome to the Jornada IM site. This site supports data management, informatics, and data science activities associated with research at the [Jornada Basin LTER](https://jornada.nmsu.edu/lter). Resources and tools useful to both researchers and data managers are available here.
+Welcome to the Jornada IM site. This site supports data management, informatics, and data science activities associated with research at the [Jornada Basin LTER](https://jornada.nmsu.edu/lter). Resources and tools for researchers and data managers are available here.
 
 **This site is under construction**
 
 ## For Researchers
 
-See the [For Researchers tab](https://jornada-im.github.io/researcher_info) for information on:
+Jornada PIs, postdocs, students, and research scientists should visit the [For Researchers tab](https://jornada-im.github.io/researcher_info) to find:
 
 - Best practices for collecting data and metadata.
 - Metadata templates for preparing datasets for publication.
@@ -12,8 +12,9 @@ See the [For Researchers tab](https://jornada-im.github.io/researcher_info) for 
 
 ## For Information managers 
 
-Data managers should see the [For Information Managers tab](https://jornada_im.github.io/im_info) to learn about:
+Jornada data managers visit the [For Information Managers tab](https://jornada_im.github.io/im_info) to find:
 
+- Documentation on Information Management at Jornada Basin.
 - Metadata standards for publishing Jornada data packages
 - Keyword thesauri
 - Tools and resources for DEIMS, creating/editing EML, metabase development.
