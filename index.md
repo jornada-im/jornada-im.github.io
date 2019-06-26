@@ -2,28 +2,32 @@ Welcome to the Jornada IM site. This site supports data management, informatics,
 
 **This site is under construction**
 
-## [For Researchers](https://jornada-im.github.io/researcher_info)
+## For Researchers
 
-* Best practices for collecting data and metadata.
-* Metadata templates for preparing datasets for publication.
-* Guidelines and tips for using and citing Jornada data.
+See the [For Researchers tab](https://jornada-im.github.io/researcher_info) for information on:
 
-## [For Information Managers](https://jornada_im.github.io/im_info)
+- Best practices for collecting data and metadata.
+- Metadata templates for preparing datasets for publication.
+- Guidelines and tips for using and citing Jornada data.
 
-* Metadata standards for publishing Jornada data packages
-* Keyword thesauri
-* Tools and resources for DEIMS, creating/editing EML, metabase development.
+## For Information managers 
+
+Data managers should see the [For Information Managers tab](https://jornada_im.github.io/im_info) to learn about:
+
+- Metadata standards for publishing Jornada data packages
+- Keyword thesauri
+- Tools and resources for DEIMS, creating/editing EML, metabase development.
 
 ## Tool development
 
-* Useful code repositories.
-* Scripts for searching or sorting JRN and JER data.
-* New informatics and data science tools we are developing.
+- Useful code repositories.
+- Scripts for searching or sorting JRN and JER data.
+- New informatics and data science tools we are developing.
 
 ## Ancillary data sources
 
-* Links to ancillary or contextual data that support research at JRN or JER.
-* Imagery, regional met data, models, etc.
+- Links to ancillary or contextual data that support research at JRN or JER.
+- Imagery, regional met data, models, etc.
 
 ## Contact
 
