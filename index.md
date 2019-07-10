@@ -21,18 +21,13 @@ Jornada data managers visit the [For Information Managers page](https://jornada_
 
 ## Tool development
 
-We develop useful software tools to assist with the research, data curation, and publishing process for the Jornada Basin. These are maintained on GitHub.
+The Jornada IM team develoos software tools to assist with the research, data curation, and publishing process. These are maintained on GitHub and include:
 
-There is a guide to our GitHub repositories, including this web page
-
-- [Guide to Jornada-IM GitHub repositories](https://github.com/jornada-im/jornada-im_repository_index) (including this website).
 - Scripts for searching or sorting JRN and JER data.
-- New informatics and data science tools we are developing.
+- New informatics and data science tools or apps
+- This website
 
-## Ancillary data sources
-
-- Links to ancillary or contextual data that support research at JRN or JER.
-- Imagery, regional met data, models, etc.
+Visit the [Guide to Jornada-IM GitHub repositories](https://github.com/jornada-im/jornada-im_repository_index) for more information.
 
 ## Contact
 
