@@ -12,16 +12,16 @@ Jornada PIs, postdocs, students, and research scientists should visit the [For R
 
 Jornada data managers visit the [For Data Managers page](https://jornada_im.github.io/im_info) to find:
 
-- Documentation on Information Management at Jornada Basin.
-- Metadata standards for publishing Jornada data packages
-- Tools and resources for DEIMS, creating/editing EML, metabase development.
+- Resources for data packaging, publishing, and EML creation.
+- Metadata standards for Jornada data packages.
+- Ideas on DEIMS, metabase, and database development.
 
 ## Tools
 
 The Jornada IM team develops software tools to assist with the research, data curation, and publishing process. These are maintained on GitHub and include:
 
-- Scripts for searching or sorting JRN and JER data.
-- New informatics and data science tools or apps
+- Scripts for searching or sorting Jornada data.
+- New informatics and data science tools & apps
 - This website
 
 Visit the [Guide to Jornada-IM GitHub repositories](https://github.com/jornada-im/jornada-im_repository_index) for more information.
