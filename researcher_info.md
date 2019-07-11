@@ -16,7 +16,7 @@ When starting a new data collection effort, or assembling metadata for an existi
 
 ### Jornada Presentations
 
-[Information management and data science at Jornada LTER](https://drive.google.com/file/d/1As8GnjYl7tkSsCX21X6cLAU_7YtiNZAj/view?usp=sharing) (for the Ecology Short Course July 2019)
+* [Information management and data science at Jornada LTER](https://drive.google.com/file/d/1As8GnjYl7tkSsCX21X6cLAU_7YtiNZAj/view?usp=sharing) (JRN Ecology Short Course, July 2019)
 
 ### LTER/EDI resources
 

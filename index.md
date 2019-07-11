@@ -2,7 +2,7 @@ Welcome to the Jornada IM (Information Management) site. We support data managem
 
 ## For Researchers
 
-Jornada PIs, postdocs, students, and research scientists should visit the [For Researchers page](https://jornada-im.github.io/researcher_info) to find:
+Jornada PIs, postdocs, students, and staff scientists, visit the [For Researchers page](https://jornada-im.github.io/researcher_info) to find:
 
 - Metadata templates for preparing datasets for publication
 - Best practices for collecting data and metadata
@@ -10,7 +10,7 @@ Jornada PIs, postdocs, students, and research scientists should visit the [For R
 
 ## For Data Managers 
 
-Jornada data managers visit the [For Data Managers page](https://jornada_im.github.io/im_info) to find:
+Jornada data managers visit the [For Data Managers page](https://jornada-im.github.io/im_info) to find:
 
 - Resources for data packaging, publishing, and EML creation.
 - Metadata standards for Jornada data packages
