@@ -19,12 +19,10 @@ If you are wondering whether the content or format of a metadata file (EML) is c
 
 ## Full IM documentation
 
-The Jornada LTER Data Management Plan, developed for the 2020 LTER proposal, outlines current data management practices and future initiatives of the IM team.
+The Jornada IM team is developing comprehensive documentation pages covering the workings of the data management system at Jornada Basin LTER (JRN) at our GitHub organization:
 
-* [JRN LTER Data Management Plan (DRAFT)](JRN_LTER_data_management_plan_draft.md)
+* [JRN documentation repository](https://jornada-im.github.io/documentation)
 
-Full documentation of Jornada information management systems is a work in progress under development here:
+Part of this documentation, the JRN Data Management Plan, developed for the 2020 LTER proposal, outlines current data management practices and future initiatives of the IM team.
 
-* <https://jornada-im.github.io/documentation>
-
-
+* [JRN LTER Data Management Plan (DRAFT)](https://jornada-im.github.io/documentation/docs/JRN_LTER_data_management_plan_draft.md)
