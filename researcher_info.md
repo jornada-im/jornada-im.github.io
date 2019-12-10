@@ -1,11 +1,15 @@
-# For Jornada Researchers 
+---
+layout: default
+---
 
-PIs, postdocs, students, staff scientists and others who contribite to research at the Jornada should be aware of the standards and requirements for collecting and documenting their research data.
+# For Researchers 
+
+Jornada PIs, postdocs, students, staff scientists and others who contribite to research at the Jornada should be aware of the standards and requirements for collecting and documenting their research data.
 
 
 ## Metadata templates
 
-When starting a new data collection effort, or assembling metadata for an existing one, it helps to have a metadata template. The word documents below will help you fill in all necessary and relevant metadata to accompany your data for publication. The EDI template is recommended (and easiest to use) for now. We may revise it to be specific to the Jornada LTER in the future.
+When starting a new data collection effort, or assembling metadata for an existing one, it helps to have a metadata template. The documents below will help you fill in all necessary and relevant metadata to accompany your data for publication. The EDI template is recommended (and easiest to use) for now. We may create a template specific to the Jornada in the future.
 
 * Get the [EDI metadata template](https://github.com/EDIorg/MetadataTemplates/raw/master/EDI_metadata_template.docx) (.docx).
 * Older Jornada metadata templates [are on the Jornada website](https://jornada.nmsu.edu/lter/data/documentation)
