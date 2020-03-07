@@ -4,16 +4,16 @@ layout: default
 
 # For Researchers 
 
-Jornada PIs, postdocs, students, staff scientists and others who contribite to research at the Jornada should be aware of the standards and requirements for collecting and documenting their research data.
+Jornada PIs, postdocs, students, staff scientists and others who contribite to research at the Jornada should be aware of the standards and requirements for collecting and documenting their research data. 
 
+Data and metadata submission requirements for Jornada researchers are [outlined on the website](https://lter.jornada.nmsu.edu/for_researchers). 
 
 ## Metadata templates
 
-When starting a new data collection effort, or assembling metadata for an existing one, it helps to have a metadata template. The documents below will help you fill in all necessary and relevant metadata to accompany your data for publication. The EDI template is recommended (and easiest to use) for now. We may create a template specific to the Jornada in the future.
+When starting a new data collection effort or getting ready to publish an existing one, it helps to have a metadata template. The documents below will help you fill in all necessary and relevant metadata to accompany your data for publication. Completed templates and data files should be sent to the Jornada IM team.
 
-* Get the [EDI metadata template](https://github.com/EDIorg/MetadataTemplates/raw/master/EDI_metadata_template.docx) (.docx).
-* Older Jornada metadata templates [are on the Jornada website](https://jornada.nmsu.edu/lter/data/documentation)
-* While writing metadata, the [Jornada metadata standards](https://github.com/jornada-im/jrn_metadata_standards/raw/master/JRN_metadata_standards.docx) (.docx) and [keyword thesauri](https://github.com/jornada-im/jrn_metadata_standards/raw/master/keyword_thesauri.xlsx) (.xlsx) documents are helpful, but not required.
+* Get the [JRN metadata template](https://github.com/jornada-im/jrn_metadata/blob/master/JRN_metadata_template.docx) (.docx).
+* While writing metadata, the [Jornada metadata standards](https://github.com/jornada-im/jrn_metadata/raw/master/JRN_metadata_standards.docx) (.docx) and [keyword thesauri](https://github.com/jornada-im/jrn_metadata/raw/master/keyword_thesauri.xlsx) (.xlsx) documents are helpful, but not required.
 
 
 ## Other resources

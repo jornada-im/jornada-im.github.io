@@ -34,4 +34,4 @@ Visit the [Guide to Jornada-IM GitHub repositories](https://github.com/jornada-i
 
 For questions about collecting, publishing, and accessing Jornada Basin LTER data or metadata please contact the site Information Manager (<datamanager.jrn.lter@gmail.com>).
 
-If you are a researcher plannning to conduct new research at the Jornada Basin LTER, contact the Research Site Manager, John Anderson (<janderso@nmsu.edu>).
+If you are plannning to conduct a new research project at the Jornada Basin LTER, see [the website](https://lter.jornada.nmsu.edu/for_researchers) and contact the Research Site Manager, John Anderson (<janderso@nmsu.edu>).
