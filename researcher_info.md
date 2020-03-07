@@ -6,7 +6,7 @@ layout: default
 
 Jornada PIs, postdocs, students, staff scientists and others who contribite to research at the Jornada should be aware of the standards and requirements for collecting and documenting their research data. 
 
-Data and metadata submission requirements for Jornada researchers are [outlined on the website](https://lter.jornada.nmsu.edu/for_researchers). 
+Data and metadata submission requirements for Jornada researchers are [outlined on the website](https://lter.jornada.nmsu.edu/lter/for_researchers). 
 
 ## Metadata templates
 
