@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
 title: "Information Management and Data Science at"
-description: "Resources for researchers and data managers at the Jornada Basin LTER. Contact:" mailto:datamanager.jrn.lter@gmail.com
+description: "Resources for researchers and data managers at the Jornada Basin LTER. Contact: datamanager.jrn.lter@gmail.com"
 logo: ./images/logo-LTER.png
 
 highlighter: rouge
