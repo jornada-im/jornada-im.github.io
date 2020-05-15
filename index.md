@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Welcome to the Jornada IM (Information Management) site. We support data management, informatics, and data science activities associated with research at the [Jornada Basin LTER](https://lter.jornada.nmsu.edu) and [Jornada Experimental Range](https://jornada.nmsu.edu). **This site is under construction**
+Welcome to the Jornada IM (Information Management) site. We support data management, informatics, and data science activities associated with research at the [Jornada Basin LTER (JRN)](https://lter.jornada.nmsu.edu) and [Jornada Experimental Range (JER)](https://jornada.nmsu.edu). **This site is under construction**
 
 ## For Researchers
 
@@ -32,6 +32,6 @@ Visit the [Guide to Jornada-IM GitHub repositories](https://github.com/jornada-i
 
 ## Contact
 
-For questions about collecting, publishing, and accessing Jornada Basin LTER data or metadata please contact the site Information Manager (<datamanager.jrn.lter@gmail.com>).
+For questions about collecting, publishing, and accessing Jornada data or metadata please contact the site Information Manager (<datamanager.jrn.lter@gmail.com>).
 
-If you are plannning to conduct a new research project at the Jornada Basin LTER, see [the website](https://lter.jornada.nmsu.edu/lter/for_researchers) and contact the Research Site Manager, John Anderson (<janderso@nmsu.edu>).
+If you are plannning to conduct a new research project at the Jornada, see the [JRN website](https://lter.jornada.nmsu.edu/lter/for_researchers) or the [JER website](https://jornada.nmsu.edu/data/documentation) (the process is similar for both) and contact the Research Site Manager, John Anderson (<janderso@nmsu.edu>).
