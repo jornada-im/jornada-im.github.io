@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Welcome to the Jornada IM (Information Management) site. We support data management, informatics, and data science activities associated with research at the [Jornada Basin LTER](https://jornada.nmsu.edu/lter). **This site is under construction**
+Welcome to the Jornada IM (Information Management) site. We support data management, informatics, and data science activities associated with research at the [Jornada Basin LTER](https://lter.jornada.nmsu.edu) and [Jornada Experimental Range](https://jornada.nmsu.edu). **This site is under construction**
 
 ## For Researchers
 
