@@ -25,4 +25,4 @@ The Jornada IM team is developing comprehensive documentation pages covering the
 
 Part of this documentation, the JRN Data Management Plan, developed for the 2020 LTER proposal, outlines current data management practices and future initiatives of the IM team.
 
-* [JRN LTER Data Management Plan (DRAFT)](https://jornada-im.github.io/documentation/JRN_LTER_data_management_plan.v3)
+* [JRN LTER Data Management Plan](https://jornada-im.github.io/documentation/JRN_LTER_data_management_plan.v3)

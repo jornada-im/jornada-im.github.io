@@ -34,4 +34,4 @@ Visit the [Guide to Jornada-IM GitHub repositories](https://github.com/jornada-i
 
 For questions about collecting, publishing, and accessing Jornada data or metadata please contact the site Information Manager (<datamanager.jrn.lter@gmail.com>).
 
-If you are plannning to conduct a new research project at the Jornada, see the [JRN website](https://lter.jornada.nmsu.edu/lter/for_researchers) or the [JER website](https://jornada.nmsu.edu/ltar/data/documentation) (the process is similar for both) and contact the Research Site Manager, John Anderson (<janderso@nmsu.edu>).
+If you are plannning to conduct a new research project at the Jornada, see the [JRN website](https://lter.jornada.nmsu.edu/for-researchers) or the [JER website](https://jornada.nmsu.edu/ltar/data/documentation) (the requirements are similar for both) and contact the Research Site Manager, John Anderson (<janderso@nmsu.edu>).
