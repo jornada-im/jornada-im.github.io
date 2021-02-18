@@ -13,7 +13,7 @@ Data and metadata submission requirements for Jornada researchers are [outlined 
 When starting a new data collection effort or getting ready to publish an existing one, it helps to have a metadata template. The documents below will help you fill in all necessary and relevant metadata to accompany your data for publication. Completed templates and data files should be sent to the Jornada IM team.
 
 * Get the [Jornada metadata template](https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.docx) (.docx).
-* While writing metadata, the [Jornada metadata standards](https://github.com/jornada-im/jrn_metadata/raw/main/JRN_metadata_standards.docx) (.docx) and [keyword thesauri](https://github.com/jornada-im/jrn_metadata/raw/main/keyword_thesauri.xlsx) (.xlsx) documents are helpful, but not required.
+* While writing metadata, the [Jornada metadata standards](https://github.com/jornada-im/documentation/raw/main/standards/JRN_metadata_standards.docx) (.docx) and [keyword thesauri](https://github.com/jornada-im/documentation/raw/main/standards/keyword_thesauri.xlsx) (.xlsx) documents are helpful, but not required.
 
 
 ## Other resources
