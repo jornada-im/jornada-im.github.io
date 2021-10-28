@@ -6,7 +6,12 @@ layout: default
 
 Jornada PIs, postdocs, students, staff scientists and others who contribite to research at the Jornada should be aware of the standards and requirements for collecting and documenting their research data. 
 
-Data and metadata submission requirements for Jornada researchers are [outlined on the JRN LTER  website](https://lter.jornada.nmsu.edu/for-researchers) or the [JER website](https://jornada.nmsu.edu/ltar/data/documentation) (the requirements are similar). 
+Data and metadata submission requirements for Jornada researchers are [outlined on the JRN LTER  website](https://lter.jornada.nmsu.edu/for-researchers) or the [JER website](https://jornada.nmsu.edu/ltar/data/documentation) (the requirements are similar).
+
+<figure>
+  <img src="img/researcher_datapublish_steps.svg" width="900px" align="center"/>
+  <figcaption><em>Figure 1: A simplified schematic of how to publish a Jornada dataset.</em></figcaption>
+</figure><br><br>
 
 ## Metadata templates
 
