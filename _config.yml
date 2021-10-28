@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
 title: "Information Management and Data Science at"
-description: "Resources for researchers and data managers at the Jornada Basin LTER and Jornada Experimental Range. Contact: datamanager.jrn.lter@gmail.com"
-logo: ./images/logo-LTER.png
+description: "Resources for researchers and data managers at the Jornada Basin LTER and Jornada Experimental Range. Contact: jornada.data@nmsu.edu"
+logo: ./img/logo-footer.svg
 
 highlighter: rouge
