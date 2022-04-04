@@ -4,13 +4,13 @@ layout: default
 
 Welcome to the Jornada IM (Information Management) site. We support data management, informatics, and data science activities associated with research at the [Jornada Basin LTER (JRN)](https://lter.jornada.nmsu.edu) and [Jornada Experimental Range (JER)](https://jornada.nmsu.edu).
 
-**This site is under construction.** Some of the links below will be incomplete.
+**This site is a work in progress.** Report problems and suggest additions in the [issue tracker](https://github.com/jornada-im/jornada-im.github.io/issues).
 
 ## I'm a researcher and I need to...
 
 * [Get approved to do research at the Jornada](researcher_info.md#research-approval-and-policies)
 * [Clean and describe my research data (data QA/QC, metadata)](researcher_info.md#cleaning-and-describing-data)
-* [Submit and publish a dataset](researcher_info.md#publishing-datasets)
+* [Submit or publish a dataset](researcher_info.md#publishing-datasets)
 * [Update project, personnel, or website information](researcher_info.md#updating-project-information)
 * [Find Jornada datasets or other information](researcher_info.md#jornada-data-discovery)
 * [Cite a Jornada dataset or funding](researcher_info.md#citing-the-jornada)
@@ -20,7 +20,7 @@ Welcome to the Jornada IM (Information Management) site. We support data managem
 
 * [Learn more about a particular dataset](im_info.md#dataset-tracking)
 * [Find templates, standards, or tools for data management](im_info.md#data-management-resources)
-* [Read or write the IM system documentation](https://jornada-im.github.io/documentation)
+* [Read or write the full IM system documentation](https://jornada-im.github.io/documentation)
 
 ## More info
 
