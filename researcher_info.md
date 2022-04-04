@@ -37,12 +37,16 @@ A metadata template will help you fill in all necessary and relevant metadata to
 
 # Publishing datasets
 
-Preparation and publication of a Jornada dataset is usually an iterative process (Figure 1). Researchers submit data and metadata to a Jornada Information Manager who then securely archives the data and checks these items for quality and consistency. Usually there is a period of communication and updates between the IM and the researcher until the dataset is ready for publication. Once it is, the IM encodes the data into something called an EML file, and then sends it, with the data, to the Environmental Data Initiative repository (EDI) as a published dataset. There are other variations on this process, depending on the data, but this is the most common.
+Datasets, which include data and metadata describing that data, that are generated from Jornada research projects should be submitted to the IM team (<jornada.data@nmsu.edu>) regularly according the policy outlined above. Once submitted, preparation and publication of a Jornada dataset is usually an iterative process (Figure 1). Researchers submit data and metadata to a Jornada Information Manager who then securely archives the data and checks these items for quality and consistency. Usually there is a period of communication and updates between the IM and the researcher until the dataset is ready for publication. Once it is, the IM encodes the data into something called an EML file, and then sends it, with the data, to the Environmental Data Initiative repository (EDI) as a published dataset. There are other variations on this process, depending on the data, but this is the most common.
 
 <figure>
   <img src="img/researcher_datapublish_steps.svg" width="1100px" align="center"/>
   <figcaption><em>Figure 1: A simplified schematic of how to publish a Jornada dataset.</em></figcaption>
 </figure><br><br>
+
+# Updating project information
+
+Please regularly update the Jornada Research Site Manager with changes to projects, and send updates about project personnel or website information to the IM team (<jornada.data@nmsu.edu>)
 
 # Jornada data discovery
 
