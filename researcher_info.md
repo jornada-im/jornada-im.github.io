@@ -53,11 +53,11 @@ The goal of the Jornada IM system is to have as much Jornada data as possible ac
 * The [spatial data catalog](https://lter.jornada.nmsu.edu/spatial-data/) is a listing of a few of the most useful spatial datasets the Jornada has.
 
 
-# Citing Jornada data
+# Citing the Jornada
 
 Please cite Jornada data when you use it. You can do this in the reference section of a journal article, which is preferable, or the data availability statement of some journals. We'll are encouraging this practice more and more, and will be developing better guidelines and, we hope, data citation statistics in the future.
 
-# Jornada data management & learning more
+# Learn more about Jornada data management
 
 The Jornada IM team consists of both Jornada Basin LTER (JRN) and USDA-ARS Jornada Experimental Range (JER) staff. If you need to know more about how we manage data, or how you or your lab can do a better job with data, there are a number of opportunities to learn more.
 

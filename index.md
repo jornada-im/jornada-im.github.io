@@ -8,12 +8,12 @@ Welcome to the Jornada IM (Information Management) site. We support data managem
 
 ## I'm a researcher and I need to...
 
-* [Get approved to do research at the Jornada](researcher_info.md#research-approval)
+* [Get approved to do research at the Jornada](researcher_info.md#research-approval-and-policies)
 * [Clean and describe my research data (data QA/QC, metadata)](researcher_info.md#cleaning-and-describing-data)
 * [Publish a dataset](researcher_info.md#publishing-datasets)
 * [Find Jornada datasets or other information](researcher_info.md#jornada-data-discovery)
 * [Cite a Jornada dataset or funding](researcher_info.md#citing-the-jornada)
-* [Learn more about Jornada data policies and information management](researcher_info.md#jornada-data-management)
+* [Learn more about Jornada data management](researcher_info.md#learn-more-about-jornada-data-management)
 
 ## I'm a data manager and I need to...
 
