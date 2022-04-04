@@ -46,7 +46,7 @@ Datasets, which include data and metadata describing that data, that are generat
 
 # Updating project information
 
-Please regularly update the Jornada Research Site Manager with changes to projects, and send updates about project personnel or website information to the IM team (<jornada.data@nmsu.edu>)
+Please update the Jornada Research Site Manager (<janderso@nmsu.edu>) with changes to projects using updated ResNotif forms at least once per year. Send updates about project personnel or website information to the IM team (<jornada.data@nmsu.edu>) as necessary.
 
 # Jornada data discovery
 
