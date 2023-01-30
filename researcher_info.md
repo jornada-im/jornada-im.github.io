@@ -36,7 +36,7 @@ A metadata template is a document with a structure and cues that help you collec
 
 The EDI repository has created a web app called [ezEML](https://ezEML.edirepository.org) for describing research datasets and creating standardized metadata documents for publication (EML). The tool is still under development but is very functional and offers excellent instruction and cues for creating well documented metadata documents. There is a Jornada EML template available on the site, so the recommended process for Jornada researchers is:
 
-  1. Log in to [ezEML]((https://ezEML.edirepository.org) using a Google, GitHub, or ORCID account.
+  1. Log in to [ezEML](https://ezEML.edirepository.org) using a Google, GitHub, or ORCID account.
   2. Create a new EML document using the "EML Documents > New from Template"
   3. Navigate to the "LTER/JRN/JRN_template_general" template to select the Jornada template.
   4. Give the document a name - you can save your metadata and then return to this document anytime.
