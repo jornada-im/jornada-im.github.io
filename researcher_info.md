@@ -26,14 +26,27 @@ The Jornada IM team strives to uphold high data publishing standards, so Jornada
 
 The Jornada IM team applies its signifiant experience and a variety of tools during the quality assurance and quality control (QA/QC) of long-term Jornada datasets. For data managed by individual researchers, the Jornada IM team leaves most data QA/QC practices up to the individual (or lab), but is happy to help when asked. For a simple overview and some resources useful for QA/QC of tabular data, see [the second phase](https://environmentaldatainitiative.org/five-phases-of-data-publishing/phase-2/) in EDI's 5 phases of data publishing.
 
-Once data are clean and ready to analyze or publish, it is best to describe the data with metadata that is as detailed as needed to allow interpretation and re-use. [EDI's five phases](https://environmentaldatainitiative.org/resources/five-phases-of-data-publishing/phase-3/) has more guidance here, and the Jornada IM team tries to offer extensive assistance to researchers who need to describe their datasets for publication. Its a good idea to start collecting and organizing metadata as soon as you start collecting data, and one of the simplest ways to do this may be with one of the Jornada metadata templates we've created.
+Once data are clean and ready to analyze or publish, it is best to describe the data with metadata that is as detailed as needed to allow interpretation and re-use. [EDI's five phases](https://environmentaldatainitiative.org/resources/five-phases-of-data-publishing/phase-3/) has more guidance here, and the Jornada IM team tries to offer extensive assistance to researchers who need to describe their datasets for publication. Its a good idea to start collecting and organizing metadata as soon as you start collecting data. There are two recommended ways to collect and organize metadata: Jornada metadata templates or EDI's ezEML tool. These are described below.
 
 ## Metadata templates
 
-A metadata template will help you fill in all necessary and relevant metadata to accompany your data for publication. The [Jornada metadata template](https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.docx) is a Word file (.docx) with a section and instructions for each essential component of metadata that should accompany a published dataset. It also includes some non-essential, but still useful metadata elements.  Completed templates and data files should be sent to the Jornada IM team.
+A metadata template is a document with a structure and cues that help you collect the essential metadata needed to describe a published dataset. We have created Jornada metadata templates in [MS Word (.docx)](https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.docx) or [Excel (.xlsx )](https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.xlsx) formats. These templates contain sections for all critial pieces of metadata, along with instructions on what to include and how to structure the information.  The [Excel version](https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.xlsx) is slightly more detailed and well documented, and may be useful for complex datasets. Completed templates and accompanying data files should be sent to the Jornada IM team (<mailto:jornada.data@nmsu.edu>).
 
-* We are currently working on some other options for metadata collection, including spreadsheets and web forms, that will appear here in the future. 
-* While writing metadata, the [Jornada metadata standards](https://github.com/jornada-im/documentation/raw/main/standards/JRN_metadata_standards.docx) (.docx) and [keyword thesauri](https://github.com/jornada-im/documentation/raw/main/standards/keyword_thesauri.xlsx) (.xlsx) documents are helpful, but not required.
+## ezEML
+
+The EDI repository has created a web app called [ezEML](https://ezEML.edirepository.org) for describing research datasets and creating standardized metadata documents for publication (EML). The tool is still under development but is very functional and offers excellent instruction and cues for creating well documented metadata documents. There is a Jornada EML template available on the site, so the recommended process for Jornada researchers is:
+
+    1. Log in to [ezEML]((https://ezEML.edirepository.org) using a Google, GitHub, or ORCID account.
+    2. Create a new EML document using the "EML Documents > New from Template"
+    3. Navigate to the "LTER/JRN/JRN_template_general" template to select the Jornada template.
+    4. Give the document a name - you can save your metadata and then return to this document anytime.
+    5. Populate the various elements of metadata using the sequence of forms available on the left. You will also upload and describe your data files in the ezEML app. Each section of the EML document will have help available ("?" icons) to explain what you should enter. If using the Jornada template, several fields will already be populated.
+    6. To check the completeness and validity of your EML document use the "Check metadata" and "Check data tables" tools at the bottom of the menu. When the indicators are green, and there are no required elements listed to fill in, the EML document is nearly ready to submit.
+    7. When ready, DO NOT USE THE "Send to EDI" option - please use "Send to colleague" to send a link to the dataset to the Jornada Information Managers (<mailto:jornada.data@nmsu.edu>).
+
+## General Jornada metadata guidelines
+
+While writing metadata, the [Jornada metadata standards](https://github.com/jornada-im/documentation/raw/main/standards/JRN_metadata_standards.docx) (.docx) and [keyword thesauri](https://github.com/jornada-im/documentation/raw/main/standards/keyword_thesauri.xlsx) (.xlsx) documents are helpful, but not required.
 
 # Publishing datasets
 
