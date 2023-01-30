@@ -26,6 +26,7 @@ Welcome to the Jornada IM (Information Management) site. We support data managem
 
 * [IM team publications, presentations, videos, etc](im_pubs.md)
 * [Data management references](refs_and_links.md)
+* [JEDS (Jornada Environmental Data Science) tutorials](https://jornada-im.github.io/JEDS)
 
 ## Contact us
 
