@@ -15,7 +15,7 @@ All approved research projects at the Jornada must agree to a data sharing and a
 2. Keep research project information up to date
     - We ask that approved projects submit any major post-approval changes to the project as a revised ResNotif form, or at a minimum regularly provide updates on the project, its personnel, and progress.
 3. Acknowledge Jornada LTER and USDA-ARS support
-    - The support recieved, name of the program, and relevant grant numbers should be included in the acknowledgement section of any journal article, dissertation, or other publication. Support is defined as direct funding of research or personnel costs allocated from the Jornada grants, fellowship support to graduate students, logistical or data collection support from the Jornada field crew, or data management services from the Jornada Information Management team.
+    - The support received, name of the program, and relevant grant numbers should be included in the acknowledgement section of any journal article, dissertation, or other publication. Support is defined as direct funding of research or personnel costs allocated from the Jornada grants, fellowship support to graduate students, logistical or data collection support from the Jornada field crew, or data management services from the Jornada Information Management team.
 4. Cite the Jornada LTER and USDA-ARS data used in your research
     - When research findings involving Jornada data appear in a publication (journal article, dissertation, website, etc.), please include a citation and link to the original data. For already-published long-term datasets include a DOI link at a minimum, and if possible, a full citation in the reference section (e.g. in a journal article). If the data are new and unpublished, please publish the dataset AND cite it in the publication.
 
@@ -24,13 +24,13 @@ The Jornada IM team strives to uphold high data publishing standards, so Jornada
 
 # Cleaning and describing data
 
-The Jornada IM team has a significant amount of experience and a variety of tools to draw on for quality assurance and quality control (QA/QC) of long-term Jornada datasets. For data managed by individual researchers, the Jornada IM team leaves most data QA/QC practices up to the individual (or lab), but we are happy to advise when asked. For a simple overview and some resources useful for QA/QC of tabular data, see [some EDI recomendations](https://edirepository.org/resources/cleaning-data-and-quality-control).
+The Jornada IM team has a significant amount of experience and a variety of tools to draw on for quality assurance and quality control (QA/QC) of long-term Jornada datasets. For data managed by individual researchers, the Jornada IM team leaves most data QA/QC practices up to the individual (or lab), but we are happy to advise when asked. For a simple overview and some resources useful for QA/QC of tabular data, see [some EDI recommendations](https://edirepository.org/resources/cleaning-data-and-quality-control).
 
 Once data are clean and ready to analyze or publish, it is best to describe the data with metadata that is as detailed as needed to allow interpretation and re-use. [The EDI repository](https://edirepository.org/resources/creating-metadata-for-publication) has more guidance here, and the Jornada IM team tries to offer extensive assistance to researchers who need to describe their datasets for publication. Its a good idea to start collecting and organizing metadata as soon as you start collecting data. There are two recommended ways to collect and organize metadata: Jornada metadata templates or EDI's ezEML tool. These are described below.
 
 ## Metadata templates
 
-A metadata template is a document with a structure and cues that help you collect the essential metadata needed to describe a published dataset. We have created Jornada metadata templates in [MS Word (.docx)](https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.docx) or [Excel (.xlsx)](https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.xlsx) formats. These templates contain sections for all critial pieces of metadata, along with instructions on what to include and how to structure the information.  The [Excel version](https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.xlsx) is slightly more detailed and well documented, and may be useful for complex datasets. Completed templates and accompanying data files should be sent to the Jornada IM team (<mailto:jornada.data@nmsu.edu>).
+A metadata template is a document with a structure and cues that help you collect the essential metadata needed to describe a published dataset. We have created Jornada metadata templates in [MS Word (.docx)](https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.docx) or [Excel (.xlsx)](https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.xlsx) formats. These templates contain sections for all critical pieces of metadata, along with instructions on what to include and how to structure the information.  The [Excel version](https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.xlsx) is slightly more detailed and well documented, and may be useful for complex datasets. Completed templates and accompanying data files should be sent to the Jornada IM team (<mailto:jornada.data@nmsu.edu>).
 
 ## ezEML
 
@@ -66,7 +66,7 @@ Please update the Jornada Research Site Manager (<janderso@nmsu.edu>) with chang
 The goal of the Jornada IM system is to have as much Jornada data as possible accessible through the data catalogs and other applications on our websites. There are several such catalogs and apps:
 * The [JRN LTER primary data catalog](https://lter.jornada.nmsu.edu/data-catalog/) currently provides access to all Jornada data held in the EDI repository.
 * On the same page, a [catalog for data in other repositories](https://lter.jornada.nmsu.edu/data-catalog/#uagb-tabs__tab1) provides access to Jornada data held outside of EDI.
-* The [interactive data viewer](https://lter.jornada.nmsu.edu/interactive-data-viewer/) allows map-based browsing of some of our long-term meterology and ecology datasets collected at the Jornada.
+* The [interactive data viewer](https://lter.jornada.nmsu.edu/interactive-data-viewer/) allows map-based browsing of some of our long-term meteorology and ecology datasets collected at the Jornada.
 * The [spatial data catalog](https://lter.jornada.nmsu.edu/spatial-data/) is a listing of a few of the most useful spatial datasets the Jornada has.
 
 
