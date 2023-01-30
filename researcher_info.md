@@ -6,9 +6,9 @@ This page was written by Jornada information managers (IMs) to provide a concise
 
 # Research approval and policies
 
-Most new research projects are initiated through the Jornada Research Site Manager, John Anderson (<janderso@nmsu.edu>). The [JRN website](https://lter.jornada.nmsu.edu/for-researchers) or the [JER website](https://jornada.nmsu.edu/ltar/data/documentation) are the best source of information on this process, and have the current forms needed. To begin the approval process, a potential researcher submits a Research Notification (ResNotif) form, which describes the planned location, research activities, personnel, and other important project information, to John Anderson. After review, and after any necessary changes to the plan are made, the project may be approved to begin.
+Most new research projects are initiated through the Jornada Research Site Manager, John Anderson (<janderso@nmsu.edu>). The [JRN website](https://lter.jornada.nmsu.edu/for-researchers) or the [JER website](https://jornada.nmsu.edu/researcher-information) are the best source of information on this process, and have the current forms needed. To begin the approval process, a potential researcher submits a Research Notification (ResNotif) form, which describes the planned location, research activities, personnel, and other important project information, to John Anderson. After review, and after any necessary changes to the plan are made, the project may be approved to begin.
 
-All approved research projects at the Jornada must agree to a data sharing and acknowledgement policy. The requirements for Jornada researchers are, again, detailed on the [JRN](https://lter.jornada.nmsu.edu/for-researchers) or [JER](https://jornada.nmsu.edu/ltar/data/documentation) websites, but to summarize, researchers should:
+All approved research projects at the Jornada must agree to a data sharing and acknowledgement policy. The requirements for Jornada researchers are, again, detailed on the [JRN](https://lter.jornada.nmsu.edu/for-researchers) or [JER](https://jornada.nmsu.edu/researcher-information) websites, but to summarize, researchers should:
 
 1. Submit research data and metadata for publication
     - We require most researchers to submit data and metadata yearly to our research data archive. We publish this data in open-access repositories at the time research results are peer-reviewed and published, or no later than 2 years after collection. This keeps the program in step with the [LTER data policy](https://lternet.edu/data-access-policy/) and other relevant guidelines.
@@ -24,7 +24,7 @@ The Jornada IM team strives to uphold high data publishing standards, so Jornada
 
 # Cleaning and describing data
 
-The Jornada IM team has a significant amount of experience and a variety of tools to draw on for quality assurance and quality control (QA/QC) of long-term Jornada datasets. For data managed by individual researchers, the Jornada IM team leaves most data QA/QC practices up to the individual (or lab), but we are happy to advise when asked. For a simple overview and some resources useful for QA/QC of tabular data, see [some EDI recommendations](https://edirepository.org/resources/cleaning-data-and-quality-control).
+The Jornada IM team has a significant amount of experience and a variety of tools to draw on for quality assurance and quality control (QA/QC) of long-term Jornada datasets. For data managed by individual researchers, the Jornada IM team leaves most data QA/QC practices up to the individual (or lab), but we are happy to advise when asked. For a simple overview and some resources useful for QA/QC of tabular data, see [ EDI's recommendations](https://edirepository.org/resources/cleaning-data-and-quality-control).
 
 Once data are clean and ready to analyze or publish, it is best to describe the data with metadata that is as detailed as needed to allow interpretation and re-use. [The EDI repository](https://edirepository.org/resources/creating-metadata-for-publication) has more guidance here, and the Jornada IM team tries to offer extensive assistance to researchers who need to describe their datasets for publication. Its a good idea to start collecting and organizing metadata as soon as you start collecting data. There are two recommended ways to collect and organize metadata: Jornada metadata templates or EDI's ezEML tool. These are described below.
 
@@ -63,11 +63,17 @@ Please update the Jornada Research Site Manager (<janderso@nmsu.edu>) with chang
 
 # Jornada data discovery
 
-The goal of the Jornada IM system is to have as much Jornada data as possible accessible through the data catalogs and other applications on our websites. There are several such catalogs and apps:
-* The [JRN LTER primary data catalog](https://lter.jornada.nmsu.edu/data-catalog/) currently provides access to all Jornada data held in the EDI repository.
-* On the same page, a [catalog for data in other repositories](https://lter.jornada.nmsu.edu/data-catalog/#uagb-tabs__tab1) provides access to Jornada data held outside of EDI.
-* The [interactive data viewer](https://lter.jornada.nmsu.edu/interactive-data-viewer/) allows map-based browsing of some of our long-term meteorology and ecology datasets collected at the Jornada.
-* The [spatial data catalog](https://lter.jornada.nmsu.edu/spatial-data/) is a listing of a few of the most useful spatial datasets the Jornada has.
+One goal of the Jornada IM system is to make the vast majority of Jornada data accessible through the [Jornada website](https://lter.jornada.nmsu.edu) and other avenues. On the Jornada website there are two primary data access points:
+
+1. The [JRN LTER primary data catalog](https://lter.jornada.nmsu.edu/data-catalog/) currently provides access to Jornada data held in multiple repositories with a faceted interface. The five tabs in the data catalog are:
+
+    * [Tab 1](https://lter.jornada.nmsu.edu/data-catalog/#uagb-tabs__tab0): A list of links to "signature" long-term datasets collected at JRN, arranged by important research themes.
+    * [Tab 2](https://lter.jornada.nmsu.edu/data-catalog/#uagb-tabs__tab1): A searchable listing of all datasets held in our primary data catalog, hosted at the EDI repository.
+    * [Tab3](https://lter.jornada.nmsu.edu/data-catalog/#uagb-tabs__tab2): Is a searchable listing of Jornada data held in other repositories (not EDI).
+    * [Tab 4](https://lter.jornada.nmsu.edu/data-catalog/#uagb-tabs__tab3): A listing of a few of the most useful spatial datasets the Jornada has. This catalog will be updated soon.
+    * [Tab 5](https://lter.jornada.nmsu.edu/data-catalog/#uagb-tabs__tab4): A listing of Jornada "data partnerships", with relevant links to data catalogs provided and managed by collaborating research networks working in the Jornada Basin are.
+
+2. The [interactive data viewer](https://lter.jornada.nmsu.edu/interactive-data-viewer/) allows map-based browsing of some of our long-term meteorology and ecology datasets collected at the Jornada.
 
 
 # Citing the Jornada
