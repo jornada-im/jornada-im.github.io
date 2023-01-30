@@ -36,13 +36,13 @@ A metadata template is a document with a structure and cues that help you collec
 
 The EDI repository has created a web app called [ezEML](https://ezEML.edirepository.org) for describing research datasets and creating standardized metadata documents for publication (EML). The tool is still under development but is very functional and offers excellent instruction and cues for creating well documented metadata documents. There is a Jornada EML template available on the site, so the recommended process for Jornada researchers is:
 
-    1. Log in to [ezEML]((https://ezEML.edirepository.org) using a Google, GitHub, or ORCID account.
-    2. Create a new EML document using the "EML Documents > New from Template"
-    3. Navigate to the "LTER/JRN/JRN_template_general" template to select the Jornada template.
-    4. Give the document a name - you can save your metadata and then return to this document anytime.
-    5. Populate the various elements of metadata using the sequence of forms available on the left. You will also upload and describe your data files in the ezEML app. Each section of the EML document will have help available ("?" icons) to explain what you should enter. If using the Jornada template, several fields will already be populated.
-    6. To check the completeness and validity of your EML document use the "Check metadata" and "Check data tables" tools at the bottom of the menu. When the indicators are green, and there are no required elements listed to fill in, the EML document is nearly ready to submit.
-    7. When ready, DO NOT USE THE "Send to EDI" option - please use "Send to colleague" to send a link to the dataset to the Jornada Information Managers (<mailto:jornada.data@nmsu.edu>).
+  1. Log in to [ezEML]((https://ezEML.edirepository.org) using a Google, GitHub, or ORCID account.
+  2. Create a new EML document using the "EML Documents > New from Template"
+  3. Navigate to the "LTER/JRN/JRN_template_general" template to select the Jornada template.
+  4. Give the document a name - you can save your metadata and then return to this document anytime.
+  5. Populate the various elements of metadata using the sequence of forms available on the left. You will also upload and describe your data files in the ezEML app. Each section of the EML document will have help available ("?" icons) to explain what you should enter. If using the Jornada template, several fields will already be populated.
+  6. To check the completeness and validity of your EML document use the "Check metadata" and "Check data tables" tools at the bottom of the menu. When the indicators are green, and there are no required elements listed to fill in, the EML document is nearly ready to submit.
+  7. When ready, DO NOT USE THE "Send to EDI" option - please use "Send to colleague" to send a link to the dataset to the Jornada Information Managers (<mailto:jornada.data@nmsu.edu>).
 
 ## General Jornada metadata guidelines
 
