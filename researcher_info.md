@@ -24,9 +24,9 @@ The Jornada IM team strives to uphold high data publishing standards, so Jornada
 
 # Cleaning and describing data
 
-The Jornada IM team has a significant amount of experience and a variety of tools to draw on for quality assurance and quality control (QA/QC) of long-term Jornada datasets. For data managed by individual researchers, the Jornada IM team leaves most data QA/QC practices up to the individual (or lab), but we are happy to advise when asked. For a simple overview and some resources useful for QA/QC of tabular data, see [ EDI's recommendations](https://edirepository.org/resources/cleaning-data-and-quality-control).
+The Jornada IM team has a significant amount of experience and a variety of tools to draw on for quality assurance and quality control (QA/QC) of long-term Jornada datasets. For data managed by individual researchers, the Jornada IM team leaves most data QA/QC up to the research group or individual, but we are happy to advise when asked. For a simple overview and some resources useful for QA/QC of tabular data, see [ EDI's recommendations](https://edirepository.org/resources/cleaning-data-and-quality-control).
 
-Once data are clean and ready to analyze or publish, it is best to describe the data with metadata that is as detailed as needed to allow interpretation and re-use. [The EDI repository](https://edirepository.org/resources/creating-metadata-for-publication) has more guidance here, and the Jornada IM team tries to offer extensive assistance to researchers who need to describe their datasets for publication. Its a good idea to start collecting and organizing metadata as soon as you start collecting data. There are two recommended ways to collect and organize metadata: Jornada metadata templates or EDI's ezEML tool. These are described below.
+Once data are clean and ready to analyze or publish, it is best to describe the data with metadata that is as detailed as needed to allow interpretation and re-use. [The EDI repository](https://edirepository.org/resources/creating-metadata-for-publication) has more guidance here, and the Jornada IM team tries to offer extensive assistance to researchers who need to describe their datasets for publication. Its a good idea to start collecting and organizing metadata as soon as you start collecting data. There are two recommended ways to collect and organize metadata: EDI's ezEML tool or Jornada metadata templates. These are described below.
 
 ## ezEML
 
@@ -41,9 +41,9 @@ The EDI repository has created a web app called [ezEML](https://ezEML.edireposit
   7. When ready, click "Submit/Share Package" and then "Collaborate with Colleagues". **DO NOT USE "Submit Package to EDI" or we may miss your dataset**.
   8. On the "Invite a Collaborator" screen share the dataset with a Jornada data manager (<mailto:jornada.data@nmsu.edu>).
 
-  At this point, the Jornada IM Team will receive a notification and can access your dataset in ezEML to review, edit, and submit to EDI.
+  At this point, the Jornada IM Team will receive a notification and can access your dataset in ezEML to review, edit, and publish to EDI.
 
-  ## Metadata templates
+## Metadata templates
 
 A metadata template is a document with a structure and cues that help you collect the essential metadata needed to describe a published dataset. We have created Jornada metadata templates in [MS Word (.docx)](https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.docx) or [Excel (.xlsx)](https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.xlsx) formats. These templates contain sections for all critical pieces of metadata, along with instructions on what to include and how to structure the information.  The [Excel version](https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.xlsx) is slightly more detailed and may be useful for complex datasets. Completed templates and accompanying data files should be sent to the Jornada IM team (<mailto:jornada.data@nmsu.edu>).
 
