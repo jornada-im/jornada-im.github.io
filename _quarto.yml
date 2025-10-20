@@ -44,7 +44,7 @@ website:
         - href: docs/researcher/overview.qmd
           text: Overview
         - href: docs/refs_and_links.md
-          text: "Userful references and links"
+          text: "Useful references and links"
     - title: "IM Guide"
       #id: im_docs
       style: floating
@@ -58,7 +58,7 @@ website:
             - href: docs/im/sysadmin/chapter-01-overview.qmd
               text: "Overview"
         - href: docs/refs_and_links.md
-          text: "Userful references and links"
+          text: "Useful references and links"
 
 execute:
   freeze: auto

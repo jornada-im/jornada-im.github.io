@@ -10,7 +10,7 @@ Report problems and suggest additions in the [issue tracker](https://github.com/
 
 * [Get approved to do research at the Jornada](docs/researcher/overview.qmd#research-approval-and-policies)
 * [Clean and describe my research data (data QA/QC, metadata)](docs/researcher/overview.qmd#cleaning-and-describing-data)
-* [Submit or publish a dataset](docs/researcher/overview.qmd##publishing-datasets)
+* [Submit or publish a dataset](docs/researcher/overview.qmd#publishing-datasets)
 * [Update project, personnel, or website information](docs/researcher/overview.qmd#updating-project-information)
 * [Find Jornada datasets or other information](docs/researcher/overview.qmd#jornada-data-discovery)
 * [Cite a Jornada dataset or funding](docs/researcher/overview.qmd#citing-the-jornada)

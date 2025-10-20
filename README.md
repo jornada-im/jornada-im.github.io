@@ -28,10 +28,28 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+## Jornada LTER IM documentation pages
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jornada-im/jornada-im.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+/docs contains documentation of the IM system
 
-### Support or Contact
+/standards contains data and metadata standards used for publishing JRN data
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+/reports contains periodic reports from the IM system
+
+not sure yet where these pages will end up.
+
+## standards
+
+A directory of documents about best practices and standards for metadata creation at Jornada Basin LTER.
+
+Please refer to these as you are packaging data and creating EML documents for Jornada Basin research products.
+
+**Edit as you see fit, but please track your changes when possible and Greg will try to sync with the GitHub version of this repository.**
+
+### Building the standards document
+
+    pandoc JRN_metadata_standards.md --toc --metadata date="$(date +%Y-%m-%d%n)" -o ../JRN_metadata_standards.docx
+
+### Building annual reports
+
+    pandoc JRN_IM_annual_report_2020.md --toc --metadata date="$(date +%Y-%m-%d%n)" -o ../JRN_IM_annual_report_2020.docx
