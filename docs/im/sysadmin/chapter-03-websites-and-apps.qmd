@@ -1,7 +1,7 @@
 ---
 title: "3. Websites and Web Applications"
 author: The Jornada Information Management Team
-date: last_updated
+date: last-modified
 ---
 
 # The JRN Website
