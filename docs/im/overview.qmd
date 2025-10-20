@@ -21,4 +21,3 @@ If you are wondering whether the content or format of a metadata file (EML) is c
 * [General Jornada metadata standards](https://jornada-im.github.io/documentation/JRN_metadata_standards) for all data packages (this is a bit out of date)
 * [Jornada keyword thesauri](https://github.com/jornada-im/documentation/raw/main/standards_src/keyword_thesauri.xlsx) (.xlsx) list keywords that should appear in all Jornada metadata files.
 * Also see the full [Jornada IM documentation pages](https://jornada-im.github.io/documentation)
-

@@ -86,4 +86,4 @@ The Jornada IM team consists of both Jornada Basin LTER (JRN) and USDA-ARS Jorna
 
 * Jornada Desert Ecology Short Course - The IM team presents there each year
 * [Data Therapy Thursday](https://www.google.com/calendar/event?eid=b3QzZ3U3MzBjZ2h1dnN0amJlZ2xpN2xoaW1fMjAyMjA0MDdUMjAzMDAwWiBkczVtNnF0NTRsYm9xYm85Z3QxNDhzcjJjMEBn)
-* See our [References](refs_and_links.md) and [IM publications and presentations page](im_pubs.md)
+* See our [References and links](../refs_and_links.qmd) page.
