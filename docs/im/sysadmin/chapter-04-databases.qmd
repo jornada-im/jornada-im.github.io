@@ -310,6 +310,10 @@ Restoring seems to be easiest with a command like:
 
 TODO: Flesh this out - how we do backups, how to restore them, especially during a potential server upgrade or other change?
 
+## Upgrade cluster to new version of postgres
+
+* Follow [this tutorial](https://www.yellowduck.be/posts/how-to-upgrade-postgresql-on-ubuntu-server)
+
 # Metabase schema and data model
 
 Including some issues.
