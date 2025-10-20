@@ -160,7 +160,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../docs/refs_and_links.md" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Userful references and links</span></a>
+ <span class="menu-text">Useful references and links</span></a>
   </div>
 </li>
     </ul>
@@ -173,7 +173,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#dataset-tracking" id="toc-dataset-tracking" class="nav-link active" data-scroll-target="#dataset-tracking">Dataset tracking</a></li>
+  <li><a href="#information-management-at-jornada-basin-lter" id="toc-information-management-at-jornada-basin-lter" class="nav-link active" data-scroll-target="#information-management-at-jornada-basin-lter">Information Management at Jornada Basin LTER</a>
+  <ul class="collapse">
+  <li><a href="#table-of-contents" id="toc-table-of-contents" class="nav-link" data-scroll-target="#table-of-contents">Table of contents</a></li>
+  </ul></li>
+  <li><a href="#dataset-tracking" id="toc-dataset-tracking" class="nav-link" data-scroll-target="#dataset-tracking">Dataset tracking</a></li>
   <li><a href="#data-management-resources" id="toc-data-management-resources" class="nav-link" data-scroll-target="#data-management-resources">Data management resources</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/im/overview.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -200,7 +204,105 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="information-management-at-jornada-basin-lter" class="level1">
+<h1>Information Management at Jornada Basin LTER</h1>
+<p>This is the full documentation for the Jornada Basin LTER Information Management system, covering technical aspects of our data publishing process, data management tools, and administration of public-facing information like the website and data catalog. Researchers and data users should start at the <a href="https://jornada-im.github.io/">Jornada IM web pages</a> to get started with Jornada data management. <strong>This is a DRAFT document.</strong></p>
+<section id="table-of-contents" class="level3">
+<h3 class="anchored" data-anchor-id="table-of-contents">Table of contents</h3>
+<p>Preface: <a href="JRN_LTER_data_management_plan.v3.md">The JRN LTER Data Management Plan</a></p>
+<p>Chapters:</p>
+<ol type="1">
+<li>Research &amp; data management overview
+<ul>
+<li><a href="chap1-overview.md#introduction">Introduction</a></li>
+<li><a href="chap1-overview.md#research-project-management">Research project management</a></li>
+<li><a href="chap1-overview.md#research-data-management">Research data management</a></li>
+<li><a href="chap1-overview.md#dataset-listings">Public dataset listings</a></li>
+<li><a href="chap1-overview.md#bibliographies">Bibliographies</a></li>
+<li><a href="chap1-overview.md#local-computing-resources">Local servers</a></li>
+<li><a href="chap1-overview.md#hosted-resources">Hosted services (external)</a></li>
+</ul></li>
+<li>Policy and procedures
+<ul>
+<li>Research notifications and approval</li>
+<li>Data access policies</li>
+<li>Metadata and data submission</li>
+</ul></li>
+<li>General systems administration
+<ul>
+<li><a href="server_admin.md">Server &amp; cloud administration</a></li>
+</ul></li>
+<li>Data collection and quality assurance
+<ul>
+<li>Archiving data on network shares</li>
+<li>GCE and MATLAB extensions</li>
+<li>Scripted QA/QC</li>
+</ul></li>
+<li>Metadata collection and standards
+<ul>
+<li><a href="jornada_metadata_standards.md">Metadata standards</a></li>
+</ul></li>
+<li>JRN Metabase
+<ul>
+<li><a href="chap-jrn-metabase.md#setup">Installation and configuration</a></li>
+<li><a href="chap-jrn-metabase.md#administration">Server and database administration</a></li>
+<li><a href="chap-jrn-metabase.md#metabase-schema-and-data-model">The LTER Metabase schema and data model</a></li>
+<li><a href="chap-jrn-metabase.md#populating-metabase">Populating a new database</a></li>
+<li><a href="chap-jrn-metabase.md#create-and-update-datasets">Create and update datasets</a></li>
+<li><a href="chap-jrn-metabase.md#postgres-links">PostgreSQL help links</a></li>
+</ul></li>
+<li>Publishing Jornada datasets
+<ul>
+<li><a href="chap-publishing-data.md#introduction">Overview, conventions, and standards</a></li>
+<li><a href="chap-publishing-data.md#make-eml-with-jrn-metabase-and-jerald">Making EML with JRN Metabase</a>
+<ul>
+<li>SOP for entering metadata in Metabase: <a href="SOP_Metadata_Publishing.docx">docx</a>, <a href="sop_metadata_publishing">web page</a> (draft)</li>
+</ul></li>
+<li><a href="chap-publishing-data.md#make-eml-with-emlassemblyline">Making EML with EMLassemblyline</a></li>
+</ul></li>
+<li>Project management
+<ol type="1">
+<li>Project database</li>
+<li>Personnel updates</li>
+<li>Publication updates</li>
+</ol></li>
+<li>The JRN website and other communication platforms
+<ul>
+<li><a href="chap-website-and-comm.md#the-jrn-website">The JRN Website</a> - an overview</li>
+<li><a href="chap-website-and-comm.md#website-content">Website content</a></li>
+<li><a href="chap-website-and-comm.md#website-apps">Website apps</a>
+<ul>
+<li><a href="chap-website-and-comm.md#data-catalogs">The data catalogs</a></li>
+<li><a href="chap-website-and-comm.md#zotero-bibliography">Zotero bibliography</a></li>
+<li><a href="chap-website-and-comm.md#interactive-data-viewer">Interactive data viewer</a></li>
+</ul></li>
+<li><a href="chap-website-and-comm.md#mailing-lists">Shared mailing lists</a></li>
+</ul></li>
+<li>Tools and apps
+<ul>
+<li>Guide to Jornada-IM repositories</li>
+<li>Analytics apps</li>
+<li>DSIS</li>
+</ul></li>
+<li>Hacks
+<ul>
+<li><a href="parse_trello_boards.md">Parse trello boards to CSV format</a></li>
+</ul></li>
+<li>External data, partnerships, and collaboration
+<ul>
+<li>Collaborations with USDA-ARS data managers</li>
+<li>Asombro data</li>
+<li>NEON data</li>
+</ul></li>
+<li>Annual reports
+<ul>
+<li><a href="reports/JRN_IM_annual_report_2020.md">2020</a></li>
+<li><a href="reports/JRN_IM_annual_report_2021.md">2021</a></li>
+</ul></li>
+</ol>
 <p>Jornada data managers, including the IM team, should follow LTER and Jornada standards and best practices when creating metadata files and publishing research data packages.</p>
+</section>
+</section>
 <section id="dataset-tracking" class="level1">
 <h1>Dataset tracking</h1>
 <p>We use Trello for this. For LTER datasets there are three Trello boards that represent how Jornada datasets are split into three categories:</p>
