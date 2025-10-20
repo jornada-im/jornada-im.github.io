@@ -1,0 +1,6 @@
+# Miscellaneous documents
+
+* [Jornada Metadata Standards guide](JRN_metadata_standards.docx) (out of date)
+* [Jornada keywords thesaurus](keyword_thesauri.xlsx) (also out of date)
+* Old [project and data documentation forms](documentationForms_old.zip)
+* An [old ResNotif form](resnotif_form_old.docx) for posterity

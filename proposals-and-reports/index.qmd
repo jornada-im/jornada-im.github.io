@@ -1,0 +1,5 @@
+# Recent proposals and reports
+
+* The [JRN-8 Data Management Plan](JRN_data_management_plan.LTER8.qmd) for the 2024 LTER renewal proposal.
+* The [JRN-VII Data Management Plan](JRN_data_management_plan.LTER7.qmd) for the 2020 LTER renewal proposal (after probation).
+* The [2020 JRN IM Annual Report](JRN_IM_annual_report_2020.qmd)

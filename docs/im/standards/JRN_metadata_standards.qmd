@@ -1,7 +1,7 @@
 ---
-title: Jornada Metadata Standards for EML Creation
+title: Jornada Dataset Metadata Standards
 author: The Information Management Team
-...
+---
 
 **If you edit this document please track your changes and send to Greg Maurer (gmaurer.jrn.lter@gmail.com).**
 

@@ -30,6 +30,12 @@ website:
         href: docs/researcher/overview.qmd
       - text: "IM Guide"
         href: docs/im/overview.qmd
+      - text: "Document Archive"
+        menu:
+          - templates/index.qmd
+          - proposals-and-reports/index.qmd
+          - archive/index.qmd
+        href: docs/im/overview.qmd
     tools:
       - icon: github
         href: https://github.com/jornada-im/jornada-im.github.io
@@ -51,12 +57,26 @@ website:
       collapse-level: 2
       contents:
         - href: docs/im/overview.qmd
-          text: Overview
+          text: "Overview"
+        - section: "Metadata standards"
+          contents: docs/im/standards/*
+        - section: "Procedures"
+          contents: docs/im/procedures/*
+        - section: "Hacks"
+          contents: docs/im/hacks/*
         - section: "Full IM System Documentation"
           href: docs/im/sysadmin/index.qmd
           contents:
             - href: docs/im/sysadmin/chapter-01-overview.qmd
               text: "Overview"
+            - href: docs/im/sysadmin/chapter-02-website-and-comm.qmd
+              text: "Website and communications"
+            - href: docs/im/sysadmin/chapter-03-jrn-metabase.qmd
+              text: "Metabase"
+            - href: docs/im/sysadmin/chapter-04-publishing-data.qmd
+              text: "Data publishing"
+            - href: docs/im/sysadmin/chapter-05-server-admin.qmd
+              text: "Server administration"
         - href: docs/refs_and_links.md
           text: "Useful references and links"
 

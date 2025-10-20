@@ -1,0 +1,18 @@
+# Forms and templates
+
+**Research approval**
+
+* To request approval to conduct research at the Jornada, fill out the [ResNotif form](Jornada_resnotif_form.docx) and send to [Conrad Nelson](mailto:cwnelson@nmsu.edu).
+
+**Data submission and publishing**
+
+We strongly recommend using the Environmental Data Initiative's [ezEML](https://ezeml.edirepository.org) application, but if this is not sufficient for your needs we have metadata templates that you may send to the [Jornada IM team](mailto:jornada.data@nmsu.edu).
+
+* [MS Word format](Jornada_metadata_template.docx) for relatively simple datasets with few tables.
+* [MS Excel format](Jornada_metadata_template.xlsx) for more complex datasets with multiple tables.
+
+**Data requests**
+
+Most data are openly available at the Jornada LTER [website data catalog](https://lter.jornada.nmsu.edu/data-catalog), but some spatial data are restricted access only.
+
+* Fill out the [Spatial Data Request](https://docs.google.com/forms/d/e/1FAIpQLSdJijSKE4C9G5pgB__yGelBx5j9OPBSKOoCg4MJP-eb-Isiew/viewform?usp=dialog) form to request restricted spatial data.
