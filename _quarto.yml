@@ -35,7 +35,6 @@ website:
           - templates/index.qmd
           - proposals-and-reports/index.qmd
           - archive/index.qmd
-        href: docs/im/overview.qmd
     tools:
       - icon: github
         href: https://github.com/jornada-im/jornada-im.github.io
