@@ -1,5 +1,5 @@
 ---
-layout: default
+title: Overview for Jornada Information Managers
 ---
 
 Jornada data managers, including the IM team, should follow LTER and Jornada standards and best practices when creating metadata files and publishing research data packages. 

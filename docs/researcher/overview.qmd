@@ -1,6 +1,3 @@
----
-layout: default
----
 
 This page was written by Jornada information managers (IMs) to provide a concise, but fairly comprehensive guide to research administration and data management for Jornada students and investigators, including PIs, postdocs, graduate students, undergraduate researchers, and staff scientists.
 
@@ -90,5 +87,3 @@ The Jornada IM team consists of both Jornada Basin LTER (JRN) and USDA-ARS Jorna
 * Jornada Desert Ecology Short Course - The IM team presents there each year
 * [Data Therapy Thursday](https://www.google.com/calendar/event?eid=b3QzZ3U3MzBjZ2h1dnN0amJlZ2xpN2xoaW1fMjAyMjA0MDdUMjAzMDAwWiBkczVtNnF0NTRsYm9xYm85Z3QxNDhzcjJjMEBn)
 * See our [References](refs_and_links.md) and [IM publications and presentations page](im_pubs.md)
-
-

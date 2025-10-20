@@ -1,0 +1,3 @@
+# Full IM system docs
+
+This book contains everything you need to know if you are one of the IMs for the Jornada.

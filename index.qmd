@@ -1,0 +1,32 @@
+Welcome to the Jornada Data Commons! This site is maintained by the Jornada IM (Information Management) team to support researchers and data managers working with data from the [Jornada Basin LTER (JRN)](https://lter.jornada.nmsu.edu) and [Jornada Experimental Range (JER)](https://jornada.nmsu.edu) programs.
+
+::: {.callout-caution collapse="false"}
+## This site is a work in progress!
+Report problems and suggest additions in the [issue tracker](https://github.com/jornada-im/jornada-im.github.io/issues).
+
+:::
+
+## I'm a researcher and I need to...
+
+* [Get approved to do research at the Jornada](docs/researcher/overview.qmd#research-approval-and-policies)
+* [Clean and describe my research data (data QA/QC, metadata)](docs/researcher/overview.qmd#cleaning-and-describing-data)
+* [Submit or publish a dataset](docs/researcher/overview.qmd##publishing-datasets)
+* [Update project, personnel, or website information](docs/researcher/overview.qmd#updating-project-information)
+* [Find Jornada datasets or other information](docs/researcher/overview.qmd#jornada-data-discovery)
+* [Cite a Jornada dataset or funding](docs/researcher/overview.qmd#citing-the-jornada)
+* [Learn more about Jornada data management](docs/researcher/overview.qmd#learn-more-about-jornada-data-management)
+
+## I'm a data manager and I need to...
+
+* [Learn more about a particular dataset](docs/im/overview.qmd#dataset-tracking)
+* [Find templates, standards, or tools for data management](docs/im/overview.qmd#data-management-resources)
+* [Read or write the full IM system documentation](docs/im/sysadmin/index.qmd)
+
+## More info
+
+* [Publications, presentations, videos, and other references](docs/refs_and_links.qmd)
+* [JEDS (Jornada Environmental Data Science) tutorials](https://jornada-im.github.io/JEDS)
+
+## Contact us
+
+For questions about collecting, analyzing, publishing, and accessing Jornada data or metadata please contact the IM team (<jornada.data@nmsu.edu>).
