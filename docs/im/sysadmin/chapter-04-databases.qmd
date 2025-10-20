@@ -1,6 +1,7 @@
 ---
-title: JRN Metabase
+title: "4. Databases"
 author: The Jornada Information Management Team
+date: last_updated
 ---
 
 # Setup

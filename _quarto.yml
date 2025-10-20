@@ -65,17 +65,17 @@ website:
           contents: docs/im/hacks/*
         - section: "Full IM System Documentation"
           href: docs/im/sysadmin/index.qmd
-          contents:
-            - href: docs/im/sysadmin/chapter-01-overview.qmd
-              text: "Overview"
-            - href: docs/im/sysadmin/chapter-02-website-and-comm.qmd
-              text: "Website and communications"
-            - href: docs/im/sysadmin/chapter-03-jrn-metabase.qmd
-              text: "Metabase"
-            - href: docs/im/sysadmin/chapter-04-publishing-data.qmd
-              text: "Data publishing"
-            - href: docs/im/sysadmin/chapter-05-server-admin.qmd
-              text: "Server administration"
+          contents: docs/im/sysadmin/*
+            # - href: docs/im/sysadmin/chapter-01-overview.qmd
+            #   text: "Overview"
+            # - href: docs/im/sysadmin/chapter-02-website-and-comm.qmd
+            #   text: "Website and communications"
+            # - href: docs/im/sysadmin/chapter-03-jrn-metabase.qmd
+            #   text: "Metabase"
+            # - href: docs/im/sysadmin/chapter-04-publishing-data.qmd
+            #   text: "Data publishing"
+            # - href: docs/im/sysadmin/chapter-05-server-admin.qmd
+            #   text: "Server administration"
         - href: docs/refs_and_links.md
           text: "Useful references and links"
 

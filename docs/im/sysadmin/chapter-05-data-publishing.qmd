@@ -1,6 +1,7 @@
 ---
-title: Publishing datasets
+title: "5. Data Publishing"
 author: The Jornada Information Management Team
+date: last_updated
 ---
 
 # Introduction

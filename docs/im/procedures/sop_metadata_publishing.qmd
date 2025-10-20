@@ -1,5 +1,8 @@
-# SOP for updating datasets in metabase
-
+---
+title: "SOP for updating datasets in metabase"
+author: Shelley Valdovinos
+date: last_updated
+---
 
 *The following are resources that can be referred to for information
 needed in order to enter or update datasets.*

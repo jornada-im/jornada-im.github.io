@@ -1,6 +1,7 @@
 ---
-title: Chapter 2 - The JRN website and other communication platforms
+title: "3. Websites and Web Applications"
 author: The Jornada Information Management Team
+date: last_updated
 ---
 
 # The JRN Website

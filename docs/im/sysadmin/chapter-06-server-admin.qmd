@@ -1,3 +1,9 @@
+---
+title: "6. Servers and Server Administration"
+author: The Jornada Information Management Team
+date: last_updated
+---
+
 # Server administration
 
 The Jornada IM system relies on some cloud servers at DigitalOcean (aka droplets). Generally these are running Ubuntu Server 20.04. Below are some tools and practices for setting up servers, networking between them, managing user access, transferring and securing data, and other administrative tasks.
