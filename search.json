@@ -839,6 +839,18 @@
     ]
   },
   {
+    "objectID": "docs/im/sysadmin/chapter-04-databases.html#upgrade-cluster-to-new-version-of-postgres",
+    "href": "docs/im/sysadmin/chapter-04-databases.html#upgrade-cluster-to-new-version-of-postgres",
+    "title": "4. Databases",
+    "section": "Upgrade cluster to new version of postgres",
+    "text": "Upgrade cluster to new version of postgres\n\nFollow this tutorial",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "4. Databases"
+    ]
+  },
+  {
     "objectID": "docs/im/sysadmin/chapter-04-databases.html#schema-overview",
     "href": "docs/im/sysadmin/chapter-04-databases.html#schema-overview",
     "title": "4. Databases",

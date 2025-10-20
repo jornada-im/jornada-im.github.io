@@ -306,6 +306,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#backup-the-database" id="toc-backup-the-database" class="nav-link" data-scroll-target="#backup-the-database">Backup the database</a></li>
   <li><a href="#copy-development-jrn-metabase-to-production" id="toc-copy-development-jrn-metabase-to-production" class="nav-link" data-scroll-target="#copy-development-jrn-metabase-to-production">Copy development JRN Metabase to production</a></li>
   <li><a href="#migrate-a-database-to-a-new-host" id="toc-migrate-a-database-to-a-new-host" class="nav-link" data-scroll-target="#migrate-a-database-to-a-new-host">Migrate a database to a new host</a></li>
+  <li><a href="#upgrade-cluster-to-new-version-of-postgres" id="toc-upgrade-cluster-to-new-version-of-postgres" class="nav-link" data-scroll-target="#upgrade-cluster-to-new-version-of-postgres">Upgrade cluster to new version of postgres</a></li>
   </ul></li>
   <li><a href="#metabase-schema-and-data-model" id="toc-metabase-schema-and-data-model" class="nav-link" data-scroll-target="#metabase-schema-and-data-model">Metabase schema and data model</a>
   <ul class="collapse">
@@ -595,6 +596,12 @@ CREATE DATABASE jrn_metabase WITH TEMPLATE jrn_metabase_dev;</code></pre>
 <p>Restoring seems to be easiest with a command like:</p>
 <pre><code>pg_restore -C -h localhost -d jstream-data -U postgres /home/backups/postgresql/2024-09-17-daily/jstream-data.custom</code></pre>
 <p>TODO: Flesh this out - how we do backups, how to restore them, especially during a potential server upgrade or other change?</p>
+</section>
+<section id="upgrade-cluster-to-new-version-of-postgres" class="level2">
+<h2 class="anchored" data-anchor-id="upgrade-cluster-to-new-version-of-postgres">Upgrade cluster to new version of postgres</h2>
+<ul>
+<li>Follow <a href="https://www.yellowduck.be/posts/how-to-upgrade-postgresql-on-ubuntu-server">this tutorial</a></li>
+</ul>
 </section>
 </section>
 <section id="metabase-schema-and-data-model" class="level1">
