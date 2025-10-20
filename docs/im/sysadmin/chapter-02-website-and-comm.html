@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="The Jornada Information Management Team">
 
-<title>index – Jornada Data Commons</title>
+<title>Chapter 2 - The JRN website and other communication platforms – Jornada Data Commons</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../docs/im/sysadmin/chapter-01-overview.html" rel="next">
-<link href="../../../docs/im/hacks/parse_trello_boards.html" rel="prev">
+<link href="../../../docs/im/sysadmin/chapter-03-jrn-metabase.html" rel="next">
+<link href="../../../docs/im/sysadmin/chapter-01-overview.html" rel="prev">
 <link href="../../../img/jrn-logo-light.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -123,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/im/sysadmin/index.html">Full IM System Documentation</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/im/sysadmin/index.html">Full IM System Documentation</a></li><li class="breadcrumb-item"><a href="../../../docs/im/sysadmin/chapter-02-website-and-comm.html">Website and communications</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -198,7 +199,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../docs/im/sysadmin/index.html" class="sidebar-item-text sidebar-link active">
+            <a href="../../../docs/im/sysadmin/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Full IM System Documentation</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -213,7 +214,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/im/sysadmin/chapter-02-website-and-comm.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/im/sysadmin/chapter-02-website-and-comm.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Website and communications</span></a>
   </div>
 </li>
@@ -253,21 +254,263 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#full-im-system-docs" id="toc-full-im-system-docs" class="nav-link active" data-scroll-target="#full-im-system-docs">Full IM system docs</a></li>
+  <li><a href="#the-jrn-website" id="toc-the-jrn-website" class="nav-link active" data-scroll-target="#the-jrn-website">The JRN Website</a>
+  <ul class="collapse">
+  <li><a href="#environments" id="toc-environments" class="nav-link" data-scroll-target="#environments">Environments</a></li>
+  <li><a href="#secure-file-management" id="toc-secure-file-management" class="nav-link" data-scroll-target="#secure-file-management">Secure file management</a></li>
+  <li><a href="#managing-wordpress-from-the-command-line" id="toc-managing-wordpress-from-the-command-line" class="nav-link" data-scroll-target="#managing-wordpress-from-the-command-line">Managing Wordpress from the command line</a>
+  <ul class="collapse">
+  <li><a href="#removing-mixed-content-http---https" id="toc-removing-mixed-content-http---https" class="nav-link" data-scroll-target="#removing-mixed-content-http---https">Removing mixed content (http:// -&gt; https://)</a></li>
+  </ul></li>
+  <li><a href="#pushing-changes-to-js-apps-lter-datacat-pub_list" id="toc-pushing-changes-to-js-apps-lter-datacat-pub_list" class="nav-link" data-scroll-target="#pushing-changes-to-js-apps-lter-datacat-pub_list">Pushing changes to JS apps (lter-datacat, pub_list)</a></li>
+  </ul></li>
+  <li><a href="#website-content" id="toc-website-content" class="nav-link" data-scroll-target="#website-content">Website content</a>
+  <ul class="collapse">
+  <li><a href="#homepage" id="toc-homepage" class="nav-link" data-scroll-target="#homepage">Homepage</a></li>
+  <li><a href="#about" id="toc-about" class="nav-link" data-scroll-target="#about">About</a>
+  <ul class="collapse">
+  <li><a href="#personnel" id="toc-personnel" class="nav-link" data-scroll-target="#personnel">Personnel</a></li>
+  </ul></li>
+  <li><a href="#research" id="toc-research" class="nav-link" data-scroll-target="#research">Research</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications">Publications</a>
+  <ul class="collapse">
+  <li><a href="#the-zotero-bibliography" id="toc-the-zotero-bibliography" class="nav-link" data-scroll-target="#the-zotero-bibliography">The Zotero bibliography</a></li>
+  <li><a href="#books" id="toc-books" class="nav-link" data-scroll-target="#books">Books</a></li>
+  </ul></li>
+  <li><a href="#outreach" id="toc-outreach" class="nav-link" data-scroll-target="#outreach">Outreach</a></li>
+  <li><a href="#for-researchers" id="toc-for-researchers" class="nav-link" data-scroll-target="#for-researchers">For Researchers</a></li>
+  </ul></li>
+  <li><a href="#website-apps" id="toc-website-apps" class="nav-link" data-scroll-target="#website-apps">Website apps</a>
+  <ul class="collapse">
+  <li><a href="#data-catalogs" id="toc-data-catalogs" class="nav-link" data-scroll-target="#data-catalogs">Data catalogs</a>
+  <ul class="collapse">
+  <li><a href="#lter-datacat" id="toc-lter-datacat" class="nav-link" data-scroll-target="#lter-datacat"><code>lter-datacat</code></a></li>
+  <li><a href="#partner-data" id="toc-partner-data" class="nav-link" data-scroll-target="#partner-data">Partner data</a></li>
+  <li><a href="#spatial-data" id="toc-spatial-data" class="nav-link" data-scroll-target="#spatial-data">Spatial data</a></li>
+  </ul></li>
+  <li><a href="#zotero-bibliography" id="toc-zotero-bibliography" class="nav-link" data-scroll-target="#zotero-bibliography">Zotero bibliography</a>
+  <ul class="collapse">
+  <li><a href="#maintaining-the-zotero-app" id="toc-maintaining-the-zotero-app" class="nav-link" data-scroll-target="#maintaining-the-zotero-app">Maintaining the Zotero app</a></li>
+  </ul></li>
+  <li><a href="#interactive-data-viewer" id="toc-interactive-data-viewer" class="nav-link" data-scroll-target="#interactive-data-viewer">Interactive data viewer</a></li>
+  </ul></li>
+  <li><a href="#mailing-lists" id="toc-mailing-lists" class="nav-link" data-scroll-target="#mailing-lists">Mailing lists</a>
+  <ul class="collapse">
+  <li><a href="#shared-nmsu-outlook-mailboxes" id="toc-shared-nmsu-outlook-mailboxes" class="nav-link" data-scroll-target="#shared-nmsu-outlook-mailboxes">Shared NMSU Outlook mailboxes</a></li>
+  <li><a href="#gnu-mailman-lists-on-lists.nmsu.edu" id="toc-gnu-mailman-lists-on-lists.nmsu.edu" class="nav-link" data-scroll-target="#gnu-mailman-lists-on-lists.nmsu.edu">GNU Mailman lists on lists.nmsu.edu</a>
+  <ul class="collapse">
+  <li><a href="#managing-the-lists" id="toc-managing-the-lists" class="nav-link" data-scroll-target="#managing-the-lists">Managing the lists</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/im/sysadmin/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/im/sysadmin/chapter-02-website-and-comm.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/im/sysadmin/index.html">Full IM System Documentation</a></li><li class="breadcrumb-item"><a href="../../../docs/im/sysadmin/chapter-02-website-and-comm.html">Website and communications</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Chapter 2 - The JRN website and other communication platforms</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="full-im-system-docs" class="level1">
-<h1>Full IM system docs</h1>
-<p>This book contains everything you need to know if you are one of the IMs for the Jornada.</p>
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>The Jornada Information Management Team </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
 
 
+</header>
+
+
+<section id="the-jrn-website" class="level1">
+<h1>The JRN Website</h1>
+<p>The JRN website runs on Wordpress and is hosted by <a href="https://wpengine.com">WPengine</a>. The JRN webmaster, currently the lead Information Manager, has a WPengine.com account that allows access to the website backend for account management, website backups, and other administrative tasks. For content creation, editing, and website design, user accounts are created in the Wordpress environment.</p>
+<section id="environments" class="level2">
+<h2 class="anchored" data-anchor-id="environments">Environments</h2>
+<p>There are 3 Wordpress environments available at the hosting provider.</p>
+<ul>
+<li>Production - this is the live JRN website. Only the webmaster has editing rights in this environment and is responsible for pulling in changes from the staging environment.</li>
+<li>Staging - in close sync with the Production environment, new content such as blog posts and pictures can be created and tested here. The project manager and other staff have editing access in this environment.</li>
+<li>Development - New plugins, themes, and other features are tested here and pushed to Staging when ready. This is mainly used by the webmaster or other developers.</li>
+</ul>
+<p>Each environment has a unique name and web address at {environment}.wpengine.com. The production environment is the live website, so the DNS entry for lter.jornada.nmsu.edu points to this site.</p>
+</section>
+<section id="secure-file-management" class="level2">
+<h2 class="anchored" data-anchor-id="secure-file-management">Secure file management</h2>
+<p>The hosting provider allows secure shell (ssh) access to any environment using an SSH gateway. See setup instructions <a href="https://wpengine.com/support/ssh-gateway/">here</a>. Once set up, issuing the command</p>
+<pre><code>ssh {environment}@{environment}.ssh.wpengine.net</code></pre>
+<p>should put the user into a terminal session on the web server. To move a directory of files, such as one of our website’s client-side apps, from a local machine to the website, use <code>scp</code>. For example, to push the zotero-biblio app to an environment you might do:</p>
+<pre><code>scp -r GitHub/zotero-biblio {environment}@{environment}.ssh.wpengine.net:/sites/{environment}/</code></pre>
+<p>There are occasional issues with the SSH Gateway at our hosting provider, so luckily, management of files with git is also supported. See the <a href="https://wpengine.com/support/git/">git setup instructions</a></p>
+</section>
+<section id="managing-wordpress-from-the-command-line" class="level2">
+<h2 class="anchored" data-anchor-id="managing-wordpress-from-the-command-line">Managing Wordpress from the command line</h2>
+<p>Once logged in to the shell of the web server environment there are a number of Wordpress command-line utilities that are available. See the description here:</p>
+<pre><code>https://developer.wordpress.org/cli/commands/</code></pre>
+<section id="removing-mixed-content-http---https" class="level3">
+<h3 class="anchored" data-anchor-id="removing-mixed-content-http---https">Removing mixed content (http:// -&gt; https://)</h3>
+<p>For example, to remove mixed comment by replacing “http://” addresses with “https://” issue this command from the shell:</p>
+<pre><code>wp search-replace 'http://{environment}.wpengine.com' 'https://{environment}.wpengine.com'</code></pre>
+</section>
+</section>
+<section id="pushing-changes-to-js-apps-lter-datacat-pub_list" class="level2">
+<h2 class="anchored" data-anchor-id="pushing-changes-to-js-apps-lter-datacat-pub_list">Pushing changes to JS apps (lter-datacat, pub_list)</h2>
+<p>The primary data catalog and the publication lists, including the bibliography and non-EDI data catalog, are client-side apps hosted on our website (<code>lter-datacat</code> and <code>Zotero-JavaScript-Search-Client</code>, respectively) . Placing these apps there, and updating them, means adding a folder to the website’s root directory. This is done using scp, generally (see above), or by pushing changes via git.</p>
+</section>
+</section>
+<section id="website-content" class="level1">
+<h1>Website content</h1>
+<p>There is a variety of static and dynamic content on the website an described below. This point of this document is to describe how that content was developed, how it is maintained, and by whom. Important website content areas are listed on the Homepage, or under the main menu items listed below.</p>
+<section id="homepage" class="level2">
+<h2 class="anchored" data-anchor-id="homepage">Homepage</h2>
+<p>A mix of static and dynamic content.</p>
+<p>The “Recent posts” section is a post grid populated with Wordpress posts beloging to the ‘Featured’ category. To add a new post to this section, create a post and assign to this category. All “Featured” posts created are collected on the <a href="https://lter.jornada.nmsu.edu/featured-post-history/">featured post history page</a>. This page is also where the “News” link in the main menu goes.</p>
+<p>Still more to describe here…</p>
+</section>
+<section id="about" class="level2">
+<h2 class="anchored" data-anchor-id="about">About</h2>
+<p>Pages under this menu are mostly static content that has been adapted from earlier versions of the website. Mostly this content gets updated during website development pushes during proposal writing or midterm reviews.</p>
+<section id="personnel" class="level3">
+<h3 class="anchored" data-anchor-id="personnel">Personnel</h3>
+<p>The StaffMembers plugin handles this - need to write up more on how this works…</p>
+</section>
+</section>
+<section id="research" class="level2">
+<h2 class="anchored" data-anchor-id="research">Research</h2>
+<p>Mostly static content - again, usually updated during proposal pushes.</p>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<p>This menu contains 3 data catalogs:</p>
+<ul>
+<li>The main LTER one</li>
+<li>Spatial data (static)</li>
+<li>The partner catalog (still in development).</li>
+</ul>
+<p>These are described <a href="../../../docs/im/sysadmin/chapter-02-website-and-comm.html#data-catalogs">below</a>.</p>
+<p>The <a href="https://jrnstaging.wpengine.com/data-catalog/interactive-data-viewer/">Interactive Data Viewer</a> is also here (and it needs to be documented somewhere…), as is the static species lists (that also need updating…).</p>
+</section>
+<section id="publications" class="level2">
+<h2 class="anchored" data-anchor-id="publications">Publications</h2>
+<p>There are both static and dynamic pages under the “Publications” menu. The <a href="https://lter.jornada.nmsu.edu/publications/">Bibliography page</a> is showing an app called <code>zotero-biblio</code> that reads our bibliography from a database hosted at <a href="https://zotero.org">Zotero.org</a>. The <code>Zotero-JavaScript-Search-Client</code> app is written in javascript and was originally developed by Tim Whiteaker at BLE LTER. Our fork of this app, which has some customizations, is hosted and maintained in <a href="https://github.com/jornada-im/Zotero-JavaScript-Search-Client">a GitHub repository</a>. It is running on the Bibliography page through an iframe, but the app lives at <a href="https://lter.jornada.nmsu.edu/Zotero-JavaScript-Search-Client/complete_jrn.html">https://lter.jornada.nmsu.edu/Zotero-JavaScript-Search-Client/complete_jrn.html</a> on the website.</p>
+<section id="the-zotero-bibliography" class="level3">
+<h3 class="anchored" data-anchor-id="the-zotero-bibliography">The Zotero bibliography</h3>
+<section id="tagging" class="level4">
+<h4 class="anchored" data-anchor-id="tagging">Tagging</h4>
+<p>There is a tagging system for tracking the relationship between publications in the bibliography and the Jornada LTER program.</p>
+<ul>
+<li><code>JRN funded</code> signifies a work that was directly funded by the Jornada LTER grant, with some acknowledgement of that in the text.</li>
+<li><code>JRN assisted</code> signifies a work that was supported by the LTER program in some way that is apparent in the text - Jornada LTER data are used, assistance from particular people, or the work is supported by one of our leveraged programs - but direct funding from the JRN LTER is not acknowledged.</li>
+<li><code>JRN related</code> signifies a work that is related to the JRN LTER program through location, personnel (investigator coauthor), or research theme, but has no known direct or indirect support from the program. A number of USDA-ARS works on or near the Jornada fall in this category.</li>
+<li><code>JRN foundational</code> is used to tag works that were instrumental in the development of the JRN research program, but did not occur as part of the JRN LTER program, usually because they are from before the JRN LTER program was initally funded.</li>
+<li><code>JRNStatusVerified</code> is a tag to indicate that someone in the program has checked the publication and verified that one of the tags above is accurately applied.</li>
+</ul>
+</section>
+</section>
+<section id="books" class="level3">
+<h3 class="anchored" data-anchor-id="books">Books</h3>
+<p>The <a href="https://lter.jornada.nmsu.edu/jornada-books/">Books page</a> is a post grid populated with Wordpress posts beloging to the ‘Books’ category. To add new books, create a post and assign to this category.</p>
+<p>Other pages under the “Publications” menu are static content.</p>
+</section>
+</section>
+<section id="outreach" class="level2">
+<h2 class="anchored" data-anchor-id="outreach">Outreach</h2>
+<p>Mostly static content but the GRFP, Short Course, and REU pages contain post grids that display posts under the “Graduate-fellowship-project”, “Ecology-short-course”, and “REU-project” categories, respectively.</p>
+</section>
+<section id="for-researchers" class="level2">
+<h2 class="anchored" data-anchor-id="for-researchers">For Researchers</h2>
+<p>Static page - should stay fairly in-sync with <a href="https://jornada.nmsu.edu/ltar/data/documentation">this JER page</a>.</p>
+</section>
+</section>
+<section id="website-apps" class="level1">
+<h1>Website apps</h1>
+<section id="data-catalogs" class="level2">
+<h2 class="anchored" data-anchor-id="data-catalogs">Data catalogs</h2>
+<p>The data catalog seen at <a href="[https://lter.jornada.nmsu.edu/data-catalog/">https://lter.jornada.nmsu.edu/data-catalog/</a> is JRNs primary data catalog and is a javascript app called <code>lter-datacat</code>.</p>
+<section id="lter-datacat" class="level3">
+<h3 class="anchored" data-anchor-id="lter-datacat"><code>lter-datacat</code></h3>
+<p>The <code>lter-datacat</code> app is written in javascript and was originally developed by Geovany Ramirez and Jason Coombs. It is running on the main data catalog page through an iframe, but the app lives at <a href="https://lter.jornada.nmsu.edu/lter-datacat/">https://lter.jornada.nmsu.edu/lter-datacat/</a> on the website.</p>
+<p>The app is hosted and maintained in <a href="https://github.com/jornada-im/lter-datacat">a GitHub repository</a></p>
+</section>
+<section id="partner-data" class="level3">
+<h3 class="anchored" data-anchor-id="partner-data">Partner data</h3>
+<p>This is in development on the staging website. It will list data held at repositories other than EDI.</p>
+<p>In development, there is an instance of the Zotero-JavaScript-Search-Client tool running at <a href="https://lter.jornada.nmsu.edu/Zotero-JavaScript-Search-Client/complete_jrndata.html">https://lter.jornada.nmsu.edu/Zotero-JavaScript-Search-Client/complete_jrndata.html</a> that can be i-framed in when ready.</p>
+</section>
+<section id="spatial-data" class="level3">
+<h3 class="anchored" data-anchor-id="spatial-data">Spatial data</h3>
+<p><a href="https://lter.jornada.nmsu.edu/data-catalog/spatial-data/">The spatial data catalog</a> is basically just a list of layers that can be downloaded as kmz files. Nothing fancy.</p>
+</section>
+</section>
+<section id="zotero-bibliography" class="level2">
+<h2 class="anchored" data-anchor-id="zotero-bibliography">Zotero bibliography</h2>
+<section id="maintaining-the-zotero-app" class="level3">
+<h3 class="anchored" data-anchor-id="maintaining-the-zotero-app">Maintaining the Zotero app</h3>
+<p>Once you make changes to the repository you can upload the whole thing to our webhost using scp. The proper command would be:</p>
+<pre><code>scp -prq GitHub/Zotero-JavaScript-Search-Client/* {envname}@{envname}.ssh.wpengine.net:~/sites/{envname}/Zotero-JavaScript-Search-Client/</code></pre>
+<p>where {envname} is the environment name at the host (WPengine currently). You’d need to have some ssh keys set up.</p>
+</section>
+</section>
+<section id="interactive-data-viewer" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-data-viewer">Interactive data viewer</h2>
+</section>
+</section>
+<section id="mailing-lists" class="level1">
+<h1>Mailing lists</h1>
+<section id="shared-nmsu-outlook-mailboxes" class="level2">
+<h2 class="anchored" data-anchor-id="shared-nmsu-outlook-mailboxes">Shared NMSU Outlook mailboxes</h2>
+<ul>
+<li><strong>jornada.data@nmsu.edu</strong>
+<ul>
+<li>This address is displayed on the Jornada LTER and USDA websites as the contact address for data-related inquiries. It is also listed as the contact email address for metadata describing published Jornada datasets, including in most EML documents and packages at EDI or Ag Data Commons.</li>
+<li>Mail recieved is forwarded (using a mailbox rule) to primary members of the Jornada IM Team and the mailbox can be accessed through the Outlook web app by those same primary IM Team members.</li>
+<li>Previously a GMail account, <code>datamanager.jrn.lter@gmail.com</code>, was used for this purpose, and all mail to that address is now forwarded to the present address (<code>jornada.data@nmsu.edu</code>).</li>
+</ul></li>
+<li><strong>jornada.lter@nmsu.edu</strong>
+<ul>
+<li>This address is displayed on the Jornada LTER websites as the contact address for program-related inquiries. Its also the contact address for the Jornada LTER Google account and an admin/moderator on the JRN-L and JRNSTUDENT-L listserv accounts.</li>
+<li>Mail recieved is forwarded (using a mailbox rule) to primary Jornada LTER staff members (lead PI, program manager, information manager) and the mailbox can be accessed through the Outlook web app by those same primary staff members.</li>
+<li>Previously, the program manager’s personal GMail address had been listed for this purpose.</li>
+</ul></li>
+</ul>
+</section>
+<section id="gnu-mailman-lists-on-lists.nmsu.edu" class="level2">
+<h2 class="anchored" data-anchor-id="gnu-mailman-lists-on-lists.nmsu.edu">GNU Mailman lists on lists.nmsu.edu</h2>
+<p>There are 3 lists assigned to Jornada LTER on NMSU’s listserv system:</p>
+<ul>
+<li>JRN-L@lists.nmsu.edu (or JRN-L@nmsu.edu)
+<ul>
+<li>Used for general-interest email broadcasts to anyone affiliated with the Jornada LTER or voluntarily following this list. People can subscribe to this using a form on our website homepage.</li>
+</ul></li>
+<li>JRNSTUDENT-L@lists.nmsu.edu (or JRNSTUDENT-L@nmsu.edu)
+<ul>
+<li>Used mainly by JRN staff to contact graduate and undergraduate students, or of students to broadcast messages for themselves. Anything sent to JRN-L gets sent to this list as well (automatically, without duplicates).</li>
+</ul></li>
+<li>JRNSTAFF-L@lists.nmsu.edu (or JRNSTAFF-L@nmsu.edu)
+<ul>
+<li>Currently unused.</li>
+</ul></li>
+</ul>
+<p>To administer these one must be on the NMSU VPN, or on campus, and visit the admin portal for each. The addresses for these are <a href="https://lists.nmsu.edu/mailman/admin/%7Blistname%7D" class="uri">https://lists.nmsu.edu/mailman/admin/{listname}</a>, where {listname} is jrn-l, jrnstudent-l, or jrnstaff-l.</p>
+<section id="managing-the-lists" class="level3">
+<h3 class="anchored" data-anchor-id="managing-the-lists">Managing the lists</h3>
+<p>We use the basic list admin tools provided by Mailman - the site IM and PM mainly handle it (and are still learning).</p>
+
+
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -673,13 +916,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../docs/im/hacks/parse_trello_boards.html" class="pagination-link" aria-label="Parsing trello boards to csv">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Parsing trello boards to csv</span>
+      <a href="../../../docs/im/sysadmin/chapter-01-overview.html" class="pagination-link" aria-label="Overview">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Overview</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../docs/im/sysadmin/chapter-01-overview.html" class="pagination-link" aria-label="Overview">
-        <span class="nav-page-text">Overview</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../docs/im/sysadmin/chapter-03-jrn-metabase.html" class="pagination-link" aria-label="Metabase">
+        <span class="nav-page-text">Metabase</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -688,4 +931,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/im/sysadmin/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/im/sysadmin/chapter-02-website-and-comm.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="The Jornada Information Management Team">
+<meta name="author" content="The Information Management Team">
 
-<title>Chapter 1 - Research and data management overview – Jornada Data Commons</title>
+<title>Jornada Dataset Metadata Standards – Jornada Data Commons</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../docs/im/sysadmin/chapter-02-website-and-comm.html" rel="next">
-<link href="../../../docs/im/sysadmin/index.html" rel="prev">
+<link href="../../../docs/im/procedures/sop_metadata_publishing.html" rel="next">
+<link href="../../../docs/im/overview.html" rel="prev">
 <link href="../../../img/jrn-logo-light.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -124,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/im/sysadmin/index.html">Full IM System Documentation</a></li><li class="breadcrumb-item"><a href="../../../docs/im/sysadmin/chapter-01-overview.html">Overview</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/im/standards/JRN_metadata_standards.html">Metadata standards</a></li><li class="breadcrumb-item"><a href="../../../docs/im/standards/JRN_metadata_standards.html">Jornada Dataset Metadata Standards</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -157,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/im/standards/JRN_metadata_standards.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/im/standards/JRN_metadata_standards.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Jornada Dataset Metadata Standards</span></a>
   </div>
 </li>
@@ -208,7 +208,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/im/sysadmin/chapter-01-overview.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../docs/im/sysadmin/chapter-01-overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
@@ -254,22 +254,44 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#research-project-management" id="toc-research-project-management" class="nav-link" data-scroll-target="#research-project-management">Research project management</a></li>
-  <li><a href="#data-management" id="toc-data-management" class="nav-link" data-scroll-target="#data-management">Data management</a></li>
-  <li><a href="#public-dataset-listings" id="toc-public-dataset-listings" class="nav-link" data-scroll-target="#public-dataset-listings">Public dataset listings</a></li>
-  <li><a href="#bibliographies" id="toc-bibliographies" class="nav-link" data-scroll-target="#bibliographies">Bibliographies</a></li>
-  <li><a href="#local-computing-resources" id="toc-local-computing-resources" class="nav-link" data-scroll-target="#local-computing-resources">Local computing resources</a></li>
-  <li><a href="#hosted-resources" id="toc-hosted-resources" class="nav-link" data-scroll-target="#hosted-resources">Hosted resources</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#using-this-document" id="toc-using-this-document" class="nav-link" data-scroll-target="#using-this-document">Using this document</a></li>
+  </ul></li>
+  <li><a href="#metadata-standards-for-eml-dataset-elements" id="toc-metadata-standards-for-eml-dataset-elements" class="nav-link" data-scroll-target="#metadata-standards-for-eml-dataset-elements">Metadata standards for EML &lt;dataset&gt; elements</a>
+  <ul class="collapse">
+  <li><a href="#title" id="toc-title" class="nav-link" data-scroll-target="#title">&lt;title&gt;*</a></li>
+  <li><a href="#personnel-and-organization-elements-creator-project-etc." id="toc-personnel-and-organization-elements-creator-project-etc." class="nav-link" data-scroll-target="#personnel-and-organization-elements-creator-project-etc.">Personnel and organization elements (&lt;creator&gt;, &lt;project&gt;, etc.)</a>
+  <ul class="collapse">
+  <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">&lt;contact&gt;*</a></li>
+  <li><a href="#creator" id="toc-creator" class="nav-link" data-scroll-target="#creator">&lt;creator&gt;*</a></li>
+  <li><a href="#project" id="toc-project" class="nav-link" data-scroll-target="#project">&lt;project&gt;</a></li>
+  <li><a href="#other-personnel-and-organization-elements" id="toc-other-personnel-and-organization-elements" class="nav-link" data-scroll-target="#other-personnel-and-organization-elements">Other personnel and organization elements</a></li>
+  </ul></li>
+  <li><a href="#pubdate" id="toc-pubdate" class="nav-link" data-scroll-target="#pubdate">&lt;pubDate&gt;</a></li>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">&lt;abstract&gt;</a></li>
+  <li><a href="#keywordset" id="toc-keywordset" class="nav-link" data-scroll-target="#keywordset">&lt;keywordSet&gt;</a></li>
+  <li><a href="#intellectualrights" id="toc-intellectualrights" class="nav-link" data-scroll-target="#intellectualrights">&lt;intellectualRights&gt;</a></li>
+  <li><a href="#coverage" id="toc-coverage" class="nav-link" data-scroll-target="#coverage">&lt;coverage&gt;</a>
+  <ul class="collapse">
+  <li><a href="#geographiccoverage" id="toc-geographiccoverage" class="nav-link" data-scroll-target="#geographiccoverage">&lt;geographicCoverage&gt;</a></li>
+  <li><a href="#taxonomiccoverage" id="toc-taxonomiccoverage" class="nav-link" data-scroll-target="#taxonomiccoverage">&lt;taxonomicCoverage&gt;</a></li>
+  <li><a href="#temporalcoverage" id="toc-temporalcoverage" class="nav-link" data-scroll-target="#temporalcoverage">&lt;temporalCoverage&gt;</a></li>
+  </ul></li>
+  <li><a href="#maintenance" id="toc-maintenance" class="nav-link" data-scroll-target="#maintenance">&lt;maintenance&gt;</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">&lt;methods&gt;</a></li>
+  <li><a href="#data-entities" id="toc-data-entities" class="nav-link" data-scroll-target="#data-entities">Data entities</a></li>
+  </ul></li>
+  <li><a href="#information-management-metadata-and-eml-resources" id="toc-information-management-metadata-and-eml-resources" class="nav-link" data-scroll-target="#information-management-metadata-and-eml-resources">Information management, metadata, and EML resources</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/im/sysadmin/chapter-01-overview.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/im/standards/JRN_metadata_standards.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/im/sysadmin/index.html">Full IM System Documentation</a></li><li class="breadcrumb-item"><a href="../../../docs/im/sysadmin/chapter-01-overview.html">Overview</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/im/standards/JRN_metadata_standards.html">Metadata standards</a></li><li class="breadcrumb-item"><a href="../../../docs/im/standards/JRN_metadata_standards.html">Jornada Dataset Metadata Standards</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Chapter 1 - Research and data management overview</h1>
+<h1 class="title">Jornada Dataset Metadata Standards</h1>
 </div>
 
 
@@ -279,7 +301,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>The Jornada Information Management Team </p>
+             <p>The Information Management Team </p>
           </div>
   </div>
     
@@ -292,47 +314,172 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><strong>If you edit this document please track your changes and send to Greg Maurer (gmaurer.jrn.lter@gmail.com).</strong></p>
+<p><strong>Notes about things that need to be expanded or verified are marked with “???”</strong></p>
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>Our priorities in the Jornada IM team are to:</p>
+<p>This document defines metadata standards to use when creating or revising EML files for Jornada Basin LTER research data packages. These standards are under active development as we revamp our data catalog, but they are essentially derived from this reference document:</p>
+<p><a href="https://environmentaldatainitiative.files.wordpress.com/2017/11/emlbestpractices-v3.pdf" class="uri">https://environmentaldatainitiative.files.wordpress.com/2017/11/emlbestpractices-v3.pdf</a></p>
+<p>with modifications to suit the Jornada Basin LTER and its researchers.</p>
+<p>When revising earlier EML documents, do your best not to lose the metadata they contain. Make sure a copy is archived somewhere (like EDI, if possible) so that metadata are not lost.</p>
+<section id="using-this-document" class="level2">
+<h2 class="anchored" data-anchor-id="using-this-document">Using this document</h2>
+<p>The metadata standards in this document are structured and formatted similarly to an EML document. Named EML elements are surrounded by angle brackets, and there are headings for most important elements. At the Jornada Basin LTER, a variety of tools are being used to create EML documents during the data packaging process (EMLassemblyline, GCE Toolbox +, etc.). Notes about using these tools to create each EML element are present in the relevant section of this document (???<strong>Add these in as you edit</strong>).</p>
+<p>Note that EML documents are hierarchical. The root element is &lt;eml:eml&gt; (denoted by the path <code>/eml:eml</code>). Below the EML root element are 3 elements, &lt;access&gt;, &lt;dataset&gt;, and &lt;additional_metadata&gt; (paths <code>/eml:eml/access</code>, <code>/eml:eml/dataset</code>, and <code>/eml:eml/additional_metadata</code>). This document contains metadata standards for elements under the &lt;dataset&gt; element of Jornada EML files only. We may add standards for EML &lt;access&gt; and &lt;additional_metadata&gt; elements at a later time.</p>
+</section>
+</section>
+<section id="metadata-standards-for-eml-dataset-elements" class="level1">
+<h1>Metadata standards for EML &lt;dataset&gt; elements</h1>
+<p>The sections below correspond to elements under the &lt;dataset&gt; element of a Jornada Basin LTER EML document. They appear in roughly the order they should in a real EML document.</p>
+<section id="title" class="level2">
+<h2 class="anchored" data-anchor-id="title">&lt;title&gt;*</h2>
+<p><strong>* This is a required element.</strong></p>
+<p>The &lt;title&gt; element should contain a descriptive title that includes type of data collected, geographic indicator, and temporal range of the data (what, where, when). <strong>Keep in mind that package titles are searchable and are a user’s first point of contact when searching for data packages.</strong></p>
+<p>Best practices:</p>
+<ul>
+<li>For the title’s geographic indicator all Jornada Basin LTER data packages should include “Jornada Basin LTER”.</li>
+<li>If the data come from an established study with a name or acronym, include the name or acronym in the title (NPP study, SMES, NEAT, etc.)</li>
+<li>For the temporal range of completed data packages give the starting year of the data to the ending year; “2009-2015”, for example.</li>
+<li>For the temporal range of ongoing data packages there are 2 possibilities:
+<ul>
+<li>Write the end of the temporal range as a year if data collection occurs less frequently than yearly (“2010-2018” for a package collected every 2 years).</li>
+<li>Write the end of the temporal range as “ongoing” if data collection occurs yearly or more frequently (“2010-ongoing” if data were last updated a year ago or less).</li>
+</ul></li>
+</ul>
+</section>
+<section id="personnel-and-organization-elements-creator-project-etc." class="level2">
+<h2 class="anchored" data-anchor-id="personnel-and-organization-elements-creator-project-etc.">Personnel and organization elements (&lt;creator&gt;, &lt;project&gt;, etc.)</h2>
+<p>There are a number of elements in this category grouped together here. They normally appear within the &lt;dataset&gt; element (<code>/eml:eml/dataset/creator</code>, <code>/eml:eml/dataset/contact</code>, etc)</p>
+<p>At least one &lt;contact&gt; element must be supplied in every EML document. All EML documents should have at least one person in a &lt;creator&gt; element, but exceptions can be made if this information has been lost in very old Jornada data packages.</p>
+<section id="contact" class="level3">
+<h3 class="anchored" data-anchor-id="contact">&lt;contact&gt;*</h3>
+<p><strong>* This is a required element.</strong></p>
+<p>Contacts are people (or positions, like Data Manager) that should be contacted for access to, or information about, the data package. For Jornada data packages this should include:</p>
+<ul>
+<li>The “Current responsible investigator” (if available)</li>
+<li>The JRN LTER Information Manager (datamanager.jrn.lter@gmail.com)</li>
+</ul>
+<p>JRN LTER defines the “Current responsible investigator” as the LTER principal investigator who curates a study and its associated data package(s). For data packages without a “current responsible PI”, John Anderson has historically been listed with this role under &lt;contact&gt;. When updating one of these packages, ask John if he would like to remain in this position. If not, he may be removed and it is acceptable to list only the Data Manager.</p>
+<p>No other contacts are defined.</p>
+</section>
+<section id="creator" class="level3">
+<h3 class="anchored" data-anchor-id="creator">&lt;creator&gt;*</h3>
+<p><strong>*This is a required element.</strong></p>
+<p>Creators are people with direct intellectual contributions to the data package and so could include PIs, postdocs, students, and other researchers. There can be multiple &lt;creator&gt; elements in a Jornada EML document. These should include:</p>
+<ul>
+<li>Original PIs</li>
+<li>Former responsible PIs</li>
+<li>Current responsible PIs</li>
+<li>PostDocs, grad students, and other researchers (??? need to verify this)</li>
+</ul>
+<p>If for some reason the original PI for the data package is unknown, it is acceptable to list the Jornada Basin LTER as an organization in the &lt;creator&gt; element.</p>
+</section>
+<section id="project" class="level3">
+<h3 class="anchored" data-anchor-id="project">&lt;project&gt;</h3>
+<p>This element should be included in EML for all JRN data packages and should contain the &lt;title&gt;, &lt;organization&gt;, &lt;funding&gt;, and &lt;personnel&gt; sub-elements within it. List the Jornada Basin LTER as the project &lt;title&gt;, New Mexico State University as &lt;organization&gt;, and the current responsible PI for the data package as the &lt;personnel&gt;. The &lt;funding&gt; element should include the NSF award number (DEB-1832194 or similar) that was active when the project was initiated.</p>
+<p>This element is created automatically by EMLassemblyline if a personnel entry is listed with the role “PI”.</p>
+<p><em>Provisional change</em>: If there is no current responsible PI for a completed package, it may be acceptable to omit the &lt;project&gt;&lt;personnel&gt; element as long as the other elements are complete. (??? need to verify this is ok)</p>
+</section>
+<section id="other-personnel-and-organization-elements" class="level3">
+<h3 class="anchored" data-anchor-id="other-personnel-and-organization-elements">Other personnel and organization elements</h3>
+<p>Other personnel and organization elements, such as &lt;metadataProvider&gt;, &lt;associatedParty&gt;, or &lt;publisher&gt;, can be defined in EML and have been included in Jornada Basin LTER data packages. There is no standardized policy for these yet, so when updating such packages, preserve these elements if possible.</p>
+</section>
+</section>
+<section id="pubdate" class="level2">
+<h2 class="anchored" data-anchor-id="pubdate">&lt;pubDate&gt;</h2>
+<p>Default for this at EDI and LTER sites appears to be that &lt;pubDate&gt; refers to the date of the latest metadata revision for a data package posted on EDI.</p>
+<p>At JRN, this element has had other meanings (first date of publication), but there isn’t currently a consistent policy.</p>
+</section>
+<section id="abstract" class="level2">
+<h2 class="anchored" data-anchor-id="abstract">&lt;abstract&gt;</h2>
+<p>A descriptive abstract of the data package, with enough context for a user to decide whether it is useful to them, should be included here. <strong>Keep in mind that package abstracts are used in full-text searches</strong></p>
+<p>Best practices:</p>
+<ul>
+<li>Include a brief statement about whether data collection is “ongoing” or “completed”.</li>
+<li>Include a brief description of data collection and data package update frequency (“updated monthly/yearly/every spring”).</li>
+<li>Include information on whether the data were collected on the “Jornada Experimental Range”, on the “CDRCC”, or on both.</li>
+</ul>
+</section>
+<section id="keywordset" class="level2">
+<h2 class="anchored" data-anchor-id="keywordset">&lt;keywordSet&gt;</h2>
+<p>Multiple &lt;keywordSet&gt; elements can be defined. Optionally they may be labeled with a specific vocabulary they are taken from using the &lt;keywordThesaurus&gt; tag. The Jornada Basin LTER uses these keyword thesauri:</p>
+<ul>
+<li><a href="http://vocab.lternet.edu/vocab/vocab/index.php">LTER Controlled Vocabulary</a> - required to describe the subject matter of each data package</li>
+<li><a href="https://github.com/jornada-im/jrn_metadata_standards">Jornada-specific thesauri</a> - currently there are 3, which are still in development.
+<ul>
+<li>“JRN Dataset Keywords” include subject matter, funding, time span, and other JRN LTER specific terms.</li>
+<li>“Jornada Project Names” include the descriptive names of abbreviations of studies or projects taking place in Jornada Basin (affiliated with JRN LTER or not)</li>
+<li>“Jornada Place Names” include the place names of important study locations or geographic features. These overlap with the “Jornada Place Names” in many cases.</li>
+</ul></li>
+<li><a href="https://lternet.edu/core-research-areas/">LTER Core Areas</a></li>
+<li>EML creators can also define keywords independent of these vocabularies (no &lt;keywordThesaurus&gt; tag).</li>
+</ul>
+<p>From the Jornada-specific thesauri, be sure to include:</p>
+<ul>
+<li>At least one subject matter term from the “JRN Dataset Keyword” list.</li>
+<li>Any relevant terms from the “Jornada Project Names” list</li>
+<li>Any relevant placenames from the “Jornada Place Names” list</li>
+<li>The Jornada study ID as “study {NNN}”, where {NNN} is the 3 digit study ID within the package ID (middle 3 digits). List this as a “Jornada Project Name” keyword.</li>
+</ul>
+<p>The keywords “core” and “signature” may be added to EML documents, but the plan at this point is to keep a separate list of packages with these designations and then cross-reference those lists during searches of the JRN data catalog.</p>
+</section>
+<section id="intellectualrights" class="level2">
+<h2 class="anchored" data-anchor-id="intellectualrights">&lt;intellectualRights&gt;</h2>
+<p>The Jornada Basin LTER uses the CC-BY attribution license, appended with the LTER network’s <a href="https://lternet.edu/data-access-policy/">suggested data access policy text</a>. There is a template in EMLassemblyline for this.</p>
+</section>
+<section id="coverage" class="level2">
+<h2 class="anchored" data-anchor-id="coverage">&lt;coverage&gt;</h2>
+<p>A &lt;coverage&gt; element can be defined at multiple levels in the EML document: for a &lt;dataset&gt; element (<code>/eml:eml/dataset/coverage</code>), for a data entity (<code>eml:eml/dataset/[entity]/coverage</code>), within a &lt;methods&gt; element (<code>eml:eml/dataset/methods/sampling/studyExtent/coverage</code>), etc. Within each &lt;coverage&gt; element, three types of coverage elements can be defined - &lt;geographicCoverage&gt;, &lt;taxonomicCoverage&gt;, and &lt;temporalCoverage&gt;.</p>
+<p>For now, at JRN LTER, we are focusing on providing adequate &lt;coverage&gt; metadata at the &lt;dataset&gt; element level, and there aren’t known standards for elements below this level (???). This is described in the sections below.</p>
+<section id="geographiccoverage" class="level3">
+<h3 class="anchored" data-anchor-id="geographiccoverage">&lt;geographicCoverage&gt;</h3>
+<p>Coordinates for Jornada data packages are obfuscated (deliberately, due to security concerns) in most cases. How, and how much, to provide spatial data is a matter of debate at JRN LTER. The general practice is to provide one or more bounding boxes surrounding the research sites in a data package, but these bounding boxes should not be detailed enough to allow casual visitors to EDI to identify sensitive research sites or instrumentation. Some packages, however, already have finer details in the &lt;geographicCoverage&gt; elements. In these cases the person packaging the data should probably preserve this metadata, and has some discretion on how to proceed after consulting with PIs. The general guideline for this element is outlined below.</p>
+<p>For &lt;dataset&gt; elements, define at least one &lt;geographicCoverage&gt; element. This &lt;geographicCoverage&gt; element should contain at least one bounding box that encloses all research locations for all data entities in the package. When possible, multiple bounding boxes may be provided as additional &lt;geographicCoverage&gt; elements that describe other study or sampling areas (these may be associated with locational variables in a data entity if you are clever about it). The bounding boxes should be large enough to prevent casual users from identifying the sites (on the EDI map interface, for example).</p>
+<p>Each &lt;geographicCoverage&gt; element should have a &lt;geographicDescription&gt; element associated that describes the location defined by the bounding boxes (or points, as the case may be) and include the text “Higher resolution spatial data for this data package can be obtained by contacting the Data Manager”.</p>
+</section>
+<section id="taxonomiccoverage" class="level3">
+<h3 class="anchored" data-anchor-id="taxonomiccoverage">&lt;taxonomicCoverage&gt;</h3>
+<p>There are many systems for denoting taxonomic entities or groups, including local systems that are specific to the Jornada Basin LTER or its researchers. JRN data packages that contain taxonomic data (data attributes of species, groups of species, or other taxa) should provide ways to identify the taxonomic entities or groups in a &lt;dataset&gt; to modern, accepted taxonomic classifications at the <em>Genus species</em> or finer levels.</p>
+<p>These links may be provided in a variable or category in the data entity itself (a “Genus_species” variable, or example), as long as they are properly attributed to an authority like ITIS or USDA PLANTS. Local (JRN specific) taxonomic keys or coding systems that appear in a data entity must be available to the data user. In these cases the keys or coding systems used should be described in the metadata and provided as either an additional data entity in the data package, or as a link to other JRN EDI packages with this information.</p>
+<p>Some current Jornada taxonomic keys are:</p>
 <ol type="1">
-<li><p>Contribute to high quality, impactful ecology and rangeland research at all stages of the data life cycle.</p></li>
-<li><p>Oversee, or directly handle, publication of all Jornada datasets</p>
-<ul>
-<li>In the process we ensure data meet <a href="https://doi.org/10.1038/sdata.2016.18">FAIR</a> data principles &amp; the <a href="https://lternet.edu/data-access-policy/">LTER Data Access Policy</a>.</li>
-</ul></li>
-<li><p>Act as a source of data-related leadership and education</p>
-<ul>
-<li>We do this through committee &amp; working group participation, open-source software development, outreach activity, and teaching.</li>
-</ul></li>
+<li><a href="https://portal.lternet.edu/nis/metadataviewer?packageid=knb-lter-jrn.210520001.1">Key to vascular plants in the Jornada Basin</a> (an EDI package)</li>
 </ol>
 </section>
-<section id="research-project-management" class="level1">
-<h1>Research project management</h1>
-<p>Research projects at the Jornada are initiated by requesting approval using John Anderson’s “Research notification” process. A summary of this process, and links to relevant documents are on the “For researchers” page of the <a href="https://lter.jornada.nmsu.edu/for-researchers">JRN</a> and <a href="https">JER</a> websites.</p>
+<section id="temporalcoverage" class="level3">
+<h3 class="anchored" data-anchor-id="temporalcoverage">&lt;temporalCoverage&gt;</h3>
+<p>Provide the start and end date of the period over which the data were collected. For &lt;dataset&gt; elements this should include the data in all data entities (all .csv or other data files) that the EML document defines.</p>
 </section>
-<section id="data-management" class="level1">
-<h1>Data management</h1>
-<p>Data management expectations for researchers are also outlined on the <a href="https://lter.jornada.nmsu.edu/for-researchers">JRN</a> and <a href="https">JER</a> websites. Field data collection of long-term datasets is typically handled by the Jornada Field Crew, under the supervision of John Anderson.</p>
-<p>QA/QC</p>
-<p>Metadata overview</p>
 </section>
-<section id="public-dataset-listings" class="level1">
-<h1>Public dataset listings</h1>
-<p>EDI</p>
-<p>Partner data</p>
+<section id="maintenance" class="level2">
+<h2 class="anchored" data-anchor-id="maintenance">&lt;maintenance&gt;</h2>
+<p>Describes whether data collection is ongoing or completed (in &lt;description&gt; element) and may include descriptions of the frequency of data and metadata changes (in &lt;frequency&gt; element).</p>
+<ol type="1">
+<li>Describe the data package as “completed” if data collection has ended.</li>
+<li>Describe the data package as “ongoing” if data collection continues.</li>
+<li>For “ongoing” data packages, a description of how often package revisions, including data and metadata changes, occur should be added to the &lt;frequency&gt; element under &lt;maintenance&gt;. For example, if new data are QA/QC’d, appended to a data entity, and published for a data package every month, the &lt;frequency&gt; element should describe these “monthly” revisions.</li>
+<li>Optionally, and in addition to #3 above, the &lt;frequency&gt; element under &lt;maintenance&gt; can describe the frequency (hourly, daily, bimonthly, etc.) of the data in any data entities in the package. This may be especially important tabular time series.</li>
+</ol>
 </section>
-<section id="bibliographies" class="level1">
-<h1>Bibliographies</h1>
-<p>Zotero, LTER network, etc.</p>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">&lt;methods&gt;</h2>
+<p>This element should include a detailed description of how the data were collected or otherwise derived (field procedures, laboratory analysis, data synthesis and analysis). It should be concise but sufficient to reproduce the resulting data entity in the package.</p>
+<p>Many Jornada packages have &lt;methods&gt; elements that refer to ancillary procedures documents, QA/QC specifications, data reduction scripts, etc. Whenever possible these should be preserved and archived as additional data entities in the data package (or at least a link to another repository should be provided).</p>
+<p>If needed &lt;methods&gt; elements can be defined for individual data entities (<code>/eml:eml/dataset/[entity]/methods</code>). A hierarchy of additional elements, such as &lt;instrument&gt;, &lt;sampling&gt;, &lt;methodStep&gt;, &lt;qualityControl&gt;, can be also defined within each &lt;methods&gt; element. The GCE Toolbox+ does some of this for us with Jornada met data. In general though, descriptive text with optional pointers to other methods documentation is usually adequate.</p>
 </section>
-<section id="local-computing-resources" class="level1">
-<h1>Local computing resources</h1>
-<p>Jornada servers and network devices</p>
+<section id="data-entities" class="level2">
+<h2 class="anchored" data-anchor-id="data-entities">Data entities</h2>
+<p>These define the actual data files in the package (.csv files, rasters, etc). There can be more than one in a package.</p>
+<p>Several possible elements are used to define individual data entities within a &lt;dataset&gt;. These include &lt;dataTable&gt;, &lt;spatialRaster&gt;, &lt;spatialVector&gt;, &lt;storedProcedure&gt;, &lt;view&gt;, and &lt;otherEntity&gt;. Each of these must contain other elements that describe the data they contain (the EntityGroup tree). The most important of these, for us, is the &lt;attributeList&gt; that defines the variables in a &lt;dataTable&gt; entity, since most Jornada data is tabular.</p>
+<p>There are not any Jornada-specific metadata standards for data entities (???maybe there should be) or the elements they contain (&lt;attributeList&gt;). Use EML best practices.</p>
 </section>
-<section id="hosted-resources" class="level1">
-<h1>Hosted resources</h1>
-<p>Digital Ocean, website, NMSU stuff, ArcGIS Online (in addition to EDI/Zotero</p>
+</section>
+<section id="information-management-metadata-and-eml-resources" class="level1">
+<h1>Information management, metadata, and EML resources</h1>
+<p>The LTER network (funded by NSF) maintains a <a href="https://lternet.edu/data-access-policy/">Data Access policy</a> that forms the basis for how Information Managment (IM) systems should function at sites in the LTER network. LTER maintains an <a href="https://im.lternet.edu">IM web portal</a> with some resources on IM practices, guidelines, and training materials. The <a href="https://im.lternet.edu/im_requirements/ims_guidelines">Guidelines for LTER IM Systems</a> document encapsulates the guidelines and best practices for what an LTER IM system should be.</p>
+<p>Recently, many of the resources on curating and publishing data and metadata packages has been pushed to <a href="https://environmentaldatainitiative.org">EDI</a>. EDI’s “5 Phases of data publishing” is a large collection of resources, but in particular, <a href="https://environmentaldatainitiative.org/resources/five-phases-of-data-publishing/phase-3/">Phase 3</a> provides useful information on EML metadata best practices like the <a href="https://environmentaldatainitiative.files.wordpress.com/2017/11/emlbestpractices-v3.pdf">EML Best Practices V3 document</a>.</p>
+<p>The EML specification is defined and maintained by the <a href="https://knb.ecoinformatics.org">Knowledge Network for Biocomplexity</a>. They provide the EML Schema and additional (human readable) information here:</p>
+<p><a href="https://knb.ecoinformatics.org/external//emlparser/docs/index.html" class="uri">https://knb.ecoinformatics.org/external//emlparser/docs/index.html</a></p>
 
 
 </section>
@@ -740,13 +887,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../docs/im/sysadmin/index.html" class="pagination-link" aria-label="Full IM System Documentation">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Full IM System Documentation</span>
+      <a href="../../../docs/im/overview.html" class="pagination-link" aria-label="Overview">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Overview</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../docs/im/sysadmin/chapter-02-website-and-comm.html" class="pagination-link" aria-label="Website and communications">
-        <span class="nav-page-text">Website and communications</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../docs/im/procedures/sop_metadata_publishing.html" class="pagination-link" aria-label="SOP for updating datasets in metabase">
+        <span class="nav-page-text">SOP for updating datasets in metabase</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -755,4 +902,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/im/sysadmin/chapter-01-overview.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/im/standards/JRN_metadata_standards.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

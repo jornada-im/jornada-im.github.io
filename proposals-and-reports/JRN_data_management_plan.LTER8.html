@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>jrn_data_management_plan.lter8 – Jornada Data Commons</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../img/jrn-logo-light.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-95f147d06fdb9f8ce149f95e323965f4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-903c4444735f79a14c415f113c750710.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../img/jrn-logo-light.png" alt="" class="navbar-logo light-content">
+    <img src="../img/jrn-logo-light.png" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Jornada Data Commons</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../docs/researcher/overview.html"> 
+<span class="menu-text">Researcher Guide</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../docs/im/overview.html"> 
+<span class="menu-text">IM Guide</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../docs/im/overview.html"> 
+<span class="menu-text">Document Archive</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/jornada-im/jornada-im.github.io" title="Jornada IM GitHub repository" class="quarto-navigation-tool px-1" aria-label="Jornada IM GitHub repository"><i class="bi bi-github"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#data-management-plan-for-jrn-lter-8" id="toc-data-management-plan-for-jrn-lter-8" class="nav-link active" data-scroll-target="#data-management-plan-for-jrn-lter-8">Data Management Plan for JRN LTER-8</a>
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#im-resources" id="toc-im-resources" class="nav-link" data-scroll-target="#im-resources">IM resources</a></li>
+  <li><a href="#data-management-practices" id="toc-data-management-practices" class="nav-link" data-scroll-target="#data-management-practices">Data management practices</a></li>
+  <li><a href="#additional-im-activities" id="toc-additional-im-activities" class="nav-link" data-scroll-target="#additional-im-activities">Additional IM activities</a></li>
+  <li><a href="#recent-accomplishments-and-future-initiatives" id="toc-recent-accomplishments-and-future-initiatives" class="nav-link" data-scroll-target="#recent-accomplishments-and-future-initiatives">Recent accomplishments and future initiatives</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/proposals-and-reports/JRN_data_management_plan.LTER8.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="data-management-plan-for-jrn-lter-8" class="level1">
+<h1>Data Management Plan for JRN LTER-8</h1>
+<p>version 0.4</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>The Jornada Basin LTER program (JRN) supports an effective and well-integrated information management (IM) program and shares the LTER Network view that published datasets are first-class products of research and an opportunity for outreach and education. The JRN Information Management (IM) system reliably performs a full range of essential data management functions to make research data and other information produced by the JRN program findable, accessible, interoperable, and re-usable (FAIR, Wilkinson et al.&nbsp;2016). The team that designs and operates this system is guided by three core priorities.</p>
+<ol type="1">
+<li>Contribute to high quality, impactful ecology research at all stages of the data life cycle</li>
+<li>Oversee, or directly handle, publication of all Jornada datasets</li>
+<li>Act as a source of data-related leadership, education, and outreach</li>
+</ol>
+<p>The JRN IM team approaches each of these priorities with a philosophy of openness to diverse stakeholders, including scientists, resource managers, students, &amp; the public, and a commitment to the principles of open scientific research. In this Data Management Plan, we review recent progress in JRN IM, and outline the strategy for managing and publishing JRN research data from 2025 to 2030.</p>
+</section>
+<section id="im-resources" class="level2">
+<h2 class="anchored" data-anchor-id="im-resources">IM resources</h2>
+<p><strong>Personnel</strong>: The JRN IM team is headed by Dr.&nbsp;Gregory Maurer, supported at 0.5 FTE by JRN. He leads a team comprised of a part-time computer programmer and part-time undergraduate assistants who contribute to data QA/QC, website content, and communications. The IM team works closely with JRN’s full-time site manager and program coordinator, and also collaborates closely with USDA data managers, including statistician Darren James, and local computing and network infrastructure managers Scott Schrader and Ken Ramsey. Maurer meets at least monthly with the JRN leadership team to align IM activities with research priorities, convey updates, and take feedback on data management standards and procedures.</p>
+<p><strong>Computing and storage infrastructure</strong>: The JRN IM system is built on multiple technologies and infrastructure resources that provide secure, resilient computing and storage capabilities for JRN personnel, external collaborators, and the public. Most members of the JRN IM team have offices in Wooton Hall, headquarters of the USDA-ARS Jornada Experimental Range (JER), on New Mexico State University (NMSU) campus. A long-standing ARS-LTER agreement allows the JER to provide and manage some of the computing infrastructure that JRN requires (Table 1), including a server cluster with a 100TB storage block from which JRN staff are provided with networked file storage shares. Research data, IM-related metadata and tools, and staff files and documents (e.g., images, equipment manuals, procedures documents) are stored on these shares. Most other JRN IM infrastructure has transitioned to cloud-based systems in the last four years (Table 1) to reduce physical infrastructure maintenance demands and increase reliability and uptime. Linux virtual machines and S3-compatible object stores at <em>DigitalOcean.com</em> host databases with research metadata and other information (PostgreSQL 12), web-accessible storage for data entities, and full offsite backups of local Jornada file storage. The JRN website is built with <em>WordPress</em> and has several associated Javascript data catalog and bibliography applications, all of which are hosted at <em>WPengine.com</em>. Data catalogs and bibliography apps rely on API access to data stores at the Environmental Data Initiative (EDI) repository, <em>Zotero.org</em>, and NMSU’s <em>ArcGIS Online</em> instance. The JRN website’s interactive data viewer is hosted at the USDA-ARS-supported <em>Shinyapps.io</em> account. All cloud-based systems have a minimum of nightly backups with distributed storage and rollback ability. The JRN IM team backs up all shared local files nightly to an in-house device and the DigitalOcean S3 bucket, which is in addition to weekly, off-site tape-drive backups of the same data performed by USDA-ARS staff. Technology transfers update hardware, software, and file formats on a 3-5 year cycle to ensure long-term data protection against media or format obsolescence. Depending on project needs and institutional requirements, the IM team and researchers use a variety of secure cloud platforms (e.g.&nbsp;Trello, GitHub, Dropbox or Google Drive) for online collaboration and storage of documentation, code, and other project information.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 24%">
+<col style="width: 53%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Implemented service</strong></th>
+<th style="text-align: left;"><strong>Local/remote infrastructure</strong></th>
+<th style="text-align: left;"><strong>Software</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Networked file storage on NMSU campus</td>
+<td style="text-align: left;">100TB local storage block</td>
+<td style="text-align: left;">CIFS</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>LTER-core-metabase</em> metadata database</td>
+<td style="text-align: left;">DigitalOcean.com VM</td>
+<td style="text-align: left;">Ubuntu Linux 20.04, PostgreSQL 12.16</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Web-accessible data storage, offsite backups</td>
+<td style="text-align: left;">DigitalOcean.com Spaces</td>
+<td style="text-align: left;">S3-compatible object store</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">JRN website and associated app hosting</td>
+<td style="text-align: left;">WPengine.com</td>
+<td style="text-align: left;">Wordpress 6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">EDI data catalog app (JRN website)</td>
+<td style="text-align: left;">portal.edirepository.org</td>
+<td style="text-align: left;">PASTA+ API, Javascript</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Bibliography, non-EDI data catalog apps (JRN website)</td>
+<td style="text-align: left;">Zotero.org</td>
+<td style="text-align: left;">Zotero API, Javascript</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Interactive data viewer (JRN website)</td>
+<td style="text-align: left;">Shinyapps.io</td>
+<td style="text-align: left;">R Shiny (Javascript app builder)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Document storage/sharing for remote collaboration</td>
+<td style="text-align: left;">Dropbox, Google Drive, GitHub</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>Table 1: The information technology services used by JRN, along with the associated local or remote infrastructure and softwares responsible for implementing them.</p>
+<p><strong>Network infrastructure</strong>: Servers and staff computers at Wooton Hall are connected to a Gigabit local area network (LAN) linked to the NMSU network (Gigabit Ethernet) through a firewall. Local networked systems and web applications are password-protected, and regular security sweeps identify security threats. The USDA Jornada field headquarters (HQ; centrally located at the LTER research site) is linked to the NMSU network via a 40 MB multi-hop, point-to-point wireless backhaul connection that can accommodate large-volume data. Field instruments are connected via spread spectrum wireless radios to base stations and the internet at HQ. Wireless internet at HQ is available for JRN LTER use.</p>
+</section>
+<section id="data-management-practices" class="level2">
+<h2 class="anchored" data-anchor-id="data-management-practices">Data management practices</h2>
+<p>Jornada data management practices must accommodate diverse research activities and data products, ranging from tabular field data, to ground-based and airborne imagery, to ecological model outputs, to data from specimen and sample collections. The JRN IM system therefore uses several infrastructure components and procedures to create, manage, and distribute research data and other information in a modular way. Wherever possible the JRN IM team uses open-source tools and community standards. All documentation for the system is available in the group’s public <em>GitHub</em> organization (<a href="https://github.com/jornada-im" class="uri">https://github.com/jornada-im</a>), along with instructional materials for data-related education and outreach. Essential functions that the IM system delivers, with relevant components and processes, are described below. Stages of the DataONE data life cycle are identified in parentheses after section headings.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./img/JRN_IM_schematic_2024_up.png" class="img-fluid figure-img" width="900"></p>
+<figcaption>Figure 1: A simplified schematic of the JRN Information Management system. Handling of a contributed JRN research dataset is depicted on the left, with infrastructure components (local and cloud-based) to the right. Labeled arrows depict data management processes, including a) the dataset submission, review, and revision process between IMs and researchers, b) data entry and backup to local and cloud infrastructure, c) dataset publication to EDI, d) cloud platform (EDI, shinyapps.io, ArcGIS Online, Zotero.org) API service calls updating the JRN website, and e) data and application updates to cloud platform services. Dashed arrows involve scripting and automation. Image credit xkcd.com.</figcaption>
+</figure>
+</div>
+<figure class="figure">
+<img src="../img/JRN_IM_schematic_2024_up.png" width="900px" class="figure-img">
+<figcaption>
+<em>Figure 1: A simplified schematic of the JRN Information Management system. A research dataset contributed to the IM team is depicted on the left, with infrastructure components (local and cloud-based) to the right. Labeled arrows represent data management processes, including a) dataset submission, review, and revision in coordination with researchers, b) data entry and backup to local and cloud infrastructure, c) dataset publication to EDI, d) cloud platform (EDI, shinyapps.io, ArcGIS Online, Zotero.org) API service calls updating the JRN website, and e) data and application updates to cloud platform services. All dashed arrows involve some scripting and automation. Image credit xkcd.com.</em>
+</figcaption>
+</figure>
+<p><br><br></p>
+<p><strong>Data collection and quality assurance (Collect, Assure)</strong>: The IM team carefully tracks the status of Jornada research projects to ensure that collected data receive thorough quality checks before being published. Most data products from JRN projects are tabular in nature, and there are three primary entry points for this data into the JRN IM system: (1) collection of long-term datasets by the 3-person JRN field crew and site manager Anderson, (2) autonomous data collection by sensor networks and dataloggers, and (3) data submission by LTER investigators, students, and collaborators. For data entry point (1), field data collection schedules vary depending on the project, and site manager Anderson is responsible for archiving raw files and managing data entry/transcription and validation procedures. Anderson works closely with the rest of the IM team to quality assure and check (QA/QC) new data and produce files suitable for publication on an annual basis. To optimize efficiency, the IM team has developed custom workflows (in <em>R</em>, <em>Python</em>, <em>Matlab</em>, or <em>Excel</em>) to assist with QA/QC and generate output files. For entry point (2) we use the <em>MATLAB GCE Toolbox</em> (developed at GCE LTER) for data QA/QC, and have extended its functionality to allow rapid data flagging and publication to EDI using software developed by Ramirez and Anderson. For entry point (3), students and investigators QA/QC their own data and submit it with appropriate metadata to the IM team on a timeframe matching JRN and LTER data access policies (see below). Once data and metadata are submitted to the IM team, an additional layer of QA/QC and standardization is applied through database validation and custom R scripts (Fig. 1) during the data publication phase.</p>
+<p>There are several classes of specialized JRN data products, including large datasets and non-tabular formats, that require a flexible approach to quality assurance. Biological specimens and physical samples destined for scientific collections are not assessed or otherwise handled directly by the IM team. Sequencing and genomic research generates datasets that are best assessed by those trained in bioinformatics. JRN modeling activities generate rapidly evolving code and parameter sets, and voluminous output/simulation data. Similarly, large collections of ground-based or airborne imagery are generated by multiple JRN research efforts. In each of these cases the JRN IM team has limited capacity to directly QA/QC the data. Instead, the focus is on training and coordination with the responsible researchers to ensure data quality and security, and collection of appropriate, descriptive metadata.</p>
+<p><strong>Data packaging and publishing (Describe, Preserve)</strong>: To meet the FAIR data criteria, JRN strives to publish quality-assured data accompanied by rich, detailed metadata. Creating and publishing new datasets begins with submission of metadata using EDI’s <em>ezEML</em> tool, or a metadata template created by the IM team (<em>MS Word</em> or <em>Excel</em> formats). The IM team consults closely with researchers, students, and staff to determine what constitutes a useful dataset and how to describe one with metadata. Upon submission, the IM team stores and manages metadata for all tabular data products in a relational database following the <em>LTER-core-metabase</em> schema (<em>metabase</em> hereafter) which is maintained by a working group of the LTER Network Information Management Committee (IMC). This system validates and enforces standards, such as use of the LTER Controlled Vocabulary and Standard Units Dictionary, for incoming metadata. JRN also uses its own set of metadata standards and controlled vocabularies developed in consultation with Jornada researchers.</p>
+<p>The JRN IM team publishes datasets in community-accepted online data repositories, with most going to the EDI data repository, which is closely affiliated with the LTER Network and focuses on metadata standards and data re-use. Before publication, the IM team error-checks and formats data files for usability, then uses an <em>R</em>-based workflow (<em>MetaEgress</em> and <em>jerald</em> packages) to extract metadata from <em>metabase</em> and generate an XML file formatted to the Ecological Metadata Language (EML) 2.2 standard. Data and EML files are then published together in EDI’s Provenance Aware Synthesis Tracking Architecture system (<em>PASTA+</em>). The consistency and integrity of all data and metadata is checked again by the <em>PASTA+</em> system upon entering the repository. Datasets held at EDI constitute the primary JRN data catalog (Fig. 1), but some JRN data products are published elsewhere.</p>
+<p>Specialized data products often have unique, community-standard data formats and metadata, and may benefit from alternative repository systems and publication methods. The IM team encourages and facilitates publication to non-EDI data repositories when logical to do so, and there are significant JRN data holdings in NCBI databases (sequencing and genomic data), AmeriFlux (flux towers), and the Phenocam network. Citation metadata for products in these repositories are entered into a Zotero library and listed in JRN’s non-EDI data catalog. In JRN-8 the IM team will begin placing new high-volume datasets (UAS imagery, acoustic monitoring data, model training data) into offline storage and making metadata records available in EDI. In all these cases the JRN IM team prioritizes providing high-quality metadata to allow others to discover the data, wherever it may reside, and assess its quality and fitness for use.</p>
+<p>For specimens and samples collected during JRN research (a new data management focus), the IM team collaborates with investigators to identify suitable partner museums or natural history collections, assemble appropriate metadata, and then accession the physical items into the collection, and metadata into an accessible database (e.g.&nbsp;<em>Arctos</em>, <em>Symbiota</em>). Plant and vertebrate voucher specimens are currently sent to the NMSU Herbaria and NMSU Wildlife Museums, respectively, and less-frequently collected specimens, like invertebrates, have been accessioned into a range of other collections in the past. Decades of Jornada soil survey and pedology samples have been archived at the NRCS National Soil Archive. When accessioning specimens and samples into established collections is not possible, the JRN IM team ensures stable local storage, catalogs all appropriate metadata, and makes the collection accessible on the JRN website. Some physical samples, including aeolian dust, atmospheric deposition, and plant tissue samples, are already handled this way. In recent years at JRN, environmental samples like soils, biocrusts, tissues, fecal pellets, and DNA extracts are being collected for metabarcoding, metagenomics, and other sequencing-based methods of investigation. Most of these are currently archived in investigator or departmental laboratory facilities (-80 freezers). In JRN-8, the IM team is proposing new protocols to handle these samples and associated data; see item 4 under “Future initiatives” below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./img/JRN_EDI_jrnVIII_rpt2_20231210.png" class="img-fluid figure-img" width="400"></p>
+<figcaption>Figure 2: A plot of JRN’s PASTA+ database activity (knb-lter-jrn scope) at the EDI repository since the 2020 JRN-8 proposal submission. Panel A: Cumulative dataset creation and update events. Panel B: Daily data downloads for JRN datasets. Known robots have been removed.</figcaption>
+</figure>
+</div>
+<figure class="figure">
+<img src="../img/JRN_EDI_jrnVIII_rpt2_20231210.png" width="400px" align="right" class="figure-img">
+<figcaption>
+<em>Figure 2: A plot of JRN’s PASTA+ database activity (knb-lter-jrn scope) at the EDI repository since the 2020 JRN-8 proposal submission. Panel A: Cumulative dataset creation and update events. Panel B: Daily data downloads for JRN datasets. Known robots have been removed. </em>
+</figcaption>
+</figure>
+<p><br><br></p>
+<p><strong>Data archiving and access policies (Preserve, Discover)</strong>: In adherence with the Type I data guidelines described in the LTER Network Data Access Policy, JRN strives to publish all research data no more than 2 years after collection or at the time of journal article publication. Long-term core research datasets are prioritized highest for publication within this 2 year period, while student thesis data receive lower publication priority as students finish, and datasets from early, previously unpublished JRN studies are published as time allows. To ensure compliance with this policy, JRN strongly encourages timely submission and archiving of research data from all supported projects. Investigators and students, particularly those receiving JRN graduate fellowships or other funds, are required to submit data to the IM team within a year of research project initiation, and annually thereafter for long-term research. The IM team regularly communicates these requirements directly to PIs and students at JRN meetings and training events. At present, no Type II data are collected at JRN.</p>
+<p>Data published in the primary JRN data catalog are publicly accessible in three locations: the JRN website, EDI, and the DataONE metadata aggregator through EDI’s membership. Almost all JRN datasets are published with the Creative Commons “CCBY” or “CC0” license, with minor exceptions for JRN data published in non-EDI repositories (e.g.&nbsp;NCBI). Detailed spatial data for research sites and instrumentation in areas accessible to the public (JER and the Chihuahuan Desert Rangeland Research Center) are withheld from public metadata but are available to researchers upon request.</p>
+<p><strong>The JRN website (Plan, Discover)</strong>: The JRN website (<a href="https://lter.jornada.nmsu.edu" class="uri">https://lter.jornada.nmsu.edu</a>) is the central means of exposing all aspects of research, education, and outreach activities in an accessible and user-friendly way. It conveys this information through a mix of static and interactive pages featuring site and program descriptions, blog posts, maps, research vignettes, and other materials. Website information is updated regularly and designed for effective communication with JRN scientists, staff, external collaborators, and the public.</p>
+<p>The JRN website has two main data-related functions. First, it directly communicates important information about collecting and sharing data to JRN researchers and staff. The “For Researchers” menu covers important topics such as (a) procedures for initiating new research, (b) site and field safety information, (c) conduct and inclusive research expectations, (d) incident reporting, and (e) expectations and procedures for contributing Jornada data, specimens, and samples. The IM team ensures that this content is accessible, clear, and actionable. Second, the website is the gateway for discovery and access to JRN data. The website data catalog is multi-faceted and includes capable browsing and search tools. The primary website data catalog queries the EDI repository using the <em>PASTA+</em> API and returns results that link directly to dataset landing pages on EDI, meaning that the data catalog always reflects current JRN holdings on EDI. Other facets of the data catalog allow discovery of non-EDI datasets, spatial data, biological specimens and physical samples, and data available from JRN’s non-LTER research partners.</p>
+<p>Access to JRN publication and personnel listings is provided via website applications as well. For publications, an LTER-community maintained javascript application provides access to a <em>Zotero.org</em>-backed JRN bibliography of peer-reviewed journal articles, book chapters, reports, and theses. Current JRN personnel are featured on the website using a <em>WordPress</em> plugin, which the IM team populates from an extensive personnel database that reaches back to the beginning of the program.</p>
+</section>
+<section id="additional-im-activities" class="level2">
+<h2 class="anchored" data-anchor-id="additional-im-activities">Additional IM activities</h2>
+<p><strong>IM integration with research (Plan, Describe, Integrate, Analyze)</strong>: The IM team is composed of experienced ecologists, statisticians, and computer scientists (and students in these fields) who contribute to JRN research in a range of scientific capacities. They work closely with Jornada investigators to ensure that research projects are soundly designed, address high-priority JRN research objectives, and meet all open science and data management standards and obligations. For new research, IM involvement typically begins early in the project approval process or during proposal writing efforts, allowing IMs to consider any unique data demands and initiate sound data management procedures. The IM team regularly contributes to research using JRN’s long-term core datasets, and therefore has a valuable perspective for overseeing these important projects. Recently, for example, the IM team led an effort to evaluate JRN’s long-term plant phenology data and revise the observation program to match National Phenology Network and NEON protocols (Elmendorf et al.&nbsp;2016). Members of the IM team also manage their own research projects, advise JRN students and investigators, and contribute to journal articles.</p>
+<p><strong>Education and outreach</strong>: The JRN IM team prioritizes data-related leadership, education, and outreach by promoting the importance of Jornada data and sound data management practices, and building the data literacy and skills of Jornada investigators, students, and staff. Maurer and James are certified Carpentries instructors and have organized five scientific programming and data analysis workshops in the past 3 years. At the annual <em>Jornada Desert Ecology Short Course</em>, the IM team delivers a detailed Jornada Information Management presentation to students and researchers, and organizes ad-hoc events such as Data Jams (with Asombro), metadata clinics, or Carpentries workshops. Maurer holds weekly data-related office hours (Data Therapy Thursday) and James holds a monthly <em>R</em> work group.</p>
+<p><strong>Network participation</strong>: Members of the JRN IM team actively contribute to the LTER Network’s IM activities in several capacities. From 2020-2023, Maurer served on the IM Executive committee for the network, including a term as co-chair, and he currently leads or participates in several EDI/LTER working groups. JRN contributes code, data, and expertise to several EDI and LTER data synthesis projects and collaborates closely with IMs from SEV, MCM, and NWT to organize education and outreach activities.</p>
+</section>
+<section id="recent-accomplishments-and-future-initiatives" class="level2">
+<h2 class="anchored" data-anchor-id="recent-accomplishments-and-future-initiatives">Recent accomplishments and future initiatives</h2>
+<p><strong>Milestones in the current funding cycle</strong>: Since its last LTER renewal in 2018, JRN has developed a more efficient data publishing system, eased discovery and access of its diverse datasets, and enhanced data reusability by standardizing data and metadata. Milestones from the past four years include:</p>
+<ol type="1">
+<li>A total of 386 JRN datasets are published at the EDI repository, with 291 newly created since the renewal, including many previously unpublished datasets from early JRN LTER projects. More than 330 datasets had data and/or metadata updated at least once in this period, with most long-term core datasets being updated yearly, and as frequently as monthly for over 30 weather station datasets (Fig. 2).</li>
+<li>We created <em>metabase</em> and populated it with the rich metadata Jornada research programs have accumulated over the past 40 years. This system eased implementation of new data formatting and metadata content standards for almost all datasets in the JRN data catalog.</li>
+<li>New standards and workflows to manage and publish specialized (non-tabular) datasets, such as ground-based and airborne imagery, were developed in collaboration with data managers in the LTER network and beyond (Gries et al.&nbsp;2021).</li>
+<li>The JRN data catalog was revised to enhance discovery and access to: (a) data published outside of EDI, (b) geospatial data, and (c), data from collaborating research networks and partners.</li>
+</ol>
+<p><strong>Future initiatives</strong>: The IM team will continue making steady improvements to the JRN IM system and the quality and FAIR status of JRN data. The next six years will bring significant changes to JRN research priorities and data, and the IM team plans to support these transitions. Planned improvements during JRN-8 are:</p>
+<ol type="1">
+<li>The IM team will expand its focus on the re-use of JRN data by harmonizing datasets, creating analysis-ready data products, and developing analytical applications. We will use open-source tools like R and Python, and leverage recent improvements in JRN metadata standards and publishing efficiency.</li>
+<li>JRN research projects continue to expand data collection via sensor networks. The IM team will extend the use of the <em>MATLAB GCE Toolbox</em> by implementing a new time series database for these data, and open-source tools to manage, publish, and access them efficiently. A pilot project for this began in 2023 in coordination with the HyMet working group, a joint effort of the LTER Network, EDI, CUAHSI, and the Dendra project. A side benefit of this work will be accessibility of real-time information about field conditions that will improve researcher safety.</li>
+<li>Several JRN-8 projects propose to collect and use ground-based and aerial imagery (e.g.&nbsp;phenocams, UAS imagery) as a survey and monitoring method to complement or replace manual fieldwork. The IM team will respond with suitable data management protocols and accessibility tools.</li>
+<li>As noted above, biological specimens and physical samples are a key product of JRN research. In JRN-8, the IM team will work to (a) identify JRN physical sample and specimen collections and make a comprehensive catalog accessible via the JRN website, and (b) develop new protocols to preserve and archive scientifically useful environmental samples (soil, biocrust, tissues), or resulting DNA extracts, into appropriate collections. For (b) we are discussing partnership options with the Museum of Southwestern Biology and the NEON Biorepository, and examining supplemental funding opportunities.</li>
+<li>The Jornada Dryland Modeling team is proposing ecological modeling capabilities that will (a) consume observational datasets and other training data, (b) undergo intensive software development over time, and (c) produce simulation outputs for a variety of research questions and applications. The JRN IM team is embedded in this effort and will ensure that modeling activity and relevant data products are preserved and publicly accessible.</li>
+</ol>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/jornada-im\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/proposals-and-reports/JRN_data_management_plan.LTER8.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
