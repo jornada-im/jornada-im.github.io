@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Shelley Valdovinos">
 
-<title>sop_metadata_publishing – Jornada Data Commons</title>
+<title>SOP for updating datasets in metabase – Jornada Data Commons</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -223,31 +224,37 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../docs/im/sysadmin/chapter-01-overview.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Overview</span></a>
+ <span class="menu-text">1. IM System Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/im/sysadmin/chapter-02-website-and-comm.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Website and communications</span></a>
+  <a href="../../../docs/im/sysadmin/chapter-02-project-management.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Project Management</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/im/sysadmin/chapter-03-jrn-metabase.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Metabase</span></a>
+  <a href="../../../docs/im/sysadmin/chapter-03-websites-and-apps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Websites and Web Applications</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/im/sysadmin/chapter-04-publishing-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data publishing</span></a>
+  <a href="../../../docs/im/sysadmin/chapter-04-databases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. Databases</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/im/sysadmin/chapter-05-server-admin.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Server administration</span></a>
+  <a href="../../../docs/im/sysadmin/chapter-05-data-publishing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. Data Publishing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/im/sysadmin/chapter-06-server-admin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Servers and Server Administration</span></a>
   </div>
 </li>
       </ul>
@@ -268,24 +275,47 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#sop-for-updating-datasets-in-metabase" id="toc-sop-for-updating-datasets-in-metabase" class="nav-link active" data-scroll-target="#sop-for-updating-datasets-in-metabase">SOP for updating datasets in metabase</a>
-  <ul class="collapse">
-  <li><a href="#navigating-the-dbeaver-database-to-update-and-incorporate-datasets" id="toc-navigating-the-dbeaver-database-to-update-and-incorporate-datasets" class="nav-link" data-scroll-target="#navigating-the-dbeaver-database-to-update-and-incorporate-datasets">NAVIGATING THE DBEAVER DATABASE TO UPDATE AND INCORPORATE DATASETS:</a>
+  <li><a href="#navigating-the-dbeaver-database-to-update-and-incorporate-datasets" id="toc-navigating-the-dbeaver-database-to-update-and-incorporate-datasets" class="nav-link active" data-scroll-target="#navigating-the-dbeaver-database-to-update-and-incorporate-datasets">NAVIGATING THE DBEAVER DATABASE TO UPDATE AND INCORPORATE DATASETS:</a>
   <ul class="collapse">
   <li><a href="#dbeaver" id="toc-dbeaver" class="nav-link" data-scroll-target="#dbeaver"><u>DBeaver:</u></a></li>
-  </ul></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/im/procedures/sop_metadata_publishing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/im/procedures/sop_metadata_publishing.html">Procedures</a></li><li class="breadcrumb-item"><a href="../../../docs/im/procedures/sop_metadata_publishing.html">SOP for updating datasets in metabase</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/im/procedures/sop_metadata_publishing.html">Procedures</a></li><li class="breadcrumb-item"><a href="../../../docs/im/procedures/sop_metadata_publishing.html">SOP for updating datasets in metabase</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">SOP for updating datasets in metabase</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="sop-for-updating-datasets-in-metabase" class="level1">
-<h1>SOP for updating datasets in metabase</h1>
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Shelley Valdovinos </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Invalid Date</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
 <p><em>The following are resources that can be referred to for information needed in order to enter or update datasets.</em></p>
 <p><u><strong>Data Catalog</strong>:</u> <a href="https://lter.jornada.nmsu.edu/data-catalog"><u>https://lter.jornada.nmsu.edu/data-catalog</u></a></p>
 <ul>
@@ -565,7 +595,6 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 
 
-</section>
 </section>
 </section>
 

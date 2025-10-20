@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="The Jornada Information Management Team">
 
-<title>chapter-05-server-admin – Jornada Data Commons</title>
+<title>5. Data Publishing – Jornada Data Commons</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../docs/refs_and_links.md" rel="next">
-<link href="../../../docs/im/sysadmin/chapter-04-publishing-data.html" rel="prev">
+<link href="../../../docs/im/sysadmin/chapter-06-server-admin.html" rel="next">
+<link href="../../../docs/im/sysadmin/chapter-04-databases.html" rel="prev">
 <link href="../../../img/jrn-logo-light.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -138,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/im/sysadmin/index.html">Full IM System Documentation</a></li><li class="breadcrumb-item"><a href="../../../docs/im/sysadmin/chapter-05-server-admin.html">Server administration</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/im/sysadmin/index.html">Full IM System Documentation</a></li><li class="breadcrumb-item"><a href="../../../docs/im/sysadmin/chapter-05-data-publishing.html">5. Data Publishing</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -223,31 +224,37 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../docs/im/sysadmin/chapter-01-overview.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Overview</span></a>
+ <span class="menu-text">1. IM System Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/im/sysadmin/chapter-02-website-and-comm.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Website and communications</span></a>
+  <a href="../../../docs/im/sysadmin/chapter-02-project-management.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Project Management</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/im/sysadmin/chapter-03-jrn-metabase.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Metabase</span></a>
+  <a href="../../../docs/im/sysadmin/chapter-03-websites-and-apps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Websites and Web Applications</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/im/sysadmin/chapter-04-publishing-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data publishing</span></a>
+  <a href="../../../docs/im/sysadmin/chapter-04-databases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. Databases</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/im/sysadmin/chapter-05-server-admin.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Server administration</span></a>
+  <a href="../../../docs/im/sysadmin/chapter-05-data-publishing.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">5. Data Publishing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/im/sysadmin/chapter-06-server-admin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Servers and Server Administration</span></a>
   </div>
 </li>
       </ul>
@@ -268,82 +275,193 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#server-administration" id="toc-server-administration" class="nav-link active" data-scroll-target="#server-administration">Server administration</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
   <ul class="collapse">
-  <li><a href="#cloud-server-setup-tasks" id="toc-cloud-server-setup-tasks" class="nav-link" data-scroll-target="#cloud-server-setup-tasks">Cloud server setup tasks</a>
-  <ul class="collapse">
-  <li><a href="#metabase-server-config" id="toc-metabase-server-config" class="nav-link" data-scroll-target="#metabase-server-config">Metabase server config</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#some-useful-tools" id="toc-some-useful-tools" class="nav-link" data-scroll-target="#some-useful-tools">Some useful tools</a></li>
   </ul></li>
-  <li><a href="#securing-cloud-servers" id="toc-securing-cloud-servers" class="nav-link" data-scroll-target="#securing-cloud-servers">Securing cloud servers</a></li>
-  <li><a href="#scheduled-tasks" id="toc-scheduled-tasks" class="nav-link" data-scroll-target="#scheduled-tasks">Scheduled tasks</a></li>
-  <li><a href="#nfs-and-cifs-mounts-to-remote-directories" id="toc-nfs-and-cifs-mounts-to-remote-directories" class="nav-link" data-scroll-target="#nfs-and-cifs-mounts-to-remote-directories">NFS and CIFS mounts to remote directories</a></li>
+  <li><a href="#make-eml-with-jrn-metabase-and-jerald" id="toc-make-eml-with-jrn-metabase-and-jerald" class="nav-link" data-scroll-target="#make-eml-with-jrn-metabase-and-jerald">Make EML with JRN Metabase and jerald</a>
+  <ul class="collapse">
+  <li><a href="#set-up-the-r-environment" id="toc-set-up-the-r-environment" class="nav-link" data-scroll-target="#set-up-the-r-environment">Set up the R environment</a></li>
+  <li><a href="#set-up-a-dataset-directory" id="toc-set-up-a-dataset-directory" class="nav-link" data-scroll-target="#set-up-a-dataset-directory">Set up a dataset directory</a>
+  <ul class="collapse">
+  <li><a href="#metadata-sources" id="toc-metadata-sources" class="nav-link" data-scroll-target="#metadata-sources">Metadata sources</a></li>
+  <li><a href="#data-table-sources" id="toc-data-table-sources" class="nav-link" data-scroll-target="#data-table-sources">Data table sources</a></li>
+  <li><a href="#other-entities" id="toc-other-entities" class="nav-link" data-scroll-target="#other-entities">Other entities</a></li>
+  <li><a href="#build-scripts" id="toc-build-scripts" class="nav-link" data-scroll-target="#build-scripts">Build scripts</a></li>
+  </ul></li>
+  <li><a href="#build-eml-and-publish" id="toc-build-eml-and-publish" class="nav-link" data-scroll-target="#build-eml-and-publish">Build EML and publish</a></li>
+  </ul></li>
+  <li><a href="#make-eml-with-emlassemblyline" id="toc-make-eml-with-emlassemblyline" class="nav-link" data-scroll-target="#make-eml-with-emlassemblyline">Make EML with EMLassemblyline</a>
+  <ul class="collapse">
+  <li><a href="#set-up-the-r-environment-1" id="toc-set-up-the-r-environment-1" class="nav-link" data-scroll-target="#set-up-the-r-environment-1">Set up the R environment</a></li>
+  <li><a href="#set-up-a-dataset-directory-1" id="toc-set-up-a-dataset-directory-1" class="nav-link" data-scroll-target="#set-up-a-dataset-directory-1">Set up a dataset directory</a>
+  <ul class="collapse">
+  <li><a href="#metadata-sources-1" id="toc-metadata-sources-1" class="nav-link" data-scroll-target="#metadata-sources-1">Metadata sources</a></li>
+  <li><a href="#data-table-sources-1" id="toc-data-table-sources-1" class="nav-link" data-scroll-target="#data-table-sources-1">Data table sources</a></li>
+  <li><a href="#other-entities-1" id="toc-other-entities-1" class="nav-link" data-scroll-target="#other-entities-1">Other entities</a></li>
+  <li><a href="#build-scripts-1" id="toc-build-scripts-1" class="nav-link" data-scroll-target="#build-scripts-1">Build scripts</a></li>
+  </ul></li>
+  <li><a href="#build-eml-and-publish-1" id="toc-build-eml-and-publish-1" class="nav-link" data-scroll-target="#build-eml-and-publish-1">Build EML and publish</a>
+  <ul class="collapse">
+  <li><a href="#draft-steps-to-create-metadata-eml-file" id="toc-draft-steps-to-create-metadata-eml-file" class="nav-link" data-scroll-target="#draft-steps-to-create-metadata-eml-file">DRAFT Steps to create metadata (EML) file</a></li>
+  </ul></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/im/sysadmin/chapter-05-server-admin.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/im/sysadmin/chapter-05-data-publishing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/im/sysadmin/index.html">Full IM System Documentation</a></li><li class="breadcrumb-item"><a href="../../../docs/im/sysadmin/chapter-05-server-admin.html">Server administration</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/im/sysadmin/index.html">Full IM System Documentation</a></li><li class="breadcrumb-item"><a href="../../../docs/im/sysadmin/chapter-05-data-publishing.html">5. Data Publishing</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">5. Data Publishing</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="server-administration" class="level1">
-<h1>Server administration</h1>
-<p>The Jornada IM system relies on some cloud servers at DigitalOcean (aka droplets). Generally these are running Ubuntu Server 20.04. Below are some tools and practices for setting up servers, networking between them, managing user access, transferring and securing data, and other administrative tasks.</p>
-<section id="cloud-server-setup-tasks" class="level2">
-<h2 class="anchored" data-anchor-id="cloud-server-setup-tasks">Cloud server setup tasks</h2>
-<p>Creating new services at DO is easy - it can be done with the dashboard or an API. Documentation for all DO services is <a href="https://www.digitalocean.com/docs/">available here</a>, and for droplets see the recommended initial setup docs <a href="https://www.digitalocean.com/docs/droplets/tutorials/recommended-setup/">here</a> and <a href="https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04">here</a></p>
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>The Jornada Information Management Team </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Invalid Date</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>The steps to publish a dataset:</p>
 <ol type="1">
-<li><p>Add public key to server - usually you can do this on creation or from an admin control panel. If it needs to be done after the fact <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04">see here</a></p></li>
-<li><p>Add a non-root user with sudo privilege and allow ssh access. More info here:</p>
-<ul>
-<li>https://www.digitalocean.com/docs/droplets/tutorials/recommended-setup/</li>
-<li>https://www.digitalocean.com/community/questions/how-to-enable-ssh-access-for-non-root-users</li>
-</ul></li>
-<li><p>Configure hostnames (if not already done at creation).</p>
-<ul>
-<li>https://www.digitalocean.com/community/questions/how-do-i-change-hostname</li>
-</ul></li>
-<li><p>Install software, which varies depending on server purpose.</p>
-<ul>
-<li>Metabase server: git, cron, PostgreSQL</li>
-<li>Web servers: probably the LAMP stack and WordPress, maybe some javascript.</li>
-</ul></li>
+<li>Standardize and QA/QC a data file until it is in a publishable state</li>
+<li>Assemble and store all necessary metadata to describe the data</li>
+<li>Make a <em>valid</em> EML file (or other standardized metadata entry)</li>
+<li>Publish the dataset to a repository (like EDI)</li>
 </ol>
-<section id="metabase-server-config" class="level3">
-<h3 class="anchored" data-anchor-id="metabase-server-config">Metabase server config</h3>
+<p>Step 1 we generally do with R. Step 2 happens in JRN_metabase. Steps 3 &amp; 4 happen back in R with the <code>jerald</code> package.</p>
+</section>
+<section id="some-useful-tools" class="level2">
+<h2 class="anchored" data-anchor-id="some-useful-tools">Some useful tools</h2>
+<ul>
+<li>You can use a free, <a href="https://www.freeformatter.com/xml-validator-xsd.html">online XML schema validator</a> to validate your EML. Or you can use Oxygen, <a href="https://microsoft.github.io/XmlNotepad/">XML Notepad</a>, <a href="">XML Copy Editor</a>, etc.</li>
+</ul>
+</section>
+</section>
+<section id="make-eml-with-jrn-metabase-and-jerald" class="level1">
+<h1>Make EML with JRN Metabase and jerald</h1>
+<p>At the moment we use an R package called <a href="https://ble-lter.github.io/MetaEgress/">MetaEgress</a> to make EML documents derived from the metadata in our JRN Metabase. They have some <a href="https://ble-lter.github.io/MetaEgress/articles/usage_example.html">example workflows</a> and <a href="https://github.com/BLE-LTER/MetaEgress/blob/master/example/example_workflow.R">R scripts</a> in their GitHub repository.</p>
+<p>We are developing a new R package called <code>jerald</code> (which relies on <code>MetaEgress</code>, among other things) to handle much of this job for the Jornada IM team.</p>
+<section id="set-up-the-r-environment" class="level2">
+<h2 class="anchored" data-anchor-id="set-up-the-r-environment">Set up the R environment</h2>
+<p>Install <a href="https://ble-lter.github.io/MetaEgress/">MetaEgress</a>.</p>
+<p>If you want to be adventurous, try installing <a href="https://github.com/jornada-im/jerald">jerald</a>.</p>
+</section>
+<section id="set-up-a-dataset-directory" class="level2">
+<h2 class="anchored" data-anchor-id="set-up-a-dataset-directory">Set up a dataset directory</h2>
+<p>Jornada datasets consist of data files, metadata, and sometimes additional files. Not all of these can be stored directly in the JRN Metabase. So, each Jornada dataset should have a dedicated directory, usually on the Jornada shared drive. These directories are typically prefixed with the Jornada dataset ID number. As noted below, all data entities to be incuded with the published dataset, as well as some metadata to be attached, will be stored in this directory. It is also a good place to store scripts used to QA/QC datafiles and publish finished datasets.</p>
+<p>A template dataset directory for data packages that rely on JRN Metabase can be found in the <a href="https://github.com/jornada-im/jrn-metabase-utils">jrn-metabase-utils</a> repository. It contains all the directories and template scripts described below. This repository also contains a python script (<code>init_jerald_datasetdir.py</code>) that will build a dataset directory for you.</p>
+<section id="metadata-sources" class="level3">
+<h3 class="anchored" data-anchor-id="metadata-sources">Metadata sources</h3>
+<p>Incoming metadata templates may be added to the <code>metadata_docs/</code> or <code>source_data/</code> directories, whichever is more convenient. Older metadata files used for reference, such as “dsd” and “prj” files from Jornada archives, should be kept in <code>metadata_docs/</code>.</p>
+<p>The abstract and methods text files referred to in JRN Metabase (<code>abstract.210000000.md</code> and <code>methods.210000000.md</code>) should be kept in the top level of the dataset directory and can be updated there. With the exception of these two pieces of metadata, JRN Metabase is the primary store of metadata for Jornada datasets, and all changes should be made there.</p>
+</section>
+<section id="data-table-sources" class="level3">
+<h3 class="anchored" data-anchor-id="data-table-sources">Data table sources</h3>
+<p>Incoming raw data, including submissions from researchers, can be kept in the <code>source_data/</code> directory.</p>
+</section>
+<section id="other-entities" class="level3">
+<h3 class="anchored" data-anchor-id="other-entities">Other entities</h3>
+<p>Other entities should probably be kept in the top level of the dataset directory, but we may find a better way.</p>
+</section>
+<section id="build-scripts" class="level3">
+<h3 class="anchored" data-anchor-id="build-scripts">Build scripts</h3>
+<p>Build scripts here prepare the data and metadata for publication using various R packages. The resulting EML dataset may be published using the scripts, or manually using the <a href="https://portal-s.edirepository.org">EDI portal</a>.</p>
+<ul>
+<li><code>build_210000000_dataset.R</code> - Basic build script that formats &amp; QA/QCs data in <code>source_data/</code> and writes publishable data files to the working directory (<code>./</code>)</li>
+<li><code>build_210000000_eml.R</code> - Creates an eml file and optionally uploads data entities and pushes the package to EDI using APIs.</li>
+<li><code>build_210000000_eml_jerald.R</code> - same as above, but uses the <a href="https://github.com/jornada-im/jerald">jerald</a> R package.</li>
+</ul>
+</section>
+</section>
+<section id="build-eml-and-publish" class="level2">
+<h2 class="anchored" data-anchor-id="build-eml-and-publish">Build EML and publish</h2>
+<p>For now the <code>build_210000000_eml.R</code> template R script should have pretty good step-by-step information, but we’ll document this further soon…</p>
+</section>
+</section>
+<section id="make-eml-with-emlassemblyline" class="level1">
+<h1>Make EML with EMLassemblyline</h1>
+<p>The R package <a href="https://ediorg.github.io/EMLassemblyline/">EMLassemblyline</a> (or <code>EAL</code>) can be used to make EML documents derived from the metadata stored in text files. We typically would use this process for datasets that are not otherwise in our data management system or JRN Metabase.</p>
+<section id="set-up-the-r-environment-1" class="level2">
+<h2 class="anchored" data-anchor-id="set-up-the-r-environment-1">Set up the R environment</h2>
+<p>Install <a href="https://ediorg.github.io/EMLassemblyline/">EMLassemblyline</a>.</p>
+</section>
+<section id="set-up-a-dataset-directory-1" class="level2">
+<h2 class="anchored" data-anchor-id="set-up-a-dataset-directory-1">Set up a dataset directory</h2>
+<p>Jornada datasets consist of data files, metadata, and sometimes additional files, so it is helpful to create dataset directories with a consistent structure to mange these files. Jornada dataset directories are typically prefixed with the Jornada dataset ID number. As noted below, all data entities to be incuded with the published dataset, all metadata for the EML document, and the scripts used to QA/QC datafiles and make EML documents should go in this directory. In the <a href="https://ediorg.github.io/EMLassemblyline/"><code>EAL</code> documentation</a> there is a dataset directory structure suggested, which we have adopted here.</p>
+<p>A template dataset directory for data packages that rely on EAL can be found in the <a href="https://github.com/jornada-im/jrn-emlassemblyline">jrn-emlassemblyline</a> repository. It contains all the directories and template scripts described below. This repository also contains a python script (<code>init_eal_datasetdir.py</code>) that will build a dataset directory for you.</p>
+<section id="metadata-sources-1" class="level3">
+<h3 class="anchored" data-anchor-id="metadata-sources-1">Metadata sources</h3>
+<p>Metadata should be added to the templates in the <code>metadata_templates/</code> directory. These templates are described in the EAL documentation and there are templating functions that can be used to generate empty templates that are easy to fill in. Old metadata files used for reference, such as “dsd” and “prj” files from Jornada archives, can be kept in the top level dataset directory, or a subdirectory of your choice.</p>
+</section>
+<section id="data-table-sources-1" class="level3">
+<h3 class="anchored" data-anchor-id="data-table-sources-1">Data table sources</h3>
+<p>Incoming raw data, including submissions from researchers, can be kept in the top level of the dataset directory. Once they are QA/QC’d and re-formatted for publication, the resulting data tables will be added to the <code>data_entities/</code> subdirectory.</p>
+</section>
+<section id="other-entities-1" class="level3">
+<h3 class="anchored" data-anchor-id="other-entities-1">Other entities</h3>
+<p>Other entities, which are generally not processed or altered in any way before publication, can be put directly into the <code>data_entities/</code> directory. However, there may be some cases where the incoming otherEntity file needs some alteration and it makes sense to keep a raw version separate from a processed version. Use your discretion.</p>
+</section>
+<section id="build-scripts-1" class="level3">
+<h3 class="anchored" data-anchor-id="build-scripts-1">Build scripts</h3>
+<p>Build scripts call <code>EAL</code> (and related R packages) to prepare the data and metadata for publication. Once complete, the resulting EML and data entities may be published manually using the <a href="https://portal-s.edirepository.org">EDI portal</a>. Metadata such as the title and entity descriptions are also in these build scripts.</p>
+<ul>
+<li><code>build_&lt;datasetID&gt;.R</code> - Basic build script that modifies data and writes EML for the dataset identified by <datasetid>.</datasetid></li>
+</ul>
+</section>
+</section>
+<section id="build-eml-and-publish-1" class="level2">
+<h2 class="anchored" data-anchor-id="build-eml-and-publish-1">Build EML and publish</h2>
+<p>For now the <code>build_210000000.R</code> template R script should have pretty good step-by-step information, but we’ll document this further soon…</p>
+<section id="draft-steps-to-create-metadata-eml-file" class="level3">
+<h3 class="anchored" data-anchor-id="draft-steps-to-create-metadata-eml-file">DRAFT Steps to create metadata (EML) file</h3>
+<p>The example package with dataset ID 210000000 is used here.</p>
+<p><strong>If updating and publishing new data (and metadata):</strong></p>
 <ol type="1">
-<li>Clone the <a href="https://github.com/lter/LTER-core-metabase"><code>LTER-core-metabase</code></a> and <a href="https://github.com/jornada-im/jrn-db-utils"><code>jrn-db-utils</code></a> (private) repositories to a directory in home.</li>
-<li>Create a <code>backups</code> directory and <code>mkdir /home/backups/postgresql</code>. Make sure owner is whoever operates backups for postgres</li>
-<li>Add a the <code>jrn-db-utils/sh/pb_backup_rotated.sh</code> script to crontab - nightly.</li>
-<li>Make sure incoming connections for SSH (TCP port 22) and PostgreSQL (TCP port 5432) are allowed in the firewall (currently using the DO firewall).</li>
+<li>Download and open the latest dataset.</li>
+<li>Make any data file changes necessary with R in the <code>build_210000000.R</code> script</li>
+<li>Increment <code>package.id</code> version number in build_210000000.R (<code>make_eml()</code> call)</li>
+<li>Increment the <code>temporal.coverage</code> array in build_210000000.R (<code>make_eml()</code> call)</li>
+<li>Update metadata templates.</li>
+<li>Run the build_210000000.R script in R.</li>
+<li>Publish to EDI staging server.</li>
 </ol>
-</section>
-</section>
-<section id="securing-cloud-servers" class="level2">
-<h2 class="anchored" data-anchor-id="securing-cloud-servers">Securing cloud servers</h2>
-<p>Droplets are behind a DO cloud firewall, but if needed, firewalls can also be set up for individual droplets with UFW. This and other tasks are described in the initial server setup docs above, or:</p>
-<ul>
-<li><a href="https://www.digitalocean.com/community/tutorials/recommended-security-measures-to-protect-your-servers">DigitalOcean droplet security tutorial</a></li>
-</ul>
-<p>Unattended updates are a good idea also. For Ubuntu install the <code>unnattended-upgrades</code> package and see setup instructions <a href="https://ubuntu.com/server/docs/package-management">here</a>.</p>
-</section>
-<section id="scheduled-tasks" class="level2">
-<h2 class="anchored" data-anchor-id="scheduled-tasks">Scheduled tasks</h2>
-<p>Some server tasks, like database or website backups, should be scheduled with cron.</p>
-<ul>
-<li><a href="https://www.digitalocean.com/community/tutorials/how-to-use-cron-to-automate-tasks-ubuntu-1804">DO Ubuntu cron tutorial</a></li>
-</ul>
-</section>
-<section id="nfs-and-cifs-mounts-to-remote-directories" class="level2">
-<h2 class="anchored" data-anchor-id="nfs-and-cifs-mounts-to-remote-directories">NFS and CIFS mounts to remote directories</h2>
-<p>The JORNADA-NETB1 storage block (sometimes called the R drive) allows CIFS connections (or SMB).</p>
-<p>Other:</p>
-<ul>
-<li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-ubuntu-20-04">Setting up NFS mounts in Ubuntu</a></li>
-</ul>
+<p><strong>If you are updating the package metadata only:</strong></p>
+<ol type="1">
+<li>Edit the metadata templates in <code>./metadata_templates</code></li>
+<li>Increment <code>package.id</code> version number in build_210000000.R (<code>make_eml()</code> call)</li>
+<li>Run the build_210000000.R script in R (careful not to regenerate blank templates)</li>
+<li>Publish to EDI or EDI Staging (“Evaluate/Upload Data Packages” tool)</li>
+</ol>
 
 
+</section>
 </section>
 </section>
 
@@ -750,13 +868,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../docs/im/sysadmin/chapter-04-publishing-data.html" class="pagination-link" aria-label="Data publishing">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Data publishing</span>
+      <a href="../../../docs/im/sysadmin/chapter-04-databases.html" class="pagination-link" aria-label="4. Databases">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">4. Databases</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../docs/refs_and_links.md" class="pagination-link" aria-label="Useful references and links">
-        <span class="nav-page-text">Useful references and links</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../docs/im/sysadmin/chapter-06-server-admin.html" class="pagination-link" aria-label="6. Servers and Server Administration">
+        <span class="nav-page-text">6. Servers and Server Administration</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -765,4 +883,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/im/sysadmin/chapter-05-server-admin.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/im/sysadmin/chapter-05-data-publishing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

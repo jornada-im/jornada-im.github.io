@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="The Jornada Information Management Team">
 
-<title>Overview of Information Management at the Jornada – Jornada Data Commons</title>
+<title>6. Servers and Server Administration – Jornada Data Commons</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +24,27 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../docs/im/standards/JRN_metadata_standards.html" rel="next">
-<link href="../../img/jrn-logo-light.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-95f147d06fdb9f8ce149f95e323965f4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-903c4444735f79a14c415f113c750710.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../docs/refs_and_links.md" rel="next">
+<link href="../../../docs/im/sysadmin/chapter-05-data-publishing.html" rel="prev">
+<link href="../../../img/jrn-logo-light.png" rel="icon" type="image/png">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-95f147d06fdb9f8ce149f95e323965f4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-903c4444735f79a14c415f113c750710.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,11 +82,11 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../img/jrn-logo-light.png" alt="" class="navbar-logo light-content">
-    <img src="../../img/jrn-logo-light.png" alt="" class="navbar-logo dark-content">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../img/jrn-logo-light.png" alt="" class="navbar-logo light-content">
+    <img src="../../../img/jrn-logo-light.png" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Jornada Data Commons</span>
     </a>
   </div>
@@ -95,15 +97,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../../index.html" aria-current="page"> 
+    <a class="nav-link active" href="../../../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../docs/researcher/overview.html"> 
+    <a class="nav-link" href="../../../docs/researcher/overview.html"> 
 <span class="menu-text">Researcher Guide</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../docs/im/overview.html"> 
+    <a class="nav-link" href="../../../docs/im/overview.html"> 
 <span class="menu-text">IM Guide</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -112,15 +114,15 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-document-archive">    
         <li>
-    <a class="dropdown-item" href="../../templates/index.html">
+    <a class="dropdown-item" href="../../../templates/index.html">
  <span class="dropdown-text">Forms and templates</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../proposals-and-reports/index.html">
+    <a class="dropdown-item" href="../../../proposals-and-reports/index.html">
  <span class="dropdown-text">Recent proposals and reports</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../archive/index.html">
+    <a class="dropdown-item" href="../../../archive/index.html">
  <span class="dropdown-text">Miscellaneous documents</span></a>
   </li>  
     </ul>
@@ -137,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/im/overview.html">Overview</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/im/sysadmin/index.html">Full IM System Documentation</a></li><li class="breadcrumb-item"><a href="../../../docs/im/sysadmin/chapter-06-server-admin.html">6. Servers and Server Administration</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -148,14 +150,14 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="../../index.html" class="sidebar-logo-link">
+      <a href="../../../index.html" class="sidebar-logo-link">
       </a>
       </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/im/overview.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../docs/im/overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
@@ -170,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/im/standards/JRN_metadata_standards.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/im/standards/JRN_metadata_standards.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Jornada Dataset Metadata Standards</span></a>
   </div>
 </li>
@@ -187,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/im/procedures/sop_metadata_publishing.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/im/procedures/sop_metadata_publishing.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">SOP for updating datasets in metabase</span></a>
   </div>
 </li>
@@ -204,7 +206,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/im/hacks/parse_trello_boards.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/im/hacks/parse_trello_boards.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Parsing trello boards to csv</span></a>
   </div>
 </li>
@@ -212,7 +214,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../docs/im/sysadmin/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../docs/im/sysadmin/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Full IM System Documentation</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -221,37 +223,37 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/im/sysadmin/chapter-01-overview.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/im/sysadmin/chapter-01-overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1. IM System Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/im/sysadmin/chapter-02-project-management.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/im/sysadmin/chapter-02-project-management.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2. Project Management</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/im/sysadmin/chapter-03-websites-and-apps.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/im/sysadmin/chapter-03-websites-and-apps.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">3. Websites and Web Applications</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/im/sysadmin/chapter-04-databases.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/im/sysadmin/chapter-04-databases.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">4. Databases</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/im/sysadmin/chapter-05-data-publishing.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/im/sysadmin/chapter-05-data-publishing.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">5. Data Publishing</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/im/sysadmin/chapter-06-server-admin.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/im/sysadmin/chapter-06-server-admin.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">6. Servers and Server Administration</span></a>
   </div>
 </li>
@@ -259,7 +261,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/refs_and_links.md" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/refs_and_links.md" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Useful references and links</span></a>
   </div>
 </li>
@@ -273,28 +275,44 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#information-management-at-jornada-basin-lter" id="toc-information-management-at-jornada-basin-lter" class="nav-link active" data-scroll-target="#information-management-at-jornada-basin-lter">Information Management at Jornada Basin LTER</a>
+  <li><a href="#server-administration" id="toc-server-administration" class="nav-link active" data-scroll-target="#server-administration">Server administration</a>
   <ul class="collapse">
-  <li><a href="#table-of-contents" id="toc-table-of-contents" class="nav-link" data-scroll-target="#table-of-contents">Table of contents</a></li>
+  <li><a href="#cloud-server-setup-tasks" id="toc-cloud-server-setup-tasks" class="nav-link" data-scroll-target="#cloud-server-setup-tasks">Cloud server setup tasks</a>
+  <ul class="collapse">
+  <li><a href="#metabase-server-config" id="toc-metabase-server-config" class="nav-link" data-scroll-target="#metabase-server-config">Metabase server config</a></li>
   </ul></li>
-  <li><a href="#dataset-tracking" id="toc-dataset-tracking" class="nav-link" data-scroll-target="#dataset-tracking">Dataset tracking</a></li>
-  <li><a href="#data-management-resources" id="toc-data-management-resources" class="nav-link" data-scroll-target="#data-management-resources">Data management resources</a></li>
+  <li><a href="#securing-cloud-servers" id="toc-securing-cloud-servers" class="nav-link" data-scroll-target="#securing-cloud-servers">Securing cloud servers</a></li>
+  <li><a href="#scheduled-tasks" id="toc-scheduled-tasks" class="nav-link" data-scroll-target="#scheduled-tasks">Scheduled tasks</a></li>
+  <li><a href="#nfs-and-cifs-mounts-to-remote-directories" id="toc-nfs-and-cifs-mounts-to-remote-directories" class="nav-link" data-scroll-target="#nfs-and-cifs-mounts-to-remote-directories">NFS and CIFS mounts to remote directories</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/im/overview.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/im/sysadmin/chapter-06-server-admin.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/im/sysadmin/index.html">Full IM System Documentation</a></li><li class="breadcrumb-item"><a href="../../../docs/im/sysadmin/chapter-06-server-admin.html">6. Servers and Server Administration</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Overview of Information Management at the Jornada</h1>
+<h1 class="title">6. Servers and Server Administration</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>The Jornada Information Management Team </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Invalid Date</p>
+    </div>
+  </div>
   
     
   </div>
@@ -304,125 +322,64 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="information-management-at-jornada-basin-lter" class="level1">
-<h1>Information Management at Jornada Basin LTER</h1>
-<p>This is the full documentation for the Jornada Basin LTER Information Management system, covering technical aspects of our data publishing process, data management tools, and administration of public-facing information like the website and data catalog. Researchers and data users should start at the <a href="https://jornada-im.github.io/">Jornada IM web pages</a> to get started with Jornada data management. <strong>This is a DRAFT document.</strong></p>
-<section id="table-of-contents" class="level3">
-<h3 class="anchored" data-anchor-id="table-of-contents">Table of contents</h3>
-<p>Preface: <a href="JRN_LTER_data_management_plan.v3.md">The JRN LTER Data Management Plan</a></p>
-<p>Chapters:</p>
+<section id="server-administration" class="level1">
+<h1>Server administration</h1>
+<p>The Jornada IM system relies on some cloud servers at DigitalOcean (aka droplets). Generally these are running Ubuntu Server 20.04. Below are some tools and practices for setting up servers, networking between them, managing user access, transferring and securing data, and other administrative tasks.</p>
+<section id="cloud-server-setup-tasks" class="level2">
+<h2 class="anchored" data-anchor-id="cloud-server-setup-tasks">Cloud server setup tasks</h2>
+<p>Creating new services at DO is easy - it can be done with the dashboard or an API. Documentation for all DO services is <a href="https://www.digitalocean.com/docs/">available here</a>, and for droplets see the recommended initial setup docs <a href="https://www.digitalocean.com/docs/droplets/tutorials/recommended-setup/">here</a> and <a href="https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04">here</a></p>
 <ol type="1">
-<li>Research &amp; data management overview
+<li><p>Add public key to server - usually you can do this on creation or from an admin control panel. If it needs to be done after the fact <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04">see here</a></p></li>
+<li><p>Add a non-root user with sudo privilege and allow ssh access. More info here:</p>
 <ul>
-<li><a href="chap1-overview.md#introduction">Introduction</a></li>
-<li><a href="chap1-overview.md#research-project-management">Research project management</a></li>
-<li><a href="chap1-overview.md#research-data-management">Research data management</a></li>
-<li><a href="chap1-overview.md#dataset-listings">Public dataset listings</a></li>
-<li><a href="chap1-overview.md#bibliographies">Bibliographies</a></li>
-<li><a href="chap1-overview.md#local-computing-resources">Local servers</a></li>
-<li><a href="chap1-overview.md#hosted-resources">Hosted services (external)</a></li>
+<li>https://www.digitalocean.com/docs/droplets/tutorials/recommended-setup/</li>
+<li>https://www.digitalocean.com/community/questions/how-to-enable-ssh-access-for-non-root-users</li>
 </ul></li>
-<li>Policy and procedures
+<li><p>Configure hostnames (if not already done at creation).</p>
 <ul>
-<li>Research notifications and approval</li>
-<li>Data access policies</li>
-<li>Metadata and data submission</li>
+<li>https://www.digitalocean.com/community/questions/how-do-i-change-hostname</li>
 </ul></li>
-<li>General systems administration
+<li><p>Install software, which varies depending on server purpose.</p>
 <ul>
-<li><a href="server_admin.md">Server &amp; cloud administration</a></li>
-</ul></li>
-<li>Data collection and quality assurance
-<ul>
-<li>Archiving data on network shares</li>
-<li>GCE and MATLAB extensions</li>
-<li>Scripted QA/QC</li>
-</ul></li>
-<li>Metadata collection and standards
-<ul>
-<li><a href="jornada_metadata_standards.md">Metadata standards</a></li>
-</ul></li>
-<li>JRN Metabase
-<ul>
-<li><a href="chap-jrn-metabase.md#setup">Installation and configuration</a></li>
-<li><a href="chap-jrn-metabase.md#administration">Server and database administration</a></li>
-<li><a href="chap-jrn-metabase.md#metabase-schema-and-data-model">The LTER Metabase schema and data model</a></li>
-<li><a href="chap-jrn-metabase.md#populating-metabase">Populating a new database</a></li>
-<li><a href="chap-jrn-metabase.md#create-and-update-datasets">Create and update datasets</a></li>
-<li><a href="chap-jrn-metabase.md#postgres-links">PostgreSQL help links</a></li>
-</ul></li>
-<li>Publishing Jornada datasets
-<ul>
-<li><a href="chap-publishing-data.md#introduction">Overview, conventions, and standards</a></li>
-<li><a href="chap-publishing-data.md#make-eml-with-jrn-metabase-and-jerald">Making EML with JRN Metabase</a>
-<ul>
-<li>SOP for entering metadata in Metabase: <a href="SOP_Metadata_Publishing.docx">docx</a>, <a href="sop_metadata_publishing">web page</a> (draft)</li>
-</ul></li>
-<li><a href="chap-publishing-data.md#make-eml-with-emlassemblyline">Making EML with EMLassemblyline</a></li>
-</ul></li>
-<li>Project management
-<ol type="1">
-<li>Project database</li>
-<li>Personnel updates</li>
-<li>Publication updates</li>
-</ol></li>
-<li>The JRN website and other communication platforms
-<ul>
-<li><a href="chap-website-and-comm.md#the-jrn-website">The JRN Website</a> - an overview</li>
-<li><a href="chap-website-and-comm.md#website-content">Website content</a></li>
-<li><a href="chap-website-and-comm.md#website-apps">Website apps</a>
-<ul>
-<li><a href="chap-website-and-comm.md#data-catalogs">The data catalogs</a></li>
-<li><a href="chap-website-and-comm.md#zotero-bibliography">Zotero bibliography</a></li>
-<li><a href="chap-website-and-comm.md#interactive-data-viewer">Interactive data viewer</a></li>
-</ul></li>
-<li><a href="chap-website-and-comm.md#mailing-lists">Shared mailing lists</a></li>
-</ul></li>
-<li>Tools and apps
-<ul>
-<li>Guide to Jornada-IM repositories</li>
-<li>Analytics apps</li>
-<li>DSIS</li>
-</ul></li>
-<li>Hacks
-<ul>
-<li><a href="parse_trello_boards.md">Parse trello boards to CSV format</a></li>
-</ul></li>
-<li>External data, partnerships, and collaboration
-<ul>
-<li>Collaborations with USDA-ARS data managers</li>
-<li>Asombro data</li>
-<li>NEON data</li>
-</ul></li>
-<li>Annual reports
-<ul>
-<li><a href="reports/JRN_IM_annual_report_2020.md">2020</a></li>
-<li><a href="reports/JRN_IM_annual_report_2021.md">2021</a></li>
+<li>Metabase server: git, cron, PostgreSQL</li>
+<li>Web servers: probably the LAMP stack and WordPress, maybe some javascript.</li>
 </ul></li>
 </ol>
-<p>Jornada data managers, including the IM team, should follow LTER and Jornada standards and best practices when creating metadata files and publishing research data packages.</p>
-</section>
-</section>
-<section id="dataset-tracking" class="level1">
-<h1>Dataset tracking</h1>
-<p>We use Trello for this. For LTER datasets there are three Trello boards that represent how Jornada datasets are split into three categories:</p>
+<section id="metabase-server-config" class="level3">
+<h3 class="anchored" data-anchor-id="metabase-server-config">Metabase server config</h3>
 <ol type="1">
-<li>Core - ongoing, high priority datasets that are updated regularly (once per year we hope). Many of these are collected by the JRN field crew.</li>
-<li>Non-core - lower-priority and completed datasets.</li>
-<li>Works in progress (‘WIP’) - datasets that are brand new or as-yet unpublished. Many are in the development/review phase, or are awaiting publication of results associated with the data.</li>
+<li>Clone the <a href="https://github.com/lter/LTER-core-metabase"><code>LTER-core-metabase</code></a> and <a href="https://github.com/jornada-im/jrn-db-utils"><code>jrn-db-utils</code></a> (private) repositories to a directory in home.</li>
+<li>Create a <code>backups</code> directory and <code>mkdir /home/backups/postgresql</code>. Make sure owner is whoever operates backups for postgres</li>
+<li>Add a the <code>jrn-db-utils/sh/pb_backup_rotated.sh</code> script to crontab - nightly.</li>
+<li>Make sure incoming connections for SSH (TCP port 22) and PostgreSQL (TCP port 5432) are allowed in the firewall (currently using the DO firewall).</li>
 </ol>
-<p>Contact someone on the IM team to get added to these boards.</p>
 </section>
-<section id="data-management-resources" class="level1">
-<h1>Data management resources</h1>
-<p>If you are wondering whether the content or format of a metadata file (EML) is correct and complete, see our metadata standards documents. They are specific to Jornada Basin LTER data packages. <strong>THESE ARE DRAFTS</strong> and subject to change!</p>
+</section>
+<section id="securing-cloud-servers" class="level2">
+<h2 class="anchored" data-anchor-id="securing-cloud-servers">Securing cloud servers</h2>
+<p>Droplets are behind a DO cloud firewall, but if needed, firewalls can also be set up for individual droplets with UFW. This and other tasks are described in the initial server setup docs above, or:</p>
 <ul>
-<li><a href="https://jornada-im.github.io/documentation/JRN_metadata_standards">General Jornada metadata standards</a> for all data packages (this is a bit out of date)</li>
-<li><a href="https://github.com/jornada-im/documentation/raw/main/standards_src/keyword_thesauri.xlsx">Jornada keyword thesauri</a> (.xlsx) list keywords that should appear in all Jornada metadata files.</li>
-<li>Also see the full <a href="https://jornada-im.github.io/documentation">Jornada IM documentation pages</a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/recommended-security-measures-to-protect-your-servers">DigitalOcean droplet security tutorial</a></li>
+</ul>
+<p>Unattended updates are a good idea also. For Ubuntu install the <code>unnattended-upgrades</code> package and see setup instructions <a href="https://ubuntu.com/server/docs/package-management">here</a>.</p>
+</section>
+<section id="scheduled-tasks" class="level2">
+<h2 class="anchored" data-anchor-id="scheduled-tasks">Scheduled tasks</h2>
+<p>Some server tasks, like database or website backups, should be scheduled with cron.</p>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-use-cron-to-automate-tasks-ubuntu-1804">DO Ubuntu cron tutorial</a></li>
+</ul>
+</section>
+<section id="nfs-and-cifs-mounts-to-remote-directories" class="level2">
+<h2 class="anchored" data-anchor-id="nfs-and-cifs-mounts-to-remote-directories">NFS and CIFS mounts to remote directories</h2>
+<p>The JORNADA-NETB1 storage block (sometimes called the R drive) allows CIFS connections (or SMB).</p>
+<p>Other:</p>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-ubuntu-20-04">Setting up NFS mounts in Ubuntu</a></li>
 </ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -828,10 +785,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../../../docs/im/sysadmin/chapter-05-data-publishing.html" class="pagination-link" aria-label="5. Data Publishing">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">5. Data Publishing</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../docs/im/standards/JRN_metadata_standards.html" class="pagination-link" aria-label="Jornada Dataset Metadata Standards">
-        <span class="nav-page-text">Jornada Dataset Metadata Standards</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../docs/refs_and_links.md" class="pagination-link" aria-label="Useful references and links">
+        <span class="nav-page-text">Useful references and links</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -840,4 +800,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/im/overview.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/im/sysadmin/chapter-06-server-admin.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
