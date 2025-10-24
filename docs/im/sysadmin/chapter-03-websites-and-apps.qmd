@@ -49,6 +49,13 @@ For example, to remove mixed comment by replacing "http://" addresses with "http
 
 The primary data catalog and the publication lists, including the bibliography and non-EDI data catalog, are client-side apps hosted on our website (`lter-datacat` and `Zotero-JavaScript-Search-Client`, respectively) . Placing these apps there, and updating them, means adding a folder to the website's root directory. This is done using scp, generally (see above), or by pushing changes via git.
 
+:::{.callout-note}
+## A new JRN website is under development!
+
+The new JRN LTER website will be a static site based on the [Hugo](https://gethugo.io) site generator. The current development version is in [this GitHub repository](https://github.com/jornada-im/jrn-lter-website) and the site is rendered by Netlify at <https://jrn-lter-website.netlify.app/>.
+
+:::
+
 
 # Website content
 

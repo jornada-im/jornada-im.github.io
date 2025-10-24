@@ -58,3 +58,43 @@ The JORNADA-NETB1 storage block (sometimes called the R drive) allows CIFS conne
 Other:
 
 * [Setting up NFS mounts in Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-ubuntu-20-04)
+
+## Current backup plan
+
+
+### Termite
+
+* PostgreSQL databases (`jgeo`) are dumped to `/home/backups/postgresql` in a nightly cron-job and daily, weekly, monthly copies are retained.
+* No other backups, and nothing remote/off-premise backups (TODO)
+
+### Oryx 
+
+* PostgreSQL databases are backed up nightly to `/home/backups/postgresql` in a nightly cron-job and a few daily, weekly, monthly copies are retained.
+* `/home/gmaurer/` and `home/backups` have nightly incremental backups to Packrat using Active Backup for Business (`ActiveBackupForBusiness` share).
+
+### JRN Metnet (Loggernet computer)
+
+* This PC runs the Synology Active Backup for Business client and the data drive (not sure of letter) is backed up nightly to Packrat (`ActiveBackupForBusiness` share). Daily, weekly, monthly copies of this backup are retained.
+* Conrad and John do some regular backups to Dropbox and external drives, but I'm not sure what those entail.
+
+### Sala lab Dropbox
+
+* This is synced to the `Researcher_backups` share on Packrat using the Synology Cloud Sync app.
+
+### Packrat
+
+There are two backup tasks that back up data from Packrat to a Backblaze S3 bucket:
+
+* A nightly backup of all data in `home`, `jrn_fieldobs`, `jrn_geospatial`, `jrn_imagery`, and `jrn_sensors`
+* A weekly backup of all everything in the `ActiveBackupForBusiness` and `Researcher_backups` shares. This will include data from several versioned or incremental backups above (JRN Metnet, Oryx, and Sala lab data)
+
+### Laptops
+
+* Greg's laptop is backed up to his home Synology device using Time Machine
+* Geovany has backed up his laptop to Packrat.
+* Others?
+
+### Cloud Service Provider data stores
+
+For shared files on Google Drive and NMSU OneDrive/Sharepoint we just rely on the CSP system, for better or worse...
+
