@@ -1,516 +1,5 @@
 [
   {
-    "objectID": "archive/index.html",
-    "href": "archive/index.html",
-    "title": "Miscellaneous documents",
-    "section": "",
-    "text": "Miscellaneous documents\n\nJornada Metadata Standards guide (out of date)\nJornada keywords thesaurus (also out of date)\nOld project and data documentation forms\nAn old ResNotif form for posterity"
-  },
-  {
-    "objectID": "templates/index.html",
-    "href": "templates/index.html",
-    "title": "Forms and templates",
-    "section": "",
-    "text": "Forms and templates\nResearch approval\n\nTo request approval to conduct research at the Jornada, fill out the ResNotif form and send to Conrad Nelson.\n\nData submission and publishing\nWe strongly recommend using the Environmental Data Initiative’s ezEML application, but if this is not sufficient for your needs we have metadata templates that you may send to the Jornada IM team.\n\nMS Word format for relatively simple datasets with few tables.\nMS Excel format for more complex datasets with multiple tables.\n\nData requests\nMost data are openly available at the Jornada LTER website data catalog, but some spatial data are restricted access only.\n\nFill out the Spatial Data Request form to request restricted spatial data."
-  },
-  {
-    "objectID": "docs/im/overview.html",
-    "href": "docs/im/overview.html",
-    "title": "Overview of Information Management at the Jornada",
-    "section": "",
-    "text": "Information Management at Jornada Basin LTER\nThis is the full documentation for the Jornada Basin LTER Information Management system, covering technical aspects of our data publishing process, data management tools, and administration of public-facing information like the website and data catalog. Researchers and data users should start at the Jornada IM web pages to get started with Jornada data management. This is a DRAFT document.\n\nTable of contents\nPreface: The JRN LTER Data Management Plan\nChapters:\n\nResearch & data management overview\n\nIntroduction\nResearch project management\nResearch data management\nPublic dataset listings\nBibliographies\nLocal servers\nHosted services (external)\n\nPolicy and procedures\n\nResearch notifications and approval\nData access policies\nMetadata and data submission\n\nGeneral systems administration\n\nServer & cloud administration\n\nData collection and quality assurance\n\nArchiving data on network shares\nGCE and MATLAB extensions\nScripted QA/QC\n\nMetadata collection and standards\n\nMetadata standards\n\nJRN Metabase\n\nInstallation and configuration\nServer and database administration\nThe LTER Metabase schema and data model\nPopulating a new database\nCreate and update datasets\nPostgreSQL help links\n\nPublishing Jornada datasets\n\nOverview, conventions, and standards\nMaking EML with JRN Metabase\n\nSOP for entering metadata in Metabase: docx, web page (draft)\n\nMaking EML with EMLassemblyline\n\nProject management\n\nProject database\nPersonnel updates\nPublication updates\n\nThe JRN website and other communication platforms\n\nThe JRN Website - an overview\nWebsite content\nWebsite apps\n\nThe data catalogs\nZotero bibliography\nInteractive data viewer\n\nShared mailing lists\n\nTools and apps\n\nGuide to Jornada-IM repositories\nAnalytics apps\nDSIS\n\nHacks\n\nParse trello boards to CSV format\n\nExternal data, partnerships, and collaboration\n\nCollaborations with USDA-ARS data managers\nAsombro data\nNEON data\n\nAnnual reports\n\n2020\n2021\n\n\nJornada data managers, including the IM team, should follow LTER and Jornada standards and best practices when creating metadata files and publishing research data packages.\n\n\n\nDataset tracking\nWe use Trello for this. For LTER datasets there are three Trello boards that represent how Jornada datasets are split into three categories:\n\nCore - ongoing, high priority datasets that are updated regularly (once per year we hope). Many of these are collected by the JRN field crew.\nNon-core - lower-priority and completed datasets.\nWorks in progress (‘WIP’) - datasets that are brand new or as-yet unpublished. Many are in the development/review phase, or are awaiting publication of results associated with the data.\n\nContact someone on the IM team to get added to these boards.\n\n\nData management resources\nIf you are wondering whether the content or format of a metadata file (EML) is correct and complete, see our metadata standards documents. They are specific to Jornada Basin LTER data packages. THESE ARE DRAFTS and subject to change!\n\nGeneral Jornada metadata standards for all data packages (this is a bit out of date)\nJornada keyword thesauri (.xlsx) list keywords that should appear in all Jornada metadata files.\nAlso see the full Jornada IM documentation pages",
-    "crumbs": [
-      "IM Guide",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "docs/im/sysadmin/chapter-01-overview.html",
-    "href": "docs/im/sysadmin/chapter-01-overview.html",
-    "title": "1. IM System Overview",
-    "section": "",
-    "text": "Introduction\nOur priorities in the Jornada IM team are to:\n\nContribute to high quality, impactful ecology and rangeland research at all stages of the data life cycle.\nOversee, or directly handle, publication of all Jornada datasets\n\nIn the process we ensure data meet FAIR data principles & the LTER Data Access Policy.\n\nAct as a source of data-related leadership and education\n\nWe do this through committee & working group participation, open-source software development, outreach activity, and teaching.\n\n\n\n\nResearch project management\nResearch projects at the Jornada are initiated by requesting approval using John Anderson’s “Research notification” process. A summary of this process, and links to relevant documents are on the “For researchers” page of the JRN and JER websites.\n\n\nData management\nData management expectations for researchers are also outlined on the JRN and JER websites. Field data collection of long-term datasets is typically handled by the Jornada Field Crew, under the supervision of John Anderson.\nQA/QC\nMetadata overview\n\n\nPublic dataset listings\nEDI\nPartner data\n\n\nBibliographies\nZotero, LTER network, etc.\n\n\nLocal computing resources\nJornada servers and network devices\n\n\nHosted resources\nDigital Ocean, website, NMSU stuff, ArcGIS Online (in addition to EDI/Zotero",
-    "crumbs": [
-      "IM Guide",
-      "Full IM System Documentation",
-      "1. IM System Overview"
-    ]
-  },
-  {
-    "objectID": "docs/im/sysadmin/chapter-06-server-admin.html",
-    "href": "docs/im/sysadmin/chapter-06-server-admin.html",
-    "title": "6. Servers and Server Administration",
-    "section": "",
-    "text": "The Jornada IM system relies on some cloud servers at DigitalOcean (aka droplets). Generally these are running Ubuntu Server 20.04. Below are some tools and practices for setting up servers, networking between them, managing user access, transferring and securing data, and other administrative tasks.\n\n\nCreating new services at DO is easy - it can be done with the dashboard or an API. Documentation for all DO services is available here, and for droplets see the recommended initial setup docs here and here\n\nAdd public key to server - usually you can do this on creation or from an admin control panel. If it needs to be done after the fact see here\nAdd a non-root user with sudo privilege and allow ssh access. More info here:\n\nhttps://www.digitalocean.com/docs/droplets/tutorials/recommended-setup/\nhttps://www.digitalocean.com/community/questions/how-to-enable-ssh-access-for-non-root-users\n\nConfigure hostnames (if not already done at creation).\n\nhttps://www.digitalocean.com/community/questions/how-do-i-change-hostname\n\nInstall software, which varies depending on server purpose.\n\nMetabase server: git, cron, PostgreSQL\nWeb servers: probably the LAMP stack and WordPress, maybe some javascript.\n\n\n\n\n\nClone the LTER-core-metabase and jrn-db-utils (private) repositories to a directory in home.\nCreate a backups directory and mkdir /home/backups/postgresql. Make sure owner is whoever operates backups for postgres\nAdd a the jrn-db-utils/sh/pb_backup_rotated.sh script to crontab - nightly.\nMake sure incoming connections for SSH (TCP port 22) and PostgreSQL (TCP port 5432) are allowed in the firewall (currently using the DO firewall).\n\n\n\n\n\nDroplets are behind a DO cloud firewall, but if needed, firewalls can also be set up for individual droplets with UFW. This and other tasks are described in the initial server setup docs above, or:\n\nDigitalOcean droplet security tutorial\n\nUnattended updates are a good idea also. For Ubuntu install the unnattended-upgrades package and see setup instructions here.\n\n\n\nSome server tasks, like database or website backups, should be scheduled with cron.\n\nDO Ubuntu cron tutorial\n\n\n\n\nThe JORNADA-NETB1 storage block (sometimes called the R drive) allows CIFS connections (or SMB).\nOther:\n\nSetting up NFS mounts in Ubuntu",
-    "crumbs": [
-      "IM Guide",
-      "Full IM System Documentation",
-      "6. Servers and Server Administration"
-    ]
-  },
-  {
-    "objectID": "docs/im/sysadmin/chapter-06-server-admin.html#cloud-server-setup-tasks",
-    "href": "docs/im/sysadmin/chapter-06-server-admin.html#cloud-server-setup-tasks",
-    "title": "6. Servers and Server Administration",
-    "section": "",
-    "text": "Creating new services at DO is easy - it can be done with the dashboard or an API. Documentation for all DO services is available here, and for droplets see the recommended initial setup docs here and here\n\nAdd public key to server - usually you can do this on creation or from an admin control panel. If it needs to be done after the fact see here\nAdd a non-root user with sudo privilege and allow ssh access. More info here:\n\nhttps://www.digitalocean.com/docs/droplets/tutorials/recommended-setup/\nhttps://www.digitalocean.com/community/questions/how-to-enable-ssh-access-for-non-root-users\n\nConfigure hostnames (if not already done at creation).\n\nhttps://www.digitalocean.com/community/questions/how-do-i-change-hostname\n\nInstall software, which varies depending on server purpose.\n\nMetabase server: git, cron, PostgreSQL\nWeb servers: probably the LAMP stack and WordPress, maybe some javascript.\n\n\n\n\n\nClone the LTER-core-metabase and jrn-db-utils (private) repositories to a directory in home.\nCreate a backups directory and mkdir /home/backups/postgresql. Make sure owner is whoever operates backups for postgres\nAdd a the jrn-db-utils/sh/pb_backup_rotated.sh script to crontab - nightly.\nMake sure incoming connections for SSH (TCP port 22) and PostgreSQL (TCP port 5432) are allowed in the firewall (currently using the DO firewall).",
-    "crumbs": [
-      "IM Guide",
-      "Full IM System Documentation",
-      "6. Servers and Server Administration"
-    ]
-  },
-  {
-    "objectID": "docs/im/sysadmin/chapter-06-server-admin.html#securing-cloud-servers",
-    "href": "docs/im/sysadmin/chapter-06-server-admin.html#securing-cloud-servers",
-    "title": "6. Servers and Server Administration",
-    "section": "",
-    "text": "Droplets are behind a DO cloud firewall, but if needed, firewalls can also be set up for individual droplets with UFW. This and other tasks are described in the initial server setup docs above, or:\n\nDigitalOcean droplet security tutorial\n\nUnattended updates are a good idea also. For Ubuntu install the unnattended-upgrades package and see setup instructions here.",
-    "crumbs": [
-      "IM Guide",
-      "Full IM System Documentation",
-      "6. Servers and Server Administration"
-    ]
-  },
-  {
-    "objectID": "docs/im/sysadmin/chapter-06-server-admin.html#scheduled-tasks",
-    "href": "docs/im/sysadmin/chapter-06-server-admin.html#scheduled-tasks",
-    "title": "6. Servers and Server Administration",
-    "section": "",
-    "text": "Some server tasks, like database or website backups, should be scheduled with cron.\n\nDO Ubuntu cron tutorial",
-    "crumbs": [
-      "IM Guide",
-      "Full IM System Documentation",
-      "6. Servers and Server Administration"
-    ]
-  },
-  {
-    "objectID": "docs/im/sysadmin/chapter-06-server-admin.html#nfs-and-cifs-mounts-to-remote-directories",
-    "href": "docs/im/sysadmin/chapter-06-server-admin.html#nfs-and-cifs-mounts-to-remote-directories",
-    "title": "6. Servers and Server Administration",
-    "section": "",
-    "text": "The JORNADA-NETB1 storage block (sometimes called the R drive) allows CIFS connections (or SMB).\nOther:\n\nSetting up NFS mounts in Ubuntu",
-    "crumbs": [
-      "IM Guide",
-      "Full IM System Documentation",
-      "6. Servers and Server Administration"
-    ]
-  },
-  {
-    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html",
-    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html",
-    "title": "3. Websites and Web Applications",
-    "section": "",
-    "text": "The JRN website runs on Wordpress and is hosted by WPengine. The JRN webmaster, currently the lead Information Manager, has a WPengine.com account that allows access to the website backend for account management, website backups, and other administrative tasks. For content creation, editing, and website design, user accounts are created in the Wordpress environment.\n\n\nThere are 3 Wordpress environments available at the hosting provider.\n\nProduction - this is the live JRN website. Only the webmaster has editing rights in this environment and is responsible for pulling in changes from the staging environment.\nStaging - in close sync with the Production environment, new content such as blog posts and pictures can be created and tested here. The project manager and other staff have editing access in this environment.\nDevelopment - New plugins, themes, and other features are tested here and pushed to Staging when ready. This is mainly used by the webmaster or other developers.\n\nEach environment has a unique name and web address at {environment}.wpengine.com. The production environment is the live website, so the DNS entry for lter.jornada.nmsu.edu points to this site.\n\n\n\nThe hosting provider allows secure shell (ssh) access to any environment using an SSH gateway. See setup instructions here. Once set up, issuing the command\nssh {environment}@{environment}.ssh.wpengine.net\nshould put the user into a terminal session on the web server. To move a directory of files, such as one of our website’s client-side apps, from a local machine to the website, use scp. For example, to push the zotero-biblio app to an environment you might do:\nscp -r GitHub/zotero-biblio {environment}@{environment}.ssh.wpengine.net:/sites/{environment}/\nThere are occasional issues with the SSH Gateway at our hosting provider, so luckily, management of files with git is also supported. See the git setup instructions\n\n\n\nOnce logged in to the shell of the web server environment there are a number of Wordpress command-line utilities that are available. See the description here:\nhttps://developer.wordpress.org/cli/commands/\n\n\nFor example, to remove mixed comment by replacing “http://” addresses with “https://” issue this command from the shell:\nwp search-replace 'http://{environment}.wpengine.com' 'https://{environment}.wpengine.com'\n\n\n\n\nThe primary data catalog and the publication lists, including the bibliography and non-EDI data catalog, are client-side apps hosted on our website (lter-datacat and Zotero-JavaScript-Search-Client, respectively) . Placing these apps there, and updating them, means adding a folder to the website’s root directory. This is done using scp, generally (see above), or by pushing changes via git.",
-    "crumbs": [
-      "IM Guide",
-      "Full IM System Documentation",
-      "3. Websites and Web Applications"
-    ]
-  },
-  {
-    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#environments",
-    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#environments",
-    "title": "3. Websites and Web Applications",
-    "section": "",
-    "text": "There are 3 Wordpress environments available at the hosting provider.\n\nProduction - this is the live JRN website. Only the webmaster has editing rights in this environment and is responsible for pulling in changes from the staging environment.\nStaging - in close sync with the Production environment, new content such as blog posts and pictures can be created and tested here. The project manager and other staff have editing access in this environment.\nDevelopment - New plugins, themes, and other features are tested here and pushed to Staging when ready. This is mainly used by the webmaster or other developers.\n\nEach environment has a unique name and web address at {environment}.wpengine.com. The production environment is the live website, so the DNS entry for lter.jornada.nmsu.edu points to this site.",
-    "crumbs": [
-      "IM Guide",
-      "Full IM System Documentation",
-      "3. Websites and Web Applications"
-    ]
-  },
-  {
-    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#secure-file-management",
-    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#secure-file-management",
-    "title": "3. Websites and Web Applications",
-    "section": "",
-    "text": "The hosting provider allows secure shell (ssh) access to any environment using an SSH gateway. See setup instructions here. Once set up, issuing the command\nssh {environment}@{environment}.ssh.wpengine.net\nshould put the user into a terminal session on the web server. To move a directory of files, such as one of our website’s client-side apps, from a local machine to the website, use scp. For example, to push the zotero-biblio app to an environment you might do:\nscp -r GitHub/zotero-biblio {environment}@{environment}.ssh.wpengine.net:/sites/{environment}/\nThere are occasional issues with the SSH Gateway at our hosting provider, so luckily, management of files with git is also supported. See the git setup instructions",
-    "crumbs": [
-      "IM Guide",
-      "Full IM System Documentation",
-      "3. Websites and Web Applications"
-    ]
-  },
-  {
-    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#managing-wordpress-from-the-command-line",
-    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#managing-wordpress-from-the-command-line",
-    "title": "3. Websites and Web Applications",
-    "section": "",
-    "text": "Once logged in to the shell of the web server environment there are a number of Wordpress command-line utilities that are available. See the description here:\nhttps://developer.wordpress.org/cli/commands/\n\n\nFor example, to remove mixed comment by replacing “http://” addresses with “https://” issue this command from the shell:\nwp search-replace 'http://{environment}.wpengine.com' 'https://{environment}.wpengine.com'",
-    "crumbs": [
-      "IM Guide",
-      "Full IM System Documentation",
-      "3. Websites and Web Applications"
-    ]
-  },
-  {
-    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#pushing-changes-to-js-apps-lter-datacat-pub_list",
-    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#pushing-changes-to-js-apps-lter-datacat-pub_list",
-    "title": "3. Websites and Web Applications",
-    "section": "",
-    "text": "The primary data catalog and the publication lists, including the bibliography and non-EDI data catalog, are client-side apps hosted on our website (lter-datacat and Zotero-JavaScript-Search-Client, respectively) . Placing these apps there, and updating them, means adding a folder to the website’s root directory. This is done using scp, generally (see above), or by pushing changes via git.",
-    "crumbs": [
-      "IM Guide",
-      "Full IM System Documentation",
-      "3. Websites and Web Applications"
-    ]
-  },
-  {
-    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#homepage",
-    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#homepage",
-    "title": "3. Websites and Web Applications",
-    "section": "Homepage",
-    "text": "Homepage\nA mix of static and dynamic content.\nThe “Recent posts” section is a post grid populated with Wordpress posts beloging to the ‘Featured’ category. To add a new post to this section, create a post and assign to this category. All “Featured” posts created are collected on the featured post history page. This page is also where the “News” link in the main menu goes.\nStill more to describe here…",
-    "crumbs": [
-      "IM Guide",
-      "Full IM System Documentation",
-      "3. Websites and Web Applications"
-    ]
-  },
-  {
-    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#about",
-    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#about",
-    "title": "3. Websites and Web Applications",
-    "section": "About",
-    "text": "About\nPages under this menu are mostly static content that has been adapted from earlier versions of the website. Mostly this content gets updated during website development pushes during proposal writing or midterm reviews.\n\nPersonnel\nThe StaffMembers plugin handles this - need to write up more on how this works…",
-    "crumbs": [
-      "IM Guide",
-      "Full IM System Documentation",
-      "3. Websites and Web Applications"
-    ]
-  },
-  {
-    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#research",
-    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#research",
-    "title": "3. Websites and Web Applications",
-    "section": "Research",
-    "text": "Research\nMostly static content - again, usually updated during proposal pushes.",
-    "crumbs": [
-      "IM Guide",
-      "Full IM System Documentation",
-      "3. Websites and Web Applications"
-    ]
-  },
-  {
-    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#data",
-    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#data",
-    "title": "3. Websites and Web Applications",
-    "section": "Data",
-    "text": "Data\nThis menu contains 3 data catalogs:\n\nThe main LTER one\nSpatial data (static)\nThe partner catalog (still in development).\n\nThese are described below.\nThe Interactive Data Viewer is also here (and it needs to be documented somewhere…), as is the static species lists (that also need updating…).",
-    "crumbs": [
-      "IM Guide",
-      "Full IM System Documentation",
-      "3. Websites and Web Applications"
-    ]
-  },
-  {
-    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#publications",
-    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#publications",
-    "title": "3. Websites and Web Applications",
-    "section": "Publications",
-    "text": "Publications\nThere are both static and dynamic pages under the “Publications” menu. The Bibliography page is showing an app called zotero-biblio that reads our bibliography from a database hosted at Zotero.org. The Zotero-JavaScript-Search-Client app is written in javascript and was originally developed by Tim Whiteaker at BLE LTER. Our fork of this app, which has some customizations, is hosted and maintained in a GitHub repository. It is running on the Bibliography page through an iframe, but the app lives at https://lter.jornada.nmsu.edu/Zotero-JavaScript-Search-Client/complete_jrn.html on the website.\n\nThe Zotero bibliography\n\nTagging\nThere is a tagging system for tracking the relationship between publications in the bibliography and the Jornada LTER program.\n\nJRN funded signifies a work that was directly funded by the Jornada LTER grant, with some acknowledgement of that in the text.\nJRN assisted signifies a work that was supported by the LTER program in some way that is apparent in the text - Jornada LTER data are used, assistance from particular people, or the work is supported by one of our leveraged programs - but direct funding from the JRN LTER is not acknowledged.\nJRN related signifies a work that is related to the JRN LTER program through location, personnel (investigator coauthor), or research theme, but has no known direct or indirect support from the program. A number of USDA-ARS works on or near the Jornada fall in this category.\nJRN foundational is used to tag works that were instrumental in the development of the JRN research program, but did not occur as part of the JRN LTER program, usually because they are from before the JRN LTER program was initally funded.\nJRNStatusVerified is a tag to indicate that someone in the program has checked the publication and verified that one of the tags above is accurately applied.\n\n\n\n\nBooks\nThe Books page is a post grid populated with Wordpress posts beloging to the ‘Books’ category. To add new books, create a post and assign to this category.\nOther pages under the “Publications” menu are static content.",
-    "crumbs": [
-      "IM Guide",
-      "Full IM System Documentation",
-      "3. Websites and Web Applications"
-    ]
-  },
-  {
-    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#outreach",
-    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#outreach",
-    "title": "3. Websites and Web Applications",
-    "section": "Outreach",
-    "text": "Outreach\nMostly static content but the GRFP, Short Course, and REU pages contain post grids that display posts under the “Graduate-fellowship-project”, “Ecology-short-course”, and “REU-project” categories, respectively.",
-    "crumbs": [
-      "IM Guide",
-      "Full IM System Documentation",
-      "3. Websites and Web Applications"
-    ]
-  },
-  {
-    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#for-researchers",
-    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#for-researchers",
-    "title": "3. Websites and Web Applications",
-    "section": "For Researchers",
-    "text": "For Researchers\nStatic page - should stay fairly in-sync with this JER page.",
-    "crumbs": [
-      "IM Guide",
-      "Full IM System Documentation",
-      "3. Websites and Web Applications"
-    ]
-  },
-  {
-    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#data-catalogs",
-    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#data-catalogs",
-    "title": "3. Websites and Web Applications",
-    "section": "Data catalogs",
-    "text": "Data catalogs\nThe data catalog seen at https://lter.jornada.nmsu.edu/data-catalog/ is JRNs primary data catalog and is a javascript app called lter-datacat.\n\nlter-datacat\nThe lter-datacat app is written in javascript and was originally developed by Geovany Ramirez and Jason Coombs. It is running on the main data catalog page through an iframe, but the app lives at https://lter.jornada.nmsu.edu/lter-datacat/ on the website.\nThe app is hosted and maintained in a GitHub repository\n\n\nPartner data\nThis is in development on the staging website. It will list data held at repositories other than EDI.\nIn development, there is an instance of the Zotero-JavaScript-Search-Client tool running at https://lter.jornada.nmsu.edu/Zotero-JavaScript-Search-Client/complete_jrndata.html that can be i-framed in when ready.\n\n\nSpatial data\nThe spatial data catalog is basically just a list of layers that can be downloaded as kmz files. Nothing fancy.",
-    "crumbs": [
-      "IM Guide",
-      "Full IM System Documentation",
-      "3. Websites and Web Applications"
-    ]
-  },
-  {
-    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#zotero-bibliography",
-    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#zotero-bibliography",
-    "title": "3. Websites and Web Applications",
-    "section": "Zotero bibliography",
-    "text": "Zotero bibliography\n\nMaintaining the Zotero app\nOnce you make changes to the repository you can upload the whole thing to our webhost using scp. The proper command would be:\nscp -prq GitHub/Zotero-JavaScript-Search-Client/* {envname}@{envname}.ssh.wpengine.net:~/sites/{envname}/Zotero-JavaScript-Search-Client/\nwhere {envname} is the environment name at the host (WPengine currently). You’d need to have some ssh keys set up.",
-    "crumbs": [
-      "IM Guide",
-      "Full IM System Documentation",
-      "3. Websites and Web Applications"
-    ]
-  },
-  {
-    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#interactive-data-viewer",
-    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#interactive-data-viewer",
-    "title": "3. Websites and Web Applications",
-    "section": "Interactive data viewer",
-    "text": "Interactive data viewer",
-    "crumbs": [
-      "IM Guide",
-      "Full IM System Documentation",
-      "3. Websites and Web Applications"
-    ]
-  },
-  {
-    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#shared-nmsu-outlook-mailboxes",
-    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#shared-nmsu-outlook-mailboxes",
-    "title": "3. Websites and Web Applications",
-    "section": "Shared NMSU Outlook mailboxes",
-    "text": "Shared NMSU Outlook mailboxes\n\njornada.data@nmsu.edu\n\nThis address is displayed on the Jornada LTER and USDA websites as the contact address for data-related inquiries. It is also listed as the contact email address for metadata describing published Jornada datasets, including in most EML documents and packages at EDI or Ag Data Commons.\nMail recieved is forwarded (using a mailbox rule) to primary members of the Jornada IM Team and the mailbox can be accessed through the Outlook web app by those same primary IM Team members.\nPreviously a GMail account, datamanager.jrn.lter@gmail.com, was used for this purpose, and all mail to that address is now forwarded to the present address (jornada.data@nmsu.edu).\n\njornada.lter@nmsu.edu\n\nThis address is displayed on the Jornada LTER websites as the contact address for program-related inquiries. Its also the contact address for the Jornada LTER Google account and an admin/moderator on the JRN-L and JRNSTUDENT-L listserv accounts.\nMail recieved is forwarded (using a mailbox rule) to primary Jornada LTER staff members (lead PI, program manager, information manager) and the mailbox can be accessed through the Outlook web app by those same primary staff members.\nPreviously, the program manager’s personal GMail address had been listed for this purpose.",
-    "crumbs": [
-      "IM Guide",
-      "Full IM System Documentation",
-      "3. Websites and Web Applications"
-    ]
-  },
-  {
-    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#gnu-mailman-lists-on-lists.nmsu.edu",
-    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#gnu-mailman-lists-on-lists.nmsu.edu",
-    "title": "3. Websites and Web Applications",
-    "section": "GNU Mailman lists on lists.nmsu.edu",
-    "text": "GNU Mailman lists on lists.nmsu.edu\nThere are 3 lists assigned to Jornada LTER on NMSU’s listserv system:\n\nJRN-L@lists.nmsu.edu (or JRN-L@nmsu.edu)\n\nUsed for general-interest email broadcasts to anyone affiliated with the Jornada LTER or voluntarily following this list. People can subscribe to this using a form on our website homepage.\n\nJRNSTUDENT-L@lists.nmsu.edu (or JRNSTUDENT-L@nmsu.edu)\n\nUsed mainly by JRN staff to contact graduate and undergraduate students, or of students to broadcast messages for themselves. Anything sent to JRN-L gets sent to this list as well (automatically, without duplicates).\n\nJRNSTAFF-L@lists.nmsu.edu (or JRNSTAFF-L@nmsu.edu)\n\nCurrently unused.\n\n\nTo administer these one must be on the NMSU VPN, or on campus, and visit the admin portal for each. The addresses for these are https://lists.nmsu.edu/mailman/admin/{listname}, where {listname} is jrn-l, jrnstudent-l, or jrnstaff-l.\n\nManaging the lists\nWe use the basic list admin tools provided by Mailman - the site IM and PM mainly handle it (and are still learning).",
-    "crumbs": [
-      "IM Guide",
-      "Full IM System Documentation",
-      "3. Websites and Web Applications"
-    ]
-  },
-  {
-    "objectID": "docs/im/procedures/sop_metadata_publishing.html",
-    "href": "docs/im/procedures/sop_metadata_publishing.html",
-    "title": "SOP for updating datasets in metabase",
-    "section": "",
-    "text": "The following are resources that can be referred to for information needed in order to enter or update datasets.\nData Catalog: https://lter.jornada.nmsu.edu/data-catalog\nEDI Data Portal: https://portal.edirepository.org/nis/home.jsp\nTrello: (used to track the datasets and to see which need updating)\nDownload DBeaver - cloud server with several databases, used by the IM team to make edits. This process will only need to be done once.\nPassword: lter1234 (until you change the password elsewhere)\nNavigating the JORNADA_IM server:\nOpen NonCore_packages 🡪 find your data set ID of interest: (i.e., 210370001_grasshopperdata) 🡪\nOther resources for data:",
-    "crumbs": [
-      "IM Guide",
-      "Procedures",
-      "SOP for updating datasets in metabase"
-    ]
-  },
-  {
-    "objectID": "docs/im/procedures/sop_metadata_publishing.html#navigating-the-dbeaver-database-to-update-and-incorporate-datasets",
-    "href": "docs/im/procedures/sop_metadata_publishing.html#navigating-the-dbeaver-database-to-update-and-incorporate-datasets",
-    "title": "SOP for updating datasets in metabase",
-    "section": "NAVIGATING THE DBEAVER DATABASE TO UPDATE AND INCORPORATE DATASETS:",
-    "text": "NAVIGATING THE DBEAVER DATABASE TO UPDATE AND INCORPORATE DATASETS:\nThe following are instructions for navigating through the DBeaver database in order to enter in or update datasets using the resources outlined above.\n\nDBeaver:\n\nClick (on left-hand side) to drop-down each of the following:\n\n&gt;postgres\n&gt;jrn_metabase_dev\n&gt;Schemas\n&gt;lter_metabase\n&gt;Tables: (This is where the metadata is stored and where &gt; most of the edits are made)\n\n\n\n\n&gt;DataSet: enter “DataSetID”= 210370001 into search engine and &gt; Enter\n\nIf no results: Add new row by clicking &gt; {width=“0.15625in” &gt; height=“0.15625in”} icon at the bottom or highlight a row and &gt; click on “Duplicate current row”\nUpdate the following fields, if applicable:\n\nDataSetID: i.e., 210370001\nTitle: enter full title of the project, i.e., &gt; Grasshopper survey and substrate utilization data at the &gt; Jornada Basin LTER site, 1983 to 1985\nPubDate: date that it’s being published: 2021-11-16 &gt; (usually today’s date)\nAbstract: file name referenced from respective dataset &gt; folder on the Shared Drive i.e. abstact.210370001.md\nShortName: i.e., TRANFALL (use name from file on &gt; Jornada_IM server or from “project” tab in &gt; jornada-prj-sheets on Google Drive)\nUpdateFrequency: options are notPlanned (if project is &gt; complete), annually, biannually, or asNeeded (if project &gt; is ongoing)\nMaintenanceDescription: options are complete, ongoing, &gt; or [NULL]\nAbstractType: file\nBoilerplateSetting: &gt; jrn-default{width=“6.249405074365704in” &gt; height=“1.734375546806649in”}\nSave by clicking &gt; “{width=”0.15207020997375328in” &gt; height=“0.15228127734033245in”} Save” button at the &gt; bottom.\n\n\n&gt;DataSetAttributes: enter “DataSetID”= 210370001 into search &gt; engine and Enter\n\nIf &gt;DataSetEntities has an EntityType dataTable, then &gt; proceed with the following.\nIf no results: Add new row by clicking &gt; {width=“0.15625in” &gt; height=“0.15625in”} icon at the bottom or highlight a row and &gt; click on “Duplicate current row”\nTo enter multiple rows, right click 🡪 Advanced Paste … 🡪 &gt; Insert multiple rows\nReference the data sets found on JORNADA_IM server. These are &gt; also the files entered in &gt;DataSetEntities:\n\nDataSetID: 210370001\nEntitySortOrder: i.e. 1 for all within the same dataset, &gt; 2 for all within the next dataset, etc.\nColumnPosition: i.e. 1, 2, 3, 4…etc. for each row\nColumnName: reference the data located in the metadata &gt; template or data file. i.e., (jgrashop.dsd) Date, Plot, &gt; Transect, Quadrat, Species, Mean_Diameter, Mean_Height, &gt; Total_Number\nAttributeID: i.e. Date, Plot, Transect, Quadrat, &gt; Species, Mean_Diameter, Mean_Height, Total_Number &gt; Repeat whatever is in ColumnName?\nAttributeLabel: i.e. Date, Plot, Transect, Quadrat, &gt; Species, Mean_Diameter, Mean_Height, Total_Number &gt; Repeat whatever is in ColumnName?\nDescription: i.e., Date, Plot number [10-18], Transect &gt; number [1-2], Quadrat number [1-20], Species code &gt; [see JornadaGrasshopperDatasetCodes.txt], Mean plant &gt; diameter [cm], Mean plant height [cm], Total number of &gt; individuals per square meter per quadrat\nStorage Type: i.e., Date = date; plot, quadrat, transect &gt; number, or total number = integer; mean diameter or height &gt; = float; species code = string\nMeasurementScaleDomainID: Date = dateTime; integer = &gt; interval; float = ratio; string = nominalText\nDateTimeFormatString: ONLY on rows with column name &gt; “date”, all others should be [NULL]. Always YYYY/MM/DD &gt; format.\nDateTimePrecision: 1 on rows filled out as above, all &gt; others should be [NULL].\nTextPatternDefinition: any nominal text doesn’t need a &gt; unit and can be added to that row as “any text”. All &gt; others should be [NULL].\nUnit: “number” for intervals or “centimeter” for ratios. &gt; Date and nominal text should be [NULL].\nNumberType: “integer” for intervals or “real” for &gt; ratios. Date and nominal text should be [NULL].\n\nRepeat for each file in the server.\nIf a certain unit can’t be found, it must be added to the EML &gt; unit dictionary.\nBased on the R script console, any column with NA values &gt; requires a line entry. If it is missing info, such as NA, in &gt; the dataset, it will require an NA1 value (check define &gt; description).\nSave by clicking &gt; “{width=”0.15207020997375328in” &gt; height=“0.15228127734033245in”} Save” button at the &gt; bottom.{width=“5.671875546806649in” &gt; height=“3.4432174103237094in”}\n\n&gt;DataSetEntities (to associate/attach files): enter &gt; “DataSetID”= 210370001 into search engine and Enter\n\nThe files (.pdf, .TIF, csv) found in Jornada_IM server, under &gt; the file name i.e. 21037001_GrasshopperData, are used to &gt; update the following columns, if applicable:\n\nEntitySortOrder: change to subsequent number i.e. 2, 3, &gt; 4\nEntityName: change to something short but descriptive: &gt; Plant and grasshopper species codes\nEntityType: to dataTable (if dataTable, add &gt; DataSetAttributes) or otherEntity\nEntityDescription: something longer, uniform, and more &gt; descriptive: Numerical and species codes for plants and &gt; grasshoppers\nFileType: usually csv_B (most files) or plaintext\nUrlhead: &gt; https://sfo3.digitaloceanspaces.com/jrn-pubfiles/\nFile Name: enter exact file name: &gt; JRN_37001_grasshopper_substrate_data.csv\nFileSizeUnits: byte\n\nFor each data set, highlight row and click on &gt; {width=“0.13541666666666666in” &gt; height=“0.13541666666666666in”} icon at the bottom to &gt; “Duplicate current row”. Then update columns as above.\nSave by clicking &gt; “{width=”0.15207020997375328in” &gt; height=“0.15228127734033245in”} Save” button at the bottom.\n\n\n\n\n&gt;DataSetKeywords: enter “DataSetID”= 210370001 into search &gt; engine and Enter\n\nIf no results: Add new row, multiple rows, or duplicate rows as &gt; instructed above.\nUpdate columns as follows:\n\nDataSetID: i.e., 210370001\nKeyword: enter one word per row that has to do with the &gt; project i.e., grasshoppers, vegetation, abundance, etc… &gt; Use metadata template in file folder on Jornada_IM &gt; server.\n\nAlways use study number i.e., study 370. This is done by &gt; adding it to ListKeywords. Any keywords that do not &gt; exist yet, can be added in ListKeywords.\n\nThesaurusID: lter_cv or jornada_placenames if it is a &gt; location/place. If it is the study ID i.e., study 370 - &gt; then ThesaurusID should be jornada_projectnames\n\n{width=“0.15207020997375328in” &gt; height=“0.15228127734033245in”} Save\n\n&gt;DataSetMethod: enter “DataSetID”= 210370001 into search engine &gt; and Enter\n\nIf no results: Add new row or duplicate row as instructed above.\nUpdate columns as follows:\n\nDataSetID: i.e., 210370001\nMethodStepID: 1\nDescriptionType: file\nDescription: methods.210370001.md\nMethod_xml: [NULL]\n\nCreate method and abstract markdown files.\n\nMake sure method and abstract is in R file.\n\n\n&gt;DataSetPersonnel: enter “DataSetID”= 210370001 into search &gt; engine and Enter\n\nIf no results: Add new row, multiple rows, or duplicate rows as &gt; instructed above.\n\nEnter each row with the name of people involved i.e., &gt; dpeters\n\nUpdate columns as follows:\n\nDataSetID: i.e., 210370001\nNameID: Select cell and type name into Value box on &gt; right-hand side….. i.e., dlightfoot, wwhitford. When the &gt; name appears in the Dictionary section, click to populate &gt; it into the NameID field. Repeat for each name. If you &gt; don’t see the NameID of the person you are looking for pop &gt; up on the right-hand side, you will need to add their &gt; names under ListPeople\n\n{width=“5.182292213473316in” &gt; height=“1.4975448381452319in”}\n\nAuthorshipOrder: 1, 2, 3…\nAuthorshipRole: i.e., creator, contact\n\n{width=“0.15207020997375328in” &gt; height=“0.15228127734033245in”} Save\n\n&gt;DataSetPublications:\n\nIf applicable, update columns as follows:\n\nDataSetID: i.e., 210370001\nRelationshipType: usageCitation or literatureCited\n\n\n&gt;DataSetSites: enter “DataSetID”= 210370001 into search engine &gt; and Enter\n\nIf no results: Add new row, multiple rows, or duplicate rows as &gt; instructed above.\nUpdate columns as follows:\n\nDataSetID: i.e., 210370001\nEntitySortOrder: 0\nSiteID: i.e., Bajada_West, Basin_Floor, &gt; JER_CDRRC_bounding (general use)\nGeoCoverageSortOrder: 1, 2\n\n{width=“0.15207020997375328in” &gt; height=“0.15228127734033245in”} Save\n\n&gt;DataSetTaxa: This is where you can link taxonomic data to a &gt; dataset.\n\nUpdate columns as follows:\n\nDataSetID: i.e., 210XXXXXX\nTaxonID: enter the ITIS number you obtained from &gt; ITIS.gov in the &gt;ListTaxa section.\nTaxonomicProviderID: i.e., itis\n\n{width=“0.15207020997375328in” &gt; height=“0.15228127734033245in”} Save\n\n&gt;DataSetTemporal: enter “DataSetID”= 210370001 into search &gt; engine and Enter\n\nIf no results: Add new row, multiple rows, or duplicate rows as &gt; instructed above.\nUpdate columns as follows:\n\nDataSetID: i.e., 210370001\nEntitySortOrder: 0\nBeginDate and EndDate: (make sure it’s in proper &gt; YYYY/MM/DD format)\n\nThis can be found on the Google share drive, in the &gt; jornada-prj-sheets spreadsheet, under the Project tab.\n\nUseOnlyYear: [ ] uncheck if updated dates include &gt; month/day\n\n\n&gt;ListKeywords: If there are keywords to add in DataSetKeywords &gt; that are not found, they can be added here. Include any key words &gt; that should be associated with the project.\n\nControl F to double check that the word doesn’t already exist. &gt; If it doesn’t, add it as follows\nAdd row and include:\n\nKeyword: Study 370,\nThesaurusID: jornada_projectnames\nKeywordType: theme\n\nInclude any other relevant keywords that weren’t found when &gt; searching in DataSetKeywords. Other examples include:\n\nKeyword: creosotebush; Chihuahuan Desert\nThesaurusID: (look on &gt; https://vocab.lternet.edu/vocab/vocab/index.php &gt; for word, if it’s there enter as lter_cv; if not enter as &gt; none. If it’s a place, such as site, etc., &gt; jornada_placenames\nKeywordType: theme; place\n\n\n{width=“0.15207020997375328in” &gt; height=“0.15228127734033245in”} Save\n\n&gt;ListPeople: To update the creators involved with a project.\n\nDuplicate a current row in order to add people. If it has new &gt; personnel, then\nTo delete a row, highlight row and click “Delete Current Row” at &gt; the bottom. It will highlight red so you must Save in order to &gt; save changes.\n\n&gt;ListPublications (to attach publications with data sets):\n\nUpdate columns as follows:\n\nPublicationID: i.e.,\nBibtex:\n\n\n&gt;ListTaxa: This is where you can enter taxonomic data. First go &gt; to ITIS.gov to search for the ITIS Taxa ID if species is not &gt; already listed in this section.\n\nUpdate columns as follows:\n\nTaxonID: enter the ITIS number you obtained from &gt; ITIS.gov\nTaxonomicProviderID: itis\nTaxonRankName: species\nTaxonRankValue: Genus species name i.e., Bos taurus\nCommonName: i.e., domesticated cattle\nLocalID: ID found through ITIS.gov i.e., cow or BOER4\n\n{width=“0.15207020997375328in” &gt; height=“0.15228127734033245in”} Save",
-    "crumbs": [
-      "IM Guide",
-      "Procedures",
-      "SOP for updating datasets in metabase"
-    ]
-  },
-  {
-    "objectID": "docs/im/standards/JRN_metadata_standards.html",
-    "href": "docs/im/standards/JRN_metadata_standards.html",
-    "title": "Jornada Dataset Metadata Standards",
-    "section": "",
-    "text": "If you edit this document please track your changes and send to Greg Maurer (gmaurer.jrn.lter@gmail.com).\nNotes about things that need to be expanded or verified are marked with “???”",
-    "crumbs": [
-      "IM Guide",
-      "Metadata standards",
-      "Jornada Dataset Metadata Standards"
-    ]
-  },
-  {
-    "objectID": "docs/im/standards/JRN_metadata_standards.html#using-this-document",
-    "href": "docs/im/standards/JRN_metadata_standards.html#using-this-document",
-    "title": "Jornada Dataset Metadata Standards",
-    "section": "Using this document",
-    "text": "Using this document\nThe metadata standards in this document are structured and formatted similarly to an EML document. Named EML elements are surrounded by angle brackets, and there are headings for most important elements. At the Jornada Basin LTER, a variety of tools are being used to create EML documents during the data packaging process (EMLassemblyline, GCE Toolbox +, etc.). Notes about using these tools to create each EML element are present in the relevant section of this document (???Add these in as you edit).\nNote that EML documents are hierarchical. The root element is &lt;eml:eml&gt; (denoted by the path /eml:eml). Below the EML root element are 3 elements, &lt;access&gt;, &lt;dataset&gt;, and &lt;additional_metadata&gt; (paths /eml:eml/access, /eml:eml/dataset, and /eml:eml/additional_metadata). This document contains metadata standards for elements under the &lt;dataset&gt; element of Jornada EML files only. We may add standards for EML &lt;access&gt; and &lt;additional_metadata&gt; elements at a later time.",
-    "crumbs": [
-      "IM Guide",
-      "Metadata standards",
-      "Jornada Dataset Metadata Standards"
-    ]
-  },
-  {
-    "objectID": "docs/im/standards/JRN_metadata_standards.html#title",
-    "href": "docs/im/standards/JRN_metadata_standards.html#title",
-    "title": "Jornada Dataset Metadata Standards",
-    "section": "<title>*",
-    "text": "&lt;title&gt;*\n* This is a required element.\nThe &lt;title&gt; element should contain a descriptive title that includes type of data collected, geographic indicator, and temporal range of the data (what, where, when). Keep in mind that package titles are searchable and are a user’s first point of contact when searching for data packages.\nBest practices:\n\nFor the title’s geographic indicator all Jornada Basin LTER data packages should include “Jornada Basin LTER”.\nIf the data come from an established study with a name or acronym, include the name or acronym in the title (NPP study, SMES, NEAT, etc.)\nFor the temporal range of completed data packages give the starting year of the data to the ending year; “2009-2015”, for example.\nFor the temporal range of ongoing data packages there are 2 possibilities:\n\nWrite the end of the temporal range as a year if data collection occurs less frequently than yearly (“2010-2018” for a package collected every 2 years).\nWrite the end of the temporal range as “ongoing” if data collection occurs yearly or more frequently (“2010-ongoing” if data were last updated a year ago or less).",
-    "crumbs": [
-      "IM Guide",
-      "Metadata standards",
-      "Jornada Dataset Metadata Standards"
-    ]
-  },
-  {
-    "objectID": "docs/im/standards/JRN_metadata_standards.html#personnel-and-organization-elements-creator-project-etc.",
-    "href": "docs/im/standards/JRN_metadata_standards.html#personnel-and-organization-elements-creator-project-etc.",
-    "title": "Jornada Dataset Metadata Standards",
-    "section": "Personnel and organization elements (<creator>, <project>, etc.)",
-    "text": "Personnel and organization elements (&lt;creator&gt;, &lt;project&gt;, etc.)\nThere are a number of elements in this category grouped together here. They normally appear within the &lt;dataset&gt; element (/eml:eml/dataset/creator, /eml:eml/dataset/contact, etc)\nAt least one &lt;contact&gt; element must be supplied in every EML document. All EML documents should have at least one person in a &lt;creator&gt; element, but exceptions can be made if this information has been lost in very old Jornada data packages.\n\n&lt;contact&gt;*\n* This is a required element.\nContacts are people (or positions, like Data Manager) that should be contacted for access to, or information about, the data package. For Jornada data packages this should include:\n\nThe “Current responsible investigator” (if available)\nThe JRN LTER Information Manager (datamanager.jrn.lter@gmail.com)\n\nJRN LTER defines the “Current responsible investigator” as the LTER principal investigator who curates a study and its associated data package(s). For data packages without a “current responsible PI”, John Anderson has historically been listed with this role under &lt;contact&gt;. When updating one of these packages, ask John if he would like to remain in this position. If not, he may be removed and it is acceptable to list only the Data Manager.\nNo other contacts are defined.\n\n\n&lt;creator&gt;*\n*This is a required element.\nCreators are people with direct intellectual contributions to the data package and so could include PIs, postdocs, students, and other researchers. There can be multiple &lt;creator&gt; elements in a Jornada EML document. These should include:\n\nOriginal PIs\nFormer responsible PIs\nCurrent responsible PIs\nPostDocs, grad students, and other researchers (??? need to verify this)\n\nIf for some reason the original PI for the data package is unknown, it is acceptable to list the Jornada Basin LTER as an organization in the &lt;creator&gt; element.\n\n\n&lt;project&gt;\nThis element should be included in EML for all JRN data packages and should contain the &lt;title&gt;, &lt;organization&gt;, &lt;funding&gt;, and &lt;personnel&gt; sub-elements within it. List the Jornada Basin LTER as the project &lt;title&gt;, New Mexico State University as &lt;organization&gt;, and the current responsible PI for the data package as the &lt;personnel&gt;. The &lt;funding&gt; element should include the NSF award number (DEB-1832194 or similar) that was active when the project was initiated.\nThis element is created automatically by EMLassemblyline if a personnel entry is listed with the role “PI”.\nProvisional change: If there is no current responsible PI for a completed package, it may be acceptable to omit the &lt;project&gt;&lt;personnel&gt; element as long as the other elements are complete. (??? need to verify this is ok)\n\n\nOther personnel and organization elements\nOther personnel and organization elements, such as &lt;metadataProvider&gt;, &lt;associatedParty&gt;, or &lt;publisher&gt;, can be defined in EML and have been included in Jornada Basin LTER data packages. There is no standardized policy for these yet, so when updating such packages, preserve these elements if possible.",
-    "crumbs": [
-      "IM Guide",
-      "Metadata standards",
-      "Jornada Dataset Metadata Standards"
-    ]
-  },
-  {
-    "objectID": "docs/im/standards/JRN_metadata_standards.html#pubdate",
-    "href": "docs/im/standards/JRN_metadata_standards.html#pubdate",
-    "title": "Jornada Dataset Metadata Standards",
-    "section": "<pubDate>",
-    "text": "&lt;pubDate&gt;\nDefault for this at EDI and LTER sites appears to be that &lt;pubDate&gt; refers to the date of the latest metadata revision for a data package posted on EDI.\nAt JRN, this element has had other meanings (first date of publication), but there isn’t currently a consistent policy.",
-    "crumbs": [
-      "IM Guide",
-      "Metadata standards",
-      "Jornada Dataset Metadata Standards"
-    ]
-  },
-  {
-    "objectID": "docs/im/standards/JRN_metadata_standards.html#abstract",
-    "href": "docs/im/standards/JRN_metadata_standards.html#abstract",
-    "title": "Jornada Dataset Metadata Standards",
-    "section": "<abstract>",
-    "text": "&lt;abstract&gt;\nA descriptive abstract of the data package, with enough context for a user to decide whether it is useful to them, should be included here. Keep in mind that package abstracts are used in full-text searches\nBest practices:\n\nInclude a brief statement about whether data collection is “ongoing” or “completed”.\nInclude a brief description of data collection and data package update frequency (“updated monthly/yearly/every spring”).\nInclude information on whether the data were collected on the “Jornada Experimental Range”, on the “CDRCC”, or on both.",
-    "crumbs": [
-      "IM Guide",
-      "Metadata standards",
-      "Jornada Dataset Metadata Standards"
-    ]
-  },
-  {
-    "objectID": "docs/im/standards/JRN_metadata_standards.html#keywordset",
-    "href": "docs/im/standards/JRN_metadata_standards.html#keywordset",
-    "title": "Jornada Dataset Metadata Standards",
-    "section": "<keywordSet>",
-    "text": "&lt;keywordSet&gt;\nMultiple &lt;keywordSet&gt; elements can be defined. Optionally they may be labeled with a specific vocabulary they are taken from using the &lt;keywordThesaurus&gt; tag. The Jornada Basin LTER uses these keyword thesauri:\n\nLTER Controlled Vocabulary - required to describe the subject matter of each data package\nJornada-specific thesauri - currently there are 3, which are still in development.\n\n“JRN Dataset Keywords” include subject matter, funding, time span, and other JRN LTER specific terms.\n“Jornada Project Names” include the descriptive names of abbreviations of studies or projects taking place in Jornada Basin (affiliated with JRN LTER or not)\n“Jornada Place Names” include the place names of important study locations or geographic features. These overlap with the “Jornada Place Names” in many cases.\n\nLTER Core Areas\nEML creators can also define keywords independent of these vocabularies (no &lt;keywordThesaurus&gt; tag).\n\nFrom the Jornada-specific thesauri, be sure to include:\n\nAt least one subject matter term from the “JRN Dataset Keyword” list.\nAny relevant terms from the “Jornada Project Names” list\nAny relevant placenames from the “Jornada Place Names” list\nThe Jornada study ID as “study {NNN}”, where {NNN} is the 3 digit study ID within the package ID (middle 3 digits). List this as a “Jornada Project Name” keyword.\n\nThe keywords “core” and “signature” may be added to EML documents, but the plan at this point is to keep a separate list of packages with these designations and then cross-reference those lists during searches of the JRN data catalog.",
-    "crumbs": [
-      "IM Guide",
-      "Metadata standards",
-      "Jornada Dataset Metadata Standards"
-    ]
-  },
-  {
-    "objectID": "docs/im/standards/JRN_metadata_standards.html#intellectualrights",
-    "href": "docs/im/standards/JRN_metadata_standards.html#intellectualrights",
-    "title": "Jornada Dataset Metadata Standards",
-    "section": "<intellectualRights>",
-    "text": "&lt;intellectualRights&gt;\nThe Jornada Basin LTER uses the CC-BY attribution license, appended with the LTER network’s suggested data access policy text. There is a template in EMLassemblyline for this.",
-    "crumbs": [
-      "IM Guide",
-      "Metadata standards",
-      "Jornada Dataset Metadata Standards"
-    ]
-  },
-  {
-    "objectID": "docs/im/standards/JRN_metadata_standards.html#coverage",
-    "href": "docs/im/standards/JRN_metadata_standards.html#coverage",
-    "title": "Jornada Dataset Metadata Standards",
-    "section": "<coverage>",
-    "text": "&lt;coverage&gt;\nA &lt;coverage&gt; element can be defined at multiple levels in the EML document: for a &lt;dataset&gt; element (/eml:eml/dataset/coverage), for a data entity (eml:eml/dataset/[entity]/coverage), within a &lt;methods&gt; element (eml:eml/dataset/methods/sampling/studyExtent/coverage), etc. Within each &lt;coverage&gt; element, three types of coverage elements can be defined - &lt;geographicCoverage&gt;, &lt;taxonomicCoverage&gt;, and &lt;temporalCoverage&gt;.\nFor now, at JRN LTER, we are focusing on providing adequate &lt;coverage&gt; metadata at the &lt;dataset&gt; element level, and there aren’t known standards for elements below this level (???). This is described in the sections below.\n\n&lt;geographicCoverage&gt;\nCoordinates for Jornada data packages are obfuscated (deliberately, due to security concerns) in most cases. How, and how much, to provide spatial data is a matter of debate at JRN LTER. The general practice is to provide one or more bounding boxes surrounding the research sites in a data package, but these bounding boxes should not be detailed enough to allow casual visitors to EDI to identify sensitive research sites or instrumentation. Some packages, however, already have finer details in the &lt;geographicCoverage&gt; elements. In these cases the person packaging the data should probably preserve this metadata, and has some discretion on how to proceed after consulting with PIs. The general guideline for this element is outlined below.\nFor &lt;dataset&gt; elements, define at least one &lt;geographicCoverage&gt; element. This &lt;geographicCoverage&gt; element should contain at least one bounding box that encloses all research locations for all data entities in the package. When possible, multiple bounding boxes may be provided as additional &lt;geographicCoverage&gt; elements that describe other study or sampling areas (these may be associated with locational variables in a data entity if you are clever about it). The bounding boxes should be large enough to prevent casual users from identifying the sites (on the EDI map interface, for example).\nEach &lt;geographicCoverage&gt; element should have a &lt;geographicDescription&gt; element associated that describes the location defined by the bounding boxes (or points, as the case may be) and include the text “Higher resolution spatial data for this data package can be obtained by contacting the Data Manager”.\n\n\n&lt;taxonomicCoverage&gt;\nThere are many systems for denoting taxonomic entities or groups, including local systems that are specific to the Jornada Basin LTER or its researchers. JRN data packages that contain taxonomic data (data attributes of species, groups of species, or other taxa) should provide ways to identify the taxonomic entities or groups in a &lt;dataset&gt; to modern, accepted taxonomic classifications at the Genus species or finer levels.\nThese links may be provided in a variable or category in the data entity itself (a “Genus_species” variable, or example), as long as they are properly attributed to an authority like ITIS or USDA PLANTS. Local (JRN specific) taxonomic keys or coding systems that appear in a data entity must be available to the data user. In these cases the keys or coding systems used should be described in the metadata and provided as either an additional data entity in the data package, or as a link to other JRN EDI packages with this information.\nSome current Jornada taxonomic keys are:\n\nKey to vascular plants in the Jornada Basin (an EDI package)\n\n\n\n&lt;temporalCoverage&gt;\nProvide the start and end date of the period over which the data were collected. For &lt;dataset&gt; elements this should include the data in all data entities (all .csv or other data files) that the EML document defines.",
-    "crumbs": [
-      "IM Guide",
-      "Metadata standards",
-      "Jornada Dataset Metadata Standards"
-    ]
-  },
-  {
-    "objectID": "docs/im/standards/JRN_metadata_standards.html#maintenance",
-    "href": "docs/im/standards/JRN_metadata_standards.html#maintenance",
-    "title": "Jornada Dataset Metadata Standards",
-    "section": "<maintenance>",
-    "text": "&lt;maintenance&gt;\nDescribes whether data collection is ongoing or completed (in &lt;description&gt; element) and may include descriptions of the frequency of data and metadata changes (in &lt;frequency&gt; element).\n\nDescribe the data package as “completed” if data collection has ended.\nDescribe the data package as “ongoing” if data collection continues.\nFor “ongoing” data packages, a description of how often package revisions, including data and metadata changes, occur should be added to the &lt;frequency&gt; element under &lt;maintenance&gt;. For example, if new data are QA/QC’d, appended to a data entity, and published for a data package every month, the &lt;frequency&gt; element should describe these “monthly” revisions.\nOptionally, and in addition to #3 above, the &lt;frequency&gt; element under &lt;maintenance&gt; can describe the frequency (hourly, daily, bimonthly, etc.) of the data in any data entities in the package. This may be especially important tabular time series.",
-    "crumbs": [
-      "IM Guide",
-      "Metadata standards",
-      "Jornada Dataset Metadata Standards"
-    ]
-  },
-  {
-    "objectID": "docs/im/standards/JRN_metadata_standards.html#methods",
-    "href": "docs/im/standards/JRN_metadata_standards.html#methods",
-    "title": "Jornada Dataset Metadata Standards",
-    "section": "<methods>",
-    "text": "&lt;methods&gt;\nThis element should include a detailed description of how the data were collected or otherwise derived (field procedures, laboratory analysis, data synthesis and analysis). It should be concise but sufficient to reproduce the resulting data entity in the package.\nMany Jornada packages have &lt;methods&gt; elements that refer to ancillary procedures documents, QA/QC specifications, data reduction scripts, etc. Whenever possible these should be preserved and archived as additional data entities in the data package (or at least a link to another repository should be provided).\nIf needed &lt;methods&gt; elements can be defined for individual data entities (/eml:eml/dataset/[entity]/methods). A hierarchy of additional elements, such as &lt;instrument&gt;, &lt;sampling&gt;, &lt;methodStep&gt;, &lt;qualityControl&gt;, can be also defined within each &lt;methods&gt; element. The GCE Toolbox+ does some of this for us with Jornada met data. In general though, descriptive text with optional pointers to other methods documentation is usually adequate.",
-    "crumbs": [
-      "IM Guide",
-      "Metadata standards",
-      "Jornada Dataset Metadata Standards"
-    ]
-  },
-  {
-    "objectID": "docs/im/standards/JRN_metadata_standards.html#data-entities",
-    "href": "docs/im/standards/JRN_metadata_standards.html#data-entities",
-    "title": "Jornada Dataset Metadata Standards",
-    "section": "Data entities",
-    "text": "Data entities\nThese define the actual data files in the package (.csv files, rasters, etc). There can be more than one in a package.\nSeveral possible elements are used to define individual data entities within a &lt;dataset&gt;. These include &lt;dataTable&gt;, &lt;spatialRaster&gt;, &lt;spatialVector&gt;, &lt;storedProcedure&gt;, &lt;view&gt;, and &lt;otherEntity&gt;. Each of these must contain other elements that describe the data they contain (the EntityGroup tree). The most important of these, for us, is the &lt;attributeList&gt; that defines the variables in a &lt;dataTable&gt; entity, since most Jornada data is tabular.\nThere are not any Jornada-specific metadata standards for data entities (???maybe there should be) or the elements they contain (&lt;attributeList&gt;). Use EML best practices.",
-    "crumbs": [
-      "IM Guide",
-      "Metadata standards",
-      "Jornada Dataset Metadata Standards"
-    ]
-  },
-  {
-    "objectID": "docs/refs_and_links.html",
-    "href": "docs/refs_and_links.html",
-    "title": "Miscellaneous resources",
-    "section": "",
-    "text": "FAIR stands for Findable, Accessible, Interoperable, and Re-usable\n\nFAIR principles for scientific data\nRecent commentary on fair principles\n\n\n\n\n\nHadley Wickham’s “Tidy” data paper and vignette\n\n\n\n\nJornada Basin LTER data packages are generally submitted to the EDI (Environmental Data Initiative) repository. They have resources about data collection, curation, and publishing.\n\nData authors guide (Please contact the Jornada IM team before following the guide)\nMore detailed data publishing best practices\nEDI’s 5 phases of data publishing (old EDI website)\n\n\n\n\n\nOrientation to data management at Jornada (JRN Ecology Short Course, July 2022)\nNavigating the Jornada Data Ecosystem (Jornada Symposium 2020)\n\n\n\n\nGries, C., S. Beaulieu, R.F. Brown, S. Elmendorf, H. Garritt, G. Gastil-Buhl, H. Hsieh, L. Kui, M. Martin, G. Maurer, A.T. Nguyen, J.H. Porter, A. Sapp, M. Servilla, and T.L. Whiteaker. 2021. Data Package Design for Special Cases ver 1. Environmental Data Initiative. https://doi.org/10.6073/pasta/9d4c803578c3fbcb45fc23f13124d052"
-  },
-  {
-    "objectID": "docs/refs_and_links.html#fair-data",
-    "href": "docs/refs_and_links.html#fair-data",
-    "title": "Miscellaneous resources",
-    "section": "",
-    "text": "FAIR stands for Findable, Accessible, Interoperable, and Re-usable\n\nFAIR principles for scientific data\nRecent commentary on fair principles"
-  },
-  {
-    "objectID": "docs/refs_and_links.html#data-collection-and-management-advice",
-    "href": "docs/refs_and_links.html#data-collection-and-management-advice",
-    "title": "Miscellaneous resources",
-    "section": "",
-    "text": "Hadley Wickham’s “Tidy” data paper and vignette"
-  },
-  {
-    "objectID": "docs/refs_and_links.html#lteredi-resources",
-    "href": "docs/refs_and_links.html#lteredi-resources",
-    "title": "Miscellaneous resources",
-    "section": "",
-    "text": "Jornada Basin LTER data packages are generally submitted to the EDI (Environmental Data Initiative) repository. They have resources about data collection, curation, and publishing.\n\nData authors guide (Please contact the Jornada IM team before following the guide)\nMore detailed data publishing best practices\nEDI’s 5 phases of data publishing (old EDI website)"
-  },
-  {
-    "objectID": "docs/refs_and_links.html#jornada-presentations",
-    "href": "docs/refs_and_links.html#jornada-presentations",
-    "title": "Miscellaneous resources",
-    "section": "",
-    "text": "Orientation to data management at Jornada (JRN Ecology Short Course, July 2022)\nNavigating the Jornada Data Ecosystem (Jornada Symposium 2020)"
-  },
-  {
-    "objectID": "docs/refs_and_links.html#publications",
-    "href": "docs/refs_and_links.html#publications",
-    "title": "Miscellaneous resources",
-    "section": "",
-    "text": "Gries, C., S. Beaulieu, R.F. Brown, S. Elmendorf, H. Garritt, G. Gastil-Buhl, H. Hsieh, L. Kui, M. Martin, G. Maurer, A.T. Nguyen, J.H. Porter, A. Sapp, M. Servilla, and T.L. Whiteaker. 2021. Data Package Design for Special Cases ver 1. Environmental Data Initiative. https://doi.org/10.6073/pasta/9d4c803578c3fbcb45fc23f13124d052"
-  },
-  {
     "objectID": "proposals-and-reports/JRN_data_management_plan.LTER7.html",
     "href": "proposals-and-reports/JRN_data_management_plan.LTER7.html",
     "title": "Data Management Plan",
@@ -595,115 +84,21 @@
     "text": "Milestones in the current funding cycle: Since its last LTER renewal in 2018, JRN has developed a more efficient data publishing system, eased discovery and access of its diverse datasets, and enhanced data reusability by standardizing data and metadata. Milestones from the past four years include:\n\nA total of 386 JRN datasets are published at the EDI repository, with 291 newly created since the renewal, including many previously unpublished datasets from early JRN LTER projects. More than 330 datasets had data and/or metadata updated at least once in this period, with most long-term core datasets being updated yearly, and as frequently as monthly for over 30 weather station datasets (Fig. 2).\nWe created metabase and populated it with the rich metadata Jornada research programs have accumulated over the past 40 years. This system eased implementation of new data formatting and metadata content standards for almost all datasets in the JRN data catalog.\nNew standards and workflows to manage and publish specialized (non-tabular) datasets, such as ground-based and airborne imagery, were developed in collaboration with data managers in the LTER network and beyond (Gries et al. 2021).\nThe JRN data catalog was revised to enhance discovery and access to: (a) data published outside of EDI, (b) geospatial data, and (c), data from collaborating research networks and partners.\n\nFuture initiatives: The IM team will continue making steady improvements to the JRN IM system and the quality and FAIR status of JRN data. The next six years will bring significant changes to JRN research priorities and data, and the IM team plans to support these transitions. Planned improvements during JRN-8 are:\n\nThe IM team will expand its focus on the re-use of JRN data by harmonizing datasets, creating analysis-ready data products, and developing analytical applications. We will use open-source tools like R and Python, and leverage recent improvements in JRN metadata standards and publishing efficiency.\nJRN research projects continue to expand data collection via sensor networks. The IM team will extend the use of the MATLAB GCE Toolbox by implementing a new time series database for these data, and open-source tools to manage, publish, and access them efficiently. A pilot project for this began in 2023 in coordination with the HyMet working group, a joint effort of the LTER Network, EDI, CUAHSI, and the Dendra project. A side benefit of this work will be accessibility of real-time information about field conditions that will improve researcher safety.\nSeveral JRN-8 projects propose to collect and use ground-based and aerial imagery (e.g. phenocams, UAS imagery) as a survey and monitoring method to complement or replace manual fieldwork. The IM team will respond with suitable data management protocols and accessibility tools.\nAs noted above, biological specimens and physical samples are a key product of JRN research. In JRN-8, the IM team will work to (a) identify JRN physical sample and specimen collections and make a comprehensive catalog accessible via the JRN website, and (b) develop new protocols to preserve and archive scientifically useful environmental samples (soil, biocrust, tissues), or resulting DNA extracts, into appropriate collections. For (b) we are discussing partnership options with the Museum of Southwestern Biology and the NEON Biorepository, and examining supplemental funding opportunities.\nThe Jornada Dryland Modeling team is proposing ecological modeling capabilities that will (a) consume observational datasets and other training data, (b) undergo intensive software development over time, and (c) produce simulation outputs for a variety of research questions and applications. The JRN IM team is embedded in this effort and will ensure that modeling activity and relevant data products are preserved and publicly accessible."
   },
   {
-    "objectID": "proposals-and-reports/index.html",
-    "href": "proposals-and-reports/index.html",
-    "title": "Recent proposals and reports",
+    "objectID": "templates/index.html",
+    "href": "templates/index.html",
+    "title": "Forms and templates",
     "section": "",
-    "text": "Recent proposals and reports\n\nThe JRN-8 Data Management Plan for the 2024 LTER renewal proposal.\nThe JRN-VII Data Management Plan for the 2020 LTER renewal proposal (after probation).\nThe 2020 JRN IM Annual Report"
+    "text": "Forms and templates\nResearch approval\n\nTo request approval to conduct research at the Jornada, fill out the ResNotif form and send to Conrad Nelson.\n\nData submission and publishing\nWe strongly recommend using the Environmental Data Initiative’s ezEML application, but if this is not sufficient for your needs we have metadata templates that you may send to the Jornada IM team.\n\nMS Word format for relatively simple datasets with few tables.\nMS Excel format for more complex datasets with multiple tables.\n\nData requests\nMost data are openly available at the Jornada LTER website data catalog, but some spatial data are restricted access only.\n\nFill out the Spatial Data Request form to request restricted spatial data."
   },
   {
-    "objectID": "proposals-and-reports/JRN_IM_annual_report_2020.html",
-    "href": "proposals-and-reports/JRN_IM_annual_report_2020.html",
-    "title": "Jornada Basin LTER Information Management 2020 Annual Report (DRAFT)",
+    "objectID": "docs/im/overview.html",
+    "href": "docs/im/overview.html",
+    "title": "Overview of Information Management at the Jornada",
     "section": "",
-    "text": "This document summarizes the accomplishments of the Jornada Basin LTER (JRN) Information Management (IM) team in 2020, and outlines activity planned for 2021. Most of the work described here has been, or will be, guided by what the IM team wrote in the Data Management Plan submitted with our 2020 LTER proposal. In the late summer of 2020 we received word that the LTER proposal was recommended for funding beginning in early 2021. The Data Managment Plan received generally favorable feedback from the NSF review panel."
-  },
-  {
-    "objectID": "proposals-and-reports/JRN_IM_annual_report_2020.html#jrn-websites",
-    "href": "proposals-and-reports/JRN_IM_annual_report_2020.html#jrn-websites",
-    "title": "Jornada Basin LTER Information Management 2020 Annual Report (DRAFT)",
-    "section": "JRN Websites",
-    "text": "JRN Websites\n\nA new JRN website was built and began service in June 2020.\nA new partner data catalog was added to the website.\nA new interactive data viewer was made available on the website (Geovany), and further additions to this were discussed.\nAn improved spatial data catalog was added to the new website, and further improvements were planned.\nA number of updates to the Jornada IM websitewere completed, including new documentation, improved metadata templates, IM diagnostics, and data access/analysis tools."
-  },
-  {
-    "objectID": "proposals-and-reports/JRN_IM_annual_report_2020.html#metadata-database",
-    "href": "proposals-and-reports/JRN_IM_annual_report_2020.html#metadata-database",
-    "title": "Jornada Basin LTER Information Management 2020 Annual Report (DRAFT)",
-    "section": "Metadata database",
-    "text": "Metadata database\n\nJRN-metabase, a PostgreSQL database following the LTER-core-metabase schema, was created and made available for testing on the DASH server.\nGreg and Shelly (and formerly Haneen Omari) populated this database with metadata for all JRN “core” packages, and all recently updated “non-core” data packages.\nWe successfully made valid EML (XML metadata documents) using the database as a backend.\nWe expect JRN-metabase (and associated R code) to enter service for building metadata documents (EML) for the Jornada’s EDI data packages by March 2021.\nAlternative server locations for hosting this database are currently under consideration."
-  },
-  {
-    "objectID": "proposals-and-reports/JRN_IM_annual_report_2020.html#harmonizing-jornada-data",
-    "href": "proposals-and-reports/JRN_IM_annual_report_2020.html#harmonizing-jornada-data",
-    "title": "Jornada Basin LTER Information Management 2020 Annual Report (DRAFT)",
-    "section": "Harmonizing Jornada data",
-    "text": "Harmonizing Jornada data\n\nGreg began a project to assemble and harmonize Jornada NPP and related data.\nDarren James and the Peters research group began working on new projects harmonizing Jornada precipitation data.\nThe IM team identified several potential harmonized datasets to add to the interactive data viewer beginning in 2021."
-  },
-  {
-    "objectID": "proposals-and-reports/JRN_IM_annual_report_2020.html#project-level-metadata-and-spatial-data-issues",
-    "href": "proposals-and-reports/JRN_IM_annual_report_2020.html#project-level-metadata-and-spatial-data-issues",
-    "title": "Jornada Basin LTER Information Management 2020 Annual Report (DRAFT)",
-    "section": "Project-level metadata and spatial data issues",
-    "text": "Project-level metadata and spatial data issues\nThere are some workflows for creating, organizing, and tracking projects and their location data at the Jornada. For instance, John Anderson’s “Research notification” system tracks approved research projects and should, in theory, initiate collection of metadata for each project. However, research projects commonly suffer from a lack of metadata collection and accessibility after the approval phase, and information gathered during the approval phase is not widely accessible to Jornada researchers or the public. Some things that would help address this problem:\n\nA project metadata database (what experiments are happening or have happened, who is in charge, what are the questions, measurements, infrastructure) that is accessible to John and other project managers.\nA “canonical” spatial database for the Jornada that links to project IDs. This spatial database would house plot locations, sensor locations, and other coordinates telling users where experiments happened over time.\nA reference collection of ancillary spatial data products (roads, fence lines, vegetation, geomorphology). We have some of this, but its not very complete and there are multiple copies of everything.\n\nEach of these resources would be most useful when shared among multiple partners at the Jornada (LTAR, LTER, etc.). The Jornada IT infrastructure and data management working group, which includes USDA, Landscape Data Commons, and LTER staff, is beginning to address some of these issues and tasks in a coordinated way."
-  },
-  {
-    "objectID": "proposals-and-reports/JRN_IM_annual_report_2020.html#outreach-initiatives",
-    "href": "proposals-and-reports/JRN_IM_annual_report_2020.html#outreach-initiatives",
-    "title": "Jornada Basin LTER Information Management 2020 Annual Report (DRAFT)",
-    "section": "Outreach initiatives",
-    "text": "Outreach initiatives\n\nThere is no shared communication platform for messaging among Jornada investigators, students, and staff. This tends to fragment Jornada communication and makes cohesive messaging for JRN community activities a challenge. Some of our future initiatives, such as Data Bounty Hunters, would greatly benefit from such a platform. A Mailman server, mailing list/group web services (MailChimp, Groups.io), or messaging platforms (Zulip, Slack) are possible candidates, but we need either infrastructure or budget to adopt these.\nIt may be difficult to spend LTER budget for non-research activity, but we need some funds to make Jornada T-Shirts, hats, or stickers that could be used to encourage/reward participation in Jornada outreach initiatives (Data Bounty Hunters, for instance again)."
-  },
-  {
-    "objectID": "proposals-and-reports/JRN_IM_annual_report_2020.html#infrastructure",
-    "href": "proposals-and-reports/JRN_IM_annual_report_2020.html#infrastructure",
-    "title": "Jornada Basin LTER Information Management 2020 Annual Report (DRAFT)",
-    "section": "Infrastructure",
-    "text": "Infrastructure\nAs described in above, the JRN IM Team needs server resources to host databases, web services, a communication platform, and potentially a future version of our website. Because JRN is partnered with the USDA Jornada Experimental Range (JER) and JER has existing server resources and sysadmins, appropriating some of these JER resources for JRN use (and contributing back to supporting the system) would be the most efficient & cost-effective solution for JRN to meet its IT needs. Currently, however, this option does not appear viable because the JER server infrastructure is out of date and undergoing a long transition to a more modern, stable, and supportable system. Thus, in 2020 the IM team was unable to provision a virtual server on this system. While we await progress on JER server systems, we are investigating ways we can meet our IT needs using NMSU or cloud providers (AWS, Google services), but these will require some LTER budget. Any suggestions regarding server resources available at Jornada or partner institutions are welcomed by the IM team.\nAgain, the Jornada IT infrastructure and data management working group, is beginning to address some of these issues in a coordinated way."
-  },
-  {
-    "objectID": "docs/researcher/overview.html",
-    "href": "docs/researcher/overview.html",
-    "title": "Research approval and policies",
-    "section": "",
-    "text": "This page was written by Jornada information managers (IMs) to provide a concise, but fairly comprehensive guide to research administration and data management for Jornada students and investigators, including PIs, postdocs, graduate students, undergraduate researchers, and staff scientists.",
-    "crumbs": [
-      "Researcher Guide",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "docs/researcher/overview.html#ezeml",
-    "href": "docs/researcher/overview.html#ezeml",
-    "title": "Research approval and policies",
-    "section": "ezEML",
-    "text": "ezEML\nThe EDI repository has created a web app called ezEML for describing research datasets and creating standardized metadata documents for publication (EML). The tool is new but has rapidly developed to become an excellent method to author well-documented datasets. There is a Jornada EML template available on the site, so the recommended process for Jornada researchers is:\n\nLog in to ezEML using your Google, GitHub, or ORCID account (whichever is easiest).\nStart a new EML document using the “EML Documents &gt; New from Template” menu item\nNavigate to and select the “LTER/JRN/JRN_template_general” template to open a document template pre-populated with Jornada metadata.\nGive the document a unique name. You can save your metadata and then return to this document anytime.\nFollow the sequence of forms on the left, and ezEML’s prompts, to upload data files and enter metadata for your dataset. Each section of your metadata will have help available (“?” icons) and several fields will already be filled if you are using the JRN template.\nUse the “Check metadata” and “Check data tables” tools at the bottom left to check the completeness and validity of your dataset. Green lights mean your dataset is well described and ready to share.\nWhen ready, click “Submit/Share Package” and then “Collaborate with Colleagues”. DO NOT USE “Submit Package to EDI” or we may miss your dataset.\nOn the “Invite a Collaborator” screen share the dataset with a Jornada data manager (mailto:jornada.data@nmsu.edu).\n\nAt this point, the Jornada IM Team will receive a notification and can access your dataset in ezEML to review, edit, and publish to EDI.",
-    "crumbs": [
-      "Researcher Guide",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "docs/researcher/overview.html#metadata-templates",
-    "href": "docs/researcher/overview.html#metadata-templates",
-    "title": "Research approval and policies",
-    "section": "Metadata templates",
-    "text": "Metadata templates\nA metadata template is a document with a structure and cues that help you collect the essential metadata needed to describe a published dataset. We have created Jornada metadata templates in MS Word (.docx) or Excel (.xlsx) formats. These templates contain sections for all critical pieces of metadata, along with instructions on what to include and how to structure the information. The Excel version is slightly more detailed and may be useful for complex datasets. Completed templates and accompanying data files should be sent to the Jornada IM team (mailto:jornada.data@nmsu.edu).",
-    "crumbs": [
-      "Researcher Guide",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "docs/researcher/overview.html#general-jornada-metadata-guidelines",
-    "href": "docs/researcher/overview.html#general-jornada-metadata-guidelines",
-    "title": "Research approval and policies",
-    "section": "General Jornada metadata guidelines",
-    "text": "General Jornada metadata guidelines\nWhile writing metadata, the Jornada metadata standards (.docx) and keyword thesauri (.xlsx) documents are helpful, but not required.",
-    "crumbs": [
-      "Researcher Guide",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "docs/im/hacks/parse_trello_boards.html",
-    "href": "docs/im/hacks/parse_trello_boards.html",
-    "title": "Parsing trello boards to csv",
-    "section": "",
-    "text": "Parsing trello boards to csv\n\nFrom Trello board go to\nMenu &gt; More &gt; Print and Export &gt; Export as JSON\nand download the JSON to a local machine.\nParse the raw JSON to a simplified tabular JSON file that can be converted to csv.\n\nDownload the Trello JSON parser code and make executable some where on local machine.\nRun trelloparse {trello JSON file.json} output.json\n\nConvert output.json to .csv using https://json-csv.com",
+    "text": "Information Management at Jornada Basin LTER\nThis is the full documentation for the Jornada Basin LTER Information Management system, covering technical aspects of our data publishing process, data management tools, and administration of public-facing information like the website and data catalog. Researchers and data users should start at the Jornada IM web pages to get started with Jornada data management. This is a DRAFT document.\n\nTable of contents\nPreface: The JRN LTER Data Management Plan\nChapters:\n\nResearch & data management overview\n\nIntroduction\nResearch project management\nResearch data management\nPublic dataset listings\nBibliographies\nLocal servers\nHosted services (external)\n\nPolicy and procedures\n\nResearch notifications and approval\nData access policies\nMetadata and data submission\n\nGeneral systems administration\n\nServer & cloud administration\n\nData collection and quality assurance\n\nArchiving data on network shares\nGCE and MATLAB extensions\nScripted QA/QC\n\nMetadata collection and standards\n\nMetadata standards\n\nJRN Metabase\n\nInstallation and configuration\nServer and database administration\nThe LTER Metabase schema and data model\nPopulating a new database\nCreate and update datasets\nPostgreSQL help links\n\nPublishing Jornada datasets\n\nOverview, conventions, and standards\nMaking EML with JRN Metabase\n\nSOP for entering metadata in Metabase: docx, web page (draft)\n\nMaking EML with EMLassemblyline\n\nProject management\n\nProject database\nPersonnel updates\nPublication updates\n\nThe JRN website and other communication platforms\n\nThe JRN Website - an overview\nWebsite content\nWebsite apps\n\nThe data catalogs\nZotero bibliography\nInteractive data viewer\n\nShared mailing lists\n\nTools and apps\n\nGuide to Jornada-IM repositories\nAnalytics apps\nDSIS\n\nHacks\n\nParse trello boards to CSV format\n\nExternal data, partnerships, and collaboration\n\nCollaborations with USDA-ARS data managers\nAsombro data\nNEON data\n\nAnnual reports\n\n2020\n2021\n\n\nJornada data managers, including the IM team, should follow LTER and Jornada standards and best practices when creating metadata files and publishing research data packages.\n\n\n\nDataset tracking\nWe use Trello for this. For LTER datasets there are three Trello boards that represent how Jornada datasets are split into three categories:\n\nCore - ongoing, high priority datasets that are updated regularly (once per year we hope). Many of these are collected by the JRN field crew.\nNon-core - lower-priority and completed datasets.\nWorks in progress (‘WIP’) - datasets that are brand new or as-yet unpublished. Many are in the development/review phase, or are awaiting publication of results associated with the data.\n\nContact someone on the IM team to get added to these boards.\n\n\nData management resources\nIf you are wondering whether the content or format of a metadata file (EML) is correct and complete, see our metadata standards documents. They are specific to Jornada Basin LTER data packages. THESE ARE DRAFTS and subject to change!\n\nGeneral Jornada metadata standards for all data packages (this is a bit out of date)\nJornada keyword thesauri (.xlsx) list keywords that should appear in all Jornada metadata files.\nAlso see the full Jornada IM documentation pages",
     "crumbs": [
       "IM Guide",
-      "Hacks",
-      "Parsing trello boards to csv"
+      "Overview"
     ]
   },
   {
@@ -1043,6 +438,469 @@
     ]
   },
   {
+    "objectID": "docs/im/sysadmin/chapter-06-server-admin.html",
+    "href": "docs/im/sysadmin/chapter-06-server-admin.html",
+    "title": "6. Servers and Server Administration",
+    "section": "",
+    "text": "The Jornada IM system relies on some cloud servers at DigitalOcean (aka droplets). Generally these are running Ubuntu Server 20.04. Below are some tools and practices for setting up servers, networking between them, managing user access, transferring and securing data, and other administrative tasks.\n\n\nCreating new services at DO is easy - it can be done with the dashboard or an API. Documentation for all DO services is available here, and for droplets see the recommended initial setup docs here and here\n\nAdd public key to server - usually you can do this on creation or from an admin control panel. If it needs to be done after the fact see here\nAdd a non-root user with sudo privilege and allow ssh access. More info here:\n\nhttps://www.digitalocean.com/docs/droplets/tutorials/recommended-setup/\nhttps://www.digitalocean.com/community/questions/how-to-enable-ssh-access-for-non-root-users\n\nConfigure hostnames (if not already done at creation).\n\nhttps://www.digitalocean.com/community/questions/how-do-i-change-hostname\n\nInstall software, which varies depending on server purpose.\n\nMetabase server: git, cron, PostgreSQL\nWeb servers: probably the LAMP stack and WordPress, maybe some javascript.\n\n\n\n\n\nClone the LTER-core-metabase and jrn-db-utils (private) repositories to a directory in home.\nCreate a backups directory and mkdir /home/backups/postgresql. Make sure owner is whoever operates backups for postgres\nAdd a the jrn-db-utils/sh/pb_backup_rotated.sh script to crontab - nightly.\nMake sure incoming connections for SSH (TCP port 22) and PostgreSQL (TCP port 5432) are allowed in the firewall (currently using the DO firewall).\n\n\n\n\n\nDroplets are behind a DO cloud firewall, but if needed, firewalls can also be set up for individual droplets with UFW. This and other tasks are described in the initial server setup docs above, or:\n\nDigitalOcean droplet security tutorial\n\nUnattended updates are a good idea also. For Ubuntu install the unnattended-upgrades package and see setup instructions here.\n\n\n\nSome server tasks, like database or website backups, should be scheduled with cron.\n\nDO Ubuntu cron tutorial\n\n\n\n\nThe JORNADA-NETB1 storage block (sometimes called the R drive) allows CIFS connections (or SMB).\nOther:\n\nSetting up NFS mounts in Ubuntu\n\n\n\n\n\n\n\nPostgreSQL databases (jgeo) are dumped to /home/backups/postgresql in a nightly cron-job and daily, weekly, monthly copies are retained.\nNo other backups, and nothing remote/off-premise backups (TODO)\n\n\n\n\n\nPostgreSQL databases are backed up nightly to /home/backups/postgresql in a nightly cron-job and a few daily, weekly, monthly copies are retained.\n/home/gmaurer/ and home/backups have nightly incremental backups to Packrat using Active Backup for Business (ActiveBackupForBusiness share).\n\n\n\n\n\nThis PC runs the Synology Active Backup for Business client and the data drive (not sure of letter) is backed up nightly to Packrat (ActiveBackupForBusiness share). Daily, weekly, monthly copies of this backup are retained.\nConrad and John do some regular backups to Dropbox and external drives, but I’m not sure what those entail.\n\n\n\n\n\nThis is synced to the Researcher_backups share on Packrat using the Synology Cloud Sync app.\n\n\n\n\nThere are two backup tasks that back up data from Packrat to a Backblaze S3 bucket:\n\nA nightly backup of all data in home, jrn_fieldobs, jrn_geospatial, jrn_imagery, and jrn_sensors\nA weekly backup of all everything in the ActiveBackupForBusiness and Researcher_backups shares. This will include data from several versioned or incremental backups above (JRN Metnet, Oryx, and Sala lab data)\n\n\n\n\n\nGreg’s laptop is backed up to his home Synology device using Time Machine\nGeovany has backed up his laptop to Packrat.\nOthers?\n\n\n\n\nFor shared files on Google Drive and NMSU OneDrive/Sharepoint we just rely on the CSP system, for better or worse…",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "6. Servers and Server Administration"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/chapter-06-server-admin.html#cloud-server-setup-tasks",
+    "href": "docs/im/sysadmin/chapter-06-server-admin.html#cloud-server-setup-tasks",
+    "title": "6. Servers and Server Administration",
+    "section": "",
+    "text": "Creating new services at DO is easy - it can be done with the dashboard or an API. Documentation for all DO services is available here, and for droplets see the recommended initial setup docs here and here\n\nAdd public key to server - usually you can do this on creation or from an admin control panel. If it needs to be done after the fact see here\nAdd a non-root user with sudo privilege and allow ssh access. More info here:\n\nhttps://www.digitalocean.com/docs/droplets/tutorials/recommended-setup/\nhttps://www.digitalocean.com/community/questions/how-to-enable-ssh-access-for-non-root-users\n\nConfigure hostnames (if not already done at creation).\n\nhttps://www.digitalocean.com/community/questions/how-do-i-change-hostname\n\nInstall software, which varies depending on server purpose.\n\nMetabase server: git, cron, PostgreSQL\nWeb servers: probably the LAMP stack and WordPress, maybe some javascript.\n\n\n\n\n\nClone the LTER-core-metabase and jrn-db-utils (private) repositories to a directory in home.\nCreate a backups directory and mkdir /home/backups/postgresql. Make sure owner is whoever operates backups for postgres\nAdd a the jrn-db-utils/sh/pb_backup_rotated.sh script to crontab - nightly.\nMake sure incoming connections for SSH (TCP port 22) and PostgreSQL (TCP port 5432) are allowed in the firewall (currently using the DO firewall).",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "6. Servers and Server Administration"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/chapter-06-server-admin.html#securing-cloud-servers",
+    "href": "docs/im/sysadmin/chapter-06-server-admin.html#securing-cloud-servers",
+    "title": "6. Servers and Server Administration",
+    "section": "",
+    "text": "Droplets are behind a DO cloud firewall, but if needed, firewalls can also be set up for individual droplets with UFW. This and other tasks are described in the initial server setup docs above, or:\n\nDigitalOcean droplet security tutorial\n\nUnattended updates are a good idea also. For Ubuntu install the unnattended-upgrades package and see setup instructions here.",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "6. Servers and Server Administration"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/chapter-06-server-admin.html#scheduled-tasks",
+    "href": "docs/im/sysadmin/chapter-06-server-admin.html#scheduled-tasks",
+    "title": "6. Servers and Server Administration",
+    "section": "",
+    "text": "Some server tasks, like database or website backups, should be scheduled with cron.\n\nDO Ubuntu cron tutorial",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "6. Servers and Server Administration"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/chapter-06-server-admin.html#nfs-and-cifs-mounts-to-remote-directories",
+    "href": "docs/im/sysadmin/chapter-06-server-admin.html#nfs-and-cifs-mounts-to-remote-directories",
+    "title": "6. Servers and Server Administration",
+    "section": "",
+    "text": "The JORNADA-NETB1 storage block (sometimes called the R drive) allows CIFS connections (or SMB).\nOther:\n\nSetting up NFS mounts in Ubuntu",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "6. Servers and Server Administration"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/chapter-06-server-admin.html#current-backup-plan",
+    "href": "docs/im/sysadmin/chapter-06-server-admin.html#current-backup-plan",
+    "title": "6. Servers and Server Administration",
+    "section": "",
+    "text": "PostgreSQL databases (jgeo) are dumped to /home/backups/postgresql in a nightly cron-job and daily, weekly, monthly copies are retained.\nNo other backups, and nothing remote/off-premise backups (TODO)\n\n\n\n\n\nPostgreSQL databases are backed up nightly to /home/backups/postgresql in a nightly cron-job and a few daily, weekly, monthly copies are retained.\n/home/gmaurer/ and home/backups have nightly incremental backups to Packrat using Active Backup for Business (ActiveBackupForBusiness share).\n\n\n\n\n\nThis PC runs the Synology Active Backup for Business client and the data drive (not sure of letter) is backed up nightly to Packrat (ActiveBackupForBusiness share). Daily, weekly, monthly copies of this backup are retained.\nConrad and John do some regular backups to Dropbox and external drives, but I’m not sure what those entail.\n\n\n\n\n\nThis is synced to the Researcher_backups share on Packrat using the Synology Cloud Sync app.\n\n\n\n\nThere are two backup tasks that back up data from Packrat to a Backblaze S3 bucket:\n\nA nightly backup of all data in home, jrn_fieldobs, jrn_geospatial, jrn_imagery, and jrn_sensors\nA weekly backup of all everything in the ActiveBackupForBusiness and Researcher_backups shares. This will include data from several versioned or incremental backups above (JRN Metnet, Oryx, and Sala lab data)\n\n\n\n\n\nGreg’s laptop is backed up to his home Synology device using Time Machine\nGeovany has backed up his laptop to Packrat.\nOthers?\n\n\n\n\nFor shared files on Google Drive and NMSU OneDrive/Sharepoint we just rely on the CSP system, for better or worse…",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "6. Servers and Server Administration"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/chapter-01-overview.html",
+    "href": "docs/im/sysadmin/chapter-01-overview.html",
+    "title": "1. IM System Overview",
+    "section": "",
+    "text": "Introduction\nOur priorities in the Jornada IM team are to:\n\nContribute to high quality, impactful ecology and rangeland research at all stages of the data life cycle.\nOversee, or directly handle, publication of all Jornada datasets\n\nIn the process we ensure data meet FAIR data principles & the LTER Data Access Policy.\n\nAct as a source of data-related leadership and education\n\nWe do this through committee & working group participation, open-source software development, outreach activity, and teaching.\n\n\n\n\nResearch project management\nResearch projects at the Jornada are initiated by requesting approval using John Anderson’s “Research notification” process. A summary of this process, and links to relevant documents are on the “For researchers” page of the JRN and JER websites.\n\n\nData management\nData management expectations for researchers are also outlined on the JRN and JER websites. Field data collection of long-term datasets is typically handled by the Jornada Field Crew, under the supervision of John Anderson.\nQA/QC\nMetadata overview\n\n\nPublic dataset listings\nEDI\nPartner data\n\n\nBibliographies\nZotero, LTER network, etc.\n\n\nLocal computing resources\nJornada servers and network devices\n\n\nHosted resources\nDigital Ocean, website, NMSU stuff, ArcGIS Online (in addition to EDI/Zotero",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "1. IM System Overview"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/index.html",
+    "href": "docs/im/sysadmin/index.html",
+    "title": "Full IM system docs",
+    "section": "",
+    "text": "Full IM system docs\nThis book contains everything you need to know if you are one of the IMs for the Jornada.",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation"
+    ]
+  },
+  {
+    "objectID": "docs/im/procedures/sop_metadata_publishing.html",
+    "href": "docs/im/procedures/sop_metadata_publishing.html",
+    "title": "SOP for updating datasets in metabase",
+    "section": "",
+    "text": "The following are resources that can be referred to for information needed in order to enter or update datasets.\nData Catalog: https://lter.jornada.nmsu.edu/data-catalog\nEDI Data Portal: https://portal.edirepository.org/nis/home.jsp\nTrello: (used to track the datasets and to see which need updating)\nDownload DBeaver - cloud server with several databases, used by the IM team to make edits. This process will only need to be done once.\nPassword: lter1234 (until you change the password elsewhere)\nNavigating the JORNADA_IM server:\nOpen NonCore_packages 🡪 find your data set ID of interest: (i.e., 210370001_grasshopperdata) 🡪\nOther resources for data:",
+    "crumbs": [
+      "IM Guide",
+      "Procedures",
+      "SOP for updating datasets in metabase"
+    ]
+  },
+  {
+    "objectID": "docs/im/procedures/sop_metadata_publishing.html#navigating-the-dbeaver-database-to-update-and-incorporate-datasets",
+    "href": "docs/im/procedures/sop_metadata_publishing.html#navigating-the-dbeaver-database-to-update-and-incorporate-datasets",
+    "title": "SOP for updating datasets in metabase",
+    "section": "NAVIGATING THE DBEAVER DATABASE TO UPDATE AND INCORPORATE DATASETS:",
+    "text": "NAVIGATING THE DBEAVER DATABASE TO UPDATE AND INCORPORATE DATASETS:\nThe following are instructions for navigating through the DBeaver database in order to enter in or update datasets using the resources outlined above.\n\nDBeaver:\n\nClick (on left-hand side) to drop-down each of the following:\n\n&gt;postgres\n&gt;jrn_metabase_dev\n&gt;Schemas\n&gt;lter_metabase\n&gt;Tables: (This is where the metadata is stored and where &gt; most of the edits are made)\n\n\n\n\n&gt;DataSet: enter “DataSetID”= 210370001 into search engine and &gt; Enter\n\nIf no results: Add new row by clicking &gt; {width=“0.15625in” &gt; height=“0.15625in”} icon at the bottom or highlight a row and &gt; click on “Duplicate current row”\nUpdate the following fields, if applicable:\n\nDataSetID: i.e., 210370001\nTitle: enter full title of the project, i.e., &gt; Grasshopper survey and substrate utilization data at the &gt; Jornada Basin LTER site, 1983 to 1985\nPubDate: date that it’s being published: 2021-11-16 &gt; (usually today’s date)\nAbstract: file name referenced from respective dataset &gt; folder on the Shared Drive i.e. abstact.210370001.md\nShortName: i.e., TRANFALL (use name from file on &gt; Jornada_IM server or from “project” tab in &gt; jornada-prj-sheets on Google Drive)\nUpdateFrequency: options are notPlanned (if project is &gt; complete), annually, biannually, or asNeeded (if project &gt; is ongoing)\nMaintenanceDescription: options are complete, ongoing, &gt; or [NULL]\nAbstractType: file\nBoilerplateSetting: &gt; jrn-default{width=“6.249405074365704in” &gt; height=“1.734375546806649in”}\nSave by clicking &gt; “{width=”0.15207020997375328in” &gt; height=“0.15228127734033245in”} Save” button at the &gt; bottom.\n\n\n&gt;DataSetAttributes: enter “DataSetID”= 210370001 into search &gt; engine and Enter\n\nIf &gt;DataSetEntities has an EntityType dataTable, then &gt; proceed with the following.\nIf no results: Add new row by clicking &gt; {width=“0.15625in” &gt; height=“0.15625in”} icon at the bottom or highlight a row and &gt; click on “Duplicate current row”\nTo enter multiple rows, right click 🡪 Advanced Paste … 🡪 &gt; Insert multiple rows\nReference the data sets found on JORNADA_IM server. These are &gt; also the files entered in &gt;DataSetEntities:\n\nDataSetID: 210370001\nEntitySortOrder: i.e. 1 for all within the same dataset, &gt; 2 for all within the next dataset, etc.\nColumnPosition: i.e. 1, 2, 3, 4…etc. for each row\nColumnName: reference the data located in the metadata &gt; template or data file. i.e., (jgrashop.dsd) Date, Plot, &gt; Transect, Quadrat, Species, Mean_Diameter, Mean_Height, &gt; Total_Number\nAttributeID: i.e. Date, Plot, Transect, Quadrat, &gt; Species, Mean_Diameter, Mean_Height, Total_Number &gt; Repeat whatever is in ColumnName?\nAttributeLabel: i.e. Date, Plot, Transect, Quadrat, &gt; Species, Mean_Diameter, Mean_Height, Total_Number &gt; Repeat whatever is in ColumnName?\nDescription: i.e., Date, Plot number [10-18], Transect &gt; number [1-2], Quadrat number [1-20], Species code &gt; [see JornadaGrasshopperDatasetCodes.txt], Mean plant &gt; diameter [cm], Mean plant height [cm], Total number of &gt; individuals per square meter per quadrat\nStorage Type: i.e., Date = date; plot, quadrat, transect &gt; number, or total number = integer; mean diameter or height &gt; = float; species code = string\nMeasurementScaleDomainID: Date = dateTime; integer = &gt; interval; float = ratio; string = nominalText\nDateTimeFormatString: ONLY on rows with column name &gt; “date”, all others should be [NULL]. Always YYYY/MM/DD &gt; format.\nDateTimePrecision: 1 on rows filled out as above, all &gt; others should be [NULL].\nTextPatternDefinition: any nominal text doesn’t need a &gt; unit and can be added to that row as “any text”. All &gt; others should be [NULL].\nUnit: “number” for intervals or “centimeter” for ratios. &gt; Date and nominal text should be [NULL].\nNumberType: “integer” for intervals or “real” for &gt; ratios. Date and nominal text should be [NULL].\n\nRepeat for each file in the server.\nIf a certain unit can’t be found, it must be added to the EML &gt; unit dictionary.\nBased on the R script console, any column with NA values &gt; requires a line entry. If it is missing info, such as NA, in &gt; the dataset, it will require an NA1 value (check define &gt; description).\nSave by clicking &gt; “{width=”0.15207020997375328in” &gt; height=“0.15228127734033245in”} Save” button at the &gt; bottom.{width=“5.671875546806649in” &gt; height=“3.4432174103237094in”}\n\n&gt;DataSetEntities (to associate/attach files): enter &gt; “DataSetID”= 210370001 into search engine and Enter\n\nThe files (.pdf, .TIF, csv) found in Jornada_IM server, under &gt; the file name i.e. 21037001_GrasshopperData, are used to &gt; update the following columns, if applicable:\n\nEntitySortOrder: change to subsequent number i.e. 2, 3, &gt; 4\nEntityName: change to something short but descriptive: &gt; Plant and grasshopper species codes\nEntityType: to dataTable (if dataTable, add &gt; DataSetAttributes) or otherEntity\nEntityDescription: something longer, uniform, and more &gt; descriptive: Numerical and species codes for plants and &gt; grasshoppers\nFileType: usually csv_B (most files) or plaintext\nUrlhead: &gt; https://sfo3.digitaloceanspaces.com/jrn-pubfiles/\nFile Name: enter exact file name: &gt; JRN_37001_grasshopper_substrate_data.csv\nFileSizeUnits: byte\n\nFor each data set, highlight row and click on &gt; {width=“0.13541666666666666in” &gt; height=“0.13541666666666666in”} icon at the bottom to &gt; “Duplicate current row”. Then update columns as above.\nSave by clicking &gt; “{width=”0.15207020997375328in” &gt; height=“0.15228127734033245in”} Save” button at the bottom.\n\n\n\n\n&gt;DataSetKeywords: enter “DataSetID”= 210370001 into search &gt; engine and Enter\n\nIf no results: Add new row, multiple rows, or duplicate rows as &gt; instructed above.\nUpdate columns as follows:\n\nDataSetID: i.e., 210370001\nKeyword: enter one word per row that has to do with the &gt; project i.e., grasshoppers, vegetation, abundance, etc… &gt; Use metadata template in file folder on Jornada_IM &gt; server.\n\nAlways use study number i.e., study 370. This is done by &gt; adding it to ListKeywords. Any keywords that do not &gt; exist yet, can be added in ListKeywords.\n\nThesaurusID: lter_cv or jornada_placenames if it is a &gt; location/place. If it is the study ID i.e., study 370 - &gt; then ThesaurusID should be jornada_projectnames\n\n{width=“0.15207020997375328in” &gt; height=“0.15228127734033245in”} Save\n\n&gt;DataSetMethod: enter “DataSetID”= 210370001 into search engine &gt; and Enter\n\nIf no results: Add new row or duplicate row as instructed above.\nUpdate columns as follows:\n\nDataSetID: i.e., 210370001\nMethodStepID: 1\nDescriptionType: file\nDescription: methods.210370001.md\nMethod_xml: [NULL]\n\nCreate method and abstract markdown files.\n\nMake sure method and abstract is in R file.\n\n\n&gt;DataSetPersonnel: enter “DataSetID”= 210370001 into search &gt; engine and Enter\n\nIf no results: Add new row, multiple rows, or duplicate rows as &gt; instructed above.\n\nEnter each row with the name of people involved i.e., &gt; dpeters\n\nUpdate columns as follows:\n\nDataSetID: i.e., 210370001\nNameID: Select cell and type name into Value box on &gt; right-hand side….. i.e., dlightfoot, wwhitford. When the &gt; name appears in the Dictionary section, click to populate &gt; it into the NameID field. Repeat for each name. If you &gt; don’t see the NameID of the person you are looking for pop &gt; up on the right-hand side, you will need to add their &gt; names under ListPeople\n\n{width=“5.182292213473316in” &gt; height=“1.4975448381452319in”}\n\nAuthorshipOrder: 1, 2, 3…\nAuthorshipRole: i.e., creator, contact\n\n{width=“0.15207020997375328in” &gt; height=“0.15228127734033245in”} Save\n\n&gt;DataSetPublications:\n\nIf applicable, update columns as follows:\n\nDataSetID: i.e., 210370001\nRelationshipType: usageCitation or literatureCited\n\n\n&gt;DataSetSites: enter “DataSetID”= 210370001 into search engine &gt; and Enter\n\nIf no results: Add new row, multiple rows, or duplicate rows as &gt; instructed above.\nUpdate columns as follows:\n\nDataSetID: i.e., 210370001\nEntitySortOrder: 0\nSiteID: i.e., Bajada_West, Basin_Floor, &gt; JER_CDRRC_bounding (general use)\nGeoCoverageSortOrder: 1, 2\n\n{width=“0.15207020997375328in” &gt; height=“0.15228127734033245in”} Save\n\n&gt;DataSetTaxa: This is where you can link taxonomic data to a &gt; dataset.\n\nUpdate columns as follows:\n\nDataSetID: i.e., 210XXXXXX\nTaxonID: enter the ITIS number you obtained from &gt; ITIS.gov in the &gt;ListTaxa section.\nTaxonomicProviderID: i.e., itis\n\n{width=“0.15207020997375328in” &gt; height=“0.15228127734033245in”} Save\n\n&gt;DataSetTemporal: enter “DataSetID”= 210370001 into search &gt; engine and Enter\n\nIf no results: Add new row, multiple rows, or duplicate rows as &gt; instructed above.\nUpdate columns as follows:\n\nDataSetID: i.e., 210370001\nEntitySortOrder: 0\nBeginDate and EndDate: (make sure it’s in proper &gt; YYYY/MM/DD format)\n\nThis can be found on the Google share drive, in the &gt; jornada-prj-sheets spreadsheet, under the Project tab.\n\nUseOnlyYear: [ ] uncheck if updated dates include &gt; month/day\n\n\n&gt;ListKeywords: If there are keywords to add in DataSetKeywords &gt; that are not found, they can be added here. Include any key words &gt; that should be associated with the project.\n\nControl F to double check that the word doesn’t already exist. &gt; If it doesn’t, add it as follows\nAdd row and include:\n\nKeyword: Study 370,\nThesaurusID: jornada_projectnames\nKeywordType: theme\n\nInclude any other relevant keywords that weren’t found when &gt; searching in DataSetKeywords. Other examples include:\n\nKeyword: creosotebush; Chihuahuan Desert\nThesaurusID: (look on &gt; https://vocab.lternet.edu/vocab/vocab/index.php &gt; for word, if it’s there enter as lter_cv; if not enter as &gt; none. If it’s a place, such as site, etc., &gt; jornada_placenames\nKeywordType: theme; place\n\n\n{width=“0.15207020997375328in” &gt; height=“0.15228127734033245in”} Save\n\n&gt;ListPeople: To update the creators involved with a project.\n\nDuplicate a current row in order to add people. If it has new &gt; personnel, then\nTo delete a row, highlight row and click “Delete Current Row” at &gt; the bottom. It will highlight red so you must Save in order to &gt; save changes.\n\n&gt;ListPublications (to attach publications with data sets):\n\nUpdate columns as follows:\n\nPublicationID: i.e.,\nBibtex:\n\n\n&gt;ListTaxa: This is where you can enter taxonomic data. First go &gt; to ITIS.gov to search for the ITIS Taxa ID if species is not &gt; already listed in this section.\n\nUpdate columns as follows:\n\nTaxonID: enter the ITIS number you obtained from &gt; ITIS.gov\nTaxonomicProviderID: itis\nTaxonRankName: species\nTaxonRankValue: Genus species name i.e., Bos taurus\nCommonName: i.e., domesticated cattle\nLocalID: ID found through ITIS.gov i.e., cow or BOER4\n\n{width=“0.15207020997375328in” &gt; height=“0.15228127734033245in”} Save",
+    "crumbs": [
+      "IM Guide",
+      "Procedures",
+      "SOP for updating datasets in metabase"
+    ]
+  },
+  {
+    "objectID": "docs/refs_and_links.html",
+    "href": "docs/refs_and_links.html",
+    "title": "Miscellaneous resources",
+    "section": "",
+    "text": "FAIR stands for Findable, Accessible, Interoperable, and Re-usable\n\nFAIR principles for scientific data\nRecent commentary on fair principles\n\n\n\n\n\nHadley Wickham’s “Tidy” data paper and vignette\n\n\n\n\nJornada Basin LTER data packages are generally submitted to the EDI (Environmental Data Initiative) repository. They have resources about data collection, curation, and publishing.\n\nData authors guide (Please contact the Jornada IM team before following the guide)\nMore detailed data publishing best practices\nEDI’s 5 phases of data publishing (old EDI website)\n\n\n\n\n\nOrientation to data management at Jornada (JRN Ecology Short Course, July 2022)\nNavigating the Jornada Data Ecosystem (Jornada Symposium 2020)\n\n\n\n\nGries, C., S. Beaulieu, R.F. Brown, S. Elmendorf, H. Garritt, G. Gastil-Buhl, H. Hsieh, L. Kui, M. Martin, G. Maurer, A.T. Nguyen, J.H. Porter, A. Sapp, M. Servilla, and T.L. Whiteaker. 2021. Data Package Design for Special Cases ver 1. Environmental Data Initiative. https://doi.org/10.6073/pasta/9d4c803578c3fbcb45fc23f13124d052"
+  },
+  {
+    "objectID": "docs/refs_and_links.html#fair-data",
+    "href": "docs/refs_and_links.html#fair-data",
+    "title": "Miscellaneous resources",
+    "section": "",
+    "text": "FAIR stands for Findable, Accessible, Interoperable, and Re-usable\n\nFAIR principles for scientific data\nRecent commentary on fair principles"
+  },
+  {
+    "objectID": "docs/refs_and_links.html#data-collection-and-management-advice",
+    "href": "docs/refs_and_links.html#data-collection-and-management-advice",
+    "title": "Miscellaneous resources",
+    "section": "",
+    "text": "Hadley Wickham’s “Tidy” data paper and vignette"
+  },
+  {
+    "objectID": "docs/refs_and_links.html#lteredi-resources",
+    "href": "docs/refs_and_links.html#lteredi-resources",
+    "title": "Miscellaneous resources",
+    "section": "",
+    "text": "Jornada Basin LTER data packages are generally submitted to the EDI (Environmental Data Initiative) repository. They have resources about data collection, curation, and publishing.\n\nData authors guide (Please contact the Jornada IM team before following the guide)\nMore detailed data publishing best practices\nEDI’s 5 phases of data publishing (old EDI website)"
+  },
+  {
+    "objectID": "docs/refs_and_links.html#jornada-presentations",
+    "href": "docs/refs_and_links.html#jornada-presentations",
+    "title": "Miscellaneous resources",
+    "section": "",
+    "text": "Orientation to data management at Jornada (JRN Ecology Short Course, July 2022)\nNavigating the Jornada Data Ecosystem (Jornada Symposium 2020)"
+  },
+  {
+    "objectID": "docs/refs_and_links.html#publications",
+    "href": "docs/refs_and_links.html#publications",
+    "title": "Miscellaneous resources",
+    "section": "",
+    "text": "Gries, C., S. Beaulieu, R.F. Brown, S. Elmendorf, H. Garritt, G. Gastil-Buhl, H. Hsieh, L. Kui, M. Martin, G. Maurer, A.T. Nguyen, J.H. Porter, A. Sapp, M. Servilla, and T.L. Whiteaker. 2021. Data Package Design for Special Cases ver 1. Environmental Data Initiative. https://doi.org/10.6073/pasta/9d4c803578c3fbcb45fc23f13124d052"
+  },
+  {
+    "objectID": "archive/index.html",
+    "href": "archive/index.html",
+    "title": "Miscellaneous documents",
+    "section": "",
+    "text": "Miscellaneous documents\n\nJornada Metadata Standards guide (out of date)\nJornada keywords thesaurus (also out of date)\nOld project and data documentation forms\nAn old ResNotif form for posterity"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jornada Data Commons",
+    "section": "",
+    "text": "Welcome to the Jornada Data Commons. This site is maintained by the Jornada IM (Information Management) team to support researchers and data managers working with data from the Jornada Basin LTER (JRN) and Jornada Experimental Range (JER) programs."
+  },
+  {
+    "objectID": "index.html#im-a-researcher-and-i-need-to",
+    "href": "index.html#im-a-researcher-and-i-need-to",
+    "title": "Jornada Data Commons",
+    "section": "I’m a researcher and I need to…",
+    "text": "I’m a researcher and I need to…\n\nGet approved to do research at the Jornada\nClean and describe my research data (data QA/QC, metadata)\nSubmit or publish a dataset\nUpdate project, personnel, or website information\nFind Jornada datasets or other information\nCite a Jornada dataset or funding\nLearn more about Jornada data management"
+  },
+  {
+    "objectID": "index.html#im-a-data-manager-and-i-need-to",
+    "href": "index.html#im-a-data-manager-and-i-need-to",
+    "title": "Jornada Data Commons",
+    "section": "I’m a data manager and I need to…",
+    "text": "I’m a data manager and I need to…\n\nLearn more about a particular dataset\nFind templates, standards, or tools for data management\nRead or write the full IM system documentation"
+  },
+  {
+    "objectID": "index.html#more-info",
+    "href": "index.html#more-info",
+    "title": "Jornada Data Commons",
+    "section": "More info",
+    "text": "More info\n\nPublications, presentations, videos, and other references\nJEDS (Jornada Environmental Data Science) tutorials"
+  },
+  {
+    "objectID": "index.html#contact-us",
+    "href": "index.html#contact-us",
+    "title": "Jornada Data Commons",
+    "section": "Contact us",
+    "text": "Contact us\nFor questions about collecting, analyzing, publishing, and accessing Jornada data or metadata please contact the IM team (jornada.data@nmsu.edu)."
+  },
+  {
+    "objectID": "docs/researcher/overview.html",
+    "href": "docs/researcher/overview.html",
+    "title": "Research approval and policies",
+    "section": "",
+    "text": "This page was written by Jornada information managers (IMs) to provide a concise, but fairly comprehensive guide to research administration and data management for Jornada students and investigators, including PIs, postdocs, graduate students, undergraduate researchers, and staff scientists.",
+    "crumbs": [
+      "Researcher Guide",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/overview.html#ezeml",
+    "href": "docs/researcher/overview.html#ezeml",
+    "title": "Research approval and policies",
+    "section": "ezEML",
+    "text": "ezEML\nThe EDI repository has created a web app called ezEML for describing research datasets and creating standardized metadata documents for publication (EML). The tool is new but has rapidly developed to become an excellent method to author well-documented datasets. There is a Jornada EML template available on the site, so the recommended process for Jornada researchers is:\n\nLog in to ezEML using your Google, GitHub, or ORCID account (whichever is easiest).\nStart a new EML document using the “EML Documents &gt; New from Template” menu item\nNavigate to and select the “LTER/JRN/JRN_template_general” template to open a document template pre-populated with Jornada metadata.\nGive the document a unique name. You can save your metadata and then return to this document anytime.\nFollow the sequence of forms on the left, and ezEML’s prompts, to upload data files and enter metadata for your dataset. Each section of your metadata will have help available (“?” icons) and several fields will already be filled if you are using the JRN template.\nUse the “Check metadata” and “Check data tables” tools at the bottom left to check the completeness and validity of your dataset. Green lights mean your dataset is well described and ready to share.\nWhen ready, click “Submit/Share Package” and then “Collaborate with Colleagues”. DO NOT USE “Submit Package to EDI” or we may miss your dataset.\nOn the “Invite a Collaborator” screen share the dataset with a Jornada data manager (mailto:jornada.data@nmsu.edu).\n\nAt this point, the Jornada IM Team will receive a notification and can access your dataset in ezEML to review, edit, and publish to EDI.",
+    "crumbs": [
+      "Researcher Guide",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/overview.html#metadata-templates",
+    "href": "docs/researcher/overview.html#metadata-templates",
+    "title": "Research approval and policies",
+    "section": "Metadata templates",
+    "text": "Metadata templates\nA metadata template is a document with a structure and cues that help you collect the essential metadata needed to describe a published dataset. We have created Jornada metadata templates in MS Word (.docx) or Excel (.xlsx) formats. These templates contain sections for all critical pieces of metadata, along with instructions on what to include and how to structure the information. The Excel version is slightly more detailed and may be useful for complex datasets. Completed templates and accompanying data files should be sent to the Jornada IM team (mailto:jornada.data@nmsu.edu).",
+    "crumbs": [
+      "Researcher Guide",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/overview.html#general-jornada-metadata-guidelines",
+    "href": "docs/researcher/overview.html#general-jornada-metadata-guidelines",
+    "title": "Research approval and policies",
+    "section": "General Jornada metadata guidelines",
+    "text": "General Jornada metadata guidelines\nWhile writing metadata, the Jornada metadata standards (.docx) and keyword thesauri (.xlsx) documents are helpful, but not required.",
+    "crumbs": [
+      "Researcher Guide",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "docs/im/hacks/parse_trello_boards.html",
+    "href": "docs/im/hacks/parse_trello_boards.html",
+    "title": "Parsing trello boards to csv",
+    "section": "",
+    "text": "Parsing trello boards to csv\n\nFrom Trello board go to\nMenu &gt; More &gt; Print and Export &gt; Export as JSON\nand download the JSON to a local machine.\nParse the raw JSON to a simplified tabular JSON file that can be converted to csv.\n\nDownload the Trello JSON parser code and make executable some where on local machine.\nRun trelloparse {trello JSON file.json} output.json\n\nConvert output.json to .csv using https://json-csv.com",
+    "crumbs": [
+      "IM Guide",
+      "Hacks",
+      "Parsing trello boards to csv"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html",
+    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html",
+    "title": "3. Websites and Web Applications",
+    "section": "",
+    "text": "The JRN website runs on Wordpress and is hosted by WPengine. The JRN webmaster, currently the lead Information Manager, has a WPengine.com account that allows access to the website backend for account management, website backups, and other administrative tasks. For content creation, editing, and website design, user accounts are created in the Wordpress environment.\n\n\nThere are 3 Wordpress environments available at the hosting provider.\n\nProduction - this is the live JRN website. Only the webmaster has editing rights in this environment and is responsible for pulling in changes from the staging environment.\nStaging - in close sync with the Production environment, new content such as blog posts and pictures can be created and tested here. The project manager and other staff have editing access in this environment.\nDevelopment - New plugins, themes, and other features are tested here and pushed to Staging when ready. This is mainly used by the webmaster or other developers.\n\nEach environment has a unique name and web address at {environment}.wpengine.com. The production environment is the live website, so the DNS entry for lter.jornada.nmsu.edu points to this site.\n\n\n\nThe hosting provider allows secure shell (ssh) access to any environment using an SSH gateway. See setup instructions here. Once set up, issuing the command\nssh {environment}@{environment}.ssh.wpengine.net\nshould put the user into a terminal session on the web server. To move a directory of files, such as one of our website’s client-side apps, from a local machine to the website, use scp. For example, to push the zotero-biblio app to an environment you might do:\nscp -r GitHub/zotero-biblio {environment}@{environment}.ssh.wpengine.net:/sites/{environment}/\nThere are occasional issues with the SSH Gateway at our hosting provider, so luckily, management of files with git is also supported. See the git setup instructions\n\n\n\nOnce logged in to the shell of the web server environment there are a number of Wordpress command-line utilities that are available. See the description here:\nhttps://developer.wordpress.org/cli/commands/\n\n\nFor example, to remove mixed comment by replacing “http://” addresses with “https://” issue this command from the shell:\nwp search-replace 'http://{environment}.wpengine.com' 'https://{environment}.wpengine.com'\n\n\n\n\nThe primary data catalog and the publication lists, including the bibliography and non-EDI data catalog, are client-side apps hosted on our website (lter-datacat and Zotero-JavaScript-Search-Client, respectively) . Placing these apps there, and updating them, means adding a folder to the website’s root directory. This is done using scp, generally (see above), or by pushing changes via git.\n\n\n\n\n\n\nNoteA new JRN website is under development!\n\n\n\nThe new JRN LTER website will be a static site based on the Hugo site generator. The current development version is in this GitHub repository and the site is rendered by Netlify at https://jrn-lter-website.netlify.app/.",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "3. Websites and Web Applications"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#environments",
+    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#environments",
+    "title": "3. Websites and Web Applications",
+    "section": "",
+    "text": "There are 3 Wordpress environments available at the hosting provider.\n\nProduction - this is the live JRN website. Only the webmaster has editing rights in this environment and is responsible for pulling in changes from the staging environment.\nStaging - in close sync with the Production environment, new content such as blog posts and pictures can be created and tested here. The project manager and other staff have editing access in this environment.\nDevelopment - New plugins, themes, and other features are tested here and pushed to Staging when ready. This is mainly used by the webmaster or other developers.\n\nEach environment has a unique name and web address at {environment}.wpengine.com. The production environment is the live website, so the DNS entry for lter.jornada.nmsu.edu points to this site.",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "3. Websites and Web Applications"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#secure-file-management",
+    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#secure-file-management",
+    "title": "3. Websites and Web Applications",
+    "section": "",
+    "text": "The hosting provider allows secure shell (ssh) access to any environment using an SSH gateway. See setup instructions here. Once set up, issuing the command\nssh {environment}@{environment}.ssh.wpengine.net\nshould put the user into a terminal session on the web server. To move a directory of files, such as one of our website’s client-side apps, from a local machine to the website, use scp. For example, to push the zotero-biblio app to an environment you might do:\nscp -r GitHub/zotero-biblio {environment}@{environment}.ssh.wpengine.net:/sites/{environment}/\nThere are occasional issues with the SSH Gateway at our hosting provider, so luckily, management of files with git is also supported. See the git setup instructions",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "3. Websites and Web Applications"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#managing-wordpress-from-the-command-line",
+    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#managing-wordpress-from-the-command-line",
+    "title": "3. Websites and Web Applications",
+    "section": "",
+    "text": "Once logged in to the shell of the web server environment there are a number of Wordpress command-line utilities that are available. See the description here:\nhttps://developer.wordpress.org/cli/commands/\n\n\nFor example, to remove mixed comment by replacing “http://” addresses with “https://” issue this command from the shell:\nwp search-replace 'http://{environment}.wpengine.com' 'https://{environment}.wpengine.com'",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "3. Websites and Web Applications"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#pushing-changes-to-js-apps-lter-datacat-pub_list",
+    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#pushing-changes-to-js-apps-lter-datacat-pub_list",
+    "title": "3. Websites and Web Applications",
+    "section": "",
+    "text": "The primary data catalog and the publication lists, including the bibliography and non-EDI data catalog, are client-side apps hosted on our website (lter-datacat and Zotero-JavaScript-Search-Client, respectively) . Placing these apps there, and updating them, means adding a folder to the website’s root directory. This is done using scp, generally (see above), or by pushing changes via git.\n\n\n\n\n\n\nNoteA new JRN website is under development!\n\n\n\nThe new JRN LTER website will be a static site based on the Hugo site generator. The current development version is in this GitHub repository and the site is rendered by Netlify at https://jrn-lter-website.netlify.app/.",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "3. Websites and Web Applications"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#homepage",
+    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#homepage",
+    "title": "3. Websites and Web Applications",
+    "section": "Homepage",
+    "text": "Homepage\nA mix of static and dynamic content.\nThe “Recent posts” section is a post grid populated with Wordpress posts beloging to the ‘Featured’ category. To add a new post to this section, create a post and assign to this category. All “Featured” posts created are collected on the featured post history page. This page is also where the “News” link in the main menu goes.\nStill more to describe here…",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "3. Websites and Web Applications"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#about",
+    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#about",
+    "title": "3. Websites and Web Applications",
+    "section": "About",
+    "text": "About\nPages under this menu are mostly static content that has been adapted from earlier versions of the website. Mostly this content gets updated during website development pushes during proposal writing or midterm reviews.\n\nPersonnel\nThe StaffMembers plugin handles this - need to write up more on how this works…",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "3. Websites and Web Applications"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#research",
+    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#research",
+    "title": "3. Websites and Web Applications",
+    "section": "Research",
+    "text": "Research\nMostly static content - again, usually updated during proposal pushes.",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "3. Websites and Web Applications"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#data",
+    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#data",
+    "title": "3. Websites and Web Applications",
+    "section": "Data",
+    "text": "Data\nThis menu contains 3 data catalogs:\n\nThe main LTER one\nSpatial data (static)\nThe partner catalog (still in development).\n\nThese are described below.\nThe Interactive Data Viewer is also here (and it needs to be documented somewhere…), as is the static species lists (that also need updating…).",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "3. Websites and Web Applications"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#publications",
+    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#publications",
+    "title": "3. Websites and Web Applications",
+    "section": "Publications",
+    "text": "Publications\nThere are both static and dynamic pages under the “Publications” menu. The Bibliography page is showing an app called zotero-biblio that reads our bibliography from a database hosted at Zotero.org. The Zotero-JavaScript-Search-Client app is written in javascript and was originally developed by Tim Whiteaker at BLE LTER. Our fork of this app, which has some customizations, is hosted and maintained in a GitHub repository. It is running on the Bibliography page through an iframe, but the app lives at https://lter.jornada.nmsu.edu/Zotero-JavaScript-Search-Client/complete_jrn.html on the website.\n\nThe Zotero bibliography\n\nTagging\nThere is a tagging system for tracking the relationship between publications in the bibliography and the Jornada LTER program.\n\nJRN funded signifies a work that was directly funded by the Jornada LTER grant, with some acknowledgement of that in the text.\nJRN assisted signifies a work that was supported by the LTER program in some way that is apparent in the text - Jornada LTER data are used, assistance from particular people, or the work is supported by one of our leveraged programs - but direct funding from the JRN LTER is not acknowledged.\nJRN related signifies a work that is related to the JRN LTER program through location, personnel (investigator coauthor), or research theme, but has no known direct or indirect support from the program. A number of USDA-ARS works on or near the Jornada fall in this category.\nJRN foundational is used to tag works that were instrumental in the development of the JRN research program, but did not occur as part of the JRN LTER program, usually because they are from before the JRN LTER program was initally funded.\nJRNStatusVerified is a tag to indicate that someone in the program has checked the publication and verified that one of the tags above is accurately applied.\n\n\n\n\nBooks\nThe Books page is a post grid populated with Wordpress posts beloging to the ‘Books’ category. To add new books, create a post and assign to this category.\nOther pages under the “Publications” menu are static content.",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "3. Websites and Web Applications"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#outreach",
+    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#outreach",
+    "title": "3. Websites and Web Applications",
+    "section": "Outreach",
+    "text": "Outreach\nMostly static content but the GRFP, Short Course, and REU pages contain post grids that display posts under the “Graduate-fellowship-project”, “Ecology-short-course”, and “REU-project” categories, respectively.",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "3. Websites and Web Applications"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#for-researchers",
+    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#for-researchers",
+    "title": "3. Websites and Web Applications",
+    "section": "For Researchers",
+    "text": "For Researchers\nStatic page - should stay fairly in-sync with this JER page.",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "3. Websites and Web Applications"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#data-catalogs",
+    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#data-catalogs",
+    "title": "3. Websites and Web Applications",
+    "section": "Data catalogs",
+    "text": "Data catalogs\nThe data catalog seen at https://lter.jornada.nmsu.edu/data-catalog/ is JRNs primary data catalog and is a javascript app called lter-datacat.\n\nlter-datacat\nThe lter-datacat app is written in javascript and was originally developed by Geovany Ramirez and Jason Coombs. It is running on the main data catalog page through an iframe, but the app lives at https://lter.jornada.nmsu.edu/lter-datacat/ on the website.\nThe app is hosted and maintained in a GitHub repository\n\n\nPartner data\nThis is in development on the staging website. It will list data held at repositories other than EDI.\nIn development, there is an instance of the Zotero-JavaScript-Search-Client tool running at https://lter.jornada.nmsu.edu/Zotero-JavaScript-Search-Client/complete_jrndata.html that can be i-framed in when ready.\n\n\nSpatial data\nThe spatial data catalog is basically just a list of layers that can be downloaded as kmz files. Nothing fancy.",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "3. Websites and Web Applications"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#zotero-bibliography",
+    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#zotero-bibliography",
+    "title": "3. Websites and Web Applications",
+    "section": "Zotero bibliography",
+    "text": "Zotero bibliography\n\nMaintaining the Zotero app\nOnce you make changes to the repository you can upload the whole thing to our webhost using scp. The proper command would be:\nscp -prq GitHub/Zotero-JavaScript-Search-Client/* {envname}@{envname}.ssh.wpengine.net:~/sites/{envname}/Zotero-JavaScript-Search-Client/\nwhere {envname} is the environment name at the host (WPengine currently). You’d need to have some ssh keys set up.",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "3. Websites and Web Applications"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#interactive-data-viewer",
+    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#interactive-data-viewer",
+    "title": "3. Websites and Web Applications",
+    "section": "Interactive data viewer",
+    "text": "Interactive data viewer",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "3. Websites and Web Applications"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#shared-nmsu-outlook-mailboxes",
+    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#shared-nmsu-outlook-mailboxes",
+    "title": "3. Websites and Web Applications",
+    "section": "Shared NMSU Outlook mailboxes",
+    "text": "Shared NMSU Outlook mailboxes\n\njornada.data@nmsu.edu\n\nThis address is displayed on the Jornada LTER and USDA websites as the contact address for data-related inquiries. It is also listed as the contact email address for metadata describing published Jornada datasets, including in most EML documents and packages at EDI or Ag Data Commons.\nMail recieved is forwarded (using a mailbox rule) to primary members of the Jornada IM Team and the mailbox can be accessed through the Outlook web app by those same primary IM Team members.\nPreviously a GMail account, datamanager.jrn.lter@gmail.com, was used for this purpose, and all mail to that address is now forwarded to the present address (jornada.data@nmsu.edu).\n\njornada.lter@nmsu.edu\n\nThis address is displayed on the Jornada LTER websites as the contact address for program-related inquiries. Its also the contact address for the Jornada LTER Google account and an admin/moderator on the JRN-L and JRNSTUDENT-L listserv accounts.\nMail recieved is forwarded (using a mailbox rule) to primary Jornada LTER staff members (lead PI, program manager, information manager) and the mailbox can be accessed through the Outlook web app by those same primary staff members.\nPreviously, the program manager’s personal GMail address had been listed for this purpose.",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "3. Websites and Web Applications"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#gnu-mailman-lists-on-lists.nmsu.edu",
+    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#gnu-mailman-lists-on-lists.nmsu.edu",
+    "title": "3. Websites and Web Applications",
+    "section": "GNU Mailman lists on lists.nmsu.edu",
+    "text": "GNU Mailman lists on lists.nmsu.edu\nThere are 3 lists assigned to Jornada LTER on NMSU’s listserv system:\n\nJRN-L@lists.nmsu.edu (or JRN-L@nmsu.edu)\n\nUsed for general-interest email broadcasts to anyone affiliated with the Jornada LTER or voluntarily following this list. People can subscribe to this using a form on our website homepage.\n\nJRNSTUDENT-L@lists.nmsu.edu (or JRNSTUDENT-L@nmsu.edu)\n\nUsed mainly by JRN staff to contact graduate and undergraduate students, or of students to broadcast messages for themselves. Anything sent to JRN-L gets sent to this list as well (automatically, without duplicates).\n\nJRNSTAFF-L@lists.nmsu.edu (or JRNSTAFF-L@nmsu.edu)\n\nCurrently unused.\n\n\nTo administer these one must be on the NMSU VPN, or on campus, and visit the admin portal for each. The addresses for these are https://lists.nmsu.edu/mailman/admin/{listname}, where {listname} is jrn-l, jrnstudent-l, or jrnstaff-l.\n\nManaging the lists\nWe use the basic list admin tools provided by Mailman - the site IM and PM mainly handle it (and are still learning).",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "3. Websites and Web Applications"
+    ]
+  },
+  {
     "objectID": "docs/im/sysadmin/chapter-05-data-publishing.html",
     "href": "docs/im/sysadmin/chapter-05-data-publishing.html",
     "title": "5. Data Publishing",
@@ -1151,17 +1009,6 @@
     ]
   },
   {
-    "objectID": "docs/im/sysadmin/index.html",
-    "href": "docs/im/sysadmin/index.html",
-    "title": "Full IM system docs",
-    "section": "",
-    "text": "Full IM system docs\nThis book contains everything you need to know if you are one of the IMs for the Jornada.",
-    "crumbs": [
-      "IM Guide",
-      "Full IM System Documentation"
-    ]
-  },
-  {
     "objectID": "docs/im/sysadmin/chapter-02-project-management.html",
     "href": "docs/im/sysadmin/chapter-02-project-management.html",
     "title": "2. Project Management",
@@ -1174,6 +1021,150 @@
     ]
   },
   {
+    "objectID": "docs/im/standards/JRN_metadata_standards.html",
+    "href": "docs/im/standards/JRN_metadata_standards.html",
+    "title": "Jornada Dataset Metadata Standards",
+    "section": "",
+    "text": "If you edit this document please track your changes and send to Greg Maurer (gmaurer.jrn.lter@gmail.com).\nNotes about things that need to be expanded or verified are marked with “???”",
+    "crumbs": [
+      "IM Guide",
+      "Metadata standards",
+      "Jornada Dataset Metadata Standards"
+    ]
+  },
+  {
+    "objectID": "docs/im/standards/JRN_metadata_standards.html#using-this-document",
+    "href": "docs/im/standards/JRN_metadata_standards.html#using-this-document",
+    "title": "Jornada Dataset Metadata Standards",
+    "section": "Using this document",
+    "text": "Using this document\nThe metadata standards in this document are structured and formatted similarly to an EML document. Named EML elements are surrounded by angle brackets, and there are headings for most important elements. At the Jornada Basin LTER, a variety of tools are being used to create EML documents during the data packaging process (EMLassemblyline, GCE Toolbox +, etc.). Notes about using these tools to create each EML element are present in the relevant section of this document (???Add these in as you edit).\nNote that EML documents are hierarchical. The root element is &lt;eml:eml&gt; (denoted by the path /eml:eml). Below the EML root element are 3 elements, &lt;access&gt;, &lt;dataset&gt;, and &lt;additional_metadata&gt; (paths /eml:eml/access, /eml:eml/dataset, and /eml:eml/additional_metadata). This document contains metadata standards for elements under the &lt;dataset&gt; element of Jornada EML files only. We may add standards for EML &lt;access&gt; and &lt;additional_metadata&gt; elements at a later time.",
+    "crumbs": [
+      "IM Guide",
+      "Metadata standards",
+      "Jornada Dataset Metadata Standards"
+    ]
+  },
+  {
+    "objectID": "docs/im/standards/JRN_metadata_standards.html#title",
+    "href": "docs/im/standards/JRN_metadata_standards.html#title",
+    "title": "Jornada Dataset Metadata Standards",
+    "section": "<title>*",
+    "text": "&lt;title&gt;*\n* This is a required element.\nThe &lt;title&gt; element should contain a descriptive title that includes type of data collected, geographic indicator, and temporal range of the data (what, where, when). Keep in mind that package titles are searchable and are a user’s first point of contact when searching for data packages.\nBest practices:\n\nFor the title’s geographic indicator all Jornada Basin LTER data packages should include “Jornada Basin LTER”.\nIf the data come from an established study with a name or acronym, include the name or acronym in the title (NPP study, SMES, NEAT, etc.)\nFor the temporal range of completed data packages give the starting year of the data to the ending year; “2009-2015”, for example.\nFor the temporal range of ongoing data packages there are 2 possibilities:\n\nWrite the end of the temporal range as a year if data collection occurs less frequently than yearly (“2010-2018” for a package collected every 2 years).\nWrite the end of the temporal range as “ongoing” if data collection occurs yearly or more frequently (“2010-ongoing” if data were last updated a year ago or less).",
+    "crumbs": [
+      "IM Guide",
+      "Metadata standards",
+      "Jornada Dataset Metadata Standards"
+    ]
+  },
+  {
+    "objectID": "docs/im/standards/JRN_metadata_standards.html#personnel-and-organization-elements-creator-project-etc.",
+    "href": "docs/im/standards/JRN_metadata_standards.html#personnel-and-organization-elements-creator-project-etc.",
+    "title": "Jornada Dataset Metadata Standards",
+    "section": "Personnel and organization elements (<creator>, <project>, etc.)",
+    "text": "Personnel and organization elements (&lt;creator&gt;, &lt;project&gt;, etc.)\nThere are a number of elements in this category grouped together here. They normally appear within the &lt;dataset&gt; element (/eml:eml/dataset/creator, /eml:eml/dataset/contact, etc)\nAt least one &lt;contact&gt; element must be supplied in every EML document. All EML documents should have at least one person in a &lt;creator&gt; element, but exceptions can be made if this information has been lost in very old Jornada data packages.\n\n&lt;contact&gt;*\n* This is a required element.\nContacts are people (or positions, like Data Manager) that should be contacted for access to, or information about, the data package. For Jornada data packages this should include:\n\nThe “Current responsible investigator” (if available)\nThe JRN LTER Information Manager (datamanager.jrn.lter@gmail.com)\n\nJRN LTER defines the “Current responsible investigator” as the LTER principal investigator who curates a study and its associated data package(s). For data packages without a “current responsible PI”, John Anderson has historically been listed with this role under &lt;contact&gt;. When updating one of these packages, ask John if he would like to remain in this position. If not, he may be removed and it is acceptable to list only the Data Manager.\nNo other contacts are defined.\n\n\n&lt;creator&gt;*\n*This is a required element.\nCreators are people with direct intellectual contributions to the data package and so could include PIs, postdocs, students, and other researchers. There can be multiple &lt;creator&gt; elements in a Jornada EML document. These should include:\n\nOriginal PIs\nFormer responsible PIs\nCurrent responsible PIs\nPostDocs, grad students, and other researchers (??? need to verify this)\n\nIf for some reason the original PI for the data package is unknown, it is acceptable to list the Jornada Basin LTER as an organization in the &lt;creator&gt; element.\n\n\n&lt;project&gt;\nThis element should be included in EML for all JRN data packages and should contain the &lt;title&gt;, &lt;organization&gt;, &lt;funding&gt;, and &lt;personnel&gt; sub-elements within it. List the Jornada Basin LTER as the project &lt;title&gt;, New Mexico State University as &lt;organization&gt;, and the current responsible PI for the data package as the &lt;personnel&gt;. The &lt;funding&gt; element should include the NSF award number (DEB-1832194 or similar) that was active when the project was initiated.\nThis element is created automatically by EMLassemblyline if a personnel entry is listed with the role “PI”.\nProvisional change: If there is no current responsible PI for a completed package, it may be acceptable to omit the &lt;project&gt;&lt;personnel&gt; element as long as the other elements are complete. (??? need to verify this is ok)\n\n\nOther personnel and organization elements\nOther personnel and organization elements, such as &lt;metadataProvider&gt;, &lt;associatedParty&gt;, or &lt;publisher&gt;, can be defined in EML and have been included in Jornada Basin LTER data packages. There is no standardized policy for these yet, so when updating such packages, preserve these elements if possible.",
+    "crumbs": [
+      "IM Guide",
+      "Metadata standards",
+      "Jornada Dataset Metadata Standards"
+    ]
+  },
+  {
+    "objectID": "docs/im/standards/JRN_metadata_standards.html#pubdate",
+    "href": "docs/im/standards/JRN_metadata_standards.html#pubdate",
+    "title": "Jornada Dataset Metadata Standards",
+    "section": "<pubDate>",
+    "text": "&lt;pubDate&gt;\nDefault for this at EDI and LTER sites appears to be that &lt;pubDate&gt; refers to the date of the latest metadata revision for a data package posted on EDI.\nAt JRN, this element has had other meanings (first date of publication), but there isn’t currently a consistent policy.",
+    "crumbs": [
+      "IM Guide",
+      "Metadata standards",
+      "Jornada Dataset Metadata Standards"
+    ]
+  },
+  {
+    "objectID": "docs/im/standards/JRN_metadata_standards.html#abstract",
+    "href": "docs/im/standards/JRN_metadata_standards.html#abstract",
+    "title": "Jornada Dataset Metadata Standards",
+    "section": "<abstract>",
+    "text": "&lt;abstract&gt;\nA descriptive abstract of the data package, with enough context for a user to decide whether it is useful to them, should be included here. Keep in mind that package abstracts are used in full-text searches\nBest practices:\n\nInclude a brief statement about whether data collection is “ongoing” or “completed”.\nInclude a brief description of data collection and data package update frequency (“updated monthly/yearly/every spring”).\nInclude information on whether the data were collected on the “Jornada Experimental Range”, on the “CDRCC”, or on both.",
+    "crumbs": [
+      "IM Guide",
+      "Metadata standards",
+      "Jornada Dataset Metadata Standards"
+    ]
+  },
+  {
+    "objectID": "docs/im/standards/JRN_metadata_standards.html#keywordset",
+    "href": "docs/im/standards/JRN_metadata_standards.html#keywordset",
+    "title": "Jornada Dataset Metadata Standards",
+    "section": "<keywordSet>",
+    "text": "&lt;keywordSet&gt;\nMultiple &lt;keywordSet&gt; elements can be defined. Optionally they may be labeled with a specific vocabulary they are taken from using the &lt;keywordThesaurus&gt; tag. The Jornada Basin LTER uses these keyword thesauri:\n\nLTER Controlled Vocabulary - required to describe the subject matter of each data package\nJornada-specific thesauri - currently there are 3, which are still in development.\n\n“JRN Dataset Keywords” include subject matter, funding, time span, and other JRN LTER specific terms.\n“Jornada Project Names” include the descriptive names of abbreviations of studies or projects taking place in Jornada Basin (affiliated with JRN LTER or not)\n“Jornada Place Names” include the place names of important study locations or geographic features. These overlap with the “Jornada Place Names” in many cases.\n\nLTER Core Areas\nEML creators can also define keywords independent of these vocabularies (no &lt;keywordThesaurus&gt; tag).\n\nFrom the Jornada-specific thesauri, be sure to include:\n\nAt least one subject matter term from the “JRN Dataset Keyword” list.\nAny relevant terms from the “Jornada Project Names” list\nAny relevant placenames from the “Jornada Place Names” list\nThe Jornada study ID as “study {NNN}”, where {NNN} is the 3 digit study ID within the package ID (middle 3 digits). List this as a “Jornada Project Name” keyword.\n\nThe keywords “core” and “signature” may be added to EML documents, but the plan at this point is to keep a separate list of packages with these designations and then cross-reference those lists during searches of the JRN data catalog.",
+    "crumbs": [
+      "IM Guide",
+      "Metadata standards",
+      "Jornada Dataset Metadata Standards"
+    ]
+  },
+  {
+    "objectID": "docs/im/standards/JRN_metadata_standards.html#intellectualrights",
+    "href": "docs/im/standards/JRN_metadata_standards.html#intellectualrights",
+    "title": "Jornada Dataset Metadata Standards",
+    "section": "<intellectualRights>",
+    "text": "&lt;intellectualRights&gt;\nThe Jornada Basin LTER uses the CC-BY attribution license, appended with the LTER network’s suggested data access policy text. There is a template in EMLassemblyline for this.",
+    "crumbs": [
+      "IM Guide",
+      "Metadata standards",
+      "Jornada Dataset Metadata Standards"
+    ]
+  },
+  {
+    "objectID": "docs/im/standards/JRN_metadata_standards.html#coverage",
+    "href": "docs/im/standards/JRN_metadata_standards.html#coverage",
+    "title": "Jornada Dataset Metadata Standards",
+    "section": "<coverage>",
+    "text": "&lt;coverage&gt;\nA &lt;coverage&gt; element can be defined at multiple levels in the EML document: for a &lt;dataset&gt; element (/eml:eml/dataset/coverage), for a data entity (eml:eml/dataset/[entity]/coverage), within a &lt;methods&gt; element (eml:eml/dataset/methods/sampling/studyExtent/coverage), etc. Within each &lt;coverage&gt; element, three types of coverage elements can be defined - &lt;geographicCoverage&gt;, &lt;taxonomicCoverage&gt;, and &lt;temporalCoverage&gt;.\nFor now, at JRN LTER, we are focusing on providing adequate &lt;coverage&gt; metadata at the &lt;dataset&gt; element level, and there aren’t known standards for elements below this level (???). This is described in the sections below.\n\n&lt;geographicCoverage&gt;\nCoordinates for Jornada data packages are obfuscated (deliberately, due to security concerns) in most cases. How, and how much, to provide spatial data is a matter of debate at JRN LTER. The general practice is to provide one or more bounding boxes surrounding the research sites in a data package, but these bounding boxes should not be detailed enough to allow casual visitors to EDI to identify sensitive research sites or instrumentation. Some packages, however, already have finer details in the &lt;geographicCoverage&gt; elements. In these cases the person packaging the data should probably preserve this metadata, and has some discretion on how to proceed after consulting with PIs. The general guideline for this element is outlined below.\nFor &lt;dataset&gt; elements, define at least one &lt;geographicCoverage&gt; element. This &lt;geographicCoverage&gt; element should contain at least one bounding box that encloses all research locations for all data entities in the package. When possible, multiple bounding boxes may be provided as additional &lt;geographicCoverage&gt; elements that describe other study or sampling areas (these may be associated with locational variables in a data entity if you are clever about it). The bounding boxes should be large enough to prevent casual users from identifying the sites (on the EDI map interface, for example).\nEach &lt;geographicCoverage&gt; element should have a &lt;geographicDescription&gt; element associated that describes the location defined by the bounding boxes (or points, as the case may be) and include the text “Higher resolution spatial data for this data package can be obtained by contacting the Data Manager”.\n\n\n&lt;taxonomicCoverage&gt;\nThere are many systems for denoting taxonomic entities or groups, including local systems that are specific to the Jornada Basin LTER or its researchers. JRN data packages that contain taxonomic data (data attributes of species, groups of species, or other taxa) should provide ways to identify the taxonomic entities or groups in a &lt;dataset&gt; to modern, accepted taxonomic classifications at the Genus species or finer levels.\nThese links may be provided in a variable or category in the data entity itself (a “Genus_species” variable, or example), as long as they are properly attributed to an authority like ITIS or USDA PLANTS. Local (JRN specific) taxonomic keys or coding systems that appear in a data entity must be available to the data user. In these cases the keys or coding systems used should be described in the metadata and provided as either an additional data entity in the data package, or as a link to other JRN EDI packages with this information.\nSome current Jornada taxonomic keys are:\n\nKey to vascular plants in the Jornada Basin (an EDI package)\n\n\n\n&lt;temporalCoverage&gt;\nProvide the start and end date of the period over which the data were collected. For &lt;dataset&gt; elements this should include the data in all data entities (all .csv or other data files) that the EML document defines.",
+    "crumbs": [
+      "IM Guide",
+      "Metadata standards",
+      "Jornada Dataset Metadata Standards"
+    ]
+  },
+  {
+    "objectID": "docs/im/standards/JRN_metadata_standards.html#maintenance",
+    "href": "docs/im/standards/JRN_metadata_standards.html#maintenance",
+    "title": "Jornada Dataset Metadata Standards",
+    "section": "<maintenance>",
+    "text": "&lt;maintenance&gt;\nDescribes whether data collection is ongoing or completed (in &lt;description&gt; element) and may include descriptions of the frequency of data and metadata changes (in &lt;frequency&gt; element).\n\nDescribe the data package as “completed” if data collection has ended.\nDescribe the data package as “ongoing” if data collection continues.\nFor “ongoing” data packages, a description of how often package revisions, including data and metadata changes, occur should be added to the &lt;frequency&gt; element under &lt;maintenance&gt;. For example, if new data are QA/QC’d, appended to a data entity, and published for a data package every month, the &lt;frequency&gt; element should describe these “monthly” revisions.\nOptionally, and in addition to #3 above, the &lt;frequency&gt; element under &lt;maintenance&gt; can describe the frequency (hourly, daily, bimonthly, etc.) of the data in any data entities in the package. This may be especially important tabular time series.",
+    "crumbs": [
+      "IM Guide",
+      "Metadata standards",
+      "Jornada Dataset Metadata Standards"
+    ]
+  },
+  {
+    "objectID": "docs/im/standards/JRN_metadata_standards.html#methods",
+    "href": "docs/im/standards/JRN_metadata_standards.html#methods",
+    "title": "Jornada Dataset Metadata Standards",
+    "section": "<methods>",
+    "text": "&lt;methods&gt;\nThis element should include a detailed description of how the data were collected or otherwise derived (field procedures, laboratory analysis, data synthesis and analysis). It should be concise but sufficient to reproduce the resulting data entity in the package.\nMany Jornada packages have &lt;methods&gt; elements that refer to ancillary procedures documents, QA/QC specifications, data reduction scripts, etc. Whenever possible these should be preserved and archived as additional data entities in the data package (or at least a link to another repository should be provided).\nIf needed &lt;methods&gt; elements can be defined for individual data entities (/eml:eml/dataset/[entity]/methods). A hierarchy of additional elements, such as &lt;instrument&gt;, &lt;sampling&gt;, &lt;methodStep&gt;, &lt;qualityControl&gt;, can be also defined within each &lt;methods&gt; element. The GCE Toolbox+ does some of this for us with Jornada met data. In general though, descriptive text with optional pointers to other methods documentation is usually adequate.",
+    "crumbs": [
+      "IM Guide",
+      "Metadata standards",
+      "Jornada Dataset Metadata Standards"
+    ]
+  },
+  {
+    "objectID": "docs/im/standards/JRN_metadata_standards.html#data-entities",
+    "href": "docs/im/standards/JRN_metadata_standards.html#data-entities",
+    "title": "Jornada Dataset Metadata Standards",
+    "section": "Data entities",
+    "text": "Data entities\nThese define the actual data files in the package (.csv files, rasters, etc). There can be more than one in a package.\nSeveral possible elements are used to define individual data entities within a &lt;dataset&gt;. These include &lt;dataTable&gt;, &lt;spatialRaster&gt;, &lt;spatialVector&gt;, &lt;storedProcedure&gt;, &lt;view&gt;, and &lt;otherEntity&gt;. Each of these must contain other elements that describe the data they contain (the EntityGroup tree). The most important of these, for us, is the &lt;attributeList&gt; that defines the variables in a &lt;dataTable&gt; entity, since most Jornada data is tabular.\nThere are not any Jornada-specific metadata standards for data entities (???maybe there should be) or the elements they contain (&lt;attributeList&gt;). Use EML best practices.",
+    "crumbs": [
+      "IM Guide",
+      "Metadata standards",
+      "Jornada Dataset Metadata Standards"
+    ]
+  },
+  {
     "objectID": "templates/fellowship_IM_statement.html",
     "href": "templates/fellowship_IM_statement.html",
     "title": "Jornada Data Commons",
@@ -1181,38 +1172,59 @@
     "text": "To:    Graduate Research Fellowship Program\n        Jornada Basin LTER\n        New Mexico State University\n        Las Cruces, NM\n\nDate: 11 March 2025\nTo whom it may concern,\nThe student Arthur Tansley has, within the last year, completed the data and metadata submission requirements for funding by the Jornada Graduate Research Fellowship Program (“the fellowship”). These requirements include:\n\nSubmission of one or more files containing data collected as part of a graduate research project associated with their degree program and the fellowship.\nSubmission of a complete metadata template describing the data in the file(s) above.\nThe student agrees to publicly release these data and metadata within one year of completing the degree program, or at the time the data are published in the peer-reviewed scientific literature (whichever occurs first).\n\nThe submitted data and metadata items (1 & 2) have been reviewed by the Jornada Basin LTER Information Manager and archived in the Jornada file system. Published products are listed below. Inclusion of this statement in a fellowship application constitutes the student’s agreement to requirement 3 and supports continued eligibility for the fellowship.\nSincerely,\n\nGreg Maurer\nInformation Manager for Jornada Basin LTER\nAvailable data:\n\nStover, D., J. McLaren, N. Pietrasiak, and L. Jin. 2024. Physical soil characteristics, microbial community composition, extracellular enzymatic activity, biologically based phosphorus (BBP) pools, and available phosphorus from two soil depths, four microhabitats, and four landforms at the Jornada Experimental Range, 2021. ver 1. Environmental Data Initiative. https://doi.org/10.6073/pasta/9085a63e6ff1e310f13784b6fa0f8616 (Accessed 2025-03-11)."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Jornada Data Commons",
+    "objectID": "proposals-and-reports/index.html",
+    "href": "proposals-and-reports/index.html",
+    "title": "Recent proposals and reports",
     "section": "",
-    "text": "Welcome to the Jornada Data Commons. This site is maintained by the Jornada IM (Information Management) team to support researchers and data managers working with data from the Jornada Basin LTER (JRN) and Jornada Experimental Range (JER) programs."
+    "text": "Recent proposals and reports\n\nThe JRN-8 Data Management Plan for the 2024 LTER renewal proposal.\nThe JRN-VII Data Management Plan for the 2020 LTER renewal proposal (after probation).\nThe 2020 JRN IM Annual Report"
   },
   {
-    "objectID": "index.html#im-a-researcher-and-i-need-to",
-    "href": "index.html#im-a-researcher-and-i-need-to",
-    "title": "Jornada Data Commons",
-    "section": "I’m a researcher and I need to…",
-    "text": "I’m a researcher and I need to…\n\nGet approved to do research at the Jornada\nClean and describe my research data (data QA/QC, metadata)\nSubmit or publish a dataset\nUpdate project, personnel, or website information\nFind Jornada datasets or other information\nCite a Jornada dataset or funding\nLearn more about Jornada data management"
+    "objectID": "proposals-and-reports/JRN_IM_annual_report_2020.html",
+    "href": "proposals-and-reports/JRN_IM_annual_report_2020.html",
+    "title": "Jornada Basin LTER Information Management 2020 Annual Report (DRAFT)",
+    "section": "",
+    "text": "This document summarizes the accomplishments of the Jornada Basin LTER (JRN) Information Management (IM) team in 2020, and outlines activity planned for 2021. Most of the work described here has been, or will be, guided by what the IM team wrote in the Data Management Plan submitted with our 2020 LTER proposal. In the late summer of 2020 we received word that the LTER proposal was recommended for funding beginning in early 2021. The Data Managment Plan received generally favorable feedback from the NSF review panel."
   },
   {
-    "objectID": "index.html#im-a-data-manager-and-i-need-to",
-    "href": "index.html#im-a-data-manager-and-i-need-to",
-    "title": "Jornada Data Commons",
-    "section": "I’m a data manager and I need to…",
-    "text": "I’m a data manager and I need to…\n\nLearn more about a particular dataset\nFind templates, standards, or tools for data management\nRead or write the full IM system documentation"
+    "objectID": "proposals-and-reports/JRN_IM_annual_report_2020.html#jrn-websites",
+    "href": "proposals-and-reports/JRN_IM_annual_report_2020.html#jrn-websites",
+    "title": "Jornada Basin LTER Information Management 2020 Annual Report (DRAFT)",
+    "section": "JRN Websites",
+    "text": "JRN Websites\n\nA new JRN website was built and began service in June 2020.\nA new partner data catalog was added to the website.\nA new interactive data viewer was made available on the website (Geovany), and further additions to this were discussed.\nAn improved spatial data catalog was added to the new website, and further improvements were planned.\nA number of updates to the Jornada IM websitewere completed, including new documentation, improved metadata templates, IM diagnostics, and data access/analysis tools."
   },
   {
-    "objectID": "index.html#more-info",
-    "href": "index.html#more-info",
-    "title": "Jornada Data Commons",
-    "section": "More info",
-    "text": "More info\n\nPublications, presentations, videos, and other references\nJEDS (Jornada Environmental Data Science) tutorials"
+    "objectID": "proposals-and-reports/JRN_IM_annual_report_2020.html#metadata-database",
+    "href": "proposals-and-reports/JRN_IM_annual_report_2020.html#metadata-database",
+    "title": "Jornada Basin LTER Information Management 2020 Annual Report (DRAFT)",
+    "section": "Metadata database",
+    "text": "Metadata database\n\nJRN-metabase, a PostgreSQL database following the LTER-core-metabase schema, was created and made available for testing on the DASH server.\nGreg and Shelly (and formerly Haneen Omari) populated this database with metadata for all JRN “core” packages, and all recently updated “non-core” data packages.\nWe successfully made valid EML (XML metadata documents) using the database as a backend.\nWe expect JRN-metabase (and associated R code) to enter service for building metadata documents (EML) for the Jornada’s EDI data packages by March 2021.\nAlternative server locations for hosting this database are currently under consideration."
   },
   {
-    "objectID": "index.html#contact-us",
-    "href": "index.html#contact-us",
-    "title": "Jornada Data Commons",
-    "section": "Contact us",
-    "text": "Contact us\nFor questions about collecting, analyzing, publishing, and accessing Jornada data or metadata please contact the IM team (jornada.data@nmsu.edu)."
+    "objectID": "proposals-and-reports/JRN_IM_annual_report_2020.html#harmonizing-jornada-data",
+    "href": "proposals-and-reports/JRN_IM_annual_report_2020.html#harmonizing-jornada-data",
+    "title": "Jornada Basin LTER Information Management 2020 Annual Report (DRAFT)",
+    "section": "Harmonizing Jornada data",
+    "text": "Harmonizing Jornada data\n\nGreg began a project to assemble and harmonize Jornada NPP and related data.\nDarren James and the Peters research group began working on new projects harmonizing Jornada precipitation data.\nThe IM team identified several potential harmonized datasets to add to the interactive data viewer beginning in 2021."
+  },
+  {
+    "objectID": "proposals-and-reports/JRN_IM_annual_report_2020.html#project-level-metadata-and-spatial-data-issues",
+    "href": "proposals-and-reports/JRN_IM_annual_report_2020.html#project-level-metadata-and-spatial-data-issues",
+    "title": "Jornada Basin LTER Information Management 2020 Annual Report (DRAFT)",
+    "section": "Project-level metadata and spatial data issues",
+    "text": "Project-level metadata and spatial data issues\nThere are some workflows for creating, organizing, and tracking projects and their location data at the Jornada. For instance, John Anderson’s “Research notification” system tracks approved research projects and should, in theory, initiate collection of metadata for each project. However, research projects commonly suffer from a lack of metadata collection and accessibility after the approval phase, and information gathered during the approval phase is not widely accessible to Jornada researchers or the public. Some things that would help address this problem:\n\nA project metadata database (what experiments are happening or have happened, who is in charge, what are the questions, measurements, infrastructure) that is accessible to John and other project managers.\nA “canonical” spatial database for the Jornada that links to project IDs. This spatial database would house plot locations, sensor locations, and other coordinates telling users where experiments happened over time.\nA reference collection of ancillary spatial data products (roads, fence lines, vegetation, geomorphology). We have some of this, but its not very complete and there are multiple copies of everything.\n\nEach of these resources would be most useful when shared among multiple partners at the Jornada (LTAR, LTER, etc.). The Jornada IT infrastructure and data management working group, which includes USDA, Landscape Data Commons, and LTER staff, is beginning to address some of these issues and tasks in a coordinated way."
+  },
+  {
+    "objectID": "proposals-and-reports/JRN_IM_annual_report_2020.html#outreach-initiatives",
+    "href": "proposals-and-reports/JRN_IM_annual_report_2020.html#outreach-initiatives",
+    "title": "Jornada Basin LTER Information Management 2020 Annual Report (DRAFT)",
+    "section": "Outreach initiatives",
+    "text": "Outreach initiatives\n\nThere is no shared communication platform for messaging among Jornada investigators, students, and staff. This tends to fragment Jornada communication and makes cohesive messaging for JRN community activities a challenge. Some of our future initiatives, such as Data Bounty Hunters, would greatly benefit from such a platform. A Mailman server, mailing list/group web services (MailChimp, Groups.io), or messaging platforms (Zulip, Slack) are possible candidates, but we need either infrastructure or budget to adopt these.\nIt may be difficult to spend LTER budget for non-research activity, but we need some funds to make Jornada T-Shirts, hats, or stickers that could be used to encourage/reward participation in Jornada outreach initiatives (Data Bounty Hunters, for instance again)."
+  },
+  {
+    "objectID": "proposals-and-reports/JRN_IM_annual_report_2020.html#infrastructure",
+    "href": "proposals-and-reports/JRN_IM_annual_report_2020.html#infrastructure",
+    "title": "Jornada Basin LTER Information Management 2020 Annual Report (DRAFT)",
+    "section": "Infrastructure",
+    "text": "Infrastructure\nAs described in above, the JRN IM Team needs server resources to host databases, web services, a communication platform, and potentially a future version of our website. Because JRN is partnered with the USDA Jornada Experimental Range (JER) and JER has existing server resources and sysadmins, appropriating some of these JER resources for JRN use (and contributing back to supporting the system) would be the most efficient & cost-effective solution for JRN to meet its IT needs. Currently, however, this option does not appear viable because the JER server infrastructure is out of date and undergoing a long transition to a more modern, stable, and supportable system. Thus, in 2020 the IM team was unable to provision a virtual server on this system. While we await progress on JER server systems, we are investigating ways we can meet our IT needs using NMSU or cloud providers (AWS, Google services), but these will require some LTER budget. Any suggestions regarding server resources available at Jornada or partner institutions are welcomed by the IM team.\nAgain, the Jornada IT infrastructure and data management working group, is beginning to address some of these issues in a coordinated way."
   }
 ]

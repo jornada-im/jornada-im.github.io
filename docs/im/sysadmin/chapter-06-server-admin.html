@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="The Jornada Information Management Team">
-<meta name="dcterms.date" content="2025-10-20">
+<meta name="dcterms.date" content="2025-10-24">
 
 <title>6. Servers and Server Administration – Jornada Data Commons</title>
 <style>
@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-95f147d06fdb9f8ce149f95e323965f4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-903c4444735f79a14c415f113c750710.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-57d88ccbd0ee5f8a904b59050ba3efd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -285,6 +285,16 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#securing-cloud-servers" id="toc-securing-cloud-servers" class="nav-link" data-scroll-target="#securing-cloud-servers">Securing cloud servers</a></li>
   <li><a href="#scheduled-tasks" id="toc-scheduled-tasks" class="nav-link" data-scroll-target="#scheduled-tasks">Scheduled tasks</a></li>
   <li><a href="#nfs-and-cifs-mounts-to-remote-directories" id="toc-nfs-and-cifs-mounts-to-remote-directories" class="nav-link" data-scroll-target="#nfs-and-cifs-mounts-to-remote-directories">NFS and CIFS mounts to remote directories</a></li>
+  <li><a href="#current-backup-plan" id="toc-current-backup-plan" class="nav-link" data-scroll-target="#current-backup-plan">Current backup plan</a>
+  <ul class="collapse">
+  <li><a href="#termite" id="toc-termite" class="nav-link" data-scroll-target="#termite">Termite</a></li>
+  <li><a href="#oryx" id="toc-oryx" class="nav-link" data-scroll-target="#oryx">Oryx</a></li>
+  <li><a href="#jrn-metnet-loggernet-computer" id="toc-jrn-metnet-loggernet-computer" class="nav-link" data-scroll-target="#jrn-metnet-loggernet-computer">JRN Metnet (Loggernet computer)</a></li>
+  <li><a href="#sala-lab-dropbox" id="toc-sala-lab-dropbox" class="nav-link" data-scroll-target="#sala-lab-dropbox">Sala lab Dropbox</a></li>
+  <li><a href="#packrat" id="toc-packrat" class="nav-link" data-scroll-target="#packrat">Packrat</a></li>
+  <li><a href="#laptops" id="toc-laptops" class="nav-link" data-scroll-target="#laptops">Laptops</a></li>
+  <li><a href="#cloud-service-provider-data-stores" id="toc-cloud-service-provider-data-stores" class="nav-link" data-scroll-target="#cloud-service-provider-data-stores">Cloud Service Provider data stores</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/im/sysadmin/chapter-06-server-admin.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -311,7 +321,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 20, 2025</p>
+      <p class="date">October 24, 2025</p>
     </div>
   </div>
   
@@ -378,8 +388,58 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-ubuntu-20-04">Setting up NFS mounts in Ubuntu</a></li>
 </ul>
+</section>
+<section id="current-backup-plan" class="level2">
+<h2 class="anchored" data-anchor-id="current-backup-plan">Current backup plan</h2>
+<section id="termite" class="level3">
+<h3 class="anchored" data-anchor-id="termite">Termite</h3>
+<ul>
+<li>PostgreSQL databases (<code>jgeo</code>) are dumped to <code>/home/backups/postgresql</code> in a nightly cron-job and daily, weekly, monthly copies are retained.</li>
+<li>No other backups, and nothing remote/off-premise backups (TODO)</li>
+</ul>
+</section>
+<section id="oryx" class="level3">
+<h3 class="anchored" data-anchor-id="oryx">Oryx</h3>
+<ul>
+<li>PostgreSQL databases are backed up nightly to <code>/home/backups/postgresql</code> in a nightly cron-job and a few daily, weekly, monthly copies are retained.</li>
+<li><code>/home/gmaurer/</code> and <code>home/backups</code> have nightly incremental backups to Packrat using Active Backup for Business (<code>ActiveBackupForBusiness</code> share).</li>
+</ul>
+</section>
+<section id="jrn-metnet-loggernet-computer" class="level3">
+<h3 class="anchored" data-anchor-id="jrn-metnet-loggernet-computer">JRN Metnet (Loggernet computer)</h3>
+<ul>
+<li>This PC runs the Synology Active Backup for Business client and the data drive (not sure of letter) is backed up nightly to Packrat (<code>ActiveBackupForBusiness</code> share). Daily, weekly, monthly copies of this backup are retained.</li>
+<li>Conrad and John do some regular backups to Dropbox and external drives, but I’m not sure what those entail.</li>
+</ul>
+</section>
+<section id="sala-lab-dropbox" class="level3">
+<h3 class="anchored" data-anchor-id="sala-lab-dropbox">Sala lab Dropbox</h3>
+<ul>
+<li>This is synced to the <code>Researcher_backups</code> share on Packrat using the Synology Cloud Sync app.</li>
+</ul>
+</section>
+<section id="packrat" class="level3">
+<h3 class="anchored" data-anchor-id="packrat">Packrat</h3>
+<p>There are two backup tasks that back up data from Packrat to a Backblaze S3 bucket:</p>
+<ul>
+<li>A nightly backup of all data in <code>home</code>, <code>jrn_fieldobs</code>, <code>jrn_geospatial</code>, <code>jrn_imagery</code>, and <code>jrn_sensors</code></li>
+<li>A weekly backup of all everything in the <code>ActiveBackupForBusiness</code> and <code>Researcher_backups</code> shares. This will include data from several versioned or incremental backups above (JRN Metnet, Oryx, and Sala lab data)</li>
+</ul>
+</section>
+<section id="laptops" class="level3">
+<h3 class="anchored" data-anchor-id="laptops">Laptops</h3>
+<ul>
+<li>Greg’s laptop is backed up to his home Synology device using Time Machine</li>
+<li>Geovany has backed up his laptop to Packrat.</li>
+<li>Others?</li>
+</ul>
+</section>
+<section id="cloud-service-provider-data-stores" class="level3">
+<h3 class="anchored" data-anchor-id="cloud-service-provider-data-stores">Cloud Service Provider data stores</h3>
+<p>For shared files on Google Drive and NMSU OneDrive/Sharepoint we just rely on the CSP system, for better or worse…</p>
 
 
+</section>
 </section>
 </section>
 
