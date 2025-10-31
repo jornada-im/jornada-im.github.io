@@ -1,0 +1,10 @@
+---
+title: "Upgrading the documentation system"
+description: "This website has been upgraded to a Quarto site"
+author: "Greg Maurer"
+date: "2025-10-19"
+date-modified: "2025-10-30"
+draft: False
+---
+
+This website has just been upgraded to a [Quarto](https://quarto.org) website. This change also consolidates documentation from another repository, the full IM documentation, into one place. There may be some continuing changes in the next few weeks as content is reformatted and improved, but this change should provide greater stability, and be more usable going forward.

@@ -1,0 +1,12 @@
+---
+title: "Monitoring station data at EDI"
+description: "An announcement about changes in how we publish monitoring station data at EDI"
+author: "Greg Maurer"
+date: "2025-09-10"
+date-modified: "2025-10-30"
+draft: False
+---
+
+The IM team recently finished reorganizing and consolidating the sensor network monitoring data (weather stations and soil profiles) published at EDI from two JRN studies - the long-term NPP sites and Cross-scale (CSIS). Together, there are 30 monitoring stations from these studies - 15 per study - with each station generating up to 8 different data tables with distinct temporal resolutions (5-minute, 30-minute, daily, etc.) and aggregated sensor data streams. In the past, each data table has been published in a separate EDI dataset, meaning that there were 222 monitoring datasets published to EDI for these two studies. Because each of these datasets had very similar metadata, discovering the data for a desired site was fairly challenging.
+
+We have now consolidated all tables from each site into one EDI dataset, leaving a total of 30 monitoring datasets published on EDI for the NPP and CSIS studies. An EDI query link for the NPP and CSIS monitoring station datasets is provided in the [JRN data catalog](https://lter.jornada.nmsu.edu/data-catalog). If you have any questions about this change or are having trouble finding or understanding data in the new, consolidated format, please reach out to the IM team.

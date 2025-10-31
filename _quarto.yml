@@ -35,6 +35,8 @@ website:
           - templates/index.qmd
           - proposals-and-reports/index.qmd
           - archive/index.qmd
+      - text: "Updates"
+        href: posts.qmd
     tools:
       - icon: github
         href: https://github.com/jornada-im/jornada-im.github.io
@@ -76,7 +78,7 @@ website:
             #   text: "Data publishing"
             # - href: docs/im/sysadmin/chapter-05-server-admin.qmd
             #   text: "Server administration"
-        - href: docs/refs_and_links.md
+        - href: docs/refs_and_links.qmd
           text: "Useful references and links"
 
 execute:

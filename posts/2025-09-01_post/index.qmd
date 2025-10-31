@@ -1,0 +1,10 @@
+---
+title: "First update"
+description: "Announcing the update posts"
+author: "Greg Maurer"
+date: "2025-09-01"
+date-modified: "2025-10-30"
+draft: False
+---
+
+This is the first in a series of updates about the Jornada Data Commons. Here you will find announcements about Jornada data publications, data management best practices, changes to our information management system and infrastructure, and data-related events.

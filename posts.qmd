@@ -1,0 +1,8 @@
+---
+title: "Data Commons Updates"
+listing: 
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+---

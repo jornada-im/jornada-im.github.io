@@ -35,7 +35,7 @@ __Network infrastructure__: Servers and staff computers are connected to a Gigab
 The JRN IM system consists of several interrelated components providing the critical functionality to create, manage, and distribute research data, metadata, and ancillary information. The lead IM maintains a public _GitHub_ organization (Jornada-IM) with repositories documenting the structure, standards, and procedures of the JRN IM system, and where the IM team develops data management software tools. The important components of the JRN IM system are described below with explanations of how they are accessible to the public. The JRN IM system integrates with all stages of the DataOne data life cycle, which are identified in parentheses in section headings below.
 
 <figure>
-  <img src="../img/JRN_IM_Schematic.png" width="900px" align="center"/>
+  <img src="../img/JRN_IM_Schematic.png" width="800px" align="center"/>
   <figcaption><em>Figure 1: A simplified schematic of the JRN Information Management system. All activity and data occurring on local infrastructure (in yellow folders) is managed directly by the IM Team.</em></figcaption>
 </figure><br><br>
 
