@@ -22,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -190,6 +225,12 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../../docs/im/procedures/onboarding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Onboarding new IM team members</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../../docs/im/procedures/sop_metadata_publishing.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">SOP for updating datasets in metabase</span></a>
   </div>
@@ -262,7 +303,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/refs_and_links.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/refs-and-links.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Useful references and links</span></a>
   </div>
 </li>
@@ -276,8 +317,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a>
-  <ul class="collapse">
+  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a></li>
   <li><a href="#host-setup" id="toc-host-setup" class="nav-link" data-scroll-target="#host-setup">Host setup</a>
   <ul class="collapse">
   <li><a href="#using-the-psql-client" id="toc-using-the-psql-client" class="nav-link" data-scroll-target="#using-the-psql-client">Using the <code>psql</code> client</a></li>
@@ -289,7 +329,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#first-some-tests-of-postgresql" id="toc-first-some-tests-of-postgresql" class="nav-link" data-scroll-target="#first-some-tests-of-postgresql">First some tests of PostgreSQL</a></li>
   <li><a href="#create-an-lter_core_metabase" id="toc-create-an-lter_core_metabase" class="nav-link" data-scroll-target="#create-an-lter_core_metabase">Create an lter_core_metabase</a></li>
   <li><a href="#applying-patches" id="toc-applying-patches" class="nav-link" data-scroll-target="#applying-patches">Applying patches</a></li>
-  </ul></li>
   </ul></li>
   <li><a href="#administration" id="toc-administration" class="nav-link" data-scroll-target="#administration">Administration</a>
   <ul class="collapse">
@@ -376,9 +415,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="setup" class="level1">
-<h1>Setup</h1>
+<section id="setup" class="level2">
+<h2 class="anchored" data-anchor-id="setup">Setup</h2>
 <p>JRN Metabase (<code>jrn_metabase</code>) is a PostgreSQL database that can be stored and accessed on either a local or remote host. Generally we configure it on a remote host for multi-user access. PostgreSQL uses a client/server model, which means that the database server application (<code>postgres</code>) runs on the host system and manages the databases and all incoming connections from client applications. Users can choose from a number of client applications to connect to a server and database(s), either locally (from the server’s host machine), or remotely. The standard, commandline client interface to PostgreSQL is <code>psql</code>, which can be, or already is, installed on most computers. We also use <a href="https://dbeaver.io/download/">DBeaver</a> as a graphical client for <code>jrn_metabase</code>. Links to PostgreSQL and community documentation are on the <a href="postgres_links.md">Postgres Links page</a>.</p>
+</section>
 <section id="host-setup" class="level2">
 <h2 class="anchored" data-anchor-id="host-setup">Host setup</h2>
 <p>For the remote host, we use an Ubuntu server running an up-to-date PostgreSQL server. To access a remote host over a terminal connection use:</p>
@@ -388,7 +428,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="using-the-psql-client" class="level3">
 <h3 class="anchored" data-anchor-id="using-the-psql-client">Using the <code>psql</code> client</h3>
 <p>When logged into the PostgreSQL host, any system user with sudoer privileges can switch to the <code>postgres</code> user and enter the <code>psql</code> shell with:</p>
-<pre><code>sudo -u postgres psql</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> <span class="at">-u</span> postgres psql</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The <code>postgres=#</code> prompt will appear indicating you have entered the shell in the <code>postgres</code> role, which is the default administrative role with superuser privileges. It has no password set on a new install(, so that will need to be set according to instructions below.)</p>
 <p>Other PostgreSQL roles should be created for database users. Once these are created and remote access is configured on the host, <code>psql</code> can be run from remote clients (if installed) so that users can login to databases on the host using commands like:</p>
 <pre><code>psql -U &lt;rolename&gt; -h &lt;hostname or IP&gt; -p &lt;postgres port&gt; &lt;database name&gt;</code></pre>
@@ -474,7 +514,6 @@ ul.task-list li input[type="checkbox"] {
 <pre><code>psql -U &lt;username&gt; -h &lt;hostname&gt; -d &lt;databasename&gt; &lt; GitHub/LTER-core-metabase/sql_jrn/33_semantic_annotation.sql</code></pre></li>
 <li><p>Check that the patch was applied correctly!</p></li>
 </ol>
-</section>
 </section>
 </section>
 <section id="administration" class="level1">
