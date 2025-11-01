@@ -2,102 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jornada-im.github.io/proposals-and-reports/JRN_data_management_plan.LTER7.html</loc>
-    <lastmod>2025-10-31T05:46:02.506Z</lastmod>
+    <lastmod>2025-11-01T01:27:20.898Z</lastmod>
   </url>
   <url>
     <loc>https://jornada-im.github.io/proposals-and-reports/JRN_data_management_plan.LTER8.html</loc>
-    <lastmod>2025-10-31T05:46:02.506Z</lastmod>
+    <lastmod>2025-11-01T01:27:20.898Z</lastmod>
   </url>
   <url>
     <loc>https://jornada-im.github.io/templates/index.html</loc>
-    <lastmod>2025-10-31T05:46:02.509Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jornada-im.github.io/posts.html</loc>
-    <lastmod>2025-10-31T05:46:02.505Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jornada-im.github.io/docs/im/standards/JRN_metadata_standards.html</loc>
-    <lastmod>2025-10-31T05:46:02.492Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jornada-im.github.io/docs/im/sysadmin/chapter-02-project-management.html</loc>
-    <lastmod>2025-10-31T05:46:02.492Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jornada-im.github.io/docs/im/sysadmin/chapter-05-data-publishing.html</loc>
-    <lastmod>2025-10-31T05:46:02.492Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jornada-im.github.io/docs/im/sysadmin/chapter-03-websites-and-apps.html</loc>
-    <lastmod>2025-10-31T05:46:02.492Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jornada-im.github.io/docs/im/hacks/parse_trello_boards.html</loc>
-    <lastmod>2025-10-31T05:46:02.485Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jornada-im.github.io/docs/researcher/overview.html</loc>
-    <lastmod>2025-10-31T05:46:02.495Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jornada-im.github.io/posts/2025-09-10_post/index.html</loc>
-    <lastmod>2025-10-31T05:46:02.506Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jornada-im.github.io/posts/2025-09-01_post/index.html</loc>
-    <lastmod>2025-10-31T05:46:02.505Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jornada-im.github.io/archive/index.html</loc>
-    <lastmod>2025-10-31T05:46:02.485Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jornada-im.github.io/index.html</loc>
-    <lastmod>2025-10-31T05:46:02.505Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jornada-im.github.io/posts/2025-10-19_post/index.html</loc>
-    <lastmod>2025-10-31T05:46:02.506Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jornada-im.github.io/docs/refs_and_links.html</loc>
-    <lastmod>2025-10-31T05:46:02.493Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jornada-im.github.io/docs/im/procedures/sop_metadata_publishing.html</loc>
-    <lastmod>2025-10-31T05:46:02.492Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jornada-im.github.io/docs/im/sysadmin/index.html</loc>
-    <lastmod>2025-10-31T05:46:02.493Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jornada-im.github.io/docs/im/sysadmin/chapter-01-overview.html</loc>
-    <lastmod>2025-10-31T05:46:02.492Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jornada-im.github.io/docs/im/sysadmin/chapter-06-server-admin.html</loc>
-    <lastmod>2025-10-31T05:46:02.493Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jornada-im.github.io/docs/im/sysadmin/chapter-04-databases.html</loc>
-    <lastmod>2025-10-31T05:46:02.492Z</lastmod>
+    <lastmod>2025-11-01T01:27:20.901Z</lastmod>
   </url>
   <url>
     <loc>https://jornada-im.github.io/docs/im/overview.html</loc>
-    <lastmod>2025-10-31T05:46:02.492Z</lastmod>
+    <lastmod>2025-11-01T01:27:20.883Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jornada-im.github.io/docs/im/sysadmin/chapter-04-databases.html</loc>
+    <lastmod>2025-11-01T01:27:20.884Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jornada-im.github.io/docs/im/sysadmin/chapter-06-server-admin.html</loc>
+    <lastmod>2025-11-01T01:27:20.885Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jornada-im.github.io/docs/im/sysadmin/chapter-01-overview.html</loc>
+    <lastmod>2025-11-01T01:27:20.884Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jornada-im.github.io/docs/im/sysadmin/index.html</loc>
+    <lastmod>2025-11-01T01:27:20.885Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jornada-im.github.io/docs/im/procedures/sop_metadata_publishing.html</loc>
+    <lastmod>2025-11-01T01:27:20.884Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jornada-im.github.io/docs/refs_and_links.html</loc>
+    <lastmod>2025-11-01T01:27:20.885Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jornada-im.github.io/posts/posts.html</loc>
+    <lastmod>2025-11-01T01:27:20.898Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jornada-im.github.io/posts/2025-09-01_post/index.html</loc>
+    <lastmod>2025-11-01T01:27:20.897Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jornada-im.github.io/archive/index.html</loc>
+    <lastmod>2025-11-01T01:27:20.877Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jornada-im.github.io/index.html</loc>
+    <lastmod>2025-11-01T01:27:20.897Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jornada-im.github.io/posts/2025-10-19_post/index.html</loc>
+    <lastmod>2025-11-01T01:27:20.898Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jornada-im.github.io/posts/2025-09-10_post/index.html</loc>
+    <lastmod>2025-11-01T01:27:20.898Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jornada-im.github.io/docs/researcher/overview.html</loc>
+    <lastmod>2025-11-01T01:27:20.888Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jornada-im.github.io/docs/im/hacks/parse_trello_boards.html</loc>
+    <lastmod>2025-11-01T01:27:20.877Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jornada-im.github.io/docs/im/sysadmin/chapter-03-websites-and-apps.html</loc>
+    <lastmod>2025-11-01T01:27:20.884Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jornada-im.github.io/docs/im/sysadmin/chapter-05-data-publishing.html</loc>
+    <lastmod>2025-11-01T01:27:20.884Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jornada-im.github.io/docs/im/sysadmin/chapter-02-project-management.html</loc>
+    <lastmod>2025-11-01T01:27:20.884Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jornada-im.github.io/docs/im/standards/JRN_metadata_standards.html</loc>
+    <lastmod>2025-11-01T01:27:20.884Z</lastmod>
   </url>
   <url>
     <loc>https://jornada-im.github.io/templates/fellowship_IM_statement.html</loc>
-    <lastmod>2025-10-31T05:46:02.508Z</lastmod>
+    <lastmod>2025-11-01T01:27:20.901Z</lastmod>
   </url>
   <url>
     <loc>https://jornada-im.github.io/proposals-and-reports/index.html</loc>
-    <lastmod>2025-10-31T05:46:02.506Z</lastmod>
+    <lastmod>2025-11-01T01:27:20.898Z</lastmod>
   </url>
   <url>
     <loc>https://jornada-im.github.io/proposals-and-reports/JRN_IM_annual_report_2020.html</loc>
-    <lastmod>2025-10-31T05:46:02.506Z</lastmod>
+    <lastmod>2025-11-01T01:27:20.898Z</lastmod>
   </url>
 </urlset>
