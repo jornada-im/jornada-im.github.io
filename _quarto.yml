@@ -24,8 +24,6 @@ website:
     logo: img/jrn-logo-light.png
     #background: light
     left:
-      - text: "Home"
-        href: index.qmd
       - text: "Researcher Guide"
         href: docs/researcher/overview.qmd
       - text: "IM Guide"
@@ -36,7 +34,7 @@ website:
           - proposals-and-reports/index.qmd
           - archive/index.qmd
       - text: "Updates"
-        href: posts.qmd
+        href: posts/posts.qmd
     tools:
       - icon: github
         href: https://github.com/jornada-im/jornada-im.github.io
@@ -50,7 +48,7 @@ website:
       contents:
         - href: docs/researcher/overview.qmd
           text: Overview
-        - href: docs/refs_and_links.md
+        - href: docs/refs_and_links.qmd
           text: "Useful references and links"
     - title: "IM Guide"
       #id: im_docs

@@ -1,6 +1,8 @@
-# Welcome to the Jornada Data Commons
+---
+title: Welcome to the Jornada Data Commons
+---
 
-This site is maintained by the Jornada IM (Information Management) team to support researchers and data managers working with data from the [Jornada Basin LTER (JRN)](https://lter.jornada.nmsu.edu) and [Jornada Experimental Range (JER)](https://jornada.nmsu.edu) programs.
+This site is maintained by the Jornada Information Management (IM) team to support researchers and data managers working with data from the [Jornada Basin LTER (JRN)](https://lter.jornada.nmsu.edu) and [Jornada Experimental Range (JER)](https://jornada.nmsu.edu) programs.
 
 ::: {.callout-caution collapse="false"}
 ## This site is a work in progress!
