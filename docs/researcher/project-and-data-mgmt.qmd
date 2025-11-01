@@ -1,0 +1,15 @@
+---
+title: Managing your research project and data
+author: The Jornada Information Management Team
+date: last-modified
+---
+
+## Cleaning and QA/QC
+
+The Jornada IM team has a significant amount of experience and a variety of tools to draw on for quality assurance and quality control (QA/QC) of long-term Jornada datasets. For data managed by individual researchers, the Jornada IM team leaves most data QA/QC up to the research group or individual, but we are happy to advise when asked. For a simple overview and some resources useful for QA/QC of tabular data, see [ EDI's recommendations](https://edirepository.org/resources/cleaning-data-and-quality-control).
+
+## Describing data as you collect it
+
+## Updating project information
+
+Please update the Jornada Research Site Manager (<janderso@nmsu.edu>) with changes to projects using updated ResNotif forms at least once per year. Send updates about project personnel or website information to the IM team (<jornada.data@nmsu.edu>) as necessary.

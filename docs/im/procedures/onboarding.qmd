@@ -1,0 +1,5 @@
+---
+title: Onboarding new IM team members
+---
+
+1. Add to the *Jornada IM* team on GitHub

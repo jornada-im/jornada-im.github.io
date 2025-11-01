@@ -1,0 +1,19 @@
+---
+title: Discovering Jornada data
+author: The Jornada Information Management Team
+date: last-modified
+---
+
+## Jornada data discovery
+
+One goal of the Jornada IM system is to make the vast majority of Jornada data accessible through the [Jornada website](https://lter.jornada.nmsu.edu) and other avenues. On the Jornada website there are two primary data access points:
+
+1. The [JRN LTER primary data catalog](https://lter.jornada.nmsu.edu/data-catalog/) currently provides access to Jornada data held in multiple repositories with a faceted interface. The five tabs in the data catalog are:
+
+    * [Tab 1](https://lter.jornada.nmsu.edu/data-catalog/#uagb-tabs__tab0): A list of links to "signature" long-term datasets collected at JRN, arranged by important research themes.
+    * [Tab 2](https://lter.jornada.nmsu.edu/data-catalog/#uagb-tabs__tab1): A searchable listing of all datasets held in our primary data catalog, hosted at the EDI repository.
+    * [Tab3](https://lter.jornada.nmsu.edu/data-catalog/#uagb-tabs__tab2): Is a searchable listing of Jornada data held in other repositories (not EDI).
+    * [Tab 4](https://lter.jornada.nmsu.edu/data-catalog/#uagb-tabs__tab3): A listing of a few of the most useful spatial datasets the Jornada has. This catalog will be updated soon.
+    * [Tab 5](https://lter.jornada.nmsu.edu/data-catalog/#uagb-tabs__tab4): A listing of Jornada "data partnerships", with relevant links to data catalogs provided and managed by collaborating research networks working in the Jornada Basin are.
+
+2. The [interactive data viewer](https://lter.jornada.nmsu.edu/interactive-data-viewer/) allows map-based browsing of some of our long-term meteorology and ecology datasets collected at the Jornada.

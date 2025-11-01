@@ -4,7 +4,7 @@ author: The Jornada Information Management Team
 date: last-modified
 ---
 
-# Setup
+## Setup
 
 JRN Metabase (`jrn_metabase`) is a PostgreSQL database that can be stored and accessed on either a local or remote host. Generally we configure it on a remote host for multi-user access. PostgreSQL uses a client/server model, which means that the database server application (`postgres`) runs on the host system and manages the databases and all incoming connections from client applications. Users can choose from a number of client applications to connect to a server and database(s), either locally (from the server's host machine), or remotely. The standard, commandline client interface to PostgreSQL is `psql`, which can be, or already is, installed on most computers. We also use [DBeaver](https://dbeaver.io/download/) as a graphical client for `jrn_metabase`. Links to PostgreSQL and community documentation are on the [Postgres Links page](postgres_links.md).
 
@@ -22,7 +22,9 @@ To install PostgreSQL, use the most current installation method for the host's o
 
 When logged into the PostgreSQL host, any system user with sudoer privileges can switch to the `postgres` user and enter the `psql` shell with:
 
-    sudo -u postgres psql
+```bash
+sudo -u postgres psql
+```
 
 The `postgres=#` prompt will appear indicating you have entered the shell in the `postgres` role, which is the default administrative role with superuser privileges. It has no password set on a new install(, so that will need to be set according to instructions below.)
 

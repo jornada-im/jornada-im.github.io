@@ -47,8 +47,18 @@ website:
       collapse-level: 2
       contents:
         - href: docs/researcher/overview.qmd
-          text: Overview
-        - href: docs/refs_and_links.qmd
+          text: "Overview"
+        - href: docs/researcher/policies-and-permits.qmd
+          text: "Policies & permits"
+        - href: docs/researcher/project-and-data-mgmt.qmd
+          text: "Project and data management"
+        - href: docs/researcher/prepare-and-publish-data.qmd
+          text: "Prepare and publish data"
+        - href: docs/researcher/discover-data.qmd
+          text: "Discover Jornada data"
+        - href: docs/researcher/data-reuse.qmd
+          text: "Using Jornada data"
+        - href: docs/refs-and-links.qmd
           text: "Useful references and links"
     - title: "IM Guide"
       #id: im_docs
@@ -76,7 +86,7 @@ website:
             #   text: "Data publishing"
             # - href: docs/im/sysadmin/chapter-05-server-admin.qmd
             #   text: "Server administration"
-        - href: docs/refs_and_links.qmd
+        - href: docs/refs-and-links.qmd
           text: "Useful references and links"
 
 execute:
