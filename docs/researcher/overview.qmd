@@ -1,11 +1,28 @@
 ---
 title: Overview for Researchers and Staff
+author: The Jornada Information Management Team
+date: last-modified
 ---
 
-This guide was written by Jornada information managers (IMs) to provide a concise, but fairly comprehensive guide to research administration and data management for Jornada students and investigators, including PIs, postdocs, graduate students, undergraduate researchers, and staff scientists.
+This guide was written by Jornada information managers (IMs) and the Jornada community at large as a concise, but fairly comprehensive guide to working with Jornada data. It is designed to be accessible for students (graduate and undergraduate), investigators, postdocs, and staff scientists, and to help these groups do research, particularly data-related tasks, effectively and efficiently.
+
+## Before you begin
+
+Before you begin your research, you should know the expectations and policies the Jornada has for permitting, data management, attribution, and personal safety during research. These are covered comprehensively on the [Jornada LTER](https://lter.jornada.nmsu.edu/for-researchers/) and [USDA-ARS Jornada Experimental Range](https://jornada.nmsu.edu/researcher-information) websites. Here is a quick rundown as a reminder:
+
+ 1. You must request approval and obtain all required permits prior to beginning field research.
+ 2. Researchers are expected to submit data and metadata to the IM team during their research, or, for some collaborators, when research concludes.
+ 3. Acknowledgement of funding support and citation of Jornada data is expected, as appropriate, in Jornada journal publications and other research products.
+ 4. Researchers must follow our safety and conduct guidelines when working at the Jornada. 
+
+This guide focuses mainly on data-related concerns, especially items 2 and 3, but some relevant forms and instructions are provided in the [Starting research](./starting-research.qmd) chapter of the guide.
+
+## The data lifecycle
+
+This guide is organized roughly according to the data lifecycle [@michener_ecoinformatics_2012].
 
 
-## Learn more about Jornada data management
+## Learn more
 
 The Jornada IM team consists of both Jornada Basin LTER (JRN) and USDA-ARS Jornada Experimental Range (JER) staff. If you need to know more about how we manage data, or how you or your lab can do a better job with data, there are a number of opportunities to learn more.
 

@@ -1,6 +1,5 @@
 ---
 title: Discovering Jornada data
-author: The Jornada Information Management Team
 date: last-modified
 ---
 

@@ -1,6 +1,6 @@
 # jornada-im.github.io
 
-This is the website repository for [jornada-im.github.io](https://jornada-im.github.io), the home site of the data science and information management team for Jornada programs, including the Jornada Basin LTER (JRN) and USDA-ARS Jornada Experimental Range (JER) programs. Most content here is documentation for researchers, data managers, and staff who are working with data collected or managed by these programs. 
+This is the website repository for [jornada-im.github.io](https://jornada-im.github.io), the home site of the data science and information management team for Jornada programs, including the [Jornada Basin LTER](https://lter.jornada.nmsu.edu) (JRN) and USDA-ARS [Jornada Experimental Range](https://jornada.nmsu.edu) (JER) programs. Most content here is documentation for researchers, data managers, and staff who are working with data collected or managed by these programs. 
 
 The website is created using the [Quarto](https://quarto.org) documentation publishing system and served by [GitHub Pages](https://docs.github.com/en/pages). The `main` branch of this repository contains all source files for the web pages, which Quarto renders into HTML files that are served from the `gh-pages` branch. These HTML files are what you see when you visit [the site](https://jornada-im.github.io) with your web browser. Source files are written in the Quarto variant of [Markdown](https://www.markdownguide.org/getting-started/) - a simple, plain-text markup language. The website and the documentation it contains are intended as a community-supported resource, and if you are so-inclined we welcome your contributions. For more on this, see "Contributing" below.
 
@@ -74,4 +74,4 @@ or an annual report.
 
 ## Contact us
 
-If you have questions or concerns about the website or its content, of you'd like to know more about contributing, please contact the Jornada IM team at <jornada.data@nmsu.edu>.
+If you have questions or concerns about the website or its content, or you'd like to know more about contributing, please contact the Jornada IM team at <jornada.data@nmsu.edu>.

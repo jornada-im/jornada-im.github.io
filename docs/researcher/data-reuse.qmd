@@ -1,6 +1,5 @@
 ---
 title: Using data from the Jornada
-author: The Jornada Information Management Team
 date: last-modified
 ---
 
