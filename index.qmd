@@ -1,5 +1,8 @@
 ---
 title: Welcome to the Jornada Data Commons
+format:
+  html:
+    css: styles.css
 ---
 
 This site is maintained by the Jornada Information Management (IM) team to support researchers and data managers working with data from the [Jornada Basin LTER (JRN)](https://lter.jornada.nmsu.edu) and [Jornada Experimental Range (JER)](https://jornada.nmsu.edu) programs.
@@ -12,13 +15,22 @@ Report problems and suggest additions in the [issue tracker](https://github.com/
 
 ## I'm a researcher and I need to...
 
-* [Get approved to do research at the Jornada](docs/researcher/overview.qmd#research-approval-and-policies)
-* [Clean and describe my research data (data QA/QC, metadata)](docs/researcher/overview.qmd#cleaning-and-describing-data)
-* [Submit or publish a dataset](docs/researcher/overview.qmd#publishing-datasets)
-* [Update project, personnel, or website information](docs/researcher/overview.qmd#updating-project-information)
-* [Find Jornada datasets or other information](docs/researcher/overview.qmd#jornada-data-discovery)
-* [Cite a Jornada dataset or funding](docs/researcher/overview.qmd#citing-the-jornada)
-* [Learn more about Jornada data management](docs/researcher/overview.qmd#learn-more-about-jornada-data-management)
+<!-- This should not display on mobile according to the syles.css -->
+::: {.column-margin align="center"}
+&nbsp;&nbsp;&nbsp;&nbsp;[![](img/jrn-logo.png){width=1.5in fig-align="center"}](https://lter.jornada.nmsu.edu)  
+&nbsp;[![](img/JER-logo-windmill-512.png){width=1.8in fig-align="right"}](https://jornada.nmsu.edu)  
+&nbsp;&nbsp;&nbsp;&nbsp;Funded by [NSF](https://www.nsf.gov/awardsearch/show-award?AWD_ID=2425143) and [USDA](https://ltar.ars.usda.gov/sites/jer).
+:::
+
+* [Get approved to do research at the Jornada](docs/researcher/starting-research.qmd)
+* [Clean and describe my research data (data QA/QC, metadata)](docs/researcher/prepare-and-publish-data.qmd#)
+* [Submit or publish a dataset](docs/researcher/prepare-and-publish-data.qmd#publishing-datasets)
+* [Update project, personnel, or website information](docs/researcher/project-and-data-mgmt.qmd)
+* [Find Jornada datasets or other information](docs/researcher/discover-data.qmd)
+* [Cite a Jornada dataset or funding](docs/researcher/data-reuse.qmd)
+* [Learn more about Jornada data management](docs/researcher/overview.qmd#learn-more)
+
+
 
 ## I'm a data manager and I need to...
 
