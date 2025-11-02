@@ -954,7 +954,19 @@
     "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html",
     "title": "3. Websites and Web Applications",
     "section": "",
-    "text": "The JRN website runs on Wordpress and is hosted by WPengine. The JRN webmaster, currently the lead Information Manager, has a WPengine.com account that allows access to the website backend for account management, website backups, and other administrative tasks. For content creation, editing, and website design, user accounts are created in the Wordpress environment.\n\n\nThere are 3 Wordpress environments available at the hosting provider.\n\nProduction - this is the live JRN website. Only the webmaster has editing rights in this environment and is responsible for pulling in changes from the staging environment.\nStaging - in close sync with the Production environment, new content such as blog posts and pictures can be created and tested here. The project manager and other staff have editing access in this environment.\nDevelopment - New plugins, themes, and other features are tested here and pushed to Staging when ready. This is mainly used by the webmaster or other developers.\n\nEach environment has a unique name and web address at {environment}.wpengine.com. The production environment is the live website, so the DNS entry for lter.jornada.nmsu.edu points to this site.\n\n\n\nThe hosting provider allows secure shell (ssh) access to any environment using an SSH gateway. See setup instructions here. Once set up, issuing the command\nssh {environment}@{environment}.ssh.wpengine.net\nshould put the user into a terminal session on the web server. To move a directory of files, such as one of our website’s client-side apps, from a local machine to the website, use scp. For example, to push the zotero-biblio app to an environment you might do:\nscp -r GitHub/zotero-biblio {environment}@{environment}.ssh.wpengine.net:/sites/{environment}/\nThere are occasional issues with the SSH Gateway at our hosting provider, so luckily, management of files with git is also supported. See the git setup instructions\n\n\n\nOnce logged in to the shell of the web server environment there are a number of Wordpress command-line utilities that are available. See the description here:\nhttps://developer.wordpress.org/cli/commands/\n\n\nFor example, to remove mixed comment by replacing “http://” addresses with “https://” issue this command from the shell:\nwp search-replace 'http://{environment}.wpengine.com' 'https://{environment}.wpengine.com'\n\n\n\n\nThe primary data catalog and the publication lists, including the bibliography and non-EDI data catalog, are client-side apps hosted on our website (lter-datacat and Zotero-JavaScript-Search-Client, respectively) . Placing these apps there, and updating them, means adding a folder to the website’s root directory. This is done using scp, generally (see above), or by pushing changes via git.\n\n\n\n\n\n\nNoteA new JRN website is under development!\n\n\n\nThe new JRN LTER website will be a static site based on the Hugo site generator. The current development version is in this GitHub repository and the site is rendered by Netlify at https://jrn-lter-website.netlify.app/.",
+    "text": "The JRN website runs on Wordpress and is hosted by WPengine. The JRN webmaster, currently the lead Information Manager, has a WPengine.com account that allows access to the website backend for account management, website backups, and other administrative tasks. For content creation, editing, and website design, user accounts are created in the Wordpress environment.\n\n\n\n\n\n\nNoteA new JRN website is under development!\n\n\n\nThe new JRN LTER website will be a static site based on the Hugo site generator. The current development version is in this GitHub repository and the site is rendered by Netlify at https://jrn-lter-website.netlify.app/.",
+    "crumbs": [
+      "IM Guide",
+      "Full IM System Documentation",
+      "3. Websites and Web Applications"
+    ]
+  },
+  {
+    "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#the-jrn-website",
+    "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#the-jrn-website",
+    "title": "3. Websites and Web Applications",
+    "section": "",
+    "text": "The JRN website runs on Wordpress and is hosted by WPengine. The JRN webmaster, currently the lead Information Manager, has a WPengine.com account that allows access to the website backend for account management, website backups, and other administrative tasks. For content creation, editing, and website design, user accounts are created in the Wordpress environment.\n\n\n\n\n\n\nNoteA new JRN website is under development!\n\n\n\nThe new JRN LTER website will be a static site based on the Hugo site generator. The current development version is in this GitHub repository and the site is rendered by Netlify at https://jrn-lter-website.netlify.app/.",
     "crumbs": [
       "IM Guide",
       "Full IM System Documentation",
@@ -965,8 +977,8 @@
     "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#environments",
     "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#environments",
     "title": "3. Websites and Web Applications",
-    "section": "",
-    "text": "There are 3 Wordpress environments available at the hosting provider.\n\nProduction - this is the live JRN website. Only the webmaster has editing rights in this environment and is responsible for pulling in changes from the staging environment.\nStaging - in close sync with the Production environment, new content such as blog posts and pictures can be created and tested here. The project manager and other staff have editing access in this environment.\nDevelopment - New plugins, themes, and other features are tested here and pushed to Staging when ready. This is mainly used by the webmaster or other developers.\n\nEach environment has a unique name and web address at {environment}.wpengine.com. The production environment is the live website, so the DNS entry for lter.jornada.nmsu.edu points to this site.",
+    "section": "Environments",
+    "text": "Environments\nThere are 3 Wordpress environments available at the hosting provider.\n\nProduction - this is the live JRN website. Only the webmaster has editing rights in this environment and is responsible for pulling in changes from the staging environment.\nStaging - in close sync with the Production environment, new content such as blog posts and pictures can be created and tested here. The project manager and other staff have editing access in this environment.\nDevelopment - New plugins, themes, and other features are tested here and pushed to Staging when ready. This is mainly used by the webmaster or other developers.\n\nEach environment has a unique name and web address at {environment}.wpengine.com. The production environment is the live website, so the DNS entry for lter.jornada.nmsu.edu points to this site.",
     "crumbs": [
       "IM Guide",
       "Full IM System Documentation",
@@ -977,8 +989,8 @@
     "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#secure-file-management",
     "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#secure-file-management",
     "title": "3. Websites and Web Applications",
-    "section": "",
-    "text": "The hosting provider allows secure shell (ssh) access to any environment using an SSH gateway. See setup instructions here. Once set up, issuing the command\nssh {environment}@{environment}.ssh.wpengine.net\nshould put the user into a terminal session on the web server. To move a directory of files, such as one of our website’s client-side apps, from a local machine to the website, use scp. For example, to push the zotero-biblio app to an environment you might do:\nscp -r GitHub/zotero-biblio {environment}@{environment}.ssh.wpengine.net:/sites/{environment}/\nThere are occasional issues with the SSH Gateway at our hosting provider, so luckily, management of files with git is also supported. See the git setup instructions",
+    "section": "Secure file management",
+    "text": "Secure file management\nThe hosting provider allows secure shell (ssh) access to any environment using an SSH gateway. See setup instructions here. Once set up, issuing the command\nssh {environment}@{environment}.ssh.wpengine.net\nshould put the user into a terminal session on the web server. To move a directory of files, such as one of our website’s client-side apps, from a local machine to the website, use scp. For example, to push the zotero-biblio app to an environment you might do:\nscp -r GitHub/zotero-biblio {environment}@{environment}.ssh.wpengine.net:/sites/{environment}/\nThere are occasional issues with the SSH Gateway at our hosting provider, so luckily, management of files with git is also supported. See the git setup instructions",
     "crumbs": [
       "IM Guide",
       "Full IM System Documentation",
@@ -989,8 +1001,8 @@
     "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#managing-wordpress-from-the-command-line",
     "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#managing-wordpress-from-the-command-line",
     "title": "3. Websites and Web Applications",
-    "section": "",
-    "text": "Once logged in to the shell of the web server environment there are a number of Wordpress command-line utilities that are available. See the description here:\nhttps://developer.wordpress.org/cli/commands/\n\n\nFor example, to remove mixed comment by replacing “http://” addresses with “https://” issue this command from the shell:\nwp search-replace 'http://{environment}.wpengine.com' 'https://{environment}.wpengine.com'",
+    "section": "Managing Wordpress from the command line",
+    "text": "Managing Wordpress from the command line\nOnce logged in to the shell of the web server environment there are a number of Wordpress command-line utilities that are available. See the description here:\nhttps://developer.wordpress.org/cli/commands/\n\nRemoving mixed content (http:// -&gt; https://)\nFor example, to remove mixed comment by replacing “http://” addresses with “https://” issue this command from the shell:\nwp search-replace 'http://{environment}.wpengine.com' 'https://{environment}.wpengine.com'",
     "crumbs": [
       "IM Guide",
       "Full IM System Documentation",
@@ -1001,8 +1013,8 @@
     "objectID": "docs/im/sysadmin/chapter-03-websites-and-apps.html#pushing-changes-to-js-apps-lter-datacat-pub_list",
     "href": "docs/im/sysadmin/chapter-03-websites-and-apps.html#pushing-changes-to-js-apps-lter-datacat-pub_list",
     "title": "3. Websites and Web Applications",
-    "section": "",
-    "text": "The primary data catalog and the publication lists, including the bibliography and non-EDI data catalog, are client-side apps hosted on our website (lter-datacat and Zotero-JavaScript-Search-Client, respectively) . Placing these apps there, and updating them, means adding a folder to the website’s root directory. This is done using scp, generally (see above), or by pushing changes via git.\n\n\n\n\n\n\nNoteA new JRN website is under development!\n\n\n\nThe new JRN LTER website will be a static site based on the Hugo site generator. The current development version is in this GitHub repository and the site is rendered by Netlify at https://jrn-lter-website.netlify.app/.",
+    "section": "Pushing changes to JS apps (lter-datacat, pub_list)",
+    "text": "Pushing changes to JS apps (lter-datacat, pub_list)\nThe primary data catalog and the publication lists, including the bibliography and non-EDI data catalog, are client-side apps hosted on our website (lter-datacat and Zotero-JavaScript-Search-Client, respectively) . Placing these apps there, and updating them, means adding a folder to the website’s root directory. This is done using scp, generally (see above), or by pushing changes via git.",
     "crumbs": [
       "IM Guide",
       "Full IM System Documentation",

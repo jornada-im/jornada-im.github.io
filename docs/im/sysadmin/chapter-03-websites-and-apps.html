@@ -288,8 +288,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-jrn-website" id="toc-the-jrn-website" class="nav-link active" data-scroll-target="#the-jrn-website">The JRN Website</a>
-  <ul class="collapse">
+  <li><a href="#the-jrn-website" id="toc-the-jrn-website" class="nav-link active" data-scroll-target="#the-jrn-website">The JRN Website</a></li>
   <li><a href="#environments" id="toc-environments" class="nav-link" data-scroll-target="#environments">Environments</a></li>
   <li><a href="#secure-file-management" id="toc-secure-file-management" class="nav-link" data-scroll-target="#secure-file-management">Secure file management</a></li>
   <li><a href="#managing-wordpress-from-the-command-line" id="toc-managing-wordpress-from-the-command-line" class="nav-link" data-scroll-target="#managing-wordpress-from-the-command-line">Managing Wordpress from the command line</a>
@@ -297,7 +296,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#removing-mixed-content-http---https" id="toc-removing-mixed-content-http---https" class="nav-link" data-scroll-target="#removing-mixed-content-http---https">Removing mixed content (http:// -&gt; https://)</a></li>
   </ul></li>
   <li><a href="#pushing-changes-to-js-apps-lter-datacat-pub_list" id="toc-pushing-changes-to-js-apps-lter-datacat-pub_list" class="nav-link" data-scroll-target="#pushing-changes-to-js-apps-lter-datacat-pub_list">Pushing changes to JS apps (lter-datacat, pub_list)</a></li>
-  </ul></li>
   <li><a href="#website-content" id="toc-website-content" class="nav-link" data-scroll-target="#website-content">Website content</a>
   <ul class="collapse">
   <li><a href="#homepage" id="toc-homepage" class="nav-link" data-scroll-target="#homepage">Homepage</a></li>
@@ -374,9 +372,23 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="the-jrn-website" class="level1">
-<h1>The JRN Website</h1>
+<section id="the-jrn-website" class="level2">
+<h2 class="anchored" data-anchor-id="the-jrn-website">The JRN Website</h2>
 <p>The JRN website runs on Wordpress and is hosted by <a href="https://wpengine.com">WPengine</a>. The JRN webmaster, currently the lead Information Manager, has a WPengine.com account that allows access to the website backend for account management, website backups, and other administrative tasks. For content creation, editing, and website design, user accounts are created in the Wordpress environment.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>A new JRN website is under development!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The new JRN LTER website will be a static site based on the <a href="https://gethugo.io">Hugo</a> site generator. The current development version is in <a href="https://github.com/jornada-im/jrn-lter-website">this GitHub repository</a> and the site is rendered by Netlify at <a href="https://jrn-lter-website.netlify.app/" class="uri">https://jrn-lter-website.netlify.app/</a>.</p>
+</div>
+</div>
+</section>
 <section id="environments" class="level2">
 <h2 class="anchored" data-anchor-id="environments">Environments</h2>
 <p>There are 3 Wordpress environments available at the hosting provider.</p>
@@ -408,20 +420,6 @@ ul.task-list li input[type="checkbox"] {
 <section id="pushing-changes-to-js-apps-lter-datacat-pub_list" class="level2">
 <h2 class="anchored" data-anchor-id="pushing-changes-to-js-apps-lter-datacat-pub_list">Pushing changes to JS apps (lter-datacat, pub_list)</h2>
 <p>The primary data catalog and the publication lists, including the bibliography and non-EDI data catalog, are client-side apps hosted on our website (<code>lter-datacat</code> and <code>Zotero-JavaScript-Search-Client</code>, respectively) . Placing these apps there, and updating them, means adding a folder to the website’s root directory. This is done using scp, generally (see above), or by pushing changes via git.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>A new JRN website is under development!
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The new JRN LTER website will be a static site based on the <a href="https://gethugo.io">Hugo</a> site generator. The current development version is in <a href="https://github.com/jornada-im/jrn-lter-website">this GitHub repository</a> and the site is rendered by Netlify at <a href="https://jrn-lter-website.netlify.app/" class="uri">https://jrn-lter-website.netlify.app/</a>.</p>
-</div>
-</div>
-</section>
 </section>
 <section id="website-content" class="level1">
 <h1>Website content</h1>
