@@ -4,9 +4,13 @@
 
 * To request approval to conduct research at the Jornada, fill out the [ResNotif form](Jornada_resnotif_form.docx) and send to [Conrad Nelson](mailto:cwnelson@nmsu.edu).
 
+**Project management info**
+
+To update the Jornada team about changes to your project use the [ProjectInfo form](Jornada_projectinfo_template.docx)
+
 **Data submission and publishing**
 
-We strongly recommend using the Environmental Data Initiative's [ezEML](https://ezeml.edirepository.org) application, but if this is not sufficient for your needs we have metadata templates that you may send to the [Jornada IM team](mailto:jornada.data@nmsu.edu).
+We strongly recommend using the Environmental Data Initiative's [ezEML](https://ezeml.edirepository.org) application according to our instructions [here](../docs/researcher/prepare-and-publish-data.qmd), but if this is not sufficient for your needs we have metadata templates that you may send to the [Jornada IM team](mailto:jornada.data@nmsu.edu).
 
 * [MS Word format](Jornada_metadata_template.docx) for relatively simple datasets with few tables.
 * [MS Excel format](Jornada_metadata_template.xlsx) for more complex datasets with multiple tables.
