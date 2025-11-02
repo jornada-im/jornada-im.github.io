@@ -4,9 +4,16 @@ author: The Jornada Information Management Team
 date: last-modified
 ---
 
-# The JRN Website
+## The JRN Website
 
 The JRN website runs on Wordpress and is hosted by [WPengine](https://wpengine.com). The JRN webmaster, currently the lead Information Manager, has a WPengine.com account that allows access to the website backend for account management, website backups, and other administrative tasks. For content creation, editing, and website design, user accounts are created in the Wordpress environment. 
+
+:::{.callout-note}
+## A new JRN website is under development!
+
+The new JRN LTER website will be a static site based on the [Hugo](https://gethugo.io) site generator. The current development version is in [this GitHub repository](https://github.com/jornada-im/jrn-lter-website) and the site is rendered by Netlify at <https://jrn-lter-website.netlify.app/>.
+
+:::
 
 
 ## Environments
@@ -48,13 +55,6 @@ For example, to remove mixed comment by replacing "http://" addresses with "http
 ## Pushing changes to JS apps (lter-datacat, pub_list)
 
 The primary data catalog and the publication lists, including the bibliography and non-EDI data catalog, are client-side apps hosted on our website (`lter-datacat` and `Zotero-JavaScript-Search-Client`, respectively) . Placing these apps there, and updating them, means adding a folder to the website's root directory. This is done using scp, generally (see above), or by pushing changes via git.
-
-:::{.callout-note}
-## A new JRN website is under development!
-
-The new JRN LTER website will be a static site based on the [Hugo](https://gethugo.io) site generator. The current development version is in [this GitHub repository](https://github.com/jornada-im/jrn-lter-website) and the site is rendered by Netlify at <https://jrn-lter-website.netlify.app/>.
-
-:::
 
 
 # Website content
