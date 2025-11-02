@@ -6,6 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="The Jornada Information Management Team">
+<meta name="dcterms.date" content="2025-11-02">
 
 <title>Overview for Researchers and Staff – Jornada Data Commons</title>
 <style>
@@ -20,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,7 +52,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../docs/researcher/policies-and-permits.html" rel="next">
+<link href="../../docs/researcher/starting-research.html" rel="next">
 <link href="../../img/jrn-logo-light.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -161,8 +183,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/researcher/policies-and-permits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Policies &amp; permits</span></a>
+  <a href="../../docs/researcher/starting-research.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Starting research</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -205,7 +227,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#learn-more-about-jornada-data-management" id="toc-learn-more-about-jornada-data-management" class="nav-link active" data-scroll-target="#learn-more-about-jornada-data-management">Learn more about Jornada data management</a></li>
+  <li><a href="#before-you-begin" id="toc-before-you-begin" class="nav-link active" data-scroll-target="#before-you-begin">Before you begin</a></li>
+  <li><a href="#the-data-lifecycle" id="toc-the-data-lifecycle" class="nav-link" data-scroll-target="#the-data-lifecycle">The data lifecycle</a></li>
+  <li><a href="#learn-more" id="toc-learn-more" class="nav-link" data-scroll-target="#learn-more">Learn more</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/researcher/overview.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -221,7 +245,19 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>The Jornada Information Management Team </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 2, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -231,9 +267,24 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This guide was written by Jornada information managers (IMs) to provide a concise, but fairly comprehensive guide to research administration and data management for Jornada students and investigators, including PIs, postdocs, graduate students, undergraduate researchers, and staff scientists.</p>
-<section id="learn-more-about-jornada-data-management" class="level2">
-<h2 class="anchored" data-anchor-id="learn-more-about-jornada-data-management">Learn more about Jornada data management</h2>
+<p>This guide was written by Jornada information managers (IMs) and the Jornada community at large as a concise, but fairly comprehensive guide to working with Jornada data. It is designed to be accessible for students (graduate and undergraduate), investigators, postdocs, and staff scientists, and to help these groups do research, particularly data-related tasks, effectively and efficiently.</p>
+<section id="before-you-begin" class="level2">
+<h2 class="anchored" data-anchor-id="before-you-begin">Before you begin</h2>
+<p>Before you begin your research, you should know the expectations and policies the Jornada has for permitting, data management, attribution, and personal safety during research. These are covered comprehensively on the <a href="https://lter.jornada.nmsu.edu/for-researchers/">Jornada LTER</a> and <a href="https://jornada.nmsu.edu/researcher-information">USDA-ARS Jornada Experimental Range</a> websites. Here is a quick rundown as a reminder:</p>
+<ol type="1">
+<li>You must request approval and obtain all required permits prior to beginning field research.</li>
+<li>Researchers are expected to submit data and metadata to the IM team during their research, or, for some collaborators, when research concludes.</li>
+<li>Acknowledgement of funding support and citation of Jornada data is expected, as appropriate, in Jornada journal publications and other research products.</li>
+<li>Researchers must follow our safety and conduct guidelines when working at the Jornada.</li>
+</ol>
+<p>This guide focuses mainly on data-related concerns, especially items 2 and 3, but some relevant forms and instructions are provided in the <a href="../../docs/researcher/starting-research.html">Starting research</a> chapter of the guide.</p>
+</section>
+<section id="the-data-lifecycle" class="level2">
+<h2 class="anchored" data-anchor-id="the-data-lifecycle">The data lifecycle</h2>
+<p>This guide is organized roughly according to the data lifecycle <span class="citation" data-cites="michener_ecoinformatics_2012">(<a href="#ref-michener_ecoinformatics_2012" role="doc-biblioref">Michener and Jones 2012</a>)</span>.</p>
+</section>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
 <p>The Jornada IM team consists of both Jornada Basin LTER (JRN) and USDA-ARS Jornada Experimental Range (JER) staff. If you need to know more about how we manage data, or how you or your lab can do a better job with data, there are a number of opportunities to learn more.</p>
 <ul>
 <li>Jornada Desert Ecology Short Course - The IM team presents there each year</li>
@@ -242,9 +293,14 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 
 
+
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-michener_ecoinformatics_2012" class="csl-entry" role="listitem">
+Michener, William K., and Matthew B. Jones. 2012. <span>“Ecoinformatics: Supporting Ecology as a Data-Intensive Science.”</span> <em>Trends in Ecology &amp; Evolution</em> 27 (2): 85–93. <a href="https://doi.org/10.1016/j.tree.2011.11.016">https://doi.org/10.1016/j.tree.2011.11.016</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -649,8 +705,8 @@ ul.task-list li input[type="checkbox"] {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../docs/researcher/policies-and-permits.html" class="pagination-link" aria-label="Policies &amp; permits">
-        <span class="nav-page-text">Policies &amp; permits</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../docs/researcher/starting-research.html" class="pagination-link" aria-label="Starting research">
+        <span class="nav-page-text">Starting research</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
