@@ -17,9 +17,11 @@ Report problems and suggest additions in the [issue tracker](https://github.com/
 
 <!-- This should not display on mobile according to the syles.css -->
 ::: {.column-margin align="center"}
-&nbsp;&nbsp;&nbsp;&nbsp;[![](img/jrn-logo.png){width=1.5in fig-align="center"}](https://lter.jornada.nmsu.edu)  
-&nbsp;[![](img/JER-logo-windmill-512.png){width=1.8in fig-align="right"}](https://jornada.nmsu.edu)  
-&nbsp;&nbsp;&nbsp;&nbsp;Funded by [NSF](https://www.nsf.gov/awardsearch/show-award?AWD_ID=2425143) and [USDA](https://ltar.ars.usda.gov/sites/jer).
+&nbsp;&nbsp;&nbsp;&nbsp;[![](img/jrn-logo.png){width=1.5in}](https://lter.jornada.nmsu.edu)  
+&nbsp;  
+&nbsp;[![](img/JER-logo-windmill-512.png){width=1.8in}](https://jornada.nmsu.edu)  
+&nbsp;  
+&nbsp;&nbsp;&nbsp;&nbsp;Funded by [NSF](https://www.nsf.gov/awardsearch/show-award?AWD_ID=2425143) and [USDA](https://ltar.ars.usda.gov/sites/jer)
 :::
 
 * [Get approved to do research at the Jornada](docs/researcher/starting-research.qmd)

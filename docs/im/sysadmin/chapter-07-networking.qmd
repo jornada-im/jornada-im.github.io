@@ -1,0 +1,10 @@
+---
+title: "7. Networking"
+author: The Jornada Information Management Team
+date: last-modified
+---
+
+This page is a WIP!
+
+
+Sometimes we use [Tailscale](https://tailscale.com/) for a VPN. We may switch to [NetBird](https://netbird.io). These are all Wireguard protocols under the hood.
