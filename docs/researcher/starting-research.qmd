@@ -3,13 +3,9 @@ title: Starting a Jornada research project
 date: last-modified
 ---
 
-## Selecting research areas
+## Policies and obtaining permits 
 
-
-
-## Obtaining permits 
-
-Most new research projects are initiated through the Jornada Research Site Manager, Conrad Nelson (<cwnelson@nmsu.edu>). The [JRN website](https://lter.jornada.nmsu.edu/for-researchers) or the [JER website](https://jornada.nmsu.edu/researcher-information) are the best source of information on this process, and have the current forms needed. To begin the approval process, a potential researcher submits a Research Notification (ResNotif) form, which describes the planned location, research activities, personnel, and other important project information, to Conrad Nelson. After review, and after any necessary changes to the plan are made, the project may be approved to begin.
+Most new research projects are initiated through the Jornada Research Site Manager, Conrad Nelson (<cwnelson@nmsu.edu>). The [JRN website](https://lter.jornada.nmsu.edu/for-researchers) or the [JER website](https://jornada.nmsu.edu/researcher-information) are the best source of information on this process, and have the current forms needed. There is also a listing of forms available [here](../../templates/index.qmd). To begin the approval process, a potential researcher submits a Research Notification (ResNotif) form, which describes the planned location, research activities, personnel, and other important project information, to Conrad Nelson. After review, and after any necessary changes to the plan are made, the project may be approved to begin.
 
 All approved research projects at the Jornada must agree to a data sharing and acknowledgement policy. The requirements for Jornada researchers are, again, detailed on the [JRN](https://lter.jornada.nmsu.edu/for-researchers) or [JER](https://jornada.nmsu.edu/researcher-information) websites, but to summarize, researchers should:
 
@@ -23,3 +19,8 @@ All approved research projects at the Jornada must agree to a data sharing and a
     - When research findings involving Jornada data appear in a publication (journal article, dissertation, website, etc.), please include a citation and link to the original data. For already-published long-term datasets include a DOI link at a minimum, and if possible, a full citation in the reference section (e.g. in a journal article). If the data are new and unpublished, please publish the dataset AND cite it in the publication.
 
 The Jornada IM team strives to uphold high data publishing standards, so Jornada students and investigators who contribute to research at the Jornada should be aware of, or be willing to learn about, some best practices for collecting and describing their research data.
+
+
+## Selecting research areas
+
+More to come on this topic...
