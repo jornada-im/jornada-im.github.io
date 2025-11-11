@@ -88,7 +88,7 @@
     "href": "templates/index.html",
     "title": "Forms and templates",
     "section": "",
-    "text": "Forms and templates\nResearch approval\n\nTo request approval to conduct research at the Jornada, fill out the ResNotif form and send to Conrad Nelson.\n\nProject management info\nTo update the Jornada team about changes to your project use the ProjectInfo form\nData submission and publishing\nWe strongly recommend using the Environmental Data Initiative’s ezEML application according to our instructions here, but if this is not sufficient for your needs we have metadata templates that you may send to the Jornada IM team.\n\nMS Word format for relatively simple datasets with few tables.\nMS Excel format for more complex datasets with multiple tables.\n\nData requests\nMost data are openly available at the Jornada LTER website data catalog, but some spatial data are restricted access only.\n\nFill out the Spatial Data Request form to request restricted spatial data."
+    "text": "Forms and templates\nResearch approval\nTo request approval to conduct research at the Jornada, fill out the ResNotif form and send to Conrad Nelson.\nProject management info\nTo update the Jornada team about changes to your project use the ProjectInfo form\nData submission and publishing\nWe strongly recommend using the Environmental Data Initiative’s ezEML application according to our instructions here, but if this is not sufficient for your needs we have metadata templates that you may send to the Jornada IM team.\n\nMS Word format for relatively simple datasets with few tables.\nMS Excel format for more complex datasets with multiple tables.\n\nData requests\nMost data are openly available at the Jornada LTER website data catalog, but some spatial data are restricted access only. To request spatial data, fill out the Jornada Spatial Data Policy Agreement. You can also request to join the Jornada GeoPortal with this form."
   },
   {
     "objectID": "docs/im/overview.html",
@@ -626,140 +626,81 @@
     ]
   },
   {
-    "objectID": "docs/researcher/project-and-data-mgmt.html",
-    "href": "docs/researcher/project-and-data-mgmt.html",
-    "title": "Managing your research project and data",
+    "objectID": "docs/researcher/prepare-and-publish.html",
+    "href": "docs/researcher/prepare-and-publish.html",
+    "title": "Prepare and publish your data",
     "section": "",
-    "text": "The Jornada IM team has a significant amount of experience and a variety of tools to draw on for quality assurance and quality control (QA/QC) of long-term Jornada datasets. For data managed by individual researchers, the Jornada IM team leaves most data QA/QC up to the research group or individual, but we are happy to advise when asked. For a simple overview and some resources useful for QA/QC of tabular data, see EDI’s recommendations.",
+    "text": "Once data are clean and ready to analyze or publish, it is best to describe the data with metadata that is as detailed as needed to allow interpretation and re-use. The EDI repository has more guidance here, and the Jornada IM team tries to offer extensive assistance to researchers who need to describe their datasets for publication. Its a good idea to start collecting and organizing metadata as soon as you start collecting data. There are two recommended ways to collect and organize metadata: EDI’s ezEML tool or Jornada metadata templates. These are described below.",
     "crumbs": [
       "Researcher Guide",
-      "Project and data management"
+      "Prepare and publish"
     ]
   },
   {
-    "objectID": "docs/researcher/project-and-data-mgmt.html#cleaning-and-qaqc",
-    "href": "docs/researcher/project-and-data-mgmt.html#cleaning-and-qaqc",
-    "title": "Managing your research project and data",
+    "objectID": "docs/researcher/prepare-and-publish.html#ezeml",
+    "href": "docs/researcher/prepare-and-publish.html#ezeml",
+    "title": "Prepare and publish your data",
+    "section": "ezEML",
+    "text": "ezEML\nThe EDI repository has created a web app called ezEML for describing research datasets and creating standardized metadata documents for publication (EML). The tool is new but has rapidly developed to become an excellent method to author well-documented datasets. There is a Jornada EML template available on the site, so the recommended process for Jornada researchers is:\n\nLog in to ezEML using your Google, GitHub, or ORCID account (whichever is easiest).\nStart a new EML document using the “EML Documents &gt; New from Template” menu item\nNavigate to and select the “LTER/JRN/JRN_template_general” template to open a document template pre-populated with Jornada metadata.\nGive the document a unique name. You can save your metadata and then return to this document anytime.\nFollow the sequence of forms on the left, and ezEML’s prompts, to upload data files and enter metadata for your dataset. Each section of your metadata will have help available (“?” icons) and several fields will already be filled if you are using the JRN template.\nUse the “Check metadata” and “Check data tables” tools at the bottom left to check the completeness and validity of your dataset. Green lights mean your dataset is well described and ready to share.\nWhen ready, click “Submit/Share Package” and then “Collaborate with Colleagues”. DO NOT USE “Submit Package to EDI” or we may miss your dataset.\nOn the “Invite a Collaborator” screen share the dataset with a Jornada data manager (jornada.data@nmsu.edu).\n\nAt this point, the Jornada IM Team will receive a notification and can access your dataset in ezEML to review, edit, and publish to EDI.",
+    "crumbs": [
+      "Researcher Guide",
+      "Prepare and publish"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/prepare-and-publish.html#metadata-templates",
+    "href": "docs/researcher/prepare-and-publish.html#metadata-templates",
+    "title": "Prepare and publish your data",
+    "section": "Metadata templates",
+    "text": "Metadata templates\nA metadata template is a document with a structure and cues that help you collect the essential metadata needed to describe a published dataset. We have created Jornada metadata templates in MS Word (.docx) or Excel (.xlsx) formats. These templates contain sections for all critical pieces of metadata, along with instructions on what to include and how to structure the information. The Excel version is slightly more detailed and may be useful for complex datasets. Completed templates and accompanying data files should be sent to the Jornada IM team (jornada.data@nmsu.edu).",
+    "crumbs": [
+      "Researcher Guide",
+      "Prepare and publish"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/prepare-and-publish.html#general-jornada-metadata-guidelines",
+    "href": "docs/researcher/prepare-and-publish.html#general-jornada-metadata-guidelines",
+    "title": "Prepare and publish your data",
+    "section": "General Jornada metadata guidelines",
+    "text": "General Jornada metadata guidelines\nWhile writing metadata, the Jornada metadata standards (.docx) and keyword thesauri (.xlsx) documents are helpful, but not required.",
+    "crumbs": [
+      "Researcher Guide",
+      "Prepare and publish"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/prepare-and-publish.html#publishing-datasets",
+    "href": "docs/researcher/prepare-and-publish.html#publishing-datasets",
+    "title": "Prepare and publish your data",
+    "section": "Publishing datasets",
+    "text": "Publishing datasets\nDatasets, which include data and metadata describing that data, that are generated from Jornada research projects should be submitted to the IM team (jornada.data@nmsu.edu) regularly according the policy outlined above. Once submitted, preparation and publication of a Jornada dataset is usually an iterative process (Figure 1). Researchers submit data and metadata to a Jornada Information Manager who then securely archives the data and checks these items for quality and consistency. Usually there is a period of communication and updates between the IM and the researcher until the dataset is ready for publication. Once it is, the IM encodes the data into something called an EML file, and then sends it, with the data, to the Environmental Data Initiative repository (EDI) as a published dataset. There are other variations on this process, depending on the data, but this is the most common.",
+    "crumbs": [
+      "Researcher Guide",
+      "Prepare and publish"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/project-management.html",
+    "href": "docs/researcher/project-management.html",
+    "title": "Jornada project management",
     "section": "",
-    "text": "The Jornada IM team has a significant amount of experience and a variety of tools to draw on for quality assurance and quality control (QA/QC) of long-term Jornada datasets. For data managed by individual researchers, the Jornada IM team leaves most data QA/QC up to the research group or individual, but we are happy to advise when asked. For a simple overview and some resources useful for QA/QC of tabular data, see EDI’s recommendations.",
+    "text": "Most of this chapter is under construction.",
     "crumbs": [
       "Researcher Guide",
-      "Project and data management"
+      "Jornada project management"
     ]
   },
   {
-    "objectID": "docs/researcher/project-and-data-mgmt.html#describing-data-as-you-collect-it",
-    "href": "docs/researcher/project-and-data-mgmt.html#describing-data-as-you-collect-it",
-    "title": "Managing your research project and data",
-    "section": "Describing data as you collect it",
-    "text": "Describing data as you collect it",
-    "crumbs": [
-      "Researcher Guide",
-      "Project and data management"
-    ]
-  },
-  {
-    "objectID": "docs/researcher/project-and-data-mgmt.html#updating-project-information",
-    "href": "docs/researcher/project-and-data-mgmt.html#updating-project-information",
-    "title": "Managing your research project and data",
+    "objectID": "docs/researcher/project-management.html#updating-project-information",
+    "href": "docs/researcher/project-management.html#updating-project-information",
+    "title": "Jornada project management",
     "section": "Updating project information",
     "text": "Updating project information\nPlease update the Jornada Research Site Manager (janderso@nmsu.edu) with changes to projects using updated ResNotif forms at least once per year. Send updates about project personnel or website information to the IM team (jornada.data@nmsu.edu) as necessary.",
     "crumbs": [
       "Researcher Guide",
-      "Project and data management"
+      "Jornada project management"
     ]
-  },
-  {
-    "objectID": "docs/researcher/data-reuse.html",
-    "href": "docs/researcher/data-reuse.html",
-    "title": "Using data from the Jornada",
-    "section": "",
-    "text": "Please cite Jornada data when you use it. You can do this in the reference section of a journal article, which is preferable, or the data availability statement of some journals. We’ll are encouraging this practice more and more, and will be developing better guidelines and, we hope, data citation statistics in the future.",
-    "crumbs": [
-      "Researcher Guide",
-      "Using Jornada data"
-    ]
-  },
-  {
-    "objectID": "docs/researcher/data-reuse.html#citing-the-jornada",
-    "href": "docs/researcher/data-reuse.html#citing-the-jornada",
-    "title": "Using data from the Jornada",
-    "section": "",
-    "text": "Please cite Jornada data when you use it. You can do this in the reference section of a journal article, which is preferable, or the data availability statement of some journals. We’ll are encouraging this practice more and more, and will be developing better guidelines and, we hope, data citation statistics in the future.",
-    "crumbs": [
-      "Researcher Guide",
-      "Using Jornada data"
-    ]
-  },
-  {
-    "objectID": "posts/2025-09-10_post/index.html",
-    "href": "posts/2025-09-10_post/index.html",
-    "title": "Monitoring station data at EDI",
-    "section": "",
-    "text": "The IM team recently finished reorganizing and consolidating the sensor network monitoring data (weather stations and soil profiles) published at EDI from two JRN studies - the long-term NPP sites and Cross-scale (CSIS). Together, there are 30 monitoring stations from these studies - 15 per study - with each station generating up to 8 different data tables with distinct temporal resolutions (5-minute, 30-minute, daily, etc.) and aggregated sensor data streams. In the past, each data table has been published in a separate EDI dataset, meaning that there were 222 monitoring datasets published to EDI for these two studies. Because each of these datasets had very similar metadata, discovering the data for a desired site was fairly challenging.\nWe have now consolidated all tables from each site into one EDI dataset, leaving a total of 30 monitoring datasets published on EDI for the NPP and CSIS studies. An EDI query link for the NPP and CSIS monitoring station datasets is provided in the JRN data catalog. If you have any questions about this change or are having trouble finding or understanding data in the new, consolidated format, please reach out to the IM team."
-  },
-  {
-    "objectID": "posts/2025-10-19_post/index.html",
-    "href": "posts/2025-10-19_post/index.html",
-    "title": "Upgrading the documentation system",
-    "section": "",
-    "text": "This website has just been upgraded to a Quarto website. This change also consolidates documentation from another repository, the full IM documentation, into one place. There may be some continuing changes in the next few weeks as content is reformatted and improved, but this change should provide greater stability, and be more usable going forward."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to the Jornada Data Commons",
-    "section": "",
-    "text": "This site is maintained by the Jornada Information Management (IM) team to support researchers and data managers working with data from the Jornada Basin LTER (JRN) and Jornada Experimental Range (JER) programs."
-  },
-  {
-    "objectID": "index.html#im-a-researcher-and-i-need-to",
-    "href": "index.html#im-a-researcher-and-i-need-to",
-    "title": "Welcome to the Jornada Data Commons",
-    "section": "I’m a researcher and I need to…",
-    "text": "I’m a researcher and I need to…\n\n\n\n    \n \n \n \n    Funded by NSF and USDA\n\nGet approved to do research at the Jornada\nClean and describe my research data (data QA/QC, metadata)\nSubmit or publish a dataset\nUpdate project, personnel, or website information\nFind Jornada datasets or other information\nCite a Jornada dataset or funding\nLearn more about Jornada data management"
-  },
-  {
-    "objectID": "index.html#im-a-data-manager-and-i-need-to",
-    "href": "index.html#im-a-data-manager-and-i-need-to",
-    "title": "Welcome to the Jornada Data Commons",
-    "section": "I’m a data manager and I need to…",
-    "text": "I’m a data manager and I need to…\n\nLearn more about a particular dataset\nFind templates, standards, or tools for data management\nRead or write the full IM system documentation"
-  },
-  {
-    "objectID": "index.html#more-info",
-    "href": "index.html#more-info",
-    "title": "Welcome to the Jornada Data Commons",
-    "section": "More info",
-    "text": "More info\n\nPublications, presentations, videos, and other references\nJEDS (Jornada Environmental Data Science) tutorials"
-  },
-  {
-    "objectID": "index.html#contact-us",
-    "href": "index.html#contact-us",
-    "title": "Welcome to the Jornada Data Commons",
-    "section": "Contact us",
-    "text": "Contact us\nFor questions about collecting, analyzing, publishing, and accessing Jornada data or metadata please contact the IM team (jornada.data@nmsu.edu)."
-  },
-  {
-    "objectID": "archive/index.html",
-    "href": "archive/index.html",
-    "title": "Miscellaneous documents",
-    "section": "",
-    "text": "Miscellaneous documents\n\nJornada Metadata Standards guide (out of date)\nJornada keywords thesaurus (also out of date)\nOld project and data documentation forms\nAn old ResNotif form for posterity"
-  },
-  {
-    "objectID": "posts/2025-09-01_post/index.html",
-    "href": "posts/2025-09-01_post/index.html",
-    "title": "First update",
-    "section": "",
-    "text": "This is the first in a series of updates about the Jornada Data Commons. Here you will find announcements about Jornada data publications, data management best practices, changes to our information management system and infrastructure, and data-related events."
-  },
-  {
-    "objectID": "posts/posts.html",
-    "href": "posts/posts.html",
-    "title": "Data Commons Updates",
-    "section": "",
-    "text": "Upgrading the documentation system\n\n\nThis website has been upgraded to a Quarto site\n\n\n\n\n\nOct 19, 2025\n\n\nGreg Maurer\n\n\n\n\n\n\n\n\n\n\n\n\nMonitoring station data at EDI\n\n\nAn announcement about changes in how we publish monitoring station data at EDI\n\n\n\n\n\nSep 10, 2025\n\n\nGreg Maurer\n\n\n\n\n\n\n\n\n\n\n\n\nFirst update\n\n\nAnnouncing the update posts\n\n\n\n\n\nSep 1, 2025\n\n\nGreg Maurer\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "docs/refs-and-links.html",
@@ -828,64 +769,167 @@
     ]
   },
   {
-    "objectID": "docs/researcher/prepare-and-publish-data.html",
-    "href": "docs/researcher/prepare-and-publish-data.html",
-    "title": "Preparing and publishing Jornada data",
+    "objectID": "posts/posts.html",
+    "href": "posts/posts.html",
+    "title": "Data Commons Updates",
     "section": "",
-    "text": "Once data are clean and ready to analyze or publish, it is best to describe the data with metadata that is as detailed as needed to allow interpretation and re-use. The EDI repository has more guidance here, and the Jornada IM team tries to offer extensive assistance to researchers who need to describe their datasets for publication. Its a good idea to start collecting and organizing metadata as soon as you start collecting data. There are two recommended ways to collect and organize metadata: EDI’s ezEML tool or Jornada metadata templates. These are described below.",
+    "text": "Upgrading the documentation system\n\n\nThis website has been upgraded to a Quarto site\n\n\n\n\n\nOct 19, 2025\n\n\nGreg Maurer\n\n\n\n\n\n\n\n\n\n\n\n\nMonitoring station data at EDI\n\n\nAn announcement about changes in how we publish monitoring station data at EDI\n\n\n\n\n\nSep 10, 2025\n\n\nGreg Maurer\n\n\n\n\n\n\n\n\n\n\n\n\nFirst update\n\n\nAnnouncing the update posts\n\n\n\n\n\nSep 1, 2025\n\n\nGreg Maurer\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2025-09-01_post/index.html",
+    "href": "posts/2025-09-01_post/index.html",
+    "title": "First update",
+    "section": "",
+    "text": "This is the first in a series of updates about the Jornada Data Commons. Here you will find announcements about Jornada data publications, data management best practices, changes to our information management system and infrastructure, and data-related events."
+  },
+  {
+    "objectID": "archive/index.html",
+    "href": "archive/index.html",
+    "title": "Miscellaneous documents",
+    "section": "",
+    "text": "Miscellaneous documents\n\nJornada Metadata Standards guide (out of date)\nJornada keywords thesaurus (also out of date)\nOld project and data documentation forms\nAn old ResNotif form for posterity"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to the Jornada Data Commons",
+    "section": "",
+    "text": "This site is maintained by the Jornada Information Management (IM) team to support researchers and data managers working with data from the Jornada Basin LTER (JRN) and Jornada Experimental Range (JER) programs."
+  },
+  {
+    "objectID": "index.html#im-a-researcher-and-i-need-to",
+    "href": "index.html#im-a-researcher-and-i-need-to",
+    "title": "Welcome to the Jornada Data Commons",
+    "section": "I’m a researcher and I need to…",
+    "text": "I’m a researcher and I need to…\n\n\n\n    \n \n \n \n    Funded by NSF and USDA\n\nGet approved to do research at the Jornada\nClean and describe my research data (data QA/QC, metadata)\nSubmit or publish a dataset\nUpdate project, personnel, or website information\nFind Jornada datasets or other information\nCite a Jornada dataset or funding\nLearn more about Jornada data management"
+  },
+  {
+    "objectID": "index.html#im-a-data-manager-and-i-need-to",
+    "href": "index.html#im-a-data-manager-and-i-need-to",
+    "title": "Welcome to the Jornada Data Commons",
+    "section": "I’m a data manager and I need to…",
+    "text": "I’m a data manager and I need to…\n\nLearn more about a particular dataset\nFind templates, standards, or tools for data management\nRead or write the full IM system documentation"
+  },
+  {
+    "objectID": "index.html#more-info",
+    "href": "index.html#more-info",
+    "title": "Welcome to the Jornada Data Commons",
+    "section": "More info",
+    "text": "More info\n\nPublications, presentations, videos, and other references\nJEDS (Jornada Environmental Data Science) tutorials"
+  },
+  {
+    "objectID": "index.html#contact-us",
+    "href": "index.html#contact-us",
+    "title": "Welcome to the Jornada Data Commons",
+    "section": "Contact us",
+    "text": "Contact us\nFor questions about collecting, analyzing, publishing, and accessing Jornada data or metadata please contact the IM team (jornada.data@nmsu.edu)."
+  },
+  {
+    "objectID": "posts/2025-10-19_post/index.html",
+    "href": "posts/2025-10-19_post/index.html",
+    "title": "Upgrading the documentation system",
+    "section": "",
+    "text": "This website has just been upgraded to a Quarto website. This change also consolidates documentation from another repository, the full IM documentation, into one place. There may be some continuing changes in the next few weeks as content is reformatted and improved, but this change should provide greater stability, and be more usable going forward."
+  },
+  {
+    "objectID": "posts/2025-09-10_post/index.html",
+    "href": "posts/2025-09-10_post/index.html",
+    "title": "Monitoring station data at EDI",
+    "section": "",
+    "text": "The IM team recently finished reorganizing and consolidating the sensor network monitoring data (weather stations and soil profiles) published at EDI from two JRN studies - the long-term NPP sites and Cross-scale (CSIS). Together, there are 30 monitoring stations from these studies - 15 per study - with each station generating up to 8 different data tables with distinct temporal resolutions (5-minute, 30-minute, daily, etc.) and aggregated sensor data streams. In the past, each data table has been published in a separate EDI dataset, meaning that there were 222 monitoring datasets published to EDI for these two studies. Because each of these datasets had very similar metadata, discovering the data for a desired site was fairly challenging.\nWe have now consolidated all tables from each site into one EDI dataset, leaving a total of 30 monitoring datasets published on EDI for the NPP and CSIS studies. An EDI query link for the NPP and CSIS monitoring station datasets is provided in the JRN data catalog. If you have any questions about this change or are having trouble finding or understanding data in the new, consolidated format, please reach out to the IM team."
+  },
+  {
+    "objectID": "docs/researcher/collect-qa-describe.html",
+    "href": "docs/researcher/collect-qa-describe.html",
+    "title": "Collecting and managing research data",
+    "section": "",
+    "text": "Most of this chapter is under construction.",
     "crumbs": [
       "Researcher Guide",
-      "Prepare and publish data"
+      "Collect and manage data"
     ]
   },
   {
-    "objectID": "docs/researcher/prepare-and-publish-data.html#ezeml",
-    "href": "docs/researcher/prepare-and-publish-data.html#ezeml",
-    "title": "Preparing and publishing Jornada data",
-    "section": "ezEML",
-    "text": "ezEML\nThe EDI repository has created a web app called ezEML for describing research datasets and creating standardized metadata documents for publication (EML). The tool is new but has rapidly developed to become an excellent method to author well-documented datasets. There is a Jornada EML template available on the site, so the recommended process for Jornada researchers is:\n\nLog in to ezEML using your Google, GitHub, or ORCID account (whichever is easiest).\nStart a new EML document using the “EML Documents &gt; New from Template” menu item\nNavigate to and select the “LTER/JRN/JRN_template_general” template to open a document template pre-populated with Jornada metadata.\nGive the document a unique name. You can save your metadata and then return to this document anytime.\nFollow the sequence of forms on the left, and ezEML’s prompts, to upload data files and enter metadata for your dataset. Each section of your metadata will have help available (“?” icons) and several fields will already be filled if you are using the JRN template.\nUse the “Check metadata” and “Check data tables” tools at the bottom left to check the completeness and validity of your dataset. Green lights mean your dataset is well described and ready to share.\nWhen ready, click “Submit/Share Package” and then “Collaborate with Colleagues”. DO NOT USE “Submit Package to EDI” or we may miss your dataset.\nOn the “Invite a Collaborator” screen share the dataset with a Jornada data manager (mailto:jornada.data@nmsu.edu).\n\nAt this point, the Jornada IM Team will receive a notification and can access your dataset in ezEML to review, edit, and publish to EDI.",
+    "objectID": "docs/researcher/collect-qa-describe.html#cleaning-and-qaqc",
+    "href": "docs/researcher/collect-qa-describe.html#cleaning-and-qaqc",
+    "title": "Collecting and managing research data",
+    "section": "Cleaning and QA/QC",
+    "text": "Cleaning and QA/QC\nThe Jornada IM team has a significant amount of experience and a variety of tools to draw on for quality assurance and quality control (QA/QC) of long-term Jornada datasets. For data managed by individual researchers, the Jornada IM team leaves most data QA/QC up to the research group or individual, but we are happy to advise when asked. For a simple overview and some resources useful for QA/QC of tabular data, see EDI’s recommendations.",
     "crumbs": [
       "Researcher Guide",
-      "Prepare and publish data"
+      "Collect and manage data"
     ]
   },
   {
-    "objectID": "docs/researcher/prepare-and-publish-data.html#metadata-templates",
-    "href": "docs/researcher/prepare-and-publish-data.html#metadata-templates",
-    "title": "Preparing and publishing Jornada data",
-    "section": "Metadata templates",
-    "text": "Metadata templates\nA metadata template is a document with a structure and cues that help you collect the essential metadata needed to describe a published dataset. We have created Jornada metadata templates in MS Word (.docx) or Excel (.xlsx) formats. These templates contain sections for all critical pieces of metadata, along with instructions on what to include and how to structure the information. The Excel version is slightly more detailed and may be useful for complex datasets. Completed templates and accompanying data files should be sent to the Jornada IM team (mailto:jornada.data@nmsu.edu).",
+    "objectID": "docs/researcher/collect-qa-describe.html#describing-data-as-you-collect-it",
+    "href": "docs/researcher/collect-qa-describe.html#describing-data-as-you-collect-it",
+    "title": "Collecting and managing research data",
+    "section": "Describing data as you collect it",
+    "text": "Describing data as you collect it",
     "crumbs": [
       "Researcher Guide",
-      "Prepare and publish data"
+      "Collect and manage data"
     ]
   },
   {
-    "objectID": "docs/researcher/prepare-and-publish-data.html#general-jornada-metadata-guidelines",
-    "href": "docs/researcher/prepare-and-publish-data.html#general-jornada-metadata-guidelines",
-    "title": "Preparing and publishing Jornada data",
-    "section": "General Jornada metadata guidelines",
-    "text": "General Jornada metadata guidelines\nWhile writing metadata, the Jornada metadata standards (.docx) and keyword thesauri (.xlsx) documents are helpful, but not required.",
+    "objectID": "docs/researcher/data-reuse.html",
+    "href": "docs/researcher/data-reuse.html",
+    "title": "Using and re-using data",
+    "section": "",
+    "text": "Most of this chapter is under construction! Don’t forget to cite Jornada data when you use it!!!",
     "crumbs": [
       "Researcher Guide",
-      "Prepare and publish data"
+      "Using data"
     ]
   },
   {
-    "objectID": "docs/researcher/prepare-and-publish-data.html#publishing-datasets",
-    "href": "docs/researcher/prepare-and-publish-data.html#publishing-datasets",
-    "title": "Preparing and publishing Jornada data",
-    "section": "Publishing datasets",
-    "text": "Publishing datasets\nDatasets, which include data and metadata describing that data, that are generated from Jornada research projects should be submitted to the IM team (jornada.data@nmsu.edu) regularly according the policy outlined above. Once submitted, preparation and publication of a Jornada dataset is usually an iterative process (Figure 1). Researchers submit data and metadata to a Jornada Information Manager who then securely archives the data and checks these items for quality and consistency. Usually there is a period of communication and updates between the IM and the researcher until the dataset is ready for publication. Once it is, the IM encodes the data into something called an EML file, and then sends it, with the data, to the Environmental Data Initiative repository (EDI) as a published dataset. There are other variations on this process, depending on the data, but this is the most common.\n\n\n\nFigure 1: A simplified schematic of how to publish a Jornada dataset.",
+    "objectID": "docs/researcher/data-reuse.html#downloading-and-checking",
+    "href": "docs/researcher/data-reuse.html#downloading-and-checking",
+    "title": "Using and re-using data",
+    "section": "Downloading and checking",
+    "text": "Downloading and checking",
     "crumbs": [
       "Researcher Guide",
-      "Prepare and publish data"
+      "Using data"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/data-reuse.html#integrating-data",
+    "href": "docs/researcher/data-reuse.html#integrating-data",
+    "title": "Using and re-using data",
+    "section": "Integrating data",
+    "text": "Integrating data",
+    "crumbs": [
+      "Researcher Guide",
+      "Using data"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/data-reuse.html#analyzing-data",
+    "href": "docs/researcher/data-reuse.html#analyzing-data",
+    "title": "Using and re-using data",
+    "section": "Analyzing data",
+    "text": "Analyzing data",
+    "crumbs": [
+      "Researcher Guide",
+      "Using data"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/data-reuse.html#citing-the-jornada",
+    "href": "docs/researcher/data-reuse.html#citing-the-jornada",
+    "title": "Using and re-using data",
+    "section": "Citing the Jornada",
+    "text": "Citing the Jornada\nPlease cite Jornada data when you use it. You can do this in the reference section of a journal article, which is preferable, or the data availability statement of some journals. We’ll are encouraging this practice more and more, and will be developing better guidelines and, we hope, data citation statistics in the future.",
+    "crumbs": [
+      "Researcher Guide",
+      "Using data"
     ]
   },
   {
     "objectID": "docs/researcher/discover-data.html",
     "href": "docs/researcher/discover-data.html",
-    "title": "Discovering Jornada data",
+    "title": "Discovering research data (at Jornada and beyond)",
     "section": "",
     "text": "One goal of the Jornada IM system is to make the vast majority of Jornada data accessible through the Jornada website and other avenues. On the Jornada website there are two primary data access points:\n\nThe JRN LTER primary data catalog currently provides access to Jornada data held in multiple repositories with a faceted interface. The five tabs in the data catalog are:\n\nTab 1: A list of links to “signature” long-term datasets collected at JRN, arranged by important research themes.\nTab 2: A searchable listing of all datasets held in our primary data catalog, hosted at the EDI repository.\nTab3: Is a searchable listing of Jornada data held in other repositories (not EDI).\nTab 4: A listing of a few of the most useful spatial datasets the Jornada has. This catalog will be updated soon.\nTab 5: A listing of Jornada “data partnerships”, with relevant links to data catalogs provided and managed by collaborating research networks working in the Jornada Basin are.\n\nThe interactive data viewer allows map-based browsing of some of our long-term meteorology and ecology datasets collected at the Jornada.",
     "crumbs": [
@@ -896,7 +940,7 @@
   {
     "objectID": "docs/researcher/discover-data.html#jornada-data-discovery",
     "href": "docs/researcher/discover-data.html#jornada-data-discovery",
-    "title": "Discovering Jornada data",
+    "title": "Discovering research data (at Jornada and beyond)",
     "section": "",
     "text": "One goal of the Jornada IM system is to make the vast majority of Jornada data accessible through the Jornada website and other avenues. On the Jornada website there are two primary data access points:\n\nThe JRN LTER primary data catalog currently provides access to Jornada data held in multiple repositories with a faceted interface. The five tabs in the data catalog are:\n\nTab 1: A list of links to “signature” long-term datasets collected at JRN, arranged by important research themes.\nTab 2: A searchable listing of all datasets held in our primary data catalog, hosted at the EDI repository.\nTab3: Is a searchable listing of Jornada data held in other repositories (not EDI).\nTab 4: A listing of a few of the most useful spatial datasets the Jornada has. This catalog will be updated soon.\nTab 5: A listing of Jornada “data partnerships”, with relevant links to data catalogs provided and managed by collaborating research networks working in the Jornada Basin are.\n\nThe interactive data viewer allows map-based browsing of some of our long-term meteorology and ecology datasets collected at the Jornada.",
     "crumbs": [
@@ -907,7 +951,7 @@
   {
     "objectID": "docs/researcher/overview.html",
     "href": "docs/researcher/overview.html",
-    "title": "Overview for Researchers and Staff",
+    "title": "Overview for researchers and staff",
     "section": "",
     "text": "This guide was written by Jornada information managers (IMs) and the Jornada community at large as a concise, but fairly comprehensive guide to working with Jornada data. It is designed to be accessible for students (graduate and undergraduate), investigators, postdocs, and staff scientists, and to help these groups do research, particularly data-related tasks, effectively and efficiently.",
     "crumbs": [
@@ -918,9 +962,9 @@
   {
     "objectID": "docs/researcher/overview.html#before-you-begin",
     "href": "docs/researcher/overview.html#before-you-begin",
-    "title": "Overview for Researchers and Staff",
+    "title": "Overview for researchers and staff",
     "section": "Before you begin",
-    "text": "Before you begin\nBefore you begin your research, you should know the expectations and policies the Jornada has for permitting, data management, attribution, and personal safety during research. These are covered comprehensively on the Jornada LTER and USDA-ARS Jornada Experimental Range websites. Here is a quick rundown as a reminder:\n\nYou must request approval and obtain all required permits prior to beginning field research.\nResearchers are expected to submit data and metadata to the IM team during their research, or, for some collaborators, when research concludes.\nAcknowledgement of funding support and citation of Jornada data is expected, as appropriate, in Jornada journal publications and other research products.\nResearchers must follow our safety and conduct guidelines when working at the Jornada.\n\nThis guide focuses mainly on data-related concerns, especially items 2 and 3, but some relevant forms and instructions are provided in the Starting research chapter of the guide.",
+    "text": "Before you begin\nBefore you begin your research, you should know the expectations and policies the Jornada has for permitting, data management, attribution, and personal safety during research. These are covered comprehensively on the Jornada LTER and USDA-ARS Jornada Experimental Range websites. Here is a quick rundown as a reminder:\n\nYou must request approval and obtain all required permits prior to beginning field research.\nResearchers are expected to submit data and metadata to the IM team during their research, or, for some collaborators, when research concludes.\nAcknowledgement of funding support and citation of Jornada data is expected, as appropriate, in Jornada journal publications and other research products.\nResearchers must follow our safety and conduct guidelines when working at the Jornada.\n\nThis guide focuses mainly on data-related concerns, especially items 2 and 3, but some relevant forms and instructions are provided in the Starting research chapter of the guide. Safety and conduct guidance is found in the Jornada Safety Handbook and Code of Conduct.",
     "crumbs": [
       "Researcher Guide",
       "Overview"
@@ -929,9 +973,9 @@
   {
     "objectID": "docs/researcher/overview.html#the-data-lifecycle",
     "href": "docs/researcher/overview.html#the-data-lifecycle",
-    "title": "Overview for Researchers and Staff",
+    "title": "Overview for researchers and staff",
     "section": "The data lifecycle",
-    "text": "The data lifecycle\nThis guide is organized roughly according to the data lifecycle (Michener and Jones 2012).",
+    "text": "The data lifecycle\n\n\n\nThis guide is organized roughly according to the data lifecycle (Michener and Jones 2012), which outlines 8 distinct phases of working with data in a research context. In practice these phases overlap considerably in when the phase occurs and who executes them.\n\nPlanning for research and data collection is covered in the Starting research chapter.\nWe discuss data collection, quality assurance, and many aspects of describing data (with metadata) in the Collect and manage data chapter.\nWhen you are ready to preserve your data by publishing it in a repository, read the Prepare and publish chapter.\nTo learn how and where to discover Jornada data, read the Data discovery chapter.\nData reuse, including integrating and analyzing data is covered in the Using data chapter.\n\nSince there are a lot of projects to manage at the Jornada, and we have some unique project management practices, there is also a Jornada project management chapter.",
     "crumbs": [
       "Researcher Guide",
       "Overview"
@@ -940,7 +984,7 @@
   {
     "objectID": "docs/researcher/overview.html#learn-more",
     "href": "docs/researcher/overview.html#learn-more",
-    "title": "Overview for Researchers and Staff",
+    "title": "Overview for researchers and staff",
     "section": "Learn more",
     "text": "Learn more\nThe Jornada IM team consists of both Jornada Basin LTER (JRN) and USDA-ARS Jornada Experimental Range (JER) staff. If you need to know more about how we manage data, or how you or your lab can do a better job with data, there are a number of opportunities to learn more.\n\nJornada Desert Ecology Short Course - The IM team presents there each year\nData Therapy Thursday\nSee our References and links page.",
     "crumbs": [

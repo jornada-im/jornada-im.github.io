@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-03">
+<meta name="dcterms.date" content="2025-11-11">
 
-<title>Using data from the Jornada – Jornada Data Commons</title>
+<title>Using and re-using data – Jornada Data Commons</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../docs/refs-and-links.html" rel="next">
+<link href="../../docs/researcher/project-management.html" rel="next">
 <link href="../../docs/researcher/discover-data.html" rel="prev">
 <link href="../../img/jrn-logo-light.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -139,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/researcher/data-reuse.html">Using Jornada data</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/researcher/data-reuse.html">Using data</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -169,14 +169,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/researcher/project-and-data-mgmt.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Project and data management</span></a>
+  <a href="../../docs/researcher/collect-qa-describe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Collect and manage data</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/researcher/prepare-and-publish-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Prepare and publish data</span></a>
+  <a href="../../docs/researcher/prepare-and-publish.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prepare and publish</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -188,7 +188,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../docs/researcher/data-reuse.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Using Jornada data</span></a>
+ <span class="menu-text">Using data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/researcher/project-management.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Jornada project management</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -207,7 +213,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#citing-the-jornada" id="toc-citing-the-jornada" class="nav-link active" data-scroll-target="#citing-the-jornada">Citing the Jornada</a></li>
+  <li><a href="#downloading-and-checking" id="toc-downloading-and-checking" class="nav-link active" data-scroll-target="#downloading-and-checking">Downloading and checking</a></li>
+  <li><a href="#integrating-data" id="toc-integrating-data" class="nav-link" data-scroll-target="#integrating-data">Integrating data</a></li>
+  <li><a href="#analyzing-data" id="toc-analyzing-data" class="nav-link" data-scroll-target="#analyzing-data">Analyzing data</a></li>
+  <li><a href="#citing-the-jornada" id="toc-citing-the-jornada" class="nav-link" data-scroll-target="#citing-the-jornada">Citing the Jornada</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/researcher/data-reuse.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -216,7 +225,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Using data from the Jornada</h1>
+<h1 class="title">Using and re-using data</h1>
 </div>
 
 
@@ -227,7 +236,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 3, 2025</p>
+      <p class="date">November 11, 2025</p>
     </div>
   </div>
   
@@ -239,6 +248,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><strong>Most of this chapter is under construction!</strong> Don’t forget to cite Jornada data when you use it!!!</p>
+<section id="downloading-and-checking" class="level2">
+<h2 class="anchored" data-anchor-id="downloading-and-checking">Downloading and checking</h2>
+</section>
+<section id="integrating-data" class="level2">
+<h2 class="anchored" data-anchor-id="integrating-data">Integrating data</h2>
+</section>
+<section id="analyzing-data" class="level2">
+<h2 class="anchored" data-anchor-id="analyzing-data">Analyzing data</h2>
+</section>
 <section id="citing-the-jornada" class="level2">
 <h2 class="anchored" data-anchor-id="citing-the-jornada">Citing the Jornada</h2>
 <p>Please cite Jornada data when you use it. You can do this in the reference section of a journal article, which is preferable, or the data availability statement of some journals. We’ll are encouraging this practice more and more, and will be developing better guidelines and, we hope, data citation statistics in the future.</p>
@@ -654,8 +673,8 @@ ul.task-list li input[type="checkbox"] {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../docs/refs-and-links.html" class="pagination-link" aria-label="Useful references and links">
-        <span class="nav-page-text">Useful references and links</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../docs/researcher/project-management.html" class="pagination-link" aria-label="Jornada project management">
+        <span class="nav-page-text">Jornada project management</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
