@@ -2,7 +2,7 @@
 
 **Research approval**
 
-* To request approval to conduct research at the Jornada, fill out the [ResNotif form](Jornada_resnotif_form.docx) and send to [Conrad Nelson](mailto:cwnelson@nmsu.edu).
+To request approval to conduct research at the Jornada, fill out the [ResNotif form](Jornada_resnotif_form.docx) and send to [Conrad Nelson](mailto:cwnelson@nmsu.edu).
 
 **Project management info**
 
@@ -17,6 +17,4 @@ We strongly recommend using the Environmental Data Initiative's [ezEML](https://
 
 **Data requests**
 
-Most data are openly available at the Jornada LTER [website data catalog](https://lter.jornada.nmsu.edu/data-catalog), but some spatial data are restricted access only.
-
-* Fill out the [Spatial Data Request](https://docs.google.com/forms/d/e/1FAIpQLSdJijSKE4C9G5pgB__yGelBx5j9OPBSKOoCg4MJP-eb-Isiew/viewform?usp=dialog) form to request restricted spatial data.
+Most data are openly available at the Jornada LTER [website data catalog](https://lter.jornada.nmsu.edu/data-catalog), but some spatial data are restricted access only. To request spatial data, fill out the [Jornada Spatial Data Policy Agreement](https://docs.google.com/forms/d/e/1FAIpQLSdJijSKE4C9G5pgB__yGelBx5j9OPBSKOoCg4MJP-eb-Isiew/viewform?usp=dialog). You can also request to join the [Jornada GeoPortal](https://jornada-geoportal.nmsu.maps.arcgis.com) with this form.

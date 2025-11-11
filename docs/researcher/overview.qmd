@@ -1,5 +1,5 @@
 ---
-title: Overview for Researchers and Staff
+title: Overview for researchers and staff
 author: The Jornada Information Management Team
 date: last-modified
 ---
@@ -15,11 +15,23 @@ Before you begin your research, you should know the expectations and policies th
  3. Acknowledgement of funding support and citation of Jornada data is expected, as appropriate, in Jornada journal publications and other research products.
  4. Researchers must follow our safety and conduct guidelines when working at the Jornada. 
 
-This guide focuses mainly on data-related concerns, especially items 2 and 3, but some relevant forms and instructions are provided in the [Starting research](./starting-research.qmd) chapter of the guide.
+This guide focuses mainly on data-related concerns, especially items 2 and 3, but some relevant forms and instructions are provided in the [Starting research](./starting-research.qmd) chapter of the guide. Safety and conduct guidance is found in the Jornada [Safety Handbook and Code of Conduct](https://drive.google.com/file/d/1aDyNo296N7Y1AO-BxLGcAhPj6yGK0u5S/view).
 
 ## The data lifecycle
 
-This guide is organized roughly according to the data lifecycle [@michener_ecoinformatics_2012].
+::: {style="float: right; margin: 5px;"}
+![](img/dataone_ls_stage_all.png){width=275px fig-alt="The DataONE data lifecycle from [@michener_ecoinformatics_2012]"}
+:::
+
+This guide is organized roughly according to the data lifecycle [@michener_ecoinformatics_2012], which outlines 8 distinct phases of working with data in a research context. In practice these phases overlap considerably in when the phase occurs and who executes them.
+
+* **Planning** for research and data collection is covered in the [Starting research](starting-research.qmd) chapter.
+* We discuss data **collection**, **quality assurance**, and many aspects of **describing** data (with metadata) in the [Collect and manage data](collect-qa-describe.qmd) chapter.
+* When you are ready to **preserve** your data by publishing it in a repository, read the [Prepare and publish](prepare-and-publish.qmd) chapter.
+* To learn how and where to **discover** Jornada data, read the [Data discovery](discover-data.qmd) chapter.
+* Data reuse, including **integrating** and **analyzing** data is covered in the [Using data](data-reuse.qmd) chapter.
+
+Since there are a lot of projects to manage at the Jornada, and we have some unique project management practices, there is also a [Jornada project management](project-management.qmd) chapter.
 
 
 ## Learn more

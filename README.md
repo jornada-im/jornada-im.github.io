@@ -26,6 +26,12 @@ jornada-im.github.io/
 
 The `index.qmd` file is the source for the HTML index, or landing page, of the website. The `_quarto.yml` file is a YAML file that defines how the website is structured, the navigation system, and the rendering options that Quarto uses to build the HTML and other files. The IM (`docs/im/`) and researcher (`docs/researcher/`) directories contain numerous subdirectories and source files, but some guideposts are provided in the `overview.qmd` pages in each directory.
 
+## Related materials
+
+* The Jornada Basin LTER website's ["For Researchers" page](https://lter.jornada.nmsu.edu/for-researchers/) outlines many of our research policies, and the related approval and data management procedures that Jornada researchers need to be aware of. That page and these documentations pages should be kept in sync with each other.
+* The U.S. LTER Network provides high-level guidance about network data management and access expectations, and fairly extensive documentation of IM procedures for meeting these expectations at sites in the network. Check the [LTER Data Access Policy](https://lternet.edu/data-access-policy/) and the [Network IM documentation site](https://lter.github.io/docs-network/im/home.html) for more.
+* The IM Team has a Google Drive [folder](https://drive.google.com/drive/folders/1b0omYeAJYFwHExOtM8qMcfIinyNcEg6M?usp=drive_link) with collected schematics and other graphics describing the IM system. Many of these serve as the source for figures in this documentation website.
+
 ## Contributing
 
 Jornada researchers, staff, and data managers are welcome to contribute to this documentation. Contributions could include fixing typos and errors, suggesting new and improved text, or just pointing out documentation that should exist but doesn't. There are a few ways you can do this:

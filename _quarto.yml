@@ -50,14 +50,16 @@ website:
           text: "Overview"
         - href: docs/researcher/starting-research.qmd
           text: "Starting research"
-        - href: docs/researcher/project-and-data-mgmt.qmd
-          text: "Project and data management"
-        - href: docs/researcher/prepare-and-publish-data.qmd
-          text: "Prepare and publish data"
+        - href: docs/researcher/collect-qa-describe.qmd
+          text: "Collect and manage data"
+        - href: docs/researcher/prepare-and-publish.qmd
+          text: "Prepare and publish"
         - href: docs/researcher/discover-data.qmd
           text: "Discover Jornada data"
         - href: docs/researcher/data-reuse.qmd
-          text: "Using Jornada data"
+          text: "Using data"
+        - href: docs/researcher/project-management.qmd
+          text: "Jornada project management"
         - href: docs/refs-and-links.qmd
           text: "Useful references and links"
     - title: "IM Guide"
