@@ -166,7 +166,7 @@ Unfortunately, spreadsheets sometimes make the wrong assumption about the data y
 
 ### Special case data
 
-Like people, many categories of data don't fit into the traditional tabular mold and are special in their own way. 
+Like people, many categories of data are special in their own way and don't fit into the traditional tabular mold. There is a detailed [Data Package Design for Special Cases](https://ediorg.github.io/data-package-best-practices/guide-special-cases/preface.html) guide from LTER Network IMs and EDI with more to say about these special cases [@gries_data_2021].
 
 ::: {.panel-tabset}
 
