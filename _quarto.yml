@@ -25,9 +25,9 @@ website:
     #background: light
     left:
       - text: "Researcher Guide"
-        href: docs/researcher/overview.qmd
+        href: docs/researcher/introduction.qmd
       - text: "IM Guide"
-        href: docs/im/overview.qmd
+        href: docs/im/introduction.qmd
       - text: "Document Archive"
         menu:
           - templates/index.qmd
@@ -46,8 +46,8 @@ website:
       style: floating
       collapse-level: 2
       contents:
-        - href: docs/researcher/overview.qmd
-          text: "Overview"
+        - href: docs/researcher/introduction.qmd
+          text: "Introduction"
         - href: docs/researcher/starting-research.qmd
           text: "Starting research"
         - href: docs/researcher/collect-qa-describe.qmd
@@ -67,8 +67,8 @@ website:
       style: floating
       collapse-level: 2
       contents:
-        - href: docs/im/overview.qmd
-          text: "Overview"
+        - href: docs/im/introduction.qmd
+          text: "Introduction"
         - section: "Metadata standards"
           contents: docs/im/standards/*
         - section: "Procedures"
