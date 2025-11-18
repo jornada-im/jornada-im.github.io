@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-11">
+<meta name="dcterms.date" content="2025-11-18">
 
 <title>Collecting and managing research data – Jornada Data Commons</title>
 <style>
@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -41,10 +61,13 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-95f147d06fdb9f8ce149f95e323965f4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-68c8bffd90dad8f2b55c52d7b6410dc0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-57d88ccbd0ee5f8a904b59050ba3efd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -97,11 +120,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../../docs/researcher/overview.html" aria-current="page"> 
+    <a class="nav-link active" href="../../docs/researcher/introduction.html" aria-current="page"> 
 <span class="menu-text">Researcher Guide</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../docs/im/overview.html"> 
+    <a class="nav-link" href="../../docs/im/introduction.html"> 
 <span class="menu-text">IM Guide</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -149,16 +172,12 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="../../index.html" class="sidebar-logo-link">
-      </a>
-      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/researcher/overview.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Overview</span></a>
+  <a href="../../docs/researcher/introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -213,8 +232,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#cleaning-and-qaqc" id="toc-cleaning-and-qaqc" class="nav-link active" data-scroll-target="#cleaning-and-qaqc">Cleaning and QA/QC</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#collecting-useful-data" id="toc-collecting-useful-data" class="nav-link" data-scroll-target="#collecting-useful-data">Collecting useful data</a>
+  <ul class="collapse">
+  <li><a href="#content-and-source" id="toc-content-and-source" class="nav-link" data-scroll-target="#content-and-source">Content and source</a></li>
+  <li><a href="#data-format" id="toc-data-format" class="nav-link" data-scroll-target="#data-format">Data format</a></li>
+  <li><a href="#file-formats" id="toc-file-formats" class="nav-link" data-scroll-target="#file-formats">File formats</a></li>
+  <li><a href="#intended-use" id="toc-intended-use" class="nav-link" data-scroll-target="#intended-use">Intended use</a></li>
+  <li><a href="#special-case-data" id="toc-special-case-data" class="nav-link" data-scroll-target="#special-case-data">Special case data</a></li>
+  </ul></li>
+  <li><a href="#cleaning-and-qaqc" id="toc-cleaning-and-qaqc" class="nav-link" data-scroll-target="#cleaning-and-qaqc">Cleaning and QA/QC</a></li>
   <li><a href="#describing-data-as-you-collect-it" id="toc-describing-data-as-you-collect-it" class="nav-link" data-scroll-target="#describing-data-as-you-collect-it">Describing data as you collect it</a></li>
+  <li><a href="#storage-and-backup" id="toc-storage-and-backup" class="nav-link" data-scroll-target="#storage-and-backup">Storage and backup</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/researcher/collect-qa-describe.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -234,7 +263,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 11, 2025</p>
+      <p class="date">November 18, 2025</p>
     </div>
   </div>
   
@@ -246,18 +275,314 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p><strong>Most of this chapter is under construction.</strong></p>
+<div style="float: right; margin: 5px;">
+<p><img src="img/data_collection_workflow.png" class="img-fluid" alt="What is your scientific data workflow? There are some common themes for any type of data you might work with." width="300"></p>
+</div>
+<p>In this chapter we present some best practices to help you collect quality Jornada data that can be used in the future. The advice here varies depending on the type of data being collected — there are many kinds of research data — but some common themes apply. You should use consistent standards to collect, format, and apply quality assurance and control operations (QA/QC) to your data, all while describing the process and data products with rich metadata. These steps are the first building blocks of your research data workflow.</p>
+</section>
+<section id="collecting-useful-data" class="level2">
+<h2 class="anchored" data-anchor-id="collecting-useful-data">Collecting useful data</h2>
+<p>Research data are very diverse, but there are some common techniques to manage new data and make them useful. Below we discuss data management best practices organized around several of the data attributes of data you’ll deal with in the real world.</p>
+<ul>
+<li><strong>Content and source</strong>: What the data are about and where they came from</li>
+<li><strong>Data format</strong>: How data are represented in terms of structure, organization, and relationships</li>
+<li><strong>File format</strong>: The physical format the data are stored in, such as a text file or JPEG image</li>
+<li><strong>Intended use</strong>: How the data will be used</li>
+</ul>
+<p>We are using <strong>tabular data</strong>, such as spreadsheets, comma-separated value (CSV) files, and similar tables, as the primary example here because they are the most common and recognizeable kind of data the environmental sciences. In fact, lots of data we don’t think of as tabular can still be represented in a table. A “Special cases” section below gives examples for other data types.</p>
+<section id="content-and-source" class="level3">
+<h3 class="anchored" data-anchor-id="content-and-source">Content and source</h3>
+<p>Many variables, about any number of phenomena, can be measured or observed. The <strong>content</strong> of the data refers to what the data you collect are about. So, what variables did you collect, and what real-world place, organism, thing, or process did you observe or measure them from? For our purposes at the Jornada we are usually studying biotic or abiotic phenomena in our slice of the Chihuahuan Desert. Make sure to create some good metadata about the content of your data that can be used as context in a published dataset.</p>
+<p>The <strong>source</strong> of the data refers to where the data came from and how they were acquired. So, were the data collected in the field by a primary observer? By an autonomous sensor system? Or did the come from another researcher? In modern research it is common to integrate data from multiple sources, and it pays to document those sources well. If you collect the data yourself you have the opportunity to describe how you did so with rich metadata, which will make your data useful for the long term. If you use a previously-collected dataset, you’ll need to interpret and then cite it, and you’ll have an easier time if the creator was diligent about their metadata.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Best practices
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>For data content:</strong></p>
+<ol type="1">
+<li>Know what your data are about, including the system being studied, and the variables observed or measured.</li>
+<li>Be prepared to describe what the data are about in your metadata.</li>
+<li>Be aware of any requirements and limitations for the data you collect (e.g.&nbsp;human subject or endangered species data).</li>
+</ol>
+<p><strong>For data source:</strong></p>
+<ol type="1">
+<li>Keep a detailed field or laboratory notebook to document your data collection activities.</li>
+<li>For autonomous data-collection systems (dataloggers, sensors, etc) keep extensive documentation, installation photos, and a log of changes and known issues.</li>
+<li>If you synthesize data from external sources or published studies, document the origin of all data you use.</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="data-format" class="level3">
+<h3 class="anchored" data-anchor-id="data-format">Data format</h3>
+<p>There are at least two meanings wrapped up in the term “data format.” First, a data format describes the way data are structured, organized, and related.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> For example, tabular data files contain rows and columns that represent the variables and observations of the data, and there can be more than one way to arrange those. The second meaning of “data format” refers to the fact that the data values for any variable can be represented in more than one way. An identical date, for example, can be formatted as the text string “July 2, 1974” or as “1974-07-02.”</p>
+<p>For tabular data, structuring the data you collect into the simplest possible table format is the best policy. First think about what variables you collect. Some will be categorical (treatment, plot number) and some are continuous (measured biomass, temperature). Then consider what an observation is. <em>Is it a monthly measurement of a plant, or an hourly temperature value recorded by a sensor?</em> Then, organize these values logically into clearly labeled columns and rows so that the data are understandable. If you’ve heard of “Tidy data”, this is a great mental model to use for organizing data in a table <span class="citation" data-cites="wickham_tidy_2014">(<a href="#ref-wickham_tidy_2014" role="doc-biblioref">Wickham 2014</a>)</span>. In tidy tables, the columns are always variables and the rows represent observations (more details below). When you format the actual data values within the table, use the most understandable and granular format you can. If you have a nested experimental design with blocks, plots, and individuals for example, separate the values for these variables into different columns. For date and time values, we recommend using the <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO standard</a> (YYYY-MM-DD) rather than the traditional month-day-year (mm/dd/yy) format. The tabs below have some examples.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">A not-great table</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">A better table</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>In this example table you can see several data no-no’s.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="img/table_notgreat.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="A not-so-great table (click to expand)"><img src="img/table_notgreat.png" class="img-fluid figure-img" style="width:40.0%" alt="A not-so-great table (click to expand)"></a></p>
+<figcaption>A not-so-great table (click to expand)</figcaption>
+</figure>
+</div>
+<ul>
+<li>Several categorical variables have been joined into one in the “LOC” column.</li>
+<li>The variable names don’t give you a hint of what they are.</li>
+<li>The “DATE” column would be easy to misinterpret.</li>
+<li>There is no missing value indicator. For blank observations, was the individual missing or did the observer make a mistake?</li>
+</ul>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>In this example most of those issues have been corrected.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="img/table_better.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="A better table (click to expand)"><img src="img/table_better.png" class="img-fluid figure-img" style="width:70.0%" alt="A better table (click to expand)"></a></p>
+<figcaption>A better table (click to expand)</figcaption>
+</figure>
+</div>
+<ul>
+<li>The variable columns are distinct and have granular values with clear column labeles.</li>
+<li>The date column follows the ISO standard (YYYY-MM-DD).</li>
+<li>“NA” values are used for missing data, and there is a comment column indicating what they mean.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>More about Tidy data
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>In the <em>Tidy data</em> paper <span class="citation" data-cites="wickham_tidy_2014">(<a href="#ref-wickham_tidy_2014" role="doc-biblioref">Wickham 2014</a>)</span>, the claim is that “80% of data analysis is spent on the process of cleaning and preparing the data.” Adhering to a clear, easy-to-understand data format can help lower this burden and make data easier to clean, filter, and analyze. The tidy data model, or “long” format, aims to do this by following three rules:</p>
+<ul>
+<li>Each column holds one variable.</li>
+<li>Each row represents observation.</li>
+<li>Each cell holds a single value.</li>
+</ul>
+<p>The resulting tables look like so:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/table_tidy.png" class="img-fluid figure-img"></p>
+<figcaption>Long form (“tidy”) data where columns represent variables and rows represent observations</figcaption>
+</figure>
+</div>
+<p>This is in contrast to “wide,” or “untidy,” format, in which variables and observations may be organized in either rows or columns. The same data in wide format could look like either of these tables:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/table_untidy_2.png" class="img-fluid figure-img"></p>
+<figcaption>The same data as above in wide form (“untidy”)</figcaption>
+</figure>
+</div>
+<p>Keep in mind that wide/untidy format isn’t always bad. Wide tables tend to take up less space on disk, and in addition, they can be called for in many standard statistical analyses.</p>
+<p><strong>Bottom line</strong>: Tidy data is a great default format with several advantages, but be ready to use wide/untidy formats when necessary too.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Best practices
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Use the simplest possible data structure.</li>
+<li>Organize data by observational unit during collection.</li>
+<li>Maximize the information for each observation.</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="file-formats" class="level3">
+<h3 class="anchored" data-anchor-id="file-formats">File formats</h3>
+<ul>
+<li>Some are specific to data type.</li>
+<li>Some are more accessible and versatile than others.</li>
+<li>When in doubt use a text file, like a comma separated value (CSV).</li>
+</ul>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Delimited text (CSV)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Excel spreadsheet</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Relational database</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false" href="">Cloud-native</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false" href="">Other</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>Delimited text files are a great format for using, archiving, and sharing your data. Rows of data values are stored as lines in a text files with a designated character serving as the delimiter between columns of data. They are simple to understand, fairly space-efficient, and easy to use with almost any tool in your data workflow (R, Python, Excel, GIS software, etc.). They may have a <code>.txt</code>, <code>.csv</code>, <code>.tsv</code>, or other file extension depending on the delimiter and convention.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="img/format_csv.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="A text file with the comma (,) as the column delimiter. This is the always-friendly “comma-separated value” (.csv) format, but other delimiters are sometimes used. (click to expand)"><img src="img/format_csv.png" class="img-fluid figure-img" style="width:80.0%" alt="A text file with the comma (,) as the column delimiter. This is the always-friendly “comma-separated value” (.csv) format, but other delimiters are sometimes used. (click to expand)"></a></p>
+<figcaption>A text file with the comma (,) as the column delimiter. This is the always-friendly “comma-separated value” (.csv) format, but other delimiters are sometimes used. (click to expand)</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>Microsoft Excel is a powerful spreadsheet program with a long history of use in research. Excel spreadsheets live in the <code>.xlsx</code> file format, though there are many other non-Microsoft formats Excel can read and write, including delimited text and <code>.csv</code> files. Also note that Microsoft Excel is not the only spreadsheet game in town. Google Sheets and LibreOffice Calc are both full-featured and can interoperate with Excel file formats very well.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="img/format_excel.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="An Excel spreadsheet (.xlsx file) showing the same data as presented in the first panel. This is a well-formatted spreadsheet table that wouldn’t be any trouble to pick up and use."><img src="img/format_excel.png" class="img-fluid figure-img" style="width:90.0%" alt="An Excel spreadsheet (.xlsx file) showing the same data as presented in the first panel. This is a well-formatted spreadsheet table that wouldn’t be any trouble to pick up and use."></a></p>
+<figcaption>An Excel spreadsheet (.xlsx file) showing the same data as presented in the first panel. This is a well-formatted spreadsheet table that wouldn’t be any trouble to pick up and use.</figcaption>
+</figure>
+</div>
+<p>Unfortunately, spreadsheets sometimes make the wrong assumption about the data you enter, and they are prone to being used in non-standard ways. That makes spreadsheet files a little less friendly as an archive and distribution format for research data. See the example below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="img/table_unpleasant.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="A very unpleasant Excel spreadsheet that would be difficult to use. In spreadsheets it is pretty easy to mix very different kinds of data into the same column or row, and to include unpredictable groupings and sub-tables within the sheet. Don’t do this if you use Excel — try to format the data for easy re-usability by others (or your future self)."><img src="img/table_unpleasant.png" class="img-fluid figure-img" style="width:70.0%" alt="A very unpleasant Excel spreadsheet that would be difficult to use. In spreadsheets it is pretty easy to mix very different kinds of data into the same column or row, and to include unpredictable groupings and sub-tables within the sheet. Don’t do this if you use Excel — try to format the data for easy re-usability by others (or your future self)."></a></p>
+<figcaption>A very unpleasant Excel spreadsheet that would be difficult to use. In spreadsheets it is pretty easy to mix very different kinds of data into the same column or row, and to include unpredictable groupings and sub-tables within the sheet. Don’t do this if you use Excel — try to format the data for easy re-usability by others (or your future self).</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+
+</div>
+<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
+
+</div>
+<div id="tabset-2-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-5-tab">
+
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Best practices
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Use open, community standard file formats instead of proprietary ones whenever possible.</li>
+<li>…</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="intended-use" class="level3">
+<h3 class="anchored" data-anchor-id="intended-use">Intended use</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Best practices
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>?</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="special-case-data" class="level3">
+<h3 class="anchored" data-anchor-id="special-case-data">Special case data</h3>
+<p>Like people, many categories of data don’t fit into the traditional tabular mold and are special in their own way.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Tabular</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Images</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Sensor data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false" href="">Geospatial</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-5" role="tab" aria-controls="tabset-3-5" aria-selected="false" href="">Sequencing &amp; ‘omics’ data</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<p><strong>Tabular data</strong> is the default. Data values are arranged in columns and rows for variables and observations.</p>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<p>Images captured from various sensors and platforms like cameras, UAVs, or remote sensing satellites.</p>
+<ul>
+<li>Content</li>
+<li>Source (or acquisition method)</li>
+<li>Data structure</li>
+<li>File format</li>
+<li>Intended use</li>
+</ul>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<p>Data collected from sensors</p>
+<ul>
+<li>Content</li>
+<li>Source (or acquisition method)</li>
+<li>Data structure</li>
+<li>File format</li>
+<li>Intended use</li>
+</ul>
+</div>
+<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
+<ul>
+<li>Content</li>
+<li>Source (or acquisition method)</li>
+<li>Data structure</li>
+<li>File format</li>
+<li>Intended use</li>
+</ul>
+</div>
+<div id="tabset-3-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-5-tab">
+<p>Sequencing and genomic data</p>
+<ul>
+<li>Content</li>
+<li>Source (or acquisition method)</li>
+<li>Data structure</li>
+<li>File format</li>
+<li>Intended use</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</section>
 <section id="cleaning-and-qaqc" class="level2">
 <h2 class="anchored" data-anchor-id="cleaning-and-qaqc">Cleaning and QA/QC</h2>
 <p>The Jornada IM team has a significant amount of experience and a variety of tools to draw on for quality assurance and quality control (QA/QC) of long-term Jornada datasets. For data managed by individual researchers, the Jornada IM team leaves most data QA/QC up to the research group or individual, but we are happy to advise when asked. For a simple overview and some resources useful for QA/QC of tabular data, see <a href="https://edirepository.org/resources/cleaning-data-and-quality-control">EDI’s recommendations</a>.</p>
 </section>
 <section id="describing-data-as-you-collect-it" class="level2">
 <h2 class="anchored" data-anchor-id="describing-data-as-you-collect-it">Describing data as you collect it</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/michener97_information_loss.png" class="img-fluid figure-img" width="500"></p>
+<figcaption>Example of the normal degradation in information content associated with data and metadata over time (“information entropy”). Accidents or changes in technology (dashed line) may eliminate access to remaining raw data and metadata at any time <span class="citation" data-cites="michener_nongeospatial_1997">(from <a href="#ref-michener_nongeospatial_1997" role="doc-biblioref">Michener et al. 1997</a>)</span></figcaption>
+</figure>
+</div>
+</section>
+<section id="storage-and-backup" class="level2">
+<h2 class="anchored" data-anchor-id="storage-and-backup">Storage and backup</h2>
+<p>Store your data securely and have a reliable backup system for them.</p>
+
 
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-michener_nongeospatial_1997" class="csl-entry" role="listitem">
+Michener, William K., James W. Brunt, John J. Helly, Thomas B. Kirchner, and Susan G. Stafford. 1997. <span>“Nongeospatial <span>Metadata</span> for the <span>Ecological</span> <span>Sciences</span>.”</span> <em>Ecological Applications</em> 7 (1): 330–42. <a href="https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2">https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2</a>.
+</div>
+<div id="ref-wickham_tidy_2014" class="csl-entry" role="listitem">
+Wickham, Hadley. 2014. <span>“Tidy <span>Data</span>.”</span> <em>Journal of Statistical Software</em> 59 (September): 1–23. <a href="https://doi.org/10.18637/jss.v059.i10">https://doi.org/10.18637/jss.v059.i10</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>The concepts of data formats and data structuring can become fairly complicated and are related to the disciplines of <a href="https://en.wikipedia.org/wiki/Database_design">database design</a> and <a href="https://en.wikipedia.org/wiki/Data_modeling">data modeling</a>. For example, when designing a database one must decide what the entities (tables), attributes (columns), and relationships (links between tables/columns) are. We won’t go into this much depth here, but it can sometimes be useful to have a detailed conceptual picture of how your research data fit together.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -671,8 +996,40 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/researcher/collect-qa-describe.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/researcher/collect-qa-describe.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+</body></html>

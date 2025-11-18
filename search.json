@@ -91,25 +91,147 @@
     "text": "Forms and templates\nResearch approval\nTo request approval to conduct research at the Jornada, fill out the ResNotif form and send to Conrad Nelson.\nProject management info\nTo update the Jornada team about changes to your project use the ProjectInfo form\nData submission and publishing\nWe strongly recommend using the Environmental Data Initiative’s ezEML application according to our instructions here, but if this is not sufficient for your needs we have metadata templates that you may send to the Jornada IM team.\n\nMS Word format for relatively simple datasets with few tables.\nMS Excel format for more complex datasets with multiple tables.\n\nData requests\nMost data are openly available at the Jornada LTER website data catalog, but some spatial data are restricted access only. To request spatial data, fill out the Jornada Spatial Data Policy Agreement. You can also request to join the Jornada GeoPortal with this form."
   },
   {
-    "objectID": "docs/im/overview.html",
-    "href": "docs/im/overview.html",
-    "title": "Overview for Information Managers",
+    "objectID": "docs/im/standards/JRN_metadata_standards.html",
+    "href": "docs/im/standards/JRN_metadata_standards.html",
+    "title": "Jornada Dataset Metadata Standards",
     "section": "",
-    "text": "This is the full documentation for the Jornada Basin LTER Information Management system, covering technical aspects of our data publishing process, data management tools, and administration of public-facing information like the website and data catalog. Researchers and data users should start at the Jornada IM web pages to get started with Jornada data management. This is a DRAFT document.",
+    "text": "If you edit this document please track your changes and send to Greg Maurer (gmaurer.jrn.lter@gmail.com).\nNotes about things that need to be expanded or verified are marked with “???”",
     "crumbs": [
       "IM Guide",
-      "Overview"
+      "Metadata standards",
+      "Jornada Dataset Metadata Standards"
     ]
   },
   {
-    "objectID": "docs/im/overview.html#standards",
-    "href": "docs/im/overview.html#standards",
-    "title": "Overview for Information Managers",
-    "section": "standards",
-    "text": "standards\nA directory of documents about best practices and standards for metadata creation at Jornada Basin LTER.\nPlease refer to these as you are packaging data and creating EML documents for Jornada Basin research products.\nEdit as you see fit, but please track your changes when possible and Greg will try to sync with the GitHub version of this repository.",
+    "objectID": "docs/im/standards/JRN_metadata_standards.html#using-this-document",
+    "href": "docs/im/standards/JRN_metadata_standards.html#using-this-document",
+    "title": "Jornada Dataset Metadata Standards",
+    "section": "Using this document",
+    "text": "Using this document\nThe metadata standards in this document are structured and formatted similarly to an EML document. Named EML elements are surrounded by angle brackets, and there are headings for most important elements. At the Jornada Basin LTER, a variety of tools are being used to create EML documents during the data packaging process (EMLassemblyline, GCE Toolbox +, etc.). Notes about using these tools to create each EML element are present in the relevant section of this document (???Add these in as you edit).\nNote that EML documents are hierarchical. The root element is &lt;eml:eml&gt; (denoted by the path /eml:eml). Below the EML root element are 3 elements, &lt;access&gt;, &lt;dataset&gt;, and &lt;additional_metadata&gt; (paths /eml:eml/access, /eml:eml/dataset, and /eml:eml/additional_metadata). This document contains metadata standards for elements under the &lt;dataset&gt; element of Jornada EML files only. We may add standards for EML &lt;access&gt; and &lt;additional_metadata&gt; elements at a later time.",
     "crumbs": [
       "IM Guide",
-      "Overview"
+      "Metadata standards",
+      "Jornada Dataset Metadata Standards"
+    ]
+  },
+  {
+    "objectID": "docs/im/standards/JRN_metadata_standards.html#title",
+    "href": "docs/im/standards/JRN_metadata_standards.html#title",
+    "title": "Jornada Dataset Metadata Standards",
+    "section": "<title>*",
+    "text": "&lt;title&gt;*\n* This is a required element.\nThe &lt;title&gt; element should contain a descriptive title that includes type of data collected, geographic indicator, and temporal range of the data (what, where, when). Keep in mind that package titles are searchable and are a user’s first point of contact when searching for data packages.\nBest practices:\n\nFor the title’s geographic indicator all Jornada Basin LTER data packages should include “Jornada Basin LTER”.\nIf the data come from an established study with a name or acronym, include the name or acronym in the title (NPP study, SMES, NEAT, etc.)\nFor the temporal range of completed data packages give the starting year of the data to the ending year; “2009-2015”, for example.\nFor the temporal range of ongoing data packages there are 2 possibilities:\n\nWrite the end of the temporal range as a year if data collection occurs less frequently than yearly (“2010-2018” for a package collected every 2 years).\nWrite the end of the temporal range as “ongoing” if data collection occurs yearly or more frequently (“2010-ongoing” if data were last updated a year ago or less).",
+    "crumbs": [
+      "IM Guide",
+      "Metadata standards",
+      "Jornada Dataset Metadata Standards"
+    ]
+  },
+  {
+    "objectID": "docs/im/standards/JRN_metadata_standards.html#personnel-and-organization-elements-creator-project-etc.",
+    "href": "docs/im/standards/JRN_metadata_standards.html#personnel-and-organization-elements-creator-project-etc.",
+    "title": "Jornada Dataset Metadata Standards",
+    "section": "Personnel and organization elements (<creator>, <project>, etc.)",
+    "text": "Personnel and organization elements (&lt;creator&gt;, &lt;project&gt;, etc.)\nThere are a number of elements in this category grouped together here. They normally appear within the &lt;dataset&gt; element (/eml:eml/dataset/creator, /eml:eml/dataset/contact, etc)\nAt least one &lt;contact&gt; element must be supplied in every EML document. All EML documents should have at least one person in a &lt;creator&gt; element, but exceptions can be made if this information has been lost in very old Jornada data packages.\n\n&lt;contact&gt;*\n* This is a required element.\nContacts are people (or positions, like Data Manager) that should be contacted for access to, or information about, the data package. For Jornada data packages this should include:\n\nThe “Current responsible investigator” (if available)\nThe JRN LTER Information Manager (datamanager.jrn.lter@gmail.com)\n\nJRN LTER defines the “Current responsible investigator” as the LTER principal investigator who curates a study and its associated data package(s). For data packages without a “current responsible PI”, John Anderson has historically been listed with this role under &lt;contact&gt;. When updating one of these packages, ask John if he would like to remain in this position. If not, he may be removed and it is acceptable to list only the Data Manager.\nNo other contacts are defined.\n\n\n&lt;creator&gt;*\n*This is a required element.\nCreators are people with direct intellectual contributions to the data package and so could include PIs, postdocs, students, and other researchers. There can be multiple &lt;creator&gt; elements in a Jornada EML document. These should include:\n\nOriginal PIs\nFormer responsible PIs\nCurrent responsible PIs\nPostDocs, grad students, and other researchers (??? need to verify this)\n\nIf for some reason the original PI for the data package is unknown, it is acceptable to list the Jornada Basin LTER as an organization in the &lt;creator&gt; element.\n\n\n&lt;project&gt;\nThis element should be included in EML for all JRN data packages and should contain the &lt;title&gt;, &lt;organization&gt;, &lt;funding&gt;, and &lt;personnel&gt; sub-elements within it. List the Jornada Basin LTER as the project &lt;title&gt;, New Mexico State University as &lt;organization&gt;, and the current responsible PI for the data package as the &lt;personnel&gt;. The &lt;funding&gt; element should include the NSF award number (DEB-1832194 or similar) that was active when the project was initiated.\nThis element is created automatically by EMLassemblyline if a personnel entry is listed with the role “PI”.\nProvisional change: If there is no current responsible PI for a completed package, it may be acceptable to omit the &lt;project&gt;&lt;personnel&gt; element as long as the other elements are complete. (??? need to verify this is ok)\n\n\nOther personnel and organization elements\nOther personnel and organization elements, such as &lt;metadataProvider&gt;, &lt;associatedParty&gt;, or &lt;publisher&gt;, can be defined in EML and have been included in Jornada Basin LTER data packages. There is no standardized policy for these yet, so when updating such packages, preserve these elements if possible.",
+    "crumbs": [
+      "IM Guide",
+      "Metadata standards",
+      "Jornada Dataset Metadata Standards"
+    ]
+  },
+  {
+    "objectID": "docs/im/standards/JRN_metadata_standards.html#pubdate",
+    "href": "docs/im/standards/JRN_metadata_standards.html#pubdate",
+    "title": "Jornada Dataset Metadata Standards",
+    "section": "<pubDate>",
+    "text": "&lt;pubDate&gt;\nDefault for this at EDI and LTER sites appears to be that &lt;pubDate&gt; refers to the date of the latest metadata revision for a data package posted on EDI.\nAt JRN, this element has had other meanings (first date of publication), but there isn’t currently a consistent policy.",
+    "crumbs": [
+      "IM Guide",
+      "Metadata standards",
+      "Jornada Dataset Metadata Standards"
+    ]
+  },
+  {
+    "objectID": "docs/im/standards/JRN_metadata_standards.html#abstract",
+    "href": "docs/im/standards/JRN_metadata_standards.html#abstract",
+    "title": "Jornada Dataset Metadata Standards",
+    "section": "<abstract>",
+    "text": "&lt;abstract&gt;\nA descriptive abstract of the data package, with enough context for a user to decide whether it is useful to them, should be included here. Keep in mind that package abstracts are used in full-text searches\nBest practices:\n\nInclude a brief statement about whether data collection is “ongoing” or “completed”.\nInclude a brief description of data collection and data package update frequency (“updated monthly/yearly/every spring”).\nInclude information on whether the data were collected on the “Jornada Experimental Range”, on the “CDRCC”, or on both.",
+    "crumbs": [
+      "IM Guide",
+      "Metadata standards",
+      "Jornada Dataset Metadata Standards"
+    ]
+  },
+  {
+    "objectID": "docs/im/standards/JRN_metadata_standards.html#keywordset",
+    "href": "docs/im/standards/JRN_metadata_standards.html#keywordset",
+    "title": "Jornada Dataset Metadata Standards",
+    "section": "<keywordSet>",
+    "text": "&lt;keywordSet&gt;\nMultiple &lt;keywordSet&gt; elements can be defined. Optionally they may be labeled with a specific vocabulary they are taken from using the &lt;keywordThesaurus&gt; tag. The Jornada Basin LTER uses these keyword thesauri:\n\nLTER Controlled Vocabulary - required to describe the subject matter of each data package\nJornada-specific thesauri - currently there are 3, which are still in development.\n\n“JRN Dataset Keywords” include subject matter, funding, time span, and other JRN LTER specific terms.\n“Jornada Project Names” include the descriptive names of abbreviations of studies or projects taking place in Jornada Basin (affiliated with JRN LTER or not)\n“Jornada Place Names” include the place names of important study locations or geographic features. These overlap with the “Jornada Place Names” in many cases.\n\nLTER Core Areas\nEML creators can also define keywords independent of these vocabularies (no &lt;keywordThesaurus&gt; tag).\n\nFrom the Jornada-specific thesauri, be sure to include:\n\nAt least one subject matter term from the “JRN Dataset Keyword” list.\nAny relevant terms from the “Jornada Project Names” list\nAny relevant placenames from the “Jornada Place Names” list\nThe Jornada study ID as “study {NNN}”, where {NNN} is the 3 digit study ID within the package ID (middle 3 digits). List this as a “Jornada Project Name” keyword.\n\nThe keywords “core” and “signature” may be added to EML documents, but the plan at this point is to keep a separate list of packages with these designations and then cross-reference those lists during searches of the JRN data catalog.",
+    "crumbs": [
+      "IM Guide",
+      "Metadata standards",
+      "Jornada Dataset Metadata Standards"
+    ]
+  },
+  {
+    "objectID": "docs/im/standards/JRN_metadata_standards.html#intellectualrights",
+    "href": "docs/im/standards/JRN_metadata_standards.html#intellectualrights",
+    "title": "Jornada Dataset Metadata Standards",
+    "section": "<intellectualRights>",
+    "text": "&lt;intellectualRights&gt;\nThe Jornada Basin LTER uses the CC-BY attribution license, appended with the LTER network’s suggested data access policy text. There is a template in EMLassemblyline for this.",
+    "crumbs": [
+      "IM Guide",
+      "Metadata standards",
+      "Jornada Dataset Metadata Standards"
+    ]
+  },
+  {
+    "objectID": "docs/im/standards/JRN_metadata_standards.html#coverage",
+    "href": "docs/im/standards/JRN_metadata_standards.html#coverage",
+    "title": "Jornada Dataset Metadata Standards",
+    "section": "<coverage>",
+    "text": "&lt;coverage&gt;\nA &lt;coverage&gt; element can be defined at multiple levels in the EML document: for a &lt;dataset&gt; element (/eml:eml/dataset/coverage), for a data entity (eml:eml/dataset/[entity]/coverage), within a &lt;methods&gt; element (eml:eml/dataset/methods/sampling/studyExtent/coverage), etc. Within each &lt;coverage&gt; element, three types of coverage elements can be defined - &lt;geographicCoverage&gt;, &lt;taxonomicCoverage&gt;, and &lt;temporalCoverage&gt;.\nFor now, at JRN LTER, we are focusing on providing adequate &lt;coverage&gt; metadata at the &lt;dataset&gt; element level, and there aren’t known standards for elements below this level (???). This is described in the sections below.\n\n&lt;geographicCoverage&gt;\nCoordinates for Jornada data packages are obfuscated (deliberately, due to security concerns) in most cases. How, and how much, to provide spatial data is a matter of debate at JRN LTER. The general practice is to provide one or more bounding boxes surrounding the research sites in a data package, but these bounding boxes should not be detailed enough to allow casual visitors to EDI to identify sensitive research sites or instrumentation. Some packages, however, already have finer details in the &lt;geographicCoverage&gt; elements. In these cases the person packaging the data should probably preserve this metadata, and has some discretion on how to proceed after consulting with PIs. The general guideline for this element is outlined below.\nFor &lt;dataset&gt; elements, define at least one &lt;geographicCoverage&gt; element. This &lt;geographicCoverage&gt; element should contain at least one bounding box that encloses all research locations for all data entities in the package. When possible, multiple bounding boxes may be provided as additional &lt;geographicCoverage&gt; elements that describe other study or sampling areas (these may be associated with locational variables in a data entity if you are clever about it). The bounding boxes should be large enough to prevent casual users from identifying the sites (on the EDI map interface, for example).\nEach &lt;geographicCoverage&gt; element should have a &lt;geographicDescription&gt; element associated that describes the location defined by the bounding boxes (or points, as the case may be) and include the text “Higher resolution spatial data for this data package can be obtained by contacting the Data Manager”.\n\n\n&lt;taxonomicCoverage&gt;\nThere are many systems for denoting taxonomic entities or groups, including local systems that are specific to the Jornada Basin LTER or its researchers. JRN data packages that contain taxonomic data (data attributes of species, groups of species, or other taxa) should provide ways to identify the taxonomic entities or groups in a &lt;dataset&gt; to modern, accepted taxonomic classifications at the Genus species or finer levels.\nThese links may be provided in a variable or category in the data entity itself (a “Genus_species” variable, or example), as long as they are properly attributed to an authority like ITIS or USDA PLANTS. Local (JRN specific) taxonomic keys or coding systems that appear in a data entity must be available to the data user. In these cases the keys or coding systems used should be described in the metadata and provided as either an additional data entity in the data package, or as a link to other JRN EDI packages with this information.\nSome current Jornada taxonomic keys are:\n\nKey to vascular plants in the Jornada Basin (an EDI package)\n\n\n\n&lt;temporalCoverage&gt;\nProvide the start and end date of the period over which the data were collected. For &lt;dataset&gt; elements this should include the data in all data entities (all .csv or other data files) that the EML document defines.",
+    "crumbs": [
+      "IM Guide",
+      "Metadata standards",
+      "Jornada Dataset Metadata Standards"
+    ]
+  },
+  {
+    "objectID": "docs/im/standards/JRN_metadata_standards.html#maintenance",
+    "href": "docs/im/standards/JRN_metadata_standards.html#maintenance",
+    "title": "Jornada Dataset Metadata Standards",
+    "section": "<maintenance>",
+    "text": "&lt;maintenance&gt;\nDescribes whether data collection is ongoing or completed (in &lt;description&gt; element) and may include descriptions of the frequency of data and metadata changes (in &lt;frequency&gt; element).\n\nDescribe the data package as “completed” if data collection has ended.\nDescribe the data package as “ongoing” if data collection continues.\nFor “ongoing” data packages, a description of how often package revisions, including data and metadata changes, occur should be added to the &lt;frequency&gt; element under &lt;maintenance&gt;. For example, if new data are QA/QC’d, appended to a data entity, and published for a data package every month, the &lt;frequency&gt; element should describe these “monthly” revisions.\nOptionally, and in addition to #3 above, the &lt;frequency&gt; element under &lt;maintenance&gt; can describe the frequency (hourly, daily, bimonthly, etc.) of the data in any data entities in the package. This may be especially important tabular time series.",
+    "crumbs": [
+      "IM Guide",
+      "Metadata standards",
+      "Jornada Dataset Metadata Standards"
+    ]
+  },
+  {
+    "objectID": "docs/im/standards/JRN_metadata_standards.html#methods",
+    "href": "docs/im/standards/JRN_metadata_standards.html#methods",
+    "title": "Jornada Dataset Metadata Standards",
+    "section": "<methods>",
+    "text": "&lt;methods&gt;\nThis element should include a detailed description of how the data were collected or otherwise derived (field procedures, laboratory analysis, data synthesis and analysis). It should be concise but sufficient to reproduce the resulting data entity in the package.\nMany Jornada packages have &lt;methods&gt; elements that refer to ancillary procedures documents, QA/QC specifications, data reduction scripts, etc. Whenever possible these should be preserved and archived as additional data entities in the data package (or at least a link to another repository should be provided).\nIf needed &lt;methods&gt; elements can be defined for individual data entities (/eml:eml/dataset/[entity]/methods). A hierarchy of additional elements, such as &lt;instrument&gt;, &lt;sampling&gt;, &lt;methodStep&gt;, &lt;qualityControl&gt;, can be also defined within each &lt;methods&gt; element. The GCE Toolbox+ does some of this for us with Jornada met data. In general though, descriptive text with optional pointers to other methods documentation is usually adequate.",
+    "crumbs": [
+      "IM Guide",
+      "Metadata standards",
+      "Jornada Dataset Metadata Standards"
+    ]
+  },
+  {
+    "objectID": "docs/im/standards/JRN_metadata_standards.html#data-entities",
+    "href": "docs/im/standards/JRN_metadata_standards.html#data-entities",
+    "title": "Jornada Dataset Metadata Standards",
+    "section": "Data entities",
+    "text": "Data entities\nThese define the actual data files in the package (.csv files, rasters, etc). There can be more than one in a package.\nSeveral possible elements are used to define individual data entities within a &lt;dataset&gt;. These include &lt;dataTable&gt;, &lt;spatialRaster&gt;, &lt;spatialVector&gt;, &lt;storedProcedure&gt;, &lt;view&gt;, and &lt;otherEntity&gt;. Each of these must contain other elements that describe the data they contain (the EntityGroup tree). The most important of these, for us, is the &lt;attributeList&gt; that defines the variables in a &lt;dataTable&gt; entity, since most Jornada data is tabular.\nThere are not any Jornada-specific metadata standards for data entities (???maybe there should be) or the elements they contain (&lt;attributeList&gt;). Use EML best practices.",
+    "crumbs": [
+      "IM Guide",
+      "Metadata standards",
+      "Jornada Dataset Metadata Standards"
     ]
   },
   {
@@ -593,36 +715,25 @@
     ]
   },
   {
-    "objectID": "docs/researcher/starting-research.html",
-    "href": "docs/researcher/starting-research.html",
-    "title": "Starting a Jornada research project",
+    "objectID": "docs/researcher/discover-data.html",
+    "href": "docs/researcher/discover-data.html",
+    "title": "Discovering research data (at Jornada and beyond)",
     "section": "",
-    "text": "Most new research projects are initiated through the Jornada Research Site Manager, Conrad Nelson (cwnelson@nmsu.edu). The JRN website or the JER website are the best source of information on this process, and have the current forms needed. There is also a listing of forms available here. To begin the approval process, a potential researcher submits a Research Notification (ResNotif) form, which describes the planned location, research activities, personnel, and other important project information, to Conrad Nelson. After review, and after any necessary changes to the plan are made, the project may be approved to begin.\nAll approved research projects at the Jornada must agree to a data sharing and acknowledgement policy. The requirements for Jornada researchers are, again, detailed on the JRN or JER websites, but to summarize, researchers should:\n\nSubmit research data and metadata for publication\n\nWe require most researchers to submit data and metadata yearly to our research data archive. We publish this data in open-access repositories at the time research results are peer-reviewed and published, or no later than 2 years after collection. This keeps the program in step with the LTER data policy and other relevant guidelines.\n\nKeep research project information up to date\n\nWe ask that approved projects submit any major post-approval changes to the project as a revised ResNotif form, or at a minimum regularly provide updates on the project, its personnel, and progress.\n\nAcknowledge Jornada LTER and USDA-ARS support\n\nThe support received, name of the program, and relevant grant numbers should be included in the acknowledgement section of any journal article, dissertation, or other publication. Support is defined as direct funding of research or personnel costs allocated from the Jornada grants, fellowship support to graduate students, logistical or data collection support from the Jornada field crew, or data management services from the Jornada Information Management team.\n\nCite the Jornada LTER and USDA-ARS data used in your research\n\nWhen research findings involving Jornada data appear in a publication (journal article, dissertation, website, etc.), please include a citation and link to the original data. For already-published long-term datasets include a DOI link at a minimum, and if possible, a full citation in the reference section (e.g. in a journal article). If the data are new and unpublished, please publish the dataset AND cite it in the publication.\n\n\nThe Jornada IM team strives to uphold high data publishing standards, so Jornada students and investigators who contribute to research at the Jornada should be aware of, or be willing to learn about, some best practices for collecting and describing their research data.",
+    "text": "One goal of the Jornada IM system is to make the vast majority of Jornada data accessible through the Jornada website and other avenues. On the Jornada website there are two primary data access points:\n\nThe JRN LTER primary data catalog currently provides access to Jornada data held in multiple repositories with a faceted interface. The five tabs in the data catalog are:\n\nTab 1: A list of links to “signature” long-term datasets collected at JRN, arranged by important research themes.\nTab 2: A searchable listing of all datasets held in our primary data catalog, hosted at the EDI repository.\nTab3: Is a searchable listing of Jornada data held in other repositories (not EDI).\nTab 4: A listing of a few of the most useful spatial datasets the Jornada has. This catalog will be updated soon.\nTab 5: A listing of Jornada “data partnerships”, with relevant links to data catalogs provided and managed by collaborating research networks working in the Jornada Basin are.\n\nThe interactive data viewer allows map-based browsing of some of our long-term meteorology and ecology datasets collected at the Jornada.",
     "crumbs": [
       "Researcher Guide",
-      "Starting research"
+      "Discover Jornada data"
     ]
   },
   {
-    "objectID": "docs/researcher/starting-research.html#policies-and-obtaining-permits",
-    "href": "docs/researcher/starting-research.html#policies-and-obtaining-permits",
-    "title": "Starting a Jornada research project",
+    "objectID": "docs/researcher/discover-data.html#jornada-data-discovery",
+    "href": "docs/researcher/discover-data.html#jornada-data-discovery",
+    "title": "Discovering research data (at Jornada and beyond)",
     "section": "",
-    "text": "Most new research projects are initiated through the Jornada Research Site Manager, Conrad Nelson (cwnelson@nmsu.edu). The JRN website or the JER website are the best source of information on this process, and have the current forms needed. There is also a listing of forms available here. To begin the approval process, a potential researcher submits a Research Notification (ResNotif) form, which describes the planned location, research activities, personnel, and other important project information, to Conrad Nelson. After review, and after any necessary changes to the plan are made, the project may be approved to begin.\nAll approved research projects at the Jornada must agree to a data sharing and acknowledgement policy. The requirements for Jornada researchers are, again, detailed on the JRN or JER websites, but to summarize, researchers should:\n\nSubmit research data and metadata for publication\n\nWe require most researchers to submit data and metadata yearly to our research data archive. We publish this data in open-access repositories at the time research results are peer-reviewed and published, or no later than 2 years after collection. This keeps the program in step with the LTER data policy and other relevant guidelines.\n\nKeep research project information up to date\n\nWe ask that approved projects submit any major post-approval changes to the project as a revised ResNotif form, or at a minimum regularly provide updates on the project, its personnel, and progress.\n\nAcknowledge Jornada LTER and USDA-ARS support\n\nThe support received, name of the program, and relevant grant numbers should be included in the acknowledgement section of any journal article, dissertation, or other publication. Support is defined as direct funding of research or personnel costs allocated from the Jornada grants, fellowship support to graduate students, logistical or data collection support from the Jornada field crew, or data management services from the Jornada Information Management team.\n\nCite the Jornada LTER and USDA-ARS data used in your research\n\nWhen research findings involving Jornada data appear in a publication (journal article, dissertation, website, etc.), please include a citation and link to the original data. For already-published long-term datasets include a DOI link at a minimum, and if possible, a full citation in the reference section (e.g. in a journal article). If the data are new and unpublished, please publish the dataset AND cite it in the publication.\n\n\nThe Jornada IM team strives to uphold high data publishing standards, so Jornada students and investigators who contribute to research at the Jornada should be aware of, or be willing to learn about, some best practices for collecting and describing their research data.",
+    "text": "One goal of the Jornada IM system is to make the vast majority of Jornada data accessible through the Jornada website and other avenues. On the Jornada website there are two primary data access points:\n\nThe JRN LTER primary data catalog currently provides access to Jornada data held in multiple repositories with a faceted interface. The five tabs in the data catalog are:\n\nTab 1: A list of links to “signature” long-term datasets collected at JRN, arranged by important research themes.\nTab 2: A searchable listing of all datasets held in our primary data catalog, hosted at the EDI repository.\nTab3: Is a searchable listing of Jornada data held in other repositories (not EDI).\nTab 4: A listing of a few of the most useful spatial datasets the Jornada has. This catalog will be updated soon.\nTab 5: A listing of Jornada “data partnerships”, with relevant links to data catalogs provided and managed by collaborating research networks working in the Jornada Basin are.\n\nThe interactive data viewer allows map-based browsing of some of our long-term meteorology and ecology datasets collected at the Jornada.",
     "crumbs": [
       "Researcher Guide",
-      "Starting research"
-    ]
-  },
-  {
-    "objectID": "docs/researcher/starting-research.html#selecting-research-areas",
-    "href": "docs/researcher/starting-research.html#selecting-research-areas",
-    "title": "Starting a Jornada research project",
-    "section": "Selecting research areas",
-    "text": "Selecting research areas\nMore to come on this topic…",
-    "crumbs": [
-      "Researcher Guide",
-      "Starting research"
+      "Discover Jornada data"
     ]
   },
   {
@@ -843,7 +954,29 @@
     "href": "docs/researcher/collect-qa-describe.html",
     "title": "Collecting and managing research data",
     "section": "",
-    "text": "Most of this chapter is under construction.",
+    "text": "Most of this chapter is under construction.\n\n\n\nIn this chapter we present some best practices to help you collect quality Jornada data that can be used in the future. The advice here varies depending on the type of data being collected — there are many kinds of research data — but some common themes apply. You should use consistent standards to collect, format, and apply quality assurance and control operations (QA/QC) to your data, all while describing the process and data products with rich metadata. These steps are the first building blocks of your research data workflow.",
+    "crumbs": [
+      "Researcher Guide",
+      "Collect and manage data"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/collect-qa-describe.html#overview",
+    "href": "docs/researcher/collect-qa-describe.html#overview",
+    "title": "Collecting and managing research data",
+    "section": "",
+    "text": "Most of this chapter is under construction.\n\n\n\nIn this chapter we present some best practices to help you collect quality Jornada data that can be used in the future. The advice here varies depending on the type of data being collected — there are many kinds of research data — but some common themes apply. You should use consistent standards to collect, format, and apply quality assurance and control operations (QA/QC) to your data, all while describing the process and data products with rich metadata. These steps are the first building blocks of your research data workflow.",
+    "crumbs": [
+      "Researcher Guide",
+      "Collect and manage data"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/collect-qa-describe.html#collecting-useful-data",
+    "href": "docs/researcher/collect-qa-describe.html#collecting-useful-data",
+    "title": "Collecting and managing research data",
+    "section": "Collecting useful data",
+    "text": "Collecting useful data\nResearch data are very diverse, but there are some common techniques to manage new data and make them useful. Below we discuss data management best practices organized around several of the data attributes of data you’ll deal with in the real world.\n\nContent and source: What the data are about and where they came from\nData format: How data are represented in terms of structure, organization, and relationships\nFile format: The physical format the data are stored in, such as a text file or JPEG image\nIntended use: How the data will be used\n\nWe are using tabular data, such as spreadsheets, comma-separated value (CSV) files, and similar tables, as the primary example here because they are the most common and recognizeable kind of data the environmental sciences. In fact, lots of data we don’t think of as tabular can still be represented in a table. A “Special cases” section below gives examples for other data types.\n\nContent and source\nMany variables, about any number of phenomena, can be measured or observed. The content of the data refers to what the data you collect are about. So, what variables did you collect, and what real-world place, organism, thing, or process did you observe or measure them from? For our purposes at the Jornada we are usually studying biotic or abiotic phenomena in our slice of the Chihuahuan Desert. Make sure to create some good metadata about the content of your data that can be used as context in a published dataset.\nThe source of the data refers to where the data came from and how they were acquired. So, were the data collected in the field by a primary observer? By an autonomous sensor system? Or did the come from another researcher? In modern research it is common to integrate data from multiple sources, and it pays to document those sources well. If you collect the data yourself you have the opportunity to describe how you did so with rich metadata, which will make your data useful for the long term. If you use a previously-collected dataset, you’ll need to interpret and then cite it, and you’ll have an easier time if the creator was diligent about their metadata.\n\n\n\n\n\n\nTipBest practices\n\n\n\nFor data content:\n\nKnow what your data are about, including the system being studied, and the variables observed or measured.\nBe prepared to describe what the data are about in your metadata.\nBe aware of any requirements and limitations for the data you collect (e.g. human subject or endangered species data).\n\nFor data source:\n\nKeep a detailed field or laboratory notebook to document your data collection activities.\nFor autonomous data-collection systems (dataloggers, sensors, etc) keep extensive documentation, installation photos, and a log of changes and known issues.\nIf you synthesize data from external sources or published studies, document the origin of all data you use.\n\n\n\n\n\nData format\nThere are at least two meanings wrapped up in the term “data format.” First, a data format describes the way data are structured, organized, and related.1 For example, tabular data files contain rows and columns that represent the variables and observations of the data, and there can be more than one way to arrange those. The second meaning of “data format” refers to the fact that the data values for any variable can be represented in more than one way. An identical date, for example, can be formatted as the text string “July 2, 1974” or as “1974-07-02.”\nFor tabular data, structuring the data you collect into the simplest possible table format is the best policy. First think about what variables you collect. Some will be categorical (treatment, plot number) and some are continuous (measured biomass, temperature). Then consider what an observation is. Is it a monthly measurement of a plant, or an hourly temperature value recorded by a sensor? Then, organize these values logically into clearly labeled columns and rows so that the data are understandable. If you’ve heard of “Tidy data”, this is a great mental model to use for organizing data in a table (Wickham 2014). In tidy tables, the columns are always variables and the rows represent observations (more details below). When you format the actual data values within the table, use the most understandable and granular format you can. If you have a nested experimental design with blocks, plots, and individuals for example, separate the values for these variables into different columns. For date and time values, we recommend using the ISO standard (YYYY-MM-DD) rather than the traditional month-day-year (mm/dd/yy) format. The tabs below have some examples.\n\nA not-great tableA better table\n\n\nIn this example table you can see several data no-no’s.\n\n\n\nA not-so-great table (click to expand)\n\n\n\nSeveral categorical variables have been joined into one in the “LOC” column.\nThe variable names don’t give you a hint of what they are.\nThe “DATE” column would be easy to misinterpret.\nThere is no missing value indicator. For blank observations, was the individual missing or did the observer make a mistake?\n\n\n\nIn this example most of those issues have been corrected.\n\n\n\nA better table (click to expand)\n\n\n\nThe variable columns are distinct and have granular values with clear column labeles.\nThe date column follows the ISO standard (YYYY-MM-DD).\n“NA” values are used for missing data, and there is a comment column indicating what they mean.\n\n\n\n\n\n\n\n\n\n\nCautionMore about Tidy data\n\n\n\n\n\nIn the Tidy data paper (Wickham 2014), the claim is that “80% of data analysis is spent on the process of cleaning and preparing the data.” Adhering to a clear, easy-to-understand data format can help lower this burden and make data easier to clean, filter, and analyze. The tidy data model, or “long” format, aims to do this by following three rules:\n\nEach column holds one variable.\nEach row represents observation.\nEach cell holds a single value.\n\nThe resulting tables look like so:\n\n\n\nLong form (“tidy”) data where columns represent variables and rows represent observations\n\n\nThis is in contrast to “wide,” or “untidy,” format, in which variables and observations may be organized in either rows or columns. The same data in wide format could look like either of these tables:\n\n\n\nThe same data as above in wide form (“untidy”)\n\n\nKeep in mind that wide/untidy format isn’t always bad. Wide tables tend to take up less space on disk, and in addition, they can be called for in many standard statistical analyses.\nBottom line: Tidy data is a great default format with several advantages, but be ready to use wide/untidy formats when necessary too.\n\n\n\n\n\n\n\n\n\nTipBest practices\n\n\n\n\nUse the simplest possible data structure.\nOrganize data by observational unit during collection.\nMaximize the information for each observation.\n\n\n\n\n\nFile formats\n\nSome are specific to data type.\nSome are more accessible and versatile than others.\nWhen in doubt use a text file, like a comma separated value (CSV).\n\n\nDelimited text (CSV)Excel spreadsheetRelational databaseCloud-nativeOther\n\n\nDelimited text files are a great format for using, archiving, and sharing your data. Rows of data values are stored as lines in a text files with a designated character serving as the delimiter between columns of data. They are simple to understand, fairly space-efficient, and easy to use with almost any tool in your data workflow (R, Python, Excel, GIS software, etc.). They may have a .txt, .csv, .tsv, or other file extension depending on the delimiter and convention.\n\n\n\nA text file with the comma (,) as the column delimiter. This is the always-friendly “comma-separated value” (.csv) format, but other delimiters are sometimes used. (click to expand)\n\n\n\n\nMicrosoft Excel is a powerful spreadsheet program with a long history of use in research. Excel spreadsheets live in the .xlsx file format, though there are many other non-Microsoft formats Excel can read and write, including delimited text and .csv files. Also note that Microsoft Excel is not the only spreadsheet game in town. Google Sheets and LibreOffice Calc are both full-featured and can interoperate with Excel file formats very well.\n\n\n\nAn Excel spreadsheet (.xlsx file) showing the same data as presented in the first panel. This is a well-formatted spreadsheet table that wouldn’t be any trouble to pick up and use.\n\n\nUnfortunately, spreadsheets sometimes make the wrong assumption about the data you enter, and they are prone to being used in non-standard ways. That makes spreadsheet files a little less friendly as an archive and distribution format for research data. See the example below.\n\n\n\nA very unpleasant Excel spreadsheet that would be difficult to use. In spreadsheets it is pretty easy to mix very different kinds of data into the same column or row, and to include unpredictable groupings and sub-tables within the sheet. Don’t do this if you use Excel — try to format the data for easy re-usability by others (or your future self).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTipBest practices\n\n\n\n\nUse open, community standard file formats instead of proprietary ones whenever possible.\n…\n\n\n\n\n\nIntended use\n\n\n\n\n\n\nTipBest practices\n\n\n\n\n?\n\n\n\n\n\nSpecial case data\nLike people, many categories of data don’t fit into the traditional tabular mold and are special in their own way.\n\nTabularImagesSensor dataGeospatialSequencing & ‘omics’ data\n\n\nTabular data is the default. Data values are arranged in columns and rows for variables and observations.\n\n\nImages captured from various sensors and platforms like cameras, UAVs, or remote sensing satellites.\n\nContent\nSource (or acquisition method)\nData structure\nFile format\nIntended use\n\n\n\nData collected from sensors\n\nContent\nSource (or acquisition method)\nData structure\nFile format\nIntended use\n\n\n\n\nContent\nSource (or acquisition method)\nData structure\nFile format\nIntended use\n\n\n\nSequencing and genomic data\n\nContent\nSource (or acquisition method)\nData structure\nFile format\nIntended use",
     "crumbs": [
       "Researcher Guide",
       "Collect and manage data"
@@ -865,7 +998,29 @@
     "href": "docs/researcher/collect-qa-describe.html#describing-data-as-you-collect-it",
     "title": "Collecting and managing research data",
     "section": "Describing data as you collect it",
-    "text": "Describing data as you collect it",
+    "text": "Describing data as you collect it\n\n\n\nExample of the normal degradation in information content associated with data and metadata over time (“information entropy”). Accidents or changes in technology (dashed line) may eliminate access to remaining raw data and metadata at any time (from Michener et al. 1997)",
+    "crumbs": [
+      "Researcher Guide",
+      "Collect and manage data"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/collect-qa-describe.html#storage-and-backup",
+    "href": "docs/researcher/collect-qa-describe.html#storage-and-backup",
+    "title": "Collecting and managing research data",
+    "section": "Storage and backup",
+    "text": "Storage and backup\nStore your data securely and have a reliable backup system for them.",
+    "crumbs": [
+      "Researcher Guide",
+      "Collect and manage data"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/collect-qa-describe.html#footnotes",
+    "href": "docs/researcher/collect-qa-describe.html#footnotes",
+    "title": "Collecting and managing research data",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThe concepts of data formats and data structuring can become fairly complicated and are related to the disciplines of database design and data modeling. For example, when designing a database one must decide what the entities (tables), attributes (columns), and relationships (links between tables/columns) are. We won’t go into this much depth here, but it can sometimes be useful to have a detailed conceptual picture of how your research data fit together.↩︎",
     "crumbs": [
       "Researcher Guide",
       "Collect and manage data"
@@ -927,69 +1082,102 @@
     ]
   },
   {
-    "objectID": "docs/researcher/discover-data.html",
-    "href": "docs/researcher/discover-data.html",
-    "title": "Discovering research data (at Jornada and beyond)",
-    "section": "",
-    "text": "One goal of the Jornada IM system is to make the vast majority of Jornada data accessible through the Jornada website and other avenues. On the Jornada website there are two primary data access points:\n\nThe JRN LTER primary data catalog currently provides access to Jornada data held in multiple repositories with a faceted interface. The five tabs in the data catalog are:\n\nTab 1: A list of links to “signature” long-term datasets collected at JRN, arranged by important research themes.\nTab 2: A searchable listing of all datasets held in our primary data catalog, hosted at the EDI repository.\nTab3: Is a searchable listing of Jornada data held in other repositories (not EDI).\nTab 4: A listing of a few of the most useful spatial datasets the Jornada has. This catalog will be updated soon.\nTab 5: A listing of Jornada “data partnerships”, with relevant links to data catalogs provided and managed by collaborating research networks working in the Jornada Basin are.\n\nThe interactive data viewer allows map-based browsing of some of our long-term meteorology and ecology datasets collected at the Jornada.",
-    "crumbs": [
-      "Researcher Guide",
-      "Discover Jornada data"
-    ]
-  },
-  {
-    "objectID": "docs/researcher/discover-data.html#jornada-data-discovery",
-    "href": "docs/researcher/discover-data.html#jornada-data-discovery",
-    "title": "Discovering research data (at Jornada and beyond)",
-    "section": "",
-    "text": "One goal of the Jornada IM system is to make the vast majority of Jornada data accessible through the Jornada website and other avenues. On the Jornada website there are two primary data access points:\n\nThe JRN LTER primary data catalog currently provides access to Jornada data held in multiple repositories with a faceted interface. The five tabs in the data catalog are:\n\nTab 1: A list of links to “signature” long-term datasets collected at JRN, arranged by important research themes.\nTab 2: A searchable listing of all datasets held in our primary data catalog, hosted at the EDI repository.\nTab3: Is a searchable listing of Jornada data held in other repositories (not EDI).\nTab 4: A listing of a few of the most useful spatial datasets the Jornada has. This catalog will be updated soon.\nTab 5: A listing of Jornada “data partnerships”, with relevant links to data catalogs provided and managed by collaborating research networks working in the Jornada Basin are.\n\nThe interactive data viewer allows map-based browsing of some of our long-term meteorology and ecology datasets collected at the Jornada.",
-    "crumbs": [
-      "Researcher Guide",
-      "Discover Jornada data"
-    ]
-  },
-  {
-    "objectID": "docs/researcher/overview.html",
-    "href": "docs/researcher/overview.html",
-    "title": "Overview for researchers and staff",
+    "objectID": "docs/researcher/introduction.html",
+    "href": "docs/researcher/introduction.html",
+    "title": "Data guide for Jornada researchers",
     "section": "",
     "text": "This guide was written by Jornada information managers (IMs) and the Jornada community at large as a concise, but fairly comprehensive guide to working with Jornada data. It is designed to be accessible for students (graduate and undergraduate), investigators, postdocs, and staff scientists, and to help these groups do research, particularly data-related tasks, effectively and efficiently.",
     "crumbs": [
       "Researcher Guide",
-      "Overview"
+      "Introduction"
     ]
   },
   {
-    "objectID": "docs/researcher/overview.html#before-you-begin",
-    "href": "docs/researcher/overview.html#before-you-begin",
-    "title": "Overview for researchers and staff",
+    "objectID": "docs/researcher/introduction.html#introduction",
+    "href": "docs/researcher/introduction.html#introduction",
+    "title": "Data guide for Jornada researchers",
+    "section": "",
+    "text": "This guide was written by Jornada information managers (IMs) and the Jornada community at large as a concise, but fairly comprehensive guide to working with Jornada data. It is designed to be accessible for students (graduate and undergraduate), investigators, postdocs, and staff scientists, and to help these groups do research, particularly data-related tasks, effectively and efficiently.",
+    "crumbs": [
+      "Researcher Guide",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/introduction.html#before-you-begin",
+    "href": "docs/researcher/introduction.html#before-you-begin",
+    "title": "Data guide for Jornada researchers",
     "section": "Before you begin",
-    "text": "Before you begin\nBefore you begin your research, you should know the expectations and policies the Jornada has for permitting, data management, attribution, and personal safety during research. These are covered comprehensively on the Jornada LTER and USDA-ARS Jornada Experimental Range websites. Here is a quick rundown as a reminder:\n\nYou must request approval and obtain all required permits prior to beginning field research.\nResearchers are expected to submit data and metadata to the IM team during their research, or, for some collaborators, when research concludes.\nAcknowledgement of funding support and citation of Jornada data is expected, as appropriate, in Jornada journal publications and other research products.\nResearchers must follow our safety and conduct guidelines when working at the Jornada.\n\nThis guide focuses mainly on data-related concerns, especially items 2 and 3, but some relevant forms and instructions are provided in the Starting research chapter of the guide. Safety and conduct guidance is found in the Jornada Safety Handbook and Code of Conduct.",
+    "text": "Before you begin\nBefore you begin your research, you should know the expectations and policies the Jornada has for permitting, data management, attribution, and personal safety during research. These are covered in full detail on the Jornada LTER and USDA-ARS Jornada Experimental Range websites. Here is a quick rundown as a reminder:\n\nYou must request approval and obtain all required permits prior to beginning field research.\nResearchers are expected to submit data and metadata to the IM team during their research, or, for some collaborators, when research concludes.\nAcknowledgement of funding support and citation of Jornada data is expected, as appropriate, in Jornada journal publications and other research products.\nResearchers must follow our safety and conduct guidelines when working at the Jornada.\n\nThis guide focuses mainly on data-related research activities, but you’ll find policy and permitting guidance in the Starting research chapter, and relevant templates and forms in the document archive. Safety and conduct guidance is found in the Jornada Safety Handbook and Code of Conduct.",
     "crumbs": [
       "Researcher Guide",
-      "Overview"
+      "Introduction"
     ]
   },
   {
-    "objectID": "docs/researcher/overview.html#the-data-lifecycle",
-    "href": "docs/researcher/overview.html#the-data-lifecycle",
-    "title": "Overview for researchers and staff",
+    "objectID": "docs/researcher/introduction.html#the-data-lifecycle",
+    "href": "docs/researcher/introduction.html#the-data-lifecycle",
+    "title": "Data guide for Jornada researchers",
     "section": "The data lifecycle",
-    "text": "The data lifecycle\n\n\n\nThis guide is organized roughly according to the data lifecycle (Michener and Jones 2012), which outlines 8 distinct phases of working with data in a research context. In practice these phases overlap considerably in when the phase occurs and who executes them.\n\nPlanning for research and data collection is covered in the Starting research chapter.\nWe discuss data collection, quality assurance, and many aspects of describing data (with metadata) in the Collect and manage data chapter.\nWhen you are ready to preserve your data by publishing it in a repository, read the Prepare and publish chapter.\nTo learn how and where to discover Jornada data, read the Data discovery chapter.\nData reuse, including integrating and analyzing data is covered in the Using data chapter.\n\nSince there are a lot of projects to manage at the Jornada, and we have some unique project management practices, there is also a Jornada project management chapter.",
+    "text": "The data lifecycle\n\n\n\nThis guide aims to cover all aspects of data work and is organized roughly according to the DataONE data lifecycle (Michener and Jones 2012), which outlines 8 distinct phases of working with data in a research context. In practice the phases overlap considerably the timing of activites and who executes them.\n\nPlanning for research and data management is covered in the Starting research chapter.\nWe discuss data collection, quality assurance, and many aspects of describing data (with metadata) in the Collect and manage data chapter.\nWhen you are ready to preserve your data by publishing it in a repository, read the Prepare and publish chapter.\nTo learn how and where to discover Jornada data, read the Data discovery chapter.\nData reuse, including integrating and analyzing data is covered in the Using data chapter.\n\nGuidance in these chapters can apply to managing data for any environmental science research, but there are Jornada-specific tips included throughout. Since there are many projects to manage at the Jornada, and we have some unique requirements, there is also a Jornada project management chapter.",
     "crumbs": [
       "Researcher Guide",
-      "Overview"
+      "Introduction"
     ]
   },
   {
-    "objectID": "docs/researcher/overview.html#learn-more",
-    "href": "docs/researcher/overview.html#learn-more",
-    "title": "Overview for researchers and staff",
+    "objectID": "docs/researcher/introduction.html#learn-more",
+    "href": "docs/researcher/introduction.html#learn-more",
+    "title": "Data guide for Jornada researchers",
     "section": "Learn more",
     "text": "Learn more\nThe Jornada IM team consists of both Jornada Basin LTER (JRN) and USDA-ARS Jornada Experimental Range (JER) staff. If you need to know more about how we manage data, or how you or your lab can do a better job with data, there are a number of opportunities to learn more.\n\nJornada Desert Ecology Short Course - The IM team presents there each year\nData Therapy Thursday\nSee our References and links page.",
     "crumbs": [
       "Researcher Guide",
-      "Overview"
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/starting-research.html",
+    "href": "docs/researcher/starting-research.html",
+    "title": "Starting a Jornada research project",
+    "section": "",
+    "text": "To start your research you will need a plan, which can include:\nMost of these are beyond the scope of this guide, which focuses on the data you’ll be collecting, analyzing and publishing. In this chapter we cover how to have your plan approved by Jornada Research Site Managers, and creating a data management plan (DMP).",
+    "crumbs": [
+      "Researcher Guide",
+      "Starting research"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/starting-research.html#policies-and-obtaining-permits",
+    "href": "docs/researcher/starting-research.html#policies-and-obtaining-permits",
+    "title": "Starting a Jornada research project",
+    "section": "Policies and obtaining permits",
+    "text": "Policies and obtaining permits\nMost new research projects are initiated through the Jornada Research Site Manager, Conrad Nelson (cwnelson@nmsu.edu). The JRN website or the JER website are the best source of information on this process, and have the current forms needed. There is also a listing of forms available here. To begin the approval process, a potential researcher submits a Research Notification (ResNotif) form, which describes the planned location, research activities, personnel, and other important project information, to Conrad Nelson. After review, and after any necessary changes to the plan are made, the project can be approved to begin.\nAll approved research projects at the Jornada must agree to a data sharing and acknowledgement policy. The requirements for Jornada researchers are, again, detailed on the JRN or JER websites, but to summarize, researchers should:\n\nSubmit research data and metadata for publication\n\nWe require most researchers to submit data and metadata yearly to our research data archive. We publish this data in open-access repositories at the time research results are peer-reviewed and published, or no later than 2 years after collection. This keeps the program in step with the LTER data policy and other relevant guidelines.\n\nKeep research project information up to date\n\nWe ask that approved projects submit any major post-approval changes to the project as a revised ResNotif form, or at a minimum regularly provide updates on the project, its personnel, and progress.\n\nAcknowledge Jornada LTER and USDA-ARS support\n\nThe support received, name of the program, and relevant grant numbers should be included in the acknowledgement section of any journal article, dissertation, or other publication. Support is defined as direct funding of research or personnel costs allocated from the Jornada grants, fellowship support to graduate students, logistical or data collection support from the Jornada field crew, or data management services from the Jornada Information Management team.\n\nCite the Jornada LTER and USDA-ARS data used in your research\n\nWhen research findings involving Jornada data appear in a publication (journal article, dissertation, website, etc.), please include a citation and link to the original data. For already-published long-term datasets include a DOI link at a minimum, and if possible, a full citation in the reference section (e.g. in a journal article). If the data are new and unpublished, please publish the dataset AND cite it in the publication.\n\n\nThe Jornada IM team strives to uphold high data publishing standards, so Jornada students and investigators who contribute to research at the Jornada should be willing to learn about, and adhere to, some best practices for collecting, describing, and publishing their research data.",
+    "crumbs": [
+      "Researcher Guide",
+      "Starting research"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/starting-research.html#making-a-data-management-plan",
+    "href": "docs/researcher/starting-research.html#making-a-data-management-plan",
+    "title": "Starting a Jornada research project",
+    "section": "Making a data management plan",
+    "text": "Making a data management plan\nManaging the data you collect and use is an integral part of any research project, and you should start creating a data management plan (DMP) early in your research process. A good DMP looks ahead at the full research lifecyle, from data collection to long-term preservation of research outputs. Below are some questions to think about and ideas to consider including in your plan.\n\nThe dataStorage & backupMetadataAccess & sharingPreservationRoles\n\n\nWhat are the data that will be collected or used, and where do they come from?\nImportant management considerations:\n\nThink about the content of the data, such as the variables (height, carbon content) or study subjects (humans, plants) being observed.\nAlso think about the source of the data, such as whether they come from automatic sensors, human field observers, or previously-published datasets.\nData content and source can dictate what data management options are available or required.\n\nDetailed advice for collecting and managing different types of data begin in the next chapter.\n\n\nHow will data be stored securely and protected from loss?\nImportant management considerations:\n\nSize of the data. Is it kilobyte or terabyte-scale?\nData attributes like the data structure and file format can determine the available options for storage and backup.\nInstitutional requirements, infrastructure capacity, and funding also constrain the options here.\n\n\n\nWhat kind of metadata will be used to describe the data?\nImportant management considerations:\n\nCollect metadata during the research, not just in a final rush before publication.\nSome data types and corresponding file types, geospatial data for example, require specific metadata to be useful.\nResearch communities often have accepted standards for metadata content and formatting.\n\n\n\nHow will data access be provided during research, and how will research data products be shared?\nImportant management considerations:\n\nThe research team should have secure access to data as necessary.\nData publication is generally required for federally-supported research, so plan for this early.\nBe aware of your team’s, and your broader research community’s, expectations for sharing data.\n\n\n\nWhat are the long-term plans for preservation of the data (or samples/specimens) once research is complete?\nImportant management considerations:\n\nResearch funding may (again) dictate a particular location or duration for data preservation.\nIf data re-use is likely, choose long-term preservation options accordingly.\nComplete metadata is essential to making datasets useful for the long-term.\n\n\n\nWhat are the data management roles and who is responsible for what?\nImportant management considerations:\n\nSome potentially important roles: data collection, quality assurance and control (QA/QC), cyberinfrastructure technician, analysis, data curation and publication.\nPeople in data roles frequently turn over, so plan on some role-sharing to help overcome the “Bus factor.”\nBe prepared to give credit to people in these roles when publishing research products.\n\n\n\n\n\nFor proposals\nA formal data management plan (DMP) document is usually required in proposals to federal agencies and other funders. For example, in standard proposals, NSF expects a 2-page DMP with these suggested sections:\n\n\nthe types of data, samples, physical collections, software, curriculum materials, and other materials to be produced in the course of the project;\nthe standards to be used for data and metadata format and content (where existing standards are absent or deemed inadequate, this should be documented along with any proposed solutions or remedies);\npolicies for access and sharing including provisions for appropriate protection of privacy, confidentiality, security, intellectual property, or other rights or requirements;\npolicies and provisions for re-use, re-distribution, and the production of derivatives; and\nplans for archiving data, samples, and other research products, and for preservation of access to them.\n\nfrom Chapter 2 of the 2024 NSF PAPPG1\n\nSome grant programs have more or less extensive plan requirements. The Jornada Basin LTER program submits a fairly long DMP with each renewal proposal to the NSF LTER program (examples here). We follow this plan closely during our 6-year funding cycle, and many of the recommendations and expectations outlined in this guide are targeted to help fulfill our proposal DMP.\nHere are some resources that can help with creating a proposal DMP:\n\nDMPtool.org collects DMP templates matching institutional and funder requirements, and provides examples from many existing research programs and data repositories. It is oriented towards a wide range of major U.S. funding agencies (NSF, NIH, etc.)\nHere are the NSF guidelines for data management and sharing plans. 2\nData management planning guides for federal agency scientists are generally available from the agency itself, such as for USDA and USGS.\nIf you need help creating a DMP for a project proposal at the Jornada, the Jornada IM team has a fair amount of experience and can give advice.",
+    "crumbs": [
+      "Researcher Guide",
+      "Starting research"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/starting-research.html#footnotes",
+    "href": "docs/researcher/starting-research.html#footnotes",
+    "title": "Starting a Jornada research project",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThe NSF Proposal & Award Policies & Procedures Guide, or PAPPG, is the comprehensive proposal-writing guide for NSF submitters. All NSF proposals need to follow the requirements in the PAPPG except when a specific program solicitation requests something different or additional.↩︎\nThis is a summary extracted from the most recent version of the PAPPG.↩︎",
+    "crumbs": [
+      "Researcher Guide",
+      "Starting research"
     ]
   },
   {
@@ -1352,147 +1540,25 @@
     ]
   },
   {
-    "objectID": "docs/im/standards/JRN_metadata_standards.html",
-    "href": "docs/im/standards/JRN_metadata_standards.html",
-    "title": "Jornada Dataset Metadata Standards",
+    "objectID": "docs/im/introduction.html",
+    "href": "docs/im/introduction.html",
+    "title": "Overview for Information Managers",
     "section": "",
-    "text": "If you edit this document please track your changes and send to Greg Maurer (gmaurer.jrn.lter@gmail.com).\nNotes about things that need to be expanded or verified are marked with “???”",
+    "text": "This is the full documentation for the Jornada Basin LTER Information Management system, covering technical aspects of our data publishing process, data management tools, and administration of public-facing information like the website and data catalog. Researchers and data users should start at the Jornada IM web pages to get started with Jornada data management. This is a DRAFT document.",
     "crumbs": [
       "IM Guide",
-      "Metadata standards",
-      "Jornada Dataset Metadata Standards"
+      "Introduction"
     ]
   },
   {
-    "objectID": "docs/im/standards/JRN_metadata_standards.html#using-this-document",
-    "href": "docs/im/standards/JRN_metadata_standards.html#using-this-document",
-    "title": "Jornada Dataset Metadata Standards",
-    "section": "Using this document",
-    "text": "Using this document\nThe metadata standards in this document are structured and formatted similarly to an EML document. Named EML elements are surrounded by angle brackets, and there are headings for most important elements. At the Jornada Basin LTER, a variety of tools are being used to create EML documents during the data packaging process (EMLassemblyline, GCE Toolbox +, etc.). Notes about using these tools to create each EML element are present in the relevant section of this document (???Add these in as you edit).\nNote that EML documents are hierarchical. The root element is &lt;eml:eml&gt; (denoted by the path /eml:eml). Below the EML root element are 3 elements, &lt;access&gt;, &lt;dataset&gt;, and &lt;additional_metadata&gt; (paths /eml:eml/access, /eml:eml/dataset, and /eml:eml/additional_metadata). This document contains metadata standards for elements under the &lt;dataset&gt; element of Jornada EML files only. We may add standards for EML &lt;access&gt; and &lt;additional_metadata&gt; elements at a later time.",
+    "objectID": "docs/im/introduction.html#standards",
+    "href": "docs/im/introduction.html#standards",
+    "title": "Overview for Information Managers",
+    "section": "standards",
+    "text": "standards\nA directory of documents about best practices and standards for metadata creation at Jornada Basin LTER.\nPlease refer to these as you are packaging data and creating EML documents for Jornada Basin research products.\nEdit as you see fit, but please track your changes when possible and Greg will try to sync with the GitHub version of this repository.",
     "crumbs": [
       "IM Guide",
-      "Metadata standards",
-      "Jornada Dataset Metadata Standards"
-    ]
-  },
-  {
-    "objectID": "docs/im/standards/JRN_metadata_standards.html#title",
-    "href": "docs/im/standards/JRN_metadata_standards.html#title",
-    "title": "Jornada Dataset Metadata Standards",
-    "section": "<title>*",
-    "text": "&lt;title&gt;*\n* This is a required element.\nThe &lt;title&gt; element should contain a descriptive title that includes type of data collected, geographic indicator, and temporal range of the data (what, where, when). Keep in mind that package titles are searchable and are a user’s first point of contact when searching for data packages.\nBest practices:\n\nFor the title’s geographic indicator all Jornada Basin LTER data packages should include “Jornada Basin LTER”.\nIf the data come from an established study with a name or acronym, include the name or acronym in the title (NPP study, SMES, NEAT, etc.)\nFor the temporal range of completed data packages give the starting year of the data to the ending year; “2009-2015”, for example.\nFor the temporal range of ongoing data packages there are 2 possibilities:\n\nWrite the end of the temporal range as a year if data collection occurs less frequently than yearly (“2010-2018” for a package collected every 2 years).\nWrite the end of the temporal range as “ongoing” if data collection occurs yearly or more frequently (“2010-ongoing” if data were last updated a year ago or less).",
-    "crumbs": [
-      "IM Guide",
-      "Metadata standards",
-      "Jornada Dataset Metadata Standards"
-    ]
-  },
-  {
-    "objectID": "docs/im/standards/JRN_metadata_standards.html#personnel-and-organization-elements-creator-project-etc.",
-    "href": "docs/im/standards/JRN_metadata_standards.html#personnel-and-organization-elements-creator-project-etc.",
-    "title": "Jornada Dataset Metadata Standards",
-    "section": "Personnel and organization elements (<creator>, <project>, etc.)",
-    "text": "Personnel and organization elements (&lt;creator&gt;, &lt;project&gt;, etc.)\nThere are a number of elements in this category grouped together here. They normally appear within the &lt;dataset&gt; element (/eml:eml/dataset/creator, /eml:eml/dataset/contact, etc)\nAt least one &lt;contact&gt; element must be supplied in every EML document. All EML documents should have at least one person in a &lt;creator&gt; element, but exceptions can be made if this information has been lost in very old Jornada data packages.\n\n&lt;contact&gt;*\n* This is a required element.\nContacts are people (or positions, like Data Manager) that should be contacted for access to, or information about, the data package. For Jornada data packages this should include:\n\nThe “Current responsible investigator” (if available)\nThe JRN LTER Information Manager (datamanager.jrn.lter@gmail.com)\n\nJRN LTER defines the “Current responsible investigator” as the LTER principal investigator who curates a study and its associated data package(s). For data packages without a “current responsible PI”, John Anderson has historically been listed with this role under &lt;contact&gt;. When updating one of these packages, ask John if he would like to remain in this position. If not, he may be removed and it is acceptable to list only the Data Manager.\nNo other contacts are defined.\n\n\n&lt;creator&gt;*\n*This is a required element.\nCreators are people with direct intellectual contributions to the data package and so could include PIs, postdocs, students, and other researchers. There can be multiple &lt;creator&gt; elements in a Jornada EML document. These should include:\n\nOriginal PIs\nFormer responsible PIs\nCurrent responsible PIs\nPostDocs, grad students, and other researchers (??? need to verify this)\n\nIf for some reason the original PI for the data package is unknown, it is acceptable to list the Jornada Basin LTER as an organization in the &lt;creator&gt; element.\n\n\n&lt;project&gt;\nThis element should be included in EML for all JRN data packages and should contain the &lt;title&gt;, &lt;organization&gt;, &lt;funding&gt;, and &lt;personnel&gt; sub-elements within it. List the Jornada Basin LTER as the project &lt;title&gt;, New Mexico State University as &lt;organization&gt;, and the current responsible PI for the data package as the &lt;personnel&gt;. The &lt;funding&gt; element should include the NSF award number (DEB-1832194 or similar) that was active when the project was initiated.\nThis element is created automatically by EMLassemblyline if a personnel entry is listed with the role “PI”.\nProvisional change: If there is no current responsible PI for a completed package, it may be acceptable to omit the &lt;project&gt;&lt;personnel&gt; element as long as the other elements are complete. (??? need to verify this is ok)\n\n\nOther personnel and organization elements\nOther personnel and organization elements, such as &lt;metadataProvider&gt;, &lt;associatedParty&gt;, or &lt;publisher&gt;, can be defined in EML and have been included in Jornada Basin LTER data packages. There is no standardized policy for these yet, so when updating such packages, preserve these elements if possible.",
-    "crumbs": [
-      "IM Guide",
-      "Metadata standards",
-      "Jornada Dataset Metadata Standards"
-    ]
-  },
-  {
-    "objectID": "docs/im/standards/JRN_metadata_standards.html#pubdate",
-    "href": "docs/im/standards/JRN_metadata_standards.html#pubdate",
-    "title": "Jornada Dataset Metadata Standards",
-    "section": "<pubDate>",
-    "text": "&lt;pubDate&gt;\nDefault for this at EDI and LTER sites appears to be that &lt;pubDate&gt; refers to the date of the latest metadata revision for a data package posted on EDI.\nAt JRN, this element has had other meanings (first date of publication), but there isn’t currently a consistent policy.",
-    "crumbs": [
-      "IM Guide",
-      "Metadata standards",
-      "Jornada Dataset Metadata Standards"
-    ]
-  },
-  {
-    "objectID": "docs/im/standards/JRN_metadata_standards.html#abstract",
-    "href": "docs/im/standards/JRN_metadata_standards.html#abstract",
-    "title": "Jornada Dataset Metadata Standards",
-    "section": "<abstract>",
-    "text": "&lt;abstract&gt;\nA descriptive abstract of the data package, with enough context for a user to decide whether it is useful to them, should be included here. Keep in mind that package abstracts are used in full-text searches\nBest practices:\n\nInclude a brief statement about whether data collection is “ongoing” or “completed”.\nInclude a brief description of data collection and data package update frequency (“updated monthly/yearly/every spring”).\nInclude information on whether the data were collected on the “Jornada Experimental Range”, on the “CDRCC”, or on both.",
-    "crumbs": [
-      "IM Guide",
-      "Metadata standards",
-      "Jornada Dataset Metadata Standards"
-    ]
-  },
-  {
-    "objectID": "docs/im/standards/JRN_metadata_standards.html#keywordset",
-    "href": "docs/im/standards/JRN_metadata_standards.html#keywordset",
-    "title": "Jornada Dataset Metadata Standards",
-    "section": "<keywordSet>",
-    "text": "&lt;keywordSet&gt;\nMultiple &lt;keywordSet&gt; elements can be defined. Optionally they may be labeled with a specific vocabulary they are taken from using the &lt;keywordThesaurus&gt; tag. The Jornada Basin LTER uses these keyword thesauri:\n\nLTER Controlled Vocabulary - required to describe the subject matter of each data package\nJornada-specific thesauri - currently there are 3, which are still in development.\n\n“JRN Dataset Keywords” include subject matter, funding, time span, and other JRN LTER specific terms.\n“Jornada Project Names” include the descriptive names of abbreviations of studies or projects taking place in Jornada Basin (affiliated with JRN LTER or not)\n“Jornada Place Names” include the place names of important study locations or geographic features. These overlap with the “Jornada Place Names” in many cases.\n\nLTER Core Areas\nEML creators can also define keywords independent of these vocabularies (no &lt;keywordThesaurus&gt; tag).\n\nFrom the Jornada-specific thesauri, be sure to include:\n\nAt least one subject matter term from the “JRN Dataset Keyword” list.\nAny relevant terms from the “Jornada Project Names” list\nAny relevant placenames from the “Jornada Place Names” list\nThe Jornada study ID as “study {NNN}”, where {NNN} is the 3 digit study ID within the package ID (middle 3 digits). List this as a “Jornada Project Name” keyword.\n\nThe keywords “core” and “signature” may be added to EML documents, but the plan at this point is to keep a separate list of packages with these designations and then cross-reference those lists during searches of the JRN data catalog.",
-    "crumbs": [
-      "IM Guide",
-      "Metadata standards",
-      "Jornada Dataset Metadata Standards"
-    ]
-  },
-  {
-    "objectID": "docs/im/standards/JRN_metadata_standards.html#intellectualrights",
-    "href": "docs/im/standards/JRN_metadata_standards.html#intellectualrights",
-    "title": "Jornada Dataset Metadata Standards",
-    "section": "<intellectualRights>",
-    "text": "&lt;intellectualRights&gt;\nThe Jornada Basin LTER uses the CC-BY attribution license, appended with the LTER network’s suggested data access policy text. There is a template in EMLassemblyline for this.",
-    "crumbs": [
-      "IM Guide",
-      "Metadata standards",
-      "Jornada Dataset Metadata Standards"
-    ]
-  },
-  {
-    "objectID": "docs/im/standards/JRN_metadata_standards.html#coverage",
-    "href": "docs/im/standards/JRN_metadata_standards.html#coverage",
-    "title": "Jornada Dataset Metadata Standards",
-    "section": "<coverage>",
-    "text": "&lt;coverage&gt;\nA &lt;coverage&gt; element can be defined at multiple levels in the EML document: for a &lt;dataset&gt; element (/eml:eml/dataset/coverage), for a data entity (eml:eml/dataset/[entity]/coverage), within a &lt;methods&gt; element (eml:eml/dataset/methods/sampling/studyExtent/coverage), etc. Within each &lt;coverage&gt; element, three types of coverage elements can be defined - &lt;geographicCoverage&gt;, &lt;taxonomicCoverage&gt;, and &lt;temporalCoverage&gt;.\nFor now, at JRN LTER, we are focusing on providing adequate &lt;coverage&gt; metadata at the &lt;dataset&gt; element level, and there aren’t known standards for elements below this level (???). This is described in the sections below.\n\n&lt;geographicCoverage&gt;\nCoordinates for Jornada data packages are obfuscated (deliberately, due to security concerns) in most cases. How, and how much, to provide spatial data is a matter of debate at JRN LTER. The general practice is to provide one or more bounding boxes surrounding the research sites in a data package, but these bounding boxes should not be detailed enough to allow casual visitors to EDI to identify sensitive research sites or instrumentation. Some packages, however, already have finer details in the &lt;geographicCoverage&gt; elements. In these cases the person packaging the data should probably preserve this metadata, and has some discretion on how to proceed after consulting with PIs. The general guideline for this element is outlined below.\nFor &lt;dataset&gt; elements, define at least one &lt;geographicCoverage&gt; element. This &lt;geographicCoverage&gt; element should contain at least one bounding box that encloses all research locations for all data entities in the package. When possible, multiple bounding boxes may be provided as additional &lt;geographicCoverage&gt; elements that describe other study or sampling areas (these may be associated with locational variables in a data entity if you are clever about it). The bounding boxes should be large enough to prevent casual users from identifying the sites (on the EDI map interface, for example).\nEach &lt;geographicCoverage&gt; element should have a &lt;geographicDescription&gt; element associated that describes the location defined by the bounding boxes (or points, as the case may be) and include the text “Higher resolution spatial data for this data package can be obtained by contacting the Data Manager”.\n\n\n&lt;taxonomicCoverage&gt;\nThere are many systems for denoting taxonomic entities or groups, including local systems that are specific to the Jornada Basin LTER or its researchers. JRN data packages that contain taxonomic data (data attributes of species, groups of species, or other taxa) should provide ways to identify the taxonomic entities or groups in a &lt;dataset&gt; to modern, accepted taxonomic classifications at the Genus species or finer levels.\nThese links may be provided in a variable or category in the data entity itself (a “Genus_species” variable, or example), as long as they are properly attributed to an authority like ITIS or USDA PLANTS. Local (JRN specific) taxonomic keys or coding systems that appear in a data entity must be available to the data user. In these cases the keys or coding systems used should be described in the metadata and provided as either an additional data entity in the data package, or as a link to other JRN EDI packages with this information.\nSome current Jornada taxonomic keys are:\n\nKey to vascular plants in the Jornada Basin (an EDI package)\n\n\n\n&lt;temporalCoverage&gt;\nProvide the start and end date of the period over which the data were collected. For &lt;dataset&gt; elements this should include the data in all data entities (all .csv or other data files) that the EML document defines.",
-    "crumbs": [
-      "IM Guide",
-      "Metadata standards",
-      "Jornada Dataset Metadata Standards"
-    ]
-  },
-  {
-    "objectID": "docs/im/standards/JRN_metadata_standards.html#maintenance",
-    "href": "docs/im/standards/JRN_metadata_standards.html#maintenance",
-    "title": "Jornada Dataset Metadata Standards",
-    "section": "<maintenance>",
-    "text": "&lt;maintenance&gt;\nDescribes whether data collection is ongoing or completed (in &lt;description&gt; element) and may include descriptions of the frequency of data and metadata changes (in &lt;frequency&gt; element).\n\nDescribe the data package as “completed” if data collection has ended.\nDescribe the data package as “ongoing” if data collection continues.\nFor “ongoing” data packages, a description of how often package revisions, including data and metadata changes, occur should be added to the &lt;frequency&gt; element under &lt;maintenance&gt;. For example, if new data are QA/QC’d, appended to a data entity, and published for a data package every month, the &lt;frequency&gt; element should describe these “monthly” revisions.\nOptionally, and in addition to #3 above, the &lt;frequency&gt; element under &lt;maintenance&gt; can describe the frequency (hourly, daily, bimonthly, etc.) of the data in any data entities in the package. This may be especially important tabular time series.",
-    "crumbs": [
-      "IM Guide",
-      "Metadata standards",
-      "Jornada Dataset Metadata Standards"
-    ]
-  },
-  {
-    "objectID": "docs/im/standards/JRN_metadata_standards.html#methods",
-    "href": "docs/im/standards/JRN_metadata_standards.html#methods",
-    "title": "Jornada Dataset Metadata Standards",
-    "section": "<methods>",
-    "text": "&lt;methods&gt;\nThis element should include a detailed description of how the data were collected or otherwise derived (field procedures, laboratory analysis, data synthesis and analysis). It should be concise but sufficient to reproduce the resulting data entity in the package.\nMany Jornada packages have &lt;methods&gt; elements that refer to ancillary procedures documents, QA/QC specifications, data reduction scripts, etc. Whenever possible these should be preserved and archived as additional data entities in the data package (or at least a link to another repository should be provided).\nIf needed &lt;methods&gt; elements can be defined for individual data entities (/eml:eml/dataset/[entity]/methods). A hierarchy of additional elements, such as &lt;instrument&gt;, &lt;sampling&gt;, &lt;methodStep&gt;, &lt;qualityControl&gt;, can be also defined within each &lt;methods&gt; element. The GCE Toolbox+ does some of this for us with Jornada met data. In general though, descriptive text with optional pointers to other methods documentation is usually adequate.",
-    "crumbs": [
-      "IM Guide",
-      "Metadata standards",
-      "Jornada Dataset Metadata Standards"
-    ]
-  },
-  {
-    "objectID": "docs/im/standards/JRN_metadata_standards.html#data-entities",
-    "href": "docs/im/standards/JRN_metadata_standards.html#data-entities",
-    "title": "Jornada Dataset Metadata Standards",
-    "section": "Data entities",
-    "text": "Data entities\nThese define the actual data files in the package (.csv files, rasters, etc). There can be more than one in a package.\nSeveral possible elements are used to define individual data entities within a &lt;dataset&gt;. These include &lt;dataTable&gt;, &lt;spatialRaster&gt;, &lt;spatialVector&gt;, &lt;storedProcedure&gt;, &lt;view&gt;, and &lt;otherEntity&gt;. Each of these must contain other elements that describe the data they contain (the EntityGroup tree). The most important of these, for us, is the &lt;attributeList&gt; that defines the variables in a &lt;dataTable&gt; entity, since most Jornada data is tabular.\nThere are not any Jornada-specific metadata standards for data entities (???maybe there should be) or the elements they contain (&lt;attributeList&gt;). Use EML best practices.",
-    "crumbs": [
-      "IM Guide",
-      "Metadata standards",
-      "Jornada Dataset Metadata Standards"
+      "Introduction"
     ]
   },
   {
