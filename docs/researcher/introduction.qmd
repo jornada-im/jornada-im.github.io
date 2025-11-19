@@ -6,7 +6,8 @@ date: last-modified
 
 ## Introduction
 
-This guide was written by Jornada information managers (IMs) and the Jornada community at large as a concise, but fairly comprehensive guide to working with Jornada data. It is designed to be accessible for students (graduate and undergraduate), investigators, postdocs, and staff scientists, and to help these groups do research, particularly data-related tasks, effectively and efficiently.
+ Hello and welcome! This is the comprehensive guide to working with data from Jornada research programs. These programs, which include the [Jornada Basin LTER](https://lter.jornada.nmsu.edu) (JRN), the [USDA-ARS Jornada Experimental Range](https://jornada.nmsu.edu) (JER), and their associated communities, generate a wealth of scientific data relevant to ecology, earth science, and resource management. Studying this guide will help you become a valued contributor to this data commons, and use Jornada data (or any data) more efficiently and effectively in your research and management activities. The guide is written by Jornada information managers (IMs) with support from the Jornada research community and the LTER Network, and it is designed to be accessible for students (graduate and undergraduate), investigators, postdocs, and staff scientists. If you have any questions, don't hesitate to reach out the the Jornada Information Managers at <jornada.data@nmsu.edu>.
+
 
 ## Before you begin
 
@@ -18,6 +19,7 @@ Before you begin your research, you should know the expectations and policies th
  4. Researchers must follow our safety and conduct guidelines when working at the Jornada. 
 
 **This guide focuses mainly on data-related research activities**, but you'll find policy and permitting guidance in the [Starting research](./starting-research.qmd) chapter, and relevant templates and forms in the [document archive](../../templates/index.qmd). Safety and conduct guidance is found in the Jornada [Safety Handbook and Code of Conduct](https://drive.google.com/file/d/1aDyNo296N7Y1AO-BxLGcAhPj6yGK0u5S/view).
+
 
 ## The data lifecycle
 
@@ -33,8 +35,7 @@ This guide aims to cover all aspects of data work and is organized roughly accor
 * To learn how and where to **discover** Jornada data, read the [Data discovery](discover-data.qmd) chapter.
 * Data reuse, including **integrating** and **analyzing** data is covered in the [Using data](data-reuse.qmd) chapter.
 
-Guidance in these chapters can apply to managing data for any environmental science research, but there are Jornada-specific tips included throughout. Since there are many projects to manage at the Jornada, and we have some unique requirements, there is also a [Jornada project management](project-management.qmd) chapter.
-
+Research workflows and data management can become complex, and the Jornada is a big project, so we have also created an [Advanced topics in research data management](advanced-topics.qmd) chapter. You will find many Jornada-specific tips throughout the guide, but much of the advice in these chapters can apply to managing data in other contexts.
 
 ## Learn more
 

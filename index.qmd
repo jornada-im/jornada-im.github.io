@@ -29,7 +29,7 @@ Report problems and suggest additions in the [issue tracker](https://github.com/
 * [Submit or publish a dataset](docs/researcher/prepare-and-publish.qmd)
 * [Find Jornada datasets or other information](docs/researcher/discover-data.qmd)
 * [Cite a Jornada dataset or funding](docs/researcher/data-reuse.qmd)
-* [Update project, personnel, or website information](docs/researcher/project-management.qmd)
+* [Update project, personnel, or website information](docs/researcher/advanced-topics.qmd)
 * [Learn more about Jornada data management](docs/researcher/overview.qmd#learn-more)
 
 

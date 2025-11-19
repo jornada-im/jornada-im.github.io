@@ -106,7 +106,6 @@ Keep in mind that wide/untidy format isn't always bad. Wide tables tend to take 
 :::
 
 
-
 ::: {.callout-tip}
 ## Best practices
 

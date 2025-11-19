@@ -53,13 +53,13 @@ website:
         - href: docs/researcher/collect-qa-describe.qmd
           text: "Collect and manage data"
         - href: docs/researcher/prepare-and-publish.qmd
-          text: "Prepare and publish"
+          text: "Prepare and publish data"
         - href: docs/researcher/discover-data.qmd
           text: "Discover Jornada data"
         - href: docs/researcher/data-reuse.qmd
           text: "Using data"
-        - href: docs/researcher/project-management.qmd
-          text: "Jornada project management"
+        - href: docs/researcher/advanced-topics.qmd
+          text: "Advanced topics"
         - href: docs/refs-and-links.qmd
           text: "Useful references and links"
     - title: "IM Guide"

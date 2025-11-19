@@ -3,15 +3,9 @@ title: Starting a Jornada research project
 date: last-modified
 ---
 
-To start your research you will need a plan, which can include:
+## Overview
 
-* deciding on research questions and hypotheses;
-* creating an experimental or observational design;
-* choosing a study site, organism, or system;
-* selecting appropriate field and laboratory procedures, or instruments;
-* ...and myriad other decisions and logistics. 
-
-Most of these are beyond the scope of this guide, which focuses on the data you'll be collecting, analyzing and publishing. In this chapter we cover how to have your plan approved by Jornada Research Site Managers, and creating a data management plan (DMP).
+To start your research you will need a plan. Overall, your research plan may be full of things like experimental design, field logistics, and other tough decisions. Most of these are beyond the scope of this guide, which focuses on the data you'll be collecting, analyzing and publishing, but you do need to have your plan approved by the Jornada Research Site Managers, and we strongly recommend planning in advance for data management. In this chapter we help you plan for and navigate the Jornada permitting and project management process, and give some advice on creating your own data management plan (DMP).
 
 
 ## Policies and obtaining permits 
@@ -20,15 +14,22 @@ Most new research projects are initiated through the Jornada Research Site Manag
 
 All approved research projects at the Jornada must agree to a data sharing and acknowledgement policy. The requirements for Jornada researchers are, again, detailed on the [JRN](https://lter.jornada.nmsu.edu/for-researchers) or [JER](https://jornada.nmsu.edu/researcher-information) websites, but to summarize, researchers should:
 
-
-1. Submit research data and metadata for publication
-    - We require most researchers to submit data and metadata yearly to our research data archive. We publish this data in open-access repositories at the time research results are peer-reviewed and published, or no later than 2 years after collection. This keeps the program in step with the [LTER data policy](https://lternet.edu/data-access-policy/) and other relevant guidelines.
-2. Keep research project information up to date
-    - We ask that approved projects submit any major post-approval changes to the project as a revised ResNotif form, or at a minimum regularly provide updates on the project, its personnel, and progress.
-3. Acknowledge Jornada LTER and USDA-ARS support
-    - The support received, name of the program, and relevant grant numbers should be included in the acknowledgement section of any journal article, dissertation, or other publication. Support is defined as direct funding of research or personnel costs allocated from the Jornada grants, fellowship support to graduate students, logistical or data collection support from the Jornada field crew, or data management services from the Jornada Information Management team.
-4. Cite the Jornada LTER and USDA-ARS data used in your research
-    - When research findings involving Jornada data appear in a publication (journal article, dissertation, website, etc.), please include a citation and link to the original data. For already-published long-term datasets include a DOI link at a minimum, and if possible, a full citation in the reference section (e.g. in a journal article). If the data are new and unpublished, please publish the dataset AND cite it in the publication.
+::: {.callout-note collapse="true" icon="false" appearance="minimal"}
+## 1. Submit research data and metadata for publication.
+We require most researchers to submit data and metadata yearly to our research data archive. We publish this data in open-access repositories at the time research results are peer-reviewed and published, or no later than 2 years after collection. This keeps the program in step with the [LTER data policy](https://lternet.edu/data-access-policy/) and other relevant guidelines.
+:::
+::: {.callout-note collapse="true" icon="false" appearance="minimal"}
+## 2. Keep research project information up to date.
+We ask that approved projects submit any major post-approval changes to the project as a revised ResNotif form, or at a minimum regularly provide updates on the project, its personnel, and progress. Check the instructions [below](#updating-your-plan-and-project-information) to do that.
+:::
+::: {.callout-note collapse="true" icon="false" appearance="simple"}
+## 3. Acknowledge Jornada LTER and USDA-ARS support.
+The support received, name of the program, and relevant grant numbers should be included in the acknowledgement section of any journal article, dissertation, or other publication. Support is defined as direct funding of research or personnel costs allocated from the Jornada grants, fellowship support to graduate students, logistical or data collection support from the Jornada field crew, or data management services from the Jornada Information Management team.
+:::
+::: {.callout-note collapse="true" icon="false" appearance="minimal"}
+## 4. Cite the Jornada LTER and USDA-ARS data used in your research.
+When research findings involving Jornada data appear in a publication (journal article, dissertation, website, etc.), please include a citation and link to the original data. For already-published long-term datasets include a DOI link at a minimum, and if possible, a full citation in the reference section (e.g. in a journal article). If the data are new and unpublished, please publish the dataset AND cite it in the publication.
+:::
 
 The Jornada IM team strives to uphold high data publishing standards, so Jornada students and investigators who contribute to research at the Jornada should be willing to learn about, and adhere to, some best practices for collecting, describing, and publishing their research data.
 
@@ -125,3 +126,8 @@ Some grant programs have more or less extensive plan requirements. The Jornada B
 
 [^1]: The [NSF Proposal & Award Policies & Procedures Guide](https://www.nsf.gov/policies/pappg), or PAPPG, is the comprehensive proposal-writing guide for NSF submitters. All NSF proposals need to follow the requirements in the PAPPG except when a specific program solicitation requests something different or additional.
 [^2]: This is a summary extracted from the most recent version of the PAPPG.
+
+
+## Updating your plan and project information
+
+Please update the Jornada Research Site Manager (<cwnelson@nmsu.edu>) with changes to projects using updated ResNotif forms at least once per year. Send updates about project personnel or website information to the IM team (<jornada.data@nmsu.edu>) as necessary.
