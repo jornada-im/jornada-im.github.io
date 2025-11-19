@@ -717,9 +717,20 @@
   {
     "objectID": "docs/researcher/discover-data.html",
     "href": "docs/researcher/discover-data.html",
-    "title": "Discovering research data (at Jornada and beyond)",
+    "title": "Discover research data at Jornada and beyond",
     "section": "",
-    "text": "One goal of the Jornada IM system is to make the vast majority of Jornada data accessible through the Jornada website and other avenues. On the Jornada website there are two primary data access points:\n\nThe JRN LTER primary data catalog currently provides access to Jornada data held in multiple repositories with a faceted interface. The five tabs in the data catalog are:\n\nTab 1: A list of links to “signature” long-term datasets collected at JRN, arranged by important research themes.\nTab 2: A searchable listing of all datasets held in our primary data catalog, hosted at the EDI repository.\nTab3: Is a searchable listing of Jornada data held in other repositories (not EDI).\nTab 4: A listing of a few of the most useful spatial datasets the Jornada has. This catalog will be updated soon.\nTab 5: A listing of Jornada “data partnerships”, with relevant links to data catalogs provided and managed by collaborating research networks working in the Jornada Basin are.\n\nThe interactive data viewer allows map-based browsing of some of our long-term meteorology and ecology datasets collected at the Jornada.",
+    "text": "🚧 Most of this chapter is under construction.",
+    "crumbs": [
+      "Researcher Guide",
+      "Discover Jornada data"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/discover-data.html#overview",
+    "href": "docs/researcher/discover-data.html#overview",
+    "title": "Discover research data at Jornada and beyond",
+    "section": "",
+    "text": "🚧 Most of this chapter is under construction.",
     "crumbs": [
       "Researcher Guide",
       "Discover Jornada data"
@@ -728,9 +739,9 @@
   {
     "objectID": "docs/researcher/discover-data.html#jornada-data-discovery",
     "href": "docs/researcher/discover-data.html#jornada-data-discovery",
-    "title": "Discovering research data (at Jornada and beyond)",
-    "section": "",
-    "text": "One goal of the Jornada IM system is to make the vast majority of Jornada data accessible through the Jornada website and other avenues. On the Jornada website there are two primary data access points:\n\nThe JRN LTER primary data catalog currently provides access to Jornada data held in multiple repositories with a faceted interface. The five tabs in the data catalog are:\n\nTab 1: A list of links to “signature” long-term datasets collected at JRN, arranged by important research themes.\nTab 2: A searchable listing of all datasets held in our primary data catalog, hosted at the EDI repository.\nTab3: Is a searchable listing of Jornada data held in other repositories (not EDI).\nTab 4: A listing of a few of the most useful spatial datasets the Jornada has. This catalog will be updated soon.\nTab 5: A listing of Jornada “data partnerships”, with relevant links to data catalogs provided and managed by collaborating research networks working in the Jornada Basin are.\n\nThe interactive data viewer allows map-based browsing of some of our long-term meteorology and ecology datasets collected at the Jornada.",
+    "title": "Discover research data at Jornada and beyond",
+    "section": "Jornada data discovery",
+    "text": "Jornada data discovery\nOne goal of the Jornada IM system is to make the vast majority of Jornada data accessible through the Jornada website and other avenues. On the Jornada website there are two primary data access points:\n\nThe JRN LTER primary data catalog currently provides access to Jornada data held in multiple repositories with a faceted interface. The five tabs in the data catalog are:\n\nTab 1: A list of links to “signature” long-term datasets collected at JRN, arranged by important research themes.\nTab 2: A searchable listing of all datasets held in our primary data catalog, hosted at the EDI repository.\nTab3: Is a searchable listing of Jornada data held in other repositories (not EDI).\nTab 4: A listing of a few of the most useful spatial datasets the Jornada has. This catalog will be updated soon.\nTab 5: A listing of Jornada “data partnerships”, with relevant links to data catalogs provided and managed by collaborating research networks working in the Jornada Basin are.\n\nThe interactive data viewer allows map-based browsing of some of our long-term meteorology and ecology datasets collected at the Jornada.",
     "crumbs": [
       "Researcher Guide",
       "Discover Jornada data"
@@ -741,7 +752,18 @@
     "href": "docs/researcher/advanced-topics.html",
     "title": "Advanced topics in research data management",
     "section": "",
-    "text": "This chapter is under construction.",
+    "text": "🚧 Most of this chapter is under construction.",
+    "crumbs": [
+      "Researcher Guide",
+      "Advanced topics"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/advanced-topics.html#overview",
+    "href": "docs/researcher/advanced-topics.html#overview",
+    "title": "Advanced topics in research data management",
+    "section": "",
+    "text": "🚧 Most of this chapter is under construction.",
     "crumbs": [
       "Researcher Guide",
       "Advanced topics"
@@ -774,7 +796,18 @@
     "href": "docs/researcher/data-reuse.html",
     "title": "Using and re-using data",
     "section": "",
-    "text": "Most of this chapter is under construction! Don’t forget to cite Jornada data when you use it!!!",
+    "text": "🚧 Most of this chapter is under construction. Don’t forget to cite Jornada data when you use it!!!",
+    "crumbs": [
+      "Researcher Guide",
+      "Using data"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/data-reuse.html#overview",
+    "href": "docs/researcher/data-reuse.html#overview",
+    "title": "Using and re-using data",
+    "section": "",
+    "text": "🚧 Most of this chapter is under construction. Don’t forget to cite Jornada data when you use it!!!",
     "crumbs": [
       "Researcher Guide",
       "Using data"
@@ -963,9 +996,9 @@
   {
     "objectID": "docs/researcher/collect-qa-describe.html",
     "href": "docs/researcher/collect-qa-describe.html",
-    "title": "Collecting and managing research data",
+    "title": "Collect and manage your research data",
     "section": "",
-    "text": "Most of this chapter is under construction.\n\n\n\nIn this chapter we present some best practices to help you collect quality Jornada data that can be used in the future. The advice here varies depending on the type of data being collected — there are many kinds of research data — but some common themes apply. You should use consistent standards to collect, format, and apply quality assurance and control operations (QA/QC) to your data, all while describing the process and data products with rich metadata. These steps are the first building blocks of your research data workflow.",
+    "text": "🚧 Most of this chapter is under construction.\nIn this chapter we present some best practices to help you collect quality Jornada data that can be used in the future. The advice here varies depending on the type of data being collected — there are many kinds of research data — but some common themes apply. You should use consistent standards to collect, format, and apply quality assurance and control operations (QA/QC) to your data, all while describing the process and data products with rich metadata. These steps are the first building blocks of your research data workflow.\n\n\n\nWhat is your scientific data workflow? There are some common themes for any type of data you might work with.",
     "crumbs": [
       "Researcher Guide",
       "Collect and manage data"
@@ -974,9 +1007,9 @@
   {
     "objectID": "docs/researcher/collect-qa-describe.html#overview",
     "href": "docs/researcher/collect-qa-describe.html#overview",
-    "title": "Collecting and managing research data",
+    "title": "Collect and manage your research data",
     "section": "",
-    "text": "Most of this chapter is under construction.\n\n\n\nIn this chapter we present some best practices to help you collect quality Jornada data that can be used in the future. The advice here varies depending on the type of data being collected — there are many kinds of research data — but some common themes apply. You should use consistent standards to collect, format, and apply quality assurance and control operations (QA/QC) to your data, all while describing the process and data products with rich metadata. These steps are the first building blocks of your research data workflow.",
+    "text": "🚧 Most of this chapter is under construction.\nIn this chapter we present some best practices to help you collect quality Jornada data that can be used in the future. The advice here varies depending on the type of data being collected — there are many kinds of research data — but some common themes apply. You should use consistent standards to collect, format, and apply quality assurance and control operations (QA/QC) to your data, all while describing the process and data products with rich metadata. These steps are the first building blocks of your research data workflow.\n\n\n\nWhat is your scientific data workflow? There are some common themes for any type of data you might work with.",
     "crumbs": [
       "Researcher Guide",
       "Collect and manage data"
@@ -985,7 +1018,7 @@
   {
     "objectID": "docs/researcher/collect-qa-describe.html#collecting-useful-data",
     "href": "docs/researcher/collect-qa-describe.html#collecting-useful-data",
-    "title": "Collecting and managing research data",
+    "title": "Collect and manage your research data",
     "section": "Collecting useful data",
     "text": "Collecting useful data\nResearch data are very diverse, but there are some common techniques to manage new data and make them useful. Below we discuss data management best practices organized around several of the data attributes of data you’ll deal with in the real world.\n\nContent and source: What the data are about and where they came from\nData format: How data are represented in terms of structure, organization, and relationships\nFile format: The physical format the data are stored in, such as a text file or JPEG image\nIntended use: How the data will be used\n\nWe are using tabular data, such as spreadsheets, comma-separated value (CSV) files, and similar tables, as the primary example here because they are the most common and recognizeable kind of data the environmental sciences. In fact, lots of data we don’t think of as tabular can still be represented in a table. A “Special cases” section below gives examples for other data types.\n\nContent and source\nMany variables, about any number of phenomena, can be measured or observed. The content of the data refers to what the data you collect are about. So, what variables did you collect, and what real-world place, organism, thing, or process did you observe or measure them from? For our purposes at the Jornada we are usually studying biotic or abiotic phenomena in our slice of the Chihuahuan Desert. Make sure to create some good metadata about the content of your data that can be used as context in a published dataset.\nThe source of the data refers to where the data came from and how they were acquired. So, were the data collected in the field by a primary observer? By an autonomous sensor system? Or did the come from another researcher? In modern research it is common to integrate data from multiple sources, and it pays to document those sources well. If you collect the data yourself you have the opportunity to describe how you did so with rich metadata, which will make your data useful for the long term. If you use a previously-collected dataset, you’ll need to interpret and then cite it, and you’ll have an easier time if the creator was diligent about their metadata.\n\n\n\n\n\n\nTipBest practices\n\n\n\nFor data content:\n\nKnow what your data are about, including the system being studied, and the variables observed or measured.\nBe prepared to describe what the data are about in your metadata.\nBe aware of any requirements and limitations for the data you collect (e.g. human subject or endangered species data).\n\nFor data source:\n\nKeep a detailed field or laboratory notebook to document your data collection activities.\nFor autonomous data-collection systems (dataloggers, sensors, etc) keep extensive documentation, installation photos, and a log of changes and known issues.\nIf you synthesize data from external sources or published studies, document the origin of all data you use.\n\n\n\n\n\nData format\nThere are at least two meanings wrapped up in the term “data format.” First, a data format describes the way data are structured, organized, and related.1 For example, tabular data files contain rows and columns that represent the variables and observations of the data, and there can be more than one way to arrange those. The second meaning of “data format” refers to the fact that the data values for any variable can be represented in more than one way. An identical date, for example, can be formatted as the text string “July 2, 1974” or as “1974-07-02.”\nFor tabular data, structuring the data you collect into the simplest possible table format is the best policy. First think about what variables you collect. Some will be categorical (treatment, plot number) and some are continuous (measured biomass, temperature). Then consider what an observation is. Is it a monthly measurement of a plant, or an hourly temperature value recorded by a sensor? Then, organize these values logically into clearly labeled columns and rows so that the data are understandable. If you’ve heard of “Tidy data”, this is a great mental model to use for organizing data in a table (Wickham 2014). In tidy tables, the columns are always variables and the rows represent observations (more details below). When you format the actual data values within the table, use the most understandable and granular format you can. If you have a nested experimental design with blocks, plots, and individuals for example, separate the values for these variables into different columns. For date and time values, we recommend using the ISO standard (YYYY-MM-DD) rather than the traditional month-day-year (mm/dd/yy) format. The tabs below have some examples.\n\nA not-great tableA better table\n\n\nIn this example table you can see several data no-no’s.\n\n\n\nA not-so-great table (click to expand)\n\n\n\nSeveral categorical variables have been joined into one in the “LOC” column.\nThe variable names don’t give you a hint of what they are.\nThe “DATE” column would be easy to misinterpret.\nThere is no missing value indicator. For blank observations, was the individual missing or did the observer make a mistake?\n\n\n\nIn this example most of those issues have been corrected.\n\n\n\nA better table (click to expand)\n\n\n\nThe variable columns are distinct and have granular values with clear column labeles.\nThe date column follows the ISO standard (YYYY-MM-DD).\n“NA” values are used for missing data, and there is a comment column indicating what they mean.\n\n\n\n\n\n\n\n\n\n\nCautionMore about Tidy data\n\n\n\n\n\nIn the Tidy data paper (Wickham 2014), the claim is that “80% of data analysis is spent on the process of cleaning and preparing the data.” Adhering to a clear, easy-to-understand data format can help lower this burden and make data easier to clean, filter, and analyze. The tidy data model, or “long” format, aims to do this by following three rules:\n\nEach column holds one variable.\nEach row represents observation.\nEach cell holds a single value.\n\nThe resulting tables look like so:\n\n\n\nLong form (“tidy”) data where columns represent variables and rows represent observations\n\n\nThis is in contrast to “wide,” or “untidy,” format, in which variables and observations may be organized in either rows or columns. The same data in wide format could look like either of these tables:\n\n\n\nThe same data as above in wide form (“untidy”)\n\n\nKeep in mind that wide/untidy format isn’t always bad. Wide tables tend to take up less space on disk, and in addition, they can be called for in many standard statistical analyses.\nBottom line: Tidy data is a great default format with several advantages, but be ready to use wide/untidy formats when necessary too.\n\n\n\n\n\n\n\n\n\nTipBest practices\n\n\n\n\nUse the simplest possible data structure.\nOrganize data by observational unit during collection.\nMaximize the information for each observation.\n\n\n\n\n\nFile formats\n\nSome are specific to data type.\nSome are more accessible and versatile than others.\nWhen in doubt use a text file, like a comma separated value (CSV).\n\n\nDelimited text (CSV)Excel spreadsheetRelational databaseCloud-nativeOther\n\n\nDelimited text files are a great format for using, archiving, and sharing your data. Rows of data values are stored as lines in a text files with a designated character serving as the delimiter between columns of data. They are simple to understand, fairly space-efficient, and easy to use with almost any tool in your data workflow (R, Python, Excel, GIS software, etc.). They may have a .txt, .csv, .tsv, or other file extension depending on the delimiter and convention.\n\n\n\nA text file with the comma (,) as the column delimiter. This is the always-friendly “comma-separated value” (.csv) format, but other delimiters are sometimes used. (click to expand)\n\n\n\n\nMicrosoft Excel is a powerful spreadsheet program with a long history of use in research. Excel spreadsheets live in the .xlsx file format, though there are many other non-Microsoft formats Excel can read and write, including delimited text and .csv files. Also note that Microsoft Excel is not the only spreadsheet game in town. Google Sheets and LibreOffice Calc are both full-featured and can interoperate with Excel file formats very well.\n\n\n\nAn Excel spreadsheet (.xlsx file) showing the same data as presented in the first panel. This is a well-formatted spreadsheet table that wouldn’t be any trouble to pick up and use.\n\n\nUnfortunately, spreadsheets sometimes make the wrong assumption about the data you enter, and they are prone to being used in non-standard ways. That makes spreadsheet files a little less friendly as an archive and distribution format for research data. See the example below.\n\n\n\nA very unpleasant Excel spreadsheet that would be difficult to use. In spreadsheets it is pretty easy to mix very different kinds of data into the same column or row, and to include unpredictable groupings and sub-tables within the sheet. Don’t do this if you use Excel — try to format the data for easy re-usability by others (or your future self).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTipBest practices\n\n\n\n\nUse open, community standard file formats instead of proprietary ones whenever possible.\n…\n\n\n\n\n\nIntended use\n\n\n\n\n\n\nTipBest practices\n\n\n\n\n?\n\n\n\n\n\nSpecial case data\nLike people, many categories of data are special in their own way and don’t fit into the traditional tabular mold. There is a detailed Data Package Design for Special Cases guide from LTER Network IMs and EDI with more to say about these special cases (Gries et al. 2021).\n\nTabularImagesSensor dataGeospatialSequencing & ‘omics’ data\n\n\nTabular data is the default. Data values are arranged in columns and rows for variables and observations.\n\n\nImages captured from various sensors and platforms like cameras, UAVs, or remote sensing satellites.\n\nContent\nSource (or acquisition method)\nData structure\nFile format\nIntended use\n\n\n\nData collected from sensors\n\nContent\nSource (or acquisition method)\nData structure\nFile format\nIntended use\n\n\n\n\nContent\nSource (or acquisition method)\nData structure\nFile format\nIntended use\n\n\n\nSequencing and genomic data\n\nContent\nSource (or acquisition method)\nData structure\nFile format\nIntended use",
     "crumbs": [
@@ -996,7 +1029,7 @@
   {
     "objectID": "docs/researcher/collect-qa-describe.html#cleaning-and-qaqc",
     "href": "docs/researcher/collect-qa-describe.html#cleaning-and-qaqc",
-    "title": "Collecting and managing research data",
+    "title": "Collect and manage your research data",
     "section": "Cleaning and QA/QC",
     "text": "Cleaning and QA/QC\nThe Jornada IM team has a significant amount of experience and a variety of tools to draw on for quality assurance and quality control (QA/QC) of long-term Jornada datasets. For data managed by individual researchers, the Jornada IM team leaves most data QA/QC up to the research group or individual, but we are happy to advise when asked. For a simple overview and some resources useful for QA/QC of tabular data, see EDI’s recommendations.",
     "crumbs": [
@@ -1007,7 +1040,7 @@
   {
     "objectID": "docs/researcher/collect-qa-describe.html#describing-data-as-you-collect-it",
     "href": "docs/researcher/collect-qa-describe.html#describing-data-as-you-collect-it",
-    "title": "Collecting and managing research data",
+    "title": "Collect and manage your research data",
     "section": "Describing data as you collect it",
     "text": "Describing data as you collect it\n\n\n\nExample of the normal degradation in information content associated with data and metadata over time (“information entropy”). Accidents or changes in technology (dashed line) may eliminate access to remaining raw data and metadata at any time (from Michener et al. 1997)",
     "crumbs": [
@@ -1018,7 +1051,7 @@
   {
     "objectID": "docs/researcher/collect-qa-describe.html#storage-and-backup",
     "href": "docs/researcher/collect-qa-describe.html#storage-and-backup",
-    "title": "Collecting and managing research data",
+    "title": "Collect and manage your research data",
     "section": "Storage and backup",
     "text": "Storage and backup\nStore your data securely and have a reliable backup system for them.",
     "crumbs": [
@@ -1029,7 +1062,7 @@
   {
     "objectID": "docs/researcher/collect-qa-describe.html#footnotes",
     "href": "docs/researcher/collect-qa-describe.html#footnotes",
-    "title": "Collecting and managing research data",
+    "title": "Collect and manage your research data",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nThe concepts of data formats and data structuring can become fairly complicated and are related to the disciplines of database design and data modeling. For example, when designing a database one must decide what the entities (tables), attributes (columns), and relationships (links between tables/columns) are. We won’t go into this much depth here, but it can sometimes be useful to have a detailed conceptual picture of how your research data fit together.↩︎",
     "crumbs": [
@@ -1042,7 +1075,18 @@
     "href": "docs/researcher/prepare-and-publish.html",
     "title": "Prepare and publish your data",
     "section": "",
-    "text": "Once data are clean and ready to analyze or publish, it is best to describe the data with metadata that is as detailed as needed to allow interpretation and re-use. The EDI repository has more guidance here, and the Jornada IM team tries to offer extensive assistance to researchers who need to describe their datasets for publication. Its a good idea to start collecting and organizing metadata as soon as you start collecting data. There are two recommended ways to collect and organize metadata: EDI’s ezEML tool or Jornada metadata templates. These are described below.",
+    "text": "🚧 Most of this chapter is under construction.\nOnce data are clean and ready to analyze or publish, it is best to describe the data with metadata that is as detailed as needed to allow interpretation and re-use. The EDI repository has more guidance here, and the Jornada IM team tries to offer extensive assistance to researchers who need to describe their datasets for publication. Its a good idea to start collecting and organizing metadata as soon as you start collecting data. There are two recommended ways to collect and organize metadata: EDI’s ezEML tool or Jornada metadata templates. These are described below.\n\n\n\nFigure 1: A simplified schematic of how to publish a Jornada dataset.",
+    "crumbs": [
+      "Researcher Guide",
+      "Prepare and publish data"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/prepare-and-publish.html#overview",
+    "href": "docs/researcher/prepare-and-publish.html#overview",
+    "title": "Prepare and publish your data",
+    "section": "",
+    "text": "🚧 Most of this chapter is under construction.\nOnce data are clean and ready to analyze or publish, it is best to describe the data with metadata that is as detailed as needed to allow interpretation and re-use. The EDI repository has more guidance here, and the Jornada IM team tries to offer extensive assistance to researchers who need to describe their datasets for publication. Its a good idea to start collecting and organizing metadata as soon as you start collecting data. There are two recommended ways to collect and organize metadata: EDI’s ezEML tool or Jornada metadata templates. These are described below.\n\n\n\nFigure 1: A simplified schematic of how to publish a Jornada dataset.",
     "crumbs": [
       "Researcher Guide",
       "Prepare and publish data"
@@ -1097,7 +1141,7 @@
     "href": "docs/researcher/introduction.html",
     "title": "Data guide for Jornada researchers",
     "section": "",
-    "text": "Hello and welcome! This is the comprehensive guide to working with data from Jornada research programs. These programs, which include the Jornada Basin LTER (JRN), the USDA-ARS Jornada Experimental Range (JER), and their associated communities, generate a wealth of scientific data relevant to ecology, earth science, and resource management. Studying this guide will help you become a valued contributor to this data commons, and use Jornada data (or any data) more efficiently and effectively in your research and management activities. The guide is written by Jornada information managers (IMs) with support from the Jornada research community and the LTER Network, and it is designed to be accessible for students (graduate and undergraduate), investigators, postdocs, and staff scientists. If you have any questions, don’t hesitate to reach out the the Jornada Information Managers at jornada.data@nmsu.edu.",
+    "text": "Hello and welcome! This is the comprehensive guide to working with data from Jornada research programs. These programs, which include the Jornada Basin LTER (JRN), the USDA-ARS Jornada Experimental Range (JER), and their associated communities, generate a wealth of scientific data relevant to ecology, earth science, and resource management. Studying this guide will help you become a valued contributor to this data commons, and use Jornada data (or any data) more efficiently and effectively in your research and management activities. The guide is written by Jornada information managers (IMs) with support from the Jornada research community and the LTER Network, and it is designed to be accessible for students (graduate and undergraduate), investigators, postdocs, and staff scientists. If you have any questions, don’t hesitate to reach out to Jornada IMs at jornada.data@nmsu.edu.",
     "crumbs": [
       "Researcher Guide",
       "Introduction"
@@ -1108,7 +1152,7 @@
     "href": "docs/researcher/introduction.html#introduction",
     "title": "Data guide for Jornada researchers",
     "section": "",
-    "text": "Hello and welcome! This is the comprehensive guide to working with data from Jornada research programs. These programs, which include the Jornada Basin LTER (JRN), the USDA-ARS Jornada Experimental Range (JER), and their associated communities, generate a wealth of scientific data relevant to ecology, earth science, and resource management. Studying this guide will help you become a valued contributor to this data commons, and use Jornada data (or any data) more efficiently and effectively in your research and management activities. The guide is written by Jornada information managers (IMs) with support from the Jornada research community and the LTER Network, and it is designed to be accessible for students (graduate and undergraduate), investigators, postdocs, and staff scientists. If you have any questions, don’t hesitate to reach out the the Jornada Information Managers at jornada.data@nmsu.edu.",
+    "text": "Hello and welcome! This is the comprehensive guide to working with data from Jornada research programs. These programs, which include the Jornada Basin LTER (JRN), the USDA-ARS Jornada Experimental Range (JER), and their associated communities, generate a wealth of scientific data relevant to ecology, earth science, and resource management. Studying this guide will help you become a valued contributor to this data commons, and use Jornada data (or any data) more efficiently and effectively in your research and management activities. The guide is written by Jornada information managers (IMs) with support from the Jornada research community and the LTER Network, and it is designed to be accessible for students (graduate and undergraduate), investigators, postdocs, and staff scientists. If you have any questions, don’t hesitate to reach out to Jornada IMs at jornada.data@nmsu.edu.",
     "crumbs": [
       "Researcher Guide",
       "Introduction"
@@ -1130,7 +1174,7 @@
     "href": "docs/researcher/introduction.html#the-data-lifecycle",
     "title": "Data guide for Jornada researchers",
     "section": "The data lifecycle",
-    "text": "The data lifecycle\n\n\n\nThis guide aims to cover all aspects of data work and is organized roughly according to the DataONE data lifecycle (Michener and Jones 2012), which outlines 8 distinct phases of working with data in a research context. In practice the phases overlap considerably the timing of activites and who executes them.\n\nPlanning for research and data management is covered in the Starting research chapter.\nWe discuss data collection, quality assurance, and many aspects of describing data (with metadata) in the Collect and manage data chapter.\nWhen you are ready to preserve your data by publishing it in a repository, read the Prepare and publish chapter.\nTo learn how and where to discover Jornada data, read the Data discovery chapter.\nData reuse, including integrating and analyzing data is covered in the Using data chapter.\n\nResearch workflows and data management can become complex, and the Jornada is a big project, so we have also created an Advanced topics in research data management chapter. You will find many Jornada-specific tips throughout the guide, but much of the advice in these chapters can apply to managing data in other contexts.",
+    "text": "The data lifecycle\nThis guide aims to cover all aspects of data work and is organized roughly according to the DataONE data lifecycle (Michener and Jones 2012), which outlines 8 distinct phases of working with data in a research context. In practice the phases overlap considerably the timing of activites and who executes them.\n\n\n\nThe DataONE data lifecycle from (Michener and Jones 2012)\n\n\n\nPlanning for research and data management is covered in the Starting research chapter.\nWe discuss data collection, quality assurance, and many aspects of describing data (with metadata) in the Collect and manage data chapter.\nWhen you are ready to preserve your data by publishing it in a repository, read the Prepare and publish chapter.\nTo learn how and where to discover Jornada data, read the Data discovery chapter.\nData reuse, including integrating and analyzing data is covered in the Using data chapter.\n\nResearch workflows and data management can become complex, and the Jornada is a big project, so we have also created an Advanced topics in research data management chapter. You will find many Jornada-specific tips throughout the guide, but much of the advice in these chapters can apply to managing data in other contexts.",
     "crumbs": [
       "Researcher Guide",
       "Introduction"
