@@ -737,80 +737,91 @@
     ]
   },
   {
-    "objectID": "docs/researcher/prepare-and-publish.html",
-    "href": "docs/researcher/prepare-and-publish.html",
-    "title": "Prepare and publish your data",
+    "objectID": "docs/researcher/advanced-topics.html",
+    "href": "docs/researcher/advanced-topics.html",
+    "title": "Advanced topics in research data management",
     "section": "",
-    "text": "Once data are clean and ready to analyze or publish, it is best to describe the data with metadata that is as detailed as needed to allow interpretation and re-use. The EDI repository has more guidance here, and the Jornada IM team tries to offer extensive assistance to researchers who need to describe their datasets for publication. Its a good idea to start collecting and organizing metadata as soon as you start collecting data. There are two recommended ways to collect and organize metadata: EDI’s ezEML tool or Jornada metadata templates. These are described below.",
+    "text": "This chapter is under construction.",
     "crumbs": [
       "Researcher Guide",
-      "Prepare and publish"
+      "Advanced topics"
     ]
   },
   {
-    "objectID": "docs/researcher/prepare-and-publish.html#ezeml",
-    "href": "docs/researcher/prepare-and-publish.html#ezeml",
-    "title": "Prepare and publish your data",
-    "section": "ezEML",
-    "text": "ezEML\nThe EDI repository has created a web app called ezEML for describing research datasets and creating standardized metadata documents for publication (EML). The tool is new but has rapidly developed to become an excellent method to author well-documented datasets. There is a Jornada EML template available on the site, so the recommended process for Jornada researchers is:\n\nLog in to ezEML using your Google, GitHub, or ORCID account (whichever is easiest).\nStart a new EML document using the “EML Documents &gt; New from Template” menu item\nNavigate to and select the “LTER/JRN/JRN_template_general” template to open a document template pre-populated with Jornada metadata.\nGive the document a unique name. You can save your metadata and then return to this document anytime.\nFollow the sequence of forms on the left, and ezEML’s prompts, to upload data files and enter metadata for your dataset. Each section of your metadata will have help available (“?” icons) and several fields will already be filled if you are using the JRN template.\nUse the “Check metadata” and “Check data tables” tools at the bottom left to check the completeness and validity of your dataset. Green lights mean your dataset is well described and ready to share.\nWhen ready, click “Submit/Share Package” and then “Collaborate with Colleagues”. DO NOT USE “Submit Package to EDI” or we may miss your dataset.\nOn the “Invite a Collaborator” screen share the dataset with a Jornada data manager (jornada.data@nmsu.edu).\n\nAt this point, the Jornada IM Team will receive a notification and can access your dataset in ezEML to review, edit, and publish to EDI.",
+    "objectID": "docs/researcher/advanced-topics.html#complex-workflows",
+    "href": "docs/researcher/advanced-topics.html#complex-workflows",
+    "title": "Advanced topics in research data management",
+    "section": "Complex workflows",
+    "text": "Complex workflows",
     "crumbs": [
       "Researcher Guide",
-      "Prepare and publish"
+      "Advanced topics"
     ]
   },
   {
-    "objectID": "docs/researcher/prepare-and-publish.html#metadata-templates",
-    "href": "docs/researcher/prepare-and-publish.html#metadata-templates",
-    "title": "Prepare and publish your data",
-    "section": "Metadata templates",
-    "text": "Metadata templates\nA metadata template is a document with a structure and cues that help you collect the essential metadata needed to describe a published dataset. We have created Jornada metadata templates in MS Word (.docx) or Excel (.xlsx) formats. These templates contain sections for all critical pieces of metadata, along with instructions on what to include and how to structure the information. The Excel version is slightly more detailed and may be useful for complex datasets. Completed templates and accompanying data files should be sent to the Jornada IM team (jornada.data@nmsu.edu).",
+    "objectID": "docs/researcher/advanced-topics.html#managing-and-versioning-your-code",
+    "href": "docs/researcher/advanced-topics.html#managing-and-versioning-your-code",
+    "title": "Advanced topics in research data management",
+    "section": "Managing and versioning your code",
+    "text": "Managing and versioning your code",
     "crumbs": [
       "Researcher Guide",
-      "Prepare and publish"
+      "Advanced topics"
     ]
   },
   {
-    "objectID": "docs/researcher/prepare-and-publish.html#general-jornada-metadata-guidelines",
-    "href": "docs/researcher/prepare-and-publish.html#general-jornada-metadata-guidelines",
-    "title": "Prepare and publish your data",
-    "section": "General Jornada metadata guidelines",
-    "text": "General Jornada metadata guidelines\nWhile writing metadata, the Jornada metadata standards (.docx) and keyword thesauri (.xlsx) documents are helpful, but not required.",
-    "crumbs": [
-      "Researcher Guide",
-      "Prepare and publish"
-    ]
-  },
-  {
-    "objectID": "docs/researcher/prepare-and-publish.html#publishing-datasets",
-    "href": "docs/researcher/prepare-and-publish.html#publishing-datasets",
-    "title": "Prepare and publish your data",
-    "section": "Publishing datasets",
-    "text": "Publishing datasets\nDatasets, which include data and metadata describing that data, that are generated from Jornada research projects should be submitted to the IM team (jornada.data@nmsu.edu) regularly according the policy outlined above. Once submitted, preparation and publication of a Jornada dataset is usually an iterative process (Figure 1). Researchers submit data and metadata to a Jornada Information Manager who then securely archives the data and checks these items for quality and consistency. Usually there is a period of communication and updates between the IM and the researcher until the dataset is ready for publication. Once it is, the IM encodes the data into something called an EML file, and then sends it, with the data, to the Environmental Data Initiative repository (EDI) as a published dataset. There are other variations on this process, depending on the data, but this is the most common.",
-    "crumbs": [
-      "Researcher Guide",
-      "Prepare and publish"
-    ]
-  },
-  {
-    "objectID": "docs/researcher/project-management.html",
-    "href": "docs/researcher/project-management.html",
-    "title": "Jornada project management",
+    "objectID": "docs/researcher/data-reuse.html",
+    "href": "docs/researcher/data-reuse.html",
+    "title": "Using and re-using data",
     "section": "",
-    "text": "Most of this chapter is under construction.",
+    "text": "Most of this chapter is under construction! Don’t forget to cite Jornada data when you use it!!!",
     "crumbs": [
       "Researcher Guide",
-      "Jornada project management"
+      "Using data"
     ]
   },
   {
-    "objectID": "docs/researcher/project-management.html#updating-project-information",
-    "href": "docs/researcher/project-management.html#updating-project-information",
-    "title": "Jornada project management",
-    "section": "Updating project information",
-    "text": "Updating project information\nPlease update the Jornada Research Site Manager (janderso@nmsu.edu) with changes to projects using updated ResNotif forms at least once per year. Send updates about project personnel or website information to the IM team (jornada.data@nmsu.edu) as necessary.",
+    "objectID": "docs/researcher/data-reuse.html#downloading-and-checking",
+    "href": "docs/researcher/data-reuse.html#downloading-and-checking",
+    "title": "Using and re-using data",
+    "section": "Downloading and checking",
+    "text": "Downloading and checking",
     "crumbs": [
       "Researcher Guide",
-      "Jornada project management"
+      "Using data"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/data-reuse.html#integrating-data",
+    "href": "docs/researcher/data-reuse.html#integrating-data",
+    "title": "Using and re-using data",
+    "section": "Integrating data",
+    "text": "Integrating data",
+    "crumbs": [
+      "Researcher Guide",
+      "Using data"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/data-reuse.html#analyzing-data",
+    "href": "docs/researcher/data-reuse.html#analyzing-data",
+    "title": "Using and re-using data",
+    "section": "Analyzing data",
+    "text": "Analyzing data",
+    "crumbs": [
+      "Researcher Guide",
+      "Using data"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/data-reuse.html#citing-the-jornada",
+    "href": "docs/researcher/data-reuse.html#citing-the-jornada",
+    "title": "Using and re-using data",
+    "section": "Citing the Jornada",
+    "text": "Citing the Jornada\nPlease cite Jornada data when you use it. You can do this in the reference section of a journal article, which is preferable, or the data availability statement of some journals. We’ll are encouraging this practice more and more, and will be developing better guidelines and, we hope, data citation statistics in the future.",
+    "crumbs": [
+      "Researcher Guide",
+      "Using data"
     ]
   },
   {
@@ -1027,58 +1038,58 @@
     ]
   },
   {
-    "objectID": "docs/researcher/data-reuse.html",
-    "href": "docs/researcher/data-reuse.html",
-    "title": "Using and re-using data",
+    "objectID": "docs/researcher/prepare-and-publish.html",
+    "href": "docs/researcher/prepare-and-publish.html",
+    "title": "Prepare and publish your data",
     "section": "",
-    "text": "Most of this chapter is under construction! Don’t forget to cite Jornada data when you use it!!!",
+    "text": "Once data are clean and ready to analyze or publish, it is best to describe the data with metadata that is as detailed as needed to allow interpretation and re-use. The EDI repository has more guidance here, and the Jornada IM team tries to offer extensive assistance to researchers who need to describe their datasets for publication. Its a good idea to start collecting and organizing metadata as soon as you start collecting data. There are two recommended ways to collect and organize metadata: EDI’s ezEML tool or Jornada metadata templates. These are described below.",
     "crumbs": [
       "Researcher Guide",
-      "Using data"
+      "Prepare and publish data"
     ]
   },
   {
-    "objectID": "docs/researcher/data-reuse.html#downloading-and-checking",
-    "href": "docs/researcher/data-reuse.html#downloading-and-checking",
-    "title": "Using and re-using data",
-    "section": "Downloading and checking",
-    "text": "Downloading and checking",
+    "objectID": "docs/researcher/prepare-and-publish.html#ezeml",
+    "href": "docs/researcher/prepare-and-publish.html#ezeml",
+    "title": "Prepare and publish your data",
+    "section": "ezEML",
+    "text": "ezEML\nThe EDI repository has created a web app called ezEML for describing research datasets and creating standardized metadata documents for publication (EML). The tool is new but has rapidly developed to become an excellent method to author well-documented datasets. There is a Jornada EML template available on the site, so the recommended process for Jornada researchers is:\n\nLog in to ezEML using your Google, GitHub, or ORCID account (whichever is easiest).\nStart a new EML document using the “EML Documents &gt; New from Template” menu item\nNavigate to and select the “LTER/JRN/JRN_template_general” template to open a document template pre-populated with Jornada metadata.\nGive the document a unique name. You can save your metadata and then return to this document anytime.\nFollow the sequence of forms on the left, and ezEML’s prompts, to upload data files and enter metadata for your dataset. Each section of your metadata will have help available (“?” icons) and several fields will already be filled if you are using the JRN template.\nUse the “Check metadata” and “Check data tables” tools at the bottom left to check the completeness and validity of your dataset. Green lights mean your dataset is well described and ready to share.\nWhen ready, click “Submit/Share Package” and then “Collaborate with Colleagues”. DO NOT USE “Submit Package to EDI” or we may miss your dataset.\nOn the “Invite a Collaborator” screen share the dataset with a Jornada data manager (jornada.data@nmsu.edu).\n\nAt this point, the Jornada IM Team will receive a notification and can access your dataset in ezEML to review, edit, and publish to EDI.",
     "crumbs": [
       "Researcher Guide",
-      "Using data"
+      "Prepare and publish data"
     ]
   },
   {
-    "objectID": "docs/researcher/data-reuse.html#integrating-data",
-    "href": "docs/researcher/data-reuse.html#integrating-data",
-    "title": "Using and re-using data",
-    "section": "Integrating data",
-    "text": "Integrating data",
+    "objectID": "docs/researcher/prepare-and-publish.html#metadata-templates",
+    "href": "docs/researcher/prepare-and-publish.html#metadata-templates",
+    "title": "Prepare and publish your data",
+    "section": "Metadata templates",
+    "text": "Metadata templates\nA metadata template is a document with a structure and cues that help you collect the essential metadata needed to describe a published dataset. We have created Jornada metadata templates in MS Word (.docx) or Excel (.xlsx) formats. These templates contain sections for all critical pieces of metadata, along with instructions on what to include and how to structure the information. The Excel version is slightly more detailed and may be useful for complex datasets. Completed templates and accompanying data files should be sent to the Jornada IM team (jornada.data@nmsu.edu).",
     "crumbs": [
       "Researcher Guide",
-      "Using data"
+      "Prepare and publish data"
     ]
   },
   {
-    "objectID": "docs/researcher/data-reuse.html#analyzing-data",
-    "href": "docs/researcher/data-reuse.html#analyzing-data",
-    "title": "Using and re-using data",
-    "section": "Analyzing data",
-    "text": "Analyzing data",
+    "objectID": "docs/researcher/prepare-and-publish.html#general-jornada-metadata-guidelines",
+    "href": "docs/researcher/prepare-and-publish.html#general-jornada-metadata-guidelines",
+    "title": "Prepare and publish your data",
+    "section": "General Jornada metadata guidelines",
+    "text": "General Jornada metadata guidelines\nWhile writing metadata, the Jornada metadata standards (.docx) and keyword thesauri (.xlsx) documents are helpful, but not required.",
     "crumbs": [
       "Researcher Guide",
-      "Using data"
+      "Prepare and publish data"
     ]
   },
   {
-    "objectID": "docs/researcher/data-reuse.html#citing-the-jornada",
-    "href": "docs/researcher/data-reuse.html#citing-the-jornada",
-    "title": "Using and re-using data",
-    "section": "Citing the Jornada",
-    "text": "Citing the Jornada\nPlease cite Jornada data when you use it. You can do this in the reference section of a journal article, which is preferable, or the data availability statement of some journals. We’ll are encouraging this practice more and more, and will be developing better guidelines and, we hope, data citation statistics in the future.",
+    "objectID": "docs/researcher/prepare-and-publish.html#publishing-datasets",
+    "href": "docs/researcher/prepare-and-publish.html#publishing-datasets",
+    "title": "Prepare and publish your data",
+    "section": "Publishing datasets",
+    "text": "Publishing datasets\nDatasets, which include data and metadata describing that data, that are generated from Jornada research projects should be submitted to the IM team (jornada.data@nmsu.edu) regularly according the policy outlined above. Once submitted, preparation and publication of a Jornada dataset is usually an iterative process (Figure 1). Researchers submit data and metadata to a Jornada Information Manager who then securely archives the data and checks these items for quality and consistency. Usually there is a period of communication and updates between the IM and the researcher until the dataset is ready for publication. Once it is, the IM encodes the data into something called an EML file, and then sends it, with the data, to the Environmental Data Initiative repository (EDI) as a published dataset. There are other variations on this process, depending on the data, but this is the most common.",
     "crumbs": [
       "Researcher Guide",
-      "Using data"
+      "Prepare and publish data"
     ]
   },
   {
@@ -1086,7 +1097,7 @@
     "href": "docs/researcher/introduction.html",
     "title": "Data guide for Jornada researchers",
     "section": "",
-    "text": "This guide was written by Jornada information managers (IMs) and the Jornada community at large as a concise, but fairly comprehensive guide to working with Jornada data. It is designed to be accessible for students (graduate and undergraduate), investigators, postdocs, and staff scientists, and to help these groups do research, particularly data-related tasks, effectively and efficiently.",
+    "text": "Hello and welcome! This is the comprehensive guide to working with data from Jornada research programs. These programs, which include the Jornada Basin LTER (JRN), the USDA-ARS Jornada Experimental Range (JER), and their associated communities, generate a wealth of scientific data relevant to ecology, earth science, and resource management. Studying this guide will help you become a valued contributor to this data commons, and use Jornada data (or any data) more efficiently and effectively in your research and management activities. The guide is written by Jornada information managers (IMs) with support from the Jornada research community and the LTER Network, and it is designed to be accessible for students (graduate and undergraduate), investigators, postdocs, and staff scientists. If you have any questions, don’t hesitate to reach out the the Jornada Information Managers at jornada.data@nmsu.edu.",
     "crumbs": [
       "Researcher Guide",
       "Introduction"
@@ -1097,7 +1108,7 @@
     "href": "docs/researcher/introduction.html#introduction",
     "title": "Data guide for Jornada researchers",
     "section": "",
-    "text": "This guide was written by Jornada information managers (IMs) and the Jornada community at large as a concise, but fairly comprehensive guide to working with Jornada data. It is designed to be accessible for students (graduate and undergraduate), investigators, postdocs, and staff scientists, and to help these groups do research, particularly data-related tasks, effectively and efficiently.",
+    "text": "Hello and welcome! This is the comprehensive guide to working with data from Jornada research programs. These programs, which include the Jornada Basin LTER (JRN), the USDA-ARS Jornada Experimental Range (JER), and their associated communities, generate a wealth of scientific data relevant to ecology, earth science, and resource management. Studying this guide will help you become a valued contributor to this data commons, and use Jornada data (or any data) more efficiently and effectively in your research and management activities. The guide is written by Jornada information managers (IMs) with support from the Jornada research community and the LTER Network, and it is designed to be accessible for students (graduate and undergraduate), investigators, postdocs, and staff scientists. If you have any questions, don’t hesitate to reach out the the Jornada Information Managers at jornada.data@nmsu.edu.",
     "crumbs": [
       "Researcher Guide",
       "Introduction"
@@ -1119,7 +1130,7 @@
     "href": "docs/researcher/introduction.html#the-data-lifecycle",
     "title": "Data guide for Jornada researchers",
     "section": "The data lifecycle",
-    "text": "The data lifecycle\n\n\n\nThis guide aims to cover all aspects of data work and is organized roughly according to the DataONE data lifecycle (Michener and Jones 2012), which outlines 8 distinct phases of working with data in a research context. In practice the phases overlap considerably the timing of activites and who executes them.\n\nPlanning for research and data management is covered in the Starting research chapter.\nWe discuss data collection, quality assurance, and many aspects of describing data (with metadata) in the Collect and manage data chapter.\nWhen you are ready to preserve your data by publishing it in a repository, read the Prepare and publish chapter.\nTo learn how and where to discover Jornada data, read the Data discovery chapter.\nData reuse, including integrating and analyzing data is covered in the Using data chapter.\n\nGuidance in these chapters can apply to managing data for any environmental science research, but there are Jornada-specific tips included throughout. Since there are many projects to manage at the Jornada, and we have some unique requirements, there is also a Jornada project management chapter.",
+    "text": "The data lifecycle\n\n\n\nThis guide aims to cover all aspects of data work and is organized roughly according to the DataONE data lifecycle (Michener and Jones 2012), which outlines 8 distinct phases of working with data in a research context. In practice the phases overlap considerably the timing of activites and who executes them.\n\nPlanning for research and data management is covered in the Starting research chapter.\nWe discuss data collection, quality assurance, and many aspects of describing data (with metadata) in the Collect and manage data chapter.\nWhen you are ready to preserve your data by publishing it in a repository, read the Prepare and publish chapter.\nTo learn how and where to discover Jornada data, read the Data discovery chapter.\nData reuse, including integrating and analyzing data is covered in the Using data chapter.\n\nResearch workflows and data management can become complex, and the Jornada is a big project, so we have also created an Advanced topics in research data management chapter. You will find many Jornada-specific tips throughout the guide, but much of the advice in these chapters can apply to managing data in other contexts.",
     "crumbs": [
       "Researcher Guide",
       "Introduction"
@@ -1141,7 +1152,18 @@
     "href": "docs/researcher/starting-research.html",
     "title": "Starting a Jornada research project",
     "section": "",
-    "text": "To start your research you will need a plan, which can include:\nMost of these are beyond the scope of this guide, which focuses on the data you’ll be collecting, analyzing and publishing. In this chapter we cover how to have your plan approved by Jornada Research Site Managers, and creating a data management plan (DMP).",
+    "text": "To start your research you will need a plan. Overall, your research plan may be full of things like experimental design, field logistics, and other tough decisions. Most of these are beyond the scope of this guide, which focuses on the data you’ll be collecting, analyzing and publishing, but you do need to have your plan approved by the Jornada Research Site Managers, and we strongly recommend planning in advance for data management. In this chapter we help you plan for and navigate the Jornada permitting and project management process, and give some advice on creating your own data management plan (DMP).",
+    "crumbs": [
+      "Researcher Guide",
+      "Starting research"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/starting-research.html#overview",
+    "href": "docs/researcher/starting-research.html#overview",
+    "title": "Starting a Jornada research project",
+    "section": "",
+    "text": "To start your research you will need a plan. Overall, your research plan may be full of things like experimental design, field logistics, and other tough decisions. Most of these are beyond the scope of this guide, which focuses on the data you’ll be collecting, analyzing and publishing, but you do need to have your plan approved by the Jornada Research Site Managers, and we strongly recommend planning in advance for data management. In this chapter we help you plan for and navigate the Jornada permitting and project management process, and give some advice on creating your own data management plan (DMP).",
     "crumbs": [
       "Researcher Guide",
       "Starting research"
@@ -1152,7 +1174,7 @@
     "href": "docs/researcher/starting-research.html#policies-and-obtaining-permits",
     "title": "Starting a Jornada research project",
     "section": "Policies and obtaining permits",
-    "text": "Policies and obtaining permits\nMost new research projects are initiated through the Jornada Research Site Manager, Conrad Nelson (cwnelson@nmsu.edu). The JRN website or the JER website are the best source of information on this process, and have the current forms needed. There is also a listing of forms available here. To begin the approval process, a potential researcher submits a Research Notification (ResNotif) form, which describes the planned location, research activities, personnel, and other important project information, to Conrad Nelson. After review, and after any necessary changes to the plan are made, the project can be approved to begin.\nAll approved research projects at the Jornada must agree to a data sharing and acknowledgement policy. The requirements for Jornada researchers are, again, detailed on the JRN or JER websites, but to summarize, researchers should:\n\nSubmit research data and metadata for publication\n\nWe require most researchers to submit data and metadata yearly to our research data archive. We publish this data in open-access repositories at the time research results are peer-reviewed and published, or no later than 2 years after collection. This keeps the program in step with the LTER data policy and other relevant guidelines.\n\nKeep research project information up to date\n\nWe ask that approved projects submit any major post-approval changes to the project as a revised ResNotif form, or at a minimum regularly provide updates on the project, its personnel, and progress.\n\nAcknowledge Jornada LTER and USDA-ARS support\n\nThe support received, name of the program, and relevant grant numbers should be included in the acknowledgement section of any journal article, dissertation, or other publication. Support is defined as direct funding of research or personnel costs allocated from the Jornada grants, fellowship support to graduate students, logistical or data collection support from the Jornada field crew, or data management services from the Jornada Information Management team.\n\nCite the Jornada LTER and USDA-ARS data used in your research\n\nWhen research findings involving Jornada data appear in a publication (journal article, dissertation, website, etc.), please include a citation and link to the original data. For already-published long-term datasets include a DOI link at a minimum, and if possible, a full citation in the reference section (e.g. in a journal article). If the data are new and unpublished, please publish the dataset AND cite it in the publication.\n\n\nThe Jornada IM team strives to uphold high data publishing standards, so Jornada students and investigators who contribute to research at the Jornada should be willing to learn about, and adhere to, some best practices for collecting, describing, and publishing their research data.",
+    "text": "Policies and obtaining permits\nMost new research projects are initiated through the Jornada Research Site Manager, Conrad Nelson (cwnelson@nmsu.edu). The JRN website or the JER website are the best source of information on this process, and have the current forms needed. There is also a listing of forms available here. To begin the approval process, a potential researcher submits a Research Notification (ResNotif) form, which describes the planned location, research activities, personnel, and other important project information, to Conrad Nelson. After review, and after any necessary changes to the plan are made, the project can be approved to begin.\nAll approved research projects at the Jornada must agree to a data sharing and acknowledgement policy. The requirements for Jornada researchers are, again, detailed on the JRN or JER websites, but to summarize, researchers should:\n\n\n\n\n\n\nNote1. Submit research data and metadata for publication.\n\n\n\n\n\nWe require most researchers to submit data and metadata yearly to our research data archive. We publish this data in open-access repositories at the time research results are peer-reviewed and published, or no later than 2 years after collection. This keeps the program in step with the LTER data policy and other relevant guidelines.\n\n\n\n\n\n\n\n\n\nNote2. Keep research project information up to date.\n\n\n\n\n\nWe ask that approved projects submit any major post-approval changes to the project as a revised ResNotif form, or at a minimum regularly provide updates on the project, its personnel, and progress. Check the instructions below to do that.\n\n\n\n\n\n\n\n\n\nNote3. Acknowledge Jornada LTER and USDA-ARS support.\n\n\n\n\n\nThe support received, name of the program, and relevant grant numbers should be included in the acknowledgement section of any journal article, dissertation, or other publication. Support is defined as direct funding of research or personnel costs allocated from the Jornada grants, fellowship support to graduate students, logistical or data collection support from the Jornada field crew, or data management services from the Jornada Information Management team.\n\n\n\n\n\n\n\n\n\nNote4. Cite the Jornada LTER and USDA-ARS data used in your research.\n\n\n\n\n\nWhen research findings involving Jornada data appear in a publication (journal article, dissertation, website, etc.), please include a citation and link to the original data. For already-published long-term datasets include a DOI link at a minimum, and if possible, a full citation in the reference section (e.g. in a journal article). If the data are new and unpublished, please publish the dataset AND cite it in the publication.\n\n\n\nThe Jornada IM team strives to uphold high data publishing standards, so Jornada students and investigators who contribute to research at the Jornada should be willing to learn about, and adhere to, some best practices for collecting, describing, and publishing their research data.",
     "crumbs": [
       "Researcher Guide",
       "Starting research"
@@ -1164,6 +1186,17 @@
     "title": "Starting a Jornada research project",
     "section": "Making a data management plan",
     "text": "Making a data management plan\nManaging the data you collect and use is an integral part of any research project, and you should start creating a data management plan (DMP) early in your research process. A good DMP looks ahead at the full research lifecyle, from data collection to long-term preservation of research outputs. Below are some questions to think about and ideas to consider including in your plan.\n\nThe dataStorage & backupMetadataAccess & sharingPreservationRoles\n\n\nWhat are the data that will be collected or used, and where do they come from?\nImportant management considerations:\n\nThink about the content of the data, such as the variables (height, carbon content) or study subjects (humans, plants) being observed.\nAlso think about the source of the data, such as whether they come from automatic sensors, human field observers, or previously-published datasets.\nData content and source can dictate what data management options are available or required.\n\nDetailed advice for collecting and managing different types of data begin in the next chapter.\n\n\nHow will data be stored securely and protected from loss?\nImportant management considerations:\n\nSize of the data. Is it kilobyte or terabyte-scale?\nData attributes like the data structure and file format can determine the available options for storage and backup.\nInstitutional requirements, infrastructure capacity, and funding also constrain the options here.\n\n\n\nWhat kind of metadata will be used to describe the data?\nImportant management considerations:\n\nCollect metadata during the research, not just in a final rush before publication.\nSome data types and corresponding file types, geospatial data for example, require specific metadata to be useful.\nResearch communities often have accepted standards for metadata content and formatting.\n\n\n\nHow will data access be provided during research, and how will research data products be shared?\nImportant management considerations:\n\nThe research team should have secure access to data as necessary.\nData publication is generally required for federally-supported research, so plan for this early.\nBe aware of your team’s, and your broader research community’s, expectations for sharing data.\n\n\n\nWhat are the long-term plans for preservation of the data (or samples/specimens) once research is complete?\nImportant management considerations:\n\nResearch funding may (again) dictate a particular location or duration for data preservation.\nIf data re-use is likely, choose long-term preservation options accordingly.\nComplete metadata is essential to making datasets useful for the long-term.\n\n\n\nWhat are the data management roles and who is responsible for what?\nImportant management considerations:\n\nSome potentially important roles: data collection, quality assurance and control (QA/QC), cyberinfrastructure technician, analysis, data curation and publication.\nPeople in data roles frequently turn over, so plan on some role-sharing to help overcome the “Bus factor.”\nBe prepared to give credit to people in these roles when publishing research products.\n\n\n\n\n\nFor proposals\nA formal data management plan (DMP) document is usually required in proposals to federal agencies and other funders. For example, in standard proposals, NSF expects a 2-page DMP with these suggested sections:\n\n\nthe types of data, samples, physical collections, software, curriculum materials, and other materials to be produced in the course of the project;\nthe standards to be used for data and metadata format and content (where existing standards are absent or deemed inadequate, this should be documented along with any proposed solutions or remedies);\npolicies for access and sharing including provisions for appropriate protection of privacy, confidentiality, security, intellectual property, or other rights or requirements;\npolicies and provisions for re-use, re-distribution, and the production of derivatives; and\nplans for archiving data, samples, and other research products, and for preservation of access to them.\n\nfrom Chapter 2 of the 2024 NSF PAPPG1\n\nSome grant programs have more or less extensive plan requirements. The Jornada Basin LTER program submits a fairly long DMP with each renewal proposal to the NSF LTER program (examples here). We follow this plan closely during our 6-year funding cycle, and many of the recommendations and expectations outlined in this guide are targeted to help fulfill our proposal DMP.\nHere are some resources that can help with creating a proposal DMP:\n\nDMPtool.org collects DMP templates matching institutional and funder requirements, and provides examples from many existing research programs and data repositories. It is oriented towards a wide range of major U.S. funding agencies (NSF, NIH, etc.)\nHere are the NSF guidelines for data management and sharing plans. 2\nData management planning guides for federal agency scientists are generally available from the agency itself, such as for USDA and USGS.\nIf you need help creating a DMP for a project proposal at the Jornada, the Jornada IM team has a fair amount of experience and can give advice.",
+    "crumbs": [
+      "Researcher Guide",
+      "Starting research"
+    ]
+  },
+  {
+    "objectID": "docs/researcher/starting-research.html#updating-your-plan-and-project-information",
+    "href": "docs/researcher/starting-research.html#updating-your-plan-and-project-information",
+    "title": "Starting a Jornada research project",
+    "section": "Updating your plan and project information",
+    "text": "Updating your plan and project information\nPlease update the Jornada Research Site Manager (cwnelson@nmsu.edu) with changes to projects using updated ResNotif forms at least once per year. Send updates about project personnel or website information to the IM team (jornada.data@nmsu.edu) as necessary.",
     "crumbs": [
       "Researcher Guide",
       "Starting research"
