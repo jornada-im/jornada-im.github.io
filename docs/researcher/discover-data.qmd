@@ -1,7 +1,12 @@
 ---
-title: Discovering research data (at Jornada and beyond)
+title: Discover research data at Jornada and beyond
 date: last-modified
+from: markdown+emoji
 ---
+
+## Overview
+
+:construction: **Most of this chapter is under construction.**
 
 ## Jornada data discovery
 

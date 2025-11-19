@@ -6,7 +6,7 @@ date: last-modified
 
 ## Introduction
 
- Hello and welcome! This is the comprehensive guide to working with data from Jornada research programs. These programs, which include the [Jornada Basin LTER](https://lter.jornada.nmsu.edu) (JRN), the [USDA-ARS Jornada Experimental Range](https://jornada.nmsu.edu) (JER), and their associated communities, generate a wealth of scientific data relevant to ecology, earth science, and resource management. Studying this guide will help you become a valued contributor to this data commons, and use Jornada data (or any data) more efficiently and effectively in your research and management activities. The guide is written by Jornada information managers (IMs) with support from the Jornada research community and the LTER Network, and it is designed to be accessible for students (graduate and undergraduate), investigators, postdocs, and staff scientists. If you have any questions, don't hesitate to reach out the the Jornada Information Managers at <jornada.data@nmsu.edu>.
+ Hello and welcome! This is the comprehensive guide to working with data from Jornada research programs. These programs, which include the [Jornada Basin LTER](https://lter.jornada.nmsu.edu) (JRN), the [USDA-ARS Jornada Experimental Range](https://jornada.nmsu.edu) (JER), and their associated communities, generate a wealth of scientific data relevant to ecology, earth science, and resource management. Studying this guide will help you become a valued contributor to this data commons, and use Jornada data (or any data) more efficiently and effectively in your research and management activities. The guide is written by Jornada information managers (IMs) with support from the Jornada research community and the LTER Network, and it is designed to be accessible for students (graduate and undergraduate), investigators, postdocs, and staff scientists. If you have any questions, don't hesitate to reach out to Jornada IMs at <jornada.data@nmsu.edu>.
 
 
 ## Before you begin
@@ -23,11 +23,9 @@ Before you begin your research, you should know the expectations and policies th
 
 ## The data lifecycle
 
-::: {style="float: right; margin: 5px;"}
-![](img/dataone_ls_stage_all.png){width=275px fig-alt="The DataONE data lifecycle from [@michener_ecoinformatics_2012]"}
-:::
-
 This guide aims to cover all aspects of data work and is organized roughly according to the DataONE data lifecycle [@michener_ecoinformatics_2012], which outlines 8 distinct phases of working with data in a research context. In practice the phases overlap considerably the timing of activites and who executes them.
+
+![The DataONE data lifecycle from [@michener_ecoinformatics_2012]](img/dataone_ls_stage_all.png){width=325px fig-alt="A diagram showing a circle of boxes labeled with the phases of the data lifecyle"}
 
 * **Planning** for research and data management is covered in the [Starting research](starting-research.qmd) chapter.
 * We discuss data **collection**, **quality assurance**, and many aspects of **describing** data (with metadata) in the [Collect and manage data](collect-qa-describe.qmd) chapter.

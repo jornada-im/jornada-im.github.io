@@ -1,7 +1,12 @@
 ---
 title: Prepare and publish your data
 date: last-modified
+from: markdown+emoji
 ---
+
+## Overview
+
+:construction: **Most of this chapter is under construction.**
 
 Once data are clean and ready to analyze or publish, it is best to describe the data with metadata that is as detailed as needed to allow interpretation and re-use. [The EDI repository](https://edirepository.org/resources/creating-metadata-for-publication) has more guidance here, and the Jornada IM team tries to offer extensive assistance to researchers who need to describe their datasets for publication. Its a good idea to start collecting and organizing metadata as soon as you start collecting data. There are two recommended ways to collect and organize metadata: EDI's ezEML tool or Jornada metadata templates. These are described below.
 

@@ -1,17 +1,16 @@
 ---
-title: Collecting and managing research data
+title: Collect and manage your research data
 date: last-modified
+from: markdown+emoji
 ---
 
 ## Overview
 
-**Most of this chapter is under construction.**
-
-::: {style="float: right; margin: 5px;"}
-![](img/data_collection_workflow.png){width=300px fig-alt="What is your scientific data workflow? There are some common themes for any type of data you might work with."}
-:::
+:construction: **Most of this chapter is under construction.**
 
 In this chapter we present some best practices to help you collect quality Jornada data that can be used in the future. The advice here varies depending on the type of data being collected --- there are many kinds of research data --- but some common themes apply. You should use consistent standards to collect, format, and apply quality assurance and control operations (QA/QC) to your data, all while describing the process and data products with rich metadata. These steps are the first building blocks of your research data workflow.
+
+![What is your scientific data workflow? There are some common themes for any type of data you might work with.](img/data_collection_workflow.png){width=325px fig-alt="A sequence of images arranged in a line showing the data collection process from field notebook to analysis results."}
 
 ## Collecting useful data
 
