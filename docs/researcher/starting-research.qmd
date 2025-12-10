@@ -69,7 +69,7 @@ Detailed advice for collecting and managing different types of data begin in the
 
 *Important management considerations:*
 
-* Collect metadata during the research, not just in a final rush before publication.
+* Plan to collect metadata during the research, not just in a final rush before publication.
 * Some data types and corresponding file types, geospatial data for example, require specific metadata to be useful. 
 * Research communities often have accepted standards for metadata content and formatting.
 

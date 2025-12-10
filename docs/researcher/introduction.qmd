@@ -23,7 +23,7 @@ Before you begin your research, you should know the expectations and policies th
 
 ## The data lifecycle
 
-This guide aims to cover all aspects of data work and is organized roughly according to the DataONE data lifecycle [@michener_ecoinformatics_2012], which outlines 8 distinct phases of working with data in a research context. In practice the phases overlap considerably the timing of activites and who executes them.
+This guide is organized roughly according to the DataONE data lifecycle [@michener_ecoinformatics_2012], which outlines 8 distinct phases of working with data in a research context. In practice the phases overlap considerably the timing of activites and who executes them.
 
 ![The DataONE data lifecycle from [@michener_ecoinformatics_2012]](img/dataone_ls_stage_all.png){width=325px fig-alt="A diagram showing a circle of boxes labeled with the phases of the data lifecyle"}
 
