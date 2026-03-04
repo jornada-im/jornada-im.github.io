@@ -1,5 +1,5 @@
 ---
-title: Prepare and publish your data
+title: Prepare and publish a dataset
 date: last-modified
 from: markdown+emoji
 ---
@@ -8,9 +8,9 @@ from: markdown+emoji
 
 :construction: **Most of this chapter is under construction.**
 
-Once data are clean and ready to analyze or publish, it is best to describe the data with metadata that is as detailed as needed to allow interpretation and re-use. [The EDI repository](https://edirepository.org/resources/creating-metadata-for-publication) has more guidance here, and the Jornada IM team tries to offer extensive assistance to researchers who need to describe their datasets for publication. Its a good idea to start collecting and organizing metadata as soon as you start collecting data. There are two recommended ways to collect and organize metadata: EDI's ezEML tool or Jornada metadata templates. These are described below.
+Once your data are assembled, cleaned, and analyzed, you should strongly consider publishing them for posterity. To ensure successful interpretation and re-use of the data once they are published, you must create metadata that accompany the data and thoroughly describes them. For more on the importance of metadata and how to collect it, review guidance in the [Collect, manage and describe research data chapter](collect-qa-describe.qmd) or at [the EDI repository](https://edirepository.org/resources/creating-metadata-for-publication). The Jornada IM team tries to offer extensive assistance to researchers who need to describe their datasets for publication, but it is a good idea to start collecting and organizing metadata as soon as you start collecting data. At publication time, there are two recommended ways to create a metadata file to add to your dataset: EDI's ezEML tool or Jornada metadata templates. These are described below.
 
-![Figure 1: A simplified schematic of how to publish a Jornada dataset.](./img/researcher_datapublish_steps.svg){width=100%}
+![Figure 1: A simplified schematic of how to publish a Jornada dataset.](./img/researcher_datapublish_steps.svg){width=100% #fig-jornadapublish}
 
 ## ezEML
 
@@ -29,12 +29,12 @@ The EDI repository has created a web app called [ezEML](https://ezEML.edireposit
 
 ## Metadata templates
 
-A metadata template is a document with a structure and cues that help you collect the essential metadata needed to describe a published dataset. We have created Jornada metadata templates in [MS Word (.docx)](https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.docx) or [Excel (.xlsx)](https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.xlsx) formats. These templates contain sections for all critical pieces of metadata, along with instructions on what to include and how to structure the information.  The [Excel version](https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.xlsx) is slightly more detailed and may be useful for complex datasets. Completed templates and accompanying data files should be sent to the Jornada IM team (<jornada.data@nmsu.edu>).
+A metadata template is a document with a structure and cues that help you collect the essential metadata needed to describe a published dataset. We have created Jornada metadata templates in [MS Word (.docx)](http://jornada-im.github.io/templates/Jornada_metadata_template.docx) or [Excel (.xlsx)](http://jornada-im.github.io/templates/Jornada_metadata_template.xlsx) formats. These templates contain sections for all critical pieces of metadata, along with instructions on what to include and how to structure the information.  The [Excel version](http://jornada-im.github.io/templates/Jornada_metadata_template.xlsx) is slightly more detailed and may be useful for complex datasets. Completed templates and accompanying data files should be sent to the Jornada IM team (<jornada.data@nmsu.edu>).
 
 ## General Jornada metadata guidelines
 
-While writing metadata, the [Jornada metadata standards](https://github.com/jornada-im/documentation/raw/main/standards/JRN_metadata_standards.docx) (.docx) and [keyword thesauri](https://github.com/jornada-im/documentation/raw/main/standards/keyword_thesauri.xlsx) (.xlsx) documents are helpful, but not required.
+While writing metadata, the [Jornada metadata standards](https://github.com/jornada-im/jornada-im.github.io/raw/main/standards/JRN_metadata_standards.docx) (.docx) and [keyword thesauri](https://github.com/jornada-im/jornada-im.github.io/raw/main/standards/keyword_thesauri.xlsx) (.xlsx) documents are helpful, but not required.
 
 ## Publishing datasets
 
-Datasets, which include data and metadata describing that data, that are generated from Jornada research projects should be submitted to the IM team (<jornada.data@nmsu.edu>) regularly according the policy outlined above. Once submitted, preparation and publication of a Jornada dataset is usually an iterative process (Figure 1). Researchers submit data and metadata to a Jornada Information Manager who then securely archives the data and checks these items for quality and consistency. Usually there is a period of communication and updates between the IM and the researcher until the dataset is ready for publication. Once it is, the IM encodes the data into something called an EML file, and then sends it, with the data, to the Environmental Data Initiative repository (EDI) as a published dataset. There are other variations on this process, depending on the data, but this is the most common.
+Datasets that are generated from Jornada research projects should be submitted to the IM team (<jornada.data@nmsu.edu>) regularly according the policy outlined above. Once submitted, preparation and publication of a Jornada dataset is usually an iterative process (see @fig-fig-jornadapublish). Researchers submit data and metadata to a Jornada Information Manager who then securely archives the data and checks these items for quality and consistency. Usually there is a period of communication and updates between the IM and the researcher until the dataset is ready for publication. Once it is, the IM encodes the data into something called an EML file, and then sends it, with the data, to the Environmental Data Initiative repository (EDI) as a published dataset. There are other variations on this process, depending on the data, but this is the most common.
