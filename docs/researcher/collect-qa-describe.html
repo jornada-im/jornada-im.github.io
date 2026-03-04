@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2026-03-04">
 
-<title>Collect and manage your research data – Jornada Data Commons</title>
+<title>Collect, manage and describe research data – Jornada Data Commons</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -51,7 +51,7 @@ div.csl-indent {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../docs/researcher/prepare-and-publish.html" rel="next">
+<link href="../../docs/researcher/discover-data.html" rel="next">
 <link href="../../docs/researcher/starting-research.html" rel="prev">
 <link href="../../img/jrn-logo-light.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -197,12 +197,6 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/researcher/prepare-and-publish.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Prepare and publish data</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../docs/researcher/discover-data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Discover Jornada data</span></a>
   </div>
@@ -211,6 +205,12 @@ div.csl-indent {
   <div class="sidebar-item-container"> 
   <a href="../../docs/researcher/data-reuse.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Using data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/researcher/prepare-and-publish.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Publish a dataset</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -245,7 +245,10 @@ div.csl-indent {
   <li><a href="#special-case-data" id="toc-special-case-data" class="nav-link" data-scroll-target="#special-case-data">Special case data</a></li>
   </ul></li>
   <li><a href="#cleaning-and-qaqc" id="toc-cleaning-and-qaqc" class="nav-link" data-scroll-target="#cleaning-and-qaqc">Cleaning and QA/QC</a></li>
-  <li><a href="#describing-data-as-you-collect-it" id="toc-describing-data-as-you-collect-it" class="nav-link" data-scroll-target="#describing-data-as-you-collect-it">Describing data as you collect it</a></li>
+  <li><a href="#describing-your-data-metadata" id="toc-describing-your-data-metadata" class="nav-link" data-scroll-target="#describing-your-data-metadata">Describing your data (Metadata!)</a>
+  <ul class="collapse">
+  <li><a href="#creating-and-managing-metadata" id="toc-creating-and-managing-metadata" class="nav-link" data-scroll-target="#creating-and-managing-metadata">Creating and managing metadata</a></li>
+  </ul></li>
   <li><a href="#storage-and-backup" id="toc-storage-and-backup" class="nav-link" data-scroll-target="#storage-and-backup">Storage and backup</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/researcher/collect-qa-describe.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -255,7 +258,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Collect and manage your research data</h1>
+<h1 class="title">Collect, manage and describe research data</h1>
 </div>
 
 
@@ -282,10 +285,14 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p><span class="emoji" data-emoji="construction">🚧</span> <strong>Most of this chapter is under construction.</strong></p>
 <p>In this chapter we present important considerations and best practices for collecting quality Jornada data that can be used in the future. The guidance here varies depending on the data being collected — there are many kinds of research data — but some common themes apply. Try to use consistent, community-supported standards to collect, format, and clean your data, all while describing the process and data products with rich metadata. Following these recommendations will get your research data workflow off to a good start.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/data_collection_workflow.png" class="img-fluid figure-img" alt="A sequence of images arranged in a line showing the data collection process from field notebook to analysis results." width="325"></p>
-<figcaption>What is your scientific data workflow? There are some common themes for any type of data you might work with.</figcaption>
+<div id="fig-dataworkflow" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A sequence of images arranged in a line showing the data collection process from field notebook to analysis results.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dataworkflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/data_collection_workflow.png" class="img-fluid figure-img" alt="A sequence of images arranged in a line showing the data collection process from field notebook to analysis results." width="325">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dataworkflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: What is your scientific data workflow? There are some common themes for any type of data you might work with.
+</figcaption>
 </figure>
 </div>
 </section>
@@ -792,14 +799,48 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="cleaning-and-qaqc">Cleaning and QA/QC</h2>
 <p>The Jornada IM team has a significant amount of experience and a variety of tools to draw on for quality assurance and quality control (QA/QC) of long-term Jornada datasets. For data managed by individual researchers, the Jornada IM team leaves most data QA/QC up to the research group or individual, but we are happy to advise when asked. For a simple overview and some resources useful for QA/QC of tabular data, see <a href="https://edirepository.org/resources/cleaning-data-and-quality-control">EDI’s recommendations</a>.</p>
 </section>
-<section id="describing-data-as-you-collect-it" class="level2">
-<h2 class="anchored" data-anchor-id="describing-data-as-you-collect-it">Describing data as you collect it</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/michener97_information_loss.png" class="img-fluid figure-img" width="500"></p>
-<figcaption>Example of the normal degradation in information content associated with data and metadata over time (“information entropy”). Accidents or changes in technology (dashed line) may eliminate access to remaining raw data and metadata at any time <span class="citation" data-cites="michener_nongeospatial_1997">(from <a href="#ref-michener_nongeospatial_1997" role="doc-biblioref">Michener et al. 1997</a>)</span></figcaption>
+<section id="describing-your-data-metadata" class="level2">
+<h2 class="anchored" data-anchor-id="describing-your-data-metadata">Describing your data (Metadata!)</h2>
+<p>As you collect and work with your data, there is a large amount of contextual information about the data that is accumulating. This contextual information is called <strong>metadata</strong>, and you don’t want to lose track of it because it can be critically important for understanding and using the data later. Metadata are data about the data, and as a general rule, they should describe</p>
+<ul>
+<li><strong>Who</strong> collected the data</li>
+<li><strong>What</strong> was observed or measured</li>
+<li><strong>When</strong> the data were collected</li>
+<li><strong>Where</strong> the data were collected</li>
+<li><strong>How</strong> the data were collected (methods, instruments, etc.)</li>
+<li>Sometimes, stating <strong>why</strong> the data were collected can help future users understand data context and evaluate fitness for use.</li>
+</ul>
+<p>Preserving these metadata along with your actual data (measurements, observations, etc.) makes them more usable, and helps prevent the loss of information about data over time, as illustrated in <a href="#fig-infodecay" class="quarto-xref">Figure&nbsp;2</a>. When it comes time to publish the data, you’ll want to include metadata files with the data. The term we use for this is <strong>dataset</strong>, which means a package of data and the metadata that describes it.</p>
+<div id="fig-infodecay" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-infodecay-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/michener97_information_loss.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-infodecay-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Example of the normal deterioration in information content associated with data and metadata over time (“information entropy”). Accidents or changes in technology (dashed line) may eliminate access to remaining raw data and metadata at any time <span class="citation" data-cites="michener_nongeospatial_1997">(from <a href="#ref-michener_nongeospatial_1997" role="doc-biblioref">Michener et al. 1997</a>)</span>
+</figcaption>
 </figure>
 </div>
+<section id="creating-and-managing-metadata" class="level3">
+<h3 class="anchored" data-anchor-id="creating-and-managing-metadata">Creating and managing metadata</h3>
+<p>Assembling and preserving metadata is important and should become an integral part of any reproducible research and data work. <strong>Make sure to plan for and start creating metadata early in your project</strong>, and building metadata into daily workflows and project management practices is helpful. Below are a few suggestions on how to start.</p>
+<ol type="1">
+<li><strong>Keep a detailed project log and populate it with useful metadata, such as:</strong>
+<ol type="a">
+<li>how new data are collected,</li>
+<li>for ancillary data (not directly collected by you), document the original source of the data,</li>
+<li>how the data are cleaned, quality assured, and prepared for analysis,</li>
+<li>data analysis steps and methods used to create figures, statistics, and derived data products,</li>
+<li>who is doing what.</li>
+</ol></li>
+<li><strong>Think about distinct publishable datasets and create structured metadata files for them.</strong> You and your team should decide what the useful public data products will be, and then start gathering the appropriate metadata to accompany them to publication. You can do this
+<ol type="a">
+<li>locally, such as within a labeled directory containing your data (raw and cleaned/quality-assured) and metadata files. Metadata files may be plain text, or use <a href="https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.docx">a metadata template</a>.</li>
+<li>with a repository-based metadata editor, such as <a href="https://ezeml.edirepository.org">ezEML</a> from the Environmental Data Initiative (EDI) repository, which will store data files and all essential metadata together.</li>
+</ol></li>
+<li><strong>Ask a data manager or data curator to help or get involved in your project</strong>. At the Jornada, the Information Management team is happy to help, or you can reach out to curators at our partner repository <a href="https://edirepository.org">Environmental Data Initiative</a>.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. Other repositories and academic libraries often have professional data curators on staff who are well-trained and can advise researchers on community metadata standards and best practices for data publishing.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></li>
+</ol>
+</section>
 </section>
 <section id="storage-and-backup" class="level2">
 <h2 class="anchored" data-anchor-id="storage-and-backup">Storage and backup</h2>
@@ -823,7 +864,9 @@ Wickham, Hadley. 2014. <span>“Tidy <span>Data</span>.”</span> <em>Journal of
 </div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p>The concepts of data formats and data structuring can become fairly complicated and are related to the disciplines of <a href="https://en.wikipedia.org/wiki/Database_design">database design</a> and <a href="https://en.wikipedia.org/wiki/Data_modeling">data modeling</a>. For example, when designing a database one must decide what the entities (real-world concepts), tables (relations), attributes (columns), and foreign-key relationships (links between tables/columns) are. We won’t go into this much depth here, but it can sometimes be useful to have a detailed conceptual picture of how your research data fit together.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>Reach out to the Jornada IM team at <a href="mailto:jornada.data@nmsu.edu" class="uri">mailto:jornada.data@nmsu.edu</a>, or to the EDI support channel at <a href="mailto:support@edirepository.org" class="uri">mailto:support@edirepository.org</a>. Here is a <a href="https://lternet.edu/using-lter-dat/#im">list of Information Managers</a> at all LTER sites.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Reach out to the Jornada IM team at <a href="mailto:jornada.data@nmsu.edu" class="uri">mailto:jornada.data@nmsu.edu</a>, or to the EDI support channel at <a href="mailto:support@edirepository.org" class="uri">mailto:support@edirepository.org</a>. Here is a <a href="https://lternet.edu/using-lter-dat/#im">list of Information Managers</a> at all LTER sites.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>The <a href="https://datacurationnetwork.org/">Data Curation Network</a> is a professional membership organization for data curators.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1233,8 +1276,8 @@ Wickham, Hadley. 2014. <span>“Tidy <span>Data</span>.”</span> <em>Journal of
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../docs/researcher/prepare-and-publish.html" class="pagination-link" aria-label="Prepare and publish data">
-        <span class="nav-page-text">Prepare and publish data</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../docs/researcher/discover-data.html" class="pagination-link" aria-label="Discover Jornada data">
+        <span class="nav-page-text">Discover Jornada data</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
