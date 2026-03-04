@@ -204,6 +204,10 @@ We discussed how relational databases structure data in the "Data format" sectio
 
 Keep in mind that you'll probably need to learn some new skills to use the data in a database, particularly if they are large or have a complex schema (many linked tables). The Structured Query Language, or SQL, is the standard programming language for working with data in databases. Basic SQL is not too hard to learn, and it is useful for more than just database queries because it has been integrated into many data science tools like the R "tidyverse", various Python libraries, and others.
 
+### Tools and resources
+
+* [DB Browser for SQLite](https://sqlitebrowser.org/) is a good, cross-platform database browser for SQLite databases that is easy to use.
+
 ## Cloud-native, columnar, and more
 
 As we move towards creating and using high-volume research data, and employing cloud storage and computing services in research, there are some more advanced file formats to consider.

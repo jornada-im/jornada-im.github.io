@@ -1,0 +1,33 @@
+---
+title: Reporting to NSF
+date: last-
+from: markdown+emoji
+---
+
+:construction: **This is under construction.**
+
+Annual reports to NSF are important...
+
+## Surveying the community
+
+We use a combination of survey forms, spreadsheets, and an annual report template.
+
+## Collecting publications
+
+Use Zotero for this. 
+
+## Listing datasets & statistics
+
+Greg has written a collection of sripts and notebooks (<https://github.com/jornada-im/reporting>) to collect and report data publishing and re-use statistics, mainly from the EDI repository. This outputs from this (figuress, tables) are in the `jornada_im/reporting_io` directory on the team's shared drive.
+
+## The participants list
+
+Download the most current one for the grant from Research.gov, then update with any new participants
+
+## Uploading to PAR
+
+Publications and datasets, and other research products, can uploaded to NSF's [Public Access Repository](https://par.nsf.gov/) (PAR). After logging in to Research.gov, access PAR from the research products area. If the product has a DOI, PAR can populate most of the citation metadata about the product. Connect each product to the appropriate NSF Grant ID. You will need to upload a PDF/A of the journal articles.
+
+## Assembling the annual report
+
+Dissertations and theses are not automatically attached to annual reports (as of 2025). The easiest way to add them is with a BibTex list under the Products tab. 
