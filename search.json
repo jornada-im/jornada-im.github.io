@@ -620,18 +620,7 @@
     "href": "docs/im/introduction.html",
     "title": "Overview for Information Managers",
     "section": "",
-    "text": "This is the full documentation for the Jornada Basin LTER Information Management system, covering technical aspects of our data publishing process, data management tools, and administration of public-facing information like the website and data catalog. Researchers and data users should start at the Jornada IM web pages to get started with Jornada data management. This is a DRAFT document.",
-    "crumbs": [
-      "IM Guide",
-      "Introduction"
-    ]
-  },
-  {
-    "objectID": "docs/im/introduction.html#standards",
-    "href": "docs/im/introduction.html#standards",
-    "title": "Overview for Information Managers",
-    "section": "standards",
-    "text": "standards\nA directory of documents about best practices and standards for metadata creation at Jornada Basin LTER.\nPlease refer to these as you are packaging data and creating EML documents for Jornada Basin research products.\nEdit as you see fit, but please track your changes when possible and Greg will try to sync with the GitHub version of this repository.",
+    "text": "This is the full documentation for the Jornada Basin LTER Information Management system, covering technical aspects of our data publishing process, data management tools, and administration of public-facing information like the website and data catalog. Researchers and data users should start at the Jornada IM web pages to get started with Jornada data management. This is a DRAFT document.\n\nTable of contents\nPreface: The JRN LTER Data Management Plan\nChapters:\n\nResearch & data management overview\n\nIntroduction\nResearch project management\nResearch data management\nPublic dataset listings\nBibliographies\nLocal servers\nHosted services (external)\n\nPolicy and procedures\n\nResearch notifications and approval\nData access policies\nMetadata and data submission\n\nGeneral systems administration\n\nServer & cloud administration\n\nData collection and quality assurance\n\nArchiving data on network shares\nGCE and MATLAB extensions\nScripted QA/QC\n\nMetadata collection and standards\n\nMetadata standards\n\nJRN Metabase\n\nInstallation and configuration\nServer and database administration\nThe LTER Metabase schema and data model\nPopulating a new database\nCreate and update datasets\nPostgreSQL help links\n\nPublishing Jornada datasets\n\nOverview, conventions, and standards\nMaking EML with JRN Metabase\n\nSOP for entering metadata in Metabase: docx, web page (draft)\n\nMaking EML with EMLassemblyline\n\nProject management\n\nProject database\nPersonnel updates\nPublication updates\n\nThe JRN website and other communication platforms\n\nThe JRN Website - an overview\nWebsite content\nWebsite apps\n\nThe data catalogs\nZotero bibliography\nInteractive data viewer\n\nShared mailing lists\n\nTools and apps\n\nGuide to Jornada-IM repositories\nAnalytics apps\nDSIS\n\nHacks\n\nParse trello boards to CSV format\n\nExternal data, partnerships, and collaboration\n\nCollaborations with USDA-ARS data managers\nAsombro data\nNEON data\n\nAnnual reports\n\n2020\n2021\n\n\nJornada data managers, including the IM team, should follow LTER and Jornada standards and best practices when creating metadata files and publishing research data packages.\n\n\nDataset tracking\nWe use Trello for this. For LTER datasets there are three Trello boards that represent how Jornada datasets are split into three categories:\n\nCore - ongoing, high priority datasets that are updated regularly (once per year we hope). Many of these are collected by the JRN field crew.\nNon-core - lower-priority and completed datasets.\nWorks in progress (‘WIP’) - datasets that are brand new or as-yet unpublished. Many are in the development/review phase, or are awaiting publication of results associated with the data.\n\nContact someone on the IM team to get added to these boards.\n\n\nData management resources\nIf you are wondering whether the content or format of a metadata file (EML) is correct and complete, see our metadata standards documents. They are specific to Jornada Basin LTER data packages. THESE ARE DRAFTS and subject to change!\n\nGeneral Jornada metadata standards for all data packages (this is a bit out of date)\nJornada keyword thesauri (.xlsx) list keywords that should appear in all Jornada metadata files (this is also out of date - refer to metabase).",
     "crumbs": [
       "IM Guide",
       "Introduction"
@@ -698,14 +687,28 @@
     "href": "posts/posts.html",
     "title": "Data Commons Updates",
     "section": "",
-    "text": "Upgrading the documentation system\n\n\nThis website has been upgraded to a Quarto site\n\n\n\n\n\nOct 19, 2025\n\n\nGreg Maurer\n\n\n\n\n\n\n\n\n\n\n\n\nMonitoring station data at EDI\n\n\nAn announcement about changes in how we publish monitoring station data at EDI\n\n\n\n\n\nSep 10, 2025\n\n\nGreg Maurer\n\n\n\n\n\n\n\n\n\n\n\n\nFirst update\n\n\nAnnouncing the update posts\n\n\n\n\n\nSep 1, 2025\n\n\nGreg Maurer\n\n\n\n\n\nNo matching items"
+    "text": "Content and homepage updates\n\n\nThe landing page and the Researcher Guide have been fixed up\n\n\n\n\n\nMar 5, 2026\n\n\nGreg Maurer\n\n\n\n\n\n\n\n\n\n\n\n\nUpgrading the documentation system\n\n\nThis website has been upgraded to a Quarto site\n\n\n\n\n\nOct 19, 2025\n\n\nGreg Maurer\n\n\n\n\n\n\n\n\n\n\n\n\nMonitoring station data at EDI\n\n\nAn announcement about changes in how we publish monitoring station data at EDI\n\n\n\n\n\nSep 10, 2025\n\n\nGreg Maurer\n\n\n\n\n\n\n\n\n\n\n\n\nFirst update\n\n\nAnnouncing the update posts\n\n\n\n\n\nSep 1, 2025\n\n\nGreg Maurer\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/2025-09-01_post/index.html",
-    "href": "posts/2025-09-01_post/index.html",
-    "title": "First update",
+    "objectID": "posts/2026-03-05_post/index.html",
+    "href": "posts/2026-03-05_post/index.html",
+    "title": "Content and homepage updates",
     "section": "",
-    "text": "This is the first in a series of updates about the Jornada Data Commons. Here you will find announcements about Jornada data publications, data management best practices, changes to our information management system and infrastructure, and data-related events."
+    "text": "Quite a few updates in the last few days.\n\nThe Collect, manage and describe research data and Prepare and publish a datset chapters have been extensively updated.\nA new annual reporting procedures page has been added (but still needs updating).\nThe homepage has been redesigned and updated."
+  },
+  {
+    "objectID": "templates/fellowship_IM_statement.html",
+    "href": "templates/fellowship_IM_statement.html",
+    "title": "Jornada Data Commons",
+    "section": "",
+    "text": "To:    Graduate Research Fellowship Program\n        Jornada Basin LTER\n        New Mexico State University\n        Las Cruces, NM\n\nDate: 11 March 2025\nTo whom it may concern,\nThe student Arthur Tansley has, within the last year, completed the data and metadata submission requirements for funding by the Jornada Graduate Research Fellowship Program (“the fellowship”). These requirements include:\n\nSubmission of one or more files containing data collected as part of a graduate research project associated with their degree program and the fellowship.\nSubmission of a complete metadata template describing the data in the file(s) above.\nThe student agrees to publicly release these data and metadata within one year of completing the degree program, or at the time the data are published in the peer-reviewed scientific literature (whichever occurs first).\n\nThe submitted data and metadata items (1 & 2) have been reviewed by the Jornada Basin LTER Information Manager and archived in the Jornada file system. Published products are listed below. Inclusion of this statement in a fellowship application constitutes the student’s agreement to requirement 3 and supports continued eligibility for the fellowship.\nSincerely,\n\nGreg Maurer\nInformation Manager for Jornada Basin LTER\nAvailable data:\n\nStover, D., J. McLaren, N. Pietrasiak, and L. Jin. 2024. Physical soil characteristics, microbial community composition, extracellular enzymatic activity, biologically based phosphorus (BBP) pools, and available phosphorus from two soil depths, four microhabitats, and four landforms at the Jornada Experimental Range, 2021. ver 1. Environmental Data Initiative. https://doi.org/10.6073/pasta/9085a63e6ff1e310f13784b6fa0f8616 (Accessed 2025-03-11)."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to the Jornada Data Commons",
+    "section": "",
+    "text": "This site is maintained by the Jornada Information Management (IM) team to support researchers and data managers working with data from the Jornada Basin LTER (JRN) and Jornada Experimental Range (JER) programs. There are two main guides here to serve two audiences:\n\n\n\n    \n \n \n \n    Funded by NSF and USDA\n\n\n\n\nThe Researcher Guide is for Jornada students, investigators, and others who may need to\n\nStart new research at the Jornada\nCollect and manage their data\nPrepare and publish a dataset\nFind or use Jornada data\n\n\n\n\n\n\n\nThe IM Guide is for Jornada data managers who may need to\n\nCheck the status of a dataset\nFind data management resources\nPrepare an annual report\nRead the full IM system documentation\n\n\n\n\n\n\nSome other quick links\n\nLooking for a research notification form or metadata template? Check here!\nDid you attend, or are you attending, a data training event? Find resources at the JEDS site.\nNeed more data management advice? See these miscellaneous resources.\n\n\n\n\n\n\n\nCautionWARNING! This site is a work in progress\n\n\n\n\n\nWe try our best to keep this up-to-date and accurate, but sometimes we fall behind or miss things. Report problems and suggest additions in the issue tracker.\n\n\n\n\n\nContact us\nFor questions about collecting, analyzing, publishing, and accessing Jornada data or metadata please contact the IM team (jornada.data@nmsu.edu)."
   },
   {
     "objectID": "templates/index.html",
@@ -715,46 +718,11 @@
     "text": "Forms and templates\nResearch approval\nTo request approval to conduct research at the Jornada, fill out the ResNotif form and send to Conrad Nelson.\nProject management info\nTo update the Jornada team about changes to your project use the ProjectInfo form\nData submission and publishing\nWe strongly recommend using the Environmental Data Initiative’s ezEML application according to our instructions here, but if this is not sufficient for your needs we have metadata templates that you may send to the Jornada IM team.\n\nMS Word format for relatively simple datasets with few tables.\nMS Excel format for more complex datasets with multiple tables.\n\nData requests\nMost data are openly available at the Jornada LTER website data catalog, but some spatial data are restricted access only. To request spatial data, fill out the Jornada Spatial Data Policy Agreement. You can also request to join the Jornada GeoPortal with this form."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to the Jornada Data Commons",
+    "objectID": "posts/2025-09-01_post/index.html",
+    "href": "posts/2025-09-01_post/index.html",
+    "title": "First update",
     "section": "",
-    "text": "This site is maintained by the Jornada Information Management (IM) team to support researchers and data managers working with data from the Jornada Basin LTER (JRN) and Jornada Experimental Range (JER) programs."
-  },
-  {
-    "objectID": "index.html#im-a-researcher-and-i-need-to",
-    "href": "index.html#im-a-researcher-and-i-need-to",
-    "title": "Welcome to the Jornada Data Commons",
-    "section": "I’m a researcher and I need to…",
-    "text": "I’m a researcher and I need to…\n\n\n\n    \n \n \n \n    Funded by NSF and USDA\n\nGet approved to do research at the Jornada\nClean and describe my research data (data QA/QC, metadata)\nSubmit or publish a dataset\nFind Jornada datasets or other information\nCite a Jornada dataset or funding\nUpdate project, personnel, or website information\nLearn more about Jornada data management"
-  },
-  {
-    "objectID": "index.html#im-a-data-manager-and-i-need-to",
-    "href": "index.html#im-a-data-manager-and-i-need-to",
-    "title": "Welcome to the Jornada Data Commons",
-    "section": "I’m a data manager and I need to…",
-    "text": "I’m a data manager and I need to…\n\nLearn more about a particular dataset\nFind templates, standards, or tools for data management\nRead or write the full IM system documentation"
-  },
-  {
-    "objectID": "index.html#more-info",
-    "href": "index.html#more-info",
-    "title": "Welcome to the Jornada Data Commons",
-    "section": "More info",
-    "text": "More info\n\nPublications, presentations, videos, and other references\nJEDS (Jornada Environmental Data Science) tutorials"
-  },
-  {
-    "objectID": "index.html#contact-us",
-    "href": "index.html#contact-us",
-    "title": "Welcome to the Jornada Data Commons",
-    "section": "Contact us",
-    "text": "Contact us\nFor questions about collecting, analyzing, publishing, and accessing Jornada data or metadata please contact the IM team (jornada.data@nmsu.edu)."
-  },
-  {
-    "objectID": "templates/fellowship_IM_statement.html",
-    "href": "templates/fellowship_IM_statement.html",
-    "title": "Jornada Data Commons",
-    "section": "",
-    "text": "To:    Graduate Research Fellowship Program\n        Jornada Basin LTER\n        New Mexico State University\n        Las Cruces, NM\n\nDate: 11 March 2025\nTo whom it may concern,\nThe student Arthur Tansley has, within the last year, completed the data and metadata submission requirements for funding by the Jornada Graduate Research Fellowship Program (“the fellowship”). These requirements include:\n\nSubmission of one or more files containing data collected as part of a graduate research project associated with their degree program and the fellowship.\nSubmission of a complete metadata template describing the data in the file(s) above.\nThe student agrees to publicly release these data and metadata within one year of completing the degree program, or at the time the data are published in the peer-reviewed scientific literature (whichever occurs first).\n\nThe submitted data and metadata items (1 & 2) have been reviewed by the Jornada Basin LTER Information Manager and archived in the Jornada file system. Published products are listed below. Inclusion of this statement in a fellowship application constitutes the student’s agreement to requirement 3 and supports continued eligibility for the fellowship.\nSincerely,\n\nGreg Maurer\nInformation Manager for Jornada Basin LTER\nAvailable data:\n\nStover, D., J. McLaren, N. Pietrasiak, and L. Jin. 2024. Physical soil characteristics, microbial community composition, extracellular enzymatic activity, biologically based phosphorus (BBP) pools, and available phosphorus from two soil depths, four microhabitats, and four landforms at the Jornada Experimental Range, 2021. ver 1. Environmental Data Initiative. https://doi.org/10.6073/pasta/9085a63e6ff1e310f13784b6fa0f8616 (Accessed 2025-03-11)."
+    "text": "This is the first in a series of updates about the Jornada Data Commons. Here you will find announcements about Jornada data publications, data management best practices, changes to our information management system and infrastructure, and data-related events."
   },
   {
     "objectID": "posts/2025-09-10_post/index.html",
@@ -864,7 +832,7 @@
   {
     "objectID": "docs/refs-and-links.html",
     "href": "docs/refs-and-links.html",
-    "title": "Miscellaneous resources",
+    "title": "Miscellaneous data management resources",
     "section": "",
     "text": "FAIR stands for Findable, Accessible, Interoperable, and Re-usable\n\nFAIR principles for scientific data\nRecent commentary on fair principles\n\n\n\n\n\nHadley Wickham’s “Tidy” data paper and vignette\n\n\n\n\nJornada Basin LTER data packages are generally submitted to the EDI (Environmental Data Initiative) repository. They have resources about data collection, curation, and publishing.\n\nData authors guide (Please contact the Jornada IM team before following the guide)\nMore detailed data publishing best practices\nEDI’s 5 phases of data publishing (old EDI website)\n\n\n\n\n\nOrientation to data management at Jornada (JRN Ecology Short Course, July 2022)\nNavigating the Jornada Data Ecosystem (Jornada Symposium 2020)\n\n\n\n\n\nNYU Libraries Guide",
     "crumbs": [
@@ -875,7 +843,7 @@
   {
     "objectID": "docs/refs-and-links.html#fair-data",
     "href": "docs/refs-and-links.html#fair-data",
-    "title": "Miscellaneous resources",
+    "title": "Miscellaneous data management resources",
     "section": "",
     "text": "FAIR stands for Findable, Accessible, Interoperable, and Re-usable\n\nFAIR principles for scientific data\nRecent commentary on fair principles",
     "crumbs": [
@@ -886,7 +854,7 @@
   {
     "objectID": "docs/refs-and-links.html#data-collection-and-management-advice",
     "href": "docs/refs-and-links.html#data-collection-and-management-advice",
-    "title": "Miscellaneous resources",
+    "title": "Miscellaneous data management resources",
     "section": "",
     "text": "Hadley Wickham’s “Tidy” data paper and vignette",
     "crumbs": [
@@ -897,7 +865,7 @@
   {
     "objectID": "docs/refs-and-links.html#lteredi-resources",
     "href": "docs/refs-and-links.html#lteredi-resources",
-    "title": "Miscellaneous resources",
+    "title": "Miscellaneous data management resources",
     "section": "",
     "text": "Jornada Basin LTER data packages are generally submitted to the EDI (Environmental Data Initiative) repository. They have resources about data collection, curation, and publishing.\n\nData authors guide (Please contact the Jornada IM team before following the guide)\nMore detailed data publishing best practices\nEDI’s 5 phases of data publishing (old EDI website)",
     "crumbs": [
@@ -908,7 +876,7 @@
   {
     "objectID": "docs/refs-and-links.html#jornada-presentations",
     "href": "docs/refs-and-links.html#jornada-presentations",
-    "title": "Miscellaneous resources",
+    "title": "Miscellaneous data management resources",
     "section": "",
     "text": "Orientation to data management at Jornada (JRN Ecology Short Course, July 2022)\nNavigating the Jornada Data Ecosystem (Jornada Symposium 2020)",
     "crumbs": [
@@ -919,7 +887,7 @@
   {
     "objectID": "docs/refs-and-links.html#outside-resources",
     "href": "docs/refs-and-links.html#outside-resources",
-    "title": "Miscellaneous resources",
+    "title": "Miscellaneous data management resources",
     "section": "",
     "text": "NYU Libraries Guide",
     "crumbs": [
