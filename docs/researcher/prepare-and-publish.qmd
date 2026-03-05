@@ -33,18 +33,46 @@ Other things a published dataset can contain (add to panels)
 
 ## Choosing a repository
 
-The recommended repository for most tabular ecological or environmental data produced by the Jornada Basin LTER program is [EDI](https://edirepository.org). The EDI repository supports rigorous, community-supported metadata standards and facilitates data re-use. It is also well-integrated into the Jornada's information management systems. For some data types or other research products we recommended repositories that are either more specialized or have specific features. These are described below with information for the particular use case.
+The recommended repository for most tabular ecological or environmental data produced by the Jornada Basin LTER program is [EDI](https://edirepository.org). The EDI repository supports rigorous, community-supported metadata standards and facilitates data re-use. It is also well-integrated into the Jornada's information management systems. For some data types, and non-data research products, we recommended other repositories that are specialized for a particular research domains, or have especially useful features. Publishing in non-EDI repositories can have advantages if they provide features for your particular type of data, or are your research community's accepted data source. Recommended repositories for a range of Jornada data and use cases are described below.
 
-Add these to panel layout...
-* AmeriFlux for flux data
-* NCBI for sequencing and genomic data
-* Zenodo for code and documentation
+::: {.panel-tabset}
+
+## Most Jornada data
+
+Environmental Data Initiative
+
+## EC Fluxes 
+
+AmeriFlux
+
+## Sequencing & genomic
+
+NCBI
+
+## Code & documents
+
+Zenodo
+
+:::
+
+
+::: {.callout-warning}
+## A note on repository choice
+
+The IM team recommends EDI for most Jornada data, but if you opt to publish in a different repository, keep in mind that:
+
+* Jornada data managers can provide some guidance, but more of the responsibility for metadata preparation and publishing will fall to you.
+* The IM team still needs to know about Jornada datasets published outside EDI, so please notify us!
+
+*Despite these caveats, it is best to choose a repository where you and your collaborators know the data will be discovered and used.*
+
+:::
 
 ## Assembling the metadata
 
 To ensure successful interpretation and re-use of the data after they are published, they must be accompanied by metadata that thoroughly describe them. For more on the importance of metadata and how to collect it, review guidance in the ["Collect, manage and describe research data" chapter](collect-qa-describe.qmd) or at [the EDI repository](https://edirepository.org/resources/creating-metadata-for-publication). Ideally, metadata should be in a format that provides rich detail and is both human- and machine-readable. A number of metadata standards can meet this objective, but the choice often comes down to data type, community support and repository capability. 
 
-At present, the Jornada IM team supports two ways to create a metadata file for your dataset: EDI's ezEML tool or Jornada metadata templates. These are described below.
+At present, the Jornada IM team supports two ways to create a metadata file for your dataset: EDI's ezEML application or Jornada metadata templates. These are described below.
 
 
 ### ezEML
@@ -58,9 +86,9 @@ The EDI repository has created a web app called [ezEML](https://ezEML.edireposit
   5. Follow the sequence of forms on the left, and ezEML's prompts, to upload data files and enter metadata for your dataset. Each section of your metadata will have help available ("?" icons) and several fields will already be filled if you are using the JRN template.
   6. Use the **Check metadata** and **Check data tables** tools at the bottom left to check the completeness and validity of your dataset. Green badges next to metadata mean your dataset is well described and ready to share (and yellow or red can indicate missing values or errors).
   7. When ready, click **Submit/Share Package** and then **Collaborate with Colleagues**. *DO NOT USE **Submit Package to EDI** or we may miss your dataset*.
-  8. On the **Invite a Collaborator** screen, share the dataset with a Jornada data manager (<jornada.data@nmsu.edu>).
+  8. On the **Invite a Collaborator** screen, share the dataset with a Jornada data manager by entering the (<jornada.data@nmsu.edu>) email.
 
-  At this point, the Jornada IM Team will receive a notification and can access your dataset in ezEML to review, edit, and publish to EDI.
+  At this point, the Jornada IM Team will receive a notification and can access your dataset in ezEML to review, edit, and publish to EDI. It never hurts to send a reminder in case the data managers miss this EDI notification.
 
 
 ### Metadata templates
@@ -74,10 +102,10 @@ Under construction...
 
 ## The review process
 
-Once you have submitted the dataset to the IM team, the data and metadata are securely archived and a round of review and editing begins (see @fig-jornadapublish). An IM will review the metadata for completeness, compliance with Jornada metadata standards, and mismatches between metadata and data. If revisions are needed or errors are found you will receive an email requesting the changes. Changes can be submitted in an updated metadata template or in ezEML, as appropriate.
+Once you have submitted the dataset to the IM team, the data and metadata are securely archived and a round of review and editing begins (see @fig-jornadapublish). An data manager will review the metadata for completeness, compliance with Jornada standards, and mismatches between metadata and data. If revisions are needed or errors are found you will receive an email requesting the changes. Changes can be submitted in ezEML, or with an updated metadata template, as appropriate.
 
 While writing metadata, the [Jornada metadata standards](https://github.com/jornada-im/jornada-im.github.io/raw/main/standards/JRN_metadata_standards.docx) (.docx) and [keyword thesauri](https://github.com/jornada-im/jornada-im.github.io/raw/main/standards/keyword_thesauri.xlsx) (.xlsx) documents are helpful, but not required.
 
 ## Publishing the dataset
 
-Once revisions are complete and the dataset authors agree to publish the dataset, the IM creates a final EML file, and then sends it, with the data, to the Environmental Data Initiative repository (EDI) to publish the dataset. A dataset citation, with a DOI, will be emailed to the dataset authors for distribution. There are other variations on this process, depending on the data, but this is the most common.
+Once revisions are complete and the dataset authors agree to publish the dataset, the IM creates a final EML file, and then sends it, with the data, to the Environmental Data Initiative repository (EDI) to publish the dataset. A dataset citation, with a DOI, will be emailed to the dataset authors for distribution. If you are NOT publishing at EDI the publishing process will be different, and you may be expected to handle more of it yourself.

@@ -26,9 +26,9 @@ Below, we provide data management recommendations organized around these attribu
 ::: {.callout-note}
 ## Introducing the "Dataset"
 
-The four attributes of data highlighted above are the beginning of **metadata**, or data that describe other data. Metadata provide important context about the data we work with and are essential for data to be useful (we devote more time to this later). Therefore, data and metadata should always travel together, and we have a special term for this pair: a **dataset**. Datasets are the fundamental units of data we work with and important research products, so we will refer to them often.
+The four attributes of data highlighted above are the beginning of **metadata**, or data that describe other data. Metadata provide important context about the data we work with and are essential for making that data understandable and usable (we'll devote more time to this later). Therefore, data and metadata should always travel together, and we have a special term for this pairing: a **dataset**. Datasets are fundamental units of information used in research, and important products of research activities, so we will refer to them often.
 
-![Say hello to the **dataset** - a bundle of data and metadata. Data and metadata can come in many forms and formats, but we always want data to come with related metadata so we can understand and use them.](./img/a_dataset.png){width="40%" fig-align="center"}
+![Say hello to the **dataset** -- a bundle of data and metadata. Data and metadata come in many forms and formats, and keeping them together forever will help preserve the meaning and utility of your research.](./img/a_dataset.png){width="40%" fig-align="center"}
 :::
 
 ### Intended use
@@ -415,7 +415,7 @@ As you collect and work with your data, there is a large amount of contextual in
   
 Preserving these metadata along with your actual data (measurements, observations, etc.) makes them more usable, and helps prevent the loss of information about data over time, as illustrated in @fig-infodecay. Metadata are also essential to the reproducibility of research results, so when it comes time to publish the data, you'll have to provide adequate metadata.
 
-![Example of the normal deterioration in information content associated with data and metadata over time (“information entropy”). Accidents or changes in technology (dashed line) may eliminate access to remaining raw data and metadata at any time [from @michener_nongeospatial_1997]](img/michener97_information_loss.png){width=500px, #fig-infodecay}
+![A schematic of the normal deterioration in information content associated with data and metadata over time (“information entropy”). Accidents or changes in technology (dashed line) may eliminate access to remaining raw data and metadata at any time. Collecting and preserving detailed metadata helps slow this decay [from @michener_nongeospatial_1997].](img/michener97_information_loss.png){width=500px, #fig-infodecay}
 
 ### Creating and managing metadata
 
@@ -423,7 +423,7 @@ Assembling and preserving metadata is important and should be an integral part o
 
 1. **Keep a detailed project log and populate it with useful metadata, such as:**
     a. how new data are collected,
-    b. for ancillary data (not directly collected by you), documentation of the original source of the data,
+    b. for ancillary data (not directly collected by you), documentation of the original data source,
     c. how the data are cleaned, quality assured, and prepared for analysis,
     d. data analysis steps and methods used to create figures, statistics, and derived data products,
     e. who is doing what.
@@ -432,8 +432,8 @@ Assembling and preserving metadata is important and should be an integral part o
     - After you prioritize some research products for publication, consider what people will need to know to use them effectively.
     - This gives you a target for collecting appropriate metadata for your published dataset.
 3. **Start creating structured metadata files and keep them with your data.**
-    - Try to be systematic, organized, and complete about describing your data with metadata. Using a metadata template, such as one of [the Jornada templatess](../../templates/index.qmd), helps with this.
-    - Organize your research data products in clearly-labeled project directories where data and metadata live together
+    - Try to be systematic and complete about describing your data with metadata. A metadata template, such as one of [the Jornada templates](../../templates/index.qmd), helps with this.
+    - Organize your research products in clearly-labeled project directories where data and metadata live together.
     - Eventually, you will probably need to create a standard metadata file, such as [EML](https://eml.ecoinformatics.org/), to publish your data. Applications for editing metadata, such as [ezEML](https://ezeml.edirepository.org) from the Environmental Data Initiative (EDI) repository, are a huge help with this task.
 
 As always, discussing your project with a data manager or data curator and asking for advice about any of these activities is a smart move. At the Jornada, the Information Management team is happy to help, or you can reach out to curators at our partner repository [Environmental Data Initiative](https://edirepository.org).[^2] Other repositories and academic libraries often have professional data curators on staff who are well-trained and can advise researchers on community metadata standards and best practices for data publishing.[^3]
@@ -441,7 +441,7 @@ As always, discussing your project with a data manager or data curator and askin
 ::: {.callout-tip}
 ## Recommendations
 
-1. You need data **AND METADATA** to make a publishable dataset.
+1. You need data **AND METADATA** to make a usable dataset and get it published.
 2. Make sure to plan for and start creating metadata early in your research.
 3. Keep your research files well-organized, documented, and keep metadata and data together.
 4. Ask your friendly neighborhood data manager for help anytime.
