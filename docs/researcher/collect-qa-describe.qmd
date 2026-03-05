@@ -23,6 +23,14 @@ Research data are very diverse, but taking a thoughtful approach to collecting a
 
 Below, we provide data management recommendations organized around these attributes, with **tabular data** as our default example. Tabular data values fit into grid- or table-like structures with rows and columns representing observations and variables. This type of data, which includes delimited text files (like comma-separated value files, or CSVs), spreadsheets and similar, are the most common and recognizeable data type in the environmental sciences. There are plenty of data that aren't exactly tabular, so the "Special cases" section is devoted to other types.
 
+::: {.callout-note}
+## Introducing the "Dataset"
+
+The four attributes of data highlighted above are the beginning of **metadata**, or data that describe other data. Metadata provide important context about the data we work with and are essential for data to be useful (we devote more time to this later). Therefore, data and metadata should always travel together, and we have a special term for this pair: a **dataset**. Datasets are the fundamental units of data we work with and important research products, so we will refer to them often.
+
+![Say hello to the **dataset** - a bundle of data and metadata. Data and metadata can come in many forms and formats, but we always want data to come with related metadata so we can understand and use them.](./img/a_dataset.png){width="40%" fig-align="center"}
+:::
+
 ### Intended use
 
 The **intended use**, or how your data will be used, is something you should start envisioning early in the research process, probably around the same time you are considering hypotheses, experimental design, and analysis plans. Intended use of the data influences many of the decisions you'll make during research, including data/metadata collection, formatting, quality assurance/control (QA/QC), and more. Its tough to give concrete advice here since there are many uses for any data, but here are a few questions you should ask:
@@ -405,27 +413,42 @@ As you collect and work with your data, there is a large amount of contextual in
   * **How** the data were collected (methods, instruments, etc.)
   * Sometimes, stating **why** the data were collected can help future users understand data context and evaluate fitness for use. 
   
-Preserving these metadata along with your actual data (measurements, observations, etc.) makes them more usable, and helps prevent the loss of information about data over time, as illustrated in @fig-infodecay. When it comes time to publish the data, you'll want to include metadata files with the data. The term we use for this is **dataset**, which means a package of data and the metadata that describes it.
+Preserving these metadata along with your actual data (measurements, observations, etc.) makes them more usable, and helps prevent the loss of information about data over time, as illustrated in @fig-infodecay. Metadata are also essential to the reproducibility of research results, so when it comes time to publish the data, you'll have to provide adequate metadata.
 
 ![Example of the normal deterioration in information content associated with data and metadata over time (“information entropy”). Accidents or changes in technology (dashed line) may eliminate access to remaining raw data and metadata at any time [from @michener_nongeospatial_1997]](img/michener97_information_loss.png){width=500px, #fig-infodecay}
 
 ### Creating and managing metadata
 
-Assembling and preserving metadata is important and should become an integral part of any reproducible research and data work. **Make sure to plan for and start creating metadata early in your project**, and building metadata into daily workflows and project management practices is helpful.  Below are a few suggestions on how to start.
+Assembling and preserving metadata is important and should be an integral part of most research activities, including day-to-day data work and project management practices. Below are a few suggestions on how to start.
 
 1. **Keep a detailed project log and populate it with useful metadata, such as:**
     a. how new data are collected,
-    b. for ancillary data (not directly collected by you), document the original source of the data,
+    b. for ancillary data (not directly collected by you), documentation of the original source of the data,
     c. how the data are cleaned, quality assured, and prepared for analysis,
     d. data analysis steps and methods used to create figures, statistics, and derived data products,
     e. who is doing what.
-2. **Think about distinct publishable datasets and create structured metadata files for them.** You and your team should decide what the useful public data products will be, and then start gathering the appropriate metadata to accompany them to publication. You can do this
-    a. locally, such as within a labeled directory containing your data (raw and cleaned/quality-assured) and metadata files. Metadata files may be plain text, or use [a metadata template](https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.docx).
-    b. with a repository-based metadata editor, such as [ezEML](https://ezeml.edirepository.org) from the Environmental Data Initiative (EDI) repository, which will store data files and all essential metadata together.
-3. **Ask a data manager or data curator to help or get involved in your project**. At the Jornada, the Information Management team is happy to help, or you can reach out to curators at our partner repository [Environmental Data Initiative](https://edirepository.org).[^1]. Other repositories and academic libraries often have professional data curators on staff who are well-trained and can advise researchers on community metadata standards and best practices for data publishing.[^2]
+2. **Think about what datasets are most valuable and how they should be published.**
+    - You can't publish every single data file you have, so decide what will be most interesting and useful for other researchers and your future self.
+    - After you prioritize some research products for publication, consider what people will need to know to use them effectively.
+    - This gives you a target for collecting appropriate metadata for your published dataset.
+3. **Start creating structured metadata files and keep them with your data.**
+    - Try to be systematic, organized, and complete about describing your data with metadata. Using a metadata template, such as one of [the Jornada templatess](../../templates/index.qmd), helps with this.
+    - Organize your research data products in clearly-labeled project directories where data and metadata live together
+    - Eventually, you will probably need to create a standard metadata file, such as [EML](https://eml.ecoinformatics.org/), to publish your data. Applications for editing metadata, such as [ezEML](https://ezeml.edirepository.org) from the Environmental Data Initiative (EDI) repository, are a huge help with this task.
 
-[^1]: Reach out to the Jornada IM team at <mailto:jornada.data@nmsu.edu>, or to the EDI support channel at <mailto:support@edirepository.org>. Here is a [list of Information Managers](https://lternet.edu/using-lter-dat/#im) at all LTER sites.
-[^2]: The [Data Curation Network](https://datacurationnetwork.org/) is a professional membership organization for data curators.
+As always, discussing your project with a data manager or data curator and asking for advice about any of these activities is a smart move. At the Jornada, the Information Management team is happy to help, or you can reach out to curators at our partner repository [Environmental Data Initiative](https://edirepository.org).[^2] Other repositories and academic libraries often have professional data curators on staff who are well-trained and can advise researchers on community metadata standards and best practices for data publishing.[^3]
+
+::: {.callout-tip}
+## Recommendations
+
+1. You need data **AND METADATA** to make a publishable dataset.
+2. Make sure to plan for and start creating metadata early in your research.
+3. Keep your research files well-organized, documented, and keep metadata and data together.
+4. Ask your friendly neighborhood data manager for help anytime.
+:::
+
+[^2]: Reach out to the Jornada IM team at <jornada.data@nmsu.edu>, or to the EDI support channel at <support@edirepository.org>. Here is a [list of Information Managers](https://lternet.edu/using-lter-dat/#im) at all LTER sites.
+[^3]: The [Data Curation Network](https://datacurationnetwork.org/) is a professional membership organization for data curators.
 
 
 ## Storage and backup
