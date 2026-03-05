@@ -1,5 +1,5 @@
 
-# Miscellaneous resources
+# Miscellaneous data management resources
 
 ## FAIR data
 

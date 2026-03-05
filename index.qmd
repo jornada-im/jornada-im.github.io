@@ -5,15 +5,7 @@ format:
     css: styles.css
 ---
 
-This site is maintained by the Jornada Information Management (IM) team to support researchers and data managers working with data from the [Jornada Basin LTER (JRN)](https://lter.jornada.nmsu.edu) and [Jornada Experimental Range (JER)](https://jornada.nmsu.edu) programs.
-
-::: {.callout-caution collapse="false"}
-## This site is a work in progress!
-Report problems and suggest additions in the [issue tracker](https://github.com/jornada-im/jornada-im.github.io/issues).
-
-:::
-
-## I'm a researcher and I need to...
+This site is maintained by the Jornada Information Management (IM) team to support researchers and data managers working with data from the [Jornada Basin LTER (JRN)](https://lter.jornada.nmsu.edu) and [Jornada Experimental Range (JER)](https://jornada.nmsu.edu) programs. There are two main guides here to serve two audiences:
 
 <!-- This should not display on mobile according to the syles.css -->
 ::: {.column-margin align="center"}
@@ -24,27 +16,50 @@ Report problems and suggest additions in the [issue tracker](https://github.com/
 &nbsp;&nbsp;&nbsp;&nbsp;Funded by [NSF](https://www.nsf.gov/awardsearch/show-award?AWD_ID=2425143) and [USDA](https://ltar.ars.usda.gov/sites/jer)
 :::
 
-* [Get approved to do research at the Jornada](docs/researcher/starting-research.qmd)
-* [Clean and describe my research data (data QA/QC, metadata)](docs/researcher/collect-qa-describe.qmd)
-* [Submit or publish a dataset](docs/researcher/prepare-and-publish.qmd)
-* [Find Jornada datasets or other information](docs/researcher/discover-data.qmd)
-* [Cite a Jornada dataset or funding](docs/researcher/data-reuse.qmd)
-* [Update project, personnel, or website information](docs/researcher/advanced-topics.qmd)
-* [Learn more about Jornada data management](docs/researcher/overview.qmd#learn-more)
+
+::: {.grid}
+
+::: {.g-col-6}
+::: {.card .shadow-sm .border-primary .bg-primary}
+::: {.card-body}
+[**The Researcher Guide**](docs/researcher/introduction.qmd) is for Jornada students, investigators, and others who may need to  
+
+- [Start new research at the Jornada](docs/researcher/starting-research.qmd)
+- [Collect and manage their data](docs/researcher/collect-qa-describe.qmd)
+- [Prepare and publish a dataset](docs/researcher/prepare-and-publish.qmd)
+- [Find](docs/researcher/discover-data.qmd) or [use](docs/researcher/discover-data.qmd) Jornada data
+:::
+:::
+:::
+
+::: {.g-col-6}
+::: {.card .shadow-sm .border-primary .bg-light}
+::: {.card-body}
+[**The IM Guide**](docs/im/introduction.qmd) is for Jornada data managers who may need to
+
+- [Check the status of a dataset](docs/im/introduction.qmd#dataset-tracking)
+- [Find data management resources](docs/im/introduction.qmd#data-management-resources)
+- [Prepare an annual report](docs/im/procedures/reporting.qmd)
+- [Read the full IM system documentation](docs/im/sysadmin/index.qmd)
+:::
+:::
+:::
+
+:::
 
 
+### Some other quick links
 
-## I'm a data manager and I need to...
+- Looking for a **research notification form** or **metadata template**? [Check here!](templates/index.qmd)
+- Did you attend, or are you attending, a data training event? Find resources at the [JEDS site](https://jornada-im.github.io/JEDS).
+- Need more data management advice? See [these miscellaneous resources](docs/refs-and-links.qmd).
 
-* [Learn more about a particular dataset](docs/im/overview.qmd#dataset-tracking)
-* [Find templates, standards, or tools for data management](docs/im/overview.qmd#data-management-resources)
-* [Read or write the full IM system documentation](docs/im/sysadmin/index.qmd)
+::: {.callout-caution collapse="false" appearance="default"}
+## WARNING! This site is a work in progress
+We try our best to keep this up-to-date and accurate, but sometimes we fall behind or miss things. Report problems and suggest additions in the [issue tracker](https://github.com/jornada-im/jornada-im.github.io/issues).
 
-## More info
+:::
 
-* [Publications, presentations, videos, and other references](docs/refs_and_links.qmd)
-* [JEDS (Jornada Environmental Data Science) tutorials](https://jornada-im.github.io/JEDS)
-
-## Contact us
+### Contact us
 
 For questions about collecting, analyzing, publishing, and accessing Jornada data or metadata please contact the IM team (<jornada.data@nmsu.edu>).
