@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-03-04">
+<meta name="dcterms.date" content="2026-03-05">
 
 <title>Collect, manage and describe research data – Jornada Data Commons</title>
 <style>
@@ -269,7 +269,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 4, 2026</p>
+      <p class="date">March 5, 2026</p>
     </div>
   </div>
   
@@ -306,6 +306,25 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 <li><strong>File format</strong>: The physical format the data are stored in, such as a text file or JPEG image</li>
 </ul>
 <p>Below, we provide data management recommendations organized around these attributes, with <strong>tabular data</strong> as our default example. Tabular data values fit into grid- or table-like structures with rows and columns representing observations and variables. This type of data, which includes delimited text files (like comma-separated value files, or CSVs), spreadsheets and similar, are the most common and recognizeable data type in the environmental sciences. There are plenty of data that aren’t exactly tabular, so the “Special cases” section is devoted to other types.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Introducing the “Dataset”
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The four attributes of data highlighted above are the beginning of <strong>metadata</strong>, or data that describe other data. Metadata provide important context about the data we work with and are essential for data to be useful (we devote more time to this later). Therefore, data and metadata should always travel together, and we have a special term for this pair: a <strong>dataset</strong>. Datasets are the fundamental units of data we work with and important research products, so we will refer to them often.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./img/a_dataset.png" class="img-fluid figure-img" style="width:40.0%"></p>
+<figcaption>Say hello to the <strong>dataset</strong> - a bundle of data and metadata. Data and metadata can come in many forms and formats, but we always want data to come with related metadata so we can understand and use them.</figcaption>
+</figure>
+</div>
+</div>
+</div>
 <section id="intended-use" class="level3">
 <h3 class="anchored" data-anchor-id="intended-use">Intended use</h3>
 <p>The <strong>intended use</strong>, or how your data will be used, is something you should start envisioning early in the research process, probably around the same time you are considering hypotheses, experimental design, and analysis plans. Intended use of the data influences many of the decisions you’ll make during research, including data/metadata collection, formatting, quality assurance/control (QA/QC), and more. Its tough to give concrete advice here since there are many uses for any data, but here are a few questions you should ask:</p>
@@ -444,7 +463,7 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 </div>
 </div>
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -453,7 +472,7 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>In the <em>Tidy data</em> paper <span class="citation" data-cites="wickham_tidy_2014">(<a href="#ref-wickham_tidy_2014" role="doc-biblioref">Wickham 2014</a>)</span>, the claim is that “80% of data analysis is spent on the process of cleaning and preparing the data.” Adhering to a clear, easy-to-understand data format can help lower this burden and make data easier to clean, filter, and analyze. The tidy data model, or “long” format, aims to do this by following three rules:</p>
 <ul>
@@ -810,7 +829,7 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 <li><strong>How</strong> the data were collected (methods, instruments, etc.)</li>
 <li>Sometimes, stating <strong>why</strong> the data were collected can help future users understand data context and evaluate fitness for use.</li>
 </ul>
-<p>Preserving these metadata along with your actual data (measurements, observations, etc.) makes them more usable, and helps prevent the loss of information about data over time, as illustrated in <a href="#fig-infodecay" class="quarto-xref">Figure&nbsp;2</a>. When it comes time to publish the data, you’ll want to include metadata files with the data. The term we use for this is <strong>dataset</strong>, which means a package of data and the metadata that describes it.</p>
+<p>Preserving these metadata along with your actual data (measurements, observations, etc.) makes them more usable, and helps prevent the loss of information about data over time, as illustrated in <a href="#fig-infodecay" class="quarto-xref">Figure&nbsp;2</a>. Metadata are also essential to the reproducibility of research results, so when it comes time to publish the data, you’ll have to provide adequate metadata.</p>
 <div id="fig-infodecay" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-infodecay-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -823,23 +842,48 @@ Figure&nbsp;2: Example of the normal deterioration in information content associ
 </div>
 <section id="creating-and-managing-metadata" class="level3">
 <h3 class="anchored" data-anchor-id="creating-and-managing-metadata">Creating and managing metadata</h3>
-<p>Assembling and preserving metadata is important and should become an integral part of any reproducible research and data work. <strong>Make sure to plan for and start creating metadata early in your project</strong>, and building metadata into daily workflows and project management practices is helpful. Below are a few suggestions on how to start.</p>
+<p>Assembling and preserving metadata is important and should be an integral part of most research activities, including day-to-day data work and project management practices. Below are a few suggestions on how to start.</p>
 <ol type="1">
 <li><strong>Keep a detailed project log and populate it with useful metadata, such as:</strong>
 <ol type="a">
 <li>how new data are collected,</li>
-<li>for ancillary data (not directly collected by you), document the original source of the data,</li>
+<li>for ancillary data (not directly collected by you), documentation of the original source of the data,</li>
 <li>how the data are cleaned, quality assured, and prepared for analysis,</li>
 <li>data analysis steps and methods used to create figures, statistics, and derived data products,</li>
 <li>who is doing what.</li>
 </ol></li>
-<li><strong>Think about distinct publishable datasets and create structured metadata files for them.</strong> You and your team should decide what the useful public data products will be, and then start gathering the appropriate metadata to accompany them to publication. You can do this
-<ol type="a">
-<li>locally, such as within a labeled directory containing your data (raw and cleaned/quality-assured) and metadata files. Metadata files may be plain text, or use <a href="https://github.com/jornada-im/documentation/raw/main/templates/Jornada_metadata_template.docx">a metadata template</a>.</li>
-<li>with a repository-based metadata editor, such as <a href="https://ezeml.edirepository.org">ezEML</a> from the Environmental Data Initiative (EDI) repository, which will store data files and all essential metadata together.</li>
-</ol></li>
-<li><strong>Ask a data manager or data curator to help or get involved in your project</strong>. At the Jornada, the Information Management team is happy to help, or you can reach out to curators at our partner repository <a href="https://edirepository.org">Environmental Data Initiative</a>.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. Other repositories and academic libraries often have professional data curators on staff who are well-trained and can advise researchers on community metadata standards and best practices for data publishing.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></li>
+<li><strong>Think about what datasets are most valuable and how they should be published.</strong>
+<ul>
+<li>You can’t publish every single data file you have, so decide what will be most interesting and useful for other researchers and your future self.</li>
+<li>After you prioritize some research products for publication, consider what people will need to know to use them effectively.</li>
+<li>This gives you a target for collecting appropriate metadata for your published dataset.</li>
+</ul></li>
+<li><strong>Start creating structured metadata files and keep them with your data.</strong>
+<ul>
+<li>Try to be systematic, organized, and complete about describing your data with metadata. Using a metadata template, such as one of <a href="../../templates/index.html">the Jornada templatess</a>, helps with this.</li>
+<li>Organize your research data products in clearly-labeled project directories where data and metadata live together</li>
+<li>Eventually, you will probably need to create a standard metadata file, such as <a href="https://eml.ecoinformatics.org/">EML</a>, to publish your data. Applications for editing metadata, such as <a href="https://ezeml.edirepository.org">ezEML</a> from the Environmental Data Initiative (EDI) repository, are a huge help with this task.</li>
+</ul></li>
 </ol>
+<p>As always, discussing your project with a data manager or data curator and asking for advice about any of these activities is a smart move. At the Jornada, the Information Management team is happy to help, or you can reach out to curators at our partner repository <a href="https://edirepository.org">Environmental Data Initiative</a>.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Other repositories and academic libraries often have professional data curators on staff who are well-trained and can advise researchers on community metadata standards and best practices for data publishing.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Recommendations
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>You need data <strong>AND METADATA</strong> to make a publishable dataset.</li>
+<li>Make sure to plan for and start creating metadata early in your research.</li>
+<li>Keep your research files well-organized, documented, and keep metadata and data together.</li>
+<li>Ask your friendly neighborhood data manager for help anytime.</li>
+</ol>
+</div>
+</div>
 </section>
 </section>
 <section id="storage-and-backup" class="level2">
@@ -864,8 +908,8 @@ Wickham, Hadley. 2014. <span>“Tidy <span>Data</span>.”</span> <em>Journal of
 </div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p>Reach out to the Jornada IM team at <a href="mailto:jornada.data@nmsu.edu" class="uri">mailto:jornada.data@nmsu.edu</a>, or to the EDI support channel at <a href="mailto:support@edirepository.org" class="uri">mailto:support@edirepository.org</a>. Here is a <a href="https://lternet.edu/using-lter-dat/#im">list of Information Managers</a> at all LTER sites.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Reach out to the Jornada IM team at <a href="mailto:jornada.data@nmsu.edu" class="uri">mailto:jornada.data@nmsu.edu</a>, or to the EDI support channel at <a href="mailto:support@edirepository.org" class="uri">mailto:support@edirepository.org</a>. Here is a <a href="https://lternet.edu/using-lter-dat/#im">list of Information Managers</a> at all LTER sites.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>The concepts of data formats and data structuring can become fairly complicated and are related to the disciplines of <a href="https://en.wikipedia.org/wiki/Database_design">database design</a> and <a href="https://en.wikipedia.org/wiki/Data_modeling">data modeling</a>. For example, when designing a database one must decide what the entities (real-world concepts), tables (relations), attributes (columns), and foreign-key relationships (links between tables/columns) are. We won’t go into this much depth here, but it can sometimes be useful to have a detailed conceptual picture of how your research data fit together.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Reach out to the Jornada IM team at <a href="mailto:jornada.data@nmsu.edu" class="email">jornada.data@nmsu.edu</a>, or to the EDI support channel at <a href="mailto:support@edirepository.org" class="email">support@edirepository.org</a>. Here is a <a href="https://lternet.edu/using-lter-dat/#im">list of Information Managers</a> at all LTER sites.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>The <a href="https://datacurationnetwork.org/">Data Curation Network</a> is a professional membership organization for data curators.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
