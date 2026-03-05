@@ -295,13 +295,47 @@ Figure&nbsp;2: What should your dataset contain? Data files and metadata at a mi
 </section>
 <section id="choosing-a-repository" class="level2">
 <h2 class="anchored" data-anchor-id="choosing-a-repository">Choosing a repository</h2>
-<p>The recommended repository for most tabular ecological or environmental data produced by the Jornada Basin LTER program is <a href="https://edirepository.org">EDI</a>. The EDI repository supports rigorous, community-supported metadata standards and facilitates data re-use. It is also well-integrated into the Jornada’s information management systems. For some data types or other research products we recommended repositories that are either more specialized or have specific features. These are described below with information for the particular use case.</p>
-<p>Add these to panel layout… * AmeriFlux for flux data * NCBI for sequencing and genomic data * Zenodo for code and documentation</p>
+<p>The recommended repository for most tabular ecological or environmental data produced by the Jornada Basin LTER program is <a href="https://edirepository.org">EDI</a>. The EDI repository supports rigorous, community-supported metadata standards and facilitates data re-use. It is also well-integrated into the Jornada’s information management systems. For some data types, and non-data research products, we recommended other repositories that are specialized for a particular research domains, or have especially useful features. Publishing in non-EDI repositories can have advantages if they provide features for your particular type of data, or are your research community’s accepted data source. Recommended repositories for a range of Jornada data and use cases are described below.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Most Jornada data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">EC Fluxes</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Sequencing &amp; genomic</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Code &amp; documents</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Environmental Data Initiative</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>AmeriFlux</p>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>NCBI</p>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<p>Zenodo</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>A note on repository choice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The IM team recommends EDI for most Jornada data, but if you opt to publish in a different repository, keep in mind that:</p>
+<ul>
+<li>Jornada data managers can provide some guidance, but more of the responsibility for metadata preparation and publishing will fall to you.</li>
+<li>The IM team still needs to know about Jornada datasets published outside EDI, so please notify us!</li>
+</ul>
+<p><em>Despite these caveats, it is best to choose a repository where you and your collaborators know the data will be discovered and used.</em></p>
+</div>
+</div>
 </section>
 <section id="assembling-the-metadata" class="level2">
 <h2 class="anchored" data-anchor-id="assembling-the-metadata">Assembling the metadata</h2>
 <p>To ensure successful interpretation and re-use of the data after they are published, they must be accompanied by metadata that thoroughly describe them. For more on the importance of metadata and how to collect it, review guidance in the <a href="../../docs/researcher/collect-qa-describe.html">“Collect, manage and describe research data” chapter</a> or at <a href="https://edirepository.org/resources/creating-metadata-for-publication">the EDI repository</a>. Ideally, metadata should be in a format that provides rich detail and is both human- and machine-readable. A number of metadata standards can meet this objective, but the choice often comes down to data type, community support and repository capability.</p>
-<p>At present, the Jornada IM team supports two ways to create a metadata file for your dataset: EDI’s ezEML tool or Jornada metadata templates. These are described below.</p>
+<p>At present, the Jornada IM team supports two ways to create a metadata file for your dataset: EDI’s ezEML application or Jornada metadata templates. These are described below.</p>
 <section id="ezeml" class="level3">
 <h3 class="anchored" data-anchor-id="ezeml">ezEML</h3>
 <p>The EDI repository has created a web app called <a href="https://ezEML.edirepository.org">ezEML</a> for describing research datasets and creating a standardized metadata documents for publication. The ezEML app creates metadata documents in the Ecological Metadata Language, or EML, which is a dialect of XML. The tool abstracts away most of the complexity of EML and XML, and is an easy method to author well-documented datasets. There is a Jornada EML template available on the site, so the recommended process for Jornada researchers is:</p>
@@ -313,9 +347,9 @@ Figure&nbsp;2: What should your dataset contain? Data files and metadata at a mi
 <li>Follow the sequence of forms on the left, and ezEML’s prompts, to upload data files and enter metadata for your dataset. Each section of your metadata will have help available (“?” icons) and several fields will already be filled if you are using the JRN template.</li>
 <li>Use the <strong>Check metadata</strong> and <strong>Check data tables</strong> tools at the bottom left to check the completeness and validity of your dataset. Green badges next to metadata mean your dataset is well described and ready to share (and yellow or red can indicate missing values or errors).</li>
 <li>When ready, click <strong>Submit/Share Package</strong> and then <strong>Collaborate with Colleagues</strong>. <em>DO NOT USE <strong>Submit Package to EDI</strong> or we may miss your dataset</em>.</li>
-<li>On the <strong>Invite a Collaborator</strong> screen, share the dataset with a Jornada data manager (<a href="mailto:jornada.data@nmsu.edu" class="email">jornada.data@nmsu.edu</a>).</li>
+<li>On the <strong>Invite a Collaborator</strong> screen, share the dataset with a Jornada data manager by entering the (<a href="mailto:jornada.data@nmsu.edu" class="email">jornada.data@nmsu.edu</a>) email.</li>
 </ol>
-<p>At this point, the Jornada IM Team will receive a notification and can access your dataset in ezEML to review, edit, and publish to EDI.</p>
+<p>At this point, the Jornada IM Team will receive a notification and can access your dataset in ezEML to review, edit, and publish to EDI. It never hurts to send a reminder in case the data managers miss this EDI notification.</p>
 </section>
 <section id="metadata-templates" class="level3">
 <h3 class="anchored" data-anchor-id="metadata-templates">Metadata templates</h3>
@@ -328,12 +362,12 @@ Figure&nbsp;2: What should your dataset contain? Data files and metadata at a mi
 </section>
 <section id="the-review-process" class="level2">
 <h2 class="anchored" data-anchor-id="the-review-process">The review process</h2>
-<p>Once you have submitted the dataset to the IM team, the data and metadata are securely archived and a round of review and editing begins (see <a href="#fig-jornadapublish" class="quarto-xref">Figure&nbsp;1</a>). An IM will review the metadata for completeness, compliance with Jornada metadata standards, and mismatches between metadata and data. If revisions are needed or errors are found you will receive an email requesting the changes. Changes can be submitted in an updated metadata template or in ezEML, as appropriate.</p>
+<p>Once you have submitted the dataset to the IM team, the data and metadata are securely archived and a round of review and editing begins (see <a href="#fig-jornadapublish" class="quarto-xref">Figure&nbsp;1</a>). An data manager will review the metadata for completeness, compliance with Jornada standards, and mismatches between metadata and data. If revisions are needed or errors are found you will receive an email requesting the changes. Changes can be submitted in ezEML, or with an updated metadata template, as appropriate.</p>
 <p>While writing metadata, the <a href="https://github.com/jornada-im/jornada-im.github.io/raw/main/standards/JRN_metadata_standards.docx">Jornada metadata standards</a> (.docx) and <a href="https://github.com/jornada-im/jornada-im.github.io/raw/main/standards/keyword_thesauri.xlsx">keyword thesauri</a> (.xlsx) documents are helpful, but not required.</p>
 </section>
 <section id="publishing-the-dataset" class="level2">
 <h2 class="anchored" data-anchor-id="publishing-the-dataset">Publishing the dataset</h2>
-<p>Once revisions are complete and the dataset authors agree to publish the dataset, the IM creates a final EML file, and then sends it, with the data, to the Environmental Data Initiative repository (EDI) to publish the dataset. A dataset citation, with a DOI, will be emailed to the dataset authors for distribution. There are other variations on this process, depending on the data, but this is the most common.</p>
+<p>Once revisions are complete and the dataset authors agree to publish the dataset, the IM creates a final EML file, and then sends it, with the data, to the Environmental Data Initiative repository (EDI) to publish the dataset. A dataset citation, with a DOI, will be emailed to the dataset authors for distribution. If you are NOT publishing at EDI the publishing process will be different, and you may be expected to handle more of it yourself.</p>
 
 
 </section>
