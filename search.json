@@ -213,7 +213,7 @@
     "href": "docs/im/procedures/reporting.html",
     "title": "Reporting to NSF",
     "section": "",
-    "text": "🚧 This is under construction.\nAnnual reports to NSF are important…",
+    "text": "🚧 This is under construction.\nReporting about JRN activities for our funders, particularly NSF, is satisfying, fun, and mandatory. NSF requires annual reports at the end of each year of a funded project, and a final outcomes report about one year after any funded project ends (I think). A mid-term review is also required for LTER sites that are on a 6-year funding cycle (though this may be changing). For the IM team these reporting events mean assembling information about people in the program, research outputs like papers and datasets, and any notable activities or milestones in the project. It is quite a bit of work, but, truthfully, reporting requirements do provide valuable opportunities and motivation to assess progress on the proposal, catalog research products, and keep program information up-to-date.",
     "crumbs": [
       "IM Guide",
       "Procedures",
@@ -221,11 +221,11 @@
     ]
   },
   {
-    "objectID": "docs/im/procedures/reporting.html#surveying-the-community",
-    "href": "docs/im/procedures/reporting.html#surveying-the-community",
+    "objectID": "docs/im/procedures/reporting.html#annual-reports",
+    "href": "docs/im/procedures/reporting.html#annual-reports",
     "title": "Reporting to NSF",
-    "section": "Surveying the community",
-    "text": "Surveying the community\nWe use a combination of survey forms, spreadsheets, and an annual report template.",
+    "section": "Annual reports",
+    "text": "Annual reports\nPreparing the annual report happens in a few phases, starting with collecting information from, and about, the Jornada research community. For the current reporting period, all research products must be catalogued, participants and their activites must be documented, and a narrative about the progress towards the work proposed in the NSF award needs to be written. All these things get assembled as a report in NSF’s Research.gov platform and then submitted for review by the relevent Program Officer.\nBefore starting the process below, create new folder in the JRN Proposals and Reports Google Drive folder for this year’s annual report. Lots of things will need to be collected there.\n\n1. Survey the community\nThough the IM team keeps track of things like publications, people, and datasets throughout the year, it is easy to miss things and surveying the JRN community is necessary to fill in any gaps. We use a combination of survey forms, spreadsheets, and an annual report template to collect this information. These are sent out to the Science Team via an email announcement and we provide a deadline to respond.\nNotes\n\nThe current survey form and responses are in Google Drive. We update these a little each year.\nThere are some spreadsheets in preparation.\nSome information (like outreach activities) gets entered directly into the project narrative template (see below)\n\n\n\n2. Collect publications\nThroughout the year, reference information for new JRN publications are added the LTER-JRN Zotero library. As annual reports approach, any missing publications gathered through survey activities are added to the library. We focus on journal articles, but we are beginning to track conference presentations too. As we assemble the library, PDF copies of journal articles and dissertations/theses should be downloaded and placed in the appropriate annual report Google Drive folder.\nNotes\n\nThe LTER-JRN Zotero library. There is some documentation on using elsewhere in this documentation that I’ll link to soon…\nWe need to come up with a way to collect journal articles…\n\n\n\n3. Update dataset lists & statistics\nNew and updated datasets are an important research product that NSF expects to see listed in annual reports. Essentially this translates into a list of new DOIs minted for data. We also calculate some statistics to go in the narrative of the report (new datasets, uploaded datasets, usage metrics).\nNotes\n\nGreg has written a collection of sripts and notebooks (https://github.com/jornada-im/reporting) to collect and report data publishing and re-use statistics, mainly from the EDI repository. This outputs from this (figuress, tables) are in the jornada_im/reporting_io directory on the team’s shared drive.\nIt can be very onerous to upload all datasets into PAR (there can be several hundred per year). At times we resort to creating a PDF list of dataset references and uploading that as an ancillary document.\n\n\n\n4. Update the participants list\nParticipants for the award are managed in a Research.gov database. To update this database for an annual report, an Excel spreadsheet must be downloaded from Research.gov, updated with that year’s information, and then uploaded back to Research.gov. Use information gathered from survey activities to update the participants worksheet. It is important to preserve the formatting of the Excel sheet during this process\nNotes:\n\nThe participants spreadsheetdownloaded from NSF is cumulative for the award. In the first year of the award it will be empty, and all participants need to be added. In subsequent years of the award only new participants and updates to the effort/support of current ones need to be provided.\nThe participants list should not include the lead of cover page PIs for the LTER award.\n\n\n\n5. Upload products to PAR\nPublications and datasets, and other research products, can uploaded to NSF’s Public Access Repository (PAR). After logging in to Research.gov, access PAR from the research products area. If the product has a DOI, PAR can populate most of the citation metadata about the product. Connect each product to the appropriate NSF Grant ID. You will need to convert any article files or other PDFs to PDF/A (archival PDF) format before uploading them to PAR.\nNotes\n\nDissertations/theses uploaded to PAR are NOT automatically added to the annual report for an award (as of 2026). Even if the document has been associated with the NSF award ID during upload to PAR. For now, upload a BibTex list of dissertations/theses under the Products tab in the report.\nThere are a variety of ways to convert to PDF/A format. Free, online converters seem to work, as does opening in MacOS Preview and then exporting to PDF/A format.\n\n\n\n6. Draft the report narrative\nThis is usually done in a shared document in Google Drive. Important activities and milestones like community events, outreach activities, trainings, and graduations need to be described. Investigators need to be reminded to contribute to their assigned sections. We may come up with a better way to delegate parts of this.\nNotes\n\nThere are important sections for Information Management and Broadening Participation activities that need to be filled in.\nFigures are typically added to a separate document in Google Drive and we aim for at least 5 per report.\n\n\n\n7. Assemble and submit the report\nFinal assembly of the report entails\n\nCopying/pasting content from the draft narrative into the appropriate boxes of the annual report in Research.gov.\nVerifying that research products (journal articles, conferences, datasets, dissertations/theses) entered into PAR, or as BibTex uploads, are found under the Products tab of the report.\nAttaching a PDF file with figures for the report (if available).\nAttaching ancillary documents. Sometimes we add a PDF list of new/updated datasets.\n\nNotes\n\n…",
     "crumbs": [
       "IM Guide",
       "Procedures",
@@ -233,11 +233,11 @@
     ]
   },
   {
-    "objectID": "docs/im/procedures/reporting.html#collecting-publications",
-    "href": "docs/im/procedures/reporting.html#collecting-publications",
+    "objectID": "docs/im/procedures/reporting.html#final-outcomes-reports",
+    "href": "docs/im/procedures/reporting.html#final-outcomes-reports",
     "title": "Reporting to NSF",
-    "section": "Collecting publications",
-    "text": "Collecting publications\nUse Zotero for this.",
+    "section": "Final outcomes reports",
+    "text": "Final outcomes reports",
     "crumbs": [
       "IM Guide",
       "Procedures",
@@ -245,47 +245,11 @@
     ]
   },
   {
-    "objectID": "docs/im/procedures/reporting.html#listing-datasets-statistics",
-    "href": "docs/im/procedures/reporting.html#listing-datasets-statistics",
+    "objectID": "docs/im/procedures/reporting.html#midterm-reviews",
+    "href": "docs/im/procedures/reporting.html#midterm-reviews",
     "title": "Reporting to NSF",
-    "section": "Listing datasets & statistics",
-    "text": "Listing datasets & statistics\nGreg has written a collection of sripts and notebooks (https://github.com/jornada-im/reporting) to collect and report data publishing and re-use statistics, mainly from the EDI repository. This outputs from this (figuress, tables) are in the jornada_im/reporting_io directory on the team’s shared drive.",
-    "crumbs": [
-      "IM Guide",
-      "Procedures",
-      "Reporting to NSF"
-    ]
-  },
-  {
-    "objectID": "docs/im/procedures/reporting.html#the-participants-list",
-    "href": "docs/im/procedures/reporting.html#the-participants-list",
-    "title": "Reporting to NSF",
-    "section": "The participants list",
-    "text": "The participants list\nDownload the most current one for the grant from Research.gov, then update with any new participants",
-    "crumbs": [
-      "IM Guide",
-      "Procedures",
-      "Reporting to NSF"
-    ]
-  },
-  {
-    "objectID": "docs/im/procedures/reporting.html#uploading-to-par",
-    "href": "docs/im/procedures/reporting.html#uploading-to-par",
-    "title": "Reporting to NSF",
-    "section": "Uploading to PAR",
-    "text": "Uploading to PAR\nPublications and datasets, and other research products, can uploaded to NSF’s Public Access Repository (PAR). After logging in to Research.gov, access PAR from the research products area. If the product has a DOI, PAR can populate most of the citation metadata about the product. Connect each product to the appropriate NSF Grant ID. You will need to upload a PDF/A of the journal articles.",
-    "crumbs": [
-      "IM Guide",
-      "Procedures",
-      "Reporting to NSF"
-    ]
-  },
-  {
-    "objectID": "docs/im/procedures/reporting.html#assembling-the-annual-report",
-    "href": "docs/im/procedures/reporting.html#assembling-the-annual-report",
-    "title": "Reporting to NSF",
-    "section": "Assembling the annual report",
-    "text": "Assembling the annual report\nDissertations and theses are not automatically attached to annual reports (as of 2025). The easiest way to add them is with a BibTex list under the Products tab.",
+    "section": "Midterm reviews",
+    "text": "Midterm reviews\nWe’ll fill this in if we ever have a midterm review again…",
     "crumbs": [
       "IM Guide",
       "Procedures",
