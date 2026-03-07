@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index – Jornada Data Commons</title>
+<title>Archived documents – Jornada Data Commons</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../img/jrn-logo-light.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -68,7 +70,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-filename','listing-file-modified',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-filename-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-filename","listing-file-modified"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -102,10 +162,14 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">IM Guide</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-document-archive" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Document Archive</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-document-library" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Document library</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-document-archive">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-document-library">    
+        <li>
+    <a class="dropdown-item" href="../docs/project-procedures/index.html">
+ <span class="dropdown-text">Project procedures</span></a>
+  </li>  
         <li>
     <a class="dropdown-item" href="../templates/index.html">
  <span class="dropdown-text">Forms and templates</span></a>
@@ -116,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../archive/index.html">
- <span class="dropdown-text">Miscellaneous documents</span></a>
+ <span class="dropdown-text">Archived documents</span></a>
   </li>  
     </ul>
   </li>
@@ -136,34 +200,159 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#miscellaneous-documents" id="toc-miscellaneous-documents" class="nav-link active" data-scroll-target="#miscellaneous-documents">Miscellaneous documents</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/archive/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Archived documents</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>These are, for the most part, previous versions of documents found elsewhere on this site. They are largely out of date but preserved for reference and posterity.</p>
 
 
 
 
-<section id="miscellaneous-documents" class="level1">
-<h1>Miscellaneous documents</h1>
-<ul>
-<li><a href="JRN_metadata_standards.docx">Jornada Metadata Standards guide</a> (out of date)</li>
-<li><a href="keyword_thesauri.xlsx">Jornada keywords thesaurus</a> (also out of date)</li>
-<li>Old <a href="documentationForms_old.zip">project and data documentation forms</a></li>
-<li>An <a href="resnotif_form_old.docx">old ResNotif form</a> for posterity</li>
-</ul>
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-filename-sort" data-direction="asc">
+        File Name
+      </option>
+      <option value="listing-file-modified-sort" data-direction="asc">
+        Modified - Oldest
+      </option>
+      <option value="listing-file-modified-sort" data-direction="desc">
+        Modified - Newest
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
 
+<th>
+<a class="sort" data-sort="listing-filename-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">File Name</a>
+</th>
 
-</section>
+<th>
+<a class="sort" data-sort="listing-file-modified-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Modified</a>
+</th>
 
-</main> <!-- /main -->
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-listing-file-modified-sort="1772860233370" data-listing-filename-sort="JRN_IM_annual_report_2020.docx">
+<td>
+<a href="../archive/JRN_IM_annual_report_2020.docx" class="filename listing-filename">JRN_IM_annual_report_2020.docx</a>
+</td>
+<td>
+<span class="listing-file-modified">3/7/26, 5:10:33 AM</span>
+</td>
+
+</tr>
+
+<tr data-index="1" data-listing-file-modified-sort="1772860233372" data-listing-filename-sort="JRN_metadata_standards.docx">
+<td>
+<a href="../archive/JRN_metadata_standards.docx" class="filename listing-filename">JRN_metadata_standards.docx</a>
+</td>
+<td>
+<span class="listing-file-modified">3/7/26, 5:10:33 AM</span>
+</td>
+
+</tr>
+
+<tr data-index="2" data-listing-file-modified-sort="1772860233372" data-listing-filename-sort="Jornada_resnotif_form_ja2025.docx">
+<td>
+<a href="../archive/Jornada_resnotif_form_ja2025.docx" class="filename listing-filename">Jornada_resnotif_form_ja2025.docx</a>
+</td>
+<td>
+<span class="listing-file-modified">3/7/26, 5:10:33 AM</span>
+</td>
+
+</tr>
+
+<tr data-index="3" data-listing-file-modified-sort="1772860233376" data-listing-filename-sort="SOP_Metadata_Publishing.docx">
+<td>
+<a href="../archive/SOP_Metadata_Publishing.docx" class="filename listing-filename">SOP_Metadata_Publishing.docx</a>
+</td>
+<td>
+<span class="listing-file-modified">3/7/26, 5:10:33 AM</span>
+</td>
+
+</tr>
+
+<tr data-index="4" data-listing-file-modified-sort="1772860233376" data-listing-filename-sort="resnotif_form_old.docx">
+<td>
+<a href="../archive/resnotif_form_old.docx" class="filename listing-filename">resnotif_form_old.docx</a>
+</td>
+<td>
+<span class="listing-file-modified">3/7/26, 5:10:33 AM</span>
+</td>
+
+</tr>
+
+<tr data-index="5" data-listing-file-modified-sort="1772860233372" data-listing-filename-sort="JRN_IM_annual_report_2020.pdf">
+<td>
+<a href="../archive/JRN_IM_annual_report_2020.pdf" class="filename listing-filename">JRN_IM_annual_report_2020.pdf</a>
+</td>
+<td>
+<span class="listing-file-modified">3/7/26, 5:10:33 AM</span>
+</td>
+
+</tr>
+
+<tr data-index="6" data-listing-file-modified-sort="1772860233376" data-listing-filename-sort="keyword_thesauri.xlsx">
+<td>
+<a href="../archive/keyword_thesauri.xlsx" class="filename listing-filename">keyword_thesauri.xlsx</a>
+</td>
+<td>
+<span class="listing-file-modified">3/7/26, 5:10:33 AM</span>
+</td>
+
+</tr>
+
+<tr data-index="7" data-listing-file-modified-sort="1772860233376" data-listing-filename-sort="documentationForms_old.zip">
+<td>
+<a href="../archive/documentationForms_old.zip" class="filename listing-filename">documentationForms_old.zip</a>
+</td>
+<td>
+<span class="listing-file-modified">3/7/26, 5:10:33 AM</span>
+</td>
+
+</tr>
+
+</tbody>
+</table>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -569,4 +758,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/archive/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/archive/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

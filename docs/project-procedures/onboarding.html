@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-03-07">
+<meta name="description" content="How to onbard new people to jobs at the Jornada">
 
-<title>parse_trello_boards – Jornada Data Commons</title>
+<title>Onboarding new IM team members – Jornada Data Commons</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,27 +25,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
-<link href="../../../docs/im/sysadmin/index.html" rel="next">
-<link href="../../../docs/im/standards/JRN_metadata_standards.html" rel="prev">
-<link href="../../../img/jrn-logo-light.png" rel="icon" type="image/png">
-<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-1d5e050edb13250d4f64432100cad504.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-28446db2ec7fa9dd5e79715be718ae35.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../img/jrn-logo-light.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-1d5e050edb13250d4f64432100cad504.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-28446db2ec7fa9dd5e79715be718ae35.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,18 +74,18 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating nav-fixed quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../img/jrn-logo-light.png" alt="" class="navbar-logo light-content">
-    <img src="../../../img/jrn-logo-light.png" alt="" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../img/jrn-logo-light.png" alt="" class="navbar-logo light-content">
+    <img src="../../img/jrn-logo-light.png" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="../../../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Jornada Data Commons</span>
     </a>
   </div>
@@ -96,11 +96,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../docs/researcher/introduction.html"> 
+    <a class="nav-link" href="../../docs/researcher/introduction.html"> 
 <span class="menu-text">Researcher Guide</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../../../docs/im/introduction.html" aria-current="page"> 
+    <a class="nav-link" href="../../docs/im/introduction.html"> 
 <span class="menu-text">IM Guide</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -109,25 +109,25 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-document-library">    
         <li>
-    <a class="dropdown-item" href="../../../docs/project-procedures/index.html">
+    <a class="dropdown-item" href="../../docs/project-procedures/index.html">
  <span class="dropdown-text">Project procedures</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../templates/index.html">
+    <a class="dropdown-item" href="../../templates/index.html">
  <span class="dropdown-text">Forms and templates</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../proposals-and-reports/index.html">
+    <a class="dropdown-item" href="../../proposals-and-reports/index.html">
  <span class="dropdown-text">Recent proposals and reports</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../archive/index.html">
+    <a class="dropdown-item" href="../../archive/index.html">
  <span class="dropdown-text">Archived documents</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../../posts/posts.html"> 
+    <a class="nav-link" href="../../posts/posts.html"> 
 <span class="menu-text">Updates</span></a>
   </li>  
 </ul>
@@ -137,154 +137,59 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/im/hacks/parse_trello_boards.html">Hacks</a></li><li class="breadcrumb-item"><a href="../../../docs/im/hacks/parse_trello_boards.html">Parsing trello boards to csv</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../docs/im/introduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Metadata standards</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../docs/im/standards/JRN_metadata_standards.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Jornada Dataset Metadata Standards</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Hacks</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../docs/im/hacks/parse_trello_boards.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Parsing trello boards to csv</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../../docs/im/sysadmin/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Full IM System Documentation</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../docs/im/sysadmin/chapter-01-overview.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1. IM System Overview</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../docs/im/sysadmin/chapter-02-project-management.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2. Project Management</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../docs/im/sysadmin/chapter-03-websites-and-apps.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3. Websites and Web Applications</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../docs/im/sysadmin/chapter-04-databases.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4. Databases</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../docs/im/sysadmin/chapter-05-data-publishing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5. Data Publishing</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../docs/im/sysadmin/chapter-06-server-admin.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6. Servers and Server Administration</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../docs/im/sysadmin/chapter-07-networking.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">7. Networking</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../docs/refs-and-links.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Useful references and links</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#parsing-trello-boards-to-csv" id="toc-parsing-trello-boards-to-csv" class="nav-link active" data-scroll-target="#parsing-trello-boards-to-csv">Parsing trello boards to csv</a></li>
+  <li><a href="#ims" id="toc-ims" class="nav-link active" data-scroll-target="#ims">IMs</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/im/hacks/parse_trello_boards.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/project-procedures/onboarding.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/im/hacks/parse_trello_boards.html">Hacks</a></li><li class="breadcrumb-item"><a href="../../../docs/im/hacks/parse_trello_boards.html">Parsing trello boards to csv</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Onboarding new IM team members</h1>
+</div>
+
+<div>
+  <div class="description">
+    How to onbard new people to jobs at the Jornada
+  </div>
+</div>
 
 
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 7, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
 
-<section id="parsing-trello-boards-to-csv" class="level1">
-<h1>Parsing trello boards to csv</h1>
+</header>
+
+
+<p>:construction: <strong>This is under construction.</strong> :construction:</p>
+<section id="ims" class="level2">
+<h2 class="anchored" data-anchor-id="ims">IMs</h2>
 <ol type="1">
-<li><p>From Trello board go to</p>
-<p>Menu &gt; More &gt; Print and Export &gt; Export as JSON</p>
-<p>and download the JSON to a local machine.</p></li>
-<li><p>Parse the raw JSON to a simplified tabular JSON file that can be converted to csv.</p>
-<ul>
-<li>Download the <a href="https://gist.github.com/gremau/290ab394c9bf2d6d03c18444ff60c225">Trello JSON parser code</a> and make executable some where on local machine.</li>
-<li>Run <code>trelloparse {trello JSON file.json} output.json</code></li>
-</ul></li>
-<li><p>Convert output.json to .csv using <a href="https://json-csv.com" class="uri">https://json-csv.com</a></p></li>
+<li>Add to the <em>Jornada IM</em> team on GitHub</li>
+<li>Read the <a href="../../docs/im/introduction.html">IM Guide</a></li>
 </ol>
 
 
@@ -691,21 +596,9 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../../../docs/im/standards/JRN_metadata_standards.html" class="pagination-link" aria-label="Jornada Dataset Metadata Standards">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Jornada Dataset Metadata Standards</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../../../docs/im/sysadmin/index.html" class="pagination-link" aria-label="Full IM System Documentation">
-        <span class="nav-page-text">Full IM System Documentation</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/im/hacks/parse_trello_boards.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/project-procedures/onboarding.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
