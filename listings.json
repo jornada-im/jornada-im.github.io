@@ -17,15 +17,15 @@
     ]
   },
   {
-    "listing": "/proposals-and-reports/index.html",
-    "items": [
-      "/proposals-and-reports/JRN_data_management_plan.LTER8.html",
-      "/proposals-and-reports/JRN_data_management_plan.LTER7.html",
-      "/proposals-and-reports/JRN_IM_annual_report_2020.html"
-    ]
-  },
-  {
     "listing": "/archive/index.html",
     "items": []
+  },
+  {
+    "listing": "/docs/proposals-and-reports/index.html",
+    "items": [
+      "/docs/proposals-and-reports/JRN_data_management_plan.LTER8.html",
+      "/docs/proposals-and-reports/JRN_data_management_plan.LTER7.html",
+      "/docs/proposals-and-reports/JRN_IM_annual_report_2020.html"
+    ]
   }
 ]

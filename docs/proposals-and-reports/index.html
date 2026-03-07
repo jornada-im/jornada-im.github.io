@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>fellowship_im_statement – Jornada Data Commons</title>
+<title>Proposals and reports – Jornada Data Commons</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +23,27 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../img/jrn-logo-light.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-1d5e050edb13250d4f64432100cad504.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-28446db2ec7fa9dd5e79715be718ae35.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../img/jrn-logo-light.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-1d5e050edb13250d4f64432100cad504.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-28446db2ec7fa9dd5e79715be718ae35.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,7 +70,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -79,11 +139,11 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../img/jrn-logo-light.png" alt="" class="navbar-logo light-content">
-    <img src="../img/jrn-logo-light.png" alt="" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../img/jrn-logo-light.png" alt="" class="navbar-logo light-content">
+    <img src="../../img/jrn-logo-light.png" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Jornada Data Commons</span>
     </a>
   </div>
@@ -94,11 +154,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../docs/researcher/introduction.html"> 
+    <a class="nav-link" href="../../docs/researcher/introduction.html"> 
 <span class="menu-text">Researcher Guide</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../docs/im/introduction.html"> 
+    <a class="nav-link" href="../../docs/im/introduction.html"> 
 <span class="menu-text">IM Guide</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -107,25 +167,25 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-document-library">    
         <li>
-    <a class="dropdown-item" href="../docs/project-procedures/index.html">
- <span class="dropdown-text">Project procedures</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../templates/index.html">
+    <a class="dropdown-item" href="../../downloads/index.html">
  <span class="dropdown-text">Forms and templates</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../proposals-and-reports/index.html">
- <span class="dropdown-text">Recent proposals and reports</span></a>
+    <a class="dropdown-item" href="../../docs/project-procedures/index.html">
+ <span class="dropdown-text">Project procedures</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../archive/index.html">
+    <a class="dropdown-item" href="../../docs/proposals-and-reports/index.html">
+ <span class="dropdown-text">Proposals and reports</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../archive/index.html">
  <span class="dropdown-text">Archived documents</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../posts/posts.html"> 
+    <a class="nav-link" href="../../posts/posts.html"> 
 <span class="menu-text">Updates</span></a>
   </li>  
 </ul>
@@ -144,37 +204,112 @@ ul.task-list li input[type="checkbox"] {
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Proposals and reports</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Data management plans and reports from Jornada IM activities over the past few years.</p>
 
 
 
 
-<p><em>To:</em>&nbsp;&nbsp;&nbsp;&nbsp;Graduate Research Fellowship Program<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jornada Basin LTER<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Mexico State University<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las Cruces, NM<br>
-</p>
-<p><em>Date:</em> <strong>11 March 2025</strong></p>
-<p>To whom it may concern,</p>
-<p>The student <strong><em>Arthur Tansley</em></strong> has, within the last year, completed the data and metadata submission requirements for funding by the Jornada Graduate Research Fellowship Program (“the fellowship”). These requirements include:</p>
-<ol type="1">
-<li><p>Submission of one or more files containing data collected as part of a graduate research project associated with their degree program and the fellowship.</p></li>
-<li><p>Submission of a complete metadata template describing the data in the file(s) above.</p></li>
-<li><p>The student agrees to publicly release these data and metadata within one year of completing the degree program, or at the time the data are published in the peer-reviewed scientific literature (whichever occurs first).</p></li>
-</ol>
-<p>The submitted data and metadata items (1 &amp; 2) have been reviewed by the Jornada Basin LTER Information Manager and archived in the Jornada file system. Published products are listed below. Inclusion of this statement in a fellowship application constitutes the student’s agreement to requirement 3 and supports continued eligibility for the fellowship.</p>
-<p>Sincerely,</p>
-<p><img src="../Users/gmaurer/Library/CloudStorage/Dropbox/signatures/signature_small.jpg" class="img-fluid" width="150"></p>
-<p>Greg Maurer<br>
-<em>Information Manager for Jornada Basin LTER</em></p>
-<p><strong>Available data:</strong></p>
-<ul>
-<li>Stover, D., J. McLaren, N. Pietrasiak, and L. Jin. 2024. Physical soil characteristics, microbial community composition, extracellular enzymatic activity, biologically based phosphorus (BBP) pools, and available phosphorus from two soil depths, four microhabitats, and four landforms at the Jornada Experimental Range, 2021. ver 1. Environmental Data Initiative. https://doi.org/10.6073/pasta/9085a63e6ff1e310f13784b6fa0f8616 (Accessed 2025-03-11).</li>
-</ul>
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1708732800000" data-listing-file-modified-sort="1772863743862" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3692">
+<div class="thumbnail"><a href="../../docs/proposals-and-reports/JRN_data_management_plan.LTER8.html" class="no-external">
 
+<p class="card-img-top"><img src="../img/JRN_IM_schematic_2024_up.png"  class="thumbnail-image card-img"/></p>
 
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../docs/proposals-and-reports/JRN_data_management_plan.LTER8.html" class="no-external">Data Management Plan (JRN-8)</a>
+</h3>
+<div class="delink listing-description"><a href="../../docs/proposals-and-reports/JRN_data_management_plan.LTER8.html" class="no-external">
+<p>Pre-submission version for the JRN LTER 8 proposal</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../../docs/proposals-and-reports/JRN_data_management_plan.LTER8.html" class="no-external">
+<div class="listing-date">
+Feb 24, 2024
+</div>
+<div class="listing-author">
+Gregory Maurer
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1582156800000" data-listing-file-modified-sort="1772863743862" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18" data-listing-word-count-sort="3449">
+<div class="thumbnail"><a href="../../docs/proposals-and-reports/JRN_data_management_plan.LTER7.html" class="no-external">
 
-</main> <!-- /main -->
+<p class="card-img-top"><img src="../img/JRN_IM_Schematic.png"  class="thumbnail-image card-img"/></p>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../docs/proposals-and-reports/JRN_data_management_plan.LTER7.html" class="no-external">Data Management Plan (JRN-VII)</a>
+</h3>
+<div class="delink listing-description"><a href="../../docs/proposals-and-reports/JRN_data_management_plan.LTER7.html" class="no-external">
+<p>Pre-submission version for the JRN LTER VII proposal</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../../docs/proposals-and-reports/JRN_data_management_plan.LTER7.html" class="no-external">
+<div class="listing-date">
+Feb 20, 2020
+</div>
+<div class="listing-author">
+Gregory Maurer
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1610496000000" data-listing-file-modified-sort="1772863743861" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1823">
+<div class="thumbnail"><a href="../../docs/proposals-and-reports/JRN_IM_annual_report_2020.html" class="no-external">
+
+<p class="card-img-top"><img src="../../Users/gmaurer/GD_gmaurer.jrn.lter/IM/figures/JRN_EDI_2020_ann_rpt_20210114.png"  class="thumbnail-image card-img"/></p>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../docs/proposals-and-reports/JRN_IM_annual_report_2020.html" class="no-external">Jornada Basin LTER Information Management 2020 Annual Report (DRAFT)</a>
+</h3>
+<div class="delink listing-description"><a href="../../docs/proposals-and-reports/JRN_IM_annual_report_2020.html" class="no-external">
+<p>First, and probably last, ever JRN IM annual report</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../../docs/proposals-and-reports/JRN_IM_annual_report_2020.html" class="no-external">
+<div class="listing-date">
+Jan 13, 2021
+</div>
+<div class="listing-author">
+Gregory E. Maurer, John Anderson, Darren James, Nina Joffe, John Ragosta, Geovany Ramirez, Shelly Valdovinos
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -580,4 +715,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/templates/fellowship_IM_statement.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/proposals-and-reports/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
