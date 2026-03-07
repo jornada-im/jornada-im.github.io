@@ -30,9 +30,9 @@ website:
         href: docs/im/introduction.qmd
       - text: "Document library"
         menu:
+          - downloads/index.qmd
           - docs/project-procedures/index.qmd
-          - templates/index.qmd
-          - proposals-and-reports/index.qmd
+          - docs/proposals-and-reports/index.qmd
           - archive/index.qmd
       - text: "Updates"
         href: posts/posts.qmd

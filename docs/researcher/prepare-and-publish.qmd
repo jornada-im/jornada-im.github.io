@@ -93,7 +93,7 @@ The EDI repository has created a web app called [ezEML](https://ezEML.edireposit
 
 ### Metadata templates
 
-A metadata template is a document with a structure and cues that help you collect the essential metadata needed to describe a published dataset. We have created Jornada metadata templates in [MS Word (.docx)](http://jornada-im.github.io/templates/Jornada_metadata_template.docx) or [Excel (.xlsx)](http://jornada-im.github.io/templates/Jornada_metadata_template.xlsx) formats. These templates contain sections for all critical pieces of metadata, along with instructions on what to include and how to structure the information.  The [Excel version](http://jornada-im.github.io/templates/Jornada_metadata_template.xlsx) is slightly more detailed and may be useful for complex datasets. Completed templates and accompanying data files should be sent to the Jornada IM team (<jornada.data@nmsu.edu>).
+A metadata template is a document with a structure and cues that help you collect the essential metadata needed to describe a published dataset. We have created Jornada metadata templates in [MS Word (.docx)](http://jornada-im.github.io/downloads/Jornada_metadata_template.docx) or [Excel (.xlsx)](http://jornada-im.github.io/downloads/Jornada_metadata_template.xlsx) formats. These templates contain sections for all critical pieces of metadata, along with instructions on what to include and how to structure the information.  The [Excel version](http://jornada-im.github.io/downloads/Jornada_metadata_template.xlsx) is slightly more detailed and may be useful for complex datasets. Completed templates and accompanying data files should be sent to the Jornada IM team (<jornada.data@nmsu.edu>).
 
 ### Other metadata methods
 
@@ -104,7 +104,7 @@ Under construction...
 
 Once you have submitted the dataset to the IM team, the data and metadata are securely archived and a round of review and editing begins (see @fig-jornadapublish). An data manager will review the metadata for completeness, compliance with Jornada standards, and mismatches between metadata and data. If revisions are needed or errors are found you will receive an email requesting the changes. Changes can be submitted in ezEML, or with an updated metadata template, as appropriate.
 
-While writing metadata, the [Jornada metadata standards](https://github.com/jornada-im/jornada-im.github.io/raw/main/standards/JRN_metadata_standards.docx) (.docx) and [keyword thesauri](https://github.com/jornada-im/jornada-im.github.io/raw/main/standards/keyword_thesauri.xlsx) (.xlsx) documents are helpful, but not required.
+While writing metadata, the [Jornada metadata standards](../im/standards/JRN_metadata_standards.qmd) and [keyword thesauri](../../downloads/keyword_thesauri.xlsx) (Excel file) documents are helpful, but not required.
 
 ## Publishing the dataset
 

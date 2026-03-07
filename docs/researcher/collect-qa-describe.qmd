@@ -432,7 +432,7 @@ Assembling and preserving metadata is important and should be an integral part o
     - After you prioritize some research products for publication, consider what people will need to know to use them effectively.
     - This gives you a target for collecting appropriate metadata for your published dataset.
 3. **Start creating structured metadata files and keep them with your data.**
-    - Try to be systematic and complete about describing your data with metadata. A metadata template, such as one of [the Jornada templates](../../templates/index.qmd), helps with this.
+    - Try to be systematic and complete about describing your data with metadata. A metadata template, such as one of [the Jornada templates](../../downloads/index.qmd), helps with this.
     - Organize your research products in clearly-labeled project directories where data and metadata live together.
     - Eventually, you will probably need to create a standard metadata file, such as [EML](https://eml.ecoinformatics.org/), to publish your data. Applications for editing metadata, such as [ezEML](https://ezeml.edirepository.org) from the Environmental Data Initiative (EDI) repository, are a huge help with this task.
 

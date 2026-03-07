@@ -1,5 +1,5 @@
 ---
-title: Recent proposals and reports
+title: Proposals and reports
 listing: 
     type: default
 ---

@@ -50,7 +50,7 @@ This site is maintained by the Jornada Information Management (IM) team to suppo
 
 ### Some other quick links
 
-- Looking for a **research notification form** or **metadata template**? [Check here!](templates/index.qmd)
+- Looking for a **research notification form** or **metadata template**? [Check here!](downloads/index.qmd)
 - Did you attend, or are you attending, a data training event? Find resources at the [JEDS site](https://jornada-im.github.io/JEDS).
 - Need more data management advice? See [these miscellaneous resources](docs/refs-and-links.qmd).
 

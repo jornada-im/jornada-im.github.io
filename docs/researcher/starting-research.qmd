@@ -10,7 +10,7 @@ To start your research you will need a plan. Overall, your research plan may be 
 
 ## Permit approval process
 
-Most new research projects are initiated through the Jornada Research Site Manager, Conrad Nelson (<cwnelson@nmsu.edu>). The [JRN website](https://lter.jornada.nmsu.edu/for-researchers) or the [JER website](https://jornada.nmsu.edu/researcher-information) are the best source of information on this process, and have the current forms needed. There is also a listing of forms available [here](../../templates/index.qmd). To begin the approval process, a potential researcher submits a Research Notification (ResNotif) form, which describes the planned location, research activities, personnel, and other important project information, to Conrad Nelson. After review, and after any necessary changes to the plan are made, the project can be approved to begin.
+Most new research projects are initiated through the Jornada Research Site Manager, Conrad Nelson (<cwnelson@nmsu.edu>). The [JRN website](https://lter.jornada.nmsu.edu/for-researchers) or the [JER website](https://jornada.nmsu.edu/researcher-information) are the best source of information on this process, and have the current forms needed. There is also a listing of forms available [here](../../downloads/index.qmd). To begin the approval process, a potential researcher submits a Research Notification (ResNotif) form, which describes the planned location, research activities, personnel, and other important project information, to Conrad Nelson. After review, and after any necessary changes to the plan are made, the project can be approved to begin.
 
 ### The Jornada data policy
 
