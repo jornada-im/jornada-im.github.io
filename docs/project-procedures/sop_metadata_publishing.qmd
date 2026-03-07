@@ -1,6 +1,7 @@
 ---
-title: "SOP for updating datasets in metabase"
+title: SOP for updating datasets in metabase
 author: Shelley Valdovinos
+description: Standard operating procedures for updating Jornada datasets in metabase (slightly out of date, probably)
 date: 2022-12-08
 ---
 
@@ -71,12 +72,12 @@ Open NonCore\_packages 🡪 find your data set ID of interest: (i.e.,
 
 -   Find EML file: knb-lter-jrn.210370001.28.xml
 
-> ![](../img/image7.png){width="3.6875in"
+> ![](img/image7.png){width="3.6875in"
 > height="3.0416666666666665in"}
 
 -   Find abstract: abstract.210370001.md.
 
-> ![](../img/image2.png){width="4.126619641294838in"
+> ![](img/image2.png){width="4.126619641294838in"
 > height="3.1718755468066493in"}
 
 -   Find any dataset tables, i.e. substrate data, vegetation data,
@@ -87,7 +88,7 @@ Open NonCore\_packages 🡪 find your data set ID of interest: (i.e.,
 
 **Other resources for data:**
 
-![](../img/image10.png){width="6.005208880139983in"
+![](img/image10.png){width="6.005208880139983in"
 height="5.348724846894139in"}
 
 NAVIGATING THE DBEAVER DATABASE TO UPDATE AND INCORPORATE DATASETS:
@@ -112,14 +113,14 @@ outlined above.*
     -   ***\>Tables***: (This is where the metadata is stored and where
         > most of the edits are made)
 
-![](../img/image5.png){width="3.125in"
+![](img/image5.png){width="3.125in"
 height="1.6354166666666667in"}
 
 -   \>**DataSet**: enter "DataSetID"= 210370001 into search engine and
     > Enter
 
     -   If no results: Add new row by clicking
-        > ![](../img/image3.png){width="0.15625in"
+        > ![](img/image3.png){width="0.15625in"
         > height="0.15625in"} icon at the bottom or highlight a row and
         > click on "Duplicate current row"
 
@@ -151,11 +152,11 @@ height="1.6354166666666667in"}
         -   **AbstractType:** file
 
         -   **BoilerplateSetting:**
-            > jrn-default![](../img/image1.png){width="6.249405074365704in"
+            > jrn-default![](img/image1.png){width="6.249405074365704in"
             > height="1.734375546806649in"}
 
         -   Save by clicking
-            > "![](../img/image11.png){width="0.15207020997375328in"
+            > "![](img/image11.png){width="0.15207020997375328in"
             > height="0.15228127734033245in"} Save" button at the
             > bottom.
 
@@ -166,7 +167,7 @@ height="1.6354166666666667in"}
         > proceed with the following.
 
     -   If no results: Add new row by clicking
-        > ![](../img/image3.png){width="0.15625in"
+        > ![](img/image3.png){width="0.15625in"
         > height="0.15625in"} icon at the bottom or highlight a row and
         > click on "Duplicate current row"
 
@@ -237,9 +238,9 @@ height="1.6354166666666667in"}
         > description).
 
     -   Save by clicking
-        > "![](../img/image11.png){width="0.15207020997375328in"
+        > "![](img/image11.png){width="0.15207020997375328in"
         > height="0.15228127734033245in"} Save" button at the
-        > bottom.![](../img/image9.png){width="5.671875546806649in"
+        > bottom.![](img/image9.png){width="5.671875546806649in"
         > height="3.4432174103237094in"}
 
 -   \>**DataSetEntities** (to associate/attach files): enter
@@ -273,15 +274,15 @@ height="1.6354166666666667in"}
         -   **FileSizeUnits:** byte
 
     -   For each data set, highlight row and click on
-        > ![](../img/image4.png){width="0.13541666666666666in"
+        > ![](img/image4.png){width="0.13541666666666666in"
         > height="0.13541666666666666in"} icon at the bottom to
         > "Duplicate current row". Then update columns as above.
 
     -   Save by clicking
-        > "![](../img/image11.png){width="0.15207020997375328in"
+        > "![](img/image11.png){width="0.15207020997375328in"
         > height="0.15228127734033245in"} Save" button at the bottom.
 
-![](../img/image6.png){width="5.479166666666667in"
+![](img/image6.png){width="5.479166666666667in"
 height="3.0819444444444444in"}
 
 -   \>**DataSetKeywords**: enter "DataSetID"= 210370001 into search
@@ -307,7 +308,7 @@ height="3.0819444444444444in"}
             > location/place. If it is the study ID i.e., study 370 -
             > then ThesaurusID should be jornada\_projectnames
 
-    -   ![](../img/image11.png){width="0.15207020997375328in"
+    -   ![](img/image11.png){width="0.15207020997375328in"
         > height="0.15228127734033245in"} Save
 
 -   \>**DataSetMethod**: enter "DataSetID"= 210370001 into search engine
@@ -352,14 +353,14 @@ height="3.0819444444444444in"}
             > up on the right-hand side, you will need to add their
             > names under ListPeople
 
-    -   ![](../img/image8.png){width="5.182292213473316in"
+    -   ![](img/image8.png){width="5.182292213473316in"
         > height="1.4975448381452319in"}
 
         -   **AuthorshipOrder:** 1, 2, 3...
 
         -   **AuthorshipRole**: i.e., creator, contact
 
-    -   ![](../img/image11.png){width="0.15207020997375328in"
+    -   ![](img/image11.png){width="0.15207020997375328in"
         > height="0.15228127734033245in"} Save
 
 -   \>**DataSetPublications**:
@@ -387,7 +388,7 @@ height="3.0819444444444444in"}
 
         -   **GeoCoverageSortOrder:** 1, 2
 
-    -   ![](../img/image11.png){width="0.15207020997375328in"
+    -   ![](img/image11.png){width="0.15207020997375328in"
         > height="0.15228127734033245in"} Save
 
 -   \>**DataSetTaxa**: This is where you can link taxonomic data to a
@@ -402,7 +403,7 @@ height="3.0819444444444444in"}
 
         -   **TaxonomicProviderID:** i.e., itis
 
-    -   ![](../img/image11.png){width="0.15207020997375328in"
+    -   ![](img/image11.png){width="0.15207020997375328in"
         > height="0.15228127734033245in"} Save
 
 -   \>**DataSetTemporal**: enter "DataSetID"= 210370001 into search
@@ -456,7 +457,7 @@ height="3.0819444444444444in"}
 
     -   
 
-    -   ![](../img/image11.png){width="0.15207020997375328in"
+    -   ![](img/image11.png){width="0.15207020997375328in"
         > height="0.15228127734033245in"} Save
 
 -   \>**ListPeople**: To update the creators involved with a project.
@@ -495,5 +496,5 @@ height="3.0819444444444444in"}
 
         -   **LocalID:** ID found through ITIS.gov i.e., cow or BOER4
 
-    -   ![](../img/image11.png){width="0.15207020997375328in"
+    -   ![](img/image11.png){width="0.15207020997375328in"
         > height="0.15228127734033245in"} Save

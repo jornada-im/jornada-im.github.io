@@ -1,4 +1,6 @@
-# Forms and templates
+---
+title: Forms and templates
+---
 
 **Research approval**
 

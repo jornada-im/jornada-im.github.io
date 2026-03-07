@@ -1,4 +1,9 @@
-﻿# Data Management Plan for JRN LTER-8
+﻿---
+title: Data Management Plan (JRN-8)
+author: Gregory Maurer
+description: Pre-submission version for the JRN LTER 8 proposal
+date: 2024-02-24
+---
 
 version 0.4
 

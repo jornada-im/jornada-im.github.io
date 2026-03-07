@@ -11,4 +11,5 @@ Quite a few updates in the last few days.
 
 * The [Collect, manage and describe research data](../../docs/researcher/collect-qa-describe.qmd) and [Prepare and publish a datset](../../docs/researcher/prepare-and-publish.qmd) chapters have been extensively updated.
 * A new [annual reporting procedures](../../docs/im/procedures/reporting.qmd) page has been added (but still needs updating).
+* The items in the Document Library menu have been updated and coverted to listings.
 * The [homepage](../../index.qmd) has been redesigned and updated.

@@ -1,10 +1,11 @@
 ---
 title: Reporting to NSF
-date: last-
+date: last-modified
+description: How to complete JRN annual (and other) reports for NSF
 from: markdown+emoji
 ---
 
-:construction: **This is under construction.**
+:construction: **This is under construction.** :construction:
 
 Reporting about JRN activities for our funders, particularly NSF, is satisfying, fun, and mandatory. NSF requires **annual reports** at the end of each year of a funded project, and a **final outcomes report** about one year after any funded project ends (I think). A mid-term review is also required for LTER sites that are on a 6-year funding cycle (though this may be changing). For the IM team these reporting events mean assembling information about people in the program, research outputs like papers and datasets, and any notable activities or milestones in the project. It is quite a bit of work, but, truthfully, reporting requirements do provide valuable opportunities and motivation to assess progress on the proposal, catalog research products, and keep program information up-to-date.
 

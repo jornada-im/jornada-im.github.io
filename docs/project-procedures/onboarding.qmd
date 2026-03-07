@@ -1,0 +1,12 @@
+---
+title: Onboarding new IM team members
+date: last-modified
+description: How to onbard new people to jobs at the Jornada
+---
+
+:construction: **This is under construction.** :construction:
+
+## IMs
+
+1. Add to the *Jornada IM* team on GitHub
+2. Read the [IM Guide](../im/introduction.qmd)

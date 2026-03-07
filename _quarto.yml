@@ -28,8 +28,9 @@ website:
         href: docs/researcher/introduction.qmd
       - text: "IM Guide"
         href: docs/im/introduction.qmd
-      - text: "Document Archive"
+      - text: "Document library"
         menu:
+          - docs/project-procedures/index.qmd
           - templates/index.qmd
           - proposals-and-reports/index.qmd
           - archive/index.qmd
@@ -71,8 +72,6 @@ website:
           text: "Introduction"
         - section: "Metadata standards"
           contents: docs/im/standards/*
-        - section: "Procedures"
-          contents: docs/im/procedures/*
         - section: "Hacks"
           contents: docs/im/hacks/*
         - section: "Full IM System Documentation"

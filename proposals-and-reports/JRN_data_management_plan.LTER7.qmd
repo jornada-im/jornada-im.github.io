@@ -1,4 +1,9 @@
-﻿# Data Management Plan 
+﻿---
+title: Data Management Plan (JRN-VII)
+author: Gregory Maurer
+description: Pre-submission version for the JRN LTER VII proposal
+date: 2020-02-20
+---
 
 _Note: This version was subsequently edited by Steve Archer and Greg Maurer before inclusion in the 2020 JRN LTER-VII proposal (table removed, formatting, rewording). The content and intent remains the same._
 

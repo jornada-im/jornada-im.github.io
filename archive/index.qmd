@@ -1,6 +1,12 @@
-# Miscellaneous documents
+---
+title: Archived documents
+listing: 
+    type: table
+    contents: 
+      - ./*.docx
+      - ./*.pdf
+      - ./*.xlsx
+      - ./*.zip
+---
 
-* [Jornada Metadata Standards guide](JRN_metadata_standards.docx) (out of date)
-* [Jornada keywords thesaurus](keyword_thesauri.xlsx) (also out of date)
-* Old [project and data documentation forms](documentationForms_old.zip)
-* An [old ResNotif form](resnotif_form_old.docx) for posterity
+These are, for the most part, previous versions of documents found elsewhere on this site. They are largely out of date but preserved for reference and posterity.

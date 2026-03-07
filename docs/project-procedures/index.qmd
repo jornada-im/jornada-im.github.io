@@ -1,0 +1,7 @@
+---
+title: Project procedures
+listing:
+    type: default
+---
+
+Procedures for important operational and management-level tasks at the Jornada.
