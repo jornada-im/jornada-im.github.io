@@ -102,7 +102,7 @@ Under construction...
 
 ## The review process
 
-Once you have submitted the dataset to the IM team, the data and metadata are securely archived and a round of review and editing begins (see @fig-jornadapublish). An data manager will review the metadata for completeness, compliance with Jornada standards, and mismatches between metadata and data. If revisions are needed or errors are found you will receive an email requesting the changes. Changes can be submitted in ezEML, or with an updated metadata template, as appropriate.
+Once you have submitted the dataset to the Jornada IM team, the data and metadata are securely archived and a round of review and editing begins (see @fig-jornadapublish). A data manager will review the metadata for completeness, compliance with Jornada standards, and mismatches between metadata and data. If revisions are needed or errors are found you will receive an email requesting the changes. Changes can be submitted in ezEML, or with an updated metadata template, as appropriate.
 
 While writing metadata, the [Jornada metadata standards](../im/standards/JRN_metadata_standards.qmd) and [keyword thesauri](../../downloads/keyword_thesauri.xlsx) (Excel file) documents are helpful, but not required.
 

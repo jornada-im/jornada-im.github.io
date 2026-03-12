@@ -76,7 +76,7 @@ The **source** of the data refers to where the data came from and how they were 
 
 ### Data format
 
-There are at least two meanings wrapped up in the term **data format**. First, a data format describes the way data are structured, organized, and related.[^1] Tabular data formats, for example, resemble a grid where rows and columns represent the variables and observations of the data, and there can be more than one way to arrange those. The second meaning of data format refers to the fact that the data values for any variable can be represented in more than one way. An identical date, for example, can be formatted as the text string “July 2, 1974” or as “1974-07-02.”
+There are at least two meanings wrapped up in the term **data format**. First, a data format describes the way data are structured, organized, and related.[^1] Tabular data formats, for example, resemble a grid where the columns and rows represent the variables and observations of the data, and there can be more than one way to arrange those. The second meaning of data format refers to the fact that the data values for any variable can be represented in more than one way. An identical date, for example, can be formatted as the text string “July 2, 1974” or as “1974-07-02.”
 
 For tabular data, structuring the data you collect into the simplest possible table format is the best policy. First think about what variables you collect. Some will be categorical (treatment, plot number) and some are continuous (measured biomass, temperature). Then consider what an observation is. *Is it a monthly measurement of a plant, or an hourly temperature value recorded by a sensor?* Then, organize these values logically into clearly labeled columns and rows so that the data are understandable. If you've heard of "Tidy data", this is a great mental model to use for organizing data in a table [@wickham_tidy_2014 --- more details below]. In tidy tables, the columns are always variables and the rows represent observations (more details below). If you want to make sure the tabular data you collect follow fairly strict rules, consider using a relational database. Databases are not as simple as text files, but they do offer significant advantages for consistency and integrity of data.
 
@@ -160,11 +160,11 @@ In the *Tidy data* paper [@wickham_tidy_2014], the claim is that "80% of data an
 
 The resulting tables look like so:
 
-![Long form ("tidy") data where columns represent variables and rows represent observations](img/table_tidy.png)
+![Long form ("tidy") data where columns represent variables and rows represent observations](img/table_tidy.png){fig-align="center"}
 
 This is in contrast to "wide," or "untidy," format, in which variables and observations may be organized in either rows or columns. The same data in wide/untidy format could look like either of these tables:
 
-![](img/table_untidy_2.png)
+![](img/table_untidy_2.png){fig-align="center"}
 
 Keep in mind that wide/untidy format isn't always bad. Wide tables tend to take up less space on disk, and in addition, they can be called for in many standard statistical analyses.
 
@@ -280,7 +280,7 @@ Images captured from cameras or similar imaging sensors. Individual images are u
 |               | - Zip archive (`.zip`) - for multi-image archives       |
 |               | - GeoTIFF (`.tiff`) - for georeferenced images          |
 |               | - NetCDF, HDF5, BIL (`.nc`, `.hdf`, `.bil`) -           |
-|               |   for multiband & multidimensional imagery              |
+|               |   for multi-band & multi-dimensional imagery            |
 +---------------+---------------------------------------------------------+
 
 : Some examples of image data and their attributes. This is not an exhaustive list.
@@ -288,80 +288,88 @@ Images captured from cameras or similar imaging sensors. Individual images are u
 
 ## Sensor data
 
-Data collected from sensors
+Data collected from environmental sensors
 
 +---------------+---------------------------------------------------------+
-| Intended use  | - Monitoring change in ecosystems over time             |
-|               | - Capturing occurrences or events                       |
-|               | - Optical measurements over large spatial domains       |
+| Intended use  | - Continuous, in-situ measurements of environmental     |
+|               | properties and processes                                |
+|               | - Ecosystem and organismal monitoring                   |
 +---------------+---------------------------------------------------------+
-| Content       | - Repeat photographs of an ecosystem over time          |
-|               | - Motion-detected images of animals                     |
-|               | - Aerial or space-based RGB (red, green, blue),         |
-|               |   multi/hyper-spectral, thermal, or other images        |
+| Content       | - Time series of physical or environmental              |
+|               | variables (temperature, CO~2~ concentration, radiation) |
+|               | - Physiological or ecosystem process measurements over  |
+|               | a period of time (flow rate, counts, derived fluxes)    |
 +---------------+---------------------------------------------------------+
-| Source (or    | - Phenocams or repeat ground-based photos               |
-| acquisition   | - Motion-activated camera (game cam)                    |
-| method)       | - Unmanned aircraft system (UAS) with imaging sensor    |
-|               |   payload, remote sensing aircraft or satellite         |
+| Source (or    | - Field dataloggers deployed with in-situ sensors       |
+| acquisition   | - Laboratory or greenhouse instrumentation setups       |
+| method)       | - Integrated or embedded sensors on a network (IoT      |
+|               | devices)                                                |
 +---------------+---------------------------------------------------------+
-| Data format   | - Single images can be represented as data grids with   |
-|               |   Red/Green/Blue (or other) bands. Compression          |
-|               |   algorithms are often applied.                         |
-|               | - Repeat measurements may be collections or archives of |
-|               |   many date-stamped images.                             |
-|               | - Aerial or space-based images often have embedded      |
-|               |   georeferencing information (making them geospatial).  |
+| Data format   | - Tabular or columnar data with timestamps or a         |
+|               | datetime index                                          |
+|               | - Serialized observations (e.g. JSON)                   |
+|               | - Commercial research instruments may generate          |
+|               | proprietary data formats                                | 
 +---------------+---------------------------------------------------------+
-| File format   | - JPEG (`.jpeg` or `.jpg`)                              |
-|               | - Zip archive (`.zip`) - for multi-image archives       |
-|               | - GeoTIFF (`.tiff`) - for georeferenced images          |
-|               | - NetCDF, HDF5, BIL (`.nc`, `.hdf`, `.bil`) -           |
-|               |   for multiband & multidimensional imagery              |
+| File format   | - Delimited text, like comma (`.csv`) or tab (`.tsv`)   |
+|               | separated values (CSV/TSV)                              |
+|               | - Parquet (`.parquet`), Feather (`.feather`) or other   |
+|               | columnar formats                                        |
+|               | - Database tables                                       |
+|               | - NetCDF, HDF5 for multi-dimensional data (`.nc`,       |
+|               | `.hdf`)                                                 |
+|               | - **Avoid long-term storage of data in proprietary file |
+|               | formats whenever possible**                             |
 +---------------+---------------------------------------------------------+
 
-: Some examples of sensor data and their attributes. Again, this is not an exhaustive.
+: Some examples of sensor data and their attributes. Again, this is not an exhaustive list.
 
 ## Geospatial
 
 Geospatial data types are "georeferenced," meaning some kind of location information is included with each observation.
 
 +---------------+---------------------------------------------------------+
-| Intended use  | - Monitoring change in ecosystems over time             |
-|               | - Capturing occurrences or events                       |
-|               | - Optical measurements over large spatial domains       |
+| Intended use  | - Understanding or measuring things at or near the      |
+|               | surface of the Earth                                    |
+|               | - Mapping the location of objects and organisms         |
+|               | - Spatially-distributed optical measurements            |
 +---------------+---------------------------------------------------------+
-| Content       | - Repeat photographs of an ecosystem over time          |
-|               | - Motion-detected images of animals                     |
-|               | - Aerial or space-based RGB (red, green, blue),         |
-|               |   multi/hyper-spectral, thermal, or other images        |
+| Content       | - Georeferenced raster imagery of the Earth's surface   |
+|               | in visible, thermal, or other spectral bands            |
+|               | - Coordinate, or vector, data (points, lines, and       |
+|               | polygons) representing the location of objects,         | 
+|               | organisms, boundaries, etc.                             |
+|               | - 3-dimensional point clouds (LiDAR or SfM derived)     | 
 +---------------+---------------------------------------------------------+
-| Source (or    | - Phenocams or repeat ground-based photos               |
-| acquisition   | - Motion-activated camera (game cam)                    |
-| method)       | - Unmanned aircraft system (UAS) with imaging sensor    |
-|               |   payload, remote sensing aircraft or satellite         |
+| Source (or    | - Ground-based mapping, such as survey or GPS methods   |
+| acquisition   | - Satellite or airborne remote sensing platforms        |
+| method)       | - Synthetic methods like digitizing images and maps,    |
+|               |  geolocating addresses/descriptions, etc.               |
 +---------------+---------------------------------------------------------+
-| Data format   | - Single images can be represented as data grids with   |
-|               |   Red/Green/Blue (or other) bands. Compression          |
-|               |   algorithms are often applied.                         |
-|               | - Repeat measurements may be collections or archives of |
-|               |   many date-stamped images.                             |
-|               | - Aerial or space-based images often have embedded      |
-|               |   georeferencing information (making them geospatial).  |
+| Data format   | - Raster data come in georeferenced image formats and   |
+|               | are often multi-dimensional, which means they have      |
+|               | images at multiple times or of different bands (e.g.    |
+|               | red, green, and blue)                                   |
+|               | - Vector data consist of labeled coordinate entities    |
+|               | arranged into, usually, points, lines, polygons.        |
 +---------------+---------------------------------------------------------+
-| File format   | - JPEG (`.jpeg` or `.jpg`)                              |
-|               | - Zip archive (`.zip`) - for multi-image archives       |
-|               | - GeoTIFF (`.tiff`) - for georeferenced images          |
+| File format   | - GeoTIFF (`.tiff`) - for raster data (inc. multi-band) |
 |               | - NetCDF, HDF5, BIL (`.nc`, `.hdf`, `.bil`) -           |
-|               |   for multiband & multidimensional imagery              |
+|               |   for multiband & multidimensional raster imagery       |
+|               | - GeoPackage (`.gpkg`), Keyhole Markup Language (`.kml` |
+|               | or compressed `.kmz`), GeoJSON (`.json`), and ESRI.     |
+|               | Shapefiles (`.shp.zip`) are the most common vector file |
+|               | formats.                                                |
 +---------------+---------------------------------------------------------+
 
-: Some examples of geospatial data and their attributes. Again, this is not an exhaustive.
+: Some examples of geospatial data and their attributes. Again, this is not an exhaustive list.
 
 ## Molecular
 
 Molecular data types contain information about DNA, RNA, proteins, or other biological polymers in organisms or the environment. They can contain, for example, the sequence of nucleotides in DNA extracted from organisms or environmental materials like soils. These data may be complete genomes or other "omes" (transcriptome, metabolome, etc.), meaning the full sequence of a particular molecule, gene, or organism, and sometimes only specific markers within longer sequences are identified and included in the data (genotyping or barcoding approaches). In most cases, extensive metadata annotations and information about field/laboratory procedures and bioinformatics pipelines are needed to make these data interpretable.
 
+TABLE TBD!
+
 +---------------+---------------------------------------------------------+
 | Intended use  | - Monitoring change in ecosystems over time             |
 |               | - Capturing occurrences or events                       |
@@ -392,7 +400,7 @@ Molecular data types contain information about DNA, RNA, proteins, or other biol
 |               |   for multiband & multidimensional imagery              |
 +---------------+---------------------------------------------------------+
 
-: Some examples of molecular sequencing/omics data and their attributes. Again, this is not an exhaustive. 
+: Some examples of molecular sequencing/omics data and their attributes. Again, this is not an exhaustive list. 
 
 :::
 

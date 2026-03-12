@@ -85,7 +85,11 @@ Chapters:
 
 Jornada data managers, including the IM team, should follow LTER and Jornada standards and best practices when creating metadata files and publishing research data packages. 
 
-# Dataset tracking
+
+
+## The Jornada project and dataset numbering system
+
+## Dataset tracking
 
 We use Trello for this. For LTER datasets there are three Trello boards that represent how Jornada datasets are split into three categories:
 
