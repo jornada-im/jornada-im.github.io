@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-03-07">
+<meta name="dcterms.date" content="2026-03-12">
 
 <title>Collect, manage and describe research data – Jornada Data Commons</title>
 <style>
@@ -273,7 +273,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 7, 2026</p>
+      <p class="date">March 12, 2026</p>
     </div>
   </div>
   
@@ -387,7 +387,7 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 </section>
 <section id="data-format" class="level3">
 <h3 class="anchored" data-anchor-id="data-format">Data format</h3>
-<p>There are at least two meanings wrapped up in the term <strong>data format</strong>. First, a data format describes the way data are structured, organized, and related.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Tabular data formats, for example, resemble a grid where rows and columns represent the variables and observations of the data, and there can be more than one way to arrange those. The second meaning of data format refers to the fact that the data values for any variable can be represented in more than one way. An identical date, for example, can be formatted as the text string “July 2, 1974” or as “1974-07-02.”</p>
+<p>There are at least two meanings wrapped up in the term <strong>data format</strong>. First, a data format describes the way data are structured, organized, and related.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Tabular data formats, for example, resemble a grid where the columns and rows represent the variables and observations of the data, and there can be more than one way to arrange those. The second meaning of data format refers to the fact that the data values for any variable can be represented in more than one way. An identical date, for example, can be formatted as the text string “July 2, 1974” or as “1974-07-02.”</p>
 <p>For tabular data, structuring the data you collect into the simplest possible table format is the best policy. First think about what variables you collect. Some will be categorical (treatment, plot number) and some are continuous (measured biomass, temperature). Then consider what an observation is. <em>Is it a monthly measurement of a plant, or an hourly temperature value recorded by a sensor?</em> Then, organize these values logically into clearly labeled columns and rows so that the data are understandable. If you’ve heard of “Tidy data”, this is a great mental model to use for organizing data in a table <span class="citation" data-cites="wickham_tidy_2014">(<a href="#ref-wickham_tidy_2014" role="doc-biblioref">Wickham 2014</a> — more details below)</span>. In tidy tables, the columns are always variables and the rows represent observations (more details below). If you want to make sure the tabular data you collect follow fairly strict rules, consider using a relational database. Databases are not as simple as text files, but they do offer significant advantages for consistency and integrity of data.</p>
 <p>When you format the actual data values within the table, use the most understandable and granular format you can. For example, if you have a nested experimental design with blocks, plots and individuals, separate the values for these variables into different columns and make sure they are consistent. For date and time values, we recommend using the <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO standard</a> (YYYY-MM-DD) rather than the traditional month-day-year (mm/dd/yy) format. If you use a database, you can ensure standard formats are used by applying rules in the database (constraints).</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
@@ -492,7 +492,11 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 </figure>
 </div>
 <p>This is in contrast to “wide,” or “untidy,” format, in which variables and observations may be organized in either rows or columns. The same data in wide/untidy format could look like either of these tables:</p>
-<p><img src="img/table_untidy_2.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/table_untidy_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
 <p>Keep in mind that wide/untidy format isn’t always bad. Wide tables tend to take up less space on disk, and in addition, they can be called for in many standard statistical analyses.</p>
 <p><strong>Bottom line</strong>: Tidy data is a great default format with several advantages, but be ready to use wide/untidy formats when necessary too.</p>
 </div>
@@ -649,16 +653,16 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 <li>JPEG (<code>.jpeg</code> or <code>.jpg</code>)</li>
 <li>Zip archive (<code>.zip</code>) - for multi-image archives</li>
 <li>GeoTIFF (<code>.tiff</code>) - for georeferenced images</li>
-<li>NetCDF, HDF5, BIL (<code>.nc</code>, <code>.hdf</code>, <code>.bil</code>) - for multiband &amp; multidimensional imagery</li>
+<li>NetCDF, HDF5, BIL (<code>.nc</code>, <code>.hdf</code>, <code>.bil</code>) - for multi-band &amp; multi-dimensional imagery</li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
-<p>Data collected from sensors</p>
+<p>Data collected from environmental sensors</p>
 <table class="caption-top table">
-<caption>Some examples of sensor data and their attributes. Again, this is not an exhaustive.</caption>
+<caption>Some examples of sensor data and their attributes. Again, this is not an exhaustive list.</caption>
 <colgroup>
 <col style="width: 21%">
 <col style="width: 78%">
@@ -667,42 +671,41 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 <tr class="odd">
 <td>Intended use</td>
 <td><ul>
-<li>Monitoring change in ecosystems over time</li>
-<li>Capturing occurrences or events</li>
-<li>Optical measurements over large spatial domains</li>
+<li>Continuous, in-situ measurements of environmental properties and processes</li>
+<li>Ecosystem and organismal monitoring</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Content</td>
 <td><ul>
-<li>Repeat photographs of an ecosystem over time</li>
-<li>Motion-detected images of animals</li>
-<li>Aerial or space-based RGB (red, green, blue), multi/hyper-spectral, thermal, or other images</li>
+<li>Time series of physical or environmental variables (temperature, CO<sub>2</sub> concentration, radiation)</li>
+<li>Physiological or ecosystem process measurements over a period of time (flow rate, counts, derived fluxes)</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Source (or acquisition method)</td>
 <td><ul>
-<li>Phenocams or repeat ground-based photos</li>
-<li>Motion-activated camera (game cam)</li>
-<li>Unmanned aircraft system (UAS) with imaging sensor payload, remote sensing aircraft or satellite</li>
+<li>Field dataloggers deployed with in-situ sensors</li>
+<li>Laboratory or greenhouse instrumentation setups</li>
+<li>Integrated or embedded sensors on a network (IoT devices)</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Data format</td>
 <td><ul>
-<li>Single images can be represented as data grids with Red/Green/Blue (or other) bands. Compression algorithms are often applied.</li>
-<li>Repeat measurements may be collections or archives of many date-stamped images.</li>
-<li>Aerial or space-based images often have embedded georeferencing information (making them geospatial).</li>
+<li>Tabular or columnar data with timestamps or a datetime index</li>
+<li>Serialized observations (e.g.&nbsp;JSON)</li>
+<li>Commercial research instruments may generate proprietary data formats</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>File format</td>
 <td><ul>
-<li>JPEG (<code>.jpeg</code> or <code>.jpg</code>)</li>
-<li>Zip archive (<code>.zip</code>) - for multi-image archives</li>
-<li>GeoTIFF (<code>.tiff</code>) - for georeferenced images</li>
-<li>NetCDF, HDF5, BIL (<code>.nc</code>, <code>.hdf</code>, <code>.bil</code>) - for multiband &amp; multidimensional imagery</li>
+<li>Delimited text, like comma (<code>.csv</code>) or tab (<code>.tsv</code>) separated values (CSV/TSV)</li>
+<li>Parquet (<code>.parquet</code>), Feather (<code>.feather</code>) or other columnar formats</li>
+<li>Database tables</li>
+<li>NetCDF, HDF5 for multi-dimensional data (<code>.nc</code>, <code>.hdf</code>)</li>
+<li><strong>Avoid long-term storage of data in proprietary file formats whenever possible</strong></li>
 </ul></td>
 </tr>
 </tbody>
@@ -711,7 +714,7 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 <div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
 <p>Geospatial data types are “georeferenced,” meaning some kind of location information is included with each observation.</p>
 <table class="caption-top table">
-<caption>Some examples of geospatial data and their attributes. Again, this is not an exhaustive.</caption>
+<caption>Some examples of geospatial data and their attributes. Again, this is not an exhaustive list.</caption>
 <colgroup>
 <col style="width: 21%">
 <col style="width: 78%">
@@ -720,42 +723,40 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 <tr class="odd">
 <td>Intended use</td>
 <td><ul>
-<li>Monitoring change in ecosystems over time</li>
-<li>Capturing occurrences or events</li>
-<li>Optical measurements over large spatial domains</li>
+<li>Understanding or measuring things at or near the surface of the Earth</li>
+<li>Mapping the location of objects and organisms</li>
+<li>Spatially-distributed optical measurements</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Content</td>
 <td><ul>
-<li>Repeat photographs of an ecosystem over time</li>
-<li>Motion-detected images of animals</li>
-<li>Aerial or space-based RGB (red, green, blue), multi/hyper-spectral, thermal, or other images</li>
+<li>Georeferenced raster imagery of the Earth’s surface in visible, thermal, or other spectral bands</li>
+<li>Coordinate, or vector, data (points, lines, and polygons) representing the location of objects, organisms, boundaries, etc.</li>
+<li>3-dimensional point clouds (LiDAR or SfM derived)</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Source (or acquisition method)</td>
 <td><ul>
-<li>Phenocams or repeat ground-based photos</li>
-<li>Motion-activated camera (game cam)</li>
-<li>Unmanned aircraft system (UAS) with imaging sensor payload, remote sensing aircraft or satellite</li>
+<li>Ground-based mapping, such as survey or GPS methods</li>
+<li>Satellite or airborne remote sensing platforms</li>
+<li>Synthetic methods like digitizing images and maps, geolocating addresses/descriptions, etc.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Data format</td>
 <td><ul>
-<li>Single images can be represented as data grids with Red/Green/Blue (or other) bands. Compression algorithms are often applied.</li>
-<li>Repeat measurements may be collections or archives of many date-stamped images.</li>
-<li>Aerial or space-based images often have embedded georeferencing information (making them geospatial).</li>
+<li>Raster data come in georeferenced image formats and are often multi-dimensional, which means they have images at multiple times or of different bands (e.g. red, green, and blue)</li>
+<li>Vector data consist of labeled coordinate entities arranged into, usually, points, lines, polygons.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>File format</td>
 <td><ul>
-<li>JPEG (<code>.jpeg</code> or <code>.jpg</code>)</li>
-<li>Zip archive (<code>.zip</code>) - for multi-image archives</li>
-<li>GeoTIFF (<code>.tiff</code>) - for georeferenced images</li>
-<li>NetCDF, HDF5, BIL (<code>.nc</code>, <code>.hdf</code>, <code>.bil</code>) - for multiband &amp; multidimensional imagery</li>
+<li>GeoTIFF (<code>.tiff</code>) - for raster data (inc. multi-band)</li>
+<li>NetCDF, HDF5, BIL (<code>.nc</code>, <code>.hdf</code>, <code>.bil</code>) - for multiband &amp; multidimensional raster imagery</li>
+<li>GeoPackage (<code>.gpkg</code>), Keyhole Markup Language (<code>.kml</code> or compressed <code>.kmz</code>), GeoJSON (<code>.json</code>), and ESRI. Shapefiles (<code>.shp.zip</code>) are the most common vector file formats.</li>
 </ul></td>
 </tr>
 </tbody>
@@ -763,8 +764,9 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 </div>
 <div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
 <p>Molecular data types contain information about DNA, RNA, proteins, or other biological polymers in organisms or the environment. They can contain, for example, the sequence of nucleotides in DNA extracted from organisms or environmental materials like soils. These data may be complete genomes or other “omes” (transcriptome, metabolome, etc.), meaning the full sequence of a particular molecule, gene, or organism, and sometimes only specific markers within longer sequences are identified and included in the data (genotyping or barcoding approaches). In most cases, extensive metadata annotations and information about field/laboratory procedures and bioinformatics pipelines are needed to make these data interpretable.</p>
+<p>TABLE TBD!</p>
 <table class="caption-top table">
-<caption>Some examples of molecular sequencing/omics data and their attributes. Again, this is not an exhaustive.</caption>
+<caption>Some examples of molecular sequencing/omics data and their attributes. Again, this is not an exhaustive list.</caption>
 <colgroup>
 <col style="width: 21%">
 <col style="width: 78%">
