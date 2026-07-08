@@ -2,14 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-03-12">
+<meta name="dcterms.date" content="2026-07-08">
 
-<title>Collect, manage and describe research data – Jornada Data Commons</title>
+<title>Collecting and managing data – Jornada Data Commons</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -25,7 +28,6 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -51,20 +53,19 @@ div.csl-indent {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../docs/researcher/discover-data.html" rel="next">
+<link href="../../docs/researcher/metadata.html" rel="next">
 <link href="../../docs/researcher/starting-research.html" rel="prev">
 <link href="../../img/jrn-logo-light.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-1d5e050edb13250d4f64432100cad504.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-c875dbb4c9335aca9cc352e974a4ec92.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-28446db2ec7fa9dd5e79715be718ae35.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-2b976e11ec570e5de253222be10ae8f6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -169,7 +170,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/researcher/collect-qa-describe.html">Collect and manage data</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/researcher/collecting_data.html">Collecting data</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -195,8 +196,20 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/researcher/collect-qa-describe.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Collect and manage data</span></a>
+  <a href="../../docs/researcher/collecting_data.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Collecting data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/researcher/metadata.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Metadata</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/researcher/prepare-and-publish.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Publish a dataset</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -209,12 +222,6 @@ div.csl-indent {
   <div class="sidebar-item-container"> 
   <a href="../../docs/researcher/data-reuse.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Using data</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../docs/researcher/prepare-and-publish.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Publish a dataset</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -247,22 +254,19 @@ div.csl-indent {
   <li><a href="#data-format" id="toc-data-format" class="nav-link" data-scroll-target="#data-format">Data format</a></li>
   <li><a href="#file-formats" id="toc-file-formats" class="nav-link" data-scroll-target="#file-formats">File formats</a></li>
   <li><a href="#special-case-data" id="toc-special-case-data" class="nav-link" data-scroll-target="#special-case-data">Special case data</a></li>
+  <li><a href="#one-last-thought" id="toc-one-last-thought" class="nav-link" data-scroll-target="#one-last-thought">One last thought</a></li>
   </ul></li>
   <li><a href="#cleaning-and-qaqc" id="toc-cleaning-and-qaqc" class="nav-link" data-scroll-target="#cleaning-and-qaqc">Cleaning and QA/QC</a></li>
-  <li><a href="#describing-your-data-metadata" id="toc-describing-your-data-metadata" class="nav-link" data-scroll-target="#describing-your-data-metadata">Describing your data (Metadata!)</a>
-  <ul class="collapse">
-  <li><a href="#creating-and-managing-metadata" id="toc-creating-and-managing-metadata" class="nav-link" data-scroll-target="#creating-and-managing-metadata">Creating and managing metadata</a></li>
-  </ul></li>
   <li><a href="#storage-and-backup" id="toc-storage-and-backup" class="nav-link" data-scroll-target="#storage-and-backup">Storage and backup</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/researcher/collect-qa-describe.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/researcher/collecting_data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Collect, manage and describe research data</h1>
+<h1 class="title">Collecting and managing data</h1>
 </div>
 
 
@@ -273,7 +277,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 12, 2026</p>
+      <p class="date">July 8, 2026</p>
     </div>
   </div>
   
@@ -320,7 +324,7 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The four attributes of data highlighted above are the beginning of <strong>metadata</strong>, or data that describe other data. Metadata provide important context about the data we work with and are essential for making that data understandable and usable (we’ll devote more time to this later). Therefore, data and metadata should always travel together, and we have a special term for this pairing: a <strong>dataset</strong>. Datasets are fundamental units of information used in research, and important products of research activities, so we will refer to them often.</p>
+<p>The four attributes of data highlighted above are the beginning of <strong>metadata</strong>, or data that describe other data. Metadata provide important context about the data we work with and are essential for making that data understandable and usable (we’ll devote more time to this in <a href="../../docs/researcher/metadata.html">the next chapter</a>). Therefore, data and metadata should always travel together, and we have a special term for this pairing: a <strong>dataset</strong>. Datasets are fundamental units of information used in research, and important products of research activities, so we will refer to them often.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./img/a_dataset.png" class="img-fluid figure-img" style="width:40.0%"></p>
@@ -764,7 +768,7 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 </div>
 <div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
 <p>Molecular data types contain information about DNA, RNA, proteins, or other biological polymers in organisms or the environment. They can contain, for example, the sequence of nucleotides in DNA extracted from organisms or environmental materials like soils. These data may be complete genomes or other “omes” (transcriptome, metabolome, etc.), meaning the full sequence of a particular molecule, gene, or organism, and sometimes only specific markers within longer sequences are identified and included in the data (genotyping or barcoding approaches). In most cases, extensive metadata annotations and information about field/laboratory procedures and bioinformatics pipelines are needed to make these data interpretable.</p>
-<p>TABLE TBD!</p>
+<p>TODO: TABLE INCOMPLETE!</p>
 <table class="caption-top table">
 <caption>Some examples of molecular sequencing/omics data and their attributes. Again, this is not an exhaustive list.</caption>
 <colgroup>
@@ -775,42 +779,41 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 <tr class="odd">
 <td>Intended use</td>
 <td><ul>
-<li>Monitoring change in ecosystems over time</li>
-<li>Capturing occurrences or events</li>
-<li>Optical measurements over large spatial domains</li>
+<li>Species occurrence and biodiversity</li>
+<li>Metagenomics, transcriptomics and metabolomics</li>
+<li>Microbial or molecular ecology</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Content</td>
 <td><ul>
-<li>Repeat photographs of an ecosystem over time</li>
-<li>Motion-detected images of animals</li>
-<li>Aerial or space-based RGB (red, green, blue), multi/hyper-spectral, thermal, or other images</li>
+<li>Nucleotide reads from amplicons, genomes or metagenomes</li>
+<li>DNA/RNA metabarcoding IDs</li>
+<li>OTU or ASV data derived from bioinformatics</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Source (or acquisition method)</td>
 <td><ul>
-<li>Phenocams or repeat ground-based photos</li>
-<li>Motion-activated camera (game cam)</li>
-<li>Unmanned aircraft system (UAS) with imaging sensor payload, remote sensing aircraft or satellite</li>
+<li>Shotgun sequencing</li>
+<li>High-throughput sequencing</li>
+<li>Bioinformatics pipelines</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Data format</td>
 <td><ul>
-<li>Single images can be represented as data grids with Red/Green/Blue (or other) bands. Compression algorithms are often applied.</li>
-<li>Repeat measurements may be collections or archives of many date-stamped images.</li>
-<li>Aerial or space-based images often have embedded georeferencing information (making them geospatial).</li>
+<li>Structured text for nucleotide sequence reads</li>
+<li>CSV tables for OTU/ASVs</li>
+<li>???</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>File format</td>
 <td><ul>
-<li>JPEG (<code>.jpeg</code> or <code>.jpg</code>)</li>
-<li>Zip archive (<code>.zip</code>) - for multi-image archives</li>
-<li>GeoTIFF (<code>.tiff</code>) - for georeferenced images</li>
-<li>NetCDF, HDF5, BIL (<code>.nc</code>, <code>.hdf</code>, <code>.bil</code>) - for multiband &amp; multidimensional imagery</li>
+<li>FastQ files</li>
+<li>???</li>
+<li>???</li>
 </ul></td>
 </tr>
 </tbody>
@@ -819,59 +822,9 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 </div>
 </div>
 </section>
-</section>
-<section id="cleaning-and-qaqc" class="level2">
-<h2 class="anchored" data-anchor-id="cleaning-and-qaqc">Cleaning and QA/QC</h2>
-<p>The Jornada IM team has a significant amount of experience and a variety of tools to draw on for quality assurance and quality control (QA/QC) of long-term Jornada datasets. For data managed by individual researchers, the Jornada IM team leaves most data QA/QC up to the research group or individual, but we are happy to advise when asked. For a simple overview and some resources useful for QA/QC of tabular data, see <a href="https://edirepository.org/resources/cleaning-data-and-quality-control">EDI’s recommendations</a>.</p>
-</section>
-<section id="describing-your-data-metadata" class="level2">
-<h2 class="anchored" data-anchor-id="describing-your-data-metadata">Describing your data (Metadata!)</h2>
-<p>As you collect and work with your data, there is a large amount of contextual information about the data that is accumulating. This contextual information is called <strong>metadata</strong>, and you don’t want to lose track of it because it can be critically important for understanding and using the data later. Metadata are data about the data, and as a general rule, they should describe</p>
-<ul>
-<li><strong>Who</strong> collected the data</li>
-<li><strong>What</strong> was observed or measured</li>
-<li><strong>When</strong> the data were collected</li>
-<li><strong>Where</strong> the data were collected</li>
-<li><strong>How</strong> the data were collected (methods, instruments, etc.)</li>
-<li>Sometimes, stating <strong>why</strong> the data were collected can help future users understand data context and evaluate fitness for use.</li>
-</ul>
-<p>Preserving these metadata along with your actual data (measurements, observations, etc.) makes them more usable, and helps prevent the loss of information about data over time, as illustrated in <a href="#fig-infodecay" class="quarto-xref">Figure&nbsp;2</a>. Metadata are also essential to the reproducibility of research results, so when it comes time to publish the data, you’ll have to provide adequate metadata.</p>
-<div id="fig-infodecay" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-infodecay-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="img/michener97_information_loss.png" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-infodecay-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: A schematic of the normal deterioration in information content associated with data and metadata over time (“information entropy”). Accidents or changes in technology (dashed line) may eliminate access to remaining raw data and metadata at any time. Collecting and preserving detailed metadata helps slow this decay <span class="citation" data-cites="michener_nongeospatial_1997">(from <a href="#ref-michener_nongeospatial_1997" role="doc-biblioref">Michener et al. 1997</a>)</span>.
-</figcaption>
-</figure>
-</div>
-<section id="creating-and-managing-metadata" class="level3">
-<h3 class="anchored" data-anchor-id="creating-and-managing-metadata">Creating and managing metadata</h3>
-<p>Assembling and preserving metadata is important and should be an integral part of most research activities, including day-to-day data work and project management practices. Below are a few suggestions on how to start.</p>
-<ol type="1">
-<li><strong>Keep a detailed project log and populate it with useful metadata, such as:</strong>
-<ol type="a">
-<li>how new data are collected,</li>
-<li>for ancillary data (not directly collected by you), documentation of the original data source,</li>
-<li>how the data are cleaned, quality assured, and prepared for analysis,</li>
-<li>data analysis steps and methods used to create figures, statistics, and derived data products,</li>
-<li>who is doing what.</li>
-</ol></li>
-<li><strong>Think about what datasets are most valuable and how they should be published.</strong>
-<ul>
-<li>You can’t publish every single data file you have, so decide what will be most interesting and useful for other researchers and your future self.</li>
-<li>After you prioritize some research products for publication, consider what people will need to know to use them effectively.</li>
-<li>This gives you a target for collecting appropriate metadata for your published dataset.</li>
-</ul></li>
-<li><strong>Start creating structured metadata files and keep them with your data.</strong>
-<ul>
-<li>Try to be systematic and complete about describing your data with metadata. A metadata template, such as one of <a href="../../downloads/index.html">the Jornada templates</a>, helps with this.</li>
-<li>Organize your research products in clearly-labeled project directories where data and metadata live together.</li>
-<li>Eventually, you will probably need to create a standard metadata file, such as <a href="https://eml.ecoinformatics.org/">EML</a>, to publish your data. Applications for editing metadata, such as <a href="https://ezeml.edirepository.org">ezEML</a> from the Environmental Data Initiative (EDI) repository, are a huge help with this task.</li>
-</ul></li>
-</ol>
-<p>As always, discussing your project with a data manager or data curator and asking for advice about any of these activities is a smart move. At the Jornada, the Information Management team is happy to help, or you can reach out to curators at our partner repository <a href="https://edirepository.org">Environmental Data Initiative</a>.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Other repositories and academic libraries often have professional data curators on staff who are well-trained and can advise researchers on community metadata standards and best practices for data publishing.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<section id="one-last-thought" class="level3">
+<h3 class="anchored" data-anchor-id="one-last-thought">One last thought</h3>
+<p>As mentioned before, the data attributes discussed in the sections above are important to preserve as <strong>metadata</strong>, which are the pieces of contextual information that describe your research data. Collecting the raw observational or experimental data is never the end of the story. To proceed with any research project you will need metadata – about intended use, content, source, formatting, and much, much more – to provide context as you clean, analyze and interpret the data, and when the time comes to publish your research results. There are lots of concrete tips on how to collect useful metadata in <a href="../../docs/researcher/metadata.html">the next chapter</a>, but for now, please don’t forget to start writing down the details about how you collect your data!</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -883,30 +836,48 @@ Figure&nbsp;2: A schematic of the normal deterioration in information content as
 </div>
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li>You need data <strong>AND METADATA</strong> to make a usable dataset and get it published.</li>
-<li>Make sure to plan for and start creating metadata early in your research.</li>
-<li>Keep your research files well-organized, documented, and keep metadata and data together.</li>
-<li>Ask your friendly neighborhood data manager for help anytime.</li>
+<li>You need data <strong>AND METADATA</strong> to do useful research and get research results published.</li>
+<li>Make sure to plan for, collect, and preserve metadata early in your research.</li>
 </ol>
 </div>
 </div>
 </section>
 </section>
+<section id="cleaning-and-qaqc" class="level2">
+<h2 class="anchored" data-anchor-id="cleaning-and-qaqc">Cleaning and QA/QC</h2>
+<p>The Jornada IM team has a significant amount of experience and a variety of tools to draw on for quality assurance and quality control (QA/QC) of long-term Jornada datasets. For data managed by individual researchers, the Jornada IM team leaves most data QA/QC up to the research group or individual, but we are happy to advise when asked. For a simple overview and some resources useful for QA/QC of tabular data, see <a href="https://edirepository.org/resources/cleaning-data-and-quality-control">EDI’s recommendations</a>.</p>
+</section>
 <section id="storage-and-backup" class="level2">
 <h2 class="anchored" data-anchor-id="storage-and-backup">Storage and backup</h2>
-<p>Store your data securely and have a reliable backup system for them.</p>
+<p>It is critically important to store your research data securely and have a reliable backup system for them. This means planning ahead so that you have enough storage space for <em>multiple backup copies of your data</em>, with a system that keeps backups in-sync with one another (preferably automatically) and allows restoration of data if disaster strikes. There is no one perfect backup system, and threats to data evolve fairly rapidly. Therefore, it pays to <strong>audit and test your backup system regularly</strong> to uncover failure points.</p>
+<p>One common recommendation is to follow the <strong>3-2-1 backup</strong> rule. In this system you keep 3 copies of your data on 2 different devices or storage media, with 1 copy of the data in an off-site location (summary <a href="https://www.cisa.gov/sites/default/files/publications/data_backup_options.pdf">here</a>). There are multiple ways to accomplish this, but a simple example would be to have a copy of all your important data synced from a personal laptop computer to an external hard drive, and a separate copy synced to a cloud backup provider (Google, Dropbox, Backblaze, etc.). Be aware that automatic syncing between copies of your data can lead to permanent data loss (i.e.&nbsp;deleting a file locally will delete synced copies too), so having some versioning and rollback ability built into the system is also important.</p>
+<p>There are a number of storage devices, software packages, and data services that can be used to build and maintain a solid backup system. Some of these may be available already at low- or no-cost through your institution or lab. Your friendly neighborhood data manager (<a href="mailto:jornada.data@nmsu.edu" class="email">jornada.data@nmsu.edu</a>) can also offer advice and support for backup solutions if you ask.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Recommendations
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Plan ahead to be sure you have enough storage space for multiple copies of your data.</li>
+<li>Consider implementing a <strong>3-2-1</strong> backup system that includes three copies of important files, on at least two different devices/media, with one in an offsite location (such as with a cloud provider).</li>
+<li>Regularly check for flaws in your backup plan and don’t hesitate ask a data manager for help.</li>
+</ol>
+</div>
+</div>
 
 
 
 </section>
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-gries_data_2021" class="csl-entry" role="listitem">
-Gries, Corinna, Stace Beaulieu, Renee F Brown, Sarah Elmendorf, Hap Garritt, Gastil Gastil-Buhl, Hsun-Yi Hsieh, et al. 2021. <span>“Data <span>Package</span> <span>Design</span> for <span>Special</span> <span>Cases</span>.”</span> Environmental Data Initiative. <a href="https://doi.org/10.6073/PASTA/9D4C803578C3FBCB45FC23F13124D052">https://doi.org/10.6073/PASTA/9D4C803578C3FBCB45FC23F13124D052</a>.
-</div>
-<div id="ref-michener_nongeospatial_1997" class="csl-entry" role="listitem">
-Michener, William K., James W. Brunt, John J. Helly, Thomas B. Kirchner, and Susan G. Stafford. 1997. <span>“Nongeospatial <span>Metadata</span> for the <span>Ecological</span> <span>Sciences</span>.”</span> <em>Ecological Applications</em> 7 (1): 330–42. <a href="https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2">https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2</a>.
+Gries, Corinna, Stace Beaulieu, Renee F Brown, et al. 2021. <em>Data <span>Package</span> <span>Design</span> for <span>Special</span> <span>Cases</span></em>. Environmental Data Initiative. <a href="https://doi.org/10.6073/PASTA/9D4C803578C3FBCB45FC23F13124D052">https://doi.org/10.6073/PASTA/9D4C803578C3FBCB45FC23F13124D052</a>.
 </div>
 <div id="ref-wickham_tidy_2014" class="csl-entry" role="listitem">
 Wickham, Hadley. 2014. <span>“Tidy <span>Data</span>.”</span> <em>Journal of Statistical Software</em> 59 (September): 1–23. <a href="https://doi.org/10.18637/jss.v059.i10">https://doi.org/10.18637/jss.v059.i10</a>.
@@ -915,8 +886,6 @@ Wickham, Hadley. 2014. <span>“Tidy <span>Data</span>.”</span> <em>Journal of
 
 <ol>
 <li id="fn1"><p>The concepts of data formats and data structuring can become fairly complicated and are related to the disciplines of <a href="https://en.wikipedia.org/wiki/Database_design">database design</a> and <a href="https://en.wikipedia.org/wiki/Data_modeling">data modeling</a>. For example, when designing a database one must decide what the entities (real-world concepts), tables (relations), attributes (columns), and foreign-key relationships (links between tables/columns) are. We won’t go into this much depth here, but it can sometimes be useful to have a detailed conceptual picture of how your research data fit together.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Reach out to the Jornada IM team at <a href="mailto:jornada.data@nmsu.edu" class="email">jornada.data@nmsu.edu</a>, or to the EDI support channel at <a href="mailto:support@edirepository.org" class="email">support@edirepository.org</a>. Here is a <a href="https://lternet.edu/using-lter-dat/#im">list of Information Managers</a> at all LTER sites.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>The <a href="https://datacurationnetwork.org/">Data Curation Network</a> is a professional membership organization for data curators.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1326,13 +1295,13 @@ Wickham, Hadley. 2014. <span>“Tidy <span>Data</span>.”</span> <em>Journal of
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../docs/researcher/discover-data.html" class="pagination-link" aria-label="Discover Jornada data">
-        <span class="nav-page-text">Discover Jornada data</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../docs/researcher/metadata.html" class="pagination-link" aria-label="Metadata">
+        <span class="nav-page-text">Metadata</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/researcher/collect-qa-describe.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/researcher/collecting_data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {

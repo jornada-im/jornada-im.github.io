@@ -7,9 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2026-07-08">
-<meta name="description" content="How to onbard new people to jobs at the Jornada">
 
-<title>Onboarding new IM team members – Jornada Data Commons</title>
+<title>Metadata to describe research data – Jornada Data Commons</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -25,7 +24,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -35,6 +53,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../docs/researcher/prepare-and-publish.html" rel="next">
+<link href="../../docs/researcher/collecting_data.html" rel="prev">
 <link href="../../img/jrn-logo-light.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -76,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -98,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../docs/researcher/introduction.html"> 
+    <a class="nav-link active" href="../../docs/researcher/introduction.html" aria-current="page"> 
 <span class="menu-text">Researcher Guide</span></a>
   </li>  
   <li class="nav-item">
@@ -139,33 +159,112 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/researcher/metadata.html">Metadata</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/researcher/introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/researcher/starting-research.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Starting research</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/researcher/collecting_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Collecting data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/researcher/metadata.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Metadata</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/researcher/prepare-and-publish.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Publish a dataset</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/researcher/discover-data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Discover Jornada data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/researcher/data-reuse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/researcher/advanced-topics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Advanced topics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/refs-and-links.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Useful references and links</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#ims" id="toc-ims" class="nav-link active" data-scroll-target="#ims">IMs</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#creating-and-managing-metadata" id="toc-creating-and-managing-metadata" class="nav-link" data-scroll-target="#creating-and-managing-metadata">Creating and managing metadata</a></li>
+  <li><a href="#recommendations-for-jornada-metadata" id="toc-recommendations-for-jornada-metadata" class="nav-link" data-scroll-target="#recommendations-for-jornada-metadata">Recommendations for Jornada Metadata</a>
+  <ul class="collapse">
+  <li><a href="#title" id="toc-title" class="nav-link" data-scroll-target="#title">Title</a></li>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#personnel-and-organizations" id="toc-personnel-and-organizations" class="nav-link" data-scroll-target="#personnel-and-organizations">Personnel and organizations</a></li>
+  <li><a href="#temporal-geographic-and-taxonomic-coverage" id="toc-temporal-geographic-and-taxonomic-coverage" class="nav-link" data-scroll-target="#temporal-geographic-and-taxonomic-coverage">Temporal, geographic and taxonomic coverage</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
+  <li><a href="#literature-cited" id="toc-literature-cited" class="nav-link" data-scroll-target="#literature-cited">Literature cited</a></li>
+  <li><a href="#data-files-and-attributes" id="toc-data-files-and-attributes" class="nav-link" data-scroll-target="#data-files-and-attributes">Data files and attributes</a></li>
+  <li><a href="#funding" id="toc-funding" class="nav-link" data-scroll-target="#funding">Funding</a></li>
+  <li><a href="#licensing" id="toc-licensing" class="nav-link" data-scroll-target="#licensing">Licensing</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/project-procedures/onboarding.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/researcher/metadata.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Onboarding new IM team members</h1>
+<h1 class="title">Metadata to describe research data</h1>
 </div>
 
-<div>
-  <div class="description">
-    How to onbard new people to jobs at the Jornada
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -186,18 +285,130 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>:construction: <strong>This is under construction.</strong> :construction:</p>
-<section id="ims" class="level2">
-<h2 class="anchored" data-anchor-id="ims">IMs</h2>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p><span class="emoji" data-emoji="construction">🚧</span> <strong>This chapter is under construction.</strong></p>
+<p>Some common questions heard during research:</p>
+<blockquote class="blockquote">
+<p>What is metadata?<br>
+What metadata should I be collecting?<br>
+Where does metadata go?</p>
+</blockquote>
+<p>As you collect and work with your data, there is a large amount of contextual information about the data and your research process that accumulates. This contextual information is called <strong>metadata</strong>, and you don’t want to lose track of it because it can be critically important for understanding and using the data later. Metadata are data about the data, and as a general rule, they should describe</p>
+<ul>
+<li><strong>Who</strong> collected the data</li>
+<li><strong>What</strong> was observed or measured</li>
+<li><strong>When</strong> the data were collected</li>
+<li><strong>Where</strong> the data were collected</li>
+<li><strong>How</strong> the data were collected (methods, instruments, etc.)</li>
+<li>Sometimes, stating <strong>why</strong> the data were collected can help future users understand data context and evaluate fitness for use.</li>
+</ul>
+<p>Preserving these metadata along with your actual data (measurements, observations, etc.) makes them more usable, and helps prevent the loss of information about data over time, as illustrated in <a href="#fig-infodecay" class="quarto-xref">Figure&nbsp;1</a>. Metadata are also essential to the reproducibility of research results, so when it comes time to publish your papers and datasets, you’ll have to provide adequate metadata for reviewers and colleagues to understand and use them.</p>
+<div id="fig-infodecay" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-infodecay-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/michener97_information_loss.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-infodecay-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: A schematic of the normal deterioration in information content associated with data and metadata over time (“information entropy”). Accidents or changes in technology (dashed line) may eliminate access to remaining raw data and metadata at any time. Collecting and preserving detailed metadata helps slow this decay <span class="citation" data-cites="michener_nongeospatial_1997">(from <a href="#ref-michener_nongeospatial_1997" role="doc-biblioref">Michener et al. 1997</a>)</span>.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="creating-and-managing-metadata" class="level2">
+<h2 class="anchored" data-anchor-id="creating-and-managing-metadata">Creating and managing metadata</h2>
+<p>Assembling and preserving metadata should be an integral part of most research activities, including day-to-day data work and project management practices. Below are a few suggestions on how to start.</p>
 <ol type="1">
-<li>Add to the <em>Jornada IM</em> team on GitHub</li>
-<li>Read the <a href="../../docs/im/introduction.html">IM Guide</a></li>
+<li><strong>Keep a detailed project log and populate it with useful metadata, such as:</strong>
+<ol type="a">
+<li>how new data are collected,</li>
+<li>for ancillary data (not directly collected by you), documentation of the original data source,</li>
+<li>how the data are cleaned, quality assured, and prepared for analysis,</li>
+<li>data analysis steps and methods used to create figures, statistics, and derived data products,</li>
+<li>who is doing what.</li>
+</ol></li>
+<li><strong>Think about what datasets are most valuable and how they should be published.</strong>
+<ul>
+<li>You can’t publish every single data file you have, so decide what will be most interesting and useful for other researchers and your future self.</li>
+<li>After you prioritize some research products for publication, consider what people will need to know to use them effectively.</li>
+<li>This gives you a target for collecting appropriate metadata for your published dataset.</li>
+</ul></li>
+<li><strong>Start creating structured metadata files and keep them with your data.</strong>
+<ul>
+<li>Try to be systematic and complete about describing your data with metadata. A metadata template, such as one of <a href="../../downloads/index.html">the Jornada templates</a>, helps with this.</li>
+<li>Organize your research products in clearly-labeled project directories where data and metadata live together.</li>
+<li>Eventually, you will probably need to create a standard metadata file, such as <a href="https://eml.ecoinformatics.org/">EML</a>, to publish your data. Applications for editing metadata, such as <a href="https://ezeml.edirepository.org">ezEML</a> from the Environmental Data Initiative (EDI) repository, are a huge help with this task.</li>
+</ul></li>
+<li><strong>There are concrete tips for metadata later in this guide!</strong>
+<ul>
+<li>As you approach publication, see the <a href="../../docs/researcher/prepare-and-publish.html">Publish a dataset</a> chapter for help with assembling the metadata and preparing your dataset for a repository.</li>
+</ul></li>
 </ol>
+<p>As always, discussing your project with a data manager or data curator and asking for advice about any of these activities is a smart move. At the Jornada, the Information Management team is happy to help, or you can reach out to the curators at our partner repository, the <a href="https://edirepository.org">Environmental Data Initiative</a>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Recommendations
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>You need data <strong>AND METADATA</strong> to make a usable dataset and get it published.</li>
+<li>Make sure to plan for and start creating metadata early in your research.</li>
+<li>Keep your research files well-organized, documented, and keep metadata and data together.</li>
+<li>Ask your friendly neighborhood data manager for help anytime.</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="recommendations-for-jornada-metadata" class="level2">
+<h2 class="anchored" data-anchor-id="recommendations-for-jornada-metadata">Recommendations for Jornada Metadata</h2>
+<section id="title" class="level3">
+<h3 class="anchored" data-anchor-id="title">Title</h3>
+</section>
+<section id="abstract" class="level3">
+<h3 class="anchored" data-anchor-id="abstract">Abstract</h3>
+</section>
+<section id="personnel-and-organizations" class="level3">
+<h3 class="anchored" data-anchor-id="personnel-and-organizations">Personnel and organizations</h3>
+</section>
+<section id="temporal-geographic-and-taxonomic-coverage" class="level3">
+<h3 class="anchored" data-anchor-id="temporal-geographic-and-taxonomic-coverage">Temporal, geographic and taxonomic coverage</h3>
+</section>
+<section id="methods" class="level3">
+<h3 class="anchored" data-anchor-id="methods">Methods</h3>
+</section>
+<section id="literature-cited" class="level3">
+<h3 class="anchored" data-anchor-id="literature-cited">Literature cited</h3>
+</section>
+<section id="data-files-and-attributes" class="level3">
+<h3 class="anchored" data-anchor-id="data-files-and-attributes">Data files and attributes</h3>
+</section>
+<section id="funding" class="level3">
+<h3 class="anchored" data-anchor-id="funding">Funding</h3>
+</section>
+<section id="licensing" class="level3">
+
+
 
 
 </section>
+</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Licensing</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-michener_nongeospatial_1997" class="csl-entry" role="listitem">
+Michener, William K., James W. Brunt, John J. Helly, Thomas B. Kirchner, and Susan G. Stafford. 1997. <span>“Nongeospatial <span>Metadata</span> for the <span>Ecological</span> <span>Sciences</span>.”</span> <em>Ecological Applications</em> 7 (1): 330–42. <a href="https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2">https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Reach out to the Jornada IM team at <a href="mailto:jornada.data@nmsu.edu" class="email">jornada.data@nmsu.edu</a>, or to the EDI support channel at <a href="mailto:support@edirepository.org" class="email">support@edirepository.org</a>. If you are at different LTER site, <a href="https://lternet.edu/using-lter-dat/#im">this list of Information Managers</a> may help. Outside of LTER, your academic institution’s library may have data curators, or you can check the <a href="https://datacurationnetwork.org/">Data Curation Network</a>, a professional membership organization for data curators.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -598,9 +809,21 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../docs/researcher/collecting_data.html" class="pagination-link" aria-label="Collecting data">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Collecting data</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../docs/researcher/prepare-and-publish.html" class="pagination-link" aria-label="Publish a dataset">
+        <span class="nav-page-text">Publish a dataset</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/project-procedures/onboarding.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/researcher/metadata.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

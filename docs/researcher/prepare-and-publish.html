@@ -2,14 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-03-12">
+<meta name="dcterms.date" content="2026-07-08">
 
 <title>Prepare and publish a dataset – Jornada Data Commons</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -21,7 +24,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -31,20 +53,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../docs/researcher/advanced-topics.html" rel="next">
-<link href="../../docs/researcher/data-reuse.html" rel="prev">
+<link href="../../docs/researcher/discover-data.html" rel="next">
+<link href="../../docs/researcher/metadata.html" rel="prev">
 <link href="../../img/jrn-logo-light.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-1d5e050edb13250d4f64432100cad504.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-c875dbb4c9335aca9cc352e974a4ec92.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-28446db2ec7fa9dd5e79715be718ae35.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-2b976e11ec570e5de253222be10ae8f6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -169,8 +190,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/researcher/collect-qa-describe.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Collect and manage data</span></a>
+  <a href="../../docs/researcher/collecting_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Collecting data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/researcher/metadata.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Metadata</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/researcher/prepare-and-publish.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Publish a dataset</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -183,12 +216,6 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../../docs/researcher/data-reuse.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Using data</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../docs/researcher/prepare-and-publish.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Publish a dataset</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -215,7 +242,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#whats-in-your-dataset" id="toc-whats-in-your-dataset" class="nav-link" data-scroll-target="#whats-in-your-dataset">What’s in your dataset?</a></li>
-  <li><a href="#choosing-a-repository" id="toc-choosing-a-repository" class="nav-link" data-scroll-target="#choosing-a-repository">Choosing a repository</a></li>
+  <li><a href="#choosing-a-repository-to-publish-in" id="toc-choosing-a-repository-to-publish-in" class="nav-link" data-scroll-target="#choosing-a-repository-to-publish-in">Choosing a repository to publish in</a></li>
   <li><a href="#assembling-the-metadata" id="toc-assembling-the-metadata" class="nav-link" data-scroll-target="#assembling-the-metadata">Assembling the metadata</a>
   <ul class="collapse">
   <li><a href="#ezeml" id="toc-ezeml" class="nav-link" data-scroll-target="#ezeml">ezEML</a></li>
@@ -243,7 +270,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 12, 2026</p>
+      <p class="date">July 8, 2026</p>
     </div>
   </div>
   
@@ -258,13 +285,15 @@ ul.task-list li input[type="checkbox"] {
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p><span class="emoji" data-emoji="construction">🚧</span> <strong>Most of this chapter is under construction.</strong></p>
-<p>Once your data are assembled, cleaned, and analyzed, you should strongly consider publishing them for future use and posterity. In fact, this is required for most JRN LTER researchers and strongly encouraged by most funders and journals. To prepare a dataset for publication, you should make a few decisions first.</p>
+<p>Once your data are assembled, cleaned, and analyzed, you should strongly consider publishing them for future use and posterity. There are many reasons to do so; publishing data is required by the LTER Network<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, and strongly encouraged or required by most funders<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> and journals<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. On top of this, published datasets often become well-used, highly-cited research products in their own rite, and thus add a “feather in the cap” to your academic record.</p>
+<p>There are some standards to aspire to when publishing a dataset, the most prominent being to make the data <strong>findable</strong>, <strong>accessible</strong>, <strong>interoperable</strong>, and <strong>reusable</strong>, or FAIR <span class="citation" data-cites="wilkinson_fair_2016">(<a href="#ref-wilkinson_fair_2016" role="doc-biblioref">Wilkinson et al. 2016</a>)</span>. You’ve already learned the basics of making data FAIR. In the <a href="../../docs/researcher/collecting_data.html">Collecting data</a> chapter we covered how to collect, clean, and store quality data, including recommendations on how to structure and format the data themselves. The <a href="../../docs/researcher/metadata.html">Metadata</a> chapter discusses the value of descriptive metadata, and gives recommendations on the content and management of metadata you collect during research. You may want to refer back to these chapters as you are preparing a datset for publication.</p>
+<p>To prepare a dataset for publication, you’ll need to make a few decisions first.</p>
 <ol type="1">
-<li>What data and files will your dataset contain?</li>
+<li>What data and metadata files will your dataset contain?</li>
 <li>Where will you publish the dataset?</li>
-<li>How will you assemble the metadata and publish it?</li>
+<li>How will you assemble the dataset and publish it?</li>
 </ol>
-<p>We explore the answers to these questions below, but an overview of the process is shown in <a href="#fig-jornadapublish" class="quarto-xref">Figure&nbsp;1</a>. You, the researcher, are responsible for collecting quality data <strong>and metadata</strong>, and notifying the Jornada IM team when you are ready to publish (though often we’ll ask you…). Once you provide the data and metadata files to an IM, an iterative curation process begins, with the aim of creating a publishable dataset that meets Jornada and LTER standards. After a cycle or two of review and editing, you or the IM team can publish the dataset to the appropriate repository.</p>
+<p>We explore the answers to these questions below, but an overview of the process is shown in <a href="#fig-jornadapublish" class="quarto-xref">Figure&nbsp;1</a>. You, the researcher, are responsible for collecting quality data <strong>and metadata</strong>, and notifying the Jornada IM team when you are ready to publish (though often we’ll ask you…). Once you provide the data and metadata files to an IM, an iterative curation process begins, with the aim of creating a publishable dataset that meets the standards of the research community (the Jornada and the LTER Network, in this case). After a round or two of review and editing, you or IM team will publish the completed dataset to the chosen data repository.</p>
 <div id="fig-jornadapublish" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-jornadapublish-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -279,7 +308,7 @@ Figure&nbsp;1: A simplified schematic of how to publish a Jornada dataset.
 <section id="whats-in-your-dataset" class="level2">
 <h2 class="anchored" data-anchor-id="whats-in-your-dataset">What’s in your dataset?</h2>
 <p>It can be difficult to visualize what a published dataset should contain. At a minimum, there will be one or more data files, and a collection of metadata that thoroughly describes the data (ideally in human- and machine-readable form).</p>
-<p>Other things a published dataset can contain (add to panels)</p>
+<p>Other things a published dataset can contain:</p>
 <ul>
 <li>Code</li>
 <li>Maps</li>
@@ -297,23 +326,29 @@ Figure&nbsp;2: What should your dataset contain? Data files and metadata at a mi
 </figure>
 </div>
 </section>
-<section id="choosing-a-repository" class="level2">
-<h2 class="anchored" data-anchor-id="choosing-a-repository">Choosing a repository</h2>
-<p>The recommended repository for most tabular ecological or environmental data produced by the Jornada Basin LTER program is <a href="https://edirepository.org">EDI</a>. The EDI repository supports rigorous, community-supported metadata standards and facilitates data re-use. It is also well-integrated into the Jornada’s information management systems. For some data types, and non-data research products, we recommended other repositories that are specialized for a particular research domains, or have especially useful features. Publishing in non-EDI repositories can have advantages if they provide features for your particular type of data, or are your research community’s accepted data source. Recommended repositories for a range of Jornada data and use cases are described below.</p>
+<section id="choosing-a-repository-to-publish-in" class="level2">
+<h2 class="anchored" data-anchor-id="choosing-a-repository-to-publish-in">Choosing a repository to publish in</h2>
+<p>There are many data repositories available to researchers now <a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>, and choosing one is not necessarily easy. Make sure the repository you choose meets these essential criteria.</p>
+<ol type="1">
+<li>The repository should issue persistent, internet-resolveable, unique identifiers for every dataset published. Generally this will be a Digital Object Identifier, or DOI, that can be easily cited any time the published dataset is used.</li>
+<li>The repository should require and publish adequate metadata describing each dataset. Without requiring at least minimal metadata, no repository can ensure that published data are FAIR.</li>
+<li>The repository should be trusted and accepted by your research community. This helps ensure your data will be found by researchers who value and will use them, including your collaborators. Community buyin can also signal that the repository has stable support and data will be available in perpetuity (though there are no guarantees here).</li>
+</ol>
+<p>We recommend using the <a href="https://edirepository.org">Environmental Data Initiative</a> as the destination repository for most research data collected at the Jornada. For some data types, and non-data research products, we recommended other repositories that are specialized for a particular research domains, or have especially useful features. Publishing in non-EDI repositories can have advantages if they provide features for your particular type of data, or are your research community’s accepted data source. Recommended repositories for a range of Jornada data and use cases are described below.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Most Jornada data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">EC Fluxes</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Sequencing &amp; genomic</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Code &amp; documents</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>Environmental Data Initiative</p>
+<p>The recommended repository for most tabular ecological or environmental data produced by the Jornada Basin LTER program is <a href="https://edirepository.org">Environmental Data Initiative</a> (EDI). The EDI repository supports rigorous, community-supported metadata standards and facilitates data re-use. It is also well-integrated into the Jornada’s information management systems.</p>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>AmeriFlux</p>
+<p>Ecosystem gas fluxes collected by the eddy covariance method <a href="https://ameriflux.lbl.gov/">AmeriFlux</a></p>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p>NCBI</p>
+<p><a href="https://www.ncbi.nlm.nih.gov/">NCBI</a></p>
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<p>Zenodo</p>
+<p><a href="https://zenodo.org/">Zenodo</a></p>
 </div>
 </div>
 </div>
@@ -338,7 +373,7 @@ Figure&nbsp;2: What should your dataset contain? Data files and metadata at a mi
 </section>
 <section id="assembling-the-metadata" class="level2">
 <h2 class="anchored" data-anchor-id="assembling-the-metadata">Assembling the metadata</h2>
-<p>To ensure successful interpretation and re-use of the data after they are published, they must be accompanied by metadata that thoroughly describe them. For more on the importance of metadata and how to collect it, review guidance in the <a href="../../docs/researcher/collect-qa-describe.html">“Collect, manage and describe research data” chapter</a> or at <a href="https://edirepository.org/resources/creating-metadata-for-publication">the EDI repository</a>. Ideally, metadata should be in a format that provides rich detail and is both human- and machine-readable. A number of metadata standards can meet this objective, but the choice often comes down to data type, community support and repository capability.</p>
+<p>To ensure successful interpretation and re-use of the data after they are published, they must be accompanied by metadata that thoroughly describe them. For more on the importance of metadata and how to collect it, review guidance in the <a href="collect-qa-describe.qmd">“Collect, manage and describe research data” chapter</a> or at <a href="https://edirepository.org/resources/creating-metadata-for-publication">the EDI repository</a>. Ideally, metadata should be in a format that provides rich detail and is both human- and machine-readable. A number of metadata standards can meet this objective, but the choice often comes down to data type, community support and repository capability.</p>
 <p>At present, the Jornada IM team supports two ways to create a metadata file for your dataset: EDI’s ezEML application or Jornada metadata templates. These are described below.</p>
 <section id="ezeml" class="level3">
 <h3 class="anchored" data-anchor-id="ezeml">ezEML</h3>
@@ -374,9 +409,23 @@ Figure&nbsp;2: What should your dataset contain? Data files and metadata at a mi
 <p>Once revisions are complete and the dataset authors agree to publish the dataset, the IM creates a final EML file, and then sends it, with the data, to the Environmental Data Initiative repository (EDI) to publish the dataset. A dataset citation, with a DOI, will be emailed to the dataset authors for distribution. If you are NOT publishing at EDI the publishing process will be different, and you may be expected to handle more of it yourself.</p>
 
 
+
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-wilkinson_fair_2016" class="csl-entry" role="listitem">
+Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, et al. 2016. <span>“The <span>FAIR</span> <span>Guiding</span> <span>Principles</span> for Scientific Data Management and Stewardship.”</span> <em>Scientific Data</em> 3 (1): 160018. <a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>See the <a href="https://lternet.edu/data-access-policy/">LTER Network Data Access Policy</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>NSF requires sharing of data from funded projects <a href="https://www.nsf.gov/funding/data-management-plan#nsfs-data-sharing-policy-1c8">as a general rule</a>, and outlines specific requirements <a href="https://www.nsf.gov/policies/pappg/24-1/ch-11-other-post-award-requirements#ch11D4">in the PAPPG</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>For example, both <a href="https://www.agu.org/publications/authors/journals/data-software-for-authors">AGU</a> and <a href="https://esa.org/publications/data-policy/">ESA</a> now have strict open data policies for their society journals.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>The Registry of Research Data Repositories (<a href="https://re3data.org">re3data.org</a>) project is a comprehensive tracker of information about research data repositories.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -779,13 +828,13 @@ Figure&nbsp;2: What should your dataset contain? Data files and metadata at a mi
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../docs/researcher/data-reuse.html" class="pagination-link" aria-label="Using data">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Using data</span>
+      <a href="../../docs/researcher/metadata.html" class="pagination-link" aria-label="Metadata">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Metadata</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../docs/researcher/advanced-topics.html" class="pagination-link" aria-label="Advanced topics">
-        <span class="nav-page-text">Advanced topics</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../docs/researcher/discover-data.html" class="pagination-link" aria-label="Discover Jornada data">
+        <span class="nav-page-text">Discover Jornada data</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

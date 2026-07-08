@@ -1,13 +1,5 @@
 [
   {
-    "listing": "/docs/project-procedures/index.html",
-    "items": [
-      "/docs/project-procedures/onboarding.html",
-      "/docs/project-procedures/reporting.html",
-      "/docs/project-procedures/sop_metadata_publishing.html"
-    ]
-  },
-  {
     "listing": "/posts/posts.html",
     "items": [
       "/posts/2026-03-05_post/index.html",
@@ -17,15 +9,23 @@
     ]
   },
   {
-    "listing": "/archive/index.html",
-    "items": []
-  },
-  {
     "listing": "/docs/proposals-and-reports/index.html",
     "items": [
       "/docs/proposals-and-reports/JRN_data_management_plan.LTER8.html",
       "/docs/proposals-and-reports/JRN_data_management_plan.LTER7.html",
       "/docs/proposals-and-reports/JRN_IM_annual_report_2020.html"
     ]
+  },
+  {
+    "listing": "/docs/project-procedures/index.html",
+    "items": [
+      "/docs/project-procedures/onboarding.html",
+      "/docs/project-procedures/reporting.html",
+      "/docs/project-procedures/sop_metadata_publishing.html"
+    ]
+  },
+  {
+    "listing": "/archive/index.html",
+    "items": []
   }
 ]
