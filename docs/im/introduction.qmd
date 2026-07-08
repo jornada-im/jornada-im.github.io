@@ -1,12 +1,14 @@
 ---
-title: Overview for Information Managers
+title: The Jornada Information Management Guide
+author: The Jornada Information Management Team
+date: last-modified
 ---
 
 This is the full documentation for the Jornada Basin LTER Information Management system, covering technical aspects of our data publishing process, data management tools, and administration of public-facing information like the website and data catalog. Researchers and data users should start at the [Jornada IM web pages](https://jornada-im.github.io/) to get started with Jornada data management.  **This is a DRAFT document.**
 
 ### Table of contents
 
-Preface: [The JRN LTER Data Management Plan](JRN_LTER_data_management_plan.v3.md)
+Preface: [The JRN LTER Data Management Plan](../proposals-and-reports/JRN_data_management_plan.LTER8.qmd)
 
 Chapters:
 

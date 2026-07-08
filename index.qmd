@@ -22,10 +22,10 @@ This site is maintained by the Jornada Information Management (IM) team to suppo
 ::: {.g-col-6}
 ::: {.card .shadow-sm .border-primary .bg-primary}
 ::: {.card-body}
-[**The Researcher Guide**](docs/researcher/introduction.qmd) is for Jornada students, investigators, and others who may need to  
+[**The Researcher Guide**](docs/researcher/introduction.qmd) is for Jornada students, investigators, and others who need to  
 
 - [Start new research at the Jornada](docs/researcher/starting-research.qmd)
-- [Collect and manage their data](docs/researcher/collect-qa-describe.qmd)
+- Collect and manage [data](docs/researcher/collecting_data.qmd) or [metadata](docs/researcher/metadata.qmd)
 - [Prepare and publish a dataset](docs/researcher/prepare-and-publish.qmd)
 - [Find](docs/researcher/discover-data.qmd) or [use](docs/researcher/discover-data.qmd) Jornada data
 :::
@@ -35,12 +35,12 @@ This site is maintained by the Jornada Information Management (IM) team to suppo
 ::: {.g-col-6}
 ::: {.card .shadow-sm .border-primary .bg-light}
 ::: {.card-body}
-[**The IM Guide**](docs/im/introduction.qmd) is for Jornada data managers who may need to
+[**The IM Guide**](docs/im/introduction.qmd) is for Jornada data managers who need to
 
 - [Check the status of a dataset](docs/im/introduction.qmd#dataset-tracking)
 - [Find data management resources](docs/im/introduction.qmd#data-management-resources)
 - [Prepare an annual report](docs/im/procedures/reporting.qmd)
-- [Read the full IM system documentation](docs/im/sysadmin/index.qmd)
+- Read the [full IM system documentation](docs/im/sysadmin/index.qmd)
 :::
 :::
 :::
@@ -52,7 +52,7 @@ This site is maintained by the Jornada Information Management (IM) team to suppo
 
 - Looking for a **research notification form** or **metadata template**? [Check here!](downloads/index.qmd)
 - Did you attend, or are you attending, a data training event? Find resources at the [JEDS site](https://jornada-im.github.io/JEDS).
-- Need more data management advice? See [these miscellaneous resources](docs/refs-and-links.qmd).
+- Need more advice or help? Visit the IM team at [Data Therapy Thursday](https://calendar.google.com/calendar/event?eid=MzdwZnA1N2w0dXEzcTk4NWxwZnFkNTBlM28gZHM1bTZxdDU0bGJvcWJvOWd0MTQ4c3IyYzBAZw), or check [these resources](docs/refs-and-links.qmd).
 
 ::: {.callout-caution collapse="false" appearance="default"}
 ## WARNING! This site is a work in progress

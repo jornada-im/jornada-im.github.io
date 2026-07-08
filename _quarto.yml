@@ -51,14 +51,16 @@ website:
           text: "Introduction"
         - href: docs/researcher/starting-research.qmd
           text: "Starting research"
-        - href: docs/researcher/collect-qa-describe.qmd
-          text: "Collect and manage data"
+        - href: docs/researcher/collecting_data.qmd
+          text: "Collecting data"
+        - href: docs/researcher/metadata.qmd
+          text: "Metadata"
+        - href: docs/researcher/prepare-and-publish.qmd
+          text: "Publish a dataset"
         - href: docs/researcher/discover-data.qmd
           text: "Discover Jornada data"
         - href: docs/researcher/data-reuse.qmd
           text: "Using data"
-        - href: docs/researcher/prepare-and-publish.qmd
-          text: "Publish a dataset"
         - href: docs/researcher/advanced-topics.qmd
           text: "Advanced topics"
         - href: docs/refs-and-links.qmd
