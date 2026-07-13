@@ -23,22 +23,23 @@ Before you begin your research, you should know the expectations and policies th
 
 ## The data lifecycle
 
-This guide is organized roughly according to the DataONE data lifecycle [@michener_ecoinformatics_2012], which outlines 8 distinct phases of working with data in a research context. In practice the phases overlap considerably the timing of activites and who executes them.
+This guide is organized roughly according to the DataONE data lifecycle [@michener_ecoinformatics_2012], which outlines 8 distinct phases of working with data in a research context. In practice the phases overlap considerably in the timing of activites and who executes them.
 
 ![The DataONE data lifecycle from [@michener_ecoinformatics_2012]](img/dataone_ls_stage_all.png){width=325px fig-alt="A diagram showing a circle of boxes labeled with the phases of the data lifecyle"}
 
 * **Planning** for research and data management is covered in the [Starting research](starting-research.qmd) chapter.
-* We discuss data **collection**, **quality assurance**, and many aspects of **describing** data (with metadata) in the [Collect and manage data](collect-qa-describe.qmd) chapter.
-* When you are ready to **preserve** your data by publishing it in a repository, read the [Prepare and publish](prepare-and-publish.qmd) chapter.
-* To learn how and where to **discover** Jornada data, read the [Data discovery](discover-data.qmd) chapter.
+* We discuss data **collection** and **quality assurance** in the [Collecting data](collect-qa-describe.qmd) chapter.
+* Using metadata to **describe** data is found in the [Metadata](metadata.qmd) chapter.
+* When you are ready to **preserve** your data by publishing it in a repository, read the [Publish a dataset](prepare-and-publish.qmd) chapter.
+* To learn how and where to **discover** Jornada data, read the [Discover Jornada data](discover-data.qmd) chapter.
 * Data reuse, including **integrating** and **analyzing** data is covered in the [Using data](data-reuse.qmd) chapter.
 
-Research workflows and data management can become complex, and the Jornada is a big project, so we have also created an [Advanced topics in research data management](advanced-topics.qmd) chapter. You will find many Jornada-specific tips throughout the guide, but much of the advice in these chapters can apply to managing data in other contexts.
+Research workflows and data management can be complex, and the Jornada is a big project, so we have also created an [Advanced topics in research data management](advanced-topics.qmd) chapter. You will find many Jornada-specific tips throughout the guide, but much of the advice in these chapters can apply to managing data in other contexts.
 
 ## Learn more
 
 The Jornada IM team consists of both Jornada Basin LTER (JRN) and USDA-ARS Jornada Experimental Range (JER) staff. If you need to know more about how we manage data, or how you or your lab can do a better job with data, there are a number of opportunities to learn more.
 
 * Jornada Desert Ecology Short Course - The IM team presents there each year
-* [Data Therapy Thursday](https://www.google.com/calendar/event?eid=b3QzZ3U3MzBjZ2h1dnN0amJlZ2xpN2xoaW1fMjAyMjA0MDdUMjAzMDAwWiBkczVtNnF0NTRsYm9xYm85Z3QxNDhzcjJjMEBn)
+* [Data Therapy Thursday](https://calendar.google.com/calendar/event?eid=MzdwZnA1N2w0dXEzcTk4NWxwZnFkNTBlM28gZHM1bTZxdDU0bGJvcWJvOWd0MTQ4c3IyYzBAZw)
 * See our [References and links](../refs-and-links.qmd) page.

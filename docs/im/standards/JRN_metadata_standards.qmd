@@ -1,5 +1,6 @@
 ---
 title: Jornada Dataset Metadata Standards
+date: last-modified
 author: The Information Management Team
 ---
 
@@ -9,11 +10,7 @@ author: The Information Management Team
 
 # Introduction
 
-This document defines metadata standards to use when creating or revising EML files for Jornada Basin LTER research data packages. These standards are under active development as we revamp our data catalog, but they are essentially derived from this reference document:
-
-<https://environmentaldatainitiative.files.wordpress.com/2017/11/emlbestpractices-v3.pdf>
-
-with modifications to suit the Jornada Basin LTER and its researchers.
+This document defines metadata standards to use when creating or revising EML files for Jornada Basin LTER research data packages. These standards are under active development as we revamp our data catalog, but they are essentially derived from the ["Best Practices for Dataset Metadata in Ecological Metadata Language (EML)"](https://ediorg.github.io/data-package-best-practices/guide-eml-bp/) guide from the LTER Network and EDI,with modifications to suit the Jornada Basin LTER and its researchers.
 
 When revising earlier EML documents, do your best not to lose the metadata they contain. Make sure a copy is archived somewhere (like EDI, if possible) so that metadata are not lost.
 
@@ -42,6 +39,11 @@ Best practices:
 * For the temporal range of ongoing data packages there are 2 possibilities:
     - Write the end of the temporal range as a year if data collection occurs less frequently than yearly ("2010-2018" for a package collected every 2 years).
     - Write the end of the temporal range as "ongoing" if data collection occurs yearly or more frequently ("2010-ongoing" if data were last updated a year ago or less).
+
+Some examples:
+
+* Annual mean estimates of aboveground net primary production (NPP) at 15 sites at Jornada Basin LTER, 1989-ongoing
+* Meteorology and soil moisture data collected at multiple frequencies from the G-SUMM NPP site automated monitoring stations: Jornada Basin LTER, 2013 - ongoing
 
 ## Personnel and organization elements (\<creator\>, \<project\>, etc.)
 
