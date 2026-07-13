@@ -62,4 +62,4 @@ We try our best to keep this up-to-date and accurate, but sometimes we fall behi
 
 ### Contact us
 
-For questions about collecting, analyzing, publishing, and accessing Jornada data or metadata please contact the IM team (<jornada.data@nmsu.edu>).
+For questions about collecting, analyzing, publishing, and accessing Jornada data or metadata please contact the IM team ({{< var email.jrn_im >}}).

@@ -488,7 +488,7 @@ It is critically important to store your research data securely and have a relia
 
 One common recommendation is to follow the **3-2-1 backup** rule. In this system you keep 3 copies of your data on 2 different devices or storage media, with 1 copy of the data in an off-site location (summary [here](https://www.cisa.gov/sites/default/files/publications/data_backup_options.pdf)). There are multiple ways to accomplish this, but a simple example would be to have a copy of all your important data synced from a personal laptop computer to an external hard drive, and a separate copy synced to a cloud backup provider (Google, Dropbox, Backblaze, etc.). Be aware that automatic syncing between copies of your data can lead to permanent data loss (i.e. deleting a file locally will delete synced copies too), so having some versioning and rollback ability built into the system is also important.
 
-There are a number of storage devices, software packages, and data services that can be used to build and maintain a solid backup system. Some of these may be available already at low- or no-cost through your institution or lab. Your friendly neighborhood data manager (<jornada.data@nmsu.edu>) can also offer advice and support for backup solutions if you ask.
+There are a number of storage devices, software packages, and data services that can be used to build and maintain a solid backup system. Some of these may be available already at low- or no-cost through your institution or lab. Your friendly neighborhood data manager ({{< var email.jrn_im >}}) can also offer advice and support for backup solutions if you ask.
 
 ::: {.callout-tip}
 ## Recommendations

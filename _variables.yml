@@ -1,0 +1,8 @@
+email:
+  jrn_im: <jornada.data@nmsu.edu>
+  jrn_pm: <jornada.lter@nmsu.edu>
+  jrn_rsm: <cwnelson@nmsu.edu>
+
+engine:
+  jupyter: "[Jupyter](https://jupyter.org)"
+  knitr: "[Knitr](<https://yihui.name/knitr>)"

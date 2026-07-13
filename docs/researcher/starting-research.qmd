@@ -132,4 +132,4 @@ Some grant programs have more or less extensive plan requirements. The Jornada B
 
 ## Updating your plan and project information
 
-Please update the Jornada Research Site Manager (<cwnelson@nmsu.edu>) with changes to projects using updated ResNotif forms at least once per year. Send updates about project personnel or website information to the IM team (<jornada.data@nmsu.edu>) as necessary.
+Please update the Jornada Research Site Manager (<cwnelson@nmsu.edu>) with changes to projects using updated ResNotif forms at least once per year. Send updates about project personnel or website information to the IM team ({{< var email.jrn_im >}}) as necessary.

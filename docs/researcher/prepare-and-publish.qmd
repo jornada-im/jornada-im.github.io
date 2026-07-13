@@ -103,14 +103,14 @@ The EDI repository has created a web app called [ezEML](https://ezEML.edireposit
   5. Follow the sequence of forms on the left, and ezEML's prompts, to upload data files and enter metadata for your dataset. Each section of your metadata will have help available ("?" icons) and several fields will already be filled if you are using the JRN template.
   6. Use the **Check metadata** and **Check data tables** tools at the bottom left to check the completeness and validity of your dataset. Green badges next to metadata mean your dataset is well described and ready to share (and yellow or red can indicate missing values or errors).
   7. When ready, click **Submit/Share Package** and then **Collaborate with Colleagues**. *DO NOT USE **Submit Package to EDI** or we may miss your dataset*.
-  8. On the **Invite a Collaborator** screen, share the dataset with a Jornada data manager by entering the (<jornada.data@nmsu.edu>) email.
+  8. On the **Invite a Collaborator** screen, share the dataset with a Jornada data manager by entering the ({{< var email.jrn_im >}}) email.
 
   At this point, the Jornada IM Team will receive a notification and can access your dataset in ezEML to review, edit, and publish to EDI. It never hurts to send a reminder in case the data managers miss this EDI notification.
 
 
 ### Metadata templates
 
-A metadata template is a document with a structure and cues that help you collect the essential metadata needed to describe a published dataset. We have created Jornada metadata templates in [MS Word (.docx)](http://jornada-im.github.io/downloads/Jornada_metadata_template.docx) or [Excel (.xlsx)](http://jornada-im.github.io/downloads/Jornada_metadata_template.xlsx) formats. These templates contain sections for all critical pieces of metadata, along with instructions on what to include and how to structure the information.  The [Excel version](http://jornada-im.github.io/downloads/Jornada_metadata_template.xlsx) is slightly more detailed and may be useful for complex datasets. Completed templates and accompanying data files should be sent to the Jornada IM team (<jornada.data@nmsu.edu>).
+A metadata template is a document with a structure and cues that help you collect the essential metadata needed to describe a published dataset. We have created Jornada metadata templates in [MS Word (.docx)](http://jornada-im.github.io/downloads/Jornada_metadata_template.docx) or [Excel (.xlsx)](http://jornada-im.github.io/downloads/Jornada_metadata_template.xlsx) formats. These templates contain sections for all critical pieces of metadata, along with instructions on what to include and how to structure the information.  The [Excel version](http://jornada-im.github.io/downloads/Jornada_metadata_template.xlsx) is slightly more detailed and may be useful for complex datasets. Completed templates and accompanying data files should be sent to the Jornada IM team ({{< var email.jrn_im >}}).
 
 ### Other metadata methods
 

@@ -46,7 +46,7 @@ Given their importance, creating and managing metadata should be an integral par
     - Organize your research files, including data, metadata, code and documentation, into clearly-labeled project directories that keep related things together and are easy to understand and back up.
     - When the time comes to share your research results and data, the [Publish a dataset](prepare-and-publish.qmd) chapter will help you get a sense of how to assemble your dataset (data and metadata) and prepare for publication at a repository.
 
-As always, discussing your project with a data manager or data curator and asking for advice about any of these activities is a smart move. At the Jornada, the Information Management team is happy to help (<jornada.data@nmsu.edu>), or you can reach out to the curators at our partner repository, the [Environmental Data Initiative](https://edirepository.org) (EDI, <info@edirepository.org>).[^1]
+As always, discussing your project with a data manager or data curator and asking for advice about any of these activities is a smart move. At the Jornada, the Information Management team is happy to help ({{< var email.jrn_im >}}), or you can reach out to the curators at our partner repository, the [Environmental Data Initiative](https://edirepository.org) (EDI, <info@edirepository.org>).[^1]
 
 ::: {.callout-tip}
 ## Recommendations
