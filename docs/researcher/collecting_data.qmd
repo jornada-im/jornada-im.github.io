@@ -20,7 +20,7 @@ Research data are very diverse, but taking a thoughtful approach to collecting a
 * **Data format**: How data are represented in terms of structure, organization, and relationships
 * **File format**: The physical format the data are stored in, such as a text file or JPEG image
 
-Below, we provide data management recommendations organized around these attributes, with **tabular data** as our default example. Tabular data values fit into grid- or table-like structures with rows and columns representing observations and variables. This type of data, which includes delimited text files (like comma-separated value files, or CSVs), spreadsheets and similar, are the most common and recognizeable data type in the environmental sciences. There are plenty of data that aren't exactly tabular, so we also have sections devoted to unstructured data and other special cases.
+Below, we provide data management recommendations organized around these attributes, with **tabular data** as our default example. Tabular data values fit into grid- or table-like structures with rows and columns representing observations and variables. This type of data, which includes delimited text files (like comma-separated value files, or CSVs), spreadsheets and similar, are the most common and recognizable data type in the environmental sciences. There are plenty of data that aren't exactly tabular, so we also have sections devoted to unstructured data and other special cases.
 
 ::: {.callout-note}
 ## Introducing metadata and datasets
@@ -51,11 +51,11 @@ Keep in mind that new uses for data frequently arise during research, so you wil
 
 ### Content
 
-The **content** of research data refers to what the data being collected are about. If you are the one doing the measuring or observing, you can describe the content of your data by specifying what variables are being collected, and what observational units, such as study plots, organisms, quantities of matter, or events, you are collecting them from. Describing the content of data can be laborious, but scientific observations, even relatively large and complex ones like remote sensing images, generally consist of variables that can be classified into standard [levels of measurement](https://en.wikipedia.org/wiki/Level_of_measurement), such as the Stevens typology. It is becoming become much more common for scientists to use large, unstructured datasets, including text, imagery, audio, and more, and it can be harder to describe the content of these with a clean classification system. Below are some considerations for common data content types: 
+The **content** of research data refers to what the data being collected are about. If you are the one doing the measuring or observing, you can describe the content of your data by specifying what variables are being collected, and what observational units, such as study plots, organisms, quantities of matter, or events, you are collecting them from. Describing the content of data can be laborious, but scientific observations, even relatively large and complex ones like remote sensing images, generally consist of variables that can be classified into standard [scales of measurement](https://en.wikipedia.org/wiki/Level_of_measurement), such as the Stevens typology. It is becoming become much more common for scientists to use large, unstructured datasets, including text, imagery, audio, and more, and it can be harder to describe the content of these with a clean classification system. Below are some considerations for common data content types, including the most common **scales of measurement** for scientific data: 
 
 ::: {.panel-tabset}
 
-## Numeric data
+## Numeric
 
 Numeric variables, also called "quantitative" data, consist of number values organized into a measurement scale. The Stevens typology defines two types of numeric measurement scales: interval and ratio.
 
@@ -72,9 +72,9 @@ Additionally, numeric data can be discrete or continuous.
 * Numeric variables (interval and ratio) almost always have units, or at least a defined scale, and you should know what is appropriate for the data. The measurement units of quantities like mass (kg), temperature (°C), and time (s) should be recorded as you collect data. Even dimensionless variables usually have pseudo-units, such as a ratio (C:N), pH, number (count), or percentage, that needs to be documented with the data. 
 * Numeric data can be further described by the type, or number set, they are drawn from (integers, real, complex numbers), and by their precision (number of decimal places specified) and significant figures (the number of meaningful decimal places).
 
-## Categorical data
+## Categorical
 
-Categorical variables, sometimes called "qualitative" data, consist of values that have defined levels used to classify or rank things. The Stevens typology defines two categorical scales: nominal and ordinal,
+Categorical variables, sometimes called "qualitative" data, consist of values that have defined levels used to classify or rank things. The Stevens typology defines two categorical scales of measurement: nominal and ordinal,
 
 * Nominal scale: categorical values with levels that have no ordering, and are therefore equivalent to classifying things. _Examples: species, treatments, sex_
 * Ordinal scale: categorical values with levels that rank or order things, but not necessarily with equal spacing between the levels. _Examples: Likert scale (strongly agree, somewhat agree...), fire severity_
@@ -84,7 +84,8 @@ Note that ordinal values have a numerical element to them (order or rank), so th
 **What to remember about these data**
 
 * In categorical variables, each level (corresponding to a group in the data) must have one unique value. For example, in a column denoting the sex of captured rodents, you wouldn't assign some male individuals an "M" and some "male".
-* The levels defined by categorical variables are arbitrary (nominal) or semi-arbitrary (ordinal) until a meaning is assigned. Assigning standardized values that can be understood by your community (authoritative species codes, the Likert scale) makes data much more broadly useful and interpretable. 
+* The levels defined by categorical variables are arbitrary (nominal) or semi-arbitrary (ordinal) until a meaning is assigned. Assigning standardized values that can be understood by your community (authoritative species codes, the Likert scale) makes data much more broadly useful and interpretable.
+
 
 ## Boolean (binary) data
 
@@ -93,6 +94,16 @@ Boolean variables, or binary variables, are a subtype of nominal categorical dat
 **What to remember about these data**
 
 * It seems simple, but it's not. Make sure you and others clearly understand what the _True/yes/1_ and _False/no/0_ conditions mean.
+
+## Datetimes
+
+Dates and times, sometimes referred to as datetime variables, describe when observations or other events happen. Datetime variables are very common in environmental science data since the timing of observations, measurements, and sampling events are usually necessary for analyzing and understanding the data. In addition, environmental data are typically collected repeatedly over time (i.e. they are time series or longitudinal data), and datetime variables provide the temporal information about these repeated observations. Dates and/or times can be specified many different ways. Datetime values can be provided as a specific instants with a calendar date and time, as a date only, as a time only, or as an interval between two times. The resolution, or smallest resolvable unit in a datetime variable, is also variable (year, day, millisecond). Finally, datetime variables can be referenced to different time zones, calendar systems (Gregorian, Julian, etc.), and epochs. 
+
+**What to remember about these data**
+
+* Datetime variables can be described as having an interval scale of measurement when specific calendar dates (and times) are given, since the calendar has no meaningful zero point. Time durations are on the ratio scale of measurement since they may indicate events that happen at the same time (zero time elapsed).
+* In time series and longitudinal data, the observations, measurements, and sampling events may occur at regular (equally spaced) or irregular (unequally spaced) intervals, and regular time series can be described with a frequency or sampling rate. There may also be gaps affecting otherwise regular time series that need to be considered.
+
 
 ## Unstructured data
 
@@ -171,7 +182,7 @@ In this example most of those issues have been corrected.
 
 ## A relational database
 
-Relational databases are collections of data tables that follow specific rules and have relationships connecting them to each other. In each table, rows hold a specific kind of data record refering to entities like observations, study sites, or organisms, and columns hold the variables (or "attributes") for the records. Records in different tables are related to each other via values in shared columns ("foreign keys"). The tables, columns, and relationships are defined in a database **schema**. Databases are a consistent and space-efficient way to store multidimensional data. Here's a diagram of a relational database schema with three tables: 
+Relational databases are collections of data tables that follow specific rules and have relationships connecting them to each other. In each table, rows hold a specific kind of data record referring to entities like observations, study sites, or organisms, and columns hold the variables (or "attributes") for the records. Records in different tables are related to each other via values in shared columns ("foreign keys"). The tables, columns, and relationships are defined in a database **schema**. Databases are a consistent and space-efficient way to store multidimensional data. Here's a diagram of a relational database schema with three tables: 
 
 (Note this only works in new versions of Mermaid - Quarto is a little behind and will be up to date in 1.9. Preview [here](https://mermaid.live/edit#pako:eNqFUk1rwzAM_StG57Skado4ua4MRncoY6cRCG6tpmaxHWynbEvz35ePZrTZYL4Y6UnvPVmu4aA5QgJoNoLlhkmSKtIeLgwenNCKPL8Mmb3QkllLGj2bXS7EMlkWQuUZnlE5SxKSQsmMI_qYwn1HPYSECOUmfZng5HE74taZFmnLuDgLXrEiU5WcgLbEg0A7Zo-FZm5UyvIh3QzX1GJzaZ3XpCx077eHR6Zp7T-ed9tbvGN8uh2EM4evQuJVY9OGkzH03qI5o7kzPDir_6DeTd_Iil-UziBzsjV45QQPciM4JM5U6IFEI1kXQi-QgjuhxBS6xXFm3rutdT0lU29ay7HN6Co_QXJkhW2jquxGu36Vn6xBxdE86Eo5SCLac0BSwwckQbier4LYj-lq4UdhEHjwCUlM53QVhP4iWi6XMQ3DxoOvXtSfRwsaRHQdUxpHlC6C5ht4rtd_))
 
@@ -255,7 +266,7 @@ Delimited text files are a great format for using, archiving, and sharing your d
 
 ## Excel spreadsheet
 
-Microsoft Excel is a powerful spreadsheet program with a long history of use in research. Excel spreadsheets live in the `.xlsx` file format, though there are many other non-Microsoft formats Excel can read and write, including CSV and ther delimited text files. Also note that Microsoft Excel is not the only spreadsheet game in town. Google Sheets and LibreOffice Calc are both full-featured and can interoperate with Excel file formats very well.
+Microsoft Excel is a powerful spreadsheet program with a long history of use in research. Excel spreadsheets live in the `.xlsx` file format, though there are many other non-Microsoft formats Excel can read and write, including CSV and other delimited text files. Also note that Microsoft Excel is not the only spreadsheet game in town. Google Sheets and LibreOffice Calc are both full-featured and can interoperate with Excel file formats very well.
 
 ![An Excel spreadsheet (.xlsx file) showing the same data as presented in the first panel. This is a well-formatted spreadsheet table that wouldn't be any trouble to pick up and use.](img/format_excel.png){.lightbox width=90%}
 
@@ -284,7 +295,7 @@ As we move towards creating and using high-volume research data, and employing c
 * Some databases
 
 
-There are many other possible tabular data file formats. Some are good for quick, space-efficient storage, but not ideal for long-term preservation. Keep in mind that many of these formats are not easily human-readable without specialized sofware, so they may be difficult for novices to use. They may also be harder to describe with metadata, especially when publishing the daaset. Here are a few possible examples:
+There are many other possible tabular data file formats. Some are good for quick, space-efficient storage, but not ideal for long-term preservation. Keep in mind that many of these formats are not easily human-readable without specialized software, so they may be difficult for novices to use. They may also be harder to describe with metadata, especially when publishing the dataset. Here are a few possible examples:
 
 * R data binaries: R provides two file formats for storing data. RDS files (`.RDS`) store a single R object, and RData files (`.RData` or `.rda`) store multiple objects.
 * Python data binaries: There are many, including Numpy single and multi-array archives (`.npy` and `.npz`), Pytables, pickle, and more
@@ -477,7 +488,7 @@ As mentioned before, the data attributes discussed in the sections above are imp
 
 ## Cleaning and QA/QC
 
-The Jornada IM team has a significant amount of experience and a variety of tools to draw on for quality assurance and quality control (QA/QC) of long-term Jornada datasets. For data managed by individual researchers, the Jornada IM team leaves most data QA/QC up to the research group or individual, but we are happy to advise when asked. For a simple overview and some resources useful for QA/QC of tabular data, see [EDI's recommendations](https://edirepository.org/resources/cleaning-data-and-quality-control).
+The Jornada IM team has a significant amount of experience and a variety of tools to draw on for quality assurance and quality control (QA/QC) of long-term Jornada datasets. For data managed by individual researchers, the Jornada IM team leaves most data QA/QC up to the research group or individual, but we are happy to advise when asked. For a simple overview and some resources useful for QA/QC of tabular data, see [EDI's recommendations]({{< var url.edi >}}/resources/cleaning-data-and-quality-control).
 
 :construction: at some point we'll add more information here.
 

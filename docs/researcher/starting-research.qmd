@@ -10,11 +10,11 @@ To start your research you will need a plan. Overall, your research plan may be 
 
 ## Permit approval process
 
-Most new research projects are initiated through the Jornada Research Site Manager, Conrad Nelson (<cwnelson@nmsu.edu>). The [JRN website](https://lter.jornada.nmsu.edu/for-researchers) or the [JER website](https://jornada.nmsu.edu/researcher-information) are the best source of information on this process, and have the current forms needed. There is also a listing of forms available [here](../../downloads/index.qmd). To begin the approval process, a potential researcher submits a Research Notification (ResNotif) form, which describes the planned location, research activities, personnel, and other important project information, to Conrad Nelson. After review, and after any necessary changes to the plan are made, the project can be approved to begin.
+Most new research projects are initiated through the Jornada Research Site Manager (Conrad Nelson, {{< var email.jrn_rsm >}}). The [JRN website]({{< var url.jrn_website >}}/for-researchers) or the [JER website]({{< var url.jer_website >}}/researcher-information) are the best source of information on this process, and have the current forms needed. There is also a listing of forms available [here](../../downloads/index.qmd). To begin the approval process, a potential researcher submits a Research Notification (ResNotif) form, which describes the planned location, research activities, personnel, and other important project information, to the Research Site Manager. After review, and after any necessary changes to the plan are made, the project can be approved to begin.
 
 ### The Jornada data policy
 
-All approved research projects at the Jornada must agree to a data sharing and acknowledgement policy. The requirements for Jornada researchers are, again, detailed on the [JRN](https://lter.jornada.nmsu.edu/for-researchers) or [JER](https://jornada.nmsu.edu/researcher-information) websites, but to summarize, researchers should:
+All approved research projects at the Jornada must agree to a data sharing and acknowledgement policy. The requirements for Jornada researchers are, again, detailed on the [JRN]({{< var url.jrn_website >}}/for-researchers) or [JER]({{< var url.jer_website >}}/researcher-information) websites, but to summarize, researchers should:
 
 ::: {.callout-note collapse="true" icon="false" appearance="minimal"}
 ## 1. Submit research data and metadata for publication.
@@ -37,7 +37,7 @@ The Jornada IM team strives to uphold high data publishing standards, so Jornada
 
 ## Making a data management plan
 
-Managing the data you collect and use is an integral part of any research project, and you should start creating a data management plan (DMP) early in your research process. A good DMP looks ahead at the full research lifecyle, from data collection to long-term preservation of research outputs. Below are some questions to think about and ideas to consider including in your plan.
+Managing the data you collect and use is an integral part of any research project, and you should start creating a data management plan (DMP) early in your research process. A good DMP looks ahead at the full research lifecycle, from data collection to long-term preservation of research outputs. Below are some questions to think about and ideas to consider including in your plan.
 
 ::: {.panel-tabset}
 
@@ -107,7 +107,7 @@ Detailed advice for collecting and managing different types of data begin in the
 
 ### For proposals
 
- A formal data management plan (DMP) document is usually required in proposals to federal agencies and other funders. For example, in standard proposals, NSF expects a 2-page DMP with these suggested sections:
+ A formal data management plan (DMP) document is usually required in proposals to federal agencies and other funding sources. For example, in standard proposals, NSF expects a 2-page DMP with these suggested sections:
 
 > 1. the types of data, samples, physical collections, software, curriculum materials, and other materials to be produced in the course of the project;
 > 2. the standards to be used for data and metadata format and content (where existing standards are absent or deemed inadequate, this should be documented along with any proposed solutions or remedies);
@@ -132,4 +132,4 @@ Some grant programs have more or less extensive plan requirements. The Jornada B
 
 ## Updating your plan and project information
 
-Please update the Jornada Research Site Manager (<cwnelson@nmsu.edu>) with changes to projects using updated ResNotif forms at least once per year. Send updates about project personnel or website information to the IM team ({{< var email.jrn_im >}}) as necessary.
+Please update the Jornada Research Site Manager ({{< var email.jrn_rsm >}}) with changes to projects using updated ResNotif forms at least once per year. Send updates about project personnel or website information to the IM team ({{< var email.jrn_im >}}) as necessary.

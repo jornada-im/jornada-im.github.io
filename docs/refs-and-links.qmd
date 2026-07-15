@@ -16,7 +16,7 @@ FAIR stands for Findable, Accessible, Interoperable, and Re-usable
 
 Jornada Basin LTER data packages are generally submitted to the EDI (Environmental Data Initiative) repository. They have resources about data collection, curation, and publishing.
 
-* [Data authors guide](https://edirepository.org/resources/resources-for-data-authors) (**Please contact the Jornada IM team before following the guide**)
+* [Data authors guide]({{< var url.edi >}}/resources/resources-for-data-authors) (**Please contact the Jornada IM team before following the guide**)
 * More detailed [data publishing best practices](https://ediorg.github.io/data-package-best-practices/)
 * EDI's [5 phases of data publishing](https://environmentaldatainitiative.org/resources/five-phases-of-data-publishing/) (old EDI website)
 

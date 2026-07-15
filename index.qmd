@@ -5,15 +5,15 @@ format:
     css: styles.css
 ---
 
-This site is maintained by the Jornada Information Management (IM) team to support researchers and data managers working with data from the [Jornada Basin LTER (JRN)](https://lter.jornada.nmsu.edu) and [Jornada Experimental Range (JER)](https://jornada.nmsu.edu) programs. There are two main guides here to serve two audiences:
+This site is maintained by the Jornada Information Management (IM) team to support researchers and data managers working with data from the [Jornada Basin LTER (JRN)]({{< var url.jrn_website >}}) and [Jornada Experimental Range (JER)]({{< var url.jer_website >}}) programs. There are two main guides here to serve two audiences:
 
 <!-- This should not display on mobile according to the syles.css -->
 ::: {.column-margin align="center"}
-&nbsp;&nbsp;&nbsp;&nbsp;[![](img/jrn-logo.png){width=1.5in}](https://lter.jornada.nmsu.edu)  
+&nbsp;&nbsp;&nbsp;&nbsp;[![](img/jrn-logo.png){width=1.5in}]({{< var url.jrn_website >}})  
 &nbsp;  
-&nbsp;[![](img/JER-logo-windmill-512.png){width=1.8in}](https://jornada.nmsu.edu)  
+&nbsp;[![](img/JER-logo-windmill-512.png){width=1.8in}]({{< var url.jer_website >}})  
 &nbsp;  
-&nbsp;&nbsp;&nbsp;&nbsp;Funded by [NSF](https://www.nsf.gov/awardsearch/show-award?AWD_ID=2425143) and [USDA](https://ltar.ars.usda.gov/sites/jer)
+&nbsp;&nbsp;&nbsp;&nbsp;Funded by [NSF]({{< var url.jrn_nsfaward >}}) and [USDA](https://ltar.ars.usda.gov/sites/jer)
 :::
 
 
@@ -52,7 +52,7 @@ This site is maintained by the Jornada Information Management (IM) team to suppo
 
 - Looking for a **research notification form** or **metadata template**? [Check here!](downloads/index.qmd)
 - Did you attend, or are you attending, a data training event? Find resources at the [JEDS site](https://jornada-im.github.io/JEDS).
-- Need more advice or help? Visit the IM team at [Data Therapy Thursday](https://calendar.google.com/calendar/event?eid=MzdwZnA1N2w0dXEzcTk4NWxwZnFkNTBlM28gZHM1bTZxdDU0bGJvcWJvOWd0MTQ4c3IyYzBAZw), or check [these resources](docs/refs-and-links.qmd).
+- Need more advice or help? Visit the IM team at [Data Therapy Thursday]({{< var url.datatherapy >}}), or check [these resources](docs/refs-and-links.qmd).
 
 ::: {.callout-caution collapse="false" appearance="default"}
 ## WARNING! This site is a work in progress

@@ -8,9 +8,9 @@ from: markdown+emoji
 
 :construction: **Most of this chapter is under construction.**
 
-Once your data are assembled, cleaned, and analyzed, you should strongly consider publishing them for future use and posterity. There are many reasons to do so; publishing data is required by the LTER Network[^1], and strongly encouraged or required by most funders[^2] and journals[^3]. On top of this, published datasets often become well-used, highly-cited research products in their own rite, and thus add a "feather in the cap" to your academic record.
+Once your data are assembled, cleaned, and analyzed, you should strongly consider publishing them for future use and posterity. There are many reasons to do so; publishing data is required by the LTER Network[^1], and strongly encouraged or required by most funding sources[^2] and journals[^3]. On top of this, published datasets often become well-used, highly-cited research products in their own rite, and thus add a "feather in the cap" to your academic record.
 
-There are some standards to aspire to when publishing a dataset, the most prominent being to make the data **findable**, **accessible**, **interoperable**, and **reusable**, or FAIR [@wilkinson_fair_2016]. You've already learned the basics of making data FAIR. In the [Collecting data](collecting_data.qmd) chapter we covered how to collect, clean, and store quality data, including recommendations on how to structure and format the data themselves. The [Metadata](metadata.qmd) chapter discusses the value of descriptive metadata, and gives recommendations on the content and management of metadata you collect during research. You may want to refer back to these chapters as you are preparing a datset for publication.
+There are some standards to aspire to when publishing a dataset, the most prominent being to make the data **findable**, **accessible**, **interoperable**, and **reusable**, or FAIR [@wilkinson_fair_2016]. You've already learned the basics of making data FAIR. In the [Collecting data](collecting_data.qmd) chapter we covered how to collect, clean, and store quality data, including recommendations on how to structure and format the data themselves. The [Metadata](metadata.qmd) chapter discusses the value of descriptive metadata, and gives recommendations on the content and management of metadata you collect during research. You may want to refer back to these chapters as you are preparing a dataset for publication.
 
 To prepare a dataset for publication, you'll need to make a few decisions first.
 
@@ -43,11 +43,11 @@ Other things a published dataset can contain:
 
 There are many data repositories available to researchers now [^4], and choosing one is not necessarily easy. Make sure the repository you choose meets these essential criteria. 
 
-1.  The repository should issue persistent, internet-resolveable, unique identifiers for every dataset published. Generally this will be a Digital Object Identifier, or DOI, that can be easily cited any time the published dataset is used.
+1.  The repository should issue persistent, internet-resolvable, unique identifiers for every dataset published. Generally this will be a Digital Object Identifier, or DOI, that can be easily cited any time the published dataset is used.
 2. The repository should require and publish adequate metadata describing each dataset. Without requiring at least minimal metadata, no repository can ensure that published data are FAIR.
-3. The repository should be trusted and accepted by your research community. This helps ensure your data will be found by researchers who value and will use them, including your collaborators. Community buyin can also signal that the repository has stable support and data will be available in perpetuity (though there are no guarantees here). 
+3. The repository should be trusted and accepted by your research community. This helps ensure your data will be found by researchers who value and will use them, including your collaborators. Community buy-in can also signal that the repository has stable support and data will be available in perpetuity (though there are no guarantees here). 
 
- We recommend using the [Environmental Data Initiative](https://edirepository.org) as the destination repository for most research data collected at the Jornada. For some data types, and non-data research products, we recommended other repositories that are specialized for a particular research domains, or have especially useful features. Publishing in non-EDI repositories can have advantages if they provide features for your particular type of data, or are your research community's accepted data source. Recommended repositories for a range of Jornada data and use cases are described below.
+ We recommend using the [Environmental Data Initiative]({{< var url.edi >}}) as the destination repository for most research data collected at the Jornada. For some data types, and non-data research products, we recommended other repositories that are specialized for a particular research domains, or have especially useful features. Publishing in non-EDI repositories can have advantages if they provide features for your particular type of data, or are your research community's accepted data source. Recommended repositories for a range of Jornada data and use cases are described below.
 
 [^4]: The Registry of Research Data Repositories ([re3data.org](https://re3data.org)) project is a comprehensive tracker of information about research data repositories.
 
@@ -55,7 +55,7 @@ There are many data repositories available to researchers now [^4], and choosing
 
 ## Most Jornada data
 
-The recommended repository for most tabular ecological or environmental data produced by the Jornada Basin LTER program is [Environmental Data Initiative](https://edirepository.org) (EDI). The EDI repository supports rigorous, community-supported metadata standards and facilitates data re-use. It is also well-integrated into the Jornada's information management systems. 
+The recommended repository for most tabular ecological or environmental data produced by the Jornada Basin LTER program is [Environmental Data Initiative]({{< var url.edi >}}) (EDI). The EDI repository supports rigorous, community-supported metadata standards and facilitates data re-use. It is also well-integrated into the Jornada's information management systems. 
 
 ## EC Fluxes 
 
@@ -87,16 +87,16 @@ The IM team recommends EDI for most Jornada data, but if you opt to publish in a
 
 ## Assembling the metadata
 
-To ensure successful interpretation and re-use of the data after they are published, they must be accompanied by metadata that thoroughly describe them. For more on the importance of metadata and how to collect it, review guidance in the ["Collect, manage and describe research data" chapter](collect-qa-describe.qmd) or at [the EDI repository](https://edirepository.org/resources/creating-metadata-for-publication). Ideally, metadata should be in a format that provides rich detail and is both human- and machine-readable. A number of metadata standards can meet this objective, but the choice often comes down to data type, community support and repository capability. 
+To ensure successful interpretation and re-use of the data after they are published, they must be accompanied by metadata that thoroughly describe them. For more on the importance of metadata and how to collect it, review guidance in the ["Collect, manage and describe research data" chapter](collect-qa-describe.qmd) or at [the EDI repository]({{< var url.edi >}}/resources/creating-metadata-for-publication). Ideally, metadata should be in a format that provides rich detail and is both human- and machine-readable. A number of metadata standards can meet this objective, but the choice often comes down to data type, community support and repository capability. 
 
 At present, the Jornada IM team supports two ways to create a metadata file for your dataset: EDI's ezEML application or Jornada metadata templates. These are described below.
 
 
 ### ezEML
 
-The EDI repository has created a web app called [ezEML](https://ezEML.edirepository.org) for describing research datasets and creating a standardized metadata documents for publication. The ezEML app creates metadata documents in the Ecological Metadata Language, or EML, which is a dialect of XML. The tool abstracts away most of the complexity of EML and XML, and is an easy method to author well-documented datasets. There is a Jornada EML template available on the site, so the recommended process for Jornada researchers is:
+The EDI repository has created a web app called [ezEML]({{< var url.ezeml >}}) for describing research datasets and creating a standardized metadata documents for publication. The ezEML app creates metadata documents in the Ecological Metadata Language, or EML, which is a dialect of XML. The tool abstracts away most of the complexity of EML and XML, and is an easy method to author well-documented datasets. There is a Jornada EML template available on the site, so the recommended process for Jornada researchers is:
 
-  1. Log in to [ezEML](https://ezEML.edirepository.org) using your Google, GitHub, or ORCID account (whichever is easiest).
+  1. Log in to [ezEML]({{< var url.ezeml >}}) using your Google, GitHub, or ORCID account (whichever is easiest).
   2. Start a new EML dataset using the **EML Documents > New from Template** menu item.
   3. Navigate to and select the **LTER/JRN/JRN_template_general** template to open an EML template pre-populated with Jornada metadata.
   4. Give the dataset a unique name. You can save your metadata and then return to this document anytime.
