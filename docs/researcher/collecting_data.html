@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-07-13">
+<meta name="dcterms.date" content="2026-07-15">
 
 <title>Collecting and managing data – Jornada Data Commons</title>
 <style>
@@ -278,7 +278,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 13, 2026</p>
+      <p class="date">July 15, 2026</p>
     </div>
   </div>
   
@@ -314,7 +314,7 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 <li><strong>Data format</strong>: How data are represented in terms of structure, organization, and relationships</li>
 <li><strong>File format</strong>: The physical format the data are stored in, such as a text file or JPEG image</li>
 </ul>
-<p>Below, we provide data management recommendations organized around these attributes, with <strong>tabular data</strong> as our default example. Tabular data values fit into grid- or table-like structures with rows and columns representing observations and variables. This type of data, which includes delimited text files (like comma-separated value files, or CSVs), spreadsheets and similar, are the most common and recognizeable data type in the environmental sciences. There are plenty of data that aren’t exactly tabular, so we also have sections devoted to unstructured data and other special cases.</p>
+<p>Below, we provide data management recommendations organized around these attributes, with <strong>tabular data</strong> as our default example. Tabular data values fit into grid- or table-like structures with rows and columns representing observations and variables. This type of data, which includes delimited text files (like comma-separated value files, or CSVs), spreadsheets and similar, are the most common and recognizable data type in the environmental sciences. There are plenty of data that aren’t exactly tabular, so we also have sections devoted to unstructured data and other special cases.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -363,9 +363,9 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 </section>
 <section id="content" class="level3">
 <h3 class="anchored" data-anchor-id="content">Content</h3>
-<p>The <strong>content</strong> of research data refers to what the data being collected are about. If you are the one doing the measuring or observing, you can describe the content of your data by specifying what variables are being collected, and what observational units, such as study plots, organisms, quantities of matter, or events, you are collecting them from. Describing the content of data can be laborious, but scientific observations, even relatively large and complex ones like remote sensing images, generally consist of variables that can be classified into standard <a href="https://en.wikipedia.org/wiki/Level_of_measurement">levels of measurement</a>, such as the Stevens typology. It is becoming become much more common for scientists to use large, unstructured datasets, including text, imagery, audio, and more, and it can be harder to describe the content of these with a clean classification system. Below are some considerations for common data content types:</p>
+<p>The <strong>content</strong> of research data refers to what the data being collected are about. If you are the one doing the measuring or observing, you can describe the content of your data by specifying what variables are being collected, and what observational units, such as study plots, organisms, quantities of matter, or events, you are collecting them from. Describing the content of data can be laborious, but scientific observations, even relatively large and complex ones like remote sensing images, generally consist of variables that can be classified into standard <a href="https://en.wikipedia.org/wiki/Level_of_measurement">scales of measurement</a>, such as the Stevens typology. It is becoming become much more common for scientists to use large, unstructured datasets, including text, imagery, audio, and more, and it can be harder to describe the content of these with a clean classification system. Below are some considerations for common data content types, including the most common <strong>scales of measurement</strong> for scientific data:</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Numeric data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Categorical data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Boolean (binary) data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Unstructured data</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Numeric</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Categorical</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Boolean (binary) data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Datetimes</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false" href="">Unstructured data</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>Numeric variables, also called “quantitative” data, consist of number values organized into a measurement scale. The Stevens typology defines two types of numeric measurement scales: interval and ratio.</p>
@@ -385,7 +385,7 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 </ul>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>Categorical variables, sometimes called “qualitative” data, consist of values that have defined levels used to classify or rank things. The Stevens typology defines two categorical scales: nominal and ordinal,</p>
+<p>Categorical variables, sometimes called “qualitative” data, consist of values that have defined levels used to classify or rank things. The Stevens typology defines two categorical scales of measurement: nominal and ordinal,</p>
 <ul>
 <li>Nominal scale: categorical values with levels that have no ordering, and are therefore equivalent to classifying things. <em>Examples: species, treatments, sex</em></li>
 <li>Ordinal scale: categorical values with levels that rank or order things, but not necessarily with equal spacing between the levels. <em>Examples: Likert scale (strongly agree, somewhat agree…), fire severity</em></li>
@@ -405,6 +405,14 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 </ul>
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<p>Dates and times, sometimes referred to as datetime variables, describe when observations or other events happen. Datetime variables are very common in environmental science data since the timing of observations, measurements, and sampling events are usually necessary for analyzing and understanding the data. In addition, environmental data are typically collected repeatedly over time (i.e.&nbsp;they are time series or longitudinal data), and datetime variables provide the temporal information about these repeated observations. Dates and/or times can be specified many different ways. Datetime values can be provided as a specific instants with a calendar date and time, as a date only, as a time only, or as an interval between two times. The resolution, or smallest resolvable unit in a datetime variable, is also variable (year, day, millisecond). Finally, datetime variables can be referenced to different time zones, calendar systems (Gregorian, Julian, etc.), and epochs.</p>
+<p><strong>What to remember about these data</strong></p>
+<ul>
+<li>Datetime variables can be described as having an interval scale of measurement when specific calendar dates (and times) are given, since the calendar has no meaningful zero point. Time durations are on the ratio scale of measurement since they may indicate events that happen at the same time (zero time elapsed).</li>
+<li>In time series and longitudinal data, the observations, measurements, and sampling events may occur at regular (equally spaced) or irregular (unequally spaced) intervals, and regular time series can be described with a frequency or sampling rate. There may also be gaps affecting otherwise regular time series that need to be considered.</li>
+</ul>
+</div>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
 <p>Unstructured data is a catchall term for data that don’t fit neatly into a tabular format of rows and columns. This term is a misnomer since all data must have structure in order to convey information (i.e.&nbsp;completely random data are essentially meaningless), and “unstructured” data still contain useful information. It is usually possible to extract numeric or categorical variables like those described above from unstructured data if you know how and where to look.</p>
 <ul>
 <li>Text data, also known as character or alphanumeric data, are data consisting of a sequence of symbols drawn from a vocabulary or alphabet. Sometimes they are referred to as sequence/sequential data because the information content depends on the order of the symbols. <em>Examples: Natural language data (from books, transcripts, etc.), nucleotide sequences</em></li>
@@ -497,7 +505,7 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 </ul>
 </div>
 <div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
-<p>Relational databases are collections of data tables that follow specific rules and have relationships connecting them to each other. In each table, rows hold a specific kind of data record refering to entities like observations, study sites, or organisms, and columns hold the variables (or “attributes”) for the records. Records in different tables are related to each other via values in shared columns (“foreign keys”). The tables, columns, and relationships are defined in a database <strong>schema</strong>. Databases are a consistent and space-efficient way to store multidimensional data. Here’s a diagram of a relational database schema with three tables:</p>
+<p>Relational databases are collections of data tables that follow specific rules and have relationships connecting them to each other. In each table, rows hold a specific kind of data record referring to entities like observations, study sites, or organisms, and columns hold the variables (or “attributes”) for the records. Records in different tables are related to each other via values in shared columns (“foreign keys”). The tables, columns, and relationships are defined in a database <strong>schema</strong>. Databases are a consistent and space-efficient way to store multidimensional data. Here’s a diagram of a relational database schema with three tables:</p>
 <p>(Note this only works in new versions of Mermaid - Quarto is a little behind and will be up to date in 1.9. Preview <a href="https://mermaid.live/edit#pako:eNqFUk1rwzAM_StG57Skado4ua4MRncoY6cRCG6tpmaxHWynbEvz35ePZrTZYL4Y6UnvPVmu4aA5QgJoNoLlhkmSKtIeLgwenNCKPL8Mmb3QkllLGj2bXS7EMlkWQuUZnlE5SxKSQsmMI_qYwn1HPYSECOUmfZng5HE74taZFmnLuDgLXrEiU5WcgLbEg0A7Zo-FZm5UyvIh3QzX1GJzaZ3XpCx077eHR6Zp7T-ed9tbvGN8uh2EM4evQuJVY9OGkzH03qI5o7kzPDir_6DeTd_Iil-UziBzsjV45QQPciM4JM5U6IFEI1kXQi-QgjuhxBS6xXFm3rutdT0lU29ay7HN6Co_QXJkhW2jquxGu36Vn6xBxdE86Eo5SCLac0BSwwckQbier4LYj-lq4UdhEHjwCUlM53QVhP4iWi6XMQ3DxoOvXtSfRwsaRHQdUxpHlC6C5ht4rtd_">here</a>)</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
@@ -610,7 +618,7 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 </div>
 </div>
 <div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
-<p>Microsoft Excel is a powerful spreadsheet program with a long history of use in research. Excel spreadsheets live in the <code>.xlsx</code> file format, though there are many other non-Microsoft formats Excel can read and write, including CSV and ther delimited text files. Also note that Microsoft Excel is not the only spreadsheet game in town. Google Sheets and LibreOffice Calc are both full-featured and can interoperate with Excel file formats very well.</p>
+<p>Microsoft Excel is a powerful spreadsheet program with a long history of use in research. Excel spreadsheets live in the <code>.xlsx</code> file format, though there are many other non-Microsoft formats Excel can read and write, including CSV and other delimited text files. Also note that Microsoft Excel is not the only spreadsheet game in town. Google Sheets and LibreOffice Calc are both full-featured and can interoperate with Excel file formats very well.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="img/format_excel.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="An Excel spreadsheet (.xlsx file) showing the same data as presented in the first panel. This is a well-formatted spreadsheet table that wouldn’t be any trouble to pick up and use."><img src="img/format_excel.png" class="img-fluid figure-img" style="width:90.0%" alt="An Excel spreadsheet (.xlsx file) showing the same data as presented in the first panel. This is a well-formatted spreadsheet table that wouldn’t be any trouble to pick up and use."></a></p>
@@ -645,7 +653,7 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 <li>Parquet files and other columnar formats</li>
 <li>Some databases</li>
 </ul>
-<p>There are many other possible tabular data file formats. Some are good for quick, space-efficient storage, but not ideal for long-term preservation. Keep in mind that many of these formats are not easily human-readable without specialized sofware, so they may be difficult for novices to use. They may also be harder to describe with metadata, especially when publishing the daaset. Here are a few possible examples:</p>
+<p>There are many other possible tabular data file formats. Some are good for quick, space-efficient storage, but not ideal for long-term preservation. Keep in mind that many of these formats are not easily human-readable without specialized software, so they may be difficult for novices to use. They may also be harder to describe with metadata, especially when publishing the dataset. Here are a few possible examples:</p>
 <ul>
 <li>R data binaries: R provides two file formats for storing data. RDS files (<code>.RDS</code>) store a single R object, and RData files (<code>.RData</code> or <code>.rda</code>) store multiple objects.</li>
 <li>Python data binaries: There are many, including Numpy single and multi-array archives (<code>.npy</code> and <code>.npz</code>), Pytables, pickle, and more</li>

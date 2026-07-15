@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-07-13">
+<meta name="dcterms.date" content="2026-07-15">
 
 <title>Metadata to describe research data – Jornada Data Commons</title>
 <style>
@@ -252,11 +252,12 @@ div.csl-indent {
   <li><a href="#temporal-geographic-and-taxonomic-coverages" id="toc-temporal-geographic-and-taxonomic-coverages" class="nav-link" data-scroll-target="#temporal-geographic-and-taxonomic-coverages">Temporal, geographic and taxonomic coverages</a></li>
   <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
   <li><a href="#literature-cited" id="toc-literature-cited" class="nav-link" data-scroll-target="#literature-cited">Literature cited</a></li>
-  <li><a href="#data-files-and-attributes" id="toc-data-files-and-attributes" class="nav-link" data-scroll-target="#data-files-and-attributes">Data files and attributes</a></li>
+  <li><a href="#data-objects-and-their-attributes" id="toc-data-objects-and-their-attributes" class="nav-link" data-scroll-target="#data-objects-and-their-attributes">Data objects and their attributes</a></li>
   <li><a href="#data-provenance" id="toc-data-provenance" class="nav-link" data-scroll-target="#data-provenance">Data provenance</a></li>
   <li><a href="#funding" id="toc-funding" class="nav-link" data-scroll-target="#funding">Funding</a></li>
   <li><a href="#licensing" id="toc-licensing" class="nav-link" data-scroll-target="#licensing">Licensing</a></li>
   </ul></li>
+  <li><a href="#metadata-standards" id="toc-metadata-standards" class="nav-link" data-scroll-target="#metadata-standards">Metadata standards</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/researcher/metadata.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -276,7 +277,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 13, 2026</p>
+      <p class="date">July 15, 2026</p>
     </div>
   </div>
   
@@ -295,7 +296,7 @@ div.csl-indent {
 </section>
 <section id="what-is-metadata" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-metadata">What is metadata?</h2>
-<p>Metadata should include a wide range of information about your research data, and should contain sufficient detail for another person to understand and use the data. As a general rule, good metadata have reasonably complete details about</p>
+<p>Metadata should include a wide range of information about your research data, at sufficient detail for another person to understand and use the data. As a general rule, good metadata have reasonably complete details about</p>
 <ul>
 <li><strong>Who</strong> collected the data</li>
 <li><strong>What</strong> was observed or measured</li>
@@ -342,10 +343,9 @@ Figure&nbsp;1: A schematic of the normal deterioration in information content as
 <ul>
 <li>Following a standard metadata format, such as one of <a href="../../downloads/index.html">the Jornada templates</a>, helps you be systematic and complete about collecting metadata. You can even use community-standard, machine-readable metadata files, such as <a href="https://eml.ecoinformatics.org/">EML</a>, for your metadata. Purpose-built applications, such as <a href="https://ezeml.edirepository.org">ezEML</a> from the EDI repository, make this easy.</li>
 <li>Organize your research files, including data, metadata, code and documentation, into clearly-labeled project directories that keep related things together and are easy to understand and back up.</li>
-<li>When the time comes to share your research results and data, the <a href="../../docs/researcher/prepare-and-publish.html">Publish a dataset</a> chapter will help you get a sense of how to assemble your dataset (data and metadata) and prepare for publication at a repository.</li>
 </ul></li>
 </ol>
-<p>As always, discussing your project with a data manager or data curator and asking for advice about any of these activities is a smart move. At the Jornada, the Information Management team is happy to help (<a href="mailto:jornada.data@nmsu.edu" class="email">jornada.data@nmsu.edu</a>), or you can reach out to the curators at our partner repository, the <a href="https://edirepository.org">Environmental Data Initiative</a> (EDI, <a href="mailto:info@edirepository.org" class="email">info@edirepository.org</a>).<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>When the time comes to share your research results and data, the <a href="../../docs/researcher/prepare-and-publish.html">Publish a dataset</a> chapter will help you get a sense of how to assemble your <strong>dataset</strong> (data and metadata) and prepare for publication at a repository. As always, discussing your project with a data manager or data curator and asking for advice about any of these activities is a smart move. At the Jornada, the Information Management team is happy to help (<a href="mailto:jornada.data@nmsu.edu" class="email">jornada.data@nmsu.edu</a>), or you can reach out to the curators at our partner repository, the <a href="https://edirepository.org">Environmental Data Initiative</a> (EDI, <a href="mailto:info@edirepository.org" class="email">info@edirepository.org</a>).<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -357,9 +357,9 @@ Figure&nbsp;1: A schematic of the normal deterioration in information content as
 </div>
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li>Remember that <strong>metadata</strong> are essential for using your data and publishing your research successfully.</li>
-<li>Make sure to plan for and start creating metadata early in your research.</li>
-<li>Record notes (metadata) as you do research, and keep your research files (data, metadata, etc.) well-organized and documented.</li>
+<li>Remember that <strong>metadata</strong> are essential for understanding and using research data after it is collected.</li>
+<li>Make notes (metadata) as you do research, and keep research files (data, metadata, etc.) well-organized and documented.</li>
+<li>Plan ahead for the <strong>datasets</strong> (data and metadata) you will use and publish, and start assembling metadata early.</li>
 <li>Ask your friendly neighborhood data manager for help anytime.</li>
 </ol>
 </div>
@@ -367,7 +367,7 @@ Figure&nbsp;1: A schematic of the normal deterioration in information content as
 </section>
 <section id="recommendations-for-jornada-metadata" class="level2">
 <h2 class="anchored" data-anchor-id="recommendations-for-jornada-metadata">Recommendations for Jornada metadata</h2>
-<p>We can simplify metadata content to <em>who, what, when, where, how, and why</em>, but obviously metadata must contain many important concepts and details, and there are many possible ways to express these. Following some standards for metadata content and formatting helps to narrow the possibilities so that creating metadata is less overwhelming, and it helps with discovery and interoperability when datasets use similar metadata terms and formats. Below are some recommendations for metadata elements for publishable datasets. These recommendations are a user-friendly version of the <a href="../../docs/im/standards/JRN_metadata_standards.html">detailed standards</a> that the Jornada IM team uses to prepare datasets for publication.</p>
+<p>We can simplify metadata content to <em>who, what, when, where, how, and why</em>, but obviously metadata must contain many important concepts and details, and there are many possible ways to express these. Following some standards for metadata content and formatting helps to narrow the possibilities so that creating metadata is less overwhelming, and it helps with discovery and interoperability when datasets use similar metadata terms and formats. Below are some recommendations on how to populate metadata fields for publishable datasets. These recommendations are a user-friendly version of the <a href="../../docs/im/standards/JRN_metadata_standards.html">detailed standards</a> that the Jornada IM team uses to prepare datasets for publication.</p>
 <section id="title" class="level3">
 <h3 class="anchored" data-anchor-id="title">Title</h3>
 <p>Any published dataset must have a <strong>title</strong>. Dataset titles should include brief, descriptive indicators of the data content, the location of data collection (if pertinent), and the temporal range of the data (<em>what</em>, <em>where</em>, and <em>when</em>). <strong>Keep in mind that titles are searchable in most repositories and are usually the first metadata users encounter when searching for datasets.</strong></p>
@@ -380,7 +380,19 @@ Figure&nbsp;1: A schematic of the normal deterioration in information content as
 <section id="abstract" class="level3">
 <h3 class="anchored" data-anchor-id="abstract">Abstract</h3>
 <p>The abstract of a dataset is a concise, non-technical description of <em>what</em> data are provided, <em>where</em> they come from, and <em>when</em> and <em>how</em> they were collected. It can also be useful to say something about <em>why</em> the dataset was created (to support a journal article, long-term monitoring, etc.), but this is not always required. Dataset abstracts are similar in scope and scale to a journal article abstract, but they <strong>focus on the data themselves, and not on the research results</strong> that come from the data.</p>
-<p><strong>Note</strong> that this is also a serchable field at most repositories.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Abstracts are also searchable fields at most repositories.</p>
+</div>
+</div>
 </section>
 <section id="personnel-and-organizations" class="level3">
 <h3 class="anchored" data-anchor-id="personnel-and-organizations">Personnel and organizations</h3>
@@ -398,7 +410,7 @@ Figure&nbsp;1: A schematic of the normal deterioration in information content as
 </section>
 <section id="contacts" class="level4">
 <h4 class="anchored" data-anchor-id="contacts">Contacts</h4>
-<p>A <strong>contact</strong> for a dataset is a person (or position, like Data Manager) that can be contacted for information about, or access to, the dataset. Up-to-date contact information (an email address at minimum) should be provided for every dataset contact. For Jornada datasets, always include the “JRN LTER Information Manager” as a contact and include this email: <a href="mailto:jornada.data@nmsu.edu" class="email">jornada.data@nmsu.edu</a>. If an additional contact is desired, choose a person who will be available for the long term. This could be the lead author of the dataset or the current supervising investigator, or others, just be sure to include contact information that won’t change in the immediate future.</p>
+<p>A <strong>contact</strong> for a dataset is a person (or position, like Data Manager) that can be contacted for information about, or access to, the dataset. Up-to-date contact information (an email address at minimum) should be provided for every dataset contact. For Jornada datasets, always include the “JRN LTER Information Manager” as a contact with this email: <a href="mailto:jornada.data@nmsu.edu" class="email">jornada.data@nmsu.edu</a>. If an additional contact is desired, choose a person who will be available for the long term. This could be the lead author of the dataset, the current supervising investigator, or others; just be sure to include contact information that won’t change in the immediate future.</p>
 </section>
 </section>
 <section id="keywords" class="level3">
@@ -441,7 +453,19 @@ Figure&nbsp;1: A schematic of the normal deterioration in information content as
 <li><a href="https://portal.edirepository.org/nis/mapbrowse?scope=knb-lter-jrn&amp;identifier=210520002">The Jornada Vertebrates List</a> is still a work in progress.</li>
 <li><a href="https://portal.edirepository.org/nis/mapbrowse?scope=knb-lter-jrn&amp;identifier=210520003">The Jornada Invertebrates List</a> is also a work in progress.</li>
 </ol>
-<p><strong>NOTE:</strong> You don’t need to include taxonomic coverage information if the data are strictly abiotic in nature (weather station data, for example).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You don’t need to include taxonomic coverage information if the data are strictly abiotic in nature (weather station data, for example).</p>
+</div>
+</div>
 </section>
 </section>
 <section id="methods" class="level3">
@@ -451,27 +475,108 @@ Figure&nbsp;1: A schematic of the normal deterioration in information content as
 </section>
 <section id="literature-cited" class="level3">
 <h3 class="anchored" data-anchor-id="literature-cited">Literature cited</h3>
-<p>It is common to cite published literature in a dataset</p>
+<p>It is common to cite other published works (books, journal articles, etc.) when assembling a dataset. For example, as you write your methods metadata, you might want to refer to a published laboratory procedure used to analyze samples. Referencing the source you used is the most sensible way to do this. Citing published works can also help provide context for people who will analyze and interpret the data. <strong>We recommend adding a reference list for the citations you use in your dataset metadata.</strong> Some metadata standards allow placement of a reference list in a designated field of the metadata, but if this is not available, add the reference list to a free-text section of the metadata like the methods section. Use a generally-accepted reference format, such as APA or MLA, and include a DOI for each publication if available.</p>
 </section>
-<section id="data-files-and-attributes" class="level3">
-<h3 class="anchored" data-anchor-id="data-files-and-attributes">Data files and attributes</h3>
+<section id="data-objects-and-their-attributes" class="level3">
+<h3 class="anchored" data-anchor-id="data-objects-and-their-attributes">Data objects and their attributes</h3>
+<p>The main purpose of research datasets and their accompanying metadata are to describe and share <strong>data objects</strong>. A data object is anything attached or referred to in a dataset that contains, or can be used as, research data. Most of the time these are digital files (an Excel spreadsheet, for example), but physical samples, museum specimens, software/code, dynamic data content (a sensor stream), database entries, and offline data stores can also be valid data objects. There may be multiple data objects in a dataset, and each needs extensive metadata to describe its type, format, content, accessibility, and other attributes. Below are some metadata recommendations for data objects that are digital files, but if you have other objects in your dataset reach out to a Jornada data manager for advice.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Different repositories and metadata standards have different terms for the data objects in a dataset. You may hear the terms “file”, “data entity”, “artifact”, “asset” and more.</p>
+</div>
+</div>
+<section id="description" class="level4">
+<h4 class="anchored" data-anchor-id="description">Description</h4>
+<p>Give each file in your dataset a brief but detailed description. You may want to include information about data type (tabular, image, geospatial, etc) and content (variables and observational units). This is especially important when there are multiple files in the dataset.</p>
+</section>
+<section id="file-attributes" class="level4">
+<h4 class="anchored" data-anchor-id="file-attributes">File attributes</h4>
+<p>Those who use the data files you share (including your future self) will need some cues on how to do that, so your metadata should describe each file as clearly as possible. In the previous chapter there are some <a href="../../docs/researcher/collecting_data.html#file-formats">file format recommendations</a> that we won’t repeat here except to say that using file formats that are as open (non-proprietary) and understandable as possible, and describing them clearly and thoroughly, will benefit everyone involved.</p>
+<ul>
+<li>A <strong>file name</strong> is the name of the digital file as it is referred to on a computer system or storage media. Its best to use concise but descriptive file names without any special characters or spaces. <em>Examples: plant_data_table.csv, 2007-images.zip</em></li>
+<li>The <strong>file type</strong> refers to a general file category that indicates something about the data content and how to access it. <em>Examples: text, binary, raster image</em></li>
+<li>Provide a <strong>file format name</strong> to refer to specific file formats, usually taken from a list of known or accepted formats. At the Jornada we generally use <a href="https://www.iana.org/assignments/media-types/media-types.xhtml">IANA media types</a>, but file extension, MIME types, or common names are also fine. <em>Examples: plain text (<code>text/plain</code>), comma separated values (<code>text/csv</code>), JPEG image (<code>image/jpeg</code>), PDF (<code>application/pdf</code>)</em></li>
+<li><strong>Access and distribution</strong> metadata defines who or what has permission to access a data file, and provides users with a means to obtain the file (a URL to download from, a network path, or request instructions). We strongly recommend publishing data to repositories and following their guidance for access and distribution instead of managing this yourself. Access levels (or permissions) can be set at the repository level, and distribution occurs via a download URL from the repository. If other arrangements need to be made for publishing data, consult with a Jornada data manager.</li>
+<li><strong>Other file attributes:</strong> can sometimes be useful to include in metadata.
+<ul>
+<li>A <strong>checksum</strong> is a hash value (alphanumeric string) that is uniquely generated from a digital object using a cryptographic algorithm (MD5, SHA-256). These can be used to verify the integrity of shared data files.</li>
+<li>Providing a <strong>file size</strong> in the metadata can be helpful to end users who want to know what they are downloading.</li>
+<li>A range of additional <strong>identifiers</strong> and <strong>annotations</strong> may be available depending on the metadata standard or repository being used.</li>
+</ul></li>
+</ul>
+</section>
+<section id="data-attributes" class="level4">
+<h4 class="anchored" data-anchor-id="data-attributes">Data attributes</h4>
+<p>The data in the files you share don’t speak for themselves, so metadata must explain them well enough that others can understand and use each data file. The previous chapter describes the important aspects of <a href="../../docs/researcher/collecting_data.html#content">data content</a>, and provides <a href="../../docs/researcher/collecting_data.html#data-format">data formatting recommendations</a> to consider. Below we describe how to communicate about the content, formatting, and meaning of data files with <strong>metadata attributes that should be provided for <em>each variable</em> in a data file</strong>. In tabular data files, the individual variables are usually represented as columns, but other arrangements, such as bands/layers in raster images, are not uncommon.</p>
+<ul>
+<li>Every variable needs a <strong>variable name</strong> to uniquely and clearly identify it in the metadata and data file. In tabular data this can be as simple as assigning a unique, descriptive column header to every column in the file and using that in the metadata. It is best to avoid special characters, dashes and spaces in variable names.</li>
+<li>Give every variable a <strong>description</strong>. This can be somewhat lengthy, and we recommend summarizing the quantity, data type, unit of measurement, and observational unit in the description. For example <em>“Air temperature measured in degrees Celsius at 2 meters height”</em> or <em>“A categorical column indicating the sex of the individual (M/F)”</em></li>
+<li>Each variable has a <strong>data type</strong> that must be specified. Indicating one of the broad categories that include <em>numeric</em>, <em>categorical</em>, <em>datetime</em> and <em>plain text</em> is usually sufficient. It can be difficult to describe unstructured data, but adding detail to the variable description (above) can help, and some metadata standards allow for very specific data attributes (below).</li>
+<li>Depending on the data type, <strong>measurement units</strong>, <strong>categorical codes</strong>, and <strong>datetime formats</strong> must be described.
+<ul>
+<li>Numeric variables should almost always have <strong>units</strong>, or at least a defined scale, described in the metadata. For quantities like mass (kg), temperature (°C), and time (s) we recommend describing measurement units in a clear, unambiguous format. If you are following a metadata standard, a units list may already be provided. You can also try a standard unit vocabulary on your own (<a href="http://www.ch.ic.ac.uk/rzepa/codata2/">stmml</a> and <a href="https://www.qudt.org/">QUDT</a> are two options), but be sure to link to the standard if you use one. Some variables are dimensionless, and should be described as such, but even they usually have pseudo-units, such as a ratio (C:N), pH, number (count), or percentage, that needs to be documented with the data.</li>
+<li>For categorical variables, <strong>describe every acceptable code or level</strong> used in the data along with its meaning. <em>Examples: (LRL=Little Rock Lake, TL=Trout Lake, ML- Muddy Lake, …), (M=male, F=female, J=juvenile)</em></li>
+<li>Use a <strong>datetime format</strong> to describe how datetime values are written as character strings in the data. The resolution and choice of formatting for datetimes varies, and some formats are ambiguous if they are not explicitly described (for example, is 07/02/1974 a July or February date?). We recommend using an ISO standard with hyphen and colon separated date and time fields in decreasing size order (year, month, day, hour, minute, second). A format string for this can be written as <code>YYYY-MM-DD hh:mm:ss</code> (sub-seconds and timezone can also be included).</li>
+</ul></li>
+<li>If a numeric value or text code for <strong>missing values</strong> is used in the variable, it must be specified and described. There may be multiple reasons for missing values (not collected, removed by QA/QC, etc.), so explain the meaning of missing values and what codes are used for what reasons. Some common missing value codes are “-9999”, “NA”, and “NaN.”</li>
+<li><strong>Other data attributes</strong>: Much more detail can be provided about variables, particularly with respect to data type. Often this information is self-evident when examining the data or can be automatically detected by software tools, but sometimes it is useful to specify how integers or strings, for example, should be interpreted.
+<ul>
+<li>Describe the <strong>measurement scale</strong> used for the values in each variable. These could be drawn from the Stevens typology for numeric and categorical data (<em>interval</em>, <em>ratio</em>, <em>ordinal</em>, <em>nominal</em>) or other systems. Unstructured text data, again, can be difficult to classify but <em>sequence data</em> applies in some cases (document text, nucleotide data).</li>
+<li>Variables have a <strong>storage type</strong>, which indicates how the values are encoded in a file or on disk. <em>Examples: character, string, integer, real, complex</em></li>
+<li>Numeric variables often have <strong>precision</strong> and <strong>uncertainty</strong> values that are important.</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We’re using the term “variable” here as a shorthand to refer to any structural groupings of values in a data file (such as a column in a CSV), but this isn’t exactly correct. In statistics, <strong>variable</strong> refers to a measured or observed quantity with a value domain, but data files can also contain labels, identifiers, keys, or calculated values that aren’t technically variables.</p>
+</div>
+</div>
+</section>
 </section>
 <section id="data-provenance" class="level3">
 <h3 class="anchored" data-anchor-id="data-provenance">Data provenance</h3>
+<p>If your dataset includes data from an external source, either verbatim or in derived form, you should cite the data source and describe how the source data were used and modified (if applicable). This credits the original source’s creators and improves the reproducibility of your dataset and research results. Metadata about data sources or the lineage of data is called <strong>data provenance</strong>, and it is similar to providing a reference for articles or books cited in the dataset. Some metadata standards have a dedicated field for data provenance, but if this is not the case you should add references to source datasets in the text of the methods section. When new values are derived from the cited source data, be sure to describe how they were derived.</p>
 </section>
 <section id="funding" class="level3">
 <h3 class="anchored" data-anchor-id="funding">Funding</h3>
+<p>If your research, including collection of the data you work with, is supported directly or indirectly by public or private funding, then it is usually important to <strong>credit the funding source and identify any individual awards</strong> in your metadata. Major government funding sources like the National Science Foundation require this for all journal articles, datasets, and other research products, and most academic publishing venues ask authors to acknowledge funding sources. Most metadata standards and repositories have a field for funding acknowledgement so keep track of the grants funding and include them when you publish datasets or other products. The current NSF grant funding the Jornada LTER program is award <a href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2425143">DEB 2425143</a>.</p>
 </section>
 <section id="licensing" class="level3">
-
+<h3 class="anchored" data-anchor-id="licensing">Licensing</h3>
+<p>Publishing a dataset means making data available to the community for use, but it is a good idea to specify what community, and how they should the data. Use metadata to attach a <strong>license</strong> to your the data and communicate any <strong>intellectual rights</strong> you and other authors maintain over the publication. In general, publicly-funded research datasets should be released with the fewest restrictions on use possible, and journal reviewers and funding agencies may check this when datasets are cited in papers or proposals.</p>
+<p>We recommend choosing a license generally agreed-upon by your research community, and using the identifier and URL from <a href="https://spdx.org/licenses/">the SPDX list</a> in the metadata. Creative Commons (https://creativecommons.org) offers a number of well-established licenses that are commonly used and appropriate for research datasets, and these can be readily found in the SPDX list. The most common recommendations for LTER Network data are <a href="https://spdx.org/licenses/CC0-1.0.html">CC0-1.0</a>, which is simply a dedication to the public domain, and <a href="https://spdx.org/licenses/CC-BY-4.0.html">CC-BY-4.0</a>, which requires attribution of the published work. At the Jornada we generally recommend CC-BY licenses.</p>
+<p>You may also want to include an <strong>intellectual rights</strong> free text field to clearly describe the policies and expectations for use of the dataset, particularly those not already stated in the dataset license. These policies and expectations should match those agreed upon by the dataset authors and affiliated institutions, funding agencies, and/or research networks. If actual access to a dataset deviates from any policy articulated here (e.g.&nbsp;restricted-access packages), explain why and provide a timeframe for data release.</p>
+</section>
+</section>
+<section id="metadata-standards" class="level2">
+<h2 class="anchored" data-anchor-id="metadata-standards">Metadata standards</h2>
+<p>The question now is, where do you put all of the information above? There are quite a few metadata formats suitable for environmental datasets. Choosing one comes down to things like level of detail, ease of use, and community support for the standard. At the Jornada we recommend using the <a href="https://eml.ecoinformatics.org/">Ecological Metadata Language (EML)</a>, which is a standard developed by the ecological and environmental sciences community <span class="citation" data-cites="EML_2019">(<a href="#ref-EML_2019" role="doc-biblioref">Jones et al. 2019</a>)</span> and required by our closest repository partner, the <a href="https://edirepository.org">Environmental Data Initiative (EDI)</a>.</p>
 
 
 
 </section>
-</section>
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Licensing</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-EML_2019" class="csl-entry" role="listitem">
+Jones, Matthew, Margaret O’Brien, Bryce Mecum, et al. 2019. <em>Ecological Metadata Language Version 2.2.0</em>. <a href="https://doi.org/10.5063/f11834t2">https://doi.org/10.5063/f11834t2</a>.
+</div>
 <div id="ref-michener_nongeospatial_1997" class="csl-entry" role="listitem">
 Michener, William K., James W. Brunt, John J. Helly, Thomas B. Kirchner, and Susan G. Stafford. 1997. <span>“Nongeospatial <span>Metadata</span> for the <span>Ecological</span> <span>Sciences</span>.”</span> <em>Ecological Applications</em> 7 (1): 330–42. <a href="https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2">https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2</a>.
 </div>
