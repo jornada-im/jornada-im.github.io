@@ -95,9 +95,7 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
-<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+<script src="../../site_libs/quarto-diagram/mermaid-postprocess-shim.js"></script>
 
 
 </head>
@@ -511,33 +509,450 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 <div>
 <p></p><figure class="figure"><p></p>
 <div>
-<pre class="mermaid mermaid-js">erDiagram 
-    direction LR
-    plants }o--|| sampling_events : "sampled in"
-    plants {
-      int sampling_event_id FK
-      string site_name
-      int plot_num
-      int individual_num
-      float crown_wid_cm
-      float plant_ht_cm
-    }
-    sampling_events }|--|{ plots : samples
-    sampling_events {
-      int sampling_event_id PK
-      int site_id FK
-      dateTime sample_date
-      string observer
-    }
-    plots {
-      int plot_id PK
-      string site_name
-      int plot_num
-      float centroid_lat
-      float centroid_long
-      string treatment
-    }
-</pre>
+<svg id="mermaid-figure-1" width="672" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" class="erDiagram" viewbox="0 0 1091.265625 315.25" role="graphics-document document" aria-roledescription="er" height="480">
+<style>#mermaid-figure-1{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#mermaid-figure-1 .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#mermaid-figure-1 .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#mermaid-figure-1 .error-icon{fill:#552222;}#mermaid-figure-1 .error-text{fill:#552222;stroke:#552222;}#mermaid-figure-1 .edge-thickness-normal{stroke-width:1px;}#mermaid-figure-1 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-figure-1 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-figure-1 .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaid-figure-1 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-figure-1 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-figure-1 .marker{fill:#333333;stroke:#333333;}#mermaid-figure-1 .marker.cross{stroke:#333333;}#mermaid-figure-1 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-figure-1 p{margin:0;}#mermaid-figure-1 .entityBox{fill:#ECECFF;stroke:#9370DB;}#mermaid-figure-1 .relationshipLabelBox{fill:hsl(80, 100%, 96.2745098039%);opacity:0.7;background-color:hsl(80, 100%, 96.2745098039%);}#mermaid-figure-1 .relationshipLabelBox rect{opacity:0.5;}#mermaid-figure-1 .labelBkg{background-color:rgba(248.6666666666, 255, 235.9999999999, 0.5);}#mermaid-figure-1 .edgeLabel .label{fill:#9370DB;font-size:14px;}#mermaid-figure-1 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-figure-1 .edge-pattern-dashed{stroke-dasharray:8,8;}#mermaid-figure-1 .node rect,#mermaid-figure-1 .node circle,#mermaid-figure-1 .node ellipse,#mermaid-figure-1 .node polygon{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-figure-1 .relationshipLine{stroke:#333333;stroke-width:1;fill:none;}#mermaid-figure-1 .marker{fill:none!important;stroke:#333333!important;stroke-width:1;}#mermaid-figure-1 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style>
+<g><defs><marker id="mermaid-figure-1-mermaid-1784245463901_er-onlyOneStart" class="marker onlyOne er" refx="0" refy="9" markerwidth="18" markerheight="18" orient="auto"><path d="M9,0 L9,18 M15,0 L15,18"></path></marker></defs><defs><marker id="mermaid-figure-1-mermaid-1784245463901_er-onlyOneEnd" class="marker onlyOne er" refx="18" refy="9" markerwidth="18" markerheight="18" orient="auto"><path d="M3,0 L3,18 M9,0 L9,18"></path></marker></defs><defs><marker id="mermaid-figure-1-mermaid-1784245463901_er-zeroOrOneStart" class="marker zeroOrOne er" refx="0" refy="9" markerwidth="30" markerheight="18" orient="auto"><circle fill="white" cx="21" cy="9" r="6"></circle><path d="M9,0 L9,18"></path></marker></defs><defs><marker id="mermaid-figure-1-mermaid-1784245463901_er-zeroOrOneEnd" class="marker zeroOrOne er" refx="30" refy="9" markerwidth="30" markerheight="18" orient="auto"><circle fill="white" cx="9" cy="9" r="6"></circle><path d="M21,0 L21,18"></path></marker></defs><defs><marker id="mermaid-figure-1-mermaid-1784245463901_er-oneOrMoreStart" class="marker oneOrMore er" refx="18" refy="18" markerwidth="45" markerheight="36" orient="auto"><path d="M0,18 Q 18,0 36,18 Q 18,36 0,18 M42,9 L42,27"></path></marker></defs><defs><marker id="mermaid-figure-1-mermaid-1784245463901_er-oneOrMoreEnd" class="marker oneOrMore er" refx="27" refy="18" markerwidth="45" markerheight="36" orient="auto"><path d="M3,9 L3,27 M9,18 Q27,0 45,18 Q27,36 9,18"></path></marker></defs><defs><marker id="mermaid-figure-1-mermaid-1784245463901_er-zeroOrMoreStart" class="marker zeroOrMore er" refx="18" refy="18" markerwidth="57" markerheight="36" orient="auto"><circle fill="white" cx="48" cy="18" r="6"></circle><path d="M0,18 Q18,0 36,18 Q18,36 0,18"></path></marker></defs><defs><marker id="mermaid-figure-1-mermaid-1784245463901_er-zeroOrMoreEnd" class="marker zeroOrMore er" refx="39" refy="18" markerwidth="57" markerheight="36" orient="auto"><circle fill="white" cx="9" cy="18" r="6"></circle><path d="M21,18 Q39,0 57,18 Q39,36 21,18"></path></marker></defs><g class="root"><g class="clusters"></g><g class="edgePaths"><path d="M276,157.625L288.309,157.625C300.617,157.625,325.234,157.625,349.852,157.625C374.469,157.625,399.086,157.625,411.395,157.625L423.703,157.625" id="id_entity-plants-0_entity-sampling_events-1_0" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="id_entity-plants-0_entity-sampling_events-1_0" data-points="W3sieCI6Mjc2LCJ5IjoxNTcuNjI1fSx7IngiOjM0OS44NTE1NjI1LCJ5IjoxNTcuNjI1fSx7IngiOjQyMy43MDMxMjUsInkiOjE1Ny42MjV9XQ==" marker-start="url(#mermaid-figure-1-mermaid-1784245463901_er-zeroOrMoreStart)" marker-end="url(#mermaid-figure-1-mermaid-1784245463901_er-onlyOneEnd)"></path><path d="M719.578,157.625L730.59,157.625C741.602,157.625,763.625,157.625,785.648,157.625C807.672,157.625,829.695,157.625,840.707,157.625L851.719,157.625" id="id_entity-sampling_events-1_entity-plots-2_1" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="id_entity-sampling_events-1_entity-plots-2_1" data-points="W3sieCI6NzE5LjU3ODEyNSwieSI6MTU3LjYyNX0seyJ4Ijo3ODUuNjQ4NDM3NSwieSI6MTU3LjYyNX0seyJ4Ijo4NTEuNzE4NzUsInkiOjE1Ny42MjV9XQ==" marker-start="url(#mermaid-figure-1-mermaid-1784245463901_er-oneOrMoreStart)" marker-end="url(#mermaid-figure-1-mermaid-1784245463901_er-oneOrMoreEnd)"></path></g><g class="edgeLabels"><g class="edgeLabel" transform="translate(349.8515625, 157.625)"><g class="label" data-id="id_entity-plants-0_entity-sampling_events-1_0" transform="translate(-33.8515625, -10.5)"><foreignobject width="67.703125" height="21">
+<div class="labelBkg" data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;">
+<span class="edgeLabel">
+<p>
+sampled in
+</p>
+</span>
+</div>
+</foreignobject></g></g><g class="edgeLabel" transform="translate(785.6484375, 157.625)"><g class="label" data-id="id_entity-sampling_events-1_entity-plots-2_1" transform="translate(-26.0703125, -10.5)"><foreignobject width="52.140625" height="21">
+<div class="labelBkg" data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;">
+<span class="edgeLabel">
+<p>
+samples
+</p>
+</span>
+</div>
+</foreignobject></g></g></g><g class="nodes"><g class="node default" id="entity-plants-0" transform="translate(142, 157.625)"><g style=""><path d="M-134 -149.625 L134 -149.625 L134 149.625 L-134 149.625" stroke="none" stroke-width="0" fill="#ECECFF"></path><path d="M-134 -149.625 C-77.60296777371566 -149.625, -21.205935547431324 -149.625, 134 -149.625 M-134 -149.625 C-51.384690429029334 -149.625, 31.230619141941332 -149.625, 134 -149.625 M134 -149.625 C134 -62.69233770082327, 134 24.240324598353453, 134 149.625 M134 -149.625 C134 -76.35164001795208, 134 -3.0782800359041573, 134 149.625 M134 149.625 C49.07878788587112 149.625, -35.842424228257755 149.625, -134 149.625 M134 149.625 C34.708880001072814 149.625, -64.58223999785437 149.625, -134 149.625 M-134 149.625 C-134 48.00388964285047, -134 -53.617220714299066, -134 -149.625 M-134 149.625 C-134 38.28404671090932, -134 -73.05690657818135, -134 -149.625" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g style="" class="row-rect-odd"><path d="M-134 -106.875 L134 -106.875 L134 -64.125 L-134 -64.125" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path><path d="M-134 -106.875 C-36.66034715642866 -106.875, 60.67930568714269 -106.875, 134 -106.875 M-134 -106.875 C-78.47580035497751 -106.875, -22.951600709955017 -106.875, 134 -106.875 M134 -106.875 C134 -92.14565505961575, 134 -77.4163101192315, 134 -64.125 M134 -106.875 C134 -93.72276503053443, 134 -80.57053006106888, 134 -64.125 M134 -64.125 C44.38029335704728 -64.125, -45.23941328590544 -64.125, -134 -64.125 M134 -64.125 C66.49456778360357 -64.125, -1.0108644327928573 -64.125, -134 -64.125 M-134 -64.125 C-134 -76.95630905883614, -134 -89.78761811767228, -134 -106.875 M-134 -64.125 C-134 -78.78787105332701, -134 -93.45074210665402, -134 -106.875" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g style="" class="row-rect-even"><path d="M-134 -64.125 L134 -64.125 L134 -21.375 L-134 -21.375" stroke="none" stroke-width="0" fill="hsl(240, 100%, 97.2745098039%)"></path><path d="M-134 -64.125 C-64.15046108014965 -64.125, 5.699077839700692 -64.125, 134 -64.125 M-134 -64.125 C-55.445600154836285 -64.125, 23.10879969032743 -64.125, 134 -64.125 M134 -64.125 C134 -53.32477543831857, 134 -42.524550876637136, 134 -21.375 M134 -64.125 C134 -52.876936224644176, 134 -41.62887244928835, 134 -21.375 M134 -21.375 C27.65621214817149 -21.375, -78.68757570365702 -21.375, -134 -21.375 M134 -21.375 C51.08407448980891 -21.375, -31.831851020382175 -21.375, -134 -21.375 M-134 -21.375 C-134 -35.7597110358178, -134 -50.144422071635596, -134 -64.125 M-134 -21.375 C-134 -34.64416433655357, -134 -47.913328673107145, -134 -64.125" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g style="" class="row-rect-odd"><path d="M-134 -21.375 L134 -21.375 L134 21.375 L-134 21.375" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path><path d="M-134 -21.375 C-41.85989307509827 -21.375, 50.28021384980346 -21.375, 134 -21.375 M-134 -21.375 C-78.87444047972329 -21.375, -23.74888095944658 -21.375, 134 -21.375 M134 -21.375 C134 -10.529056253131307, 134 0.31688749373738645, 134 21.375 M134 -21.375 C134 -12.792722263575484, 134 -4.210444527150969, 134 21.375 M134 21.375 C40.59911943415531 21.375, -52.801761131689375 21.375, -134 21.375 M134 21.375 C43.66247317601972 21.375, -46.67505364796057 21.375, -134 21.375 M-134 21.375 C-134 4.939618966943165, -134 -11.49576206611367, -134 -21.375 M-134 21.375 C-134 12.344046413176796, -134 3.313092826353593, -134 -21.375" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g style="" class="row-rect-even"><path d="M-134 21.375 L134 21.375 L134 64.125 L-134 64.125" stroke="none" stroke-width="0" fill="hsl(240, 100%, 97.2745098039%)"></path><path d="M-134 21.375 C-67.81971722267798 21.375, -1.6394344453559597 21.375, 134 21.375 M-134 21.375 C-44.69722328656654 21.375, 44.60555342686692 21.375, 134 21.375 M134 21.375 C134 32.463005387767524, 134 43.55101077553505, 134 64.125 M134 21.375 C134 34.640234721858924, 134 47.90546944371785, 134 64.125 M134 64.125 C31.130983534162752 64.125, -71.7380329316745 64.125, -134 64.125 M134 64.125 C26.830258654721973 64.125, -80.33948269055605 64.125, -134 64.125 M-134 64.125 C-134 52.31009991273696, -134 40.49519982547392, -134 21.375 M-134 64.125 C-134 47.418078296501676, -134 30.71115659300336, -134 21.375" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g style="" class="row-rect-odd"><path d="M-134 64.125 L134 64.125 L134 106.875 L-134 106.875" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path><path d="M-134 64.125 C-69.21423970940565 64.125, -4.428479418811293 64.125, 134 64.125 M-134 64.125 C-48.1141148672081 64.125, 37.7717702655838 64.125, 134 64.125 M134 64.125 C134 76.18044097239643, 134 88.23588194479287, 134 106.875 M134 64.125 C134 77.2400568014578, 134 90.3551136029156, 134 106.875 M134 106.875 C36.04479139285871 106.875, -61.910417214282575 106.875, -134 106.875 M134 106.875 C47.02562069321894 106.875, -39.94875861356212 106.875, -134 106.875 M-134 106.875 C-134 90.42202972048723, -134 73.96905944097446, -134 64.125 M-134 106.875 C-134 96.92333772542412, -134 86.97167545084824, -134 64.125" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g style="" class="row-rect-even"><path d="M-134 106.875 L134 106.875 L134 149.625 L-134 149.625" stroke="none" stroke-width="0" fill="hsl(240, 100%, 97.2745098039%)"></path><path d="M-134 106.875 C-35.22633282429031 106.875, 63.54733435141938 106.875, 134 106.875 M-134 106.875 C-41.4018019944517 106.875, 51.196396011096596 106.875, 134 106.875 M134 106.875 C134 118.1395731812353, 134 129.4041463624706, 134 149.625 M134 106.875 C134 116.08436870775782, 134 125.29373741551562, 134 149.625 M134 149.625 C62.98617210404345 149.625, -8.027655791913105 149.625, -134 149.625 M134 149.625 C27.275698272867373 149.625, -79.44860345426525 149.625, -134 149.625 M-134 149.625 C-134 133.7212559383872, -134 117.8175118767744, -134 106.875 M-134 149.625 C-134 134.28163921934586, -134 118.93827843869173, -134 106.875" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g class="label name" transform="translate(-21.3515625, -140.25)" style=""><foreignobject width="42.703125" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 138px; text-align: start;">
+<span class="nodeLabel">
+<p>
+plants
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-type" transform="translate(-121.5, -97.5)" style=""><foreignobject width="16.90625" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 117px; text-align: start;">
+<span class="nodeLabel">
+<p>
+int
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-name" transform="translate(-57.375, -97.5)" style=""><foreignobject width="133.421875" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 222px; text-align: start;">
+<span class="nodeLabel">
+<p>
+sampling_event_id
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-keys" transform="translate(101.046875, -97.5)" style=""><foreignobject width="20.453125" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 121px; text-align: start;">
+<span class="nodeLabel">
+<p>
+FK
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-comment" transform="translate(146.5, -97.5)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-type" transform="translate(-121.5, -54.75)" style=""><foreignobject width="39.125" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 136px; text-align: start;">
+<span class="nodeLabel">
+<p>
+string
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-name" transform="translate(-57.375, -54.75)" style=""><foreignobject width="73.828125" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 174px; text-align: start;">
+<span class="nodeLabel">
+<p>
+site_name
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-keys" transform="translate(101.046875, -54.75)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-comment" transform="translate(146.5, -54.75)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-type" transform="translate(-121.5, -12)" style=""><foreignobject width="16.90625" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 117px; text-align: start;">
+<span class="nodeLabel">
+<p>
+int
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-name" transform="translate(-57.375, -12)" style=""><foreignobject width="65.828125" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 162px; text-align: start;">
+<span class="nodeLabel">
+<p>
+plot_num
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-keys" transform="translate(101.046875, -12)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-comment" transform="translate(146.5, -12)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-type" transform="translate(-121.5, 30.75)" style=""><foreignobject width="16.90625" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 117px; text-align: start;">
+<span class="nodeLabel">
+<p>
+int
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-name" transform="translate(-57.375, 30.75)" style=""><foreignobject width="106.734375" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 207px; text-align: start;">
+<span class="nodeLabel">
+<p>
+individual_num
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-keys" transform="translate(101.046875, 30.75)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-comment" transform="translate(146.5, 30.75)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-type" transform="translate(-121.5, 73.5)" style=""><foreignobject width="30.25" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 130px; text-align: start;">
+<span class="nodeLabel">
+<p>
+float
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-name" transform="translate(-57.375, 73.5)" style=""><foreignobject width="105.8125" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 206px; text-align: start;">
+<span class="nodeLabel">
+<p>
+crown_wid_cm
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-keys" transform="translate(101.046875, 73.5)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-comment" transform="translate(146.5, 73.5)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-type" transform="translate(-121.5, 116.25)" style=""><foreignobject width="30.25" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 130px; text-align: start;">
+<span class="nodeLabel">
+<p>
+float
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-name" transform="translate(-57.375, 116.25)" style=""><foreignobject width="87.171875" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 181px; text-align: start;">
+<span class="nodeLabel">
+<p>
+plant_ht_cm
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-keys" transform="translate(101.046875, 116.25)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-comment" transform="translate(146.5, 116.25)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="divider"><path d="M-134 -106.875 C-33.70817963211704 -106.875, 66.58364073576593 -106.875, 134 -106.875 M-134 -106.875 C-47.10064542372501 -106.875, 39.798709152549975 -106.875, 134 -106.875" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g class="divider"><path d="M-69.875 -106.875 C-69.875 -13.613240509340343, -69.875 79.64851898131931, -69.875 149.625 M-69.875 -106.875 C-69.875 -53.744245255943206, -69.875 -0.6134905118864111, -69.875 149.625" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g class="divider"><path d="M88.546875 -106.875 C88.546875 -52.8172981666965, 88.546875 1.2404036666069942, 88.546875 149.625 M88.546875 -106.875 C88.546875 -45.19315131920468, 88.546875 16.48869736159064, 88.546875 149.625" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g class="divider"><path d="M-134 -106.875 C-58.53916737461017 -106.875, 16.921665250779654 -106.875, 134 -106.875 M-134 -106.875 C-36.13114962887468 -106.875, 61.73770074225064 -106.875, 134 -106.875" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g></g><g class="node default" id="entity-sampling_events-1" transform="translate(571.640625, 157.625)"><g style=""><path d="M-147.9375 -106.875 L147.9375 -106.875 L147.9375 106.875 L-147.9375 106.875" stroke="none" stroke-width="0" fill="#ECECFF"></path><path d="M-147.9375 -106.875 C-81.87361656422382 -106.875, -15.809733128447647 -106.875, 147.9375 -106.875 M-147.9375 -106.875 C-78.52086016699626 -106.875, -9.104220333992515 -106.875, 147.9375 -106.875 M147.9375 -106.875 C147.9375 -46.78650669147087, 147.9375 13.301986617058262, 147.9375 106.875 M147.9375 -106.875 C147.9375 -28.569466096328696, 147.9375 49.73606780734261, 147.9375 106.875 M147.9375 106.875 C45.41876910588344 106.875, -57.09996178823312 106.875, -147.9375 106.875 M147.9375 106.875 C44.53615189363619 106.875, -58.865196212727625 106.875, -147.9375 106.875 M-147.9375 106.875 C-147.9375 55.27618554652041, -147.9375 3.6773710930408186, -147.9375 -106.875 M-147.9375 106.875 C-147.9375 40.43957645603045, -147.9375 -25.995847087939097, -147.9375 -106.875" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g style="" class="row-rect-odd"><path d="M-147.9375 -64.125 L147.9375 -64.125 L147.9375 -21.375 L-147.9375 -21.375" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path><path d="M-147.9375 -64.125 C-46.95138309419619 -64.125, 54.03473381160762 -64.125, 147.9375 -64.125 M-147.9375 -64.125 C-62.433834521780824 -64.125, 23.069830956438352 -64.125, 147.9375 -64.125 M147.9375 -64.125 C147.9375 -47.42980909508459, 147.9375 -30.734618190169186, 147.9375 -21.375 M147.9375 -64.125 C147.9375 -54.20615262086281, 147.9375 -44.28730524172562, 147.9375 -21.375 M147.9375 -21.375 C38.86938444388066 -21.375, -70.19873111223868 -21.375, -147.9375 -21.375 M147.9375 -21.375 C46.72113451249707 -21.375, -54.49523097500585 -21.375, -147.9375 -21.375 M-147.9375 -21.375 C-147.9375 -32.64749484604346, -147.9375 -43.91998969208691, -147.9375 -64.125 M-147.9375 -21.375 C-147.9375 -35.922189285095186, -147.9375 -50.469378570190365, -147.9375 -64.125" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g style="" class="row-rect-even"><path d="M-147.9375 -21.375 L147.9375 -21.375 L147.9375 21.375 L-147.9375 21.375" stroke="none" stroke-width="0" fill="hsl(240, 100%, 97.2745098039%)"></path><path d="M-147.9375 -21.375 C-56.66567638927175 -21.375, 34.606147221456496 -21.375, 147.9375 -21.375 M-147.9375 -21.375 C-69.8101531729617 -21.375, 8.31719365407659 -21.375, 147.9375 -21.375 M147.9375 -21.375 C147.9375 -10.647025710615821, 147.9375 0.08094857876835704, 147.9375 21.375 M147.9375 -21.375 C147.9375 -9.20611579218347, 147.9375 2.962768415633061, 147.9375 21.375 M147.9375 21.375 C86.93047307030454 21.375, 25.9234461406091 21.375, -147.9375 21.375 M147.9375 21.375 C86.02478508329617 21.375, 24.112070166592332 21.375, -147.9375 21.375 M-147.9375 21.375 C-147.9375 12.23513989534361, -147.9375 3.0952797906872185, -147.9375 -21.375 M-147.9375 21.375 C-147.9375 7.222755737501307, -147.9375 -6.929488524997385, -147.9375 -21.375" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g style="" class="row-rect-odd"><path d="M-147.9375 21.375 L147.9375 21.375 L147.9375 64.125 L-147.9375 64.125" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path><path d="M-147.9375 21.375 C-68.95424669819286 21.375, 10.029006603614278 21.375, 147.9375 21.375 M-147.9375 21.375 C-45.884435953515094 21.375, 56.16862809296981 21.375, 147.9375 21.375 M147.9375 21.375 C147.9375 33.45905558843787, 147.9375 45.54311117687574, 147.9375 64.125 M147.9375 21.375 C147.9375 34.77699184981529, 147.9375 48.17898369963058, 147.9375 64.125 M147.9375 64.125 C45.06447092035822 64.125, -57.808558159283564 64.125, -147.9375 64.125 M147.9375 64.125 C50.8192910321669 64.125, -46.298917935666196 64.125, -147.9375 64.125 M-147.9375 64.125 C-147.9375 47.10063902807302, -147.9375 30.076278056146045, -147.9375 21.375 M-147.9375 64.125 C-147.9375 54.27410926372217, -147.9375 44.42321852744434, -147.9375 21.375" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g style="" class="row-rect-even"><path d="M-147.9375 64.125 L147.9375 64.125 L147.9375 106.875 L-147.9375 106.875" stroke="none" stroke-width="0" fill="hsl(240, 100%, 97.2745098039%)"></path><path d="M-147.9375 64.125 C-37.124011881845334 64.125, 73.68947623630933 64.125, 147.9375 64.125 M-147.9375 64.125 C-66.85068138909972 64.125, 14.236137221800561 64.125, 147.9375 64.125 M147.9375 64.125 C147.9375 80.28841151169198, 147.9375 96.45182302338395, 147.9375 106.875 M147.9375 64.125 C147.9375 78.97743539439004, 147.9375 93.8298707887801, 147.9375 106.875 M147.9375 106.875 C48.660505717899085 106.875, -50.61648856420183 106.875, -147.9375 106.875 M147.9375 106.875 C62.98555146376613 106.875, -21.966397072467743 106.875, -147.9375 106.875 M-147.9375 106.875 C-147.9375 95.80495360854145, -147.9375 84.7349072170829, -147.9375 64.125 M-147.9375 106.875 C-147.9375 98.05929360970809, -147.9375 89.24358721941618, -147.9375 64.125" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g class="label name" transform="translate(-60.0390625, -97.5)" style=""><foreignobject width="120.078125" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 208px; text-align: start;">
+<span class="nodeLabel">
+<p>
+sampling_events
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-type" transform="translate(-135.4375, -54.75)" style=""><foreignobject width="16.90625" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 117px; text-align: start;">
+<span class="nodeLabel">
+<p>
+int
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-name" transform="translate(-44.328125, -54.75)" style=""><foreignobject width="133.421875" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 222px; text-align: start;">
+<span class="nodeLabel">
+<p>
+sampling_event_id
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-keys" transform="translate(114.09375, -54.75)" style=""><foreignobject width="21.34375" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 121px; text-align: start;">
+<span class="nodeLabel">
+<p>
+PK
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-comment" transform="translate(160.4375, -54.75)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-type" transform="translate(-135.4375, -12)" style=""><foreignobject width="16.90625" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 117px; text-align: start;">
+<span class="nodeLabel">
+<p>
+int
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-name" transform="translate(-44.328125, -12)" style=""><foreignobject width="46.25" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 146px; text-align: start;">
+<span class="nodeLabel">
+<p>
+site_id
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-keys" transform="translate(114.09375, -12)" style=""><foreignobject width="20.453125" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 121px; text-align: start;">
+<span class="nodeLabel">
+<p>
+FK
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-comment" transform="translate(160.4375, -12)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-type" transform="translate(-135.4375, 30.75)" style=""><foreignobject width="66.109375" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 160px; text-align: start;">
+<span class="nodeLabel">
+<p>
+dateTime
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-name" transform="translate(-44.328125, 30.75)" style=""><foreignobject width="91.625" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 180px; text-align: start;">
+<span class="nodeLabel">
+<p>
+sample_date
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-keys" transform="translate(114.09375, 30.75)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-comment" transform="translate(160.4375, 30.75)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-type" transform="translate(-135.4375, 73.5)" style=""><foreignobject width="39.125" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 136px; text-align: start;">
+<span class="nodeLabel">
+<p>
+string
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-name" transform="translate(-44.328125, 73.5)" style=""><foreignobject width="62.25" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 156px; text-align: start;">
+<span class="nodeLabel">
+<p>
+observer
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-keys" transform="translate(114.09375, 73.5)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-comment" transform="translate(160.4375, 73.5)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="divider"><path d="M-147.9375 -64.125 C-37.90257718628324 -64.125, 72.13234562743352 -64.125, 147.9375 -64.125 M-147.9375 -64.125 C-53.36786565169449 -64.125, 41.201768696611026 -64.125, 147.9375 -64.125" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g class="divider"><path d="M-56.828125 -64.125 C-56.828125 -13.13568516521216, -56.828125 37.85362966957568, -56.828125 106.875 M-56.828125 -64.125 C-56.828125 -26.064440251529895, -56.828125 11.99611949694021, -56.828125 106.875" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g class="divider"><path d="M101.59375 -64.125 C101.59375 -13.937569340549175, 101.59375 36.24986131890165, 101.59375 106.875 M101.59375 -64.125 C101.59375 -10.428406810599483, 101.59375 43.26818637880103, 101.59375 106.875" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g class="divider"><path d="M-147.9375 -64.125 C-61.68742419787495 -64.125, 24.562651604250107 -64.125, 147.9375 -64.125 M-147.9375 -64.125 C-34.52614331600405 -64.125, 78.8852133679919 -64.125, 147.9375 -64.125" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g></g><g class="node default" id="entity-plots-2" transform="translate(967.4921875, 157.625)"><g style=""><path d="M-115.7734375 -149.625 L115.7734375 -149.625 L115.7734375 149.625 L-115.7734375 149.625" stroke="none" stroke-width="0" fill="#ECECFF"></path><path d="M-115.7734375 -149.625 C-63.68058862009942 -149.625, -11.587739740198842 -149.625, 115.7734375 -149.625 M-115.7734375 -149.625 C-58.767786661777485 -149.625, -1.7621358235549707 -149.625, 115.7734375 -149.625 M115.7734375 -149.625 C115.7734375 -57.25468136635182, 115.7734375 35.115637267296364, 115.7734375 149.625 M115.7734375 -149.625 C115.7734375 -46.39433824665821, 115.7734375 56.836323506683584, 115.7734375 149.625 M115.7734375 149.625 C38.61020284438956 149.625, -38.553031811220876 149.625, -115.7734375 149.625 M115.7734375 149.625 C44.884883414769874 149.625, -26.003670670460252 149.625, -115.7734375 149.625 M-115.7734375 149.625 C-115.7734375 88.85914186795034, -115.7734375 28.09328373590067, -115.7734375 -149.625 M-115.7734375 149.625 C-115.7734375 86.4451127588802, -115.7734375 23.2652255177604, -115.7734375 -149.625" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g style="" class="row-rect-odd"><path d="M-115.7734375 -106.875 L115.7734375 -106.875 L115.7734375 -64.125 L-115.7734375 -64.125" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path><path d="M-115.7734375 -106.875 C-31.649105897598503 -106.875, 52.475225704802995 -106.875, 115.7734375 -106.875 M-115.7734375 -106.875 C-44.75997221614618 -106.875, 26.253493067707637 -106.875, 115.7734375 -106.875 M115.7734375 -106.875 C115.7734375 -96.0298767292088, 115.7734375 -85.18475345841759, 115.7734375 -64.125 M115.7734375 -106.875 C115.7734375 -96.03733826946186, 115.7734375 -85.19967653892371, 115.7734375 -64.125 M115.7734375 -64.125 C39.20556537183418 -64.125, -37.362306756331634 -64.125, -115.7734375 -64.125 M115.7734375 -64.125 C30.10874659113911 -64.125, -55.55594431772178 -64.125, -115.7734375 -64.125 M-115.7734375 -64.125 C-115.7734375 -80.43713621837247, -115.7734375 -96.74927243674496, -115.7734375 -106.875 M-115.7734375 -64.125 C-115.7734375 -73.60889620331598, -115.7734375 -83.09279240663196, -115.7734375 -106.875" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g style="" class="row-rect-even"><path d="M-115.7734375 -64.125 L115.7734375 -64.125 L115.7734375 -21.375 L-115.7734375 -21.375" stroke="none" stroke-width="0" fill="hsl(240, 100%, 97.2745098039%)"></path><path d="M-115.7734375 -64.125 C-54.50340943707615 -64.125, 6.766618625847698 -64.125, 115.7734375 -64.125 M-115.7734375 -64.125 C-39.51771575191289 -64.125, 36.73800599617422 -64.125, 115.7734375 -64.125 M115.7734375 -64.125 C115.7734375 -48.30493103422856, 115.7734375 -32.48486206845711, 115.7734375 -21.375 M115.7734375 -64.125 C115.7734375 -49.21480375793852, 115.7734375 -34.30460751587704, 115.7734375 -21.375 M115.7734375 -21.375 C33.072505895679996 -21.375, -49.62842570864001 -21.375, -115.7734375 -21.375 M115.7734375 -21.375 C67.53610833611785 -21.375, 19.29877917223571 -21.375, -115.7734375 -21.375 M-115.7734375 -21.375 C-115.7734375 -38.1856634908017, -115.7734375 -54.996326981603396, -115.7734375 -64.125 M-115.7734375 -21.375 C-115.7734375 -35.21559856455669, -115.7734375 -49.056197129113386, -115.7734375 -64.125" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g style="" class="row-rect-odd"><path d="M-115.7734375 -21.375 L115.7734375 -21.375 L115.7734375 21.375 L-115.7734375 21.375" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path><path d="M-115.7734375 -21.375 C-57.53868948071996 -21.375, 0.6960585385600808 -21.375, 115.7734375 -21.375 M-115.7734375 -21.375 C-46.636863282275584 -21.375, 22.49971093544883 -21.375, 115.7734375 -21.375 M115.7734375 -21.375 C115.7734375 -8.987302133545281, 115.7734375 3.4003957329094376, 115.7734375 21.375 M115.7734375 -21.375 C115.7734375 -8.400194395104094, 115.7734375 4.5746112097918115, 115.7734375 21.375 M115.7734375 21.375 C39.07520183179453 21.375, -37.62303383641094 21.375, -115.7734375 21.375 M115.7734375 21.375 C32.35569996647526 21.375, -51.06203756704949 21.375, -115.7734375 21.375 M-115.7734375 21.375 C-115.7734375 4.829087408656484, -115.7734375 -11.716825182687032, -115.7734375 -21.375 M-115.7734375 21.375 C-115.7734375 8.922702818183753, -115.7734375 -3.5295943636324942, -115.7734375 -21.375" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g style="" class="row-rect-even"><path d="M-115.7734375 21.375 L115.7734375 21.375 L115.7734375 64.125 L-115.7734375 64.125" stroke="none" stroke-width="0" fill="hsl(240, 100%, 97.2745098039%)"></path><path d="M-115.7734375 21.375 C-51.33508429203113 21.375, 13.103268915937747 21.375, 115.7734375 21.375 M-115.7734375 21.375 C-44.15502653524484 21.375, 27.463384429510313 21.375, 115.7734375 21.375 M115.7734375 21.375 C115.7734375 35.83562290354829, 115.7734375 50.29624580709658, 115.7734375 64.125 M115.7734375 21.375 C115.7734375 35.54299397730631, 115.7734375 49.71098795461262, 115.7734375 64.125 M115.7734375 64.125 C32.992941756521404 64.125, -49.78755398695719 64.125, -115.7734375 64.125 M115.7734375 64.125 C26.966846509604565 64.125, -61.83974448079087 64.125, -115.7734375 64.125 M-115.7734375 64.125 C-115.7734375 48.837635165360204, -115.7734375 33.55027033072041, -115.7734375 21.375 M-115.7734375 64.125 C-115.7734375 47.773323695139936, -115.7734375 31.421647390279865, -115.7734375 21.375" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g style="" class="row-rect-odd"><path d="M-115.7734375 64.125 L115.7734375 64.125 L115.7734375 106.875 L-115.7734375 106.875" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path><path d="M-115.7734375 64.125 C-46.10665527714272 64.125, 23.560126945714558 64.125, 115.7734375 64.125 M-115.7734375 64.125 C-32.68103069640604 64.125, 50.41137610718792 64.125, 115.7734375 64.125 M115.7734375 64.125 C115.7734375 73.27621224654276, 115.7734375 82.42742449308551, 115.7734375 106.875 M115.7734375 64.125 C115.7734375 78.8612368504782, 115.7734375 93.59747370095643, 115.7734375 106.875 M115.7734375 106.875 C56.62234975163263 106.875, -2.5287379967347334 106.875, -115.7734375 106.875 M115.7734375 106.875 C48.57484446964925 106.875, -18.6237485607015 106.875, -115.7734375 106.875 M-115.7734375 106.875 C-115.7734375 90.36683832437127, -115.7734375 73.85867664874255, -115.7734375 64.125 M-115.7734375 106.875 C-115.7734375 96.25986342451846, -115.7734375 85.64472684903691, -115.7734375 64.125" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g style="" class="row-rect-even"><path d="M-115.7734375 106.875 L115.7734375 106.875 L115.7734375 149.625 L-115.7734375 149.625" stroke="none" stroke-width="0" fill="hsl(240, 100%, 97.2745098039%)"></path><path d="M-115.7734375 106.875 C-33.45549300773382 106.875, 48.86245148453236 106.875, 115.7734375 106.875 M-115.7734375 106.875 C-62.67219131387201 106.875, -9.570945127744025 106.875, 115.7734375 106.875 M115.7734375 106.875 C115.7734375 117.5464427772589, 115.7734375 128.2178855545178, 115.7734375 149.625 M115.7734375 106.875 C115.7734375 121.97664334009902, 115.7734375 137.07828668019803, 115.7734375 149.625 M115.7734375 149.625 C23.46657876214701 149.625, -68.84027997570598 149.625, -115.7734375 149.625 M115.7734375 149.625 C23.69164093407838 149.625, -68.39015563184324 149.625, -115.7734375 149.625 M-115.7734375 149.625 C-115.7734375 138.12844503360517, -115.7734375 126.63189006721035, -115.7734375 106.875 M-115.7734375 149.625 C-115.7734375 133.7974624745489, -115.7734375 117.9699249490978, -115.7734375 106.875" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g class="label name" transform="translate(-16.8984375, -140.25)" style=""><foreignobject width="33.796875" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 131px; text-align: start;">
+<span class="nodeLabel">
+<p>
+plots
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-type" transform="translate(-103.2734375, -97.5)" style=""><foreignobject width="16.90625" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 117px; text-align: start;">
+<span class="nodeLabel">
+<p>
+int
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-name" transform="translate(-39.1484375, -97.5)" style=""><foreignobject width="47.15625" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 145px; text-align: start;">
+<span class="nodeLabel">
+<p>
+plot_id
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-keys" transform="translate(81.9296875, -97.5)" style=""><foreignobject width="21.34375" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 121px; text-align: start;">
+<span class="nodeLabel">
+<p>
+PK
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-comment" transform="translate(128.2734375, -97.5)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-type" transform="translate(-103.2734375, -54.75)" style=""><foreignobject width="39.125" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 136px; text-align: start;">
+<span class="nodeLabel">
+<p>
+string
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-name" transform="translate(-39.1484375, -54.75)" style=""><foreignobject width="73.828125" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 174px; text-align: start;">
+<span class="nodeLabel">
+<p>
+site_name
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-keys" transform="translate(81.9296875, -54.75)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-comment" transform="translate(128.2734375, -54.75)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-type" transform="translate(-103.2734375, -12)" style=""><foreignobject width="16.90625" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 117px; text-align: start;">
+<span class="nodeLabel">
+<p>
+int
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-name" transform="translate(-39.1484375, -12)" style=""><foreignobject width="65.828125" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 162px; text-align: start;">
+<span class="nodeLabel">
+<p>
+plot_num
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-keys" transform="translate(81.9296875, -12)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-comment" transform="translate(128.2734375, -12)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-type" transform="translate(-103.2734375, 30.75)" style=""><foreignobject width="30.25" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 130px; text-align: start;">
+<span class="nodeLabel">
+<p>
+float
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-name" transform="translate(-39.1484375, 30.75)" style=""><foreignobject width="82.71875" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 183px; text-align: start;">
+<span class="nodeLabel">
+<p>
+centroid_lat
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-keys" transform="translate(81.9296875, 30.75)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-comment" transform="translate(128.2734375, 30.75)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-type" transform="translate(-103.2734375, 73.5)" style=""><foreignobject width="30.25" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 130px; text-align: start;">
+<span class="nodeLabel">
+<p>
+float
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-name" transform="translate(-39.1484375, 73.5)" style=""><foreignobject width="96.078125" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 189px; text-align: start;">
+<span class="nodeLabel">
+<p>
+centroid_long
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-keys" transform="translate(81.9296875, 73.5)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-comment" transform="translate(128.2734375, 73.5)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-type" transform="translate(-103.2734375, 116.25)" style=""><foreignobject width="39.125" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 136px; text-align: start;">
+<span class="nodeLabel">
+<p>
+string
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-name" transform="translate(-39.1484375, 116.25)" style=""><foreignobject width="67.59375" height="24">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 161px; text-align: start;">
+<span class="nodeLabel">
+<p>
+treatment
+</p>
+</span>
+</div>
+</foreignobject></g><g class="label attribute-keys" transform="translate(81.9296875, 116.25)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="label attribute-comment" transform="translate(128.2734375, 116.25)" style=""><foreignobject width="0" height="0">
+<div data-xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+<span class="nodeLabel"></span>
+</div>
+</foreignobject></g><g class="divider"><path d="M-115.7734375 -106.875 C-44.92529583391526 -106.875, 25.922845832169486 -106.875, 115.7734375 -106.875 M-115.7734375 -106.875 C-28.961156474906318 -106.875, 57.851124550187365 -106.875, 115.7734375 -106.875" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g class="divider"><path d="M-51.6484375 -106.875 C-51.6484375 -26.563014265389967, -51.6484375 53.748971469220066, -51.6484375 149.625 M-51.6484375 -106.875 C-51.6484375 -54.879355476847884, -51.6484375 -2.8837109536957684, -51.6484375 149.625" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g class="divider"><path d="M69.4296875 -106.875 C69.4296875 -37.301226233454855, 69.4296875 32.27254753309029, 69.4296875 149.625 M69.4296875 -106.875 C69.4296875 -13.717231915286206, 69.4296875 79.44053616942759, 69.4296875 149.625" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g><g class="divider"><path d="M-115.7734375 -106.875 C-40.21173486924947 -106.875, 35.34996776150106 -106.875, 115.7734375 -106.875 M-115.7734375 -106.875 C-35.04308737469849 -106.875, 45.687262750603026 -106.875, 115.7734375 -106.875" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path></g></g></g></g></g>
+</svg>
 </div>
 <p></p></figure><p></p>
 </div>
