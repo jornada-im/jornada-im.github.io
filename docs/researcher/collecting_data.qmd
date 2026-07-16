@@ -2,6 +2,7 @@
 title: Collecting and managing data
 date: last-modified
 from: markdown+emoji
+# mermaid-format: svg # png - this allows rendering of mermaid in advance
 ---
 
 ## Overview
@@ -182,9 +183,7 @@ In this example most of those issues have been corrected.
 
 ## A relational database
 
-Relational databases are collections of data tables that follow specific rules and have relationships connecting them to each other. In each table, rows hold a specific kind of data record referring to entities like observations, study sites, or organisms, and columns hold the variables (or "attributes") for the records. Records in different tables are related to each other via values in shared columns ("foreign keys"). The tables, columns, and relationships are defined in a database **schema**. Databases are a consistent and space-efficient way to store multidimensional data. Here's a diagram of a relational database schema with three tables: 
-
-(Note this only works in new versions of Mermaid - Quarto is a little behind and will be up to date in 1.9. Preview [here](https://mermaid.live/edit#pako:eNqFUk1rwzAM_StG57Skado4ua4MRncoY6cRCG6tpmaxHWynbEvz35ePZrTZYL4Y6UnvPVmu4aA5QgJoNoLlhkmSKtIeLgwenNCKPL8Mmb3QkllLGj2bXS7EMlkWQuUZnlE5SxKSQsmMI_qYwn1HPYSECOUmfZng5HE74taZFmnLuDgLXrEiU5WcgLbEg0A7Zo-FZm5UyvIh3QzX1GJzaZ3XpCx077eHR6Zp7T-ed9tbvGN8uh2EM4evQuJVY9OGkzH03qI5o7kzPDir_6DeTd_Iil-UziBzsjV45QQPciM4JM5U6IFEI1kXQi-QgjuhxBS6xXFm3rutdT0lU29ay7HN6Co_QXJkhW2jquxGu36Vn6xBxdE86Eo5SCLac0BSwwckQbier4LYj-lq4UdhEHjwCUlM53QVhP4iWi6XMQ3DxoOvXtSfRwsaRHQdUxpHlC6C5ht4rtd_))
+Relational databases are collections of data tables that follow specific rules and have relationships connecting them to each other. In each table, rows hold a specific kind of data record referring to entities like observations, study sites, or organisms, and columns hold the variables (or "attributes") for the records. Records in different tables are related to each other via values in shared columns ("foreign keys"). The tables, columns, and relationships are defined in a database **schema**. Databases are a consistent and space-efficient way to store multidimensional data. Here's a diagram of a relational database schema with three tables:
 
 ```{mermaid}
 erDiagram 
@@ -214,6 +213,8 @@ erDiagram
       string treatment
     }
 ```
+
+(If rendering breaks, preview [here](https://mermaid.live/edit#pako:eNqFUk1rwzAM_StG57Skado4ua4MRncoY6cRCG6tpmaxHWynbEvz35ePZrTZYL4Y6UnvPVmu4aA5QgJoNoLlhkmSKtIeLgwenNCKPL8Mmb3QkllLGj2bXS7EMlkWQuUZnlE5SxKSQsmMI_qYwn1HPYSECOUmfZng5HE74taZFmnLuDgLXrEiU5WcgLbEg0A7Zo-FZm5UyvIh3QzX1GJzaZ3XpCx077eHR6Zp7T-ed9tbvGN8uh2EM4evQuJVY9OGkzH03qI5o7kzPDir_6DeTd_Iil-UziBzsjV45QQPciM4JM5U6IFEI1kXQi-QgjuhxBS6xXFm3rutdT0lU29ay7HN6Co_QXJkhW2jquxGu36Vn6xBxdE86Eo5SCLac0BSwwckQbier4LYj-lq4UdhEHjwCUlM53QVhP4iWi6XMQ3DxoOvXtSfRwsaRHQdUxpHlC6C5ht4rtd_))
 
 The `plants` table holds records of measured plant dimensions and related variables, which are connected to a specific sampling event. The `sampling_event` table holds information about those events, including date, observer, and the plot sampled. The `plots` table is connected to `sampling_event` by the `plot_id` field and stores information about the name, location and treatment of the research plots. 
 
@@ -251,7 +252,7 @@ Keep in mind that wide/untidy format isn't always bad. Wide tables tend to take 
 3. Maximize the information for each observation.
 :::
 
-### File formats
+### File format
 
 The **file format** of your data refers to the physical file type that your data are stored in on a disk or other storage medium. File formats usually have a specification (or set or rules), a name, and a file extension. Some examples would be a delimited text file (file extension `.txt`, or others), a Microsoft Excel file (file extension `.xls` or `.xlsx`), or a JPEG image (file extension `.jpg` or `.jpeg`). File formats usually depend on the data content or source, and are sometimes specific to particular data uses or software programs. Whenever possible, try to choose file formats that are (a) simple to use and understand, and (b) accessible and familiar to your community or collaborators. For tabular data we usually recommend delimited text files, like the trusty **CSV**, whenever possible, but there are other choices to consider, and pros and cons for each, below. 
 

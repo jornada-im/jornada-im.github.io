@@ -6,9 +6,9 @@ from: markdown+emoji
 
 ## Overview
 
-:construction: **This chapter is under construction.**
+As you collect and work with your research data, you will soon find that the observations and measured values themselves are not the only things that matter. A large amount of contextual information about the data and your research process accumulates and needs to be preserved. For example, if you are collecting air temperature data, are you measuring in degrees Celsius, Fahrenheit or Kelvin? And how far above ground are you taking the measurements? These pieces of contextual information are called **metadata**. Metadata are data that describe other data, and, although they may appear secondary in importance to the observations you are collecting in the field or lab, they are absolutely vital to understanding and re-using data after they are collected.
 
-As you collect and work with your research data, you will soon find that the observations and measured values themselves are not the only things that matter. A large amount of contextual information about the data and your research process accumulates and needs to be preserved. For example, if you are collecting air temperature data, are you measuring in degrees Celsius, Fahrenheit or Kelvin? And how far above ground are you taking the measurements? These pieces of contextual information are called **metadata**. Metadata are data that describe other data, and, although they may appear secondary in importance to the observations you are collecting in the field or lab, they are absolutely vital to understanding and re-using data after they are collected. 
+![Understandable and useful data, like the above-water portion of an iceberg, are supported by deep, descriptive metadata (the submerged iceberg). Image credit [AWeith](https://commons.wikimedia.org/wiki/User:AWeith) on Wikimedia Commons.](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Iceberg_in_the_Arctic_with_its_underside_exposed.jpg/960px-Iceberg_in_the_Arctic_with_its_underside_exposed.jpg){width=400px fig-alt="An iceberg." #fig-metadata_ice}
 
 ## What is metadata?
 
@@ -226,4 +226,98 @@ You may also want to include an **intellectual rights** free text field to clear
 
 ## Metadata standards
 
-The question now is, where do you put all of the information above? There are quite a few metadata formats suitable for environmental datasets. Choosing one comes down to things like level of detail, ease of use, and community support for the standard. At the Jornada we recommend using the [Ecological Metadata Language (EML)](https://eml.ecoinformatics.org/), which is a standard developed by the ecological and environmental sciences community [@EML_2019] and required by our closest repository partner, the [Environmental Data Initiative (EDI)]({{< var url.edi >}}).
+As you can see in the section above, there are many important metadata fields with recommendations or standards applicable to each. The question now is, what kind of container or document can you keep this information in and make it understandable and useful? We recommend using standardized, community-supported metadata formats for this, and ideally they should be human- and machine-readable. Luckily, there are quite a few metadata formats that fit the bill for environmental datasets. At the Jornada we recommend using a standard metadata format called [Ecological Metadata Language (EML)](https://eml.ecoinformatics.org/) to describe most data, but other metadata formats may be of interest. Choosing one comes down to things like level of detail, applicability to your scientific or data domain, ease of use, and community expectations. Below are a few standards commonly used for the environmental sciences and research publishing.  Sometimes the metadata standards below are related or used together, so its a good idea to know a little about more than one.
+
+::: {.panel-tabset}
+
+## EML
+
+::: {style="float: right; margin: 5px;"}
+![](https://docs.ropensci.org/EML/logo.svg){width=150}
+:::
+
+The Ecological Metadata Language (EML) was developed by the ecological and environmental sciences community [@EML_2019] and is the metadata format required by our closest repository partner, the [Environmental Data Initiative (EDI)]({{< var url.edi >}}). The EML standard is a dialect of XML, which is a markup language designed to be both human- and machine-readable. EML is implemented with a very detailed schema (a set of rules for metadata) that allows one to create metadata documents that are  flexible, modular and extensible, making them useful in many environmental data management and publishing applications.
+
+**Resources:**
+
+* The EML standard [documentation](https://eml.ecoinformatics.org/), currently at version 2.2, and the [schema browser](https://eml.ecoinformatics.org/schema/).
+* The LTER Network and EDI repository collaboratively maintain the [Dataset Preparation Guides](https://ediorg.github.io/data-package-best-practices), which has the "Best Practices for Dataset Metadata in Ecological Metadata Language" document with extensive documentation for using EML to describe environmental datasets.
+* The [ezEML metadata editor]({{< var url.ezeml >}}), created at the EDI repository, is the Jornada's preferred method for preparing EML documents. More on this in the next chapter.
+* The [EML R package](https://docs.ropensci.org/EML/) is quite useful for building EML documents with R.
+
+## DublinCore
+
+::: {style="float: right; margin: 5px;"}
+![](https://upload.wikimedia.org/wikipedia/commons/7/7e/DCMI-logo.svg){width=150}
+:::
+
+[Dublin Core (DC)](https://en.wikipedia.org/wiki/Dublin_Core) is one of the oldest and most widely adopted metadata standards, originally developed in 1995 by the [Dublin Core Metadata Initiative (DCMI)](https://www.dublincore.org/) for describing web resources simply and generically. The standard is domain-agnostic (not specific to scientific data) and consists of fifteen broad metadata elements (e.g., title, creator, date, subject) that can be used as-is or extended/qualified for specific applications. Dublin Core is often used as a baseline vocabulary that more specialized standards — including Darwin Core — build upon. It is formally standardized as ISO 15836.
+
+**Resources:**
+
+* [DCMI Metadata Terms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/)
+* [DublinCore User Guides](https://www.dublincore.org/resources/userguide/)
+
+## ISO 19115+
+
+::: {style="float: right; margin: 5px;"}
+![](https://upload.wikimedia.org/wikipedia/commons/e/e3/ISO_Logo_%28Red_square%29.svg){width=150}
+:::
+
+ISO 19115 is the international standard for describing geospatial data and services, maintained by Technical Committee 211 of the [International Standards Organization](https://www.iso.org). It describes a dataset's spatial and temporal extent, coordinate reference system, data quality, and provenance (or lineage). The standard is published in parts: ISO 19115-1 defines the core metadata elements, ISO 19115-2 extends this for imagery and gridded (raster) data, and ISO 19115-3 specifies the XML implementation (and is the successor to the ISO 19139 standard). Given its size and complexity, most organizations implement a national or thematic profile instead of the full standard — examples include the North American Profile (US/Canada) and Europe's INSPIRE metadata regulation. The most recent ISO 19115 Standard is [here](https://www.iso.org/standard/53798.html), but ISO standards are not freely available. You can find more useful information at open standards organizations, government agencies, or geospatial data applications that interpret and implement the ISO 19115 standards.
+
+**Resources**
+
+* The [Open Geospatial Consortium](https://www.ogc.org/) develops and maintains a long list of geospatial data standards, many of which are mapped to the ISO 19115 or related standards.
+* Many governments develop and promote geospatial data and metadata standards that are referenced to ISO 19115. The [Federal Geographic Data Committee (FGDC)](https://www.fgdc.gov/metadata) does this for the U.S., and the [EU INSPIRE program](https://knowledge-base.inspire.ec.europa.eu/index_en) for Europe.
+* Major geospatial data applications have metadata editing and exchange capabilities that are referenced to ISO standards. This includes implementations in [ESRI ArcGIS](https://www.esri.com/en-us/arcgis/geospatial-platform/overview) and the open-source [QGIS](https://qgis.org) ([metadata docs](https://docs.qgis.org/3.44/en/docs/user_manual/introduction/general_tools.html#metadata)) platform and its [plugins](https://plugins.qgis.org/search/?q=Metadata).
+
+## DarwinCore
+
+::: {style="float: right; margin: 5px;"}
+![](https://static.tdwg.org/logo/Colour/SVG/TDWG-Logo_Hex-Sticker_frame_blue.svg){width=150}
+:::
+
+Darwin Core (DwC) is a data model and metadata standard for sharing biodiversity data, maintained by [Biodiversity Information Standards (TDWG)](https://www.tdwg.org/). Built as an extension of Dublin Core, it defines a glossary of terms centered on taxa and their occurrence in nature, as documented by observations, specimens, and samples. DwC underlies the vast majority of species-occurrence records shared through the [Global Biodiversity Information Facility (GBIF)](https://www.gbif.org), typically packaged as a Darwin Core Archive (DwC-A). It pairs naturally with EML: EML describes the dataset as a whole, while DwC describes the individual occurrence records within it. There is now a more extensive standard, the [DwC Data Package](https://dwc.tdwg.org/dp/), that is suitable for packaging a greater variety of tabular data, including sampling events, with DwC occurrence data.
+
+**Resources:**
+
+* Many resources are available on the [TDWG DwC group](https://dwc.tdwg.org/), including a [DarwinCore Quick Reference Guide](https://dwc.tdwg.org/terms/).
+* GBIF publishes [several kinds of biodiversity data](https://www.gbif.org/dataset-classes) and has [extensive tools and documentation](https://ipt.gbif.org/manual/en/ipt/latest/) for preparing DwC datasets (including DwC-A and DwC-DP)
+
+## MIxS/NMDC
+
+::: {style="float: right; margin: 5px;"}
+![](https://microbiomedata.org/wp-content/uploads/sites/2/2019/08/logo-img.svg){width=150}
+:::
+
+Molecular and microbiome data, including amplicons, genomes, metagenomes, transcriptomes, and the like, are widely used and integrate many kinds of data and metadata. In addition to raw sequence data, sampling information, environmental context, laboratory extraction/amplification, sequencing method, and bioinformatics pipelines all generate important metadata to describe in derived datasets and research results. The emerging standards for this metadata, at least in environmental science contexts, seem to be [MIxS templates](https://genomicsstandardsconsortium.github.io/mixs/) and the [NMDC Metadata Schema](https://microbiomedata.github.io/nmdc-schema/). 
+
+**Resources:**
+
+* The Jornada IM team doesn't have much to recommend yet, but we are working on some template ideas... stay tuned.
+
+## Schema.org
+
+::: {style="float: right; margin: 5px;"}
+![](https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg){width=150}
+:::
+
+[Schema.org](https://schema.org) is a multi-purpose, collaboratively maintained vocabulary (backed by Google, Microsoft, Yahoo, and Yandex) for embedding structured metadata directly into web pages. The [Schema.org Dataset](https://schema.org/Dataset) type is a lightweight set of properties — name, description, creator, distribution, license, and similar — designed to make datasets discoverable through search engines, most notably [Google Dataset Search](https://datasetsearch.research.google.com/). It does not provide detailed documentation needed for scientific reuse, but is typically embedded as JSON-LD in a dataset's landing page. Repositories often generate and embed this metadata automatically by summarizing a more comprehensive standard like EML.
+
+**Resources:**
+
+* The [schema.org/Dataset](https://schema.org/Dataset) specification
+* The [Science on Schema.org ESIP cluster](https://github.com/ESIPFed/science-on-schema.org) provides guidance on creating and using schema.org/Dataset metadata for life sciences applications.
+
+## Croissant
+
+[Croissant](https://mlcommons.org/working-groups/data/croissant/) is a metadata format released in 2024 by [MLCommons](https://mlcommons.org) to make datasets ready for machine learning (ML) use. It is encoded as JSON-LD and extends the schema.org Dataset vocabulary with elements describing a dataset's file resources, internal record/field structure, and default ML semantics (e.g., splits, labels), allowing datasets to be loaded directly into frameworks like PyTorch, TensorFlow, or JAX without custom preprocessing code. It's increasingly supported by repositories and ML platforms, including [Hugging Face](https://huggingface.co), [Kaggle](https://www.kaggle.com/), and [OpenML](https://www.openml.org/), and by [Google Dataset Search](https://datasetsearch.research.google.com/).
+
+**Resources:**
+
+* The [Croissant documentation](https://docs.mlcommons.org/croissant/) and [format specification](http://mlcommons.org/croissant/1.1).
+
+:::
+
+Hopefully the ideas here will help you choose a metadata standard, but you don't need to agonize over the decision. If you aren't ready to use a formal metadata standard, just start using one of the Jornada metadata templates (available [here](../../downloads/index.qmd)) to collect, organize and store complete metadata. When you are ready, Jornada data managers can help you choose a standard and prepare a metadata document.
