@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-07-15">
+<meta name="dcterms.date" content="2026-07-16">
 
 <title>Collecting and managing data – Jornada Data Commons</title>
 <style>
@@ -65,7 +65,7 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-c875dbb4c9335aca9cc352e974a4ec92.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-2b976e11ec570e5de253222be10ae8f6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-62ca8458bb909c3ba54f8f5949720628.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -253,7 +253,7 @@ div.csl-indent {
   <li><a href="#content" id="toc-content" class="nav-link" data-scroll-target="#content">Content</a></li>
   <li><a href="#source" id="toc-source" class="nav-link" data-scroll-target="#source">Source</a></li>
   <li><a href="#data-format" id="toc-data-format" class="nav-link" data-scroll-target="#data-format">Data format</a></li>
-  <li><a href="#file-formats" id="toc-file-formats" class="nav-link" data-scroll-target="#file-formats">File formats</a></li>
+  <li><a href="#file-format" id="toc-file-format" class="nav-link" data-scroll-target="#file-format">File format</a></li>
   <li><a href="#special-cases-and-unstructured-data" id="toc-special-cases-and-unstructured-data" class="nav-link" data-scroll-target="#special-cases-and-unstructured-data">Special cases and unstructured data</a></li>
   <li><a href="#one-last-thought" id="toc-one-last-thought" class="nav-link" data-scroll-target="#one-last-thought">One last thought</a></li>
   </ul></li>
@@ -278,7 +278,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 15, 2026</p>
+      <p class="date">July 16, 2026</p>
     </div>
   </div>
   
@@ -506,7 +506,6 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 </div>
 <div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
 <p>Relational databases are collections of data tables that follow specific rules and have relationships connecting them to each other. In each table, rows hold a specific kind of data record referring to entities like observations, study sites, or organisms, and columns hold the variables (or “attributes”) for the records. Records in different tables are related to each other via values in shared columns (“foreign keys”). The tables, columns, and relationships are defined in a database <strong>schema</strong>. Databases are a consistent and space-efficient way to store multidimensional data. Here’s a diagram of a relational database schema with three tables:</p>
-<p>(Note this only works in new versions of Mermaid - Quarto is a little behind and will be up to date in 1.9. Preview <a href="https://mermaid.live/edit#pako:eNqFUk1rwzAM_StG57Skado4ua4MRncoY6cRCG6tpmaxHWynbEvz35ePZrTZYL4Y6UnvPVmu4aA5QgJoNoLlhkmSKtIeLgwenNCKPL8Mmb3QkllLGj2bXS7EMlkWQuUZnlE5SxKSQsmMI_qYwn1HPYSECOUmfZng5HE74taZFmnLuDgLXrEiU5WcgLbEg0A7Zo-FZm5UyvIh3QzX1GJzaZ3XpCx077eHR6Zp7T-ed9tbvGN8uh2EM4evQuJVY9OGkzH03qI5o7kzPDir_6DeTd_Iil-UziBzsjV45QQPciM4JM5U6IFEI1kXQi-QgjuhxBS6xXFm3rutdT0lU29ay7HN6Co_QXJkhW2jquxGu36Vn6xBxdE86Eo5SCLac0BSwwckQbier4LYj-lq4UdhEHjwCUlM53QVhP4iWi6XMQ3DxoOvXtSfRwsaRHQdUxpHlC6C5ht4rtd_">here</a>)</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -544,6 +543,7 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 </div>
 </div>
 </div>
+<p>(If rendering breaks, preview <a href="https://mermaid.live/edit#pako:eNqFUk1rwzAM_StG57Skado4ua4MRncoY6cRCG6tpmaxHWynbEvz35ePZrTZYL4Y6UnvPVmu4aA5QgJoNoLlhkmSKtIeLgwenNCKPL8Mmb3QkllLGj2bXS7EMlkWQuUZnlE5SxKSQsmMI_qYwn1HPYSECOUmfZng5HE74taZFmnLuDgLXrEiU5WcgLbEg0A7Zo-FZm5UyvIh3QzX1GJzaZ3XpCx077eHR6Zp7T-ed9tbvGN8uh2EM4evQuJVY9OGkzH03qI5o7kzPDir_6DeTd_Iil-UziBzsjV45QQPciM4JM5U6IFEI1kXQi-QgjuhxBS6xXFm3rutdT0lU29ay7HN6Co_QXJkhW2jquxGu36Vn6xBxdE86Eo5SCLac0BSwwckQbier4LYj-lq4UdhEHjwCUlM53QVhP4iWi6XMQ3DxoOvXtSfRwsaRHQdUxpHlC6C5ht4rtd_">here</a>)</p>
 <p>The <code>plants</code> table holds records of measured plant dimensions and related variables, which are connected to a specific sampling event. The <code>sampling_event</code> table holds information about those events, including date, observer, and the plot sampled. The <code>plots</code> table is connected to <code>sampling_event</code> by the <code>plot_id</code> field and stores information about the name, location and treatment of the research plots.</p>
 </div>
 </div>
@@ -602,8 +602,8 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 </div>
 </div>
 </section>
-<section id="file-formats" class="level3">
-<h3 class="anchored" data-anchor-id="file-formats">File formats</h3>
+<section id="file-format" class="level3">
+<h3 class="anchored" data-anchor-id="file-format">File format</h3>
 <p>The <strong>file format</strong> of your data refers to the physical file type that your data are stored in on a disk or other storage medium. File formats usually have a specification (or set or rules), a name, and a file extension. Some examples would be a delimited text file (file extension <code>.txt</code>, or others), a Microsoft Excel file (file extension <code>.xls</code> or <code>.xlsx</code>), or a JPEG image (file extension <code>.jpg</code> or <code>.jpeg</code>). File formats usually depend on the data content or source, and are sometimes specific to particular data uses or software programs. Whenever possible, try to choose file formats that are (a) simple to use and understand, and (b) accessible and familiar to your community or collaborators. For tabular data we usually recommend delimited text files, like the trusty <strong>CSV</strong>, whenever possible, but there are other choices to consider, and pros and cons for each, below.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Delimited text files</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Excel spreadsheet</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Databases</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false" href="">Cloud-native, columnar, and more</a></li></ul>

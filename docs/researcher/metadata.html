@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-07-15">
+<meta name="dcterms.date" content="2026-07-16">
 
 <title>Metadata to describe research data – Jornada Data Commons</title>
 <style>
@@ -65,7 +65,7 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-c875dbb4c9335aca9cc352e974a4ec92.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-2b976e11ec570e5de253222be10ae8f6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-62ca8458bb909c3ba54f8f5949720628.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -277,7 +277,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 15, 2026</p>
+      <p class="date">July 16, 2026</p>
     </div>
   </div>
   
@@ -291,8 +291,17 @@ div.csl-indent {
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p><span class="emoji" data-emoji="construction">🚧</span> <strong>This chapter is under construction.</strong></p>
 <p>As you collect and work with your research data, you will soon find that the observations and measured values themselves are not the only things that matter. A large amount of contextual information about the data and your research process accumulates and needs to be preserved. For example, if you are collecting air temperature data, are you measuring in degrees Celsius, Fahrenheit or Kelvin? And how far above ground are you taking the measurements? These pieces of contextual information are called <strong>metadata</strong>. Metadata are data that describe other data, and, although they may appear secondary in importance to the observations you are collecting in the field or lab, they are absolutely vital to understanding and re-using data after they are collected.</p>
+<div id="fig-metadata_ice" class="quarto-float quarto-figure quarto-figure-center anchored" alt="An iceberg.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-metadata_ice-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Iceberg_in_the_Arctic_with_its_underside_exposed.jpg/960px-Iceberg_in_the_Arctic_with_its_underside_exposed.jpg" class="img-fluid figure-img" alt="An iceberg." width="400">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-metadata_ice-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Understandable and useful data, like the above-water portion of an iceberg, are supported by deep, descriptive metadata (the submerged iceberg). Image credit <a href="https://commons.wikimedia.org/wiki/User:AWeith">AWeith</a> on Wikimedia Commons.
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="what-is-metadata" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-metadata">What is metadata?</h2>
@@ -305,14 +314,14 @@ div.csl-indent {
 <li><strong>How</strong> the data were collected (methods, instruments, etc.)</li>
 <li>Sometimes, stating <strong>why</strong> the data were collected or published can help future users understand data context and evaluate fitness for use.</li>
 </ul>
-<p>Preserving these metadata alongside your actual data (measurements, observations, etc.) makes them useful to both you and your colleagues, and prevents the loss of information about data over time, as illustrated in <a href="#fig-infodecay" class="quarto-xref">Figure&nbsp;1</a>. Metadata are also essential to the reproducibility of research results, and you will very likely be asked to provide adequate metadata with your data when it comes time to submit journal articles and other research products. Your reviewers, collaborators, and future self will thank you for any attention you give to metadata.</p>
+<p>Preserving these metadata alongside your actual data (measurements, observations, etc.) makes them useful to both you and your colleagues, and prevents the loss of information about data over time, as illustrated in <a href="#fig-infodecay" class="quarto-xref">Figure&nbsp;2</a>. Metadata are also essential to the reproducibility of research results, and you will very likely be asked to provide adequate metadata with your data when it comes time to submit journal articles and other research products. Your reviewers, collaborators, and future self will thank you for any attention you give to metadata.</p>
 <div id="fig-infodecay" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-infodecay-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="img/michener97_information_loss.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-infodecay-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: A schematic of the normal deterioration in information content associated with data and metadata over time (“information entropy”). Accidents or changes in technology (dashed line) may eliminate access to remaining raw data and metadata at any time. Collecting and preserving detailed metadata helps slow this decay <span class="citation" data-cites="michener_nongeospatial_1997">(from <a href="#ref-michener_nongeospatial_1997" role="doc-biblioref">Michener et al. 1997</a>)</span>.
+Figure&nbsp;2: A schematic of the normal deterioration in information content associated with data and metadata over time (“information entropy”). Accidents or changes in technology (dashed line) may eliminate access to remaining raw data and metadata at any time. Collecting and preserving detailed metadata helps slow this decay <span class="citation" data-cites="michener_nongeospatial_1997">(from <a href="#ref-michener_nongeospatial_1997" role="doc-biblioref">Michener et al. 1997</a>)</span>.
 </figcaption>
 </figure>
 </div>
@@ -566,7 +575,88 @@ Figure&nbsp;1: A schematic of the normal deterioration in information content as
 </section>
 <section id="metadata-standards" class="level2">
 <h2 class="anchored" data-anchor-id="metadata-standards">Metadata standards</h2>
-<p>The question now is, where do you put all of the information above? There are quite a few metadata formats suitable for environmental datasets. Choosing one comes down to things like level of detail, ease of use, and community support for the standard. At the Jornada we recommend using the <a href="https://eml.ecoinformatics.org/">Ecological Metadata Language (EML)</a>, which is a standard developed by the ecological and environmental sciences community <span class="citation" data-cites="EML_2019">(<a href="#ref-EML_2019" role="doc-biblioref">Jones et al. 2019</a>)</span> and required by our closest repository partner, the <a href="https://edirepository.org">Environmental Data Initiative (EDI)</a>.</p>
+<p>As you can see in the section above, there are many important metadata fields with recommendations or standards applicable to each. The question now is, what kind of container or document can you keep this information in and make it understandable and useful? We recommend using standardized, community-supported metadata formats for this, and ideally they should be human- and machine-readable. Luckily, there are quite a few metadata formats that fit the bill for environmental datasets. At the Jornada we recommend using a standard metadata format called <a href="https://eml.ecoinformatics.org/">Ecological Metadata Language (EML)</a> to describe most data, but other metadata formats may be of interest. Choosing one comes down to things like level of detail, applicability to your scientific or data domain, ease of use, and community expectations. Below are a few standards commonly used for the environmental sciences and research publishing. Sometimes the metadata standards below are related or used together, so its a good idea to know a little about more than one.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">EML</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">DublinCore</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">ISO 19115+</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">DarwinCore</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false" href="">MIxS/NMDC</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-6" role="tab" aria-controls="tabset-1-6" aria-selected="false" href="">Schema.org</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-7" role="tab" aria-controls="tabset-1-7" aria-selected="false" href="">Croissant</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div style="float: right; margin: 5px;">
+<p><img src="https://docs.ropensci.org/EML/logo.svg" class="img-fluid" width="150"></p>
+</div>
+<p>The Ecological Metadata Language (EML) was developed by the ecological and environmental sciences community <span class="citation" data-cites="EML_2019">(<a href="#ref-EML_2019" role="doc-biblioref">Jones et al. 2019</a>)</span> and is the metadata format required by our closest repository partner, the <a href="https://edirepository.org">Environmental Data Initiative (EDI)</a>. The EML standard is a dialect of XML, which is a markup language designed to be both human- and machine-readable. EML is implemented with a very detailed schema (a set of rules for metadata) that allows one to create metadata documents that are flexible, modular and extensible, making them useful in many environmental data management and publishing applications.</p>
+<p><strong>Resources:</strong></p>
+<ul>
+<li>The EML standard <a href="https://eml.ecoinformatics.org/">documentation</a>, currently at version 2.2, and the <a href="https://eml.ecoinformatics.org/schema/">schema browser</a>.</li>
+<li>The LTER Network and EDI repository collaboratively maintain the <a href="https://ediorg.github.io/data-package-best-practices">Dataset Preparation Guides</a>, which has the “Best Practices for Dataset Metadata in Ecological Metadata Language” document with extensive documentation for using EML to describe environmental datasets.</li>
+<li>The <a href="https://ezeml.edirepository.org">ezEML metadata editor</a>, created at the EDI repository, is the Jornada’s preferred method for preparing EML documents. More on this in the next chapter.</li>
+<li>The <a href="https://docs.ropensci.org/EML/">EML R package</a> is quite useful for building EML documents with R.</li>
+</ul>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div style="float: right; margin: 5px;">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/DCMI-logo.svg" class="img-fluid" width="150"></p>
+</div>
+<p><a href="https://en.wikipedia.org/wiki/Dublin_Core">Dublin Core (DC)</a> is one of the oldest and most widely adopted metadata standards, originally developed in 1995 by the <a href="https://www.dublincore.org/">Dublin Core Metadata Initiative (DCMI)</a> for describing web resources simply and generically. The standard is domain-agnostic (not specific to scientific data) and consists of fifteen broad metadata elements (e.g., title, creator, date, subject) that can be used as-is or extended/qualified for specific applications. Dublin Core is often used as a baseline vocabulary that more specialized standards — including Darwin Core — build upon. It is formally standardized as ISO 15836.</p>
+<p><strong>Resources:</strong></p>
+<ul>
+<li><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">DCMI Metadata Terms</a></li>
+<li><a href="https://www.dublincore.org/resources/userguide/">DublinCore User Guides</a></li>
+</ul>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div style="float: right; margin: 5px;">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/ISO_Logo_%28Red_square%29.svg" class="img-fluid" width="150"></p>
+</div>
+<p>ISO 19115 is the international standard for describing geospatial data and services, maintained by Technical Committee 211 of the <a href="https://www.iso.org">International Standards Organization</a>. It describes a dataset’s spatial and temporal extent, coordinate reference system, data quality, and provenance (or lineage). The standard is published in parts: ISO 19115-1 defines the core metadata elements, ISO 19115-2 extends this for imagery and gridded (raster) data, and ISO 19115-3 specifies the XML implementation (and is the successor to the ISO 19139 standard). Given its size and complexity, most organizations implement a national or thematic profile instead of the full standard — examples include the North American Profile (US/Canada) and Europe’s INSPIRE metadata regulation. The most recent ISO 19115 Standard is <a href="https://www.iso.org/standard/53798.html">here</a>, but ISO standards are not freely available. You can find more useful information at open standards organizations, government agencies, or geospatial data applications that interpret and implement the ISO 19115 standards.</p>
+<p><strong>Resources</strong></p>
+<ul>
+<li>The <a href="https://www.ogc.org/">Open Geospatial Consortium</a> develops and maintains a long list of geospatial data standards, many of which are mapped to the ISO 19115 or related standards.</li>
+<li>Many governments develop and promote geospatial data and metadata standards that are referenced to ISO 19115. The <a href="https://www.fgdc.gov/metadata">Federal Geographic Data Committee (FGDC)</a> does this for the U.S., and the <a href="https://knowledge-base.inspire.ec.europa.eu/index_en">EU INSPIRE program</a> for Europe.</li>
+<li>Major geospatial data applications have metadata editing and exchange capabilities that are referenced to ISO standards. This includes implementations in <a href="https://www.esri.com/en-us/arcgis/geospatial-platform/overview">ESRI ArcGIS</a> and the open-source <a href="https://qgis.org">QGIS</a> (<a href="https://docs.qgis.org/3.44/en/docs/user_manual/introduction/general_tools.html#metadata">metadata docs</a>) platform and its <a href="https://plugins.qgis.org/search/?q=Metadata">plugins</a>.</li>
+</ul>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<div style="float: right; margin: 5px;">
+<p><img src="https://static.tdwg.org/logo/Colour/SVG/TDWG-Logo_Hex-Sticker_frame_blue.svg" class="img-fluid" width="150"></p>
+</div>
+<p>Darwin Core (DwC) is a data model and metadata standard for sharing biodiversity data, maintained by <a href="https://www.tdwg.org/">Biodiversity Information Standards (TDWG)</a>. Built as an extension of Dublin Core, it defines a glossary of terms centered on taxa and their occurrence in nature, as documented by observations, specimens, and samples. DwC underlies the vast majority of species-occurrence records shared through the <a href="https://www.gbif.org">Global Biodiversity Information Facility (GBIF)</a>, typically packaged as a Darwin Core Archive (DwC-A). It pairs naturally with EML: EML describes the dataset as a whole, while DwC describes the individual occurrence records within it. There is now a more extensive standard, the <a href="https://dwc.tdwg.org/dp/">DwC Data Package</a>, that is suitable for packaging a greater variety of tabular data, including sampling events, with DwC occurrence data.</p>
+<p><strong>Resources:</strong></p>
+<ul>
+<li>Many resources are available on the <a href="https://dwc.tdwg.org/">TDWG DwC group</a>, including a <a href="https://dwc.tdwg.org/terms/">DarwinCore Quick Reference Guide</a>.</li>
+<li>GBIF publishes <a href="https://www.gbif.org/dataset-classes">several kinds of biodiversity data</a> and has <a href="https://ipt.gbif.org/manual/en/ipt/latest/">extensive tools and documentation</a> for preparing DwC datasets (including DwC-A and DwC-DP)</li>
+</ul>
+</div>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+<div style="float: right; margin: 5px;">
+<p><img src="https://microbiomedata.org/wp-content/uploads/sites/2/2019/08/logo-img.svg" class="img-fluid" width="150"></p>
+</div>
+<p>Molecular and microbiome data, including amplicons, genomes, metagenomes, transcriptomes, and the like, are widely used and integrate many kinds of data and metadata. In addition to raw sequence data, sampling information, environmental context, laboratory extraction/amplification, sequencing method, and bioinformatics pipelines all generate important metadata to describe in derived datasets and research results. The emerging standards for this metadata, at least in environmental science contexts, seem to be <a href="https://genomicsstandardsconsortium.github.io/mixs/">MIxS templates</a> and the <a href="https://microbiomedata.github.io/nmdc-schema/">NMDC Metadata Schema</a>.</p>
+<p><strong>Resources:</strong></p>
+<ul>
+<li>The Jornada IM team doesn’t have much to recommend yet, but we are working on some template ideas… stay tuned.</li>
+</ul>
+</div>
+<div id="tabset-1-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-6-tab">
+<div style="float: right; margin: 5px;">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg" class="img-fluid" width="150"></p>
+</div>
+<p><a href="https://schema.org">Schema.org</a> is a multi-purpose, collaboratively maintained vocabulary (backed by Google, Microsoft, Yahoo, and Yandex) for embedding structured metadata directly into web pages. The <a href="https://schema.org/Dataset">Schema.org Dataset</a> type is a lightweight set of properties — name, description, creator, distribution, license, and similar — designed to make datasets discoverable through search engines, most notably <a href="https://datasetsearch.research.google.com/">Google Dataset Search</a>. It does not provide detailed documentation needed for scientific reuse, but is typically embedded as JSON-LD in a dataset’s landing page. Repositories often generate and embed this metadata automatically by summarizing a more comprehensive standard like EML.</p>
+<p><strong>Resources:</strong></p>
+<ul>
+<li>The <a href="https://schema.org/Dataset">schema.org/Dataset</a> specification</li>
+<li>The <a href="https://github.com/ESIPFed/science-on-schema.org">Science on Schema.org ESIP cluster</a> provides guidance on creating and using schema.org/Dataset metadata for life sciences applications.</li>
+</ul>
+</div>
+<div id="tabset-1-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-7-tab">
+<p><a href="https://mlcommons.org/working-groups/data/croissant/">Croissant</a> is a metadata format released in 2024 by <a href="https://mlcommons.org">MLCommons</a> to make datasets ready for machine learning (ML) use. It is encoded as JSON-LD and extends the schema.org Dataset vocabulary with elements describing a dataset’s file resources, internal record/field structure, and default ML semantics (e.g., splits, labels), allowing datasets to be loaded directly into frameworks like PyTorch, TensorFlow, or JAX without custom preprocessing code. It’s increasingly supported by repositories and ML platforms, including <a href="https://huggingface.co">Hugging Face</a>, <a href="https://www.kaggle.com/">Kaggle</a>, and <a href="https://www.openml.org/">OpenML</a>, and by <a href="https://datasetsearch.research.google.com/">Google Dataset Search</a>.</p>
+<p><strong>Resources:</strong></p>
+<ul>
+<li>The <a href="https://docs.mlcommons.org/croissant/">Croissant documentation</a> and <a href="http://mlcommons.org/croissant/1.1">format specification</a>.</li>
+</ul>
+</div>
+</div>
+</div>
+<p>Hopefully the ideas here will help you choose a metadata standard, but you don’t need to agonize over the decision. If you aren’t ready to use a formal metadata standard, just start using one of the Jornada metadata templates (available <a href="../../downloads/index.html">here</a>) to collect, organize and store complete metadata. When you are ready, Jornada data managers can help you choose a standard and prepare a metadata document.</p>
 
 
 
