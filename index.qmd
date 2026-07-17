@@ -3,6 +3,7 @@ title: Welcome to the Jornada Data Commons
 format:
   html:
     css: styles.css
+from: markdown+emoji
 ---
 
 This site is maintained by the Jornada Information Management (IM) team to support researchers and data managers working with data from the [Jornada Basin LTER (JRN)]({{< var url.jrn_website >}}) and [Jornada Experimental Range (JER)]({{< var url.jer_website >}}) programs. There are two main guides here to serve two audiences:
@@ -57,6 +58,8 @@ This site is maintained by the Jornada Information Management (IM) team to suppo
 ::: {.callout-caution collapse="false" appearance="default"}
 ## WARNING! This site is a work in progress
 We try our best to keep this up-to-date and accurate, but sometimes we fall behind or miss things. Report problems and suggest additions in the [issue tracker](https://github.com/jornada-im/jornada-im.github.io/issues).
+
+If you see a construction symbol (:construction:) we're still working on that part!
 
 :::
 

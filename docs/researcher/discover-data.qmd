@@ -8,7 +8,31 @@ from: markdown+emoji
 
 :construction: **Most of this chapter is under construction.**
 
-## Jornada data discovery
+## How data are organized
+
+Many datasets have been collected at the Jornada by the JRN LTER program, the USDA-ARS Jornada Experimental Range, and related programs. Tracking these datasets and making them discoverable and usable is a major challenge. Currently there are three overlapping systems we use to organize the data for discovery, management and reporting. 
+
+### Collection type
+
+* **Core datasets** are collected with direct support from the JRN LTER program long-term program
+* **Contributed datasets** are collected by investigators, students, or others affiliated with JRN LTER or JER programs and then contributed to the Jornada data catalog.
+* Partner data
+* Spatial data
+
+### Study number
+
+* There are over 600 named studies in the Jornada Basin
+
+### Research theme
+
+* Climate
+* Management
+* Biogeochemistry
+* Hydrology
+* Aeolian processes
+* Trophic interactions
+
+## The Jornada data catalog
 
 One goal of the Jornada IM system is to make the vast majority of Jornada data accessible through the [Jornada website](https://lter.jornada.nmsu.edu) and other avenues. On the Jornada website there are two primary data access points:
 

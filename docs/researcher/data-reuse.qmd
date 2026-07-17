@@ -1,5 +1,5 @@
 ---
-title: Using and re-using data 
+title: Working with data (use and re-use)
 date: last-modified
 from: markdown+emoji
 ---
@@ -8,12 +8,138 @@ from: markdown+emoji
 
 :construction: **Most of this chapter is under construction.** Don't forget to cite Jornada data when you use it!!!
 
-## Downloading and checking
+In this chapter we cover the basics of working with Jornada data. You'll find guidance on how to use your own data and re-use data published by others, and much of the information here applies not just to working with Jornada data, but to any research data. Many volumes could be, and have been, written about integrating, analyzing and interpreting research data in insightful, reproducible ways, but in this chapter we mainly provide some practical tips and lead you to useful resources.
 
+## Be organized
+
+::: {style="float: right; margin: 5px;"}
+```
+my_project/
+├── README.md
+├── code/
+│   ├── README.md
+│   └── veg-stats.R
+├── data/
+│   ├── README.md
+│   ├── data-sources.csv
+│   ├── raw/
+│   │   └── jrn011003.csv
+│   ├── ready/
+│   │   └── jrn011003_clean.csv
+│   └── results/
+│       └── veg_model_fits.csv
+├── docs/
+├── figures/
+└── publications/
+```
+:::
+
+Being organized is a laudable goal and also very easy to procrastinate about. For research projects, you'll find it much easier to get organized at the very beginning, and you can do that by having a simple organization scheme for your data and other files. At right is a suggested scheme for organizing a project directory on your computer, and this, or something similar, can probably work for most research projects. Step one is to keep all files related to the project in one directory (folder) on your computer. Within that directory create several subdirectories:
+
+1. The `code` subdirectory is for all your computer code, whether it be for data wrangling, statistics, figure creation, or what-have-you.
+2. In the `data` subdirectory you will keep all data files you create and use for the project. You should further divide this with subdirectories that are named and organized around your data processing and analysis activities. One easy way to do this is to have **raw, ready, and results** folders. The `raw` folder can be for any raw data you collect or download, the `ready` folder is for data you have error checked, cleaned and/or harmonized (joined with other data), and the `results` folder is for the outputs of your analysis (summary data for figures, statistics results). You can also use data "levels", and associated folders, to organize your data according to QA/QC levels. There is more about this in the [Collecting data](collecting_data.qmd) chapter.
+3. Keep all documentation in a `docs` subdirectory. Field notes, lab procedures, and data analysis logs are all useful throughout the life of the project and should be preserved alongside your other files.
+4. Further along in your project you will start analyzing and interpreting data and writing up results. You should probably have a `figures` subdirectory for plots and other visuals you generate, and a `publications` subdirectory for manuscripts you are working on.
+
+If you get good at organizing research projects with a simple scheme like this you can step up to more complicated schemes. 
+
+## Obtaining and verifying data
+
+In the previous chapter on [Data discovery](discover-data.qmd) you learned how to find Jornada data (JRN, JER, partners) in the Jornada data catalogs and associated data repositories.
+
+### Download data
+
+* Web downloads from EDI are pretty simple but you need an account.
+
+### Programmatic access 
+
+* Using R and EDIutils
+* Other languages (and EDI code generator)
+* Authentication with API keys
+
+### Verifying with checksums
+
+All datasets published at EDI have MD5 checksums published alongside each data file. You can verify if a local file you have is identical to this by calculating the checksum on the local copy and comparing it to the EDI value. If they are the same the files are identical.
+
+on Windows:
+
+    certutil -hashfile <filename> MD5 # or SHA256
+
+on MacOS
+
+    md5 <filename> # or use the shasum command for SHA256
+
+on Linux
+
+    md5sum <filename> # or use sha256sum for SHA256
+
+    
 ## Integrating data
 
 ## Analyzing data
 
-## Citing the Jornada
+## Reproducibility
 
-Please cite Jornada data when you use it. You can do this in the reference section of a journal article, which is preferable, or the data availability statement of some journals. We'll are encouraging this practice more and more, and will be developing better guidelines and, we hope, data citation statistics in the future.
+### Use version control
+
+* Git and GitHub
+
+### Document everything
+
+* Make a plan and keep a log
+* Use README files
+* Write documentation as you go
+* AI documentation and disclosure
+    - If you are using language models to for data analysis or other tasks, document the model name and version and preserve any prompts and context files (AGENTS.md, skills, etc.). You can preserve entire transcripts fairly easily from most LLM model interfaces.
+    - You will likely need to disclose language model use in published products
+
+### Publish your products
+
+* Data, code/workflows, research results (papers)
+
+## Data citation and acknowledgements
+
+Please cite Jornada data when you use it in a manuscript, thesis/dissertation, or any other published product. As we've seen in earlier chapters of this guide, collecting data and authoring a dataset is hard work. Anyone who goes to the trouble of publishing a dataset (including you) deserves to be credited when the data are used. Citing data also gives Jornada programs (JRN LTER, the USDA-ARS JER) the credit they and their funding sources deserve. Below are general guidelines and examples for citing data in a journal article.
+
+:::{.panel-tabset}
+
+## General guidelines
+
+The most logical place in an article to cite a published dataset is in the **Methods** section and in the **Data Availability Statement**, which most reputable journals now require. While preparing manuscripts, here are some things to remember:
+
+* Check journal data sharing requirements and begin preparing for data publication well in advance of article submission.
+* Whether you cite datasets in the Methods or Data Availability Statement, **be sure that the full bibliographic entry is correctly included in the article’s reference list.**
+* You can also cite your code if it is published. This is not as common as citing data, but some journals require it and it is a best practice.
+
+## Data statement 1 (good)
+
+In the Data Availability Statement from @currier_precipitation_2022, note that source datasets are properly cited in the Data Availability Statement, meaning an in-text citation is given and the full bibliographic entry is provided in the article reference list (not shown). The DOIs included here are helpful for quickly finding the data, and a link is also provided for data that don't have a DOI (from NOAA).
+
+> All original and derived phenology data produced by the authors, and R scripts for data processing, statistical analyses, and figure production are publicly available in the Environmental Data Initiative (EDI) repository. EDI package knb-lter-jrn.210574001.2 [@currier_daily_2022] contains daily phenocam image data, derived timeseries and associated scripts for processing and is available at <https://doi.org/10.6073/pasta/836360dce9311130383c9672e836d640>. EDI package knb-lter-jrn.210574002.2 [@currier_observed_2022] contains observed phenological indicators and environmental drivers as well as associated scripts for final analyses and figure construction presented in this manuscript and these data are available at <https://doi.org/10.6073/pasta/d327a77f6474131db8aa589011e29c29>. No novel code was generated by the authors of this manuscript. The precipitation data used in all analyses are derived from G-BASN data in EDI package knb-lter-jrn.210520001 [@yao_gap-filled_2020] available at <https://doi.org/10.6073/pasta/cf3c45e5480551453f1f9041d664a28f>. Daily air temperature summaries from 4 June 1914 to the present for the Jornada Experimental Range Headquarters (NOAA station GHCND:USC00294426) are freely available upon request via the National Ocean and Atmospheric Administration (<https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USC00294426/detail>).
+
+## Data statement 2 (not good)
+
+Conventions are changing, but it is still fairly common to find data availability statements that raise barriers to data access or reproducibility. Here is one example: 
+
+> Data used in the figures are included in the supplementary material. The full dataset will be provided upon reasonable request to the corresponding author.
+
+:::
+
+In addition to citing data, please also include an acknowledgement of funding and support provided by Jornada programs and funding sources in the **Acknowledgements** section of any Jornada-related manuscripts you publish. Include the support received, the name of the program (Jornada Basin LTER, for example), and relevant grant numbers in the Acknowledgements section of any journal article, thesis, dissertation, or other publication. Example text is below.
+
+* For JRN LTER funded research products: _“This work was supported by funding from the National Science Foundation to New Mexico State University for the Jornada Basin Long-Term Ecological Research Program (DEB 2425143)."_
+* For USDA (JER) funded	research: _“This work was supported by CRIS# 3050-11210-009-00D from the USDA-ARS Jornada Experimental Range and USDA Long-Term Agroecosystem Research Network.”_
+
+Support to acknowledge may include direct funding of research or personnel costs allocated from the LTER or USDA grants, fellowship support to graduate students, logistical or data collection support from the Jornada field crew, or data management services from the Jornada Information Management team. If research was performed at USDA-ARS Jornada Experimental Range (JER) or NMSU Chihuahuan Desert Rangeland Research Center (CDRRC), but no direct support was provided by LTER or USDA programs, include the following:
+
+* At JER: _“The Jornada Experimental Range is administered by the USDA-ARS and supported by the National Science Foundation Long-Term Ecological Research Program and the USDA Long-Term Agroecosystem Research Network.”_
+* At CDRRC:	_“The Chihuahuan Desert Rangeland Research Center is administered by New Mexico State University.”_
+
+
+::: {.callout-tip}
+## Remember!
+
+**Sharing and citing data, and acknowledging support, helps keep the Jornada funded.**
+
+:::
+

@@ -105,7 +105,7 @@ A **contact** for a dataset is a person (or position, like Data Manager) that ca
 A list of **keywords** describing the data is necessary to facilitate discovery of published datasets. Keyword lists are searchable fields in almost all publishing venues, and if chosen wisely they will allow colleagues in your research community and beyond to easily find the data you share. We strongly recommend picking at least some terms from controlled vocabularies or thesauri to add to your dataset's keyword list. Two of these that we recommend are
 
 * The [LTER Controlled Vocabulary](https://vocab.lternet.edu/vocab/vocab/). This is the standard keyword list used by the LTER network and it has and extensive set of terms suitable for ecological data. We recommend picking a handful of terms, including terms from each applicable high-level category, for any dataset.
-* The [Jornada Keyword Thesaurus](../../downloads/keyword_thesauri.xlsx). This is a locally-developed list for the Jornada. We recommend picking a Jornada placename and study name for any dataset, if you can find applicable ones.
+* The [Jornada Keyword Thesaurus](../../downloads/keyword_thesauri.xlsx) (.xlsx file). This is a locally-developed list for the Jornada. We recommend picking a Jornada placename and study name for any dataset, if you can find applicable ones.
 
 ### Temporal, geographic and taxonomic coverages
 
@@ -236,7 +236,7 @@ As you can see in the section above, there are many important metadata fields wi
 ![](https://docs.ropensci.org/EML/logo.svg){width=150}
 :::
 
-The Ecological Metadata Language (EML) was developed by the ecological and environmental sciences community [@EML_2019] and is the metadata format required by our closest repository partner, the [Environmental Data Initiative (EDI)]({{< var url.edi >}}). The EML standard is a dialect of XML, which is a markup language designed to be both human- and machine-readable. EML is implemented with a very detailed schema (a set of rules for metadata) that allows one to create metadata documents that are  flexible, modular and extensible, making them useful in many environmental data management and publishing applications.
+The Ecological Metadata Language (EML) was developed by the ecological and environmental sciences community [@jones_ecological_2019] and is the metadata format required by our closest repository partner, the [Environmental Data Initiative (EDI)]({{< var url.edi >}}). The EML standard is a dialect of XML, which is a markup language designed to be both human- and machine-readable. EML is implemented with a very detailed schema (a set of rules for metadata) that allows one to create metadata documents that are  flexible, modular and extensible, making them useful in many environmental data management and publishing applications.
 
 **Resources:**
 
@@ -270,7 +270,7 @@ ISO 19115 is the international standard for describing geospatial data and servi
 
 * The [Open Geospatial Consortium](https://www.ogc.org/) develops and maintains a long list of geospatial data standards, many of which are mapped to the ISO 19115 or related standards.
 * Many governments develop and promote geospatial data and metadata standards that are referenced to ISO 19115. The [Federal Geographic Data Committee (FGDC)](https://www.fgdc.gov/metadata) does this for the U.S., and the [EU INSPIRE program](https://knowledge-base.inspire.ec.europa.eu/index_en) for Europe.
-* Major geospatial data applications have metadata editing and exchange capabilities that are referenced to ISO standards. This includes implementations in [ESRI ArcGIS](https://www.esri.com/en-us/arcgis/geospatial-platform/overview) and the open-source [QGIS](https://qgis.org) ([metadata docs](https://docs.qgis.org/3.44/en/docs/user_manual/introduction/general_tools.html#metadata)) platform and its [plugins](https://plugins.qgis.org/search/?q=Metadata).
+* Major geospatial data applications have metadata editing and exchange capabilities that are referenced to ISO standards. This includes implementations in [ESRI ArcGIS](https://www.esri.com/en-us/arcgis/geospatial-platform/overview) and the open-source [QGIS](https://qgis.org) platform ([metadata docs](https://docs.qgis.org/3.44/en/docs/user_manual/introduction/general_tools.html#metadata)) and its [plugins](https://plugins.qgis.org/search/?q=Metadata).
 
 ## DarwinCore
 

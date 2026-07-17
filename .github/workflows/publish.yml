@@ -14,7 +14,9 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Setup Chrome
+      #This is for rendering mermaid to SVG in advance (w/in panels). Could drop it
+      # if issue gets fixed someday.
+      - name: Setup Chrome 
         uses: browser-actions/setup-chrome@v2
 
       - name: Set up Quarto
