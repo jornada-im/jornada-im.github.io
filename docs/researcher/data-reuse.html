@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-07-16">
+<meta name="dcterms.date" content="2026-07-17">
 
-<title>Using and re-using data – Jornada Data Commons</title>
+<title>Working with data (use and re-use) – Jornada Data Commons</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -24,7 +24,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -222,10 +241,22 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#downloading-and-checking" id="toc-downloading-and-checking" class="nav-link" data-scroll-target="#downloading-and-checking">Downloading and checking</a></li>
+  <li><a href="#be-organized" id="toc-be-organized" class="nav-link" data-scroll-target="#be-organized">Be organized</a></li>
+  <li><a href="#obtaining-and-verifying-data" id="toc-obtaining-and-verifying-data" class="nav-link" data-scroll-target="#obtaining-and-verifying-data">Obtaining and verifying data</a>
+  <ul class="collapse">
+  <li><a href="#download-data" id="toc-download-data" class="nav-link" data-scroll-target="#download-data">Download data</a></li>
+  <li><a href="#programmatic-access" id="toc-programmatic-access" class="nav-link" data-scroll-target="#programmatic-access">Programmatic access</a></li>
+  <li><a href="#verifying-with-checksums" id="toc-verifying-with-checksums" class="nav-link" data-scroll-target="#verifying-with-checksums">Verifying with checksums</a></li>
+  </ul></li>
   <li><a href="#integrating-data" id="toc-integrating-data" class="nav-link" data-scroll-target="#integrating-data">Integrating data</a></li>
   <li><a href="#analyzing-data" id="toc-analyzing-data" class="nav-link" data-scroll-target="#analyzing-data">Analyzing data</a></li>
-  <li><a href="#citing-the-jornada" id="toc-citing-the-jornada" class="nav-link" data-scroll-target="#citing-the-jornada">Citing the Jornada</a></li>
+  <li><a href="#reproducibility" id="toc-reproducibility" class="nav-link" data-scroll-target="#reproducibility">Reproducibility</a>
+  <ul class="collapse">
+  <li><a href="#use-version-control" id="toc-use-version-control" class="nav-link" data-scroll-target="#use-version-control">Use version control</a></li>
+  <li><a href="#document-everything" id="toc-document-everything" class="nav-link" data-scroll-target="#document-everything">Document everything</a></li>
+  <li><a href="#publish-your-products" id="toc-publish-your-products" class="nav-link" data-scroll-target="#publish-your-products">Publish your products</a></li>
+  </ul></li>
+  <li><a href="#data-citation-and-acknowledgements" id="toc-data-citation-and-acknowledgements" class="nav-link" data-scroll-target="#data-citation-and-acknowledgements">Data citation and acknowledgements</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/researcher/data-reuse.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -234,7 +265,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Using and re-using data</h1>
+<h1 class="title">Working with data (use and re-use)</h1>
 </div>
 
 
@@ -245,7 +276,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 16, 2026</p>
+      <p class="date">July 17, 2026</p>
     </div>
   </div>
   
@@ -260,9 +291,65 @@ ul.task-list li input[type="checkbox"] {
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p><span class="emoji" data-emoji="construction">🚧</span> <strong>Most of this chapter is under construction.</strong> Don’t forget to cite Jornada data when you use it!!!</p>
+<p>In this chapter we cover the basics of working with Jornada data. You’ll find guidance on how to use your own data and re-use data published by others, and much of the information here applies not just to working with Jornada data, but to any research data. Many volumes could be, and have been, written about integrating, analyzing and interpreting research data in insightful, reproducible ways, but in this chapter we mainly provide some practical tips and lead you to useful resources.</p>
 </section>
-<section id="downloading-and-checking" class="level2">
-<h2 class="anchored" data-anchor-id="downloading-and-checking">Downloading and checking</h2>
+<section id="be-organized" class="level2">
+<h2 class="anchored" data-anchor-id="be-organized">Be organized</h2>
+<div style="float: right; margin: 5px;">
+<pre><code>my_project/
+├── README.md
+├── code/
+│   ├── README.md
+│   └── veg-stats.R
+├── data/
+│   ├── README.md
+│   ├── data-sources.csv
+│   ├── raw/
+│   │   └── jrn011003.csv
+│   ├── ready/
+│   │   └── jrn011003_clean.csv
+│   └── results/
+│       └── veg_model_fits.csv
+├── docs/
+├── figures/
+└── publications/</code></pre>
+</div>
+<p>Being organized is a laudable goal and also very easy to procrastinate about. For research projects, you’ll find it much easier to get organized at the very beginning, and you can do that by having a simple organization scheme for your data and other files. At right is a suggested scheme for organizing a project directory on your computer, and this, or something similar, can probably work for most research projects. Step one is to keep all files related to the project in one directory (folder) on your computer. Within that directory create several subdirectories:</p>
+<ol type="1">
+<li>The <code>code</code> subdirectory is for all your computer code, whether it be for data wrangling, statistics, figure creation, or what-have-you.</li>
+<li>In the <code>data</code> subdirectory you will keep all data files you create and use for the project. You should further divide this with subdirectories that are named and organized around your data processing and analysis activities. One easy way to do this is to have <strong>raw, ready, and results</strong> folders. The <code>raw</code> folder can be for any raw data you collect or download, the <code>ready</code> folder is for data you have error checked, cleaned and/or harmonized (joined with other data), and the <code>results</code> folder is for the outputs of your analysis (summary data for figures, statistics results). You can also use data “levels”, and associated folders, to organize your data according to QA/QC levels. There is more about this in the <a href="../../docs/researcher/collecting_data.html">Collecting data</a> chapter.</li>
+<li>Keep all documentation in a <code>docs</code> subdirectory. Field notes, lab procedures, and data analysis logs are all useful throughout the life of the project and should be preserved alongside your other files.</li>
+<li>Further along in your project you will start analyzing and interpreting data and writing up results. You should probably have a <code>figures</code> subdirectory for plots and other visuals you generate, and a <code>publications</code> subdirectory for manuscripts you are working on.</li>
+</ol>
+<p>If you get good at organizing research projects with a simple scheme like this you can step up to more complicated schemes.</p>
+</section>
+<section id="obtaining-and-verifying-data" class="level2">
+<h2 class="anchored" data-anchor-id="obtaining-and-verifying-data">Obtaining and verifying data</h2>
+<p>In the previous chapter on <a href="../../docs/researcher/discover-data.html">Data discovery</a> you learned how to find Jornada data (JRN, JER, partners) in the Jornada data catalogs and associated data repositories.</p>
+<section id="download-data" class="level3">
+<h3 class="anchored" data-anchor-id="download-data">Download data</h3>
+<ul>
+<li>Web downloads from EDI are pretty simple but you need an account.</li>
+</ul>
+</section>
+<section id="programmatic-access" class="level3">
+<h3 class="anchored" data-anchor-id="programmatic-access">Programmatic access</h3>
+<ul>
+<li>Using R and EDIutils</li>
+<li>Other languages (and EDI code generator)</li>
+<li>Authentication with API keys</li>
+</ul>
+</section>
+<section id="verifying-with-checksums" class="level3">
+<h3 class="anchored" data-anchor-id="verifying-with-checksums">Verifying with checksums</h3>
+<p>All datasets published at EDI have MD5 checksums published alongside each data file. You can verify if a local file you have is identical to this by calculating the checksum on the local copy and comparing it to the EDI value. If they are the same the files are identical.</p>
+<p>on Windows:</p>
+<pre><code>certutil -hashfile &lt;filename&gt; MD5 # or SHA256</code></pre>
+<p>on MacOS</p>
+<pre><code>md5 &lt;filename&gt; # or use the shasum command for SHA256</code></pre>
+<p>on Linux</p>
+<pre><code>md5sum &lt;filename&gt; # or use sha256sum for SHA256</code></pre>
+</section>
 </section>
 <section id="integrating-data" class="level2">
 <h2 class="anchored" data-anchor-id="integrating-data">Integrating data</h2>
@@ -270,14 +357,104 @@ ul.task-list li input[type="checkbox"] {
 <section id="analyzing-data" class="level2">
 <h2 class="anchored" data-anchor-id="analyzing-data">Analyzing data</h2>
 </section>
-<section id="citing-the-jornada" class="level2">
-<h2 class="anchored" data-anchor-id="citing-the-jornada">Citing the Jornada</h2>
-<p>Please cite Jornada data when you use it. You can do this in the reference section of a journal article, which is preferable, or the data availability statement of some journals. We’ll are encouraging this practice more and more, and will be developing better guidelines and, we hope, data citation statistics in the future.</p>
+<section id="reproducibility" class="level2">
+<h2 class="anchored" data-anchor-id="reproducibility">Reproducibility</h2>
+<section id="use-version-control" class="level3">
+<h3 class="anchored" data-anchor-id="use-version-control">Use version control</h3>
+<ul>
+<li>Git and GitHub</li>
+</ul>
+</section>
+<section id="document-everything" class="level3">
+<h3 class="anchored" data-anchor-id="document-everything">Document everything</h3>
+<ul>
+<li>Make a plan and keep a log</li>
+<li>Use README files</li>
+<li>Write documentation as you go</li>
+<li>AI documentation and disclosure
+<ul>
+<li>If you are using language models to for data analysis or other tasks, document the model name and version and preserve any prompts and context files (AGENTS.md, skills, etc.). You can preserve entire transcripts fairly easily from most LLM model interfaces.</li>
+<li>You will likely need to disclose language model use in published products</li>
+</ul></li>
+</ul>
+</section>
+<section id="publish-your-products" class="level3">
+<h3 class="anchored" data-anchor-id="publish-your-products">Publish your products</h3>
+<ul>
+<li>Data, code/workflows, research results (papers)</li>
+</ul>
+</section>
+</section>
+<section id="data-citation-and-acknowledgements" class="level2">
+<h2 class="anchored" data-anchor-id="data-citation-and-acknowledgements">Data citation and acknowledgements</h2>
+<p>Please cite Jornada data when you use it in a manuscript, thesis/dissertation, or any other published product. As we’ve seen in earlier chapters of this guide, collecting data and authoring a dataset is hard work. Anyone who goes to the trouble of publishing a dataset (including you) deserves to be credited when the data are used. Citing data also gives Jornada programs (JRN LTER, the USDA-ARS JER) the credit they and their funding sources deserve. Below are general guidelines and examples for citing data in a journal article.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">General guidelines</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Data statement 1 (good)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Data statement 2 (not good)</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>The most logical place in an article to cite a published dataset is in the <strong>Methods</strong> section and in the <strong>Data Availability Statement</strong>, which most reputable journals now require. While preparing manuscripts, here are some things to remember:</p>
+<ul>
+<li>Check journal data sharing requirements and begin preparing for data publication well in advance of article submission.</li>
+<li>Whether you cite datasets in the Methods or Data Availability Statement, <strong>be sure that the full bibliographic entry is correctly included in the article’s reference list.</strong></li>
+<li>You can also cite your code if it is published. This is not as common as citing data, but some journals require it and it is a best practice.</li>
+</ul>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>In the Data Availability Statement from <span class="citation" data-cites="currier_precipitation_2022">C. M. Currier and Sala (<a href="#ref-currier_precipitation_2022" role="doc-biblioref">2022</a>)</span>, note that source datasets are properly cited in the Data Availability Statement, meaning an in-text citation is given and the full bibliographic entry is provided in the article reference list (not shown). The DOIs included here are helpful for quickly finding the data, and a link is also provided for data that don’t have a DOI (from NOAA).</p>
+<blockquote class="blockquote">
+<p>All original and derived phenology data produced by the authors, and R scripts for data processing, statistical analyses, and figure production are publicly available in the Environmental Data Initiative (EDI) repository. EDI package knb-lter-jrn.210574001.2 <span class="citation" data-cites="currier_daily_2022">(<a href="#ref-currier_daily_2022" role="doc-biblioref">C. Currier and Sala 2022a</a>)</span> contains daily phenocam image data, derived timeseries and associated scripts for processing and is available at <a href="https://doi.org/10.6073/pasta/836360dce9311130383c9672e836d640" class="uri">https://doi.org/10.6073/pasta/836360dce9311130383c9672e836d640</a>. EDI package knb-lter-jrn.210574002.2 <span class="citation" data-cites="currier_observed_2022">(<a href="#ref-currier_observed_2022" role="doc-biblioref">C. Currier and Sala 2022b</a>)</span> contains observed phenological indicators and environmental drivers as well as associated scripts for final analyses and figure construction presented in this manuscript and these data are available at <a href="https://doi.org/10.6073/pasta/d327a77f6474131db8aa589011e29c29" class="uri">https://doi.org/10.6073/pasta/d327a77f6474131db8aa589011e29c29</a>. No novel code was generated by the authors of this manuscript. The precipitation data used in all analyses are derived from G-BASN data in EDI package knb-lter-jrn.210520001 <span class="citation" data-cites="yao_gap-filled_2020">(<a href="#ref-yao_gap-filled_2020" role="doc-biblioref">Yao et al. 2020</a>)</span> available at <a href="https://doi.org/10.6073/pasta/cf3c45e5480551453f1f9041d664a28f" class="uri">https://doi.org/10.6073/pasta/cf3c45e5480551453f1f9041d664a28f</a>. Daily air temperature summaries from 4 June 1914 to the present for the Jornada Experimental Range Headquarters (NOAA station GHCND:USC00294426) are freely available upon request via the National Ocean and Atmospheric Administration (<a href="https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USC00294426/detail" class="uri">https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USC00294426/detail</a>).</p>
+</blockquote>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>Conventions are changing, but it is still fairly common to find data availability statements that raise barriers to data access or reproducibility. Here is one example:</p>
+<blockquote class="blockquote">
+<p>Data used in the figures are included in the supplementary material. The full dataset will be provided upon reasonable request to the corresponding author.</p>
+</blockquote>
+</div>
+</div>
+</div>
+<p>In addition to citing data, please also include an acknowledgement of funding and support provided by Jornada programs and funding sources in the <strong>Acknowledgements</strong> section of any Jornada-related manuscripts you publish. Include the support received, the name of the program (Jornada Basin LTER, for example), and relevant grant numbers in the Acknowledgements section of any journal article, thesis, dissertation, or other publication. Example text is below.</p>
+<ul>
+<li>For JRN LTER funded research products: <em>“This work was supported by funding from the National Science Foundation to New Mexico State University for the Jornada Basin Long-Term Ecological Research Program (DEB 2425143).”</em></li>
+<li>For USDA (JER) funded research: <em>“This work was supported by CRIS# 3050-11210-009-00D from the USDA-ARS Jornada Experimental Range and USDA Long-Term Agroecosystem Research Network.”</em></li>
+</ul>
+<p>Support to acknowledge may include direct funding of research or personnel costs allocated from the LTER or USDA grants, fellowship support to graduate students, logistical or data collection support from the Jornada field crew, or data management services from the Jornada Information Management team. If research was performed at USDA-ARS Jornada Experimental Range (JER) or NMSU Chihuahuan Desert Rangeland Research Center (CDRRC), but no direct support was provided by LTER or USDA programs, include the following:</p>
+<ul>
+<li>At JER: <em>“The Jornada Experimental Range is administered by the USDA-ARS and supported by the National Science Foundation Long-Term Ecological Research Program and the USDA Long-Term Agroecosystem Research Network.”</em></li>
+<li>At CDRRC: <em>“The Chihuahuan Desert Rangeland Research Center is administered by New Mexico State University.”</em></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Remember!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Sharing and citing data, and acknowledging support, helps keep the Jornada funded.</strong></p>
+</div>
+</div>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-currier_precipitation_2022" class="csl-entry" role="listitem">
+Currier, Courtney M., and Osvaldo E. Sala. 2022. <span>“Precipitation Versus Temperature as Phenology Controls in Drylands.”</span> <em>Ecology</em> 103 (11): e3793. <a href="https://doi.org/10.1002/ecy.3793">https://doi.org/10.1002/ecy.3793</a>.
+</div>
+<div id="ref-currier_daily_2022" class="csl-entry" role="listitem">
+Currier, Courtney, and Osvaldo E Sala. 2022a. <em>Daily Phenocam Image Data and Derived Timeseries for Global Change Experiments at the <span>Jornada</span> <span>Basin</span> <span>LTER</span> Site, 2014-2020</em>. Environmental Data Initiative. <a href="https://doi.org/10.6073/PASTA/836360DCE9311130383C9672E836D640">https://doi.org/10.6073/PASTA/836360DCE9311130383C9672E836D640</a>.
+</div>
+<div id="ref-currier_observed_2022" class="csl-entry" role="listitem">
+Currier, Courtney, and Osvaldo E Sala. 2022b. <em>Observed Phenological Indicators and Environmental Drivers at Global Change Experiments at the <span>Jornada</span> <span>Basin</span> <span>LTER</span> Site, 2014-2020</em>. Environmental Data Initiative. <a href="https://doi.org/10.6073/PASTA/D327A77F6474131DB8AA589011E29C29">https://doi.org/10.6073/PASTA/D327A77F6474131DB8AA589011E29C29</a>.
+</div>
+<div id="ref-yao_gap-filled_2020" class="csl-entry" role="listitem">
+Yao, Jin, John Anderson, Heather Savoy, and Debra Peters. 2020. <em>Gap-Filled Daily Precipitation at the 15 Long-Term <span>NPP</span> Sites at <span>Jornada</span> <span>Basin</span> <span>LTER</span>, 1980-Ongoing</em>. Environmental Data Initiative. <a href="https://doi.org/10.6073/PASTA/CF3C45E5480551453F1F9041D664A28F">https://doi.org/10.6073/PASTA/CF3C45E5480551453F1F9041D664A28F</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
