@@ -6,9 +6,18 @@ from: markdown+emoji
 
 ## Overview
 
-:construction: **Most of this chapter is under construction.** Don't forget to cite Jornada data when you use it!!!
+:construction: **Most of this chapter is under construction.**
 
 In this chapter we cover the basics of working with Jornada data. You'll find guidance on how to use your own data and re-use data published by others, and much of the information here applies not just to working with Jornada data, but to any research data. Many volumes could be, and have been, written about integrating, analyzing and interpreting research data in insightful, reproducible ways, but in this chapter we mainly provide some practical tips and lead you to useful resources.
+
+::: {.callout-tip}
+## Important TL;DR
+
+If you take only one thing from this chapter, **remember to cite the Jornada data you use, and acknowledge the support you get from the Jornada!** Details on how to do this are at the end of the chapter.
+
+_Doing this helps keep the Jornada funded._
+
+:::
 
 ## Be organized
 
@@ -37,7 +46,7 @@ my_project/
 Being organized is a laudable goal and also very easy to procrastinate about. For research projects, you'll find it much easier to get organized at the very beginning, and you can do that by having a simple organization scheme for your data and other files. At right is a suggested scheme for organizing a project directory on your computer, and this, or something similar, can probably work for most research projects. Step one is to keep all files related to the project in one directory (folder) on your computer. Within that directory create several subdirectories:
 
 1. The `code` subdirectory is for all your computer code, whether it be for data wrangling, statistics, figure creation, or what-have-you.
-2. In the `data` subdirectory you will keep all data files you create and use for the project. You should further divide this with subdirectories that are named and organized around your data processing and analysis activities. One easy way to do this is to have **raw, ready, and results** folders. The `raw` folder can be for any raw data you collect or download, the `ready` folder is for data you have error checked, cleaned and/or harmonized (joined with other data), and the `results` folder is for the outputs of your analysis (summary data for figures, statistics results). You can also use data "levels", and associated folders, to organize your data according to QA/QC levels. There is more about this in the [Collecting data](collecting_data.qmd) chapter.
+2. In the `data` subdirectory you will keep all data files you create and use for the project. This directory should also contain a **data sources log** of some kind, where you track the source of data going into your research.  You should further divide the `data` directory with subdirectories that are named and organized around your data processing and analysis activities. One easy way to do this is to have **raw, ready, and results** folders. The `raw` folder can be for any raw data you collect or download, the `ready` folder is for data you have error checked, cleaned and/or harmonized (joined with other data), and the `results` folder is for the outputs of your analysis (summary data for figures, statistics results). You can also use data "levels", and associated folders, to organize your data according to QA/QC levels. There is more about this in the [Collecting data](collecting_data.qmd) chapter.
 3. Keep all documentation in a `docs` subdirectory. Field notes, lab procedures, and data analysis logs are all useful throughout the life of the project and should be preserved alongside your other files.
 4. Further along in your project you will start analyzing and interpreting data and writing up results. You should probably have a `figures` subdirectory for plots and other visuals you generate, and a `publications` subdirectory for manuscripts you are working on.
 
@@ -57,7 +66,24 @@ In the previous chapter on [Data discovery](discover-data.qmd) you learned how t
 * Other languages (and EDI code generator)
 * Authentication with API keys
 
-### Verifying with checksums
+### Verify the data
+
+Once you start downloading and working with data, it can be easy to lose track of which files came from where, and what has changed in derived versions of a file. The **data sources log** mentioned above helps with this, but here are a few additional ways to verify data.
+
+:::{.panel-tabset}
+
+## File metadata
+
+* Filename
+* File size
+* Last modified date (if available)
+
+## Differencing (diff) files
+
+* Compare the data values of two text files using a differencing, or "diff" program (vimdiff, kdiff3, etc.) that shows line-by-line differences between two files.
+* There are ways to do this with binary files too.
+
+## Checksums
 
 All datasets published at EDI have MD5 checksums published alongside each data file. You can verify if a local file you have is identical to this by calculating the checksum on the local copy and comparing it to the EDI value. If they are the same the files are identical.
 
@@ -73,12 +99,18 @@ on Linux
 
     md5sum <filename> # or use sha256sum for SHA256
 
-    
+:::
+
+
 ## Integrating data
 
 ## Analyzing data
 
 ## Reproducibility
+
+### Work with data programmatically
+
+As we discussed in an earlier chapter about [cleaning and QA/QC](collecting_data.qmd#cleaning-and-qaqc), do your best to work with data using code or scripted workflows. 
 
 ### Use version control
 

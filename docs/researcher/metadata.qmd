@@ -295,7 +295,9 @@ Molecular and microbiome data, including amplicons, genomes, metagenomes, transc
 
 **Resources:**
 
-* The Jornada IM team doesn't have much to recommend yet, but we are working on some template ideas... stay tuned.
+* Here is [MIxS template background information](https://www.gensc.org/pages/standards-intro.html) from the Genomic Standards Consortium.
+* See how molecular/microbiome metadata can be useful by browsing for data at the [NMDC data portal](https://data.microbiomedata.org).
+* The Jornada IM team doesn't have much to recommend about how to collect this type of metadata yet, but we are working on some template ideas... stay tuned.
 
 ## Schema.org
 

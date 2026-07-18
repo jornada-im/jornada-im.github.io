@@ -260,18 +260,18 @@ The **file format** of your data refers to the physical file type that your data
 
 ## Delimited text files
 
-Delimited text files are a great format for using, archiving, and sharing your data. Rows of data values are stored as lines in a text files with a designated character serving as the delimiter between columns of data. They are human-readable, simple to understand, fairly space-efficient, and easy to use with almost any tool in your data workflow (R, Python, Excel, GIS software, etc.). They may have a `.txt`, `.csv`, `.tsv`, or other file extension depending on the delimiter and convention.
+Delimited text files are a great format for using, archiving, and sharing your data. Rows of data values are stored as lines in a text file with a designated character serving as the delimiter between columns of data. They are human-readable, simple to understand, fairly space-efficient, and easy to use with almost any tool in your data workflow (R, Python, Excel, GIS software, etc.). They may have a `.txt`, `.csv`, `.tsv`, or other file extension depending on the source and the delimiter used.
 
 ![A text file with the comma (,) as the column delimiter (click to expand). This is the always-friendly "comma-separated value" or CSV format (.csv), but other delimiters are sometimes used. This is a screenshot of the CSV file opened in a text editor called VIM, but you could also open and edit it with many other programs, including MS Excel.](img/format_csv.png){.lightbox width=80%}
 
 
 ## Excel spreadsheet
 
-Microsoft Excel is a powerful spreadsheet program with a long history of use in research. Excel spreadsheets live in the `.xlsx` file format, though there are many other non-Microsoft formats Excel can read and write, including CSV and other delimited text files. Also note that Microsoft Excel is not the only spreadsheet game in town. Google Sheets and LibreOffice Calc are both full-featured and can interoperate with Excel file formats very well.
+Microsoft Excel is a powerful spreadsheet program with a long history of use in research. Excel spreadsheets come in their own file format with the `.xlsx` extension (or `.xls` for old versions), but Excel can read and write quite a few other file formats, including delimited text files like CSV. Also note that Microsoft Excel is not the only spreadsheet game in town. Google Sheets and LibreOffice Calc are both full-featured and can interoperate with Excel file formats very well.
 
 ![An Excel spreadsheet (.xlsx file) showing the same data as presented in the first panel. This is a well-formatted spreadsheet table that wouldn't be any trouble to pick up and use.](img/format_excel.png){.lightbox width=90%}
 
-Unfortunately, spreadsheets sometimes make the wrong assumption about the data you enter, and they are prone to being used in non-standard ways. That makes spreadsheet files a little less friendly as an archive and distribution format for research data. See the example below.
+Unfortunately, spreadsheets sometimes make the wrong assumption about the data you enter, and they are prone to being used in non-standardized ways. That makes spreadsheet files a little less friendly as an archive and distribution format for research data. See the example below.
 
 ![A very unpleasant Excel spreadsheet that would be difficult to use. In spreadsheets it is pretty easy to mix very different kinds of data into the same column or row, and to include unpredictable groupings and sub-tables within the sheet. Don't do this if you use Excel --- try to format the data for easy re-usability by others (or your future self).](img/table_unpleasant.png){.lightbox width=70%}
 
@@ -496,7 +496,8 @@ The Jornada IM team has a significant amount of experience and a variety of tool
 ### Best practices
 
 * Preserve the raw data in its original form
-* Use reproducible or programmatic methods for cleaning and QA/QC
+* Use reproducible, programmatic methods for cleaning and QA/QC, not manual editing.
+* If you can, use numerical or statistical filters to find and remove outliers and error values, not "judgment calls" or "eyeballing it."
 
 ### Data levels
 
