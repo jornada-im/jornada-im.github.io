@@ -70,7 +70,7 @@ In the previous chapter on [Data discovery](discover-data.qmd) you learned how t
 
 Once you start downloading and working with data, it can be easy to lose track of which files came from where, and what has changed in derived versions of a file. The **data sources log** mentioned above helps with this, but here are a few additional ways to verify data.
 
-:::{.panel-tabset}
+::: {.panel-tabset}
 
 ## File metadata
 
@@ -133,7 +133,7 @@ As we discussed in an earlier chapter about [cleaning and QA/QC](collecting_data
 
 Please cite Jornada data when you use it in a manuscript, thesis/dissertation, or any other published product. As we've seen in earlier chapters of this guide, collecting data and authoring a dataset is hard work. Anyone who goes to the trouble of publishing a dataset (including you) deserves to be credited when the data are used. Citing data also gives Jornada programs (JRN LTER, the USDA-ARS JER) the credit they and their funding sources deserve. Below are general guidelines and examples for citing data in a journal article.
 
-:::{.panel-tabset}
+::: {.panel-tabset}
 
 ## General guidelines
 
