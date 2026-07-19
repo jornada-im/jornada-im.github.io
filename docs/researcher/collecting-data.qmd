@@ -2,7 +2,7 @@
 title: Collecting and managing data
 date: last-modified
 from: markdown+emoji
-mermaid-format: svg # png - this allows rendering of mermaid in advance
+mermaid-format: png # svg - this allows rendering of mermaid in advance
 ---
 
 ## Overview
@@ -126,7 +126,7 @@ At the Jornada we are usually studying biotic or abiotic phenomena in our slice 
 ::: {.callout-tip}
 ## Recommendations
 
-1. Know what your data are about, including the observational unit, and the variables observed or measured.
+1. Know what your data are about, including the variables observed or measured, and the observational units.
 2. Be prepared to describe what the data are about in your metadata.
 3. Be aware of any requirements for, and limitations of, the data you collect (e.g. human subjects, endangered species, sampling bias).
 
