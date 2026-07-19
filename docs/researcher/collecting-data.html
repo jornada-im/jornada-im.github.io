@@ -170,7 +170,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/researcher/collecting_data.html">Collecting data</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/researcher/collecting-data.html">Collecting data</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -196,7 +196,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/researcher/collecting_data.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../docs/researcher/collecting-data.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Collecting data</span></a>
   </div>
 </li>
@@ -220,8 +220,8 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/researcher/data-reuse.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Using data</span></a>
+  <a href="../../docs/researcher/data-work.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Working with data</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -257,14 +257,14 @@ div.csl-indent {
   <li><a href="#special-cases-and-unstructured-data" id="toc-special-cases-and-unstructured-data" class="nav-link" data-scroll-target="#special-cases-and-unstructured-data">Special cases and unstructured data</a></li>
   <li><a href="#one-last-thought" id="toc-one-last-thought" class="nav-link" data-scroll-target="#one-last-thought">One last thought</a></li>
   </ul></li>
-  <li><a href="#cleaning-and-qaqc" id="toc-cleaning-and-qaqc" class="nav-link" data-scroll-target="#cleaning-and-qaqc">Cleaning and QA/QC</a>
+  <li><a href="#cleaning-and-other-data-processing" id="toc-cleaning-and-other-data-processing" class="nav-link" data-scroll-target="#cleaning-and-other-data-processing">Cleaning and other data processing</a>
   <ul class="collapse">
-  <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices">Best practices</a></li>
-  <li><a href="#data-levels" id="toc-data-levels" class="nav-link" data-scroll-target="#data-levels">Data levels</a></li>
+  <li><a href="#data-processing-levels" id="toc-data-processing-levels" class="nav-link" data-scroll-target="#data-processing-levels">Data processing levels</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
   </ul></li>
   <li><a href="#storage-and-backup" id="toc-storage-and-backup" class="nav-link" data-scroll-target="#storage-and-backup">Storage and backup</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/researcher/collecting_data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/researcher/collecting-data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -509,7 +509,7 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 </ul>
 </div>
 <div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
-<p>Relational databases are collections of data tables that follow specific rules and have relationships connecting them to each other. In each table, rows hold a specific kind of data record referring to entities like observations, study sites, or organisms, and columns hold the variables (or “attributes”) for the records. Records in different tables are related to each other via values in shared columns (“foreign keys”). The tables, columns, and relationships are defined in a database <strong>schema</strong>. Databases are a consistent and space-efficient way to store multidimensional data. Here’s a diagram of a relational database schema with three tables:</p>
+<p>Relational databases are collections of data tables that follow specific rules and have relationships connecting them to each other. In each table, rows hold a specific kind of data record referring to entities like observations, study sites, or organisms, and columns hold the variables (or “attributes”) for the records. Records in different tables are related to each other via values in shared columns (“foreign keys”). The tables, columns, and relationships are defined in a database <strong>schema</strong>. Databases are a consistent and space-efficient way to store multidimensional data. Here’s a diagram of a relational database schema with three tables:<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -547,7 +547,6 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 </div>
 </div>
 </div>
-<p>(If rendering breaks, preview <a href="https://mermaid.live/edit#pako:eNqFUk1rwzAM_StG57Skado4ua4MRncoY6cRCG6tpmaxHWynbEvz35ePZrTZYL4Y6UnvPVmu4aA5QgJoNoLlhkmSKtIeLgwenNCKPL8Mmb3QkllLGj2bXS7EMlkWQuUZnlE5SxKSQsmMI_qYwn1HPYSECOUmfZng5HE74taZFmnLuDgLXrEiU5WcgLbEg0A7Zo-FZm5UyvIh3QzX1GJzaZ3XpCx077eHR6Zp7T-ed9tbvGN8uh2EM4evQuJVY9OGkzH03qI5o7kzPDir_6DeTd_Iil-UziBzsjV45QQPciM4JM5U6IFEI1kXQi-QgjuhxBS6xXFm3rutdT0lU29ay7HN6Co_QXJkhW2jquxGu36Vn6xBxdE86Eo5SCLac0BSwwckQbier4LYj-lq4UdhEHjwCUlM53QVhP4iWi6XMQ3DxoOvXtSfRwsaRHQdUxpHlC6C5ht4rtd_">here</a>)</p>
 <p>The <code>plants</code> table holds records of measured plant dimensions and related variables, which are connected to a specific sampling event. The <code>sampling_event</code> table holds information about those events, including date, observer, and the plot sampled. The <code>plots</code> table is connected to <code>sampling_event</code> by the <code>plot_id</code> field and stores information about the name, location and treatment of the research plots.</p>
 </div>
 </div>
@@ -583,7 +582,7 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 <p><img src="img/table_untidy_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
-<p>Keep in mind that wide/untidy format isn’t always bad. Wide tables tend to take up less space on disk, and in addition, they are called for in many standard statistical analyses.</p>
+<p>Keep in mind that wide/untidy format isn’t always bad. Wide tables tend to take up less space on disk, and in addition, they are called for in many standard statistical analyses. We’ll talk a little more about this in the <a href="../../docs/researcher/data-work.html">Working with data</a> chapter.</p>
 <p><strong>Bottom line</strong>: Tidy data is a great default format with several advantages, but be ready to use wide/untidy formats when necessary too.</p>
 </div>
 </div>
@@ -861,16 +860,16 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 <td>Intended use</td>
 <td><ul>
 <li>Species occurrence and biodiversity</li>
-<li>Metagenomics, transcriptomics and metabolomics</li>
 <li>Microbial or molecular ecology</li>
+<li>Genome, metagenome, transcriptome, metabolome and other “omics” studies</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Content</td>
 <td><ul>
-<li>Nucleotide reads from amplicons, genomes or metagenomes</li>
-<li>DNA/RNA metabarcoding IDs</li>
-<li>OTU or ASV data derived from bioinformatics</li>
+<li>Nucleotide reads from amplicons (such as 16S rRNA), genomes or metagenomes</li>
+<li>Feature tables (ASVs, OTUs per sample) derived from bioinformatics of amplicon or metabarcoding reads.</li>
+<li>Taxonomy tables</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -885,7 +884,7 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 <td>Data format</td>
 <td><ul>
 <li>Structured text for nucleotide sequence reads</li>
-<li>CSV tables for OTU/ASVs</li>
+<li>CSV tables for feature and taxonomy tables</li>
 <li>???</li>
 </ul></td>
 </tr>
@@ -893,7 +892,7 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 <td>File format</td>
 <td><ul>
 <li>FastQ files</li>
-<li>???</li>
+<li>phyloseq objects???</li>
 <li>???</li>
 </ul></td>
 </tr>
@@ -930,20 +929,40 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 </div>
 </section>
 </section>
-<section id="cleaning-and-qaqc" class="level2">
-<h2 class="anchored" data-anchor-id="cleaning-and-qaqc">Cleaning and QA/QC</h2>
-<p><span class="emoji" data-emoji="construction">🚧</span> this section is still under construction</p>
-<p>The Jornada IM team has a significant amount of experience and a variety of tools to draw on for quality assurance and quality control (QA/QC) of long-term Jornada datasets. For data managed by individual researchers, the Jornada IM team leaves most data QA/QC up to the research group or individual, but we are happy to advise when asked. For a simple overview and some resources useful for QA/QC of tabular data, see <a href="https://edirepository.org/resources/cleaning-data-and-quality-control">EDI’s recommendations</a>.</p>
-<section id="best-practices" class="level3">
-<h3 class="anchored" data-anchor-id="best-practices">Best practices</h3>
-<ul>
-<li>Preserve the raw data in its original form</li>
-<li>Use reproducible, programmatic methods for cleaning and QA/QC, not manual editing.</li>
-<li>If you can, use numerical or statistical filters to find and remove outliers and error values, not “judgment calls” or “eyeballing it.”</li>
-</ul>
+<section id="cleaning-and-other-data-processing" class="level2">
+<h2 class="anchored" data-anchor-id="cleaning-and-other-data-processing">Cleaning and other data processing</h2>
+<p>Once you have collected data, chances are you’ll need to process the data before analysis. This can include removing error values, calibrating variables, flagging outliers, standardizing categorical data, filling gaps, and much more, and it generally falls under the umbrella terms of <strong>data cleaning</strong> or <strong>quality assurance and control (QA/QC)</strong>. Data cleaning is complicated and varied, and entire books have been written on the subject <span class="citation" data-cites="wosborne_best_2013 loo_statistical_2018">(<a href="#ref-wosborne_best_2013" role="doc-biblioref">W.Osborne 2013</a>; <a href="#ref-loo_statistical_2018" role="doc-biblioref">Loo and Jonge 2018</a>)</span>. We only provide some general guidance and further resources here. The Jornada IM team has a significant amount of experience and a variety of tools to draw on for cleaning and QA/QC of long-term Jornada datasets. For datasets contributed by individual researchers or groups, the Jornada IM team leaves most of this job up to them, but we are happy to advise when asked.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Recommendations
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Here are some general best practices for data cleaning and QA/QC</strong></p>
+<ol type="1">
+<li>Always preserve the raw data in its original form. Chances are you’ll want to go back to the raw source data at least once.</li>
+<li>Use computer code or another scripted workflow, such as R or Python scripts,<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a><a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> or OpenRefine<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>, to clean and QA/QC your raw data, not manual editing. See the guidance for doing this reproducibly in the <a href="../../docs/researcher/data-work.html#reproducibility">Working with data</a> chapter.</li>
+<li>If you can, use numerical or statistical rules to find and remove error values or outliers, not “judgment calls” or “eyeballing it.”</li>
+<li>Spread the job around! Data cleaning typically demands a huge fraction of the total time devoted to working with data <span class="citation" data-cites="wickham_tidy_2014">(<a href="#ref-wickham_tidy_2014" role="doc-biblioref">Wickham 2014</a>)</span> and it can be tedious work. Sharing the data-cleaning burden is more equitable, and it gets more eyes on the data which will improve data quality.</li>
+</ol>
+</div>
+</div>
+<section id="data-processing-levels" class="level3">
+<h3 class="anchored" data-anchor-id="data-processing-levels">Data processing levels</h3>
+<p>Consider using the concept of data processing “levels,” meaning that defined sets of data cleaning and QA/QC operations are applied to the data consistently and in a stepwise fashion, and resulting data files are labeled distinctly and stored separately. Managing your data this way during the data collection phase sets your project on a path to being well-organized and reproducible later in the analysis phase (see the <a href="../../docs/researcher/data-work.html">Working with data</a> chapter). There are different ways to apply the concept of processing levels to your data.</p>
+<p>At the simple end, you could use <strong>raw, ready, and results</strong> directories (folders) to store data as you process them. The <strong>raw</strong> folder is for any raw data you collect or download, and should be preserved unchanged. The <strong>ready</strong> folder is for data that have been cleaned, quality-assured, and/or harmonized (joined with other data) and are ready for analysis to answer research questions. The <strong>results</strong> folder is for any outputs of your analysis, such as summary data for figures or statistical results, that are derived from the ready data and directly underpin research results, such as those included in a journal article.</p>
+<p>If your processing involves many steps or complicated data transformations, you may want to create a processing system with a series of <strong>numbered data levels</strong> (level 0, level 1 …) and use associated labeled folders to store data files for each level (<code>L0_data/</code>, <code>L1_data/</code>…). As long as you document the meaning and processing operations for each level, this type of scheme is scalable and easy to understand. Numbered data levels work particularly well for continuous sensor data where instrument error removal, calibration, gapfilling, and other operations need to be managed over time. For example, incoming raw sensor data would be labeled “level 0” data and stored in one project directory, and “level 1” data files would be produced by running a data cleaning script to remove obvious instrumentation errors, and the stored in an appropriate “level 1” directory.</p>
 </section>
-<section id="data-levels" class="level3">
-<h3 class="anchored" data-anchor-id="data-levels">Data levels</h3>
+<section id="resources" class="level3">
+<h3 class="anchored" data-anchor-id="resources">Resources</h3>
+<ul>
+<li>Both the R and Python data science ecosystems have excellent documentation resources that thoroughly cover data cleaning. For R, consider starting with Hadley Wickham’s <em>R for Data Science</em> book chapter on <a href="https://r4ds.hadley.nz/data-tidy">data tidying</a> <span class="citation" data-cites="wickham_r_2023">(<a href="#ref-wickham_r_2023" role="doc-biblioref">Wickham et al. 2023</a>)</span>, and for Python check Wes McKinney’s <em>Python for Data Analysis</em> book chapter on <a href="https://wesmckinney.com/book/data-cleaning">data cleaning and preparation</a> <span class="citation" data-cites="mckinney_python_2022">(<a href="#ref-mckinney_python_2022" role="doc-biblioref">McKinney 2022</a>)</span>.</li>
+<li>For some general considerations on cleaning data, see EDI’s “<a href="https://edirepository.org/resources/cleaning-data-and-quality-control">Cleaning Data and Quality Control</a>” resource.</li>
+</ul>
 </section>
 </section>
 <section id="storage-and-backup" class="level2">
@@ -978,13 +997,29 @@ Figure&nbsp;1: What is your scientific data workflow? There are some common them
 <div id="ref-gries_data_2021" class="csl-entry" role="listitem">
 Gries, Corinna, Stace Beaulieu, Renee F Brown, et al. 2021. <em>Data <span>Package</span> <span>Design</span> for <span>Special</span> <span>Cases</span></em>. Environmental Data Initiative. <a href="https://doi.org/10.6073/PASTA/9D4C803578C3FBCB45FC23F13124D052">https://doi.org/10.6073/PASTA/9D4C803578C3FBCB45FC23F13124D052</a>.
 </div>
+<div id="ref-loo_statistical_2018" class="csl-entry" role="listitem">
+Loo, Mark van der, and Edwin de Jonge. 2018. <em>Statistical <span>Data</span> <span>Cleaning</span> with <span>Applications</span> in <span>R</span></em>. John Wiley &amp; Sons.
+</div>
+<div id="ref-mckinney_python_2022" class="csl-entry" role="listitem">
+McKinney, Wes. 2022. <em>Python for Data Analysis: <span>Data</span> Wrangling with <span>Pandas</span>, <span>NumPy</span>, and <span>IPython</span></em>. Third. O’Reilly Media. <a href="https://wesmckinney.com/book/">https://wesmckinney.com/book/</a>.
+</div>
 <div id="ref-wickham_tidy_2014" class="csl-entry" role="listitem">
 Wickham, Hadley. 2014. <span>“Tidy <span>Data</span>.”</span> <em>Journal of Statistical Software</em> 59 (September): 1–23. <a href="https://doi.org/10.18637/jss.v059.i10">https://doi.org/10.18637/jss.v059.i10</a>.
+</div>
+<div id="ref-wickham_r_2023" class="csl-entry" role="listitem">
+Wickham, Hadley, Mine Cetinkaya-Rundel, and Garrett Grolemund. 2023. <em>R for <span>Data</span> <span>Science</span>: <span>Import</span>, <span>Tidy</span>, <span>Transform</span>, <span>Visualize</span>, and <span>Model</span> <span>Data</span></em>. Second. O’Reilly Media. <a href="https://r4ds.hadley.nz/">https://r4ds.hadley.nz/</a>.
+</div>
+<div id="ref-wosborne_best_2013" class="csl-entry" role="listitem">
+W.Osborne, Jason. 2013. <em>Best <span>Practices</span> in <span>Data</span> <span>Cleaning</span>: <span>A</span> <span>Complete</span> <span>Guide</span> to <span>Everything</span> <span>You</span> <span>Need</span> to <span>Do</span> <span>Before</span> and <span>After</span> <span>Collecting</span> <span>Your</span> <span>Data</span></em>. SAGE Publications, Inc. <a href="https://doi.org/10.4135/9781452269948">https://doi.org/10.4135/9781452269948</a>.
 </div>
 </div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>The concepts of data formats and data structuring can become fairly complicated and are related to the disciplines of <a href="https://en.wikipedia.org/wiki/Database_design">database design</a> and <a href="https://en.wikipedia.org/wiki/Data_modeling">data modeling</a>. For example, when designing a database one must decide what the entities (real-world concepts), tables (relations), attributes (columns), and foreign-key relationships (links between tables/columns) are. We won’t go into this much depth here, but it can sometimes be useful to have a detailed conceptual picture of how your research data fit together.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>If rendering breaks, see a preview <a href="https://mermaid.live/edit#pako:eNqFUk1rwzAM_StG57Skado4ua4MRncoY6cRCG6tpmaxHWynbEvz35ePZrTZYL4Y6UnvPVmu4aA5QgJoNoLlhkmSKtIeLgwenNCKPL8Mmb3QkllLGj2bXS7EMlkWQuUZnlE5SxKSQsmMI_qYwn1HPYSECOUmfZng5HE74taZFmnLuDgLXrEiU5WcgLbEg0A7Zo-FZm5UyvIh3QzX1GJzaZ3XpCx077eHR6Zp7T-ed9tbvGN8uh2EM4evQuJVY9OGkzH03qI5o7kzPDir_6DeTd_Iil-UziBzsjV45QQPciM4JM5U6IFEI1kXQi-QgjuhxBS6xXFm3rutdT0lU29ay7HN6Co_QXJkhW2jquxGu36Vn6xBxdE86Eo5SCLac0BSwwckQbier4LYj-lq4UdhEHjwCUlM53QVhP4iWi6XMQ3DxoOvXtSfRwsaRHQdUxpHlC6C5ht4rtd_">here</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>In R, the <code>tidyverse</code> libraries (e.g., <code>dplyr</code>, <code>tidyr</code>, <code>stringr</code>) are often used for data cleaning, as are additional libraries like <a href="https://sfirke.github.io/janitor/"><code>janitor</code></a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>In Python, <code>pandas</code> and <code>numpy</code> libraries provide useful data cleaning features. There are also some stand-alone cleaning tools like <a href="https://pyjanitor-devs.github.io/pyjanitor/"><code>pyjanitor</code></a> (started as a re-implementation of the R version) and <a href="https://docs.cleanlab.ai/stable/index.html"><code>cleanlab</code></a> (geared towards machine learning applications).<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p><a href="https://openrefine.org/">OpenRefine</a> is an open-source, cross-platform tool for iterative, scripted data cleaning.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1400,7 +1435,7 @@ Wickham, Hadley. 2014. <span>“Tidy <span>Data</span>.”</span> <em>Journal of
   </div>
 </nav>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/researcher/collecting_data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/researcher/collecting-data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {

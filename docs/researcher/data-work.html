@@ -164,7 +164,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/researcher/data-reuse.html">Using data</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/researcher/data-work.html">Working with data</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -190,7 +190,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/researcher/collecting_data.html" class="sidebar-item-text sidebar-link">
+  <a href="../../docs/researcher/collecting-data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Collecting data</span></a>
   </div>
 </li>
@@ -214,8 +214,8 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/researcher/data-reuse.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Using data</span></a>
+  <a href="../../docs/researcher/data-work.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Working with data</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -259,7 +259,7 @@ div.csl-indent {
   </ul></li>
   <li><a href="#data-citation-and-acknowledgements" id="toc-data-citation-and-acknowledgements" class="nav-link" data-scroll-target="#data-citation-and-acknowledgements">Data citation and acknowledgements</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/researcher/data-reuse.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/researcher/data-work.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -329,11 +329,11 @@ div.csl-indent {
 ├── figures/
 └── publications/</code></pre>
 </div>
-<p>Being organized is a laudable goal and also very easy to procrastinate about. For research projects, you’ll find it much easier to get organized at the very beginning, and you can do that by having a simple organization scheme for your data and other files. At right is a suggested scheme for organizing a project directory on your computer, and this, or something similar, can probably work for most research projects. Step one is to keep all files related to the project in one directory (folder) on your computer. Within that directory create several subdirectories:</p>
+<p>Being organized is a laudable goal and also very easy to procrastinate about. For research projects, you’ll find it much easier to get organized at the very beginning, and you can do that by having a simple organization scheme for your data and other files. At right is a suggested scheme for organizing a project directory on your computer, and this, or something similar, can probably work for most research projects. Step one is to keep all files related to the project in one directory (folder) on your computer. Within that directory create several subdirectories to contain the different kinds of files you use and create for the project. The project directory and the subdirectories should each have a <strong>README file</strong> to describe their purpose and the content therein. README files can be a simple text or markdown files, or something like an MS Word document. We recommend these subdirectories and contents in your project:</p>
 <ol type="1">
 <li>The <code>code</code> subdirectory is for all your computer code, whether it be for data wrangling, statistics, figure creation, or what-have-you.</li>
-<li>In the <code>data</code> subdirectory you will keep all data files you create and use for the project. This directory should also contain a <strong>data sources log</strong> of some kind, where you track the source of data going into your research. You should further divide the <code>data</code> directory with subdirectories that are named and organized around your data processing and analysis activities. One easy way to do this is to have <strong>raw, ready, and results</strong> folders. The <code>raw</code> folder can be for any raw data you collect or download, the <code>ready</code> folder is for data you have error checked, cleaned and/or harmonized (joined with other data), and the <code>results</code> folder is for the outputs of your analysis (summary data for figures, statistics results). You can also use data “levels”, and associated folders, to organize your data according to QA/QC levels. There is more about this in the <a href="../../docs/researcher/collecting_data.html">Collecting data</a> chapter.</li>
-<li>Keep all documentation in a <code>docs</code> subdirectory. Field notes, lab procedures, and data analysis logs are all useful throughout the life of the project and should be preserved alongside your other files.</li>
+<li>In the <code>data</code> subdirectory you will keep all data files you create and use for the project. We strongly recommend keeping a <strong>data sources log</strong>, which is a table where you list the source of all data files collected or downloaded for your research, here as well. Consider further dividing the <code>data</code> directory into subdirectories that are named and organized around your data processing and analysis activities. In the <a href="../../docs/researcher/collecting-data.html#cleaning-and-other-data-processing">Collecting data</a> chapter we discussed a couple ways to do this: <strong>raw, ready, and results</strong> folders, or <strong>numbered data levels</strong>.</li>
+<li>Keep all documentation in a <code>docs</code> subdirectory. Field notes, lab procedures, data analysis logs, and any other documentation that will be useful throughout the life of the project should be preserved here.</li>
 <li>Further along in your project you will start analyzing and interpreting data and writing up results. You should probably have a <code>figures</code> subdirectory for plots and other visuals you generate, and a <code>publications</code> subdirectory for manuscripts you are working on.</li>
 </ol>
 <p>If you get good at organizing research projects with a simple scheme like this you can step up to more complicated schemes.</p>
@@ -389,6 +389,13 @@ div.csl-indent {
 </section>
 <section id="integrate-data" class="level2">
 <h2 class="anchored" data-anchor-id="integrate-data">Integrate data</h2>
+<p>For R and Python users, there are excellent documentation resources that thoroughly cover data harmonization techniques like data filtering, reformatting, joins, and standardization.</p>
+<ul>
+<li>In Hadley Wickham’s <em>R for Data Science</em> book, the chapters on <a href="https://r4ds.hadley.nz/data-transform">data transforms</a> and <a href="https://r4ds.hadley.nz/data-tidy">data tidying</a> are a good place to start</li>
+<li>Also for R users, the LTER Network’s <code>ltertools</code> package has a nice approach to harmonization with its intuitively-named <code>harmonize</code> function. See the <a href="https://lter.github.io/ltertools/articles/ltertools.html#harmonization"><code>ltertools</code> package vignette for details</a></li>
+<li>In Wes McKinney’s <em>Python for Data Analysis</em> book, the chapter on <a href="https://wesmckinney.com/book/data-wrangling">data wrangling</a> is helpful.</li>
+<li>A nice <a href="https://www.theanalysisfactor.com/wide-and-long-data/">article in “The Analysis Factor”</a> describes wide vs long data formats and when to choose which (TLDR, it depends on your statistical analysis plan).</li>
+</ul>
 </section>
 <section id="analyze-data" class="level2">
 <h2 class="anchored" data-anchor-id="analyze-data">Analyze data</h2>
@@ -397,7 +404,7 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="reproducibility">Reproducibility</h2>
 <section id="work-with-data-programmatically" class="level3">
 <h3 class="anchored" data-anchor-id="work-with-data-programmatically">Work with data programmatically</h3>
-<p>As we discussed in an earlier chapter about <a href="../../docs/researcher/collecting_data.html#cleaning-and-qaqc">cleaning and QA/QC</a>, do your best to work with data using code or scripted workflows.</p>
+<p>As we discussed in an earlier chapter about <a href="../../docs/researcher/collecting-data.html#cleaning-and-other-data-processing">cleaning and QA/QC</a>, do your best to work with data using code or scripted workflows.</p>
 </section>
 <section id="use-version-control" class="level3">
 <h3 class="anchored" data-anchor-id="use-version-control">Use version control</h3>
@@ -912,4 +919,4 @@ Yao, Jin, John Anderson, Heather Savoy, and Debra Peters. 2020. <em>Gap-Filled D
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/researcher/data-reuse.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/researcher/data-work.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
