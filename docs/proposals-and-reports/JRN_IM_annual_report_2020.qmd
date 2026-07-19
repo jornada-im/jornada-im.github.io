@@ -1,7 +1,7 @@
 ﻿---
 title: Jornada Basin LTER Information Management 2020 Annual Report (DRAFT)
 date: 13 January 2021
-description: First, and probably last, ever JRN IM annual report
+description: First ever, and probably last ever, JRN IM annual report
 author: Gregory E. Maurer, John Anderson, Darren James, Nina Joffe, John Ragosta, Geovany Ramirez, Shelly Valdovinos
 ---
 

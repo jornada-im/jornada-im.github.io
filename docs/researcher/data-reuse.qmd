@@ -52,7 +52,7 @@ Being organized is a laudable goal and also very easy to procrastinate about. Fo
 
 If you get good at organizing research projects with a simple scheme like this you can step up to more complicated schemes. 
 
-## Obtaining and verifying data
+## Obtain and verify data
 
 In the previous chapter on [Data discovery](discover-data.qmd) you learned how to find Jornada data (JRN, JER, partners) in the Jornada data catalogs and associated data repositories.
 
@@ -66,9 +66,9 @@ In the previous chapter on [Data discovery](discover-data.qmd) you learned how t
 * Other languages (and EDI code generator)
 * Authentication with API keys
 
-### Verify the data
+### Verifying
 
-Once you start downloading and working with data, it can be easy to lose track of which files came from where, and what has changed in derived versions of a file. The **data sources log** mentioned above helps with this, but here are a few additional ways to verify data.
+The integrity of the data you use is important, and you should protect it and maintain it. Once you start downloading and working with data, it can be easy to lose track of which files came from where, and what has changed in derived versions of a file. The **data sources log** mentioned above helps with this, but here are a few additional ways to verify data.
 
 ::: {.panel-tabset}
 
@@ -102,9 +102,9 @@ on Linux
 :::
 
 
-## Integrating data
+## Integrate data
 
-## Analyzing data
+## Analyze data
 
 ## Reproducibility
 

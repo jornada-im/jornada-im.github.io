@@ -40,7 +40,7 @@ This site is maintained by the Jornada Information Management (IM) team to suppo
 
 - [Check the status of a dataset](docs/im/introduction.qmd#dataset-tracking)
 - [Find data management resources](docs/im/introduction.qmd#data-management-resources)
-- [Prepare an annual report](docs/im/procedures/reporting.qmd)
+- [Prepare an annual report](docs/project-procedures/reporting.qmd)
 - Read the [full IM system documentation](docs/im/sysadmin/index.qmd)
 :::
 :::

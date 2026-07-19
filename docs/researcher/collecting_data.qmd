@@ -2,7 +2,7 @@
 title: Collecting and managing data
 date: last-modified
 from: markdown+emoji
-mermaid-format: svg # png - this allows rendering of mermaid in advance
+#mermaid-format: svg # png - this allows rendering of mermaid in advance
 ---
 
 ## Overview
