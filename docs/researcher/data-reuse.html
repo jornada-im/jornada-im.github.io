@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-07-17">
+<meta name="dcterms.date" content="2026-07-19">
 
 <title>Working with data (use and re-use) – Jornada Data Commons</title>
 <style>
@@ -242,16 +242,17 @@ div.csl-indent {
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#be-organized" id="toc-be-organized" class="nav-link" data-scroll-target="#be-organized">Be organized</a></li>
-  <li><a href="#obtaining-and-verifying-data" id="toc-obtaining-and-verifying-data" class="nav-link" data-scroll-target="#obtaining-and-verifying-data">Obtaining and verifying data</a>
+  <li><a href="#obtain-and-verify-data" id="toc-obtain-and-verify-data" class="nav-link" data-scroll-target="#obtain-and-verify-data">Obtain and verify data</a>
   <ul class="collapse">
   <li><a href="#download-data" id="toc-download-data" class="nav-link" data-scroll-target="#download-data">Download data</a></li>
   <li><a href="#programmatic-access" id="toc-programmatic-access" class="nav-link" data-scroll-target="#programmatic-access">Programmatic access</a></li>
-  <li><a href="#verifying-with-checksums" id="toc-verifying-with-checksums" class="nav-link" data-scroll-target="#verifying-with-checksums">Verifying with checksums</a></li>
+  <li><a href="#verifying" id="toc-verifying" class="nav-link" data-scroll-target="#verifying">Verifying</a></li>
   </ul></li>
-  <li><a href="#integrating-data" id="toc-integrating-data" class="nav-link" data-scroll-target="#integrating-data">Integrating data</a></li>
-  <li><a href="#analyzing-data" id="toc-analyzing-data" class="nav-link" data-scroll-target="#analyzing-data">Analyzing data</a></li>
+  <li><a href="#integrate-data" id="toc-integrate-data" class="nav-link" data-scroll-target="#integrate-data">Integrate data</a></li>
+  <li><a href="#analyze-data" id="toc-analyze-data" class="nav-link" data-scroll-target="#analyze-data">Analyze data</a></li>
   <li><a href="#reproducibility" id="toc-reproducibility" class="nav-link" data-scroll-target="#reproducibility">Reproducibility</a>
   <ul class="collapse">
+  <li><a href="#work-with-data-programmatically" id="toc-work-with-data-programmatically" class="nav-link" data-scroll-target="#work-with-data-programmatically">Work with data programmatically</a></li>
   <li><a href="#use-version-control" id="toc-use-version-control" class="nav-link" data-scroll-target="#use-version-control">Use version control</a></li>
   <li><a href="#document-everything" id="toc-document-everything" class="nav-link" data-scroll-target="#document-everything">Document everything</a></li>
   <li><a href="#publish-your-products" id="toc-publish-your-products" class="nav-link" data-scroll-target="#publish-your-products">Publish your products</a></li>
@@ -276,7 +277,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 17, 2026</p>
+      <p class="date">July 19, 2026</p>
     </div>
   </div>
   
@@ -290,8 +291,22 @@ div.csl-indent {
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p><span class="emoji" data-emoji="construction">🚧</span> <strong>Most of this chapter is under construction.</strong> Don’t forget to cite Jornada data when you use it!!!</p>
+<p><span class="emoji" data-emoji="construction">🚧</span> <strong>Most of this chapter is under construction.</strong></p>
 <p>In this chapter we cover the basics of working with Jornada data. You’ll find guidance on how to use your own data and re-use data published by others, and much of the information here applies not just to working with Jornada data, but to any research data. Many volumes could be, and have been, written about integrating, analyzing and interpreting research data in insightful, reproducible ways, but in this chapter we mainly provide some practical tips and lead you to useful resources.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Important TL;DR
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you take only one thing from this chapter, <strong>remember to cite the Jornada data you use, and acknowledge the support you get from the Jornada!</strong> Details on how to do this are at the end of the chapter.</p>
+<p><em>Doing this helps keep the Jornada funded.</em></p>
+</div>
+</div>
 </section>
 <section id="be-organized" class="level2">
 <h2 class="anchored" data-anchor-id="be-organized">Be organized</h2>
@@ -317,14 +332,14 @@ div.csl-indent {
 <p>Being organized is a laudable goal and also very easy to procrastinate about. For research projects, you’ll find it much easier to get organized at the very beginning, and you can do that by having a simple organization scheme for your data and other files. At right is a suggested scheme for organizing a project directory on your computer, and this, or something similar, can probably work for most research projects. Step one is to keep all files related to the project in one directory (folder) on your computer. Within that directory create several subdirectories:</p>
 <ol type="1">
 <li>The <code>code</code> subdirectory is for all your computer code, whether it be for data wrangling, statistics, figure creation, or what-have-you.</li>
-<li>In the <code>data</code> subdirectory you will keep all data files you create and use for the project. You should further divide this with subdirectories that are named and organized around your data processing and analysis activities. One easy way to do this is to have <strong>raw, ready, and results</strong> folders. The <code>raw</code> folder can be for any raw data you collect or download, the <code>ready</code> folder is for data you have error checked, cleaned and/or harmonized (joined with other data), and the <code>results</code> folder is for the outputs of your analysis (summary data for figures, statistics results). You can also use data “levels”, and associated folders, to organize your data according to QA/QC levels. There is more about this in the <a href="../../docs/researcher/collecting_data.html">Collecting data</a> chapter.</li>
+<li>In the <code>data</code> subdirectory you will keep all data files you create and use for the project. This directory should also contain a <strong>data sources log</strong> of some kind, where you track the source of data going into your research. You should further divide the <code>data</code> directory with subdirectories that are named and organized around your data processing and analysis activities. One easy way to do this is to have <strong>raw, ready, and results</strong> folders. The <code>raw</code> folder can be for any raw data you collect or download, the <code>ready</code> folder is for data you have error checked, cleaned and/or harmonized (joined with other data), and the <code>results</code> folder is for the outputs of your analysis (summary data for figures, statistics results). You can also use data “levels”, and associated folders, to organize your data according to QA/QC levels. There is more about this in the <a href="../../docs/researcher/collecting_data.html">Collecting data</a> chapter.</li>
 <li>Keep all documentation in a <code>docs</code> subdirectory. Field notes, lab procedures, and data analysis logs are all useful throughout the life of the project and should be preserved alongside your other files.</li>
 <li>Further along in your project you will start analyzing and interpreting data and writing up results. You should probably have a <code>figures</code> subdirectory for plots and other visuals you generate, and a <code>publications</code> subdirectory for manuscripts you are working on.</li>
 </ol>
 <p>If you get good at organizing research projects with a simple scheme like this you can step up to more complicated schemes.</p>
 </section>
-<section id="obtaining-and-verifying-data" class="level2">
-<h2 class="anchored" data-anchor-id="obtaining-and-verifying-data">Obtaining and verifying data</h2>
+<section id="obtain-and-verify-data" class="level2">
+<h2 class="anchored" data-anchor-id="obtain-and-verify-data">Obtain and verify data</h2>
 <p>In the previous chapter on <a href="../../docs/researcher/discover-data.html">Data discovery</a> you learned how to find Jornada data (JRN, JER, partners) in the Jornada data catalogs and associated data repositories.</p>
 <section id="download-data" class="level3">
 <h3 class="anchored" data-anchor-id="download-data">Download data</h3>
@@ -340,8 +355,26 @@ div.csl-indent {
 <li>Authentication with API keys</li>
 </ul>
 </section>
-<section id="verifying-with-checksums" class="level3">
-<h3 class="anchored" data-anchor-id="verifying-with-checksums">Verifying with checksums</h3>
+<section id="verifying" class="level3">
+<h3 class="anchored" data-anchor-id="verifying">Verifying</h3>
+<p>The integrity of the data you use is important, and you should protect it and maintain it. Once you start downloading and working with data, it can be easy to lose track of which files came from where, and what has changed in derived versions of a file. The <strong>data sources log</strong> mentioned above helps with this, but here are a few additional ways to verify data.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">File metadata</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Differencing (diff) files</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Checksums</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<ul>
+<li>Filename</li>
+<li>File size</li>
+<li>Last modified date (if available)</li>
+</ul>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<ul>
+<li>Compare the data values of two text files using a differencing, or “diff” program (vimdiff, kdiff3, etc.) that shows line-by-line differences between two files.</li>
+<li>There are ways to do this with binary files too.</li>
+</ul>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p>All datasets published at EDI have MD5 checksums published alongside each data file. You can verify if a local file you have is identical to this by calculating the checksum on the local copy and comparing it to the EDI value. If they are the same the files are identical.</p>
 <p>on Windows:</p>
 <pre><code>certutil -hashfile &lt;filename&gt; MD5 # or SHA256</code></pre>
@@ -349,16 +382,23 @@ div.csl-indent {
 <pre><code>md5 &lt;filename&gt; # or use the shasum command for SHA256</code></pre>
 <p>on Linux</p>
 <pre><code>md5sum &lt;filename&gt; # or use sha256sum for SHA256</code></pre>
+</div>
+</div>
+</div>
 </section>
 </section>
-<section id="integrating-data" class="level2">
-<h2 class="anchored" data-anchor-id="integrating-data">Integrating data</h2>
+<section id="integrate-data" class="level2">
+<h2 class="anchored" data-anchor-id="integrate-data">Integrate data</h2>
 </section>
-<section id="analyzing-data" class="level2">
-<h2 class="anchored" data-anchor-id="analyzing-data">Analyzing data</h2>
+<section id="analyze-data" class="level2">
+<h2 class="anchored" data-anchor-id="analyze-data">Analyze data</h2>
 </section>
 <section id="reproducibility" class="level2">
 <h2 class="anchored" data-anchor-id="reproducibility">Reproducibility</h2>
+<section id="work-with-data-programmatically" class="level3">
+<h3 class="anchored" data-anchor-id="work-with-data-programmatically">Work with data programmatically</h3>
+<p>As we discussed in an earlier chapter about <a href="../../docs/researcher/collecting_data.html#cleaning-and-qaqc">cleaning and QA/QC</a>, do your best to work with data using code or scripted workflows.</p>
+</section>
 <section id="use-version-control" class="level3">
 <h3 class="anchored" data-anchor-id="use-version-control">Use version control</h3>
 <ul>
@@ -389,9 +429,9 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="data-citation-and-acknowledgements">Data citation and acknowledgements</h2>
 <p>Please cite Jornada data when you use it in a manuscript, thesis/dissertation, or any other published product. As we’ve seen in earlier chapters of this guide, collecting data and authoring a dataset is hard work. Anyone who goes to the trouble of publishing a dataset (including you) deserves to be credited when the data are used. Citing data also gives Jornada programs (JRN LTER, the USDA-ARS JER) the credit they and their funding sources deserve. Below are general guidelines and examples for citing data in a journal article.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">General guidelines</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Data statement 1 (good)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Data statement 2 (not good)</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">General guidelines</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Data statement 1 (good)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Data statement 2 (not good)</a></li></ul>
 <div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p>The most logical place in an article to cite a published dataset is in the <strong>Methods</strong> section and in the <strong>Data Availability Statement</strong>, which most reputable journals now require. While preparing manuscripts, here are some things to remember:</p>
 <ul>
 <li>Check journal data sharing requirements and begin preparing for data publication well in advance of article submission.</li>
@@ -399,13 +439,13 @@ div.csl-indent {
 <li>You can also cite your code if it is published. This is not as common as citing data, but some journals require it and it is a best practice.</li>
 </ul>
 </div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <p>In the Data Availability Statement from <span class="citation" data-cites="currier_precipitation_2022">C. M. Currier and Sala (<a href="#ref-currier_precipitation_2022" role="doc-biblioref">2022</a>)</span>, note that source datasets are properly cited in the Data Availability Statement, meaning an in-text citation is given and the full bibliographic entry is provided in the article reference list (not shown). The DOIs included here are helpful for quickly finding the data, and a link is also provided for data that don’t have a DOI (from NOAA).</p>
 <blockquote class="blockquote">
 <p>All original and derived phenology data produced by the authors, and R scripts for data processing, statistical analyses, and figure production are publicly available in the Environmental Data Initiative (EDI) repository. EDI package knb-lter-jrn.210574001.2 <span class="citation" data-cites="currier_daily_2022">(<a href="#ref-currier_daily_2022" role="doc-biblioref">C. Currier and Sala 2022a</a>)</span> contains daily phenocam image data, derived timeseries and associated scripts for processing and is available at <a href="https://doi.org/10.6073/pasta/836360dce9311130383c9672e836d640" class="uri">https://doi.org/10.6073/pasta/836360dce9311130383c9672e836d640</a>. EDI package knb-lter-jrn.210574002.2 <span class="citation" data-cites="currier_observed_2022">(<a href="#ref-currier_observed_2022" role="doc-biblioref">C. Currier and Sala 2022b</a>)</span> contains observed phenological indicators and environmental drivers as well as associated scripts for final analyses and figure construction presented in this manuscript and these data are available at <a href="https://doi.org/10.6073/pasta/d327a77f6474131db8aa589011e29c29" class="uri">https://doi.org/10.6073/pasta/d327a77f6474131db8aa589011e29c29</a>. No novel code was generated by the authors of this manuscript. The precipitation data used in all analyses are derived from G-BASN data in EDI package knb-lter-jrn.210520001 <span class="citation" data-cites="yao_gap-filled_2020">(<a href="#ref-yao_gap-filled_2020" role="doc-biblioref">Yao et al. 2020</a>)</span> available at <a href="https://doi.org/10.6073/pasta/cf3c45e5480551453f1f9041d664a28f" class="uri">https://doi.org/10.6073/pasta/cf3c45e5480551453f1f9041d664a28f</a>. Daily air temperature summaries from 4 June 1914 to the present for the Jornada Experimental Range Headquarters (NOAA station GHCND:USC00294426) are freely available upon request via the National Ocean and Atmospheric Administration (<a href="https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USC00294426/detail" class="uri">https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USC00294426/detail</a>).</p>
 </blockquote>
 </div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
 <p>Conventions are changing, but it is still fairly common to find data availability statements that raise barriers to data access or reproducibility. Here is one example:</p>
 <blockquote class="blockquote">
 <p>Data used in the figures are included in the supplementary material. The full dataset will be provided upon reasonable request to the corresponding author.</p>
