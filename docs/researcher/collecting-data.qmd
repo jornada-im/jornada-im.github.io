@@ -183,7 +183,7 @@ In this example most of those issues have been corrected.
 
 ## A relational database
 
-Relational databases are collections of data tables that follow specific rules and have relationships connecting them to each other. In each table, rows hold a specific kind of data record referring to entities like observations, study sites, or organisms, and columns hold the variables (or "attributes") for the records. Records in different tables are related to each other via values in shared columns ("foreign keys"). The tables, columns, and relationships are defined in a database **schema**. Databases are a consistent and space-efficient way to store multidimensional data. Here's a diagram of a relational database schema with three tables:
+Relational databases are collections of data tables that follow specific rules and have relationships connecting them to each other. In each table, rows hold a specific kind of data record referring to entities like observations, study sites, or organisms, and columns hold the variables (or "attributes") for the records. Records in different tables are related to each other via values in shared columns ("foreign keys"). The tables, columns, and relationships are defined in a database **schema**. Databases are a consistent and space-efficient way to store multidimensional data. Here's a diagram of a relational database schema with three tables:[^2]
 
 ```{mermaid}
 erDiagram 
@@ -214,7 +214,7 @@ erDiagram
     }
 ```
 
-(If rendering breaks, preview [here](https://mermaid.live/edit#pako:eNqFUk1rwzAM_StG57Skado4ua4MRncoY6cRCG6tpmaxHWynbEvz35ePZrTZYL4Y6UnvPVmu4aA5QgJoNoLlhkmSKtIeLgwenNCKPL8Mmb3QkllLGj2bXS7EMlkWQuUZnlE5SxKSQsmMI_qYwn1HPYSECOUmfZng5HE74taZFmnLuDgLXrEiU5WcgLbEg0A7Zo-FZm5UyvIh3QzX1GJzaZ3XpCx077eHR6Zp7T-ed9tbvGN8uh2EM4evQuJVY9OGkzH03qI5o7kzPDir_6DeTd_Iil-UziBzsjV45QQPciM4JM5U6IFEI1kXQi-QgjuhxBS6xXFm3rutdT0lU29ay7HN6Co_QXJkhW2jquxGu36Vn6xBxdE86Eo5SCLac0BSwwckQbier4LYj-lq4UdhEHjwCUlM53QVhP4iWi6XMQ3DxoOvXtSfRwsaRHQdUxpHlC6C5ht4rtd_))
+[^2]: If rendering breaks, see a preview [here](https://mermaid.live/edit#pako:eNqFUk1rwzAM_StG57Skado4ua4MRncoY6cRCG6tpmaxHWynbEvz35ePZrTZYL4Y6UnvPVmu4aA5QgJoNoLlhkmSKtIeLgwenNCKPL8Mmb3QkllLGj2bXS7EMlkWQuUZnlE5SxKSQsmMI_qYwn1HPYSECOUmfZng5HE74taZFmnLuDgLXrEiU5WcgLbEg0A7Zo-FZm5UyvIh3QzX1GJzaZ3XpCx077eHR6Zp7T-ed9tbvGN8uh2EM4evQuJVY9OGkzH03qI5o7kzPDir_6DeTd_Iil-UziBzsjV45QQPciM4JM5U6IFEI1kXQi-QgjuhxBS6xXFm3rutdT0lU29ay7HN6Co_QXJkhW2jquxGu36Vn6xBxdE86Eo5SCLac0BSwwckQbier4LYj-lq4UdhEHjwCUlM53QVhP4iWi6XMQ3DxoOvXtSfRwsaRHQdUxpHlC6C5ht4rtd_).
 
 The `plants` table holds records of measured plant dimensions and related variables, which are connected to a specific sampling event. The `sampling_event` table holds information about those events, including date, observer, and the plot sampled. The `plots` table is connected to `sampling_event` by the `plot_id` field and stores information about the name, location and treatment of the research plots. 
 
@@ -238,7 +238,7 @@ This is in contrast to "wide," or "untidy," format, in which variables and obser
 
 ![](img/table_untidy_2.png){fig-align="center"}
 
-Keep in mind that wide/untidy format isn't always bad. Wide tables tend to take up less space on disk, and in addition, they are called for in many standard statistical analyses.
+Keep in mind that wide/untidy format isn't always bad. Wide tables tend to take up less space on disk, and in addition, they are called for in many standard statistical analyses. We'll talk a little more about this in the [Working with data](data-work.qmd) chapter.
 
 **Bottom line**: Tidy data is a great default format with several advantages, but be ready to use wide/untidy formats when necessary too.
 :::
@@ -442,13 +442,15 @@ Molecular data types contain information about DNA, RNA, proteins, or other biol
 
 +---------------+---------------------------------------------------------+
 | Intended use  | - Species occurrence and biodiversity                   |
-|               | - Metagenomics, transcriptomics and metabolomics        |
 |               | - Microbial or molecular ecology                        |
+|               | - Genome, metagenome, transcriptome, metabolome and     |
+|               |   other "omics" studies                                 |
 +---------------+---------------------------------------------------------+
-| Content       | - Nucleotide reads from amplicons, genomes or           |
-|               |   metagenomes                                           |
-|               | - DNA/RNA metabarcoding IDs                             |
-|               | - OTU or ASV data derived from bioinformatics           |
+| Content       | - Nucleotide reads from amplicons (such as 16S rRNA),   |
+|               |   genomes or metagenomes                                |
+|               | - Feature tables (ASVs, OTUs per sample) derived from   |
+|               |   bioinformatics of amplicon or metabarcoding reads.    |
+|               | - Taxonomy tables                                       |
 +---------------+---------------------------------------------------------+
 | Source (or    | - Shotgun sequencing                                    |
 | acquisition   | - High-throughput sequencing                            |
@@ -456,11 +458,11 @@ Molecular data types contain information about DNA, RNA, proteins, or other biol
 |               |                                                         |
 +---------------+---------------------------------------------------------+
 | Data format   | - Structured text for nucleotide sequence reads         |
-|               | - CSV tables for OTU/ASVs                               |
+|               | - CSV tables for feature and taxonomy tables            |
 |               | - ???                                                   |
 +---------------+---------------------------------------------------------+
 | File format   | - FastQ files                                           |
-|               | - ???                                                   |
+|               | - phyloseq objects???                                   |
 |               | - ???                                                   |
 +---------------+---------------------------------------------------------+
 
@@ -487,21 +489,39 @@ As mentioned before, the data attributes discussed in the sections above are imp
 2. Make sure to plan for, collect, and preserve metadata early in your research.
 :::
 
-## Cleaning and QA/QC
+## Cleaning and other data processing
 
-:construction: this section is still under construction
+Once you have collected data, chances are you'll need to process the data before analysis. This can include removing error values, calibrating variables, flagging outliers, standardizing categorical data, filling gaps, and much more, and it generally falls under the umbrella terms of **data cleaning** or **quality assurance and control (QA/QC)**. Data cleaning is complicated and varied, and entire books have been written on the subject [@wosborne_best_2013; @loo_statistical_2018]. We only provide some general guidance and further resources here. The Jornada IM team has a significant amount of experience and a variety of tools to draw on for cleaning and QA/QC of long-term Jornada datasets. For datasets contributed by individual researchers or groups, the Jornada IM team leaves most of this job up to them, but we are happy to advise when asked.
 
-The Jornada IM team has a significant amount of experience and a variety of tools to draw on for quality assurance and quality control (QA/QC) of long-term Jornada datasets. For data managed by individual researchers, the Jornada IM team leaves most data QA/QC up to the research group or individual, but we are happy to advise when asked. For a simple overview and some resources useful for QA/QC of tabular data, see [EDI's recommendations]({{< var url.edi >}}/resources/cleaning-data-and-quality-control).
+::: {.callout-tip}
 
-### Best practices
+## Recommendations
 
-* Preserve the raw data in its original form
-* Use reproducible, programmatic methods for cleaning and QA/QC, not manual editing.
-* If you can, use numerical or statistical filters to find and remove outliers and error values, not "judgment calls" or "eyeballing it."
+**Here are some general best practices for data cleaning and QA/QC**
 
-### Data levels
+1. Always preserve the raw data in its original form. Chances are you’ll want to go back to the raw source data at least once.
+2. Use computer code or another scripted workflow, such as R or Python scripts,[^3][^4] or OpenRefine[^5], to clean and QA/QC your raw data, not manual editing. See the guidance for doing this reproducibly in the [Working with data](data-work.qmd#reproducibility) chapter.
+3. If you can, use numerical or statistical rules to find and remove error values or outliers, not "judgment calls" or "eyeballing it."
+4. Spread the job around! Data cleaning typically demands a huge fraction of the total time devoted to working with data [@wickham_tidy_2014] and it can be tedious work. Sharing the data-cleaning burden is more equitable, and it gets more eyes on the data which will improve data quality.
 
+:::
 
+### Data processing levels
+
+Consider using the concept of data processing “levels,” meaning that defined sets of data cleaning and QA/QC operations are applied to the data consistently and in a stepwise fashion, and resulting data files are labeled distinctly and stored separately. Managing your data this way during the data collection phase sets your project on a path to being well-organized and reproducible later in the analysis phase (see the [Working with data](data-work.qmd) chapter). There are different ways to apply the concept of processing levels to your data.
+
+At the simple end, you could use **raw, ready, and results** directories (folders) to store data as you process them. The **raw** folder is for any raw data you collect or download, and should be preserved unchanged. The **ready** folder is for data that have been cleaned, quality-assured, and/or harmonized (joined with other data) and are ready for analysis to answer research questions. The **results** folder is for any outputs of your analysis, such as summary data for figures or statistical results, that are derived from the ready data and directly underpin research results, such as those included in a journal article.
+
+If your processing involves many steps or complicated data transformations, you may want to create a processing system with a series of **numbered data levels** (level 0, level 1 ...) and use associated labeled folders to store data files for each level (`L0_data/`, `L1_data/`...). As long as you document the meaning and processing operations for each level, this type of scheme is scalable and easy to understand. Numbered data levels work particularly well for continuous sensor data where instrument error removal, calibration, gapfilling, and other operations need to be managed over time. For example, incoming raw sensor data would be labeled “level 0” data and stored in one project directory, and “level 1” data files would be produced by running a data cleaning script to remove obvious instrumentation errors, and the stored in an appropriate "level 1" directory.
+
+### Resources
+
+- Both the R and Python data science ecosystems have excellent documentation resources that thoroughly cover data cleaning. For R, consider starting with Hadley Wickham's _R for Data Science_ book chapter on [data tidying](https://r4ds.hadley.nz/data-tidy) [@wickham_r_2023], and for Python check Wes McKinney's _Python for Data Analysis_ book chapter on [data cleaning and preparation](https://wesmckinney.com/book/data-cleaning) [@mckinney_python_2022].
+- For some general considerations on cleaning data, see EDI's "[Cleaning Data and Quality Control](https://edirepository.org/resources/cleaning-data-and-quality-control)" resource.
+
+[^3]: In R, the `tidyverse` libraries (e.g., `dplyr`, `tidyr`, `stringr`) are often used for data cleaning, as are additional libraries like [`janitor`](https://sfirke.github.io/janitor/).
+[^4]: In Python, `pandas` and `numpy` libraries provide useful data cleaning features. There are also some stand-alone cleaning tools like [`pyjanitor`](https://pyjanitor-devs.github.io/pyjanitor/) (started as a re-implementation of the R version) and [`cleanlab`](https://docs.cleanlab.ai/stable/index.html) (geared towards machine learning applications).
+[^5]: [OpenRefine](https://openrefine.org/) is an open-source, cross-platform tool for iterative, scripted data cleaning.
 
 
 ## Storage and backup

@@ -32,7 +32,7 @@ This guide is organized roughly according to the DataONE data lifecycle [@michen
 * Using metadata to **describe** data is found in the [Metadata](metadata.qmd) chapter.
 * When you are ready to **preserve** your data by publishing it in a repository, read the [Publish a dataset](prepare-and-publish.qmd) chapter.
 * To learn how and where to **discover** Jornada data, read the [Discover Jornada data](discover-data.qmd) chapter.
-* Data reuse, including **integrating** and **analyzing** data is covered in the [Using data](data-reuse.qmd) chapter.
+* Data reuse, including **integrating** (also called harmonizing) and **analyzing** data is covered in the [Working with data](data-work.qmd) chapter.
 
 Research workflows and data management can be complex, and the Jornada is a big project, so we have also created an [Advanced topics in research data management](advanced-topics.qmd) chapter. You will find many Jornada-specific tips throughout the guide, but much of the advice in these chapters can apply to managing data in other contexts.
 

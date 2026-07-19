@@ -43,11 +43,11 @@ my_project/
 ```
 :::
 
-Being organized is a laudable goal and also very easy to procrastinate about. For research projects, you'll find it much easier to get organized at the very beginning, and you can do that by having a simple organization scheme for your data and other files. At right is a suggested scheme for organizing a project directory on your computer, and this, or something similar, can probably work for most research projects. Step one is to keep all files related to the project in one directory (folder) on your computer. Within that directory create several subdirectories:
+Being organized is a laudable goal and also very easy to procrastinate about. For research projects, you'll find it much easier to get organized at the very beginning, and you can do that by having a simple organization scheme for your data and other files. At right is a suggested scheme for organizing a project directory on your computer, and this, or something similar, can probably work for most research projects. Step one is to keep all files related to the project in one directory (folder) on your computer. Within that directory create several subdirectories to contain the different kinds of files you use and create for the project. The project directory and the subdirectories should each have a **README file** to describe their purpose and the content therein. README files can be a simple text or markdown files, or something like an MS Word document. We recommend these subdirectories and contents in your project:
 
 1. The `code` subdirectory is for all your computer code, whether it be for data wrangling, statistics, figure creation, or what-have-you.
-2. In the `data` subdirectory you will keep all data files you create and use for the project. This directory should also contain a **data sources log** of some kind, where you track the source of data going into your research.  You should further divide the `data` directory with subdirectories that are named and organized around your data processing and analysis activities. One easy way to do this is to have **raw, ready, and results** folders. The `raw` folder can be for any raw data you collect or download, the `ready` folder is for data you have error checked, cleaned and/or harmonized (joined with other data), and the `results` folder is for the outputs of your analysis (summary data for figures, statistics results). You can also use data "levels", and associated folders, to organize your data according to QA/QC levels. There is more about this in the [Collecting data](collecting_data.qmd) chapter.
-3. Keep all documentation in a `docs` subdirectory. Field notes, lab procedures, and data analysis logs are all useful throughout the life of the project and should be preserved alongside your other files.
+2. In the `data` subdirectory you will keep all data files you create and use for the project. We strongly recommend keeping a **data sources log**, which is a table where you list the source of all data files collected or downloaded for your research, here as well. Consider further dividing the `data` directory into subdirectories that are named and organized around your data processing and analysis activities. In the [Collecting data](collecting-data.qmd#cleaning-and-other-data-processing) chapter we discussed a couple ways to do this:  **raw, ready, and results** folders, or **numbered data levels**.
+3. Keep all documentation in a `docs` subdirectory. Field notes, lab procedures, data analysis logs, and any other documentation that will be useful throughout the life of the project should be preserved here.
 4. Further along in your project you will start analyzing and interpreting data and writing up results. You should probably have a `figures` subdirectory for plots and other visuals you generate, and a `publications` subdirectory for manuscripts you are working on.
 
 If you get good at organizing research projects with a simple scheme like this you can step up to more complicated schemes. 
@@ -104,13 +104,21 @@ on Linux
 
 ## Integrate data
 
+For R and Python users, there are excellent documentation resources that thoroughly cover data harmonization techniques like data filtering, reformatting, joins, and standardization.
+
+- In Hadley Wickham's _R for Data Science_ book, the chapters on [data transforms](https://r4ds.hadley.nz/data-transform) and [data tidying](https://r4ds.hadley.nz/data-tidy) are a good place to start
+- Also for R users, the LTER Network's `ltertools` package has a nice approach to harmonization with its intuitively-named `harmonize` function. See the [`ltertools` package vignette for details](https://lter.github.io/ltertools/articles/ltertools.html#harmonization)
+- In Wes McKinney's _Python for Data Analysis_ book, the chapter on [data wrangling](https://wesmckinney.com/book/data-wrangling) is helpful.
+- A nice [article in "The Analysis Factor"](https://www.theanalysisfactor.com/wide-and-long-data/) describes wide vs long data formats and when to choose which (TLDR, it depends on your statistical analysis plan).
+
+
 ## Analyze data
 
 ## Reproducibility
 
 ### Work with data programmatically
 
-As we discussed in an earlier chapter about [cleaning and QA/QC](collecting_data.qmd#cleaning-and-qaqc), do your best to work with data using code or scripted workflows. 
+As we discussed in an earlier chapter about [cleaning and QA/QC](collecting-data.qmd#cleaning-and-other-data-processing), do your best to work with data using code or scripted workflows. 
 
 ### Use version control
 

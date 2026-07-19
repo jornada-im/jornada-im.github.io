@@ -27,7 +27,7 @@ Preserving these metadata alongside your actual data (measurements, observations
 
 ## Getting started with metadata
 
-Given their importance, creating and managing metadata should be an integral part of most research activities, including in the field, the lab, or when working with data. But, if you are a new researcher, it can be a challenge to know how to start with metadata. In the [last chapter](collecting_data.qmd) we touched on some important attributes that describe the data you collect, including intended use, content, source, and formatting. These are the just the beginning of the metadata you'll collect, and more information will become important over time. Below are a few suggestions on how to start.
+Given their importance, creating and managing metadata should be an integral part of most research activities, including in the field, the lab, or when working with data. But, if you are a new researcher, it can be a challenge to know how to start with metadata. In the [last chapter](collecting-data.qmd) we touched on some important attributes that describe the data you collect, including intended use, content, source, and formatting. These are the just the beginning of the metadata you'll collect, and more information will become important over time. Below are a few suggestions on how to start.
 
 1. **Early in your research, start thinking about the metadata you will need.**
     - Look ahead to how you will analyze and interpret the data for your research project. What will you need to know to do this?
@@ -173,7 +173,7 @@ Give each file in your dataset a brief but detailed description. You may want to
 
 #### File attributes
 
-Those who use the data files you share (including your future self) will need some cues on how to do that, so your metadata should describe each file as clearly as possible. In the previous chapter there are some [file format recommendations](./collecting_data.qmd#file-formats) that we won't repeat here except to say that using file formats that are as open (non-proprietary) and understandable as possible, and describing them clearly and thoroughly, will benefit everyone involved.
+Those who use the data files you share (including your future self) will need some cues on how to do that, so your metadata should describe each file as clearly as possible. In the previous chapter there are some [file format recommendations](./collecting-data.qmd#file-formats) that we won't repeat here except to say that using file formats that are as open (non-proprietary) and understandable as possible, and describing them clearly and thoroughly, will benefit everyone involved.
 
 * A **file name** is the name of the digital file as it is referred to on a computer system or storage media. Its best to use concise but descriptive file names without any special characters or spaces. _Examples: plant_data_table.csv, 2007-images.zip_
 * The **file type** refers to a general file category that indicates something about the data content and how to access it. _Examples: text, binary, raster image_ 
@@ -186,7 +186,7 @@ Those who use the data files you share (including your future self) will need so
 
 #### Data attributes
 
-The data in the files you share don't speak for themselves, so metadata must explain them well enough that others can understand and use each data file. The previous chapter describes the important aspects of [data content](./collecting_data.qmd#content), and provides [data formatting recommendations](./collecting_data.qmd#data-format) to consider. Below we describe how to communicate about the content, formatting, and meaning of data files with **metadata attributes that should be provided for _each variable_ in a data file**. In tabular data files, the individual variables are usually represented as columns, but other arrangements, such as bands/layers in raster images, are not uncommon.
+The data in the files you share don't speak for themselves, so metadata must explain them well enough that others can understand and use each data file. The previous chapter describes the important aspects of [data content](./collecting-data.qmd#content), and provides [data formatting recommendations](./collecting-data.qmd#data-format) to consider. Below we describe how to communicate about the content, formatting, and meaning of data files with **metadata attributes that should be provided for _each variable_ in a data file**. In tabular data files, the individual variables are usually represented as columns, but other arrangements, such as bands/layers in raster images, are not uncommon.
 
 * Every variable needs a **variable name** to uniquely and clearly identify it in the metadata and data file. In tabular data this can be as simple as assigning a unique, descriptive column header to every column in the file and using that in the metadata. It is best to avoid special characters, dashes and spaces in variable names.
 * Give every variable a **description**. This can be somewhat lengthy, and we recommend summarizing the quantity, data type, unit of measurement, and observational unit in the description. For example _"Air temperature measured in degrees Celsius at 2 meters height"_ or _"A categorical column indicating the sex of the individual (M/F)"_

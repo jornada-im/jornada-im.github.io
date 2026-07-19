@@ -26,9 +26,9 @@ This site is maintained by the Jornada Information Management (IM) team to suppo
 [**The Researcher Guide**](docs/researcher/introduction.qmd) is for Jornada students, investigators, and others who need to  
 
 - [Start new research at the Jornada](docs/researcher/starting-research.qmd)
-- Collect and manage [data](docs/researcher/collecting_data.qmd) or [metadata](docs/researcher/metadata.qmd)
+- Collect and manage [data](docs/researcher/collecting-data.qmd) or [metadata](docs/researcher/metadata.qmd)
 - [Prepare and publish a dataset](docs/researcher/prepare-and-publish.qmd)
-- [Find](docs/researcher/discover-data.qmd) or [use](docs/researcher/data-reuse.qmd) Jornada data
+- [Find](docs/researcher/discover-data.qmd) or [work with](docs/researcher/data-work.qmd) Jornada data
 :::
 :::
 :::
