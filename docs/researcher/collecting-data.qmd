@@ -2,7 +2,7 @@
 title: Collecting and managing data
 date: last-modified
 from: markdown+emoji
-#mermaid-format: svg # png - this allows rendering of mermaid in advance
+mermaid-format: svg # png - this allows rendering of mermaid in advance
 ---
 
 ## Overview
@@ -108,7 +108,7 @@ Dates and times, sometimes referred to as datetime variables, describe when obse
 
 ## Unstructured data
 
-Unstructured data is a catchall term for data that don't fit neatly into a tabular format of rows and columns. This term is a misnomer since all data must have structure in order to convey information (i.e. completely random data are essentially meaningless), and "unstructured" data still contain useful information. It is usually possible to extract numeric or categorical variables like those described above from unstructured data if you know how and where to look. 
+Unstructured data is a catchall term for data that don't fit neatly into a tabular format of rows and columns. This term is a misnomer since all data must have structure in order to convey information (i.e. completely random data are essentially meaningless). Unstructured data still contain loads of information, and it is usually possible to extract useful numeric or categorical variables like those described above if you know how and where to look. 
 
 * Text data, also known as character or alphanumeric data, are data consisting of a sequence of symbols drawn from a vocabulary or alphabet. Sometimes they are referred to as sequence/sequential data because the information content depends on the order of the symbols. _Examples: Natural language data (from books, transcripts, etc.), nucleotide sequences_
 * Images, including ground-level photos or remotely-sensed images from satellites or aircraft, consist of gridded reflectance or spectral information about a particular scene or target area, as collected by an imaging sensor (like a camera). Sometimes other information, such as georeferencing or labeling, is attached to image data. _Examples: high-resolution aerial imagery, camera trap images of animals_
@@ -117,7 +117,7 @@ Unstructured data is a catchall term for data that don't fit neatly into a tabul
 
 **What to remember about these data**
 
-* This is a very diverse category of data types. Check the [Special cases and unstructured data](#special-cases-and-unstructured-data) for some ideas on what is important.
+* This is a very diverse category of data types. Check the [Special cases and unstructured data](#special-cases-and-unstructured-data) section for more information and ideas about what is important.
 
 :::
 
@@ -317,7 +317,9 @@ There are many other possible tabular data file formats. Some are good for quick
 
 ### Special cases and unstructured data
 
-Above, we've used **tabular data** as the default example, but like people, all data are special in their own way and they don't always fit into a traditional tabular mold. Modern research techniques have opened up ways to use large, unstructured data sources for analysis, and at the same time can produce huge, multifaceted and distributed research datasets. Some examples include imagery from diverse sources, geospatial data, high-frequency sensor data, genomic data, social media data, models, document stores, and more. Many of these can still contain, or be converted to, tabular data forms, but because of their high volume and complexity it helps to extend our thinking beyond the tabular data paradigm. There is a detailed [Data Package Design for Special Cases](https://ediorg.github.io/data-package-best-practices/guide-special-cases/preface.html) guide from LTER Network IMs and EDI with excellent guidance for some of these cases [@gries_data_2021].
+Above, we've used **tabular data** as the default example, but like people, all data are special in their own way and they don't always fit into a traditional tabular mold. Modern research techniques have opened up ways to use large, unstructured data sources[^3] for analysis, and at the same time can produce huge, multifaceted and distributed research datasets. Some examples include imagery from diverse sources, geospatial data, high-frequency sensor data, genomic data, social media data, models, document stores, and more. Many of these can still contain, or be converted to, tabular data forms, but because of their high volume and complexity it helps to extend our thinking beyond the tabular data paradigm. There is a detailed [Data Package Design for Special Cases](https://ediorg.github.io/data-package-best-practices/guide-special-cases/preface.html) guide from LTER Network IMs and EDI with excellent guidance for some of these cases [@gries_data_2021].
+
+[^3]: Again, "unstructured data" is a misnomer. Any data that contain usable information must, by definition, be structured. Truly unstructured data is just random noise. This term usually just refers to big, complicated, and sometimes messy datasets that haven't been refined into well-described tables and databases that we are used to using in scientific research. 
 
 ::: {.panel-tabset}
 
@@ -500,11 +502,15 @@ Once you have collected data, chances are you'll need to process the data before
 **Here are some general best practices for data cleaning and QA/QC**
 
 1. Always preserve the raw data in its original form. Chances are you’ll want to go back to the raw source data at least once.
-2. Use computer code or another scripted workflow, such as R or Python scripts,[^3][^4] or OpenRefine[^5], to clean and QA/QC your raw data, not manual editing. See the guidance for doing this reproducibly in the [Working with data](data-work.qmd#reproducibility) chapter.
+2. Use computer code or another scripted workflow, such as R or Python scripts,[^4][^5] or OpenRefine[^6], to clean and QA/QC your raw data, not manual editing. See the guidance for doing this reproducibly in the [Working with data](data-work.qmd#reproducibility) chapter.
 3. If you can, use numerical or statistical rules to find and remove error values or outliers, not "judgment calls" or "eyeballing it."
 4. Spread the job around! Data cleaning typically demands a huge fraction of the total time devoted to working with data [@wickham_tidy_2014] and it can be tedious work. Sharing the data-cleaning burden is more equitable, and it gets more eyes on the data which will improve data quality.
 
 :::
+
+[^4]: In R, the `tidyverse` libraries (e.g., `dplyr`, `tidyr`, `stringr`) are often used for data cleaning, as are additional libraries like [`janitor`](https://sfirke.github.io/janitor/).
+[^5]: In Python, `pandas` and `numpy` libraries provide useful data cleaning features. There are also some stand-alone cleaning tools like [`pyjanitor`](https://pyjanitor-devs.github.io/pyjanitor/) (started as a re-implementation of the R version) and [`cleanlab`](https://docs.cleanlab.ai/stable/index.html) (geared towards machine learning applications).
+[^6]: [OpenRefine](https://openrefine.org/) is an open-source, cross-platform tool for iterative, scripted data cleaning.
 
 ### Data processing levels
 
@@ -519,24 +525,22 @@ If your processing involves many steps or complicated data transformations you m
 - Both the R and Python data science ecosystems have excellent documentation resources that thoroughly cover data cleaning. For R, consider starting with Hadley Wickham's _R for Data Science_ book chapter on [data tidying](https://r4ds.hadley.nz/data-tidy) [@wickham_r_2023], and for Python check Wes McKinney's _Python for Data Analysis_ book chapter on [data cleaning and preparation](https://wesmckinney.com/book/data-cleaning) [@mckinney_python_2022].
 - For some general considerations on cleaning data, see EDI's "[Cleaning Data and Quality Control](https://edirepository.org/resources/cleaning-data-and-quality-control)" resource.
 
-[^3]: In R, the `tidyverse` libraries (e.g., `dplyr`, `tidyr`, `stringr`) are often used for data cleaning, as are additional libraries like [`janitor`](https://sfirke.github.io/janitor/).
-[^4]: In Python, `pandas` and `numpy` libraries provide useful data cleaning features. There are also some stand-alone cleaning tools like [`pyjanitor`](https://pyjanitor-devs.github.io/pyjanitor/) (started as a re-implementation of the R version) and [`cleanlab`](https://docs.cleanlab.ai/stable/index.html) (geared towards machine learning applications).
-[^5]: [OpenRefine](https://openrefine.org/) is an open-source, cross-platform tool for iterative, scripted data cleaning.
-
 
 ## Storage and backup
 
 It is critically important to store your research data securely and have a reliable backup system for them. This means planning ahead so that you have enough storage space for _multiple backup copies of your data_, with a system that keeps backups in-sync with one another (preferably automatically) and allows restoration of data if disaster strikes. There is no one perfect backup system, and threats to data evolve fairly rapidly. Therefore, it pays to **audit and test your backup system regularly** to uncover failure points.
 
-One common recommendation is to follow the **3-2-1 backup** rule. In this system you keep 3 copies of your data on 2 different devices or storage media, with 1 copy of the data in an off-site location (summary [here](https://www.cisa.gov/sites/default/files/publications/data_backup_options.pdf)). There are multiple ways to accomplish this, but a simple example would be to have a copy of all your important data synced from a personal laptop computer to an external hard drive, and a separate copy synced to a cloud backup provider (Google, Dropbox, Backblaze, etc.). Be aware that automatic syncing between copies of your data can lead to permanent data loss (i.e. deleting a file locally will delete synced copies too), so having some versioning and rollback ability built into the system is also important.
+One common recommendation is to follow the **3-2-1 backup rule**. In this system you keep 3 copies of your data on 2 different devices or storage media, with 1 copy of the data in an off-site location.[^7] There are multiple ways to accomplish this, but a simple example would be to have a copy of all your important data synced from a personal laptop computer to an external hard drive, and a separate copy synced to a cloud backup provider (Google, Dropbox, Backblaze, etc.). Be aware that automatic syncing between copies of your data can lead to permanent data loss (i.e. deleting a file locally will delete synced copies too), so having some versioning and rollback ability built into the system is also important.
 
 There are a number of storage devices, software packages, and data services that can be used to build and maintain a solid backup system. Some of these may be available already at low- or no-cost through your institution or lab. Your friendly neighborhood data manager ({{< var email.jrn_im >}}) can also offer advice and support for backup solutions if you ask.
+
+[^7]:  There is a summary of this from CISA.gov [here](https://www.cisa.gov/sites/default/files/publications/data_backup_options.pdf).
 
 ::: {.callout-tip}
 ## Recommendations
 
 1. Plan ahead to be sure you have enough storage space for multiple copies of your data.
-2. Consider implementing a **3-2-1** backup system that includes three copies of important files, on at least two different devices/media, with one in an offsite location (such as with a cloud provider).
+2. Consider implementing a **3-2-1 backup system** that includes three copies of important files, on at least two different devices/media, with one in an offsite location (such as with a cloud provider).
 3. Regularly check for flaws in your backup plan and don't hesitate ask a data manager for help.
 :::
 
