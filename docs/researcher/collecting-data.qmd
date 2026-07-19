@@ -2,7 +2,7 @@
 title: Collecting and managing data
 date: last-modified
 from: markdown+emoji
-mermaid-format: png # svg - this allows rendering of mermaid in advance
+#mermaid-format: png # svg - this allows rendering of mermaid in advance
 ---
 
 ## Overview
@@ -24,11 +24,13 @@ Research data are very diverse, but taking a thoughtful approach to collecting a
 Below, we provide data management recommendations organized around these attributes, with **tabular data** as our default example. Tabular data values fit into grid- or table-like structures with rows and columns representing observations and variables. This type of data, which includes delimited text files (like comma-separated value files, or CSVs), spreadsheets and similar, are the most common and recognizable data type in the environmental sciences. There are plenty of data that aren't exactly tabular, so we also have sections devoted to unstructured data and other special cases.
 
 ::: {.callout-note}
+
 ## Introducing metadata and datasets
 
 The four attributes of data highlighted above are the beginning of **metadata**, or data that describe other data. Metadata provide important context about the data we work with and are essential for making that data understandable and usable (we'll devote more time to this in [the next chapter](metadata.qmd)). Therefore, data and metadata should always travel together, and we have a special term for this pairing: a **dataset**. Datasets are fundamental units of information used in research, and important products of research activities, so we will refer to them often.
 
 ![Say hello to the **dataset** -- a bundle of data and metadata. Data and metadata come in many forms and formats, and keeping them linked together will help preserve the meaning and utility of your research.](./img/a_dataset.png){width="40%" fig-align="center"}
+
 :::
 
 ### Intended use
@@ -52,7 +54,7 @@ Keep in mind that new uses for data frequently arise during research, so you wil
 
 ### Content
 
-The **content** of research data refers to what the data being collected are about. If you are the one doing the measuring or observing, you can describe the content of your data by specifying what variables are being collected, and what observational units, such as study plots, organisms, quantities of matter, or events, you are collecting them from. Describing the content of data can be laborious, but scientific observations, even relatively large and complex ones like remote sensing images, generally consist of variables that can be classified into standard [scales of measurement](https://en.wikipedia.org/wiki/Level_of_measurement), such as the Stevens typology. It is becoming become much more common for scientists to use large, unstructured datasets, including text, imagery, audio, and more, and it can be harder to describe the content of these with a clean classification system. Below are some considerations for common data content types, including the most common **scales of measurement** for scientific data: 
+The **content** of research data refers to what the data being collected are about. If you are the one doing the measuring or observing, you can describe the content of your data by specifying what **variables** are being collected and what **observational units**, such as study plots, organisms, quantities of matter, or events, you are collecting them from. At the Jornada we are usually studying biotic or abiotic phenomena in a slice of the Chihuahuan Desert, so the variables of interest are measured quantities or observations about organisms (e.g. body mass), environmental properties (e.g. temperature), or ecological processes (e.g. primary production), and the observational units are individuals (e.g. captured kangaroo rats), substrates (e.g. soil), or study areas (e.g. experimental plot). Variables can be classified into standard [scales of measurement](https://en.wikipedia.org/wiki/Level_of_measurement), such as the Stevens typology, and observational units usually require a brief description. Below are some considerations for several scientific variable types and observational units, including for unstructured data, according to how they are classified into **scales of measurement**: 
 
 ::: {.panel-tabset}
 
@@ -72,6 +74,7 @@ Additionally, numeric data can be discrete or continuous.
 
 * Numeric variables (interval and ratio) almost always have units, or at least a defined scale, and you should know what is appropriate for the data. The measurement units of quantities like mass (kg), temperature (°C), and time (s) should be recorded as you collect data. Even dimensionless variables usually have pseudo-units, such as a ratio (C:N), pH, number (count), or percentage, that needs to be documented with the data. 
 * Numeric data can be further described by the type, or number set, they are drawn from (integers, real, complex numbers), and by their precision (number of decimal places specified) and significant figures (the number of meaningful decimal places).
+* Remember to document the observational units (subject of the measured/observed quantities) for each variable, i.e. the mass of _the captured individuals_, or the temperature of _soil at 5 centimeter depth in plot #4_. 
 
 ## Categorical
 
@@ -86,6 +89,7 @@ Note that ordinal values have a numerical element to them (order or rank), so th
 
 * In categorical variables, each level (corresponding to a group in the data) must have one unique value. For example, in a column denoting the sex of captured rodents, you wouldn't assign some male individuals an "M" and some "male".
 * The levels defined by categorical variables are arbitrary (nominal) or semi-arbitrary (ordinal) until a meaning is assigned. Assigning standardized values that can be understood by your community (authoritative species codes, the Likert scale) makes data much more broadly useful and interpretable.
+* Again, remember to document the observational unit (what the categorical labels apply to) for each variable, i.e. the species code of _the captured individuals_, or the responses _to question n_. 
 
 
 ## Boolean (binary) data
@@ -104,11 +108,12 @@ Dates and times, sometimes referred to as datetime variables, describe when obse
 
 * Datetime variables can be described as having an interval scale of measurement when specific calendar dates (and times) are given, since the calendar has no meaningful zero point. Time durations are on the ratio scale of measurement since they may indicate events that happen at the same time (zero time elapsed).
 * In time series and longitudinal data, the observations, measurements, and sampling events may occur at regular (equally spaced) or irregular (unequally spaced) intervals, and regular time series can be described with a frequency or sampling rate. There may also be gaps affecting otherwise regular time series that need to be considered.
+* The observational unit in most cases is _the time each observation or measurement occurred_.
 
 
 ## Unstructured data
 
-Unstructured data is a catchall term for data that don't fit neatly into a tabular format of rows and columns. This term is a misnomer since all data must have structure in order to convey information (i.e. completely random data are essentially meaningless). Unstructured data still contain loads of information, and it is usually possible to extract useful numeric or categorical variables like those described above if you know how and where to look. 
+It is becoming become much more common for scientists to use large, unstructured datasets, including text, imagery, audio, and more, and it can be harder to describe the content of these with a clean classification system. Unstructured data is a catchall term for data that don't fit neatly into a tabular format of rows and columns. This term is a misnomer since all data must have structure in order to convey information (i.e. completely random data are essentially meaningless). Unstructured data still contain loads of information, and it is usually possible to extract useful numeric or categorical variables like those described above if you know how and where to look. 
 
 * Text data, also known as character or alphanumeric data, are data consisting of a sequence of symbols drawn from a vocabulary or alphabet. Sometimes they are referred to as sequence/sequential data because the information content depends on the order of the symbols. _Examples: Natural language data (from books, transcripts, etc.), nucleotide sequences_
 * Images, including ground-level photos or remotely-sensed images from satellites or aircraft, consist of gridded reflectance or spectral information about a particular scene or target area, as collected by an imaging sensor (like a camera). Sometimes other information, such as georeferencing or labeling, is attached to image data. _Examples: high-resolution aerial imagery, camera trap images of animals_
@@ -121,7 +126,7 @@ Unstructured data is a catchall term for data that don't fit neatly into a tabul
 
 :::
 
-At the Jornada we are usually studying biotic or abiotic phenomena in our slice of the Chihuahuan Desert. Remember to also pay attention to what is *not* in your data, e.g. what is excluded or missing, and any sources of bias. Detailed information about the content and limitations of your data will need to be in your metadata to provide context for a published dataset.
+Remember to also pay attention to what is *not* in your data, e.g. **what is excluded or missing, and any sources of bias**. Detailed information about the content and limitations of your data will need to be in your metadata to provide context for a published dataset. Describing the content of data can be laborious, but scientific observations, even relatively large and complex ones like remote sensing images, can generally be described with standardized terms for variable types and observational units.
 
 ::: {.callout-tip}
 ## Recommendations
@@ -131,6 +136,7 @@ At the Jornada we are usually studying biotic or abiotic phenomena in our slice 
 3. Be aware of any requirements for, and limitations of, the data you collect (e.g. human subjects, endangered species, sampling bias).
 
 :::
+
 
 ### Source
 
