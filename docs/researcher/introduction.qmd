@@ -18,7 +18,7 @@ Before you begin your research, you should know the expectations and policies th
  3. Acknowledgement of funding support and citation of Jornada data is expected, as appropriate, in Jornada journal publications and other research products.
  4. Researchers must follow our safety and conduct guidelines when working at the Jornada. 
 
-**This guide focuses mainly on data-related research activities**, but you'll find policy and permitting guidance in the [Starting research](./starting-research.qmd) chapter, and relevant templates and forms in the [document archive](../../templates/index.qmd). Safety and conduct guidance is found in the Jornada [Safety Handbook and Code of Conduct]({{< var url.fscc_handbook >}}).
+**This guide focuses mainly on data-related research activities**, but you'll find policy and permitting guidance in the [Starting research](starting-research.qmd) chapter, and relevant templates and forms in the [document archive](../../downloads/index.qmd). Safety and conduct guidance is found in the Jornada [Safety Handbook and Code of Conduct]({{< var url.fscc_handbook >}}).
 
 
 ## The data lifecycle
@@ -28,7 +28,7 @@ This guide is organized roughly according to the DataONE data lifecycle [@michen
 ![The DataONE data lifecycle from [@michener_ecoinformatics_2012]](img/dataone_ls_stage_all.png){width=325px fig-alt="A diagram showing a circle of boxes labeled with the phases of the data lifecyle"}
 
 * **Planning** for research and data management is covered in the [Starting research](starting-research.qmd) chapter.
-* We discuss data **collection** and **quality assurance** in the [Collecting data](collect-qa-describe.qmd) chapter.
+* We discuss data **collection** and **quality assurance** in the [Collecting data](collecting-data.qmd) chapter.
 * Using metadata to **describe** data is found in the [Metadata](metadata.qmd) chapter.
 * When you are ready to **preserve** your data by publishing it in a repository, read the [Publish a dataset](prepare-and-publish.qmd) chapter.
 * To learn how and where to **discover** Jornada data, read the [Discover Jornada data](discover-data.qmd) chapter.
@@ -38,7 +38,7 @@ Research workflows and data management can be complex, and the Jornada is a big 
 
 ## Learn more
 
-The Jornada IM team consists of both Jornada Basin LTER (JRN) and USDA-ARS Jornada Experimental Range (JER) staff. If you need to know more about how we manage data, or how you or your lab can do a better job with data, there are a number of opportunities to learn more.
+The Jornada IM team is a collaboration between Jornada Basin LTER (JRN) and USDA-ARS Jornada Experimental Range (JER) staff. If you need to know more about how we manage data, or how you or your lab can do a better job with data, there are a number of opportunities to learn more.
 
 * Jornada Desert Ecology Short Course - The IM team presents there each year
 * [Data Therapy Thursday]({{< var url.datatherapy >}})
