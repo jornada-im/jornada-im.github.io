@@ -35,7 +35,7 @@ It can be difficult to visualize what a published dataset should contain. At a m
 
 ![What should your dataset contain? Data files and metadata at a minimum. To make your research more reproducible, code and other files can be very useful too](./img/dataset_content.png){width=40% #fig-datasetcontent}
 
-## Choosing a repository to publish in
+## Choosing a repository
 
 There are many data repositories available to researchers now [^4], and choosing one is not necessarily easy. Make sure the repository you choose meets these essential criteria. 
 
@@ -112,32 +112,34 @@ The IM team recommends EDI for most Jornada data, but if you opt to publish in a
 
 ## Assembling the metadata
 
-To ensure successful interpretation and re-use of the data after they are published, they must be accompanied by metadata that thoroughly describe them. For more guidance on the importance of high-quality data and metadata and how to collect them, review the [Collecting data](collecting-data.qmd) and [Metadata](metadata.qmd) chapters, or review resources at the [EDI repository]({{< var url.edi >}}/resources/creating-metadata-for-publication). Ideally, metadata should be in a format that provides rich detail and is both human- and machine-readable, and we recommend using EML for most Jornada datasets. Two methods to produce valid EML metadata are described below, but if you are sure you won't be publishing in EDI or using EML, start with the templates and contact a Jornada data manager for further help. 
+To ensure successful interpretation and re-use of the data after they are published, they must be accompanied by metadata that thoroughly describe them. For more guidance on the importance of high-quality data and metadata and how to collect them, review the [Collecting data](collecting-data.qmd) and [Metadata](metadata.qmd) chapters, or review resources at the [EDI repository]({{< var url.edi >}}/resources/creating-metadata-for-publication). Ideally, metadata should be in a format that provides rich detail and is both human- and machine-readable, and we recommend using EML for most Jornada datasets. Two methods to collect valid and complete metadata for most datasets are described below, **metadata templates** and the **ezEML app**, but if you are sure you won't be publishing in the EDI repository or using the EML metadata standard, start with the templates and contact a Jornada data manager for further help. 
+
+### Metadata templates
+
+A metadata template is a document with a structure and cues that help you collect the essential metadata needed to describe a published dataset. We have created Jornada metadata templates in Microsoft Word (.docx) and Excel (.xlsx) formats that are available on the [downloads page](../../downloads/index.qmd). These templates contain sections for all the critical pieces of metadata we described in the [last chapter](metadata.qmd#recommendations-for-jornada-metadata), and helpful instructions on what to include and how to structure the information. The Excel version is slightly more detailed and may be useful for complex datasets. 
+
+Keep in mind that these templates are fairly general in nature and can be used as a starting place for any kind of metadata destined for any repository. However, the amount of documentation and interactive assistance you get with a template is less than what you get in the ezEML web app described below. Completed templates and accompanying data files should be sent to the Jornada IM team ({{< var email.jrn_im >}}).
 
 ### ezEML
 
 The EDI repository has created a web app called [ezEML]({{< var url.ezeml >}}) for describing research datasets and creating a standardized metadata documents for publication. The ezEML app creates metadata documents in the Ecological Metadata Language, or EML, which is a dialect of XML. The tool simplifies most of the complexity of EML and XML, and is an easy method to author well-documented datasets. There is a **Jornada EML template** available on the site, so the recommended process for Jornada researchers is:
 
   1. Log in to [ezEML]({{< var url.ezeml >}}) using your Google, GitHub, or ORCID account (whichever is easiest).
-  2. Start a new EML dataset using the **EML Documents > New from Template** menu item.
-  3. Navigate to and select the **LTER/JRN/JRN_template_general** template to open an EML template pre-populated with Jornada metadata.
+  2. Start a new EML dataset using the **EML Documents > New from Template** menu item, as shown in @fig-jrntemplate.
+  3. Navigate to and select the **LTER/JRN/JRN_template_general** template to open an EML template pre-populated with Jornada metadata (also shown in @fig-jrntemplate).
   4. Give the dataset a unique name. You can save your metadata and then return to this document anytime.
   5. Follow the sequence of forms on the left, and ezEML's prompts, to upload data files and enter metadata for your dataset. Each section of your metadata will have help available ("?" icons) and several fields will already be filled if you are using the JRN template.
   6. Use the **Check metadata** and **Check data tables** tools at the bottom left to check the completeness and validity of your dataset. Green badges next to metadata mean your dataset is well described and ready to share (and yellow or red can indicate missing values or errors).
   7. When ready, click **Submit/Share Package** and then **Collaborate with Colleagues**. *DO NOT USE **Submit Package to EDI** or we may miss your dataset*.
   8. On the **Invite a Collaborator** screen, share the dataset with a Jornada data manager by entering the ({{< var email.jrn_im >}}) email.
 
-  At this point, the Jornada IM Team will receive a notification and can access your dataset in ezEML to review, edit, and publish to EDI. It never hurts to send a reminder in case the data managers miss this EDI notification. Keep in mind that you can start an EML document in ezEML, then save it and continue later. Just be sure to use the same login as before.
+  At this point, the Jornada IM Team will receive a notification and can access your dataset in ezEML to review, edit, and publish to EDI. It never hurts to send a reminder in case the data managers miss this EDI notification. Keep in mind that you can start an EML document in ezEML and then save it and continue later. Just be sure to use the same login as before.
 
-
-### Metadata templates
-
-A metadata template is a document with a structure and cues that help you collect the essential metadata needed to describe a published dataset. We have created Jornada metadata templates in Microsoft Word (.docx) and Excel (.xlsx) formats that are available on the [downloads page](../../downloads/index.qmd). These templates contain sections for all critical pieces of metadata, along with instructions on what to include and how to structure the information. The Excel version is slightly more detailed and may be useful for complex datasets. Completed templates and accompanying data files should be sent to the Jornada IM team ({{< var email.jrn_im >}}).
-
+![The "JRN LTER template" in the ezEML app is a great way to get started preparing the metadata for a new Jornada dataset.](./img/jrn_template_ezeml.png){width=100% #fig-jrntemplate}
 
 ## The review process
 
-Once you have submitted the dataset to the Jornada IM team, the data and metadata are securely archived and a round of review and editing begins (see @fig-jornadapublish). A data manager will review the metadata for completeness, compliance with Jornada standards, and mismatches between metadata and data. If revisions are needed or errors are found you will receive an email requesting the changes. Changes can be submitted in ezEML, or with an updated metadata template, as appropriate.
+Once you have submitted the dataset to the Jornada IM team, the data and metadata are securely archived and a round of review and editing begins (see @fig-jornadapublish). A data manager will review the metadata for completeness, compliance with Jornada standards, and mismatches between metadata and data. If revisions are needed or errors are found you will receive an email requesting the changes. You can submit your revisions back to the IM team in an updated template document, or by making the edits in ezEML, as appropriate.
 
 ## Publishing the dataset
 
