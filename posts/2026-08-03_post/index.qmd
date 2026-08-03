@@ -1,0 +1,35 @@
+---
+title: "Upcoming workshop: Finding and using Jornada data"
+description: "The Jornada IM team will provide a tour of key Jornada datasets, and demonstrate how to access and use them, at the 2026 Jornada Desert Ecology Short Course"
+author: "Greg Maurer"
+date: "2026-08-05"
+date-modified: "2026-08-03"
+draft: False
+---
+
+At the 2026 Jornada Desert Ecology Short Course, the Jornada IM team will provide a tour of key Jornada datasets, and demonstrate how to access and use them.
+
+## Workshop details
+
+**Date and time:** Wednesday, August 5th, 1:30 pm  
+**Location:**  Wooton Hall Auditorium on NMSU campus ([directions](https://lter.jornada.nmsu.edu/contact-info/))  
+**What to bring:** Bring a charged laptop and be ready to ask questions about the Jornada data that is most useful to you.   
+
+## Agenda
+
+| Time | Agenda Item | Link to materials |
+|---|---|---|
+| 1:30 pm | 1. Tour of Jornada datasets | |
+| 2:30 pm | 2. Where to find the data | |
+| | &nbsp;&nbsp;2.1 JRN data catalog | |
+| | &nbsp;&nbsp;2.2 Data viewer | |
+| | &nbsp;&nbsp;2.3 EDI repository portal | |
+| | &nbsp;&nbsp;2.4 Jornada GeoPortal | |
+| | &nbsp;&nbsp;2.5 Other | |
+| 3:15 pm | **Break** | |
+| 3:30 pm | 3. Access/use JRN data (hands-on) | |
+| | &nbsp;&nbsp;3.1 Web access (website, EDI, GeoPortal) | |
+| | &nbsp;&nbsp;3.2 EDIutils | |
+| | &nbsp;&nbsp;3.3 Other | |
+| 5:00 pm | Fin... | |
+

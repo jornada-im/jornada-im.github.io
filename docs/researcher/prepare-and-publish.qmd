@@ -126,16 +126,23 @@ The EDI repository has created a web app called [ezEML]({{< var url.ezeml >}}) f
 
   1. Log in to [ezEML]({{< var url.ezeml >}}) using your Google, GitHub, or ORCID account (whichever is easiest).
   2. Start a new EML dataset using the **EML Documents > New from Template** menu item, as shown in @fig-jrntemplate.
-  3. Navigate to and select the **LTER/JRN/JRN_template_general** template to open an EML template pre-populated with Jornada metadata (also shown in @fig-jrntemplate).
-  4. Give the dataset a unique name. You can save your metadata and then return to this document anytime.
-  5. Follow the sequence of forms on the left, and ezEML's prompts, to upload data files and enter metadata for your dataset. Each section of your metadata will have help available ("?" icons) and several fields will already be filled if you are using the JRN template.
-  6. Use the **Check metadata** and **Check data tables** tools at the bottom left to check the completeness and validity of your dataset. Green badges next to metadata mean your dataset is well described and ready to share (and yellow or red can indicate missing values or errors).
-  7. When ready, click **Submit/Share Package** and then **Collaborate with Colleagues**. *DO NOT USE **Submit Package to EDI** or we may miss your dataset*.
+  3. Navigate to and select the **LTER/JRN/JRN_template_general** template to create a new EML document from the JRN template (also shown in @fig-jrntemplate).
+      - This template is pre-populated with Jornada metadata, including contact information, geographic coverage, and more. You can edit this metadata as you see fit, but we recommend keeping contact information for the data manager and current funding awards.
+      - If your dataset is not associated with the Jornada, you do not need to use a template and can select **EML Documents > New**
+  4. Give the dataset a unique name.
+      - You can save your metadata and then return to a saved EML document anytime.
+  5. Follow the sequence of forms in the menu at left, and ezEML's prompts, to upload data files and enter metadata for your dataset. Each section of your metadata will have help available ("?" icons) and some fields will already be filled if you are using the JRN template.
+      - Note that the colored badges turn from red, to yellow, to green as you complete the metadata. 
+      - You won't always need every element of metadata to be completed ("Other entity", for example, is optional).
+  6. Use the **Check metadata** and **Check data tables** tools at the bottom left to check the completeness and validity of your dataset.
+      - Green badges next to metadata mean your dataset is well described and ready to share (and yellow or red can indicate missing values or errors).
+  7. When ready, click **Submit/Share Package** and then **Collaborate with Colleagues**. 
+      - *DO NOT USE **Submit Package to EDI** or we may miss your dataset*.
   8. On the **Invite a Collaborator** screen, share the dataset with a Jornada data manager by entering the ({{< var email.jrn_im >}}) email.
 
   At this point, the Jornada IM Team will receive a notification and can access your dataset in ezEML to review, edit, and publish to EDI. It never hurts to send a reminder in case the data managers miss this EDI notification. Keep in mind that you can start an EML document in ezEML and then save it and continue later. Just be sure to use the same login as before.
 
-![The "JRN LTER template" in the ezEML app is a great way to get started preparing the metadata for a new Jornada dataset.](./img/jrn_template_ezeml.png){width=100% #fig-jrntemplate}
+![The "JRN Template - General" EML template can be found in the ezEML app and is a great way to get started preparing the metadata for a new Jornada dataset.](./img/jrn_template_ezeml.png){width=100% #fig-jrntemplate}
 
 ## The review process
 
