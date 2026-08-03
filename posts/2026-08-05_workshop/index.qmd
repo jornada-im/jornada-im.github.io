@@ -1,0 +1,39 @@
+---
+title: "Upcoming workshop: Finding and using Jornada data"
+description: "The Jornada IM team will provide a tour of key Jornada datasets, and demonstrate how to access and use them, at the 2026 Jornada Desert Ecology Short Course"
+author: "Greg Maurer"
+date: "2026-08-05"
+date-modified: "2026-08-03"
+draft: False
+---
+
+At the 2026 Jornada Desert Ecology Short Course, the Jornada IM team will provide a tour of key Jornada datasets, and demonstrate how to access and use them with a variety of methods.
+
+## Workshop details
+
+**Date and time:** Wednesday, August 5th, 1:30 pm  
+**Location:**  Wooton Hall Auditorium on NMSU campus ([directions](https://lter.jornada.nmsu.edu/contact-info/))  
+**What to bring:** Bring a charged laptop and be ready to ask questions about the Jornada data that is most useful to you.   
+
+## Agenda
+
+| Time | Agenda Item | Link to materials |
+|---|---|---|
+| 1:30 pm | 1. Tour of Jornada datasets | [Slide deck](https://docs.google.com/presentation/d/16ZjZCHqXlNT4e3kxrOE6nXBvfgkedaB_/edit?usp=sharing&ouid=111773368354235849590&rtpof=true&sd=true) |
+| | &nbsp;&nbsp;1.1 Core, long-term datasets | |
+| | &nbsp;&nbsp;1.2 Contributed & partner | |
+| | &nbsp;&nbsp;1.3 RAP data | |
+| 2:30 pm | 2. Where to find the data | [[Slide deck](https://docs.google.com/presentation/d/16ZjZCHqXlNT4e3kxrOE6nXBvfgkedaB_/edit?usp=sharing&ouid=111773368354235849590&rtpof=true&sd=true) and live demo at sites below |
+| | &nbsp;&nbsp;2.1 JRN data catalog | [lter.jornada.nmsu.edu](https://lter.jornada.nmsu.edu) |
+| | &nbsp;&nbsp;2.2 Data viewer | [JRN data viewer app](https://lter.jornada.nmsu.edu/interactive-data-viewer/) |
+| | &nbsp;&nbsp;2.3 EDI repository portal | [portal.edirepository.org](https://portal.edirepository.org) |
+| | &nbsp;&nbsp;2.4 Jornada GeoPortal | [jornada-geoportal-nmsu.hub.arcgis.com](https://jornada-geoportal-nmsu.hub.arcgis.com/) |
+| | &nbsp;&nbsp;2.5 Other | |
+| 3:15 pm | **Break** | |
+| 3:30 pm | 3. Access/use JRN data (hands-on) | |
+| | &nbsp;&nbsp;3.1 Web access (website, EDI, GeoPortal) | [Researcher guide](https://jornada-im.github.io/docs/researcher/discover-data.html) | 
+| | &nbsp;&nbsp;3.2 EDIutils | [NPP tutorial]() |
+| | &nbsp;&nbsp;3.3 RAP | [RAP tutorial]() |
+| | &nbsp;&nbsp;3.4 Other | |
+| 5:00 pm | Fin... | |
+
