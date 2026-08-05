@@ -783,7 +783,7 @@
     "href": "archive/index.html",
     "title": "Archived documents",
     "section": "",
-    "text": "These are, for the most part, previous versions of documents found elsewhere on this site. They are largely out of date but preserved for reference and posterity.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        File Name\n      \n      \n        Modified - Oldest\n      \n      \n        Modified - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nFile Name\n\n\n\nModified\n\n\n\n\n\n\n\n\nJRN_IM_annual_report_2020.docx\n\n\n8/5/26, 2:15:31 PM\n\n\n\n\n\n\nJRN_metadata_standards.docx\n\n\n8/5/26, 2:15:31 PM\n\n\n\n\n\n\nJornada_resnotif_form_ja2025.docx\n\n\n8/5/26, 2:15:31 PM\n\n\n\n\n\n\nSOP_Metadata_Publishing.docx\n\n\n8/5/26, 2:15:31 PM\n\n\n\n\n\n\nresnotif_form_old.docx\n\n\n8/5/26, 2:15:31 PM\n\n\n\n\n\n\nJRN_IM_annual_report_2020.pdf\n\n\n8/5/26, 2:15:31 PM\n\n\n\n\n\n\ndocumentationForms_old.zip\n\n\n8/5/26, 2:15:31 PM\n\n\n\n\n\n\nNo matching items"
+    "text": "These are, for the most part, previous versions of documents found elsewhere on this site. They are largely out of date but preserved for reference and posterity.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        File Name\n      \n      \n        Modified - Oldest\n      \n      \n        Modified - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nFile Name\n\n\n\nModified\n\n\n\n\n\n\n\n\nJRN_IM_annual_report_2020.docx\n\n\n8/5/26, 5:47:27 PM\n\n\n\n\n\n\nJRN_metadata_standards.docx\n\n\n8/5/26, 5:47:27 PM\n\n\n\n\n\n\nJornada_resnotif_form_ja2025.docx\n\n\n8/5/26, 5:47:27 PM\n\n\n\n\n\n\nSOP_Metadata_Publishing.docx\n\n\n8/5/26, 5:47:27 PM\n\n\n\n\n\n\nresnotif_form_old.docx\n\n\n8/5/26, 5:47:27 PM\n\n\n\n\n\n\nJRN_IM_annual_report_2020.pdf\n\n\n8/5/26, 5:47:27 PM\n\n\n\n\n\n\ndocumentationForms_old.zip\n\n\n8/5/26, 5:47:27 PM\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/posts.html",
@@ -839,14 +839,14 @@
     "href": "posts/2026-08-05_workshop/index.html#materials",
     "title": "Workshop: Finding and using Jornada data",
     "section": "Materials",
-    "text": "Materials\nThe slide deck we will be working from.\nWe will also make notes and report back from activities in this communal notes document"
+    "text": "Materials\nThe slide deck we will be working from.\nWe will also make notes and report back from activities in this communal notes document\nGreg and Darren have prepared 2 R scripts. If you are using R you may download them from this folder."
   },
   {
     "objectID": "posts/2026-08-05_workshop/index.html#agenda",
     "href": "posts/2026-08-05_workshop/index.html#agenda",
     "title": "Workshop: Finding and using Jornada data",
     "section": "Agenda",
-    "text": "Agenda\n\n\n\nTime\nAgenda Item\nLink to materials\n\n\n\n\n1:30 pm\n1. Tour of Jornada datasets\nSlide deck\n\n\n\n  1.1 Intro\n\n\n\n\n  1.2 Long-term vegetation\n\n\n\n\n  1.3 Weather and climate\n\n\n\n\n  1.4 Spatial data (GIS)\n\n\n\n\n  1.5 Remote sensing & aerial imagery\n\n\n\n2:30 pm\n2. Finding Jornada data\nSlide deck and live demo at sites below\n\n\n\n  2.1 JRN data catalog\nlter.jornada.nmsu.edu\n\n\n\n  2.2 Data viewer\nJRN data viewer app\n\n\n\n  2.3 EDI repository portal\nportal.edirepository.org\n\n\n\n  2.4 Jornada GeoPortal\njornada-geoportal-nmsu.hub.arcgis.com\n\n\n\n  2.5 Other\n\n\n\n3:15 pm\nBreak\n\n\n\n3:30 pm\n3. Access/use JRN data (hands-on)\n\n\n\n\n  3.1 Web access (website, EDI, GeoPortal)\nResearcher guide\n\n\n\n  3.2 EDIutils\nNPP tutorial\n\n\n\n  3.3 RAP\nRAP tutorial\n\n\n\n  3.4 Other\n\n\n\n5:00 pm\nFin…"
+    "text": "Agenda\n\n\n\nTime\nAgenda Item\nLink to materials\n\n\n\n\n1:30 pm\n1. Tour of Jornada datasets\nSlide deck\n\n\n\n  1.1 Intro\n\n\n\n\n  1.2 Long-term vegetation\n\n\n\n\n  1.3 Weather and climate\n\n\n\n\n  1.4 Spatial data (GIS)\n\n\n\n\n  1.5 Remote sensing & aerial imagery\n\n\n\n2:30 pm\n2. Finding Jornada data\nSlide deck and live demo at sites below\n\n\n\n  2.1 JRN data catalog\nlter.jornada.nmsu.edu\n\n\n\n  2.2 Data viewer\nJRN data viewer app\n\n\n\n  2.3 EDI repository portal\nportal.edirepository.org\n\n\n\n  2.4 Jornada GeoPortal\njornada-geoportal-nmsu.hub.arcgis.com\n\n\n\n  2.5 Other\n\n\n\n3:15 pm\nBreak\n\n\n\n3:30 pm\n3. Access/use JRN data (hands-on)\n\n\n\n\n  3.1 Web access (website, EDI, GeoPortal)\nlive demo\n\n\n\n  3.2 EDIutils\nANPP R script\n\n\n\n  3.3 RAP\nRAP R script\n\n\n\n  3.4 Other?\n\n\n\n5:00 pm\nFin…"
   },
   {
     "objectID": "docs/researcher/discover-data.html",
