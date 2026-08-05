@@ -1,7 +1,7 @@
 ---
-title: Onboarding new IM team members
+title: Onboarding new Jornada team members
 date: last-modified
-description: How to onbard new people to jobs at the Jornada
+description: How to onboard new people into positions at the Jornada
 ---
 
 :construction: **This is under construction.** :construction:
@@ -10,3 +10,13 @@ description: How to onbard new people to jobs at the Jornada
 
 1. Add to the *Jornada IM* team on GitHub
 2. Read the [IM Guide](../im/introduction.qmd)
+
+## Project manager
+
+## Lead PI
+
+## Other investigators
+
+## Graduate students
+
+## Undergraduate students
