@@ -23,7 +23,7 @@ The [slide deck](https://docs.google.com/presentation/d/16ZjZCHqXlNT4e3kxrOE6nXB
 
 We will also make notes and report back from activities in [this communal notes document](https://docs.google.com/document/d/1edMJalvkjvWuZ-K5Gy4rRPoVxtdGz0ZjWG-LOfrwy2s/edit?usp=sharing)
 
-Greg and Darren have prepared 2 R scripts. If you are using R you may download them from [this folder](https://drive.google.com/drive/folders/1Fklqgt6EqV-RQ-YrBTj8ESKr2UeCIuiZ?usp=sharing).
+Greg and Darren have prepared 2 R scripts. If you are using R you may download them from [this folder](https://drive.google.com/drive/folders/1Fklqgt6EqV-RQ-YrBTj8ESKr2UeCIuiZ?usp=sharing). **Note that during the workshop we combined these into [one script](https://drive.google.com/file/d/1IJ9v3Zh_GaWmwjQp0Pxs0oj7EcsowRL2/view?usp=drive_link)**.
 
 ## Agenda
 
