@@ -8,7 +8,7 @@ description: How to plan, prepare for, and execute the Jornada Desert Ecology Sh
 
 ## 2. Start making a schedule (8 months in advance)
 
-## 3. Invite keynote & field speakers (6 months)
+## 3. Invite keynote & field visit speakers (6 months)
 
 ## 4. Send out RSVP form (2 months)
 
@@ -17,3 +17,7 @@ description: How to plan, prepare for, and execute the Jornada Desert Ecology Sh
 ## 6. Headcounts & purchasing (2 weeks)
 
 ## 7. 
+
+## 8. Followup emails
+
+Send materials out to participants.

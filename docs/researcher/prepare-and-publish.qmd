@@ -8,7 +8,7 @@ from: markdown+emoji
 
 Once your data are assembled, cleaned, and analyzed, you should strongly consider publishing them for future use and posterity. There are many reasons to do so; publishing data is required by the LTER Network[^1], and strongly encouraged or required by most funding sources[^2] and journals[^3]. On top of this, published datasets often become well-used, highly-cited research products in their own rite, and thus add a "feather in the cap" to your academic record.
 
-There are some standards to aspire to when publishing a dataset, the most prominent being to make the data **findable**, **accessible**, **interoperable**, and **reusable**, or FAIR [@wilkinson_fair_2016]. You've already learned the basics of making data FAIR. In the [Collecting data](collecting-data.qmd) chapter we covered how to collect, clean, and store quality data, including recommendations on how to structure and format the data themselves. The [Metadata](metadata.qmd) chapter discusses the value of descriptive metadata, and gives recommendations on the content and management of metadata you collect during research. You may want to refer back to these chapters as you are preparing a dataset for publication.
+There are some standards to aspire to when publishing a dataset, the most prominent being to make the data **findable**, **accessible**, **interoperable**, and **reusable**, or FAIR [@wilkinson_fair_2016]. You've already learned the basics of making data FAIR. In the [Collecting data](collecting-data.qmd) chapter we covered how to collect, clean, and store quality data, including recommendations on how to structure and format the data themselves. The [Metadata](metadata.qmd) chapter discusses the value of descriptive metadata, and gives recommendations on the content and management of metadata you collect during research. As you prepare a dataset for publication you may want to refer back to these chapters or similar resources.[^4]
 
 To prepare a dataset for publication, you'll need to make a few decisions first.
 
@@ -23,10 +23,11 @@ We explore the answers to these questions below, but an overview of the process 
 [^1]: See the [LTER Network Data Access Policy](https://lternet.edu/data-access-policy/).
 [^2]: NSF requires sharing of data from funded projects [as a general rule](https://www.nsf.gov/funding/data-management-plan#nsfs-data-sharing-policy-1c8), and outlines specific requirements [in the PAPPG](https://www.nsf.gov/policies/pappg/24-1/ch-11-other-post-award-requirements#ch11D4).
 [^3]: For example, both [AGU](https://www.agu.org/publications/authors/journals/data-software-for-authors) and [ESA](https://esa.org/publications/data-policy/) now have strict open data policies for their society journals.
+[^4]: The EDI repository has useful resources on [data quality control]({{< var url.edi >}}/resources/cleaning-data-and-quality-control), [dataset design]({{< var url.edi >}}/resources/designing-a-data-package), and [metadata preparation]({{< var url.edi >}}/resources/creating-metadata-for-publication).
 
 ## What's in your dataset?
 
-It can be difficult to visualize what a published dataset should contain. At a minimum, there will be one or more data files, and a collection of metadata that thoroughly describes the data (ideally in human- and machine-readable form).However, there are many other things a published dataset can contain:
+It can be difficult to visualize what a published dataset should contain. At a minimum, there will be one or more data files, and a collection of metadata that thoroughly describes the data (ideally in human- and machine-readable form). However, there are many other things a published dataset can contain:
 
 * The **code** you used to analyze the data
 * **Maps** of the study plots or sampling locations
@@ -35,9 +36,9 @@ It can be difficult to visualize what a published dataset should contain. At a m
 
 ![What should your dataset contain? Data files and metadata at a minimum. To make your research more reproducible, code and other files can be very useful too](./img/dataset_content.png){width=40% #fig-datasetcontent}
 
-## Choosing a repository
+## Choose a repository
 
-There are many data repositories available to researchers now [^4], and choosing one is not necessarily easy. Make sure the repository you choose meets these essential criteria. 
+There are many data repositories available to researchers now [^5], and choosing one is not necessarily easy. Make sure the repository you choose meets these essential criteria. 
 
 1.  The repository should issue persistent, internet-resolvable, unique identifiers for every dataset published. Generally this will be a Digital Object Identifier, or DOI, that can be easily cited any time the published dataset is used.
 2. The repository should require and publish adequate metadata describing each dataset. Without requiring at least minimal metadata, no repository can ensure that published data are FAIR.
@@ -45,7 +46,7 @@ There are many data repositories available to researchers now [^4], and choosing
 
  We recommend using the [Environmental Data Initiative]({{< var url.edi >}}) as the destination repository for most research data collected at the Jornada. For some data types, and non-data research products, we recommended other repositories that are specialized for a particular research domains, or have especially useful features. Publishing in non-EDI repositories can have advantages if they provide features for your particular type of data, or are your research community's accepted data source. Recommended repositories for a range of Jornada data and use cases are described below.
 
-[^4]: The Registry of Research Data Repositories ([re3data.org](https://re3data.org)) project is a comprehensive tracker of information about research data repositories.
+[^5]: The Registry of Research Data Repositories ([re3data.org](https://re3data.org)) project is a comprehensive tracker of information about research data repositories.
 
 ::: {.panel-tabset}
 
@@ -110,13 +111,13 @@ The IM team recommends EDI for most Jornada data, but if you opt to publish in a
 
 :::
 
-## Assembling the metadata
+## Assemble the dataset
 
-To ensure successful interpretation and re-use of the data after they are published, they must be accompanied by metadata that thoroughly describe them. For more guidance on the importance of high-quality data and metadata and how to collect them, review the [Collecting data](collecting-data.qmd) and [Metadata](metadata.qmd) chapters, or review resources at the [EDI repository]({{< var url.edi >}}/resources/creating-metadata-for-publication). Ideally, metadata should be in a format that provides rich detail and is both human- and machine-readable, and we recommend using EML for most Jornada datasets. Two methods to collect valid and complete metadata for most datasets are described below, **metadata templates** and the **ezEML app**, but if you are sure you won't be publishing in the EDI repository or using the EML metadata standard, start with the templates and contact a Jornada data manager for further help. 
+Assembling a dataset for publication means putting metadata together with your data files. Ideally, the metadata should be in a format that provides rich detail and is both human- and machine-readable, and we recommend using EML for most Jornada datasets. Two methods to collect valid and complete metadata for most datasets are described below, **metadata templates** and the **ezEML app**, but if you are sure you won't be publishing in the EDI repository or using the EML metadata standard, start with the templates and contact a Jornada data manager for further help. 
 
 ### Metadata templates
 
-A metadata template is a document with a structure and cues that help you collect the essential metadata needed to describe a published dataset. We have created Jornada metadata templates in Microsoft Word (.docx) and Excel (.xlsx) formats that are available on the [downloads page](../../downloads/index.qmd). These templates contain sections for all the critical pieces of metadata we described in the [last chapter](metadata.qmd#recommendations-for-jornada-metadata), and helpful instructions on what to include and how to structure the information. The Excel version is slightly more detailed and may be useful for complex datasets. 
+A metadata template is a document with a structure and cues that help you collect the essential metadata needed to describe a published dataset. We have created Jornada metadata templates in Microsoft Word (.docx) and Excel (.xlsx) formats that are available on the [downloads page](../../downloads/index.qmd). These templates contain sections for all the critical pieces of metadata we described in the [last chapter](metadata.qmd#recommendations-for-jornada-metadata), and helpful instructions on what to include and how to structure the information. The Excel version is slightly more detailed and may be useful for complex datasets. Once you start describing your data, **keep your metadata template together with the data files you intend to publish.**
 
 Keep in mind that these templates are fairly general in nature and can be used as a starting place for any kind of metadata destined for any repository. However, the amount of documentation and interactive assistance you get with a template is less than what you get in the ezEML web app described below. Completed templates and accompanying data files should be sent to the Jornada IM team ({{< var email.jrn_im >}}).
 
@@ -148,7 +149,7 @@ The EDI repository has created a web app called [ezEML]({{< var url.ezeml >}}) f
 
 Once you have submitted the dataset to the Jornada IM team, the data and metadata are securely archived and a round of review and editing begins (see @fig-jornadapublish). A data manager will review the metadata for completeness, compliance with Jornada standards, and mismatches between metadata and data. If revisions are needed or errors are found you will receive an email requesting the changes. You can submit your revisions back to the IM team in an updated template document, or by making the edits in ezEML, as appropriate.
 
-## Publishing the dataset
+## Publish it
 
 Once revisions are complete and the dataset authors agree to publish the dataset, the IM creates a final EML file, and then sends it, with the data, to the Environmental Data Initiative repository (EDI) to publish the dataset. A dataset citation, with a DOI, will be emailed to the dataset authors for distribution. **If you are NOT publishing at EDI the publishing process will be different, and you may be expected to handle more of it yourself**.
 
