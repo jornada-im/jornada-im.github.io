@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-08-06">
+<meta name="dcterms.date" content="2026-08-20">
 
 <title>Prepare and publish a dataset – Jornada Data Commons</title>
 <style>
@@ -68,7 +68,7 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-aced932c6eb97d642153b8e218288f9f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-ece4fe8c9713a47a6b74ee047c61dcfa.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-b807fffc72ded05c33cad1755ba9dc61.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -245,14 +245,14 @@ div.csl-indent {
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#whats-in-your-dataset" id="toc-whats-in-your-dataset" class="nav-link" data-scroll-target="#whats-in-your-dataset">What’s in your dataset?</a></li>
-  <li><a href="#choosing-a-repository" id="toc-choosing-a-repository" class="nav-link" data-scroll-target="#choosing-a-repository">Choosing a repository</a></li>
-  <li><a href="#assembling-the-metadata" id="toc-assembling-the-metadata" class="nav-link" data-scroll-target="#assembling-the-metadata">Assembling the metadata</a>
+  <li><a href="#choose-a-repository" id="toc-choose-a-repository" class="nav-link" data-scroll-target="#choose-a-repository">Choose a repository</a></li>
+  <li><a href="#assemble-the-dataset" id="toc-assemble-the-dataset" class="nav-link" data-scroll-target="#assemble-the-dataset">Assemble the dataset</a>
   <ul class="collapse">
   <li><a href="#metadata-templates" id="toc-metadata-templates" class="nav-link" data-scroll-target="#metadata-templates">Metadata templates</a></li>
   <li><a href="#ezeml" id="toc-ezeml" class="nav-link" data-scroll-target="#ezeml">ezEML</a></li>
   </ul></li>
   <li><a href="#the-review-process" id="toc-the-review-process" class="nav-link" data-scroll-target="#the-review-process">The review process</a></li>
-  <li><a href="#publishing-the-dataset" id="toc-publishing-the-dataset" class="nav-link" data-scroll-target="#publishing-the-dataset">Publishing the dataset</a></li>
+  <li><a href="#publish-it" id="toc-publish-it" class="nav-link" data-scroll-target="#publish-it">Publish it</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/jornada-im/jornada-im.github.io/edit/main/docs/researcher/prepare-and-publish.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jornada-im/jornada-im.github.io/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -272,7 +272,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 6, 2026</p>
+      <p class="date">August 20, 2026</p>
     </div>
   </div>
   
@@ -287,7 +287,7 @@ div.csl-indent {
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>Once your data are assembled, cleaned, and analyzed, you should strongly consider publishing them for future use and posterity. There are many reasons to do so; publishing data is required by the LTER Network<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, and strongly encouraged or required by most funding sources<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> and journals<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. On top of this, published datasets often become well-used, highly-cited research products in their own rite, and thus add a “feather in the cap” to your academic record.</p>
-<p>There are some standards to aspire to when publishing a dataset, the most prominent being to make the data <strong>findable</strong>, <strong>accessible</strong>, <strong>interoperable</strong>, and <strong>reusable</strong>, or FAIR <span class="citation" data-cites="wilkinson_fair_2016">(<a href="#ref-wilkinson_fair_2016" role="doc-biblioref">Wilkinson et al. 2016</a>)</span>. You’ve already learned the basics of making data FAIR. In the <a href="../../docs/researcher/collecting-data.html">Collecting data</a> chapter we covered how to collect, clean, and store quality data, including recommendations on how to structure and format the data themselves. The <a href="../../docs/researcher/metadata.html">Metadata</a> chapter discusses the value of descriptive metadata, and gives recommendations on the content and management of metadata you collect during research. You may want to refer back to these chapters as you are preparing a dataset for publication.</p>
+<p>There are some standards to aspire to when publishing a dataset, the most prominent being to make the data <strong>findable</strong>, <strong>accessible</strong>, <strong>interoperable</strong>, and <strong>reusable</strong>, or FAIR <span class="citation" data-cites="wilkinson_fair_2016">(<a href="#ref-wilkinson_fair_2016" role="doc-biblioref">Wilkinson et al. 2016</a>)</span>. You’ve already learned the basics of making data FAIR. In the <a href="../../docs/researcher/collecting-data.html">Collecting data</a> chapter we covered how to collect, clean, and store quality data, including recommendations on how to structure and format the data themselves. The <a href="../../docs/researcher/metadata.html">Metadata</a> chapter discusses the value of descriptive metadata, and gives recommendations on the content and management of metadata you collect during research. As you prepare a dataset for publication you may want to refer back to these chapters or similar resources.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
 <p>To prepare a dataset for publication, you’ll need to make a few decisions first.</p>
 <ol type="1">
 <li>What data and metadata files will your dataset contain?</li>
@@ -308,7 +308,7 @@ Figure&nbsp;1: A simplified schematic of how to publish a Jornada dataset.
 </section>
 <section id="whats-in-your-dataset" class="level2">
 <h2 class="anchored" data-anchor-id="whats-in-your-dataset">What’s in your dataset?</h2>
-<p>It can be difficult to visualize what a published dataset should contain. At a minimum, there will be one or more data files, and a collection of metadata that thoroughly describes the data (ideally in human- and machine-readable form).However, there are many other things a published dataset can contain:</p>
+<p>It can be difficult to visualize what a published dataset should contain. At a minimum, there will be one or more data files, and a collection of metadata that thoroughly describes the data (ideally in human- and machine-readable form). However, there are many other things a published dataset can contain:</p>
 <ul>
 <li>The <strong>code</strong> you used to analyze the data</li>
 <li><strong>Maps</strong> of the study plots or sampling locations</li>
@@ -326,9 +326,9 @@ Figure&nbsp;2: What should your dataset contain? Data files and metadata at a mi
 </figure>
 </div>
 </section>
-<section id="choosing-a-repository" class="level2">
-<h2 class="anchored" data-anchor-id="choosing-a-repository">Choosing a repository</h2>
-<p>There are many data repositories available to researchers now <a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>, and choosing one is not necessarily easy. Make sure the repository you choose meets these essential criteria.</p>
+<section id="choose-a-repository" class="level2">
+<h2 class="anchored" data-anchor-id="choose-a-repository">Choose a repository</h2>
+<p>There are many data repositories available to researchers now <a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>, and choosing one is not necessarily easy. Make sure the repository you choose meets these essential criteria.</p>
 <ol type="1">
 <li>The repository should issue persistent, internet-resolvable, unique identifiers for every dataset published. Generally this will be a Digital Object Identifier, or DOI, that can be easily cited any time the published dataset is used.</li>
 <li>The repository should require and publish adequate metadata describing each dataset. Without requiring at least minimal metadata, no repository can ensure that published data are FAIR.</li>
@@ -395,12 +395,12 @@ Figure&nbsp;2: What should your dataset contain? Data files and metadata at a mi
 </div>
 </div>
 </section>
-<section id="assembling-the-metadata" class="level2">
-<h2 class="anchored" data-anchor-id="assembling-the-metadata">Assembling the metadata</h2>
-<p>To ensure successful interpretation and re-use of the data after they are published, they must be accompanied by metadata that thoroughly describe them. For more guidance on the importance of high-quality data and metadata and how to collect them, review the <a href="../../docs/researcher/collecting-data.html">Collecting data</a> and <a href="../../docs/researcher/metadata.html">Metadata</a> chapters, or review resources at the <a href="https://edirepository.org/resources/creating-metadata-for-publication">EDI repository</a>. Ideally, metadata should be in a format that provides rich detail and is both human- and machine-readable, and we recommend using EML for most Jornada datasets. Two methods to collect valid and complete metadata for most datasets are described below, <strong>metadata templates</strong> and the <strong>ezEML app</strong>, but if you are sure you won’t be publishing in the EDI repository or using the EML metadata standard, start with the templates and contact a Jornada data manager for further help.</p>
+<section id="assemble-the-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="assemble-the-dataset">Assemble the dataset</h2>
+<p>Assembling a dataset for publication means putting metadata together with your data files. Ideally, the metadata should be in a format that provides rich detail and is both human- and machine-readable, and we recommend using EML for most Jornada datasets. Two methods to collect valid and complete metadata for most datasets are described below, <strong>metadata templates</strong> and the <strong>ezEML app</strong>, but if you are sure you won’t be publishing in the EDI repository or using the EML metadata standard, start with the templates and contact a Jornada data manager for further help.</p>
 <section id="metadata-templates" class="level3">
 <h3 class="anchored" data-anchor-id="metadata-templates">Metadata templates</h3>
-<p>A metadata template is a document with a structure and cues that help you collect the essential metadata needed to describe a published dataset. We have created Jornada metadata templates in Microsoft Word (.docx) and Excel (.xlsx) formats that are available on the <a href="../../downloads/index.html">downloads page</a>. These templates contain sections for all the critical pieces of metadata we described in the <a href="../../docs/researcher/metadata.html#recommendations-for-jornada-metadata">last chapter</a>, and helpful instructions on what to include and how to structure the information. The Excel version is slightly more detailed and may be useful for complex datasets.</p>
+<p>A metadata template is a document with a structure and cues that help you collect the essential metadata needed to describe a published dataset. We have created Jornada metadata templates in Microsoft Word (.docx) and Excel (.xlsx) formats that are available on the <a href="../../downloads/index.html">downloads page</a>. These templates contain sections for all the critical pieces of metadata we described in the <a href="../../docs/researcher/metadata.html#recommendations-for-jornada-metadata">last chapter</a>, and helpful instructions on what to include and how to structure the information. The Excel version is slightly more detailed and may be useful for complex datasets. Once you start describing your data, <strong>keep your metadata template together with the data files you intend to publish.</strong></p>
 <p>Keep in mind that these templates are fairly general in nature and can be used as a starting place for any kind of metadata destined for any repository. However, the amount of documentation and interactive assistance you get with a template is less than what you get in the ezEML web app described below. Completed templates and accompanying data files should be sent to the Jornada IM team (<a href="mailto:jornada.data@nmsu.edu" class="email">jornada.data@nmsu.edu</a>).</p>
 </section>
 <section id="ezeml" class="level3">
@@ -450,8 +450,8 @@ Figure&nbsp;3: The “JRN Template - General” EML template can be found in the
 <h2 class="anchored" data-anchor-id="the-review-process">The review process</h2>
 <p>Once you have submitted the dataset to the Jornada IM team, the data and metadata are securely archived and a round of review and editing begins (see <a href="#fig-jornadapublish" class="quarto-xref">Figure&nbsp;1</a>). A data manager will review the metadata for completeness, compliance with Jornada standards, and mismatches between metadata and data. If revisions are needed or errors are found you will receive an email requesting the changes. You can submit your revisions back to the IM team in an updated template document, or by making the edits in ezEML, as appropriate.</p>
 </section>
-<section id="publishing-the-dataset" class="level2">
-<h2 class="anchored" data-anchor-id="publishing-the-dataset">Publishing the dataset</h2>
+<section id="publish-it" class="level2">
+<h2 class="anchored" data-anchor-id="publish-it">Publish it</h2>
 <p>Once revisions are complete and the dataset authors agree to publish the dataset, the IM creates a final EML file, and then sends it, with the data, to the Environmental Data Initiative repository (EDI) to publish the dataset. A dataset citation, with a DOI, will be emailed to the dataset authors for distribution. <strong>If you are NOT publishing at EDI the publishing process will be different, and you may be expected to handle more of it yourself</strong>.</p>
 
 
@@ -469,7 +469,8 @@ Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, et al. 2016. <sp
 <li id="fn1"><p>See the <a href="https://lternet.edu/data-access-policy/">LTER Network Data Access Policy</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>NSF requires sharing of data from funded projects <a href="https://www.nsf.gov/funding/data-management-plan#nsfs-data-sharing-policy-1c8">as a general rule</a>, and outlines specific requirements <a href="https://www.nsf.gov/policies/pappg/24-1/ch-11-other-post-award-requirements#ch11D4">in the PAPPG</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>For example, both <a href="https://www.agu.org/publications/authors/journals/data-software-for-authors">AGU</a> and <a href="https://esa.org/publications/data-policy/">ESA</a> now have strict open data policies for their society journals.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>The Registry of Research Data Repositories (<a href="https://re3data.org">re3data.org</a>) project is a comprehensive tracker of information about research data repositories.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>The EDI repository has useful resources on <a href="https://edirepository.org/resources/cleaning-data-and-quality-control">data quality control</a>, <a href="https://edirepository.org/resources/designing-a-data-package">dataset design</a>, and <a href="https://edirepository.org/resources/creating-metadata-for-publication">metadata preparation</a>.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>The Registry of Research Data Repositories (<a href="https://re3data.org">re3data.org</a>) project is a comprehensive tracker of information about research data repositories.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
