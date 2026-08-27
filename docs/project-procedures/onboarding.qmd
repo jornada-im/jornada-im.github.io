@@ -6,17 +6,79 @@ description: How to onboard new people into positions at the Jornada
 
 :construction: **This is under construction.** :construction:
 
+## Lead PI
+
+**Responsibilities in a nutshell**
+
+- Run the show
+
+**Onboarding steps**
+
+1. Add to `JRN-all` Google Drive folder as an administrator.
+2. Add to the JRN-L listserv and remove moderation.
+
+## Project managers
+
+**Responsibilities in a nutshell**
+
+**Onboarding steps**
+
+1. Add to `JRN-all` Google Drive folder as an administrator.
+2. Add to the JRN-L and JRNSTUDENT-L listservs as a moderator and provide login credentials.
+
 ## IMs
 
+**Responsibilities in a nutshell**
+
+- Manage and secure critical research data and metadata for the JRN LTER program
+- Publish Jornada LTER datasets to community-supported repositories according to LTER Network and NSF guidelines.
+
+**Onboarding steps**
+
 1. Add to the *Jornada IM* team on GitHub
-2. Read the [IM Guide](../im/introduction.qmd)
-
-## Project manager
-
-## Lead PI
+2. Add to the JRN-L and JRNSTUDENT-L listservs as a moderator and provide login credentials.
+3. Read the [IM Guide](../im/introduction.qmd)
+4. Add to `JRN-all` Google Drive folder as an administrator.
+5. Notify the LTER Network Office (Marty Downs) that there is a new JRN IM. The IM will be invited to LTER Network systems and meetings (such as monthly IM Committee (IMC) meetings).
+6. Provide access to servers and NAS devices: `oryx`, `termite`, `packrat`, `JRN-METNET`
+7. Provide access to web resources: Grist personnel database, WPengine, Shinyapps.io, 
 
 ## Other investigators
 
-## Graduate students
+**Responsibilities in a nutshell**
+
+- Do high-quality JRN-related research
+- Mentor students in the JRN program
+
+**Onboarding steps**
+
+1. Add to key folders in `JRN-all` Google Drive folder (proposals and Science Team subfolders mainly).
+2. Add to the JRN-L listserv.
+
+## JRN Grad student representatives
+
+There are usually 2 reps, elected or appointed to 2-year terms.
+
+**Responsibilities in a nutshell**
+
+- Coordinate, support, and advocate for graduate and undergraduate students in the JRN LTER program.
+- Represent the JRN student community at the LTER Network level, and ensure student-related communications from the LTER Network reach the JRN student community.
+- Help organize student-centered JRN events, including Desert Discourse, Field Season Kickoff, and the Desert Ecology Short Course.
+
+**Onboarding steps**
+
+1. Make sure reps are on the JRN-L and JRNSTUDENT-L listservs and unmoderated (and aware they are unmoderated).
+2, Add to Google Drive folders (`JRN-all/Committee Materials/Student Affairs`, and probably also `Desert Discourse`, `Field Season Kickoff`, and `Short Course` folders).
+3. Notify the LTER Network Office (Marty Downs) that there is a new JRN student rep.
+
+## New graduate students
+
+**Responsibilities in a nutshell**
+
+**Onboarding steps**
 
 ## Undergraduate students
+
+**Responsibilities in a nutshell**
+
+**Onboarding steps**
