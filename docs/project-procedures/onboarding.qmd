@@ -2,6 +2,7 @@
 title: Onboarding new Jornada team members
 date: last-modified
 description: How to onboard new people into positions at the Jornada
+from: markdown+emoji
 ---
 
 :construction: **This is under construction.** :construction:

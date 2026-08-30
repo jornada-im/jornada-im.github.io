@@ -28,13 +28,15 @@ website:
         href: docs/researcher/introduction.qmd
       - text: "IM Guide"
         href: docs/im/introduction.qmd
-      - text: "Document library"
+      - text: "Document Library"
         menu:
           - downloads/index.qmd
           - docs/project-procedures/index.qmd
           - docs/proposals-and-reports/index.qmd
           - archive/index.qmd
-      - text: "Updates"
+      - text: "Ed Pages"
+        href: https://jornada-im.github.io/jeds
+      - text: "Posts"
         href: posts/posts.qmd
     tools:
       - icon: github
