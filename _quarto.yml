@@ -34,8 +34,8 @@ website:
           - docs/project-procedures/index.qmd
           - docs/proposals-and-reports/index.qmd
           - archive/index.qmd
-      - text: "Ed Pages"
-        href: https://jornada-im.github.io/jeds
+          - text: "Training site"
+            href: https://jornada-im.github.io/jeds
       - text: "Posts"
         href: posts/posts.qmd
     tools:

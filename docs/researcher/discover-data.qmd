@@ -2,6 +2,7 @@
 title: Discover research data at Jornada and beyond
 date: last-modified
 from: markdown+emoji
+slide-format: revealjs
 ---
 
 ## Overview
